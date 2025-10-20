@@ -322,3 +322,31 @@
             }
         }
     </style>
+
+
+
+<style>
+.heading-structure {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    width: 500px;
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    transition: background 0.5s ease, color 0.5s ease;
+    box-sizing: border-box;
+}
+
+/* Responsive: hide heading but keep margin */
+@media (max-width: 768px) {
+    .responsive-hide h2 {
+        display: none;
+    }
+}
+</style>

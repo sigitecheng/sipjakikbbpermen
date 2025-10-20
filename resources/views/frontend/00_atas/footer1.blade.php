@@ -11,7 +11,7 @@
                     <img src="/assets/icon/sipjakikbb.png" alt="Logo SIPJAKIKBB" class="logo-img sipjaki-logo">
                     <img src="/assets/icon/pupr.png" alt="Logo PUPR" class="logo-img">
                 </div>
-                <div class="title-section">
+                <div class="title-section" style="text-align: left">
                     <h2 class="brand-title">
                         <span class="brand-highlight">SIPJAKI</span>KBB
                     </h2>

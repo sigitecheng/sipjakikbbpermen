@@ -1,140 +1,3 @@
-<style>
-    /* Desktop Navbar */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    position: relative;
-    z-index: 10;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 6px 10px;
-    font-size: 15px;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-#menu {
-    display: none;
-}
-
-/* Desktop Dropdown Hover */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: #333;
-    min-width: 150px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    z-index: 99;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 8px 15px;
-    color: white;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Responsive Navbar */
-@media (max-width: 992px) {
-    .menu-icon {
-        display: block;
-        z-index: 20;
-    }
-
-    #menu:checked ~ nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background: #222;
-        border-radius: 8px;
-        margin-top: 10px;
-        padding: 10px 0;
-        position: relative;
-        z-index: 15;
-    }
-
-    nav {
-        display: none;
-    }
-
-    nav a {
-        display: block;
-        width: 100%;
-        text-align: left;
-        padding: 10px 15px;
-        color: white;
-    }
-
-    /* Dropdown Mobile turun ke bawah */
-    .dropdown {
-        width: 100%;
-        position: relative;
-    }
-
-    .dropdown-content {
-        position: relative;
-        display: none;
-        flex-direction: column;
-        box-shadow: none;
-        border-radius: 0;
-        background: #333;
-        min-width: 100%;
-        z-index: 20;
-    }
-
-    /* Toggle dropdown mobile */
-    .dropdown.open .dropdown-content {
-        display: flex;
-    }
-
-    .dropdown-content a {
-        padding-left: 35px;
-    }
-}
-
-</style>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const dropdowns = document.querySelectorAll('.dropdown');
-
-        dropdowns.forEach(drop => {
-            drop.addEventListener('click', function (e) {
-                e.stopPropagation(); // cegah click bubble
-                this.classList.toggle('open');
-
-                dropdowns.forEach(d => {
-                    if(d !== this) d.classList.remove('open');
-                });
-            });
-        });
-
-        // klik di luar dropdown untuk menutup
-        document.addEventListener('click', function () {
-            dropdowns.forEach(d => d.classList.remove('open'));
-        });
-    });
-</script>
-
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <div class="container mt-0 mb-0">
@@ -199,14 +62,9 @@ nav a {
     }
 </style>
 
-        {{-- <a href="/">DASHBOARD</a> --}}
+        <a href="/">DASHBOARD</a>
 
-<div class="dropdown">
-    <a href="/" class="dropdown-toggle" style="text-align: left; font-weight: 600;">DASHBOARD</a>
-    {{-- <i class="bi bi-chevron-down arrow"></i> --}}
-</div>
-
-<div class="dropdown">
+        <div class="dropdown">
     <a href="#" class="dropdown-toggle" style="text-align: left; font-weight: 600;">PROFIL</a>
     {{-- <i class="bi bi-chevron-down arrow"></i> --}}
     <div class="dropdown-content" style="min-width: 200px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); padding: 6px 0;">
@@ -351,13 +209,7 @@ nav a {
 
     </div>
 </div>
-
-<div class="dropdown">
-    <a href="/ijinusahajasakonstruksi" class="dropdown-toggle" style="text-align: left; font-weight: 600;">SBU/IUJK</a>
-    {{-- <i class="bi bi-chevron-down arrow"></i> --}}
-</div>
-
-        {{-- <a href="/ijinusahajasakonstruksi">SBU/IUJK</a> --}}
+        <a href="/ijinusahajasakonstruksi">SBU/IUJK</a>
         {{-- <a href="/tdup">TDUP</a> --}}
 
 <div class="dropdown">
@@ -447,12 +299,8 @@ nav a {
     </div>
 </div>
 
-        {{-- <a href="/login">LOGIN</a> --}}
+        <a href="/login">LOGIN</a>
 
-<div class="dropdown">
-    <a href="/login" class="dropdown-toggle" style="text-align: left; font-weight: 600;">LOGIN</a>
-    {{-- <i class="bi bi-chevron-down arrow"></i> --}}
-</div>
 
     </nav>
 </div>

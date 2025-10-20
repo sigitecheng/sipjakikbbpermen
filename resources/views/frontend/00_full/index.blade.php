@@ -191,136 +191,138 @@
 
 
             </div>
-                    <!-- Popular News Start -->
-                    <div class="mb-6 mt-0" style="margin-bottom:50px;">
-                        <div class="section-title mb-0">
-                            <h4 class="m-0 text-uppercase font-weight-bold">
-                               <img src="/assets/icon/sipjakikbb.png" alt="/assets/icon/sipjakikbb.png" style="width: 40px;"> KEGIATAN SERTIFIKASI JASA KONSTRUKSI </h4>
-                        </div>
-                        <div class="bg-white border border-top-0 p-3">
+<div class="mb-6 mt-0" style="margin-bottom:50px;">
+    <div class="section-title mb-0">
+        <h4 class="m-0 text-uppercase font-weight-bold">
+            <img src="/assets/icon/sipjakikbb.png" alt="icon" style="width: 40px;">
+            KEGIATAN SERTIFIKASI JASA KONSTRUKSI
+        </h4>
+    </div>
 
-                            @foreach ($data_jaskon as $item )
-                            <div class="w-100 h-100 d-flex flex-column justify-content-center border border-left-0" style="margin-bottom:10px;">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 mr-2 ml-2" href="/kegiatansertifikasi" style="margin-top:15px;"><span style="color: #000000; font-size:16px;">{{$item->judul_kegiatan}}</span></a>
-                                </div>
-                                <div class="mb-2">
-                                    <a href="/kegiatansertifikasi">
-                                        <p class="px-3" style="color: #000000">{{$item->alamat_kegiatan}}</p>
-                                    </a>
-                                    {{-- <a href=""><small><span style="color: #000000">{{$item->tanggal}}</span></small></a> --}}
-                                </div>
-                                {{-- <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ $item->judul_kegiatan}}</a> --}}
-                            </div>
+    <div class="bg-white border border-top-0 p-3">
 
-                            {{-- ------------------------ --}}
+        @foreach ($data_jaskon as $item)
+        <div class="w-100 h-100 d-flex flex-column justify-content-center border border-left-0" style="margin-bottom:10px;">
+            <div class="mb-2">
+                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2 ml-2"
+                   href="/kegiatansertifikasi"
+                   style="margin-top:15px; display: inline-block; max-width: 100%; white-space: normal;"
+                   title="{{ $item->judul_kegiatan }}">
+                    <span class="judul-kegiatan-text">
+                        {{ \Illuminate\Support\Str::words($item->judul_kegiatan, 7, '...') }}
+                    </span>
+                </a>
+            </div>
 
-                            <style>
-                            .scroll-container {
-                                overflow: hidden;
-                                white-space: nowrap;
-                                width: 100%;
-                                background-color: white;
-                                position: relative;
-                            }
+            <div class="mb-2">
+                <a href="/kegiatansertifikasi">
+                    <p class="px-3" style="color: #000000;">{{ $item->alamat_kegiatan }}</p>
+                </a>
+            </div>
+        </div>
 
-                            .scrolling-content {
-                                display: inline-block;
-                                white-space: nowrap;
-                                animation: scroll 10s linear infinite;
-                            }
+        {{-- ================== Gambar Berjalan (Responsif) ================== --}}
+        <div class="berita-container">
+            <div class="berita-marquee">
+                @foreach(range(1, 20) as $i)
+                    @php $field = 'berita' . $i; @endphp
+                    @if(!empty($item->$field))
+                        @if(file_exists(public_path('storage/' . $item->$field)))
+                            <img src="{{ asset('storage/' . $item->$field) }}" alt="Berita {{ $i }}" loading="lazy">
+                        @else
+                            <img src="{{ asset($item->$field) }}" alt="Berita {{ $i }}" loading="lazy">
+                        @endif
+                    @endif
+                @endforeach
+            </div>
+        </div>
 
-                            .scrolling-content img {
-                                width: 15%;
-                                height: auto;
-                                display: inline-block;
-                                margin-right: 10px;
-                            }
-
-                            @keyframes scroll {
-                                0% { transform: translateX(0); }
-                                100% { transform: translateX(-50%); }
-                            }
-                            </style>
-
-
-                            <div class="scroll-container">
-                                <div class="scrolling-content">
-
-<style>
-    .berita-marquee {
-        display: flex;
-        flex-direction: row-reverse; /* tampil dari kanan ke kiri */
-        gap: 12px;
-        overflow: hidden; /* sembunyikan yang di luar area */
-        white-space: nowrap;
-        position: relative;
-        animation: scroll-rtl 60s linear infinite; /* animasi 60 detik agar santai */
-        padding: 10px;
-    }
-
-    .berita-marquee img {
-        width: 220px;
-        height: 140px;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        display: inline-block;
-        margin-right: 12px;
-    }
-
-    @keyframes scroll-rtl {
-        from { transform: translateX(0); }
-        to { transform: translateX(100%); } /* berjalan dari kanan ke kiri */
-    }
-
-    .berita-container {
-        width: 100%;
-        overflow: hidden;
-        border-radius: 10px;
-        position: relative;
-    }
-</style>
-
-<div class="berita-container">
-    <div class="berita-marquee">
-        @foreach(range(1, 20) as $i)
-            @php $field = 'berita' . $i; @endphp
-            @if(!empty($item->$field))
-                @if(file_exists(public_path('storage/' . $item->$field)))
-                    <img src="{{ asset('storage/' . $item->$field) }}" alt="Berita {{ $i }}" loading="lazy">
-                @else
-                    <img src="{{ asset($item->$field) }}" alt="Berita {{ $i }}" loading="lazy">
-                @endif
-            @endif
         @endforeach
+
     </div>
 </div>
 
+{{-- ================== CSS Responsif ================== --}}
+<style>
+/* ======= Gaya Umum ======= */
+.judul-kegiatan-text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    word-break: break-word;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .judul-kegiatan-text {
+        font-size: 14px !important;
+    }
+}
+
+/* HP */
+@media (max-width: 576px) {
+    .judul-kegiatan-text {
+        font-size: 12px !important;
+    }
+}
+
+/* ======= Gaya Gambar Scroll ======= */
+.berita-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.berita-marquee {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12px;
+    animation: scroll-rtl 60s linear infinite;
+    padding: 10px;
+}
+
+.berita-marquee img {
+    width: 220px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+}
+
+@keyframes scroll-rtl {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+/* Responsif untuk Gambar */
+@media (max-width: 992px) {
+    .berita-marquee img {
+        width: 180px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .berita-marquee img {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .berita-marquee img {
+        width: 120px;
+        height: 80px;
+    }
+}
+</style>
 
 
-                                </div>
-                            </div>
-
-
-                            @endforeach
-
-
-                            {{-- <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Comming Soon</a>
-                                        <a class="text-body" href=""><small>Agustus 10, 2024</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">PELATIHAN BIMBINGAN TEKNIS TENAGA KONSTRUKSI KABUPATEN BANDUNG BARAT .....</a>
-                                </div>
-                            </div> --}}
-
-
-                        </div>
-                    </div>
-                    <!-- Popular News End -->
+<!-- Popular News End -->
 
 
         </div>
@@ -428,66 +430,40 @@
                     @endforeach
             </div>
         </div> --}}
+<div class="contactUs" style="background-color: #FFCB0F; height: auto; padding: 40px 0; margin-top: -100px; margin-bottom: -35px;">
+    <div class="container" style="margin-top:50px;">
 
-        <div class="contactUs" style="background-color: #FFCB0F; height: 55vh; margin-bottom: -100px; margin-top:-100px;">
-            <div class="container" >
-            {{-- <div class="container"> --}}
-                <aside>
-                    <h1 style="
-                    font-family: 'Lato', sans-serif;
-                    font-weight: 700;
-                    font-size: 18px;
-                    color: #333;
-                    margin-bottom: 20px;
-                    text-transform: uppercase;
-                    text-align: center;
-                    border: 2px solid black;
-                    padding: 5px;
-                    border-radius: 25px;
+        <!-- ========== Judul & Header Section ========== -->
+        <aside class="text-center">
+            <h3 class="info-title">
+                Informasi Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i>
+            </h3>
 
-                    transition: background 0.5s ease, color 0.5s ease;
-                " onmouseover="this.style.background='linear-gradient(to right, black, yellow)'; this.style.color='white';" onmouseout="this.style.background='linear-gradient(to right, #f0f0f0, #e0e0e0)'; this.style.color='#333';">Informasi Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i></h1>
-                    <h2 style="
-                    font-family: 'Lato', sans-serif;
-                    font-weight: 700;
-                    font-size: 1.5rem;
-                    color: #333;
-                    margin-bottom: 20px;
-                    text-transform: uppercase;
-                    text-align: center;
-                    padding: 5px;
-                    border-radius: 25px;
-                        ">
-                        <img src="assets/icon/pupr.png" alt="Logo SIPJAKIKBB" style="width: 50px; height: 50px; object-fit: cover; margin-right: 10px; padding: 0;">
-                        Q&A Jasa Konstruksi <br> Hub Kami</h2>
-                        <p style="
-                        font-family: 'Lato', sans-serif;
-                        font-weight: 700;
-                        font-size: 14px;
-                        color: #333;
-                        margin-bottom: 20px;
-                        text-transform: uppercase;
-                        text-align: center;
-                        padding: 5px;
-                        border-radius: 25px;
-                            "> Dinas Pekerjaan Umum dan Penataan Ruang <br>
-                            Pemerintah Kabupaten Bandung Barat </p>
-                </aside>
+            <h5 class="info-subtitle">
+                <img src="assets/icon/pupr.png" alt="Logo SIPJAKIKBB" class="info-logo">
+                Q&A Jasa Konstruksi <br> Hub Kami
+            </h5>
 
+            <p class="info-text">
+                Dinas Pekerjaan Umum dan Penataan Ruang <br>
+                Pemerintah Kabupaten Bandung Barat
+            </p>
+        </aside>
 
+        {{-- Alert --}}
+        @include('tambahan.alert')
 
-{{-- ================ --}}
-@include('tambahan.alert')
-{{-- ================ --}}
-<form action="{{ route('create.qapertanyaan') }}" method="POST" enctype="multipart/form-data">
+        <!-- ========== Form ========== -->
+      <form action="{{ route('create.qapertanyaan') }}" method="POST" enctype="multipart/form-data" class="qa-form">
     @csrf
     @method('POST')
 
-    <div class="form-group d-flex align-items-center mt-1" style="width: 100%;">
-        <label for="qasebagai_id" class="mr-3" style="flex: 0 0 200px; text-align:left; font-size:14px;">
-            <i class="fas fa-map-marker-alt mr-2" style="color: #000000"></i><span style="color: #000000; font-size:16px;"> Anda Sebagai </span>
+    <!-- Anda Sebagai -->
+    <div class="form-group">
+        <label for="qasebagai_id" class="form-label-custom">
+            <i class="fas fa-map-marker-alt mr-2"></i> Anda Sebagai
         </label>
-        <select class="form-control" id="qasebagai_id" name="qasebagai_id" required>
+        <select class="form-control form-input" id="qasebagai_id" name="qasebagai_id" required>
             <option value="" disabled selected>Anda Sebagai ?</option>
             @foreach ($dataqasebagai as $item)
                 <option value="{{ $item->id }}">{{ $item->sebagai }}</option>
@@ -495,11 +471,12 @@
         </select>
     </div>
 
-    <div class="form-group d-flex align-items-center mt-1" style="width: 100%;">
-        <label for="qapertanyaan_id" class="mr-3" style="flex: 0 0 200px; text-align:left; font-size:14px;">
-            <i class="fas fa-question-circle mr-2" style="color: #000000"></i><span style="color: #000000; font-size:16px;" >Pertanyaan Saudara</span>
+    <!-- Pertanyaan -->
+    <div class="form-group">
+        <label for="qapertanyaan_id" class="form-label-custom">
+            <i class="fas fa-question-circle mr-2"></i> Pertanyaan Saudara
         </label>
-        <select class="form-control" id="qapertanyaan_id" name="qapertanyaan_id" required>
+        <select class="form-control form-input" id="qapertanyaan_id" name="qapertanyaan_id" required>
             <option value="" disabled selected>Pertanyaan ?</option>
             @foreach ($dataqapertanyaan as $item)
                 <option value="{{ $item->id }}">{{ $item->pertanyaan }}</option>
@@ -507,62 +484,205 @@
         </select>
     </div>
 
-    <div class="form-group d-flex align-items-center mt-1" style="width: 100%;">
-        <label for="email" class="mr-3" style="flex: 0 0 200px; text-align:left; font-size: 14px;">
-            <i class="fas fa-envelope mr-2" style="color: #000000"></i><span style="color: #000000; font-size:16px;">Email</span>
+    <!-- Email -->
+    <div class="form-group">
+        <label for="email" class="form-label-custom">
+            <i class="fas fa-envelope mr-2"></i> Email
         </label>
-        <input type="text" class="form-control" id="email" name="email" required style="color: #000000;" placeholder="Masukan Email Saudara">
+        <input type="email" class="form-control form-input" id="email" name="email" required placeholder="Masukan Email Saudara">
     </div>
 
-    <div class="form-group d-flex align-items-center mt-1" style="width: 100%;">
-        <label for="nama_lengkap" class="mr-3" style="flex: 0 0 200px; text-align:left; font-size: 14px;">
-            <i class="fas fa-user mr-2" style="color: #000000"></i><span style="color: #000000; font-size:16px;">Nama Lengkap</span>
+    <!-- Nama Lengkap -->
+    <div class="form-group">
+        <label for="nama_lengkap" class="form-label-custom">
+            <i class="fas fa-user mr-2"></i> Nama Lengkap
         </label>
-        <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" required style="color: #000000;" placeholder="Nama Lengkap">
+        <input type="text" class="form-control form-input" id="nama_lengkap" name="nama_lengkap" required placeholder="Nama Lengkap">
     </div>
 
-    <div class="form-group d-flex align-items-center mt-1" style="width: 100%;">
-        <label for="telepon" class="mr-3" style="flex: 0 0 200px; text-align:left; font-size: 14px;">
-            <i class="fas fa-phone-alt mr-2" style="color: #000000"></i><span style="color: #000000; font-size:16px;">Telepon</span>
+    <!-- Telepon -->
+    <div class="form-group">
+        <label for="telepon" class="form-label-custom">
+            <i class="fas fa-phone-alt mr-2"></i> Telepon
         </label>
-        <input type="number" class="form-control" id="telepon" name="telepon" required style="color: #000000;" placeholder="No Whatsapp">
+        <input type="tel" class="form-control form-input" id="telepon" name="telepon" required placeholder="No Whatsapp">
     </div>
 
-    <style>
-        .badge-plus {
-        background: linear-gradient(to right, navy, black);
-        color: white;
-        padding: 10px 15px;
-        border-radius: 10px;
-        display: inline-block;
-        font-size: 12px;
-        text-align: center;
-        /* margin-top: 1500px; */
-        transition: background-color 0.3s, color 0.3s;
-        position: absolute; /* Tambahkan ini */
-        top: 20px; /* Atur jarak dari atas jika diperlukan */
-        right: 20px; /* Atur jarak dari kanan jika diperlukan */
-    }
-
-    .badge-plus:hover {
-        background: white;
-        color: black;
-    }
-
-    </style>
-    <div class="container" style="margin-left:300px;">
-        <button class="btn btn-secondary mt-3" type="submit" style="border-radius:10px;">
+    <!-- Tombol Kirim -->
+    <div class="form-group text-center">
+        <button class="btn submit-btn" type="submit">
             <i class="fas fa-save mr-2"></i> Kirim Pertanyaan !
         </button>
     </div>
 </form>
+<style>
+/* Container form */
+.qa-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+/* Form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* rapatkan jarak label dan input */
+}
 
-            </div>
-        </div>
+/* Label styling */
+.form-label-custom {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* jarak icon dan teks label */
+    margin-bottom: 0; /* hapus margin bawah berlebih */
+    margin-top: -110px; /* hapus margin bawah berlebih */
+}
 
+/* Input & select styling */
+.form-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border 0.3s, box-shadow 0.3s;
+    margin-top: -80px;
+}
 
-    </section>
+.form-input:focus {
+    outline: none;
+    border-color: navy;
+    box-shadow: 0 0 5px rgba(0,0,128,0.3);
+}
+
+/* Tombol */
+.submit-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(to right, black, navy);
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, navy, black);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .qa-form {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .form-label-custom {
+        font-size: 13px;
+    }
+
+    .form-input,
+    .submit-btn {
+        font-size: 13px;
+    }
+}
+</style>
+
+    </div>
+</div>
+
+<!-- ========== STYLE TAMBAHAN ========== -->
+<style>
+    .info-title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: #333;
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 25px;
+        display: inline-block;
+        transition: background 0.5s ease, color 0.5s ease;
+    }
+
+    .info-title:hover {
+        background: linear-gradient(to right, black, yellow);
+        color: white;
+    }
+
+    .info-subtitle {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    .info-logo {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .info-text {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .form-label-custom {
+        flex: 0 0 200px;
+        text-align: left;
+        font-size: 14px;
+        color: #000;
+    }
+
+    .qa-form input, .qa-form select {
+        color: #000;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+        .contactUs {
+            height: auto !important;
+            padding: 30px 15px;
+        }
+
+        .info-subtitle {
+            font-size: 1.2rem;
+        }
+
+        .form-label-custom {
+            flex: 0 0 100%;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .qa-form input, .qa-form select {
+            width: 100%;
+            font-size: 13px;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+</style>
 
     {{-- ------------------------------------------------------------------------------- --}}
     {{-- ------------------------------------------------------------------------------- --}}

@@ -1,54 +1,45 @@
 @include('frontend.00_atas.header')
-
+@include('frontend.00_atas.pembaharuan')
 
 {{-- ------------------------------------------------------------------------------------------ --}}
 {{-- ------------------------------------------------------------------------------------------ --}}
 {{-- ------------------------------------------------------------------------------------------ --}}
 
 <section id="sec-0">
-    
+
     <div class="div" style="z-index: 9999; position: fixed;
             top: 0; left: 0; width: 100%; z-index: 9999;
-            background-color: white; border-bottom: 1px solid black; 
+            background-color: white; border-bottom: 1px solid black;
             ">
 
         @include('frontend.00_atas.header1')
         <header>
-            
+
                 @include('frontend.00_atas.header2_navbar')
-            
+
         </div>
         </header>
-    
-        <div class="div" style="
-            justify-content: center;
-            text-align:center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            margin-top:165px;
-        ">
 
-            <h2 style="
-    margin-top: 10px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #333;
-    text-transform: uppercase;
+<div class="div responsive-hide" style="
+    justify-content: center;
     text-align: center;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 25px;
-    width: 500px;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
-    transition: background 0.5s ease, color 0.5s ease;
-    " onmouseover="this.style.background='linear-gradient(to right, #f0f0f0, #e0e0e0)'; this.style.color='black';" onmouseout="this.style.background='linear-gradient(to right, black, yellow )'; this.style.color='white';">
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px; /* space kosong untuk responsive */
+">
 
-Rencana Strategis Program Dan Jasa Konstruksi <br> Kabupaten Bandung Barat 
-</h2>
+    <h2
+    class="heading-structure"
+        onmouseover="this.style.background='linear-gradient(to right, #002060, #FFD100)'; this.style.color='white';"
+        onmouseout="this.style.background='linear-gradient(to right, #FFD100, #002060)'; this.style.color='white';"
+    >
+        Rencana Strategis Jasa Konstruksi
+    </h2>
+
 </div>
+
 <div class="container" style="
     display: flex;
     flex-direction: column;
@@ -106,9 +97,9 @@ Rencana Strategis Program Dan Jasa Konstruksi <br> Kabupaten Bandung Barat
                 transition: background-color 0.3s, color 0.3s;
                 margin-left: 225px;
                 cursor: pointer;
-             
+
             }
-    
+
             .badgedownload:hover {
                 background-color: white;
                 color: black;
@@ -118,13 +109,13 @@ Rencana Strategis Program Dan Jasa Konstruksi <br> Kabupaten Bandung Barat
     </style>
 
     @foreach ($data as $item )
-        
+
     <div class="pdf-container">
         <iframe class="pdf-frame" src="{{asset('storage/' . $item->peraturan )}}"></iframe>
     </div>
-    <div style="margin-left: 450px;">
+    {{-- <div style="margin-left: 450px;">
         <button class="download-btn badgedownload" id="downloadBtn"><i class="fas fa-download me-2"></i> Download PDF</button>
-    </div>
+    </div> --}}
 </div>
 </div>
 
@@ -133,16 +124,16 @@ Rencana Strategis Program Dan Jasa Konstruksi <br> Kabupaten Bandung Barat
     document.getElementById('downloadBtn').addEventListener('click', function() {
         // URL file PDF
         const pdfUrl = '{{asset('storage/' . $item->peraturan)}}';
-        
+
         // Membuat elemen anchor
         const link = document.createElement('a');
         link.href = pdfUrl;
         link.download = pdfUrl.substring(pdfUrl.lastIndexOf('/') + 1);
-        
+
         // Menyimulasikan klik pada elemen anchor
         document.body.appendChild(link);
         link.click();
-        
+
         // Menghapus elemen anchor dari dokumen
         document.body.removeChild(link);
     });

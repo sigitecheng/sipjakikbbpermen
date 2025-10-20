@@ -15,7 +15,7 @@
       <link rel="stylesheet" href="/assets/bahan2/css/bootstrap.min.css">
       <!----css3---->
       <link rel="stylesheet" href="/assets/bahan2/css/custom.css">
-      
+
       <link rel="stylesheet" href="/assets/bahan2/font/flaticon.css">
       <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
      <link rel="stylesheet" type="text/css" href="/assets/bahan2/css/settings.css" media="screen" />
@@ -28,15 +28,30 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
         <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
- 
-        @include('tambahan.portalberitaheader')
+
+        {{-- @include('tambahan.portalberitaheader') --}}
+         <!-- Favicon -->
+ <link href="img/favicon.ico" rel="icon">
+
+ <!-- Google Web Fonts -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+ <!-- Font Awesome -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+ <!-- Libraries Stylesheet -->
+ <link href="/assets/portalberita/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+ <!-- Customized Bootstrap Stylesheet -->
+ <link href="/assets/portalberita/css/style.css" rel="stylesheet">
     <script defer src="/assets/bahan1/js/scripts.js"></script>
     {{-- <title>Construction Company</title> --}}
     <title>{{$title}}</title>
-    
+
     <link rel="icon" href="{{ asset('storage/logo/sipjakikbb.png') }}" type="image/x-icon">
 
-  
+
 </head>
 
 <body>

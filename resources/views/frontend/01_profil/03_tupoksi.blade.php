@@ -6,48 +6,39 @@
 {{-- ------------------------------------------------------------------------------------------ --}}
 
 <section id="sec-0">
-    
+
     <div class="div" style="z-index: 9999; position: fixed;
             top: 0; left: 0; width: 100%; z-index: 9999;
-            background-color: white; border-bottom: 1px solid black; 
+            background-color: white; border-bottom: 1px solid black;
             ">
 
         @include('frontend.00_atas.header1')
         <header>
-            
+
                 @include('frontend.00_atas.header2_navbar')
-            
+
         </div>
         </header>
-    
-        <div class="div" style="
-            justify-content: center;
-            text-align:center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            margin-top:165px;
-        ">
 
-            <h2 style="
-    margin-top: 10px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #333;
-    text-transform: uppercase;
+
+<div class="div responsive-hide" style="
+    justify-content: center;
     text-align: center;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 25px;
-    width: 500px;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
-    transition: background 0.5s ease, color 0.5s ease;
-    " onmouseover="this.style.background='linear-gradient(to right, #f0f0f0, #e0e0e0)'; this.style.color='black';" onmouseout="this.style.background='linear-gradient(to right, black, yellow )'; this.style.color='white';">
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px; /* space kosong untuk responsive */
+">
 
-Tupoksi Seksi Program Dan Jasa Konstruksi
-</h2>
+    <h2
+    class="heading-structure"
+        onmouseover="this.style.background='linear-gradient(to right, #002060, #FFD100)'; this.style.color='white';"
+        onmouseout="this.style.background='linear-gradient(to right, #FFD100, #002060)'; this.style.color='white';"
+    >
+        Tupoksi Seksi Program dan Jasa Konstruksi
+    </h2>
+
 </div>
 <div class="container" style="
    display: flex;
@@ -90,7 +81,7 @@ Tupoksi Seksi Program Dan Jasa Konstruksi
                     <span style="color: darkblue;"><strong>Direktorat Jenderal Bina Konstruksi</strong></span> mempunyai tugas menyelenggarakan perumusan dan pelaksanaan kebijakan di bidang pembinaan jasa konstruksi sesuai dengan ketentuan peraturan perundang-undangan. <br>
                 </h4>
                 <br>
-                    <h4 style=" 
+                    <h4 style="
                     text-align: justify;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
@@ -99,8 +90,8 @@ Tupoksi Seksi Program Dan Jasa Konstruksi
                     ">
                         <span style="color: darkblue"></span>Dalam melaksanakan tugas Direktorat Jenderal Bina Konstruksi menyelenggarakan fungsi:
                     </h4>
-        
-                    <h4 style=" 
+
+                    <h4 style="
                     text-align: justify;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
@@ -108,10 +99,10 @@ Tupoksi Seksi Program Dan Jasa Konstruksi
                     margin-bottom: 10px;
                     ">
                     <span style="column-rule: darkblue">1. </span>Perumusan kebijakan di bidang pembinaan penyelenggaraan, kelembagaan, dan sumber daya jasa konstruksi.
-                    
+
                     </h4>
-                    
-                    <h4 style=" 
+
+                    <h4 style="
                     text-align: justify;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
@@ -119,80 +110,80 @@ Tupoksi Seksi Program Dan Jasa Konstruksi
                     margin-bottom: 10px;
                     ">
                     <span style="color: darkblue">2. </span>Pelaksanaan kebijakan di bidang pembinaan penyelenggaraan, kelembagaan, dan sumber daya jasa konstruksi.
-                    
-                    </h4>
-                    
-                    <h4 style=" 
-                    text-align: left;
-                    font-family: 'Lato', sans-serif;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-bottom: 10px;
-                    ">
-                    
-                    <span style="color: darkblue">3. </span>Pelaksanaan kebijakan di bidang pemberdayaan dan pengawasan penyelenggaraan jasa konstruksi yang dilaksanakan oleh masyarakat dan pemerintah daerah.
-                    
+
                     </h4>
 
-                    <h4 style=" 
+                    <h4 style="
                     text-align: left;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
                     font-size: 16px;
                     margin-bottom: 10px;
                     ">
-                    
+
+                    <span style="color: darkblue">3. </span>Pelaksanaan kebijakan di bidang pemberdayaan dan pengawasan penyelenggaraan jasa konstruksi yang dilaksanakan oleh masyarakat dan pemerintah daerah.
+
+                    </h4>
+
+                    <h4 style="
+                    text-align: left;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    ">
+
                     <span style="color: darkblue">4. </span>
                     Penyusunan norma, standar, prosedur, dan kriteria di bidang pembinaan jasa konstruksi.
-                    
+
                     </h4>
-                    
-                    <h4 style=" 
+
+                    <h4 style="
                     text-align: left;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
                     font-size: 16px;
                     margin-bottom: 10px;
                     ">
-                    
+
                     <span style="color: darkblue">5. </span>
                   Pelaksanaan bimbingan teknis dan supervisi di bidang pembinaan penyelenggaraan, kelembagaan, dan sumber daya jasa konstruksi.
                     </h4>
-                    
-                    <h4 style=" 
+
+                    <h4 style="
                     text-align: left;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
                     font-size: 16px;
                     margin-bottom: 10px;
                     ">
-                    
+
                     <span style="color: darkblue">6. </span>
                     Pelaksanaan evaluasi dan pelaporan di bidang pembinaan penyelenggaraan, kelembagaan, dan sumber daya jasa konstruksi.
                 </h4>
 
-                    <h4 style=" 
+                    <h4 style="
                     text-align: left;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
                     font-size: 16px;
                     margin-bottom: 10px;
                     ">
-                    
+
                     <span style="color: darkblue">7. </span>
-                                    Pelaksanaan administrasi Direktorat Jenderal Bina Konstruksi. 
+                                    Pelaksanaan administrasi Direktorat Jenderal Bina Konstruksi.
                 </h4>
-                <h4 style=" 
+                <h4 style="
                     text-align: left;
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
                     font-size: 16px;
                     margin-bottom: 10px;
                     ">
-                    
+
                     <span style="color: darkblue">8. </span>
                     Pelaksanaan fungsi lain yang diberikan oleh Menteri.
-                
+
                                 </h4>
             </p>
         </div>
@@ -231,9 +222,9 @@ Tupoksi Seksi Program Dan Jasa Konstruksi
                 transition: background-color 0.3s, color 0.3s;
                 margin-left: 225px;
                 cursor: pointer;
-             
+
             }
-    
+
             .badgedownload:hover {
                 background-color: white;
                 color: black;
@@ -243,13 +234,13 @@ Tupoksi Seksi Program Dan Jasa Konstruksi
             </style>
 
             @foreach ($data as $item )
-                
+
             <div class="pdf-container">
                 <iframe class="pdf-frame" src="{{asset('storage/' . $item->peraturan)}}"></iframe>
             </div>
-            <div style="margin-left: 450px;">
+            {{-- <div style="margin-left: 450px;">
                 <button class="download-btn badgedownload" id="downloadBtn"><i class="fas fa-download me-2"></i> Download PDF</button>
-    </div>
+    </div> --}}
 </div>
 </div>
 </div>
@@ -259,16 +250,16 @@ Tupoksi Seksi Program Dan Jasa Konstruksi
     document.getElementById('downloadBtn').addEventListener('click', function() {
         // URL file PDF
         const pdfUrl = '{{asset('storage/' . $item->peraturan)}}';
-        
+
         // Membuat elemen anchor
         const link = document.createElement('a');
         link.href = pdfUrl;
         link.download = pdfUrl.substring(pdfUrl.lastIndexOf('/') + 1);
-        
+
         // Menyimulasikan klik pada elemen anchor
         document.body.appendChild(link);
         link.click();
-        
+
         // Menghapus elemen anchor dari dokumen
         document.body.removeChild(link);
     });
