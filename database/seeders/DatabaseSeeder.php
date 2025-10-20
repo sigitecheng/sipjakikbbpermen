@@ -4154,24 +4154,6 @@ Masyarakat Kecamatan Cisomang Barat menyambut baik kegiatan ini dan berharap pel
 
 
 berita::create([
-    'judul' => 'Kunjungan Provinsi Jawa Barat : Implementasi Sipjaki Terhadap Dunia Konstruksi',
-    'user_id' => rand(1,5),
-    'gambar' => 'berita/databerita/berita8.jpeg',
-    'keteranganberita' => '
-<p>Kunjungan dari Pemerintah Provinsi Jawa Barat baru-baru ini fokus pada implementasi Sistem Informasi Pengelolaan Jasa Konstruksi (Sipjaki) yang bertujuan untuk merevolusi sektor konstruksi di wilayah tersebut. Dalam kunjungan ini, para pejabat dan teknisi dari provinsi melakukan evaluasi mendalam mengenai penerapan Sipjaki di lapangan serta dampaknya terhadap efisiensi dan transparansi dalam pengelolaan proyek konstruksi. Sipjaki diharapkan menjadi solusi teknologi yang dapat menyederhanakan proses administrasi dan meningkatkan akuntabilitas dalam sektor konstruksi.</p>
-
-<p>Implementasi Sipjaki menawarkan platform digital yang komprehensif untuk mengelola berbagai aspek dari proyek konstruksi, mulai dari perizinan, pengawasan, hingga pelaporan. Dengan fitur-fitur yang memungkinkan pemantauan secara real-time, sistem ini bertujuan untuk mengurangi birokrasi dan mempercepat proses administrasi. Selama kunjungan, para pejabat mengevaluasi bagaimana sistem ini telah diterapkan di berbagai proyek dan bagaimana sistem ini dapat diintegrasikan lebih lanjut untuk memaksimalkan manfaatnya bagi industri konstruksi.</p>
-
-<p>Kunjungan ini juga mencakup sesi diskusi dengan para pelaku industri konstruksi lokal untuk mendapatkan umpan balik mengenai penggunaan Sipjaki. Para kontraktor, pengembang, dan penyedia jasa konstruksi berbagi pengalaman mereka dalam menggunakan sistem, mengidentifikasi tantangan yang dihadapi, dan memberikan rekomendasi untuk perbaikan. Hal ini penting untuk memastikan bahwa sistem yang diterapkan benar-benar sesuai dengan kebutuhan dan tantangan yang ada di lapangan, serta dapat memberikan manfaat yang maksimal bagi semua pihak terkait.</p>
-
-<p>Sebagai bagian dari upaya berkelanjutan untuk meningkatkan kualitas dan efisiensi di sektor konstruksi, Pemerintah Provinsi Jawa Barat berkomitmen untuk mendukung pengembangan dan penerapan teknologi seperti Sipjaki. Kunjungan ini tidak hanya bertujuan untuk mengevaluasi kemajuan implementasi tetapi juga untuk merencanakan langkah-langkah selanjutnya dalam pengembangan sistem. Dengan dukungan dan evaluasi yang terus-menerus, diharapkan bahwa Sipjaki akan semakin meningkatkan kinerja dan transparansi sektor konstruksi di Jawa Barat.</p>
-',
-    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
-    'created_at' => Carbon::now(),
-    'updated_at' => Carbon::now(),
-]);
-
-berita::create([
     'judul' => 'Pemerintah Kabupaten Bandung Barat Luncurkan Sistem Informasi Pembina Jasa Konstruksi untuk Meningkatkan Transparansi dan Efisiensi',
     'user_id' => rand(1,5),
     'gambar' => 'berita/databerita/berita2.jpg',
@@ -4266,6 +4248,60 @@ berita::create([
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
+
+
+berita::create([
+    'judul' => 'Kunjungan Provinsi Jawa Barat : Implementasi Sipjaki Terhadap Dunia Konstruksi',
+    'user_id' => rand(1,5),
+    'gambar' => 'berita/databerita/berita8.jpeg',
+    'keteranganberita' => '
+<p>Kunjungan dari Pemerintah Provinsi Jawa Barat baru-baru ini fokus pada implementasi Sistem Informasi Pengelolaan Jasa Konstruksi (Sipjaki) yang bertujuan untuk merevolusi sektor konstruksi di wilayah tersebut. Dalam kunjungan ini, para pejabat dan teknisi dari provinsi melakukan evaluasi mendalam mengenai penerapan Sipjaki di lapangan serta dampaknya terhadap efisiensi dan transparansi dalam pengelolaan proyek konstruksi. Sipjaki diharapkan menjadi solusi teknologi yang dapat menyederhanakan proses administrasi dan meningkatkan akuntabilitas dalam sektor konstruksi.</p>
+
+<p>Implementasi Sipjaki menawarkan platform digital yang komprehensif untuk mengelola berbagai aspek dari proyek konstruksi, mulai dari perizinan, pengawasan, hingga pelaporan. Dengan fitur-fitur yang memungkinkan pemantauan secara real-time, sistem ini bertujuan untuk mengurangi birokrasi dan mempercepat proses administrasi. Selama kunjungan, para pejabat mengevaluasi bagaimana sistem ini telah diterapkan di berbagai proyek dan bagaimana sistem ini dapat diintegrasikan lebih lanjut untuk memaksimalkan manfaatnya bagi industri konstruksi.</p>
+
+<p>Kunjungan ini juga mencakup sesi diskusi dengan para pelaku industri konstruksi lokal untuk mendapatkan umpan balik mengenai penggunaan Sipjaki. Para kontraktor, pengembang, dan penyedia jasa konstruksi berbagi pengalaman mereka dalam menggunakan sistem, mengidentifikasi tantangan yang dihadapi, dan memberikan rekomendasi untuk perbaikan. Hal ini penting untuk memastikan bahwa sistem yang diterapkan benar-benar sesuai dengan kebutuhan dan tantangan yang ada di lapangan, serta dapat memberikan manfaat yang maksimal bagi semua pihak terkait.</p>
+
+<p>Sebagai bagian dari upaya berkelanjutan untuk meningkatkan kualitas dan efisiensi di sektor konstruksi, Pemerintah Provinsi Jawa Barat berkomitmen untuk mendukung pengembangan dan penerapan teknologi seperti Sipjaki. Kunjungan ini tidak hanya bertujuan untuk mengevaluasi kemajuan implementasi tetapi juga untuk merencanakan langkah-langkah selanjutnya dalam pengembangan sistem. Dengan dukungan dan evaluasi yang terus-menerus, diharapkan bahwa Sipjaki akan semakin meningkatkan kinerja dan transparansi sektor konstruksi di Jawa Barat.</p>
+',
+    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+
+berita::create([
+    'judul' => 'Pelatihan Jasa Konstruksi di Kecamatan Cipatat: Tingkatkan Kompetensi Para Pekerja',
+    'user_id' => rand(1,5),
+    'gambar' => 'dokumentasipelatihan/cipatat/cipatat1.jpeg',
+    'keteranganberita' => '
+<p>Kecamatan Cipatat mengadakan kegiatan pelatihan jasa konstruksi bagi para tenaga kerja dan aparatur pemerintahan sebagai bentuk peningkatan kapasitas sumber daya manusia di bidang konstruksi. Kegiatan ini diinisiasi oleh Pemerintah Kabupaten Bandung Barat melalui Dinas PUPR dan mendapat dukungan penuh dari pemerintah kecamatan setempat.</p>
+
+<p>Pelatihan tersebut mencakup materi tentang pemahaman peraturan jasa konstruksi, penggunaan aplikasi <strong>Sistem Informasi Pembina Jasa Konstruksi (Sipjaki)</strong>, serta tata cara pelaporan kegiatan konstruksi yang baik dan sesuai standar. Peserta juga mendapatkan pembekalan mengenai pentingnya sertifikasi kompetensi kerja (SKK) dalam meningkatkan daya saing tenaga kerja lokal di bidang konstruksi.</p>
+
+<p>Camat Cipatat dalam sambutannya menyampaikan bahwa pelatihan ini diharapkan dapat membuka wawasan dan meningkatkan kemampuan teknis para peserta, terutama dalam hal pengelolaan data jasa konstruksi berbasis digital. Pemerintah daerah berkomitmen untuk terus mengadakan kegiatan serupa agar kualitas sumber daya manusia di sektor konstruksi semakin meningkat dan siap bersaing secara profesional.</p>
+',
+    'tanggal' => Carbon::now()->toDateString(),
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+berita::create([
+    'judul' => 'Kolaborasi Kecamatan Cipatat dan Dinas PUPR : Penguatan Pelatihan Para Pekerja Melalui Pelatihan Jasa Konstruksi',
+    'user_id' => rand(1,5),
+    'gambar' => 'dokumentasipelatihan/cipatat/cipatat2.jpeg',
+    'keteranganberita' => '
+<p>Pemerintah Kecamatan Cipatat menjalin kerja sama erat dengan Dinas PUPR Kabupaten Bandung Barat dalam memperkuat pengelolaan data konstruksi berbasis digital melalui pelatihan jasa konstruksi. Kolaborasi ini merupakan bagian dari upaya implementasi <strong>Sipjaki</strong> yang diharapkan mampu meningkatkan efisiensi, transparansi, dan akurasi data sektor konstruksi di wilayah Cipatat.</p>
+
+<p>Melalui kegiatan ini, aparatur kecamatan, perangkat desa, dan perwakilan pelaku jasa konstruksi dilatih untuk memahami cara penginputan, validasi, dan sinkronisasi data konstruksi agar selaras dengan sistem yang digunakan oleh kabupaten. Dinas PUPR memberikan pendampingan teknis langsung untuk memastikan seluruh peserta mampu menerapkan sistem dengan benar di lapangan.</p>
+
+<p>Kegiatan kolaboratif ini menjadi langkah strategis dalam membangun tata kelola sektor konstruksi yang lebih baik di tingkat kecamatan. Dengan penguatan data yang terintegrasi, Pemerintah Kecamatan Cipatat berharap seluruh proyek konstruksi dapat terpantau secara menyeluruh, akurat, dan akuntabel melalui platform Sipjaki.</p>
+',
+    'tanggal' => Carbon::now()->toDateString(),
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+
 
 // =================================== ===================================== ===========================
 layanankami::create([
@@ -5072,6 +5108,28 @@ kegiatanjaskon::create([
                 'berita18' => 'dokumentasipelatihan/new/18_CB.jpg',
                 'berita19' => 'dokumentasipelatihan/new/19_CB.jpg',
                 'berita20' => 'dokumentasipelatihan/new/20_CB.jpg',
+
+                'tanggal' => '2024-12-02', // Format tanggal YYYY-MM-DD
+                'created_at' => now(),
+                'updated_at' => now(),
+]);
+
+kegiatanjaskon::create([
+                // 'laporankegiatan_id' => 2, // Ganti dengan ID yang sesuai jika menggunakan foreign key
+                'id' => 3,           // Ganti dengan ID yang sesuai jika menggunakan foreign key
+                'user_id' => 1,           // Ganti dengan ID yang sesuai jika menggunakan foreign key
+                'judul_kegiatan' => 'KECAMATAN CIPATAT BIMBINGAN TEKNIS KESELAMATAN DAN KESEHATAN KERJA PARA PEKERJA KONSTRUKSI',
+                'alamat_kegiatan' => 'DESA CIPATAT 4055 JAWA BARAT INDONESIA',
+                'pengawasanlokasi_id' => '17',
+                'tanggal' => '',
+                'berita1' => 'dokumentasipelatihan/cipatat/cipatat1.jpeg',
+                'berita2' => 'dokumentasipelatihan/cipatat/cipatat2.jpeg',
+                'berita3' => 'dokumentasipelatihan/cipatat/cipatat3.jpeg',
+                'berita4' => 'dokumentasipelatihan/cipatat/cipatat4.jpeg',
+                'berita5' => 'dokumentasipelatihan/cipatat/cipatat5.jpeg',
+                'berita6' => 'dokumentasipelatihan/cipatat/cipatat6.jpeg',
+                'berita7' => 'dokumentasipelatihan/cipatat/cipatat7.jpeg',
+                'berita8' => 'dokumentasipelatihan/cipatat/cipatat8.jpeg',
 
                 'tanggal' => '2024-12-02', // Format tanggal YYYY-MM-DD
                 'created_at' => now(),

@@ -71,7 +71,20 @@
 
                     <div class="position-relative overflow-hidden" style="height: 500px;">
                         <a href="/portalberita/{{ $item->judul}}">
-                            <img class="img-fluid h-100" src="{{ asset('storage/' . $item->gambar) }}" style="object-fit: cover;">
+                        <div style="margin-top: 0px; height: 100%;">
+    @if($item->gambar && file_exists(public_path('storage/' . $item->gambar)))
+        <!-- Jika file ada di storage -->
+        <img class="img-fluid h-100" src="{{ asset('storage/' . $item->gambar) }}" style="object-fit: cover;" alt="Gambar" loading="lazy">
+    @elseif($item->gambar)
+        <!-- Jika path luar storage -->
+        <img class="img-fluid h-100" src="{{ asset($item->gambar) }}" style="object-fit: cover;" alt="Gambar" loading="lazy">
+    @else
+        <!-- Placeholder -->
+        <div class="d-flex justify-content-center align-items-center h-100" style="background-color: #f8f9fa; border-radius: 8px;">
+            <p class="text-muted mb-0">Data belum diupdate</p>
+        </div>
+    @endif
+</div>
 
                         </a>
                         <div class="overlay">
@@ -93,26 +106,30 @@
             </div>
             <div class="col-lg-5 px-0">
                 <div class="row mx-0">
+@foreach ($data->sortByDesc('id')->take(4) as $item)
+    <div class="col-md-6 px-0">
+        <a href="/portalberita/{{ $item->judul }}">
+            <div class="position-relative overflow-hidden" style="height: 250px;">
+                @if($item->gambar && file_exists(public_path('storage/' . $item->gambar)))
+                    <img class="img-fluid w-100 h-100" src="{{ asset('storage/' . $item->gambar) }}" style="object-fit: cover;" alt="{{ $item->judul }}">
+                @elseif($item->gambar)
+                    <img class="img-fluid w-100 h-100" src="{{ asset($item->gambar) }}" style="object-fit: cover;" alt="{{ $item->judul }}">
+                @else
+                    <div class="d-flex justify-content-center align-items-center w-100 h-100 bg-light">
+                        <p class="text-muted mb-0">Data belum diupdate</p>
+                    </div>
+                @endif
 
-                    @foreach ($data->slice(-4) as $item)
-
-                        <div class="col-md-6 px-0">
-                            <a href="/portalberita/{{$item->judul}}">
-
-                                <div class="position-relative overflow-hidden" style="height: 250px;">
-                                    <img class="img-fluid w-100 h-100" src="{{ asset('storage/'. $item->gambar )}}" style="object-fit: cover;">
-                                    <div class="overlay">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2" href="/portalberita/{{$item->judul}}">News</a>
-                                        {{-- <a class="text-white" href=""><small>Jan 01, 2045</small></a> --}}
-                                    </div>
-                                    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="/portalberita/{{$item->judul}}">{{ $item->judul }}</a>
-                                </div>
-                            </a>
-
-                            </div>
-                        </div>
-                    @endforeach
+                <div class="overlay">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2" href="/portalberita/{{ $item->judul }}">News</a>
+                    </div>
+                    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="/portalberita/{{ $item->judul }}">{{ $item->judul }}</a>
+                </div>
+            </div>
+        </a>
+    </div>
+@endforeach
 
                 </div>
             </div>
@@ -175,7 +192,7 @@
 
             </div>
                     <!-- Popular News Start -->
-                    <div class="mb-3 mt-0">
+                    <div class="mb-6 mt-0" style="margin-bottom:50px;">
                         <div class="section-title mb-0">
                             <h4 class="m-0 text-uppercase font-weight-bold">
                                <img src="/assets/icon/sipjakikbb.png" alt="/assets/icon/sipjakikbb.png" style="width: 40px;"> KEGIATAN SERTIFIKASI JASA KONSTRUKSI </h4>
@@ -229,25 +246,58 @@
 
                             <div class="scroll-container">
                                 <div class="scrolling-content">
-                                    <img src="{{ asset('storage/' . $item->berita1 )}}" alt="{{ asset('storage/' . $item->berita1 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita2 )}}" alt="{{ asset('storage/' . $item->berita2 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita3 )}}" alt="{{ asset('storage/' . $item->berita3 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita4 )}}" alt="{{ asset('storage/' . $item->berita4 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita5 )}}" alt="{{ asset('storage/' . $item->berita5 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita6 )}}" alt="{{ asset('storage/' . $item->berita6 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita7 )}}" alt="{{ asset('storage/' . $item->berita7 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita8 )}}" alt="{{ asset('storage/' . $item->berita8 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita9 )}}" alt="{{ asset('storage/' . $item->berita9 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita10 )}}" alt="{{ asset('storage/' . $item->berita10 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita11 )}}" alt="{{ asset('storage/' . $item->berita12 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita12 )}}" alt="{{ asset('storage/' . $item->berita13 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita13 )}}" alt="{{ asset('storage/' . $item->berita14 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita15 )}}" alt="{{ asset('storage/' . $item->berita15 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita16 )}}" alt="{{ asset('storage/' . $item->berita16 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita17 )}}" alt="{{ asset('storage/' . $item->berita17 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita18 )}}" alt="{{ asset('storage/' . $item->berita18 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita19 )}}" alt="{{ asset('storage/' . $item->berita19 )}}">
-                                    <img src="{{ asset('storage/' . $item->berita20 )}}" alt="{{ asset('storage/' . $item->berita20 )}}">
+
+<style>
+    .berita-marquee {
+        display: flex;
+        flex-direction: row-reverse; /* tampil dari kanan ke kiri */
+        gap: 12px;
+        overflow: hidden; /* sembunyikan yang di luar area */
+        white-space: nowrap;
+        position: relative;
+        animation: scroll-rtl 60s linear infinite; /* animasi 60 detik agar santai */
+        padding: 10px;
+    }
+
+    .berita-marquee img {
+        width: 220px;
+        height: 140px;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        display: inline-block;
+        margin-right: 12px;
+    }
+
+    @keyframes scroll-rtl {
+        from { transform: translateX(0); }
+        to { transform: translateX(100%); } /* berjalan dari kanan ke kiri */
+    }
+
+    .berita-container {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+    }
+</style>
+
+<div class="berita-container">
+    <div class="berita-marquee">
+        @foreach(range(1, 20) as $i)
+            @php $field = 'berita' . $i; @endphp
+            @if(!empty($item->$field))
+                @if(file_exists(public_path('storage/' . $item->$field)))
+                    <img src="{{ asset('storage/' . $item->$field) }}" alt="Berita {{ $i }}" loading="lazy">
+                @else
+                    <img src="{{ asset($item->$field) }}" alt="Berita {{ $i }}" loading="lazy">
+                @endif
+            @endif
+        @endforeach
+    </div>
+</div>
+
+
 
                                 </div>
                             </div>

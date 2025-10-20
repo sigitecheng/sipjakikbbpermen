@@ -21,34 +21,33 @@ use Illuminate\Support\Facades\Auth;
 
 class FedashboardController extends Controller
 {
+
     public function index()
-    {
-        $data = berita::orderBy('created_at', 'desc')->get(); //
-        $databerita = berita::orderBy('created_at', 'desc')->get(); //
-        $data_layanankami = layanankami::orderBy('created_at', 'desc')->get(); //
-        $data_kegiatanjaskon = kegiatanjaskon::orderBy('created_at', 'desc')->get(); //
-        $dataqapertanyaan = qa::orderBy('created_at', 'desc')->get(); //
-        $dataqasebagai = qasebagai::orderBy('created_at', 'desc')->get(); //
-        $dataqapertanyaan = qapertanyaan::orderBy('created_at', 'desc')->get(); //
+{
+    $user = Auth::user();
 
-        $himbauandinas = himbauandinas::orderBy('created_at', 'desc')->get(); //
+    // Semua data diurutkan berdasarkan ID terbesar (data terbaru muncul duluan)
+    $data = berita::orderBy('id', 'desc')->get();
+    $databerita = berita::orderBy('id', 'desc')->get();
+    $data_layanankami = layanankami::orderBy('id', 'desc')->get();
+    $dataqasebagai = qasebagai::orderBy('id', 'desc')->get();
+    $dataqapertanyaan = qapertanyaan::orderBy('id', 'desc')->get();
+    $himbauandinas = himbauandinas::orderBy('id', 'desc')->get();
+    $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
 
-        $user = Auth::user();
+    return view('frontend.00_full.index', [
+        'title' => 'SIPJAKI Kabupaten Bandung Barat',
+        'data' => $data,
+        'databerita' => $databerita,
+        'data_layanankami' => $data_layanankami,
+        'data_jaskon' => $data_kegiatanjaskon,
+        'dataqasebagai' => $dataqasebagai,
+        'dataqapertanyaan' => $dataqapertanyaan,
+        'datahimbauandinas' => $himbauandinas,
+        'user' => $user,
+    ]);
+}
 
-
-        return view('frontend.00_full.index', [
-            'title' => 'SIPJAKI Kabupaten Bandung Barat',
-            'data' => $data, // Mengirimkan data paginasi ke view
-            'dataqapertanyaan' => $dataqapertanyaan, // Mengirimkan data paginasi ke view
-            'data_layanankami' => $data_layanankami, // Mengirimkan data paginasi ke view
-            'data_jaskon' => $data_kegiatanjaskon, // Mengirimkan data paginasi ke view
-            'dataqasebagai' => $dataqasebagai, // Mengirimkan data paginasi ke view
-            'dataqapertanyaan' => $dataqapertanyaan, // Mengirimkan data paginasi ke view
-            'datahimbauandinas' => $himbauandinas, // Mengirimkan data paginasi ke view
-            'user' => $user, // Mengirimkan data paginasi ke view
-            'databerita' => $databerita, // Mengirimkan data paginasi ke view
-        ]);
-    }
 
     // public function createstorepertanyaanpublik(Request $request)
     //         {
