@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 <div class="container mt-0 mb-0">
     <div style="display: flex; align-items: center; ">
         <img src="/assets/icon/sipjakikbb.png" alt="Logo SIPJAKIKBB" style="width: 60px; height: 60px; object-fit: cover; padding: 0;">
@@ -62,27 +64,32 @@
 
         <a href="/">DASHBOARD</a>
 
-        <div class="dropdown">
-            <a href="#" class="dropdown-toggle">PROFIL</a>
-            {{-- <i class="fas fa-chevron-down arrow"></i> --}}
-            <div class="dropdown-content" style="min-width: 400px;">
-                <div style="display: inline-flex; align-items: center; color: black; text-decoration: none;">
-                    <i class="fas fa-building" style="margin-left: 3px; margin-right: 0px; background: linear-gradient(90deg, black, yellow); color:white;"></i>
-                    <a href="/profil/struktur" style="color: black; text-decoration: none; text-align:left">STRUKTUR DINAS PEKERJAAN UMUM DAN PENATAAN RUANG PEMERINTAH KABUPATEN BANDUNG BARAT</a>
-                </div>
+<div class="dropdown">
+    <a href="#" class="dropdown-toggle">PROFIL</a>
+    {{-- <i class="bi bi-chevron-down arrow"></i> --}}
+    <div class="dropdown-content" style="min-width: 150px;">
+        <div style="display: inline-flex; align-items: center; color: black; text-decoration: none;">
+            <i class="bi bi-building" style="margin-left: 3px; margin-right: 0px; color: black;"></i>
+            <a href="/profil/struktur" style="color: black; text-decoration: none; text-align:left">
+                STRUKTUR
+            </a>
+        </div>
 
-                <div style="display: inline-flex; align-items: center; color: black; text-decoration: none;">
-                    <i class="fas fa-tasks" style="margin-left: 3px; margin-right: 0px; background: linear-gradient(90deg, black, yellow); color:white;"></i>
-                    <a href="/profil/rencanastrategis" style="color: black; text-decoration: none; text-align:left">RENSTRA PROGRAM DAN JASA KONSTRUKSI</a>
-                </div>
+        <div style="display: inline-flex; align-items: center; color: black; text-decoration: none;">
+            <i class="bi bi-list-task" style="margin-left: 3px; margin-right: 0px; color: black;"></i>
+            <a href="/profil/rencanastrategis" style="color: black; text-decoration: none; text-align:left">
+                RENSTRA
+            </a>
+        </div>
 
-                <div style="display: inline-flex; align-items: center; color: black; text-decoration: none;">
-                    <i class="fas fa-clipboard-list" style="margin-left: 3px; margin-right: 0px; background: linear-gradient(90deg, black, yellow); color:white;"></i>
-                    <a href="/profil/tupoksi" style="color: black; text-decoration: none; text-align:left">TUPOKSI PROGRAM DAN JASA KONSTRUKSI</a>
-                </div>
-            </div>
-
-        </div>                    {{-- <a href="#">PROFIL</a> --}}
+        <div style="display: inline-flex; align-items: center; color: black; text-decoration: none;">
+            <i class="bi bi-clipboard-check" style="margin-left: 3px; margin-right: 0px; color: black;"></i>
+            <a href="/profil/tupoksi" style="color: black; text-decoration: none; text-align:left">
+                TUPOKSI
+            </a>
+        </div>
+    </div>
+</div>
 
         <div class="dropdown">
             <a href="#" class="dropdown-toggle">BERITA</a>
