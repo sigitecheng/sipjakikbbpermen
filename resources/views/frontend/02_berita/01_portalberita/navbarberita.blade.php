@@ -8,36 +8,48 @@
 <section id="sec-0">
     <div class="div" style="z-index: 9999; position: fixed;
     top: 0; left: 0; width: 100%; z-index: 9999;
-    background-color: white; border-bottom: 1px solid black; 
+    background-color: white; border-bottom: 1px solid black;
     ">
 
 @include('frontend.00_atas.header1')
 <header>
-    
+
         @include('frontend.00_atas.header2_navbar')
-    
+
 </div>
 </header>
 
 {{-- ======================================================================================================================= --}}
 {{-- ======================================================================================================================= --}}
-   
+
 
 
 
     <!-- Main News Slider Start -->
-    <div class="container-fluid" style="margin-top:165px;">
+    <div class="container-fluid" style="margin-top:2.5px;">
         <div class="row">
             <div class="col-lg-7 px-0">
                 <div class="owl-carousel main-carousel position-relative">
-                  
+
                     @foreach ($data as $item )
-                        
-                    
+
+
                     <div class="position-relative overflow-hidden" style="height: 500px;">
                         <a href="/portalberita/{{ $item->judul}}">
-                            <img class="img-fluid h-100" src="{{asset('storage/' . $item->gambar ) }}" style="object-fit: cover;">
-                        </a>
+                        <div style="margin-top: 0px; height: 100%;">
+    @if($item->gambar && file_exists(public_path('storage/' . $item->gambar)))
+        <!-- Jika file ada di storage -->
+        <img class="img-fluid h-100" src="{{ asset('storage/' . $item->gambar) }}" style="object-fit: cover;" alt="Gambar" loading="lazy">
+    @elseif($item->gambar)
+        <!-- Jika path luar storage -->
+        <img class="img-fluid h-100" src="{{ asset($item->gambar) }}" style="object-fit: cover;" alt="Gambar" loading="lazy">
+    @else
+        <!-- Placeholder -->
+        <div class="d-flex justify-content-center align-items-center h-100" style="background-color: #f8f9fa; border-radius: 8px;">
+            <p class="text-muted mb-0">Data belum diupdate</p>
+        </div>
+    @endif
+</div>   </a>
                         <div class="overlay">
                             <div class="mb-2">
                                 <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
@@ -47,37 +59,41 @@
                             <a class="h2 m-0 text-white text-uppercase font-weight-bold" style="font-size: 24px;" href="/portalberita/{{ $item->judul}}">{{ $item->judul }}</a>
                         </div>
                     </div>
-                    
-                    
+
+
                     @endforeach
-                    
+
 
 
                 </div>
             </div>
             <div class="col-lg-5 px-0">
                 <div class="row mx-0">
-                    @foreach ($data->slice(-4) as $item)
-        
-                        <div class="col-md-6 px-0">
-                            <a href="/portalberita/{{$item->judul}}">
 
-                                <div class="position-relative overflow-hidden" style="height: 250px;">
-                                    <img class="img-fluid w-100 h-100" src="{{asset('storage/' . $item->gambar ) }}" style="object-fit: cover;">
-                                    <div class="overlay">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2" href="/portalberita/{{$item->judul}}">News</a>
-                                        {{-- <a class="text-white" href=""><small>Jan 01, 2045</small></a> --}}
-                                    </div>
-                                    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="/portalberita/{{$item->judul}}">{{ $item->judul }}</a>
-                                </div>
-                            </a>
+@foreach ($data->sortByDesc('id')->take(4) as $item)
+    <div class="col-md-6 px-0">
+        <a href="/portalberita/{{ $item->judul }}">
+            <div class="position-relative overflow-hidden" style="height: 250px;">
+                @if($item->gambar && file_exists(public_path('storage/' . $item->gambar)))
+                    <img class="img-fluid w-100 h-100" src="{{ asset('storage/' . $item->gambar) }}" style="object-fit: cover;" alt="{{ $item->judul }}">
+                @elseif($item->gambar)
+                    <img class="img-fluid w-100 h-100" src="{{ asset($item->gambar) }}" style="object-fit: cover;" alt="{{ $item->judul }}">
+                @else
+                    <div class="d-flex justify-content-center align-items-center w-100 h-100 bg-light">
+                        <p class="text-muted mb-0">Data belum diupdate</p>
+                    </div>
+                @endif
 
-                            </div>
-                        </div>
-                    @endforeach
-
+                <div class="overlay">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2" href="/portalberita/{{ $item->judul }}">News</a>
+                    </div>
+                    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="/portalberita/{{ $item->judul }}">{{ $item->judul }}</a>
                 </div>
+            </div>
+        </a>
+    </div>
+@endforeach                </div>
             </div>
         </div>
     </div>
@@ -117,7 +133,7 @@
 
 
                 @foreach ( $data as $item )
-                    
+
                 <div class="position-relative overflow-hidden" style="height: 300px;">
                     <img class="img-fluid h-100" src="{{asset('storage/' . $item->gambar ) }}" style="object-fit: cover; padding:10px;">
                     <div class="overlay">
@@ -129,7 +145,7 @@
                         <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="/portalberita/{{$item->judul}}">{{$item->judul}}</a>
                     </div>
                 </div>
-                
+
                 @endforeach
 
             </div>
@@ -138,7 +154,7 @@
 
     <br>
 {{-- <p>fjnfdjbnf</p> --}}
-        
+
     </section>
 
 
@@ -150,7 +166,7 @@
   {{-- ------------------------------------------------------------------------------------------ --}}
   {{-- ------------------------------------------------------------------------------------------ --}}
   {{-- ------------------------------------------------------------------------------------------ --}}
-   
+
     {{-- ------------------------------------------------------------------------------ --}}
     {{-- ------------------------------------------------------------------------------ --}}
     {{-- ------------------------------------------------------------------------------ --}}

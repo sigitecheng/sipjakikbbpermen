@@ -100,19 +100,17 @@ class FedashboardController extends Controller
         ]);
     }
 
-    public function navbarberita()
-    {
-        $data= berita::orderBy('created_at', 'desc')->get();; //
+public function navbarberita()
+{
+    $data = berita::orderBy('id', 'desc')->get(); // ID terbaru muncul pertama
+    $user = Auth::user();
 
-        $user = Auth::user();
-
-
-        return view('frontend.02_berita.01_portalberita.navbarberita', [
-            'title' => 'Berita KBB',
-            'data' => $data, // Mengirimkan data paginasi ke view
-            'user' => $user, // Mengirimkan data paginasi ke view
-        ]);
-    }
+    return view('frontend.02_berita.01_portalberita.navbarberita', [
+        'title' => 'Berita Jasa Konstruksi',
+        'data' => $data,
+        'user' => $user,
+    ]);
+}
 
 
     public function kegiatansertifikasi()
