@@ -11,43 +11,54 @@
     <label for="menu"><i class="fas fa-bars"></i></label>
     <input type="checkbox" id="menu">
     <nav>
-        <style>
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-            .dropdown a {
-                display: flex;
-                align-items: center;
-                text-decoration: none;
-                color: black; /* Warna teks untuk tautan PROFIL */
-            }
-            .dropdown .arrow {
-                margin-left: 5px;
-                color: black; /* Warna teks untuk panah */
-                font-size: 0.8em; /* Ukuran ikon panah */
-            }
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 325px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-            .dropdown-content a {
-                color: black; /* Warna teks untuk menu dropdown */
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-            .dropdown-content a:hover {
-                background-color: #f1f1f1;
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-        </style>
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        z-index: 1000; /* pastikan di atas elemen lain */
+    }
+
+    .dropdown a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .dropdown .arrow {
+        margin-left: 5px;
+        color: black;
+        font-size: 0.8em;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%; /* muncul tepat di bawah tombol */
+        left: 0;
+        background-color: #f9f9f9;
+        min-width: 325px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2000; /* sangat tinggi supaya nggak ketutup */
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
 
         <a href="/">DASHBOARD</a>
 
