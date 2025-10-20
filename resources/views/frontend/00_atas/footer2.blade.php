@@ -1,29 +1,42 @@
 
-<section style="height: 12vh; margin-top: 2px; background-color: #FFCB0F;">
-    <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%;">
-        <img src="/assets/icon/pusipjaki.png" alt="Logo SIPJAKIKBB" style="margin-bottom: 5px; width: 10%; padding: 0;">
-        <p style="color: darkblue; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 400; margin: 0;">@2024 | Designed by <a href="https://wa.me/6281321455855" style="color: black">CV. Angkasa Raya Teknik</a></p>
+<!-- Footer Section -->
+<section class="footer-section" style="height: 8vh; min-height: 60px;">
+    <div class="footer-container" style="height: 100%;">
+        <div class="footer-content" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="footer-logos">
+                {{-- <img src="/assets/icon/pusipjaki.png" alt="Logo SIPJAKIKBB" class="footer-logo main-logo"> --}}
+                {{-- <div class="additional-logos">
+                    <img src="/assets/icon/pupr.png" alt="Logo PUPR" class="footer-logo secondary-logo" width="50px;" height="50px;">
+                    <img src="/assets/icon/sipjakikbb.png" alt="Logo SIPJAKIKBB" class="footer-logo secondary-logo" width="70px;" height="70px;">
+                </div> --}}
+            </div>
+
+            <p class="footer-text" style="margin: 0;">
+                <span style="color: black;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</span>
+                {{-- <span style="color: green;"><a href="https://wa.me/6281321455855" class="footer-link">CV. Angkasa Raya Teknik</a></span> --}}
+            </p>
+
+            <p class="footer-text" style="margin: 0;">
+                <span style="color: black;">@2025 | Build and Deploy by </span>
+                <span style="color: green;"><a href="https://wa.me/6281321455855" class="footer-link">CV. Angkasa Raya Teknik</a></span>
+            </p>
+        </div>
     </div>
 </section>
 
 @include('tambahan.portalberitafooter')
 
-
-<!-- Menyertakan html2canvas -->
+<!-- External Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
-<!-- Menyertakan jsPDF -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.6.0/jspdf.umd.min.js"></script>
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-<!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
 <script src="/assets/bahan1/js/wow.min.js"></script>
-<script> new WOW().init();</script>
 <script src="/assets/bahan1/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    new WOW().init();
+</script>
 
 {{-- ------------------------------------------------------------------------------- --}}
 {{-- ------------------------------------------------------------------------------- --}}
