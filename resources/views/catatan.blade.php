@@ -1,7 +1,15 @@
-CATATAN KODE 
+catatan ssh
+
+ssh -p 65002 u870730769@153.92.9.229
 
 
-UNTUK SPASI 
+password : Adminadmin123$$
+
+
+CATATAN KODE
+
+
+UNTUK SPASI
 <div>
     {!! nl2br(e($laporankegiatan->keterangan_berita)) !!}
 </div>
@@ -47,12 +55,12 @@ UNTUK SPASI
                             </form>
                         </div>
 
-                        
+
                     </div>
 
                     {{-- KOMENTAR --}}
 
-                    
+
                     <!-- Comment List Start -->
                     <div class="mb-3">
                         <div class="section-title mb-0">

@@ -71,7 +71,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        
+
         // Asosiasipengusaha::factory(15)->create();
         // Paketpekerjaan::factory(15)->create();
         // Penanggungjawabteknis::factory(15)->create();
@@ -79,23 +79,23 @@ class DatabaseSeeder extends Seeder
         // Beritaagenda::factory(15)->create();
         // User::factory(15)->create();
         // // \App\Models\sertifikasiagenda::factory(15)->create();
-        
+
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
 
-        
+
         // asosiasipengusaha::factory(15)->create();
         // paketpekerjaan::factory(15)->create();
         // penanggungjawabteknis::factory(15)->create();
         // ketertiban::factory(15)->create();
-        // beritaagenda::factory(15)->create();  
+        // beritaagenda::factory(15)->create();
         // Qa::factory(15)->create();
         // BAHAN TUKANG TERAMPIL BLORA
         Tukangterampil::factory(994)->create();
-                       
-// =============== CREATE TIM ASOSIASI PENGUSAHA 
+
+// =============== CREATE TIM ASOSIASI PENGUSAHA
 asosiasipengusaha::create([
     'nama_asosiasi' => 'Asosiasi Pengusaha Konstruksi Indonesia',
     'alamat_kantor' => 'Jl. Raya Konstruksi No. 123, Bandung, Jawa Barat',
@@ -278,8 +278,8 @@ asosiasipengusaha::create([
     'status' => 'AKTIF',
 ]);
 
-                 
-// =============== CREATE PAKET PEKERJAAN 
+
+// =============== CREATE PAKET PEKERJAAN
 
 paketpekerjaan::create([
     'metodepengadaan_id' => 2,
@@ -401,8 +401,8 @@ paketpekerjaan::create([
     'progress_fisik' => '35',
 ]);
 
-                 
-// =============== CREATE PENANGGUNG JAWAB TEKNIS 
+
+// =============== CREATE PENANGGUNG JAWAB TEKNIS
 penanggungjawabteknis::create([
     'pengawasanlokasi_id' => 11, // Pastikan ID ini valid dalam tabel metodepengadaan
     'nama_lengkap' => 'Yuyu Yuhana, ST., MM',
@@ -504,8 +504,8 @@ penanggungjawabteknis::create([
     'masa_berlaku' => '2025-10-12',
 ]);
 
-                 
-// =============== CREATE KETERTIBAN DAN PENGAWASAN 
+
+// =============== CREATE KETERTIBAN DAN PENGAWASAN
 ketertiban::create([
     'pengawasanlokasi_id' => 1,
     'pengawasanbangunangedung_id' => 1,
@@ -595,7 +595,7 @@ ketertiban::create([
 ]);
 
 
-// =============== CREATE BERITA AGENDA 
+// =============== CREATE BERITA AGENDA
 beritaagenda::create([
     'pengawasanlokasi_id' => 11,
     'statusprogram' => 'Selesai',
@@ -678,7 +678,7 @@ beritaagenda::create([
 ]);
 
 
-// =============== CREATE QA PERTANYAAN 
+// =============== CREATE QA PERTANYAAN
 qa::create([
     'qasebagai_id' => 1,
     'qapertanyaan_id' => 3,
@@ -872,7 +872,7 @@ qa::create([
 ]);
 
 
-// =============== CREATE TIM PEMBINA 
+// =============== CREATE TIM PEMBINA
         timpembina::create([
             'jabatandalamkedinasan'  => 'Fungsional Pembina Jasa Konstruksi Ahli Muda',
             'nama_lengkap'  => 'Yuyu Yuhana, ST., MM',
@@ -881,9 +881,9 @@ qa::create([
             // 'alamatkantor'  => 'Kantor Bupati Pemerintah Kabupaten Bandung Barat',
             'telepon'  => '081317051502',
             'fototimpembina'  => 'timpembina/sipjakikbb.png',
-            
+
             // 'Jabatan'  => 'Yuyu Yuhana, ST., MM',
-            
+
         ]);
         // =========================================================
 
@@ -905,7 +905,7 @@ qa::create([
             'email' => 'sipjakikbb@gmail.com',
             'password' => bcrypt('adminadmin$$123')
         ]);
-        
+
         User::create([
             'name'  => 'User 1 Sipjaki',
             'username' => 'sipjakikbbuser$1',
@@ -914,7 +914,7 @@ qa::create([
             'email' => 'sipjakikbbuser1@gmail.com',
             'password' => bcrypt('sipjakiuser$$111')
         ]);
-        
+
         User::create([
             'name'  => 'User 2 Sipjaki',
             'username' => 'sipjakikbbuser$2',
@@ -923,7 +923,7 @@ qa::create([
             'email' => 'sipjakikbbuser2@gmail.com',
             'password' => bcrypt('sipjakiuser$$222')
         ]);
-        
+
         User::create([
             'name'  => 'User 3 Sipjaki',
             'username' => 'sipjakikbbuser$3',
@@ -932,7 +932,7 @@ qa::create([
             'email' => 'sipjakikbbuser3@gmail.com',
             'password' => bcrypt('sipjakiuser$$333')
         ]);
-        
+
         User::create([
             'name'  => 'User 4 Sipjaki',
             'username' => 'sipjakikbbuser$4',
@@ -941,8 +941,8 @@ qa::create([
             'email' => 'sipjakikbbuser4@gmail.com',
             'password' => bcrypt('sipjakiuser$$444')
         ]);
-       
-        
+
+
         // =================================================================
         statusadmin::create([
             'id'  => '1',
@@ -958,12 +958,12 @@ qa::create([
             'id'  => '3',
             'status'  => 'user',
         ]);
-        
+
 
         // ===================================================================================
         // DATA TENAGA KERJA SKK KABUPATEN BANDUNG BARAT
-        // skktenagakerja::factory(1235)->create(); 
-        
+        // skktenagakerja::factory(1235)->create();
+
 
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
@@ -981,7 +981,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/01_WAHYUDIN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/01_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/01_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1004,7 +1004,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/02_JAJANG_JAENUDIN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/02_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/02_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1026,12 +1026,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/03_ADE_SUTARYA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/03_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/03_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cipada',
@@ -1048,12 +1048,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/04_ASEP_SUTISNA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/04_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/04_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Mekarjaya',
@@ -1070,12 +1070,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/05_LILI_SUMANTRI_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/05_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/05_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Mandalasari',
@@ -1092,12 +1092,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/06_SOLIHIN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/06_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/06_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Mandalasari',
@@ -1114,12 +1114,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/07_DANI_SAPRUDIN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/07_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/07_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Puteran',
@@ -1136,13 +1136,13 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/08_ENDANG_SUPRIATNA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/08_CK_KEGIATAN1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/08_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
-        
+
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Puteran',
@@ -1159,12 +1159,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/09_SISWANDI_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/09_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Puteran',
@@ -1181,12 +1181,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/10_PARMAN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/10_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cipada',
@@ -1203,12 +1203,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/11_YUDI_LESMANA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/11_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cipada',
@@ -1225,7 +1225,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/12_ATO_SUGIARTO_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/12_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1247,12 +1247,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/13_SLAMET_TRIADI_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/13_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-     
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Ganjarsari',
@@ -1269,7 +1269,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/14_DEPI_RISMAWAN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/14_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1291,12 +1291,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/15_DADAN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/15_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cisomang Barat',
@@ -1313,12 +1313,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/16_JAJANG_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/16_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cisomang Barat',
@@ -1335,12 +1335,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/17_APIN_ARIPIN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/17_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cisomang Barat',
@@ -1357,12 +1357,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/18_DUYEH_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/18_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Ganjarsari',
@@ -1379,12 +1379,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/19_AYI_NURDIN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/19_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Ganjarsari',
@@ -1401,12 +1401,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/20_ASEP_RAHMAT_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/20_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cikalong Wetan',
@@ -1423,12 +1423,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/21_YANA_HERDIANA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/21_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Wangunjaya',
@@ -1445,12 +1445,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/22_DODO_ABDUL_FATAH_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/22_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cisomang Barat ',
@@ -1467,12 +1467,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/23_WAWAN_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/23_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cisomang Barat ',
@@ -1489,12 +1489,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/24_ENDANG_MUSTOPA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/24_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Wangunjaya',
@@ -1511,7 +1511,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/25_TATANG_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/25_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1533,12 +1533,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/26_YAYAN_MULYANA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/26_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Cisomang Barat',
@@ -1555,12 +1555,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/27_MULYANA_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/27_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Wangunjaya',
@@ -1577,12 +1577,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/28_AYI_SOPANDI_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/28_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Wangunjaya',
@@ -1599,12 +1599,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/29_OBAR_S_BIN_SAPDI_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/29_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Sadangmekar',
@@ -1621,7 +1621,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/30_RIFKI_NOVALIMANI_SKK.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/--.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/30_CK_KEGIATAN2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1647,7 +1647,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/ANTON_HILMAN_SKK_TUKANG_BANGUNAN_GEDUNG__J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/antonkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/antonkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1669,7 +1669,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/ENDANG_SOMANTRI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/endangkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/endangkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1985-03-09'), 
+            // 'usia' => $this->calculateAge('1985-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1691,7 +1691,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/LUBIS_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/lubiskegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/lubiskegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1988-03-09'), 
+            // 'usia' => $this->calculateAge('1988-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1713,7 +1713,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/JAJANG_SAEPUL_MUMIN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/antonkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/antonkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1980-03-09'), 
+            // 'usia' => $this->calculateAge('1980-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1735,7 +1735,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/ABDUL_RIZKIL MAJID_SKK_TUKANG_BANGUNAN GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/abdulkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/abdulkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1992-03-09'), 
+            // 'usia' => $this->calculateAge('1992-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1758,7 +1758,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/MUHAMMAD_HUSNI_PURNAMA_MUIZ_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/husnikegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/husnikegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1780,7 +1780,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/UJANG_MULYANA_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/ujangmulyanakegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/ujangmulyanakegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1995-03-09'), 
+            // 'usia' => $this->calculateAge('1995-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1802,12 +1802,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/HENDRI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/hendrikegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/hendrikegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1980-03-09'), 
+            // 'usia' => $this->calculateAge('1980-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Kidang Panunjang ',
@@ -1824,7 +1824,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/HENDRAWAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/hendrawankegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/hendrawankegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1982-03-09'), 
+            // 'usia' => $this->calculateAge('1982-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1846,7 +1846,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/KARSIM_WIDIANTO_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/kasimkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/kasimkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1975-03-09'), 
+            // 'usia' => $this->calculateAge('1975-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1868,7 +1868,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/MAMAT_HIDAYAT_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/mamatkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/mamatkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1988-03-09'), 
+            // 'usia' => $this->calculateAge('1988-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1890,7 +1890,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/ROHMAT_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/rohmatkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/rohmatkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1975-03-09'), 
+            // 'usia' => $this->calculateAge('1975-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1912,7 +1912,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/NURJAMAH_AMINUDIN_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/nurjamahkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/nurjamahkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1980-03-09'), 
+            // 'usia' => $this->calculateAge('1980-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1934,7 +1934,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/BEBEN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/bebenkegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/bebenkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1985-03-09'), 
+            // 'usia' => $this->calculateAge('1985-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1956,7 +1956,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/PANDI_SUPRIADI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/pandikegiatan1.jpeg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/pandikegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1980-03-09'), 
+            // 'usia' => $this->calculateAge('1980-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -1978,7 +1978,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/SULAEMAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/sulaemankegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/sulaemankegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1990-03-09'), 
+            // 'usia' => $this->calculateAge('1990-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -2000,7 +2000,7 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/AHMAD_EFENDI_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/ahmadefendikegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/ahmadefendikegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1988-03-09'), 
+            // 'usia' => $this->calculateAge('1988-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -2022,12 +2022,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/IAN_SOPIAN_ SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/iankegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/iankegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1982-03-09'), 
+            // 'usia' => $this->calculateAge('1982-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Mukapayung ',
@@ -2044,12 +2044,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/BULDANI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/buldanikegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/buldanikegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1993-03-09'), 
+            // 'usia' => $this->calculateAge('1993-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Nangerang ',
@@ -2066,12 +2066,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/SAEHUDIN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/saehudinkegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/saehudinkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1978-03-09'), 
+            // 'usia' => $this->calculateAge('1978-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Batulayang ',
@@ -2088,12 +2088,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/CECEP_JAMALUDIN_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/cecepjamaludinkegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/cecepjamaludinkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1992-03-09'), 
+            // 'usia' => $this->calculateAge('1992-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Karangmukti ',
@@ -2110,12 +2110,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/YOPI_SOFYAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/yopikegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/yopikegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1995-03-09'), 
+            // 'usia' => $this->calculateAge('1995-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Karangmukti ',
@@ -2132,12 +2132,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/RUKMANA_S_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/rukmanakegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/rukmanakegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1980-03-09'), 
+            // 'usia' => $this->calculateAge('1980-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Batulayang ',
@@ -2154,12 +2154,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/IDRUS_SUPARDI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/idruskegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/idruskegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1980-03-09'), 
+            // 'usia' => $this->calculateAge('1980-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Bongas ',
@@ -2176,12 +2176,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/AGUS_SETIAWAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/agussetiawankegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/agussetiawankegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1984-03-09'), 
+            // 'usia' => $this->calculateAge('1984-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Kidang Panunjang',
@@ -2198,12 +2198,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/DEDE_MEDIANSYAH_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/mediansyahkegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/mediansyahkegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1984-03-09'), 
+            // 'usia' => $this->calculateAge('1984-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Nangerang',
@@ -2220,12 +2220,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/DADANG_EKKI_GUNAWAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/dadangekikegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/dadangekikegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1986-03-09'), 
+            // 'usia' => $this->calculateAge('1986-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Karanganyar',
@@ -2242,12 +2242,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/ADE_SUPRIATNA_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/adesupriatnakegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/adesupriatnakegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1991-03-09'), 
+            // 'usia' => $this->calculateAge('1991-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Mukapayung',
@@ -2264,12 +2264,12 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/AJANG_KUSWANA_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/ajangkuswanakegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/ajangkuswanakegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1987-03-09'), 
+            // 'usia' => $this->calculateAge('1987-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
+
         Tukangterampil::create([
             'pengawasanlokasi_id' => '11',
             'desa' => 'Bongas',
@@ -2286,17 +2286,17 @@ qa::create([
             'skk_pekerja' => 'skktenagakerja/arsip/skk_pekerja/YUSUP_SOPYAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
             'foto_kegiatanpekerja1' => 'skktenagakerja/arsip/foto_kegiatan1/yusufsopiankegiatan1.jpg',
             'foto_kegiatanpekerja2' => 'skktenagakerja/arsip/foto_kegiatan2/yusufsopiankegiatan2.jpg',
-            // 'usia' => $this->calculateAge('1987-03-09'), 
+            // 'usia' => $this->calculateAge('1987-03-09'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-  
-     
 
 
 
-// ====================================================================================================== 
+
+
+// ======================================================================================================
         //     Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2309,12 +2309,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1994-03-09'), 
+        //     'usia' => $this->calculateAge('1994-03-09'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-    
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2327,12 +2327,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1993-03-26'), 
+        //     'usia' => $this->calculateAge('1993-03-26'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-    
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2345,12 +2345,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1998-10-24'), 
+        //     'usia' => $this->calculateAge('1998-10-24'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-    
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2363,12 +2363,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1985-07-06'), 
+        //     'usia' => $this->calculateAge('1985-07-06'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-    
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2381,12 +2381,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1976-06-12'), 
+        //     'usia' => $this->calculateAge('1976-06-12'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-   
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2399,12 +2399,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1980-04-20'), 
+        //     'usia' => $this->calculateAge('1980-04-20'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-   
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2417,12 +2417,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1986-03-08'), 
+        //     'usia' => $this->calculateAge('1986-03-08'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-   
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2435,12 +2435,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1973-07-04'), 
+        //     'usia' => $this->calculateAge('1973-07-04'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-   
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2453,12 +2453,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1977-06-02'), 
+        //     'usia' => $this->calculateAge('1977-06-02'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-   
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2471,7 +2471,7 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1964-07-01'), 
+        //     'usia' => $this->calculateAge('1964-07-01'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -2489,12 +2489,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1968-09-08'), 
+        //     'usia' => $this->calculateAge('1968-09-08'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-   
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2507,7 +2507,7 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1971-02-10'), 
+        //     'usia' => $this->calculateAge('1971-02-10'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
@@ -2525,12 +2525,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1994-10-29'), 
+        //     'usia' => $this->calculateAge('1994-10-29'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-        
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2543,12 +2543,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1975-05-03'), 
+        //     'usia' => $this->calculateAge('1975-05-03'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-        
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2561,12 +2561,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1987-07-25'), 
+        //     'usia' => $this->calculateAge('1987-07-25'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-        
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2579,12 +2579,12 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1982-08-18'), 
+        //     'usia' => $this->calculateAge('1982-08-18'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
-        
+
         // Tukangterampil::create([
         //     'kecamatan' => 'Cipongkor',
         //     'desa' => 'MEKARSARI',
@@ -2597,14 +2597,14 @@ qa::create([
         //     'kualifikasi' => 'BELUM',
         //     'registrasi' => 'BELUM',
         //     'foto' => 'professional',
-        //     'usia' => $this->calculateAge('1984-07-02'), 
+        //     'usia' => $this->calculateAge('1984-07-02'),
         //     'created_at' => Carbon::now(),
         //     'updated_at' => Carbon::now(),
         //     'deleted_at' => null, // Jika Anda menggunakan soft deletes
         // ]);
 
 
-        
+
 
 //======================== ===================================================================================
 //======================== ===================================================================================
@@ -3542,7 +3542,7 @@ pengawasanstatus::create([
     'deleted_at' => null, // Jika Anda menggunakan soft deletes
 ]);
 
-//  ================================================================ 
+//  ================================================================
 pengawasantindakan::create([
     'id' => '1',
     'tindakan' => 'BELUM DI TINDAKLANJUTI',
@@ -3568,7 +3568,7 @@ pengawasantindakan::create([
 ]);
 
 
-//  ================================================================ 
+//  ================================================================
 
 
         peraturan::create([
@@ -3912,7 +3912,7 @@ pengawasantindakan::create([
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         suratedaran::create([
             'judul' => 'SURAT_EDARAN_DIRJEN_BK_NOMOR_33_TAHUN_2023',
             'peraturan' => 'peraturan/06_suratedaran/SURAT_EDARAN_DIRJEN_BK_NOMOR_33_TAHUN_2023.pdf',
@@ -3920,7 +3920,7 @@ pengawasantindakan::create([
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         suratedaran::create([
             'judul' => 'SURAT_EDARAN_DIRJEN_KEMENTERIAN_2022_SE_DJB_TATA_CARA_PELAKSANAAN_SERTIFIKASI_KOMPETENSI_FINAL',
             'peraturan' => 'peraturan/06_suratedaran/SURAT_EDARAN_DIRJEN_KEMENTERIAN_2022_SE_DJB_TATA_CARA_PELAKSANAAN_SERTIFIKASI_KOMPETENSI_FINAL.pdf',
@@ -3928,7 +3928,7 @@ pengawasantindakan::create([
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
         ]);
-        
+
         suratedaran::create([
             'judul' => 'SURAT_EDARAN_PENCABUTAN_DIRJEN_BK_NO_59_2022',
             'peraturan' => 'peraturan/06_suratedaran/SURAT_EDARAN_PENCABUTAN_DIRJEN_BK_NO_59_2022.pdf',
@@ -4117,7 +4117,7 @@ berita::create([
 ]);
 
 // ======================================================
-// BERITA CISOMANG BARAT 
+// BERITA CISOMANG BARAT
 // ======================================================
 
 berita::create([
@@ -4149,7 +4149,7 @@ Masyarakat Kecamatan Cisomang Barat menyambut baik kegiatan ini dan berharap pel
 
 
 // ======================================================
-// BERITA CISOMANG BARAT 
+// BERITA CISOMANG BARAT
 // ======================================================
 
 
@@ -4206,7 +4206,7 @@ berita::create([
 
 
 // ============================================================================================
-// BERITA CISOMANG BARAT 
+// BERITA CISOMANG BARAT
 // ============================================================================================
 
 berita::create([
@@ -4214,7 +4214,7 @@ berita::create([
     'user_id' => rand(1,5),
     'gambar' => 'berita/databerita/pelatihancisomangbarat.jpg',
     'keteranganberita' => '
-    <p> 
+    <p>
     Bandung Barat, 2 Desember 2024 – Dalam upaya meningkatkan kompetensi dan legalitas tenaga kerja di sektor konstruksi, Pemerintah Kabupaten Bandung Barat baru-baru ini melaksanakan program Sertifikasi Jasa Konstruksi di Kecamatan Cisomang Barat. Inisiatif ini bertujuan untuk meningkatkan efisiensi, transparansi, dan akuntabilitas dalam sektor jasa konstruksi, sekaligus memastikan bahwa para pekerja memiliki keterampilan yang sesuai dengan standar industri. Sertifikasi ini diharapkan dapat membawa perubahan signifikan dalam kualitas tenaga kerja dan pelaksanaan proyek konstruksi di wilayah tersebut.
     </p>
 
@@ -4232,7 +4232,7 @@ Pemerintah Kabupaten Bandung Barat menegaskan komitmennya untuk terus mengadakan
 ]);
 
 // ============================================================================================
-// BERITA CISOMANG BARAT 
+// BERITA CISOMANG BARAT
 // ============================================================================================
 
 
@@ -4240,7 +4240,7 @@ berita::create([
     'judul' => 'Pemerintah Kabupaten Bandung Barat Berkolaborasi dengan PT. Cisangkan dalam bimbingan teknis untuk para tukang terampil ',
     'user_id' => rand(1,5),
     'gambar' => 'berita/databerita/berita6.jpg',
-    'keteranganberita' => '<p>Bandung Barat, 14 Agustus 2024 – Pemerintah Kabupaten Bandung Barat bekerja sama dengan PT. Cisangkan dalam menyelenggarakan bimbingan teknis untuk para tukang terampil di Desa Batulayang, Kecamatan Cililin.</p>
+    'keteranganberita' => '<p>Pemerintah Kabupaten Bandung Barat bekerja sama dengan PT. Cisangkan dalam menyelenggarakan bimbingan teknis untuk para tukang terampil di Desa Batulayang, Kecamatan Cililin.</p>
 
 <p>Pemerintah Kabupaten Bandung Barat dengan bangga memperkenalkan Sistem Informasi Pembina Jasa Konstruksi (SIPJK), sebuah terobosan digital yang bertujuan untuk mendukung pembangunan berkelanjutan di wilayah tersebut. Sistem ini dirancang untuk meningkatkan transparansi, efisiensi, dan akuntabilitas dalam pengelolaan proyek konstruksi, serta memastikan bahwa semua kegiatan pembangunan mengikuti standar yang telah ditetapkan.</p>
 
@@ -4257,7 +4257,7 @@ berita::create([
     'judul' => 'Transformasi Digital di Kabupaten Bandung Barat: Sistem Informasi Pembina Jasa Konstruksi Hadir untuk Memperbaiki Pengelolaan Konstruksi',
     'user_id' => rand(1,5),
     'gambar' => 'berita/databerita/berita5.jpg',
-    'keteranganberita' => '<p>Bandung Barat, 11 Agustus 2024 – Dalam upaya untuk mendigitalkan dan menyempurnakan pengelolaan konstruksi, Pemerintah Kabupaten Bandung Barat baru-baru ini meluncurkan Sistem Informasi Pembina Jasa Konstruksi (SIPJK). Inisiatif ini bertujuan untuk memperbaiki efisiensi, transparansi, dan akuntabilitas dalam administrasi proyek konstruksi di wilayahnya. SIPJK diharapkan akan membawa perubahan signifikan dalam cara proyek konstruksi dikelola dan diawasi.</p>
+    'keteranganberita' => '<p>Dalam upaya untuk mendigitalkan dan menyempurnakan pengelolaan konstruksi, Pemerintah Kabupaten Bandung Barat baru-baru ini meluncurkan Sistem Informasi Pembina Jasa Konstruksi (SIPJK). Inisiatif ini bertujuan untuk memperbaiki efisiensi, transparansi, dan akuntabilitas dalam administrasi proyek konstruksi di wilayahnya. SIPJK diharapkan akan membawa perubahan signifikan dalam cara proyek konstruksi dikelola dan diawasi.</p>
 
 <p>Sistem ini dilengkapi dengan berbagai fitur canggih yang memungkinkan pendaftaran dan pemantauan proyek secara online, serta pelaporan kemajuan yang dapat diakses secara real-time. Dengan penerapan SIPJK, diharapkan proses administrasi yang selama ini rumit dan memakan waktu dapat dipercepat, serta mengurangi potensi terjadinya penyimpangan atau praktik korupsi. Selain itu, sistem ini memberikan kemudahan bagi masyarakat untuk mendapatkan informasi yang transparan mengenai status proyek-proyek konstruksi.</p>
 
@@ -5038,7 +5038,7 @@ kegiatanjaskon::create([
                 'berita18' => 'dokumentasipelatihan/new/BERITA18.jpg',
                 'berita19' => 'dokumentasipelatihan/new/BERITA19.jpg',
                 'berita20' => 'dokumentasipelatihan/new/BERITA20.jpg',
-             
+
                 'tanggal' => '2024-08-14', // Format tanggal YYYY-MM-DD
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -5072,7 +5072,7 @@ kegiatanjaskon::create([
                 'berita18' => 'dokumentasipelatihan/new/18_CB.jpg',
                 'berita19' => 'dokumentasipelatihan/new/19_CB.jpg',
                 'berita20' => 'dokumentasipelatihan/new/20_CB.jpg',
-             
+
                 'tanggal' => '2024-12-02', // Format tanggal YYYY-MM-DD
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -5212,7 +5212,7 @@ laporankegiatan::create([
                 'jabatan' => 'Badan Penyelenggara Jaminan Sosial',
                 'gambar' => 'acarasertifikasi/beritaacara/BU_ROSITA.jpg',
                 'keterangan_berita' => '
-              
+
 <p>**Rabu, 14 Agustus 2024 - Desa Batulayang, Kecamatan Cililin, Kabupaten Bandung Barat**</p>
 
 <p>Ibu Rosita, SE., MM, dari BPJS Ketenagakerjaan, memberikan bimbingan dan pengarahan dalam acara bimbingan teknis mengenai Regulasi Badan Penjaminan Jaminan Sosial (BPJS) Ketenagakerjaan yang diselenggarakan di Desa Batulayang, Kecamatan Cililin, Kabupaten Bandung Barat. Acara ini merupakan bagian dari komitmen untuk meningkatkan pemahaman tentang regulasi dan jaminan sosial di sektor konstruksi, serta memastikan bahwa setiap pekerja konstruksi memahami hak dan kewajiban mereka di bawah BPJS Ketenagakerjaan.</p>
@@ -5252,7 +5252,7 @@ laporankegiatan::create([
 //             'created_at' => now(),
 //             'updated_at' => now(),
 // ]);
- 
+
 
 
 //             laporankegiatan::create([
@@ -5365,7 +5365,7 @@ laporankegiatan::create([
 //             'created_at' => now(),
 //             'updated_at' => now(),
 // ]);
-   
+
             // ================= =====================================================================================
 giskbb::create([
                     // Ganti dengan ID yang sesuai jika menggunakan foreign key
@@ -5375,7 +5375,7 @@ giskbb::create([
                 'perempuan' => '36666',
                 'total_penduduk' => '194937',
                 'keterangan_gis' => '
-                
+
                 <p>Kecamatan Lembang terletak di Kabupaten Bandung Barat, Provinsi Jawa Barat, Indonesia. Terkenal dengan pemandangan alam yang indah dan udara yang sejuk, Lembang menjadi salah satu destinasi populer bagi wisatawan yang mencari suasana pegunungan. Dengan lokasi strategisnya di wilayah Kabupaten Bandung Barat, kecamatan ini menawarkan berbagai fasilitas dan layanan yang mendukung kehidupan sehari-hari masyarakatnya, serta akses yang mudah ke pusat-pusat ekonomi dan pendidikan.</p>
 
 <p>Fasilitas di Kecamatan Lembang cukup lengkap untuk memenuhi kebutuhan warganya. Terdapat berbagai sekolah, pusat kesehatan, dan pasar yang memudahkan penduduk dalam menjalani aktivitas sehari-hari. Infrastruktur yang memadai juga mendukung mobilitas masyarakat, sementara akses transportasi yang baik memperkuat konektivitas antara Lembang dan wilayah sekitarnya.</p>
@@ -5383,7 +5383,7 @@ giskbb::create([
 <p>Berdasarkan data terbaru, jumlah penduduk di Kecamatan Lembang mencapai total 75.337 jiwa. Dari jumlah tersebut, terdapat 38.671 laki-laki dan 36.666 perempuan. Angka ini menunjukkan bahwa kecamatan ini memiliki struktur demografis yang seimbang, dengan proporsi laki-laki dan perempuan yang hampir merata.</p>
 
 <p>Keseimbangan jumlah laki-laki dan perempuan di Kecamatan Lembang mencerminkan dinamika sosial yang stabil. Dengan total penduduk yang cukup besar dan komposisi gender yang seimbang, ada peluang besar untuk pengembangan berbagai inisiatif komunitas. Program-program yang fokus pada pendidikan, kesehatan, dan ekonomi dapat memperkuat kualitas hidup masyarakat di Lembang, serta mendukung pertumbuhan dan kemajuan wilayah ini secara keseluruhan.</p>',
-              
+
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5406,7 +5406,7 @@ giskbb::create([
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
 
 giskbb::create([
                     // Ganti dengan ID yang sesuai jika menggunakan foreign key
@@ -5425,7 +5425,7 @@ giskbb::create([
 <p>Dengan potensi pertanian dan peternakan yang dimilikinya, serta iklim yang mendukung, Kecamatan Cisarua berada dalam posisi yang baik untuk berkembang lebih lanjut. Potensi sumber daya alam yang ada di Cisarua memberikan peluang besar untuk meningkatkan kesejahteraan masyarakat melalui pengembangan sektor pertanian dan peternakan yang berkelanjutan.</p>
 
                     ',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5438,13 +5438,13 @@ giskbb::create([
                 'perempuan' => '38080',
                 'total_penduduk' => '125630',
                 'keterangan_gis' => ' DATA BELUM DIISI
-     
+
                     ',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
 
 giskbb::create([
                     // Ganti dengan ID yang sesuai jika menggunakan foreign key
@@ -5454,7 +5454,7 @@ giskbb::create([
                 'perempuan' => '41920',
                 'total_penduduk' => '87376',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5467,11 +5467,11 @@ giskbb::create([
                 'perempuan' => '86595',
                 'total_penduduk' => '175874',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
 
 giskbb::create([
                     // Ganti dengan ID yang sesuai jika menggunakan foreign key
@@ -5481,7 +5481,7 @@ giskbb::create([
                 'perempuan' => '69570',
                 'total_penduduk' => '141789',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5494,7 +5494,7 @@ giskbb::create([
                 'perempuan' => '89871',
                 'total_penduduk' => '182981',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5507,7 +5507,7 @@ giskbb::create([
                 'perempuan' => '53516',
                 'total_penduduk' => '108579',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5520,7 +5520,7 @@ giskbb::create([
                 'perempuan' => '65263',
                 'total_penduduk' => '133684',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5533,7 +5533,7 @@ giskbb::create([
                 'perempuan' => '46959',
                 'total_penduduk' => '96128',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5546,7 +5546,7 @@ giskbb::create([
                 'perempuan' => '48679',
                 'total_penduduk' => '99797',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5559,7 +5559,7 @@ giskbb::create([
                 'perempuan' => '28604',
                 'total_penduduk' => '58998',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5572,11 +5572,11 @@ giskbb::create([
                 'perempuan' => '36063',
                 'total_penduduk' => '73122',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
 
 
 giskbb::create([
@@ -5587,7 +5587,7 @@ giskbb::create([
                 'perempuan' => '37911',
                 'total_penduduk' => '77912',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -5600,11 +5600,11 @@ giskbb::create([
                 'perempuan' => '16863',
                 'total_penduduk' => '34305',
                 'keterangan_gis' => ' DATA BELUM DIISI',
-         
+
 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
 // ===================== ===================== ===================== =====================
             pelatihan::create([
                 'tahun'  => '2015',
@@ -5612,57 +5612,57 @@ giskbb::create([
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
             pelatihan::create([
                 'tahun'  => '2016',
                 'kasus' => '101367',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
             pelatihan::create([
                 'tahun'  => '2017',
                 'kasus' => '123040',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
             pelatihan::create([
                 'tahun'  => '2018',
                 'kasus' => '173415',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
             pelatihan::create([
                 'tahun'  => '2019',
                 'kasus' => '182835',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
             pelatihan::create([
                 'tahun'  => '2020',
                 'kasus' => '221740',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
             pelatihan::create([
                 'tahun'  => '2021',
                 'kasus' => '234270',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
+
             pelatihan::create([
                 'tahun'  => '2022',
                 'kasus' => '265334',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
-            
-          
+
+
             // =======================================================================================================================
             // qa::create([
             //     'qasebagai_id'   => random_int(1, 9),       // Menghasilkan nomor acak antara 1 dan 9
@@ -5673,7 +5673,7 @@ giskbb::create([
             //     'created_at'      => now(),
             //     'updated_at'      => now(),
             // ]);
-          
+
         // =======================================================================================================================
             qasebagai::create([
                 'sebagai'           => 'Kontraktor',       // Menghasilkan nomor acak antara 1 dan 9
@@ -5686,19 +5686,19 @@ giskbb::create([
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qasebagai::create([
                 'sebagai'           => 'Tenaga Ahli',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-       
+
             qasebagai::create([
                 'sebagai'           => 'Tenaga Tukang',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-       
+
             qasebagai::create([
                 'sebagai'           => 'Dinas Terkait',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
@@ -5710,8 +5710,8 @@ giskbb::create([
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
-          
+
+
         // =======================================================================================================================
             qapertanyaan::create([
                 'pertanyaan'        => 'Sertifikat Laik Fungsi',       // Menghasilkan nomor acak antara 1 dan 9
@@ -5724,7 +5724,7 @@ giskbb::create([
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-            
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Inspeksi Lapangan',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
@@ -5736,43 +5736,43 @@ giskbb::create([
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Penyediaan Material',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Insfrastruktur Perkotaan',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Insfrastruktur Jalan',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Insfrastruktur Industri',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Teknik Konstruksi',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Teknik Struktur',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
                 'updated_at'        => now(),
             ]);
-          
+
             qapertanyaan::create([
                 'pertanyaan'        => 'Teknik Rekayasa & Air Limbah',       // Menghasilkan nomor acak antara 1 dan 9
                 'created_at'        => now(),
