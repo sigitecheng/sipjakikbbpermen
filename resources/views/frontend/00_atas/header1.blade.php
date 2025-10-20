@@ -1,6 +1,6 @@
 <header class="top">
-    <div class="container">
-        {{-- <p>081321455855</p> --}}
+    {{-- <div class="container">
+        <p>081321455855</p>
         <div id="clock-container" style="
         display: flex;
         justify-content: center;
@@ -33,8 +33,8 @@
 
         setInterval(updateClock, 1000); // Update every second
         updateClock(); // Initial call to set the time immediately
-    </script>
-     <p style="color: black"><a href="https://wa.me/6281321455855" style="color: black">+6281 321 455 855</a></p>
+    </script> --}}
+     {{-- <p style="color: black"><a href="https://wa.me/6281321455855" style="color: black">+6281 321 455 855</a></p> --}}
      {{-- <p>support@Construct.com</p> --}}
      {{-- <p>Senin-Jumat 9:00-16:00</p> --}}
      <style>
@@ -50,7 +50,7 @@
             margin-bottom: 2px;
             border-radius: 20px;
             background: #00008b;
-            
+
         }
         .marquee {
             display: inline-block;
@@ -67,12 +67,12 @@
             }
         }
     </style>
-     <div class="marquee-container" style="margin-left: 150px;">
+     {{-- <div class="marquee-container" style="margin-left: 150px;">
         <div class="marquee" style="color: white">Selamat Datang ! di Web Resmi Sistem Informasi Pembina Jasa Konstruksi Pemerintah Kabupaten Bandung Barat</div>
-    </div>
-    
+    </div> --}}
+
         {{-- <p>Jam </p> --}}
-        <div class="social">
+        {{-- <div class="social">
             <a href="/" title=""><i class="fas fa-envelope"></i></a>
             <a href="/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="/" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -83,6 +83,6 @@
                 <i class="fa-solid fa-sign-in-alt" ></i>
             </a>
 
-        </div>
+        </div> --}}
     </div>
 </header>

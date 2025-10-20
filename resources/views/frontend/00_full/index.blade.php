@@ -39,40 +39,40 @@
 } --}}
 {{--  --}}
  {{-- </style> --}}
-    
+
 
     <div class="div" style="z-index: 9999; position: fixed;
             top: 0; left: 0; width: 100%; z-index: 9999;
-            background-color: white; border-bottom: 1px solid black; 
+            background-color: white; border-bottom: 1px solid black;
             ">
 
         @include('frontend.00_atas.header1')
         <header>
-            
+
                 @include('frontend.00_atas.header2_navbar')
-            
+
         </div>
         </header>
-    
+
 {{-- ======================================================================================================================= --}}
 {{-- ======================================================================================================================= --}}
-   
+
 
 
 
     <!-- Main News Slider Start -->
-    <div class="container-fluid" style="margin-top: 165px;">
+    <div class="container-fluid" style="margin-top: 2px;">
         <div class="row">
             <div class="col-lg-7 px-0">
                 <div class="owl-carousel main-carousel position-relative">
-                  
+
                     @foreach ($data as $item )
-                        
-                    
+
+
                     <div class="position-relative overflow-hidden" style="height: 500px;">
                         <a href="/portalberita/{{ $item->judul}}">
                             <img class="img-fluid h-100" src="{{ asset('storage/' . $item->gambar) }}" style="object-fit: cover;">
-                        
+
                         </a>
                         <div class="overlay">
                             <div class="mb-2">
@@ -83,19 +83,19 @@
                             <a class="h2 m-0 text-white text-uppercase font-weight-bold" style="font-size: 24px;" href="/portalberita/{{ $item->judul}}">{{ $item->judul }}</a>
                         </div>
                     </div>
-                    
-                    
+
+
                     @endforeach
-                    
+
 
 
                 </div>
             </div>
             <div class="col-lg-5 px-0">
                 <div class="row mx-0">
-                    
+
                     @foreach ($data->slice(-4) as $item)
-        
+
                         <div class="col-md-6 px-0">
                             <a href="/portalberita/{{$item->judul}}">
 
@@ -156,7 +156,7 @@
 
 
                 {{-- @foreach ( $data_layanankami as $item )
-                    
+
                 <div class="position-relative overflow-hidden" style="height: 300px;">
                     <a href="/">
                         <img class="img-fluid h-300" src="{{ asset('storage/' . $item->gambar) }}" style="object-fit: cover; padding:10px; cursor:pointer">
@@ -169,10 +169,10 @@
                         </div>
                     </a>
                 </div>
-                
+
                 @endforeach --}}
 
-                
+
             </div>
                     <!-- Popular News Start -->
                     <div class="mb-3 mt-0">
@@ -181,7 +181,7 @@
                                <img src="/assets/icon/sipjakikbb.png" alt="/assets/icon/sipjakikbb.png" style="width: 40px;"> KEGIATAN SERTIFIKASI JASA KONSTRUKSI </h4>
                         </div>
                         <div class="bg-white border border-top-0 p-3">
-                               
+
                             @foreach ($data_jaskon as $item )
                             <div class="w-100 h-100 d-flex flex-column justify-content-center border border-left-0" style="margin-bottom:10px;">
                                 <div class="mb-2">
@@ -189,7 +189,7 @@
                                 </div>
                                 <div class="mb-2">
                                     <a href="/kegiatansertifikasi">
-                                        <p class="px-3" style="color: #000000">{{$item->alamat_kegiatan}}</p>    
+                                        <p class="px-3" style="color: #000000">{{$item->alamat_kegiatan}}</p>
                                     </a>
                                     {{-- <a href=""><small><span style="color: #000000">{{$item->tanggal}}</span></small></a> --}}
                                 </div>
@@ -206,27 +206,27 @@
                                 background-color: white;
                                 position: relative;
                             }
-                            
+
                             .scrolling-content {
                                 display: inline-block;
                                 white-space: nowrap;
                                 animation: scroll 10s linear infinite;
                             }
-                            
+
                             .scrolling-content img {
                                 width: 15%;
                                 height: auto;
                                 display: inline-block;
                                 margin-right: 10px;
                             }
-                            
+
                             @keyframes scroll {
                                 0% { transform: translateX(0); }
                                 100% { transform: translateX(-50%); }
                             }
                             </style>
-                         
-                                
+
+
                             <div class="scroll-container">
                                 <div class="scrolling-content">
                                     <img src="{{ asset('storage/' . $item->berita1 )}}" alt="{{ asset('storage/' . $item->berita1 )}}">
@@ -248,15 +248,15 @@
                                     <img src="{{ asset('storage/' . $item->berita18 )}}" alt="{{ asset('storage/' . $item->berita18 )}}">
                                     <img src="{{ asset('storage/' . $item->berita19 )}}" alt="{{ asset('storage/' . $item->berita19 )}}">
                                     <img src="{{ asset('storage/' . $item->berita20 )}}" alt="{{ asset('storage/' . $item->berita20 )}}">
-                                    
+
                                 </div>
                             </div>
-                          
-                            
+
+
                             @endforeach
-                           
-                           
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+
+
+                            {{-- <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
                                 <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
@@ -265,23 +265,23 @@
                                     </div>
                                     <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">PELATIHAN BIMBINGAN TEKNIS TENAGA KONSTRUKSI KABUPATEN BANDUNG BARAT .....</a>
                                 </div>
-                            </div>
-                            
-                            
+                            </div> --}}
+
+
                         </div>
                     </div>
                     <!-- Popular News End -->
 
 
         </div>
-        
+
     </div>
 
 
     <br><br><br>
     <!-- Featured News Slider End -->
 
-           
+
 
     </div>
     <!-- News With Sidebar End -->
@@ -289,9 +289,9 @@
 {{-- ================================================================================================================================= --}}
 {{-- ================================================================================================================================= --}}
 {{-- ================================================================================================================================= --}}
-        
-        
-        
+
+
+
     </section>
 
 
@@ -329,17 +329,17 @@
                     <img src="/assets/bahan1/Images/gallery2.jpg" alt="pic" class="wow animated flipInX delay-1s slower">
                     <img src="/assets/bahan1/Images/gallery4.jpg" alt="pic" class="wow animated flipInX delay-2s">
                     <img src="/assets/bahan1/Images/gallery5.jpg" alt="pic" class="wow animated flipInX delay-2s slower">
-                </aside>    
+                </aside>
             </div>
         </div>
     </section> --}}
-    
+
   {{-- --------------------------------------------------------------------------------------- --}}
   {{-- ------------------------------------------------------------------------------------------ --}}
   {{-- ------------------------------------------------------------------------------------------ --}}
 
      <section id="sec-5">
-        <div class="container">
+        {{-- <div class="container">
             <h1 style="
             font-family: 'Lato', sans-serif;
             font-weight: 700;
@@ -356,13 +356,13 @@
             background: linear-gradient(to right, #f0f0f0, #e0e0e0);
             transition: background 0.5s ease, color 0.5s ease;
         " onmouseover="this.style.background='linear-gradient(to right, #f0f0f0, #e0e0e0)'; this.style.color='black';" onmouseout="this.style.background='linear-gradient(to right, black, yellow )'; this.style.color='white';">
-        
+
         Himbauan Dinas Terkait</h1>
             <p>
                 Kami informasikan bahwa Sistem Informasi Pembina Jasa Konstruksi kini tersedia untuk memudahkan akses informasi terkait jasa konstruksi. Sistem ini menyediakan data terpercaya, regulasi terbaru, dan informasi penting lainnya mengenai layanan konstruksi. Silakan kunjungi platform ini untuk mendapatkan informasi yang Anda butuhkan dan memastikan kepatuhan terhadap peraturan yang berlaku.
                 <div class="cont">
                     @foreach ($datahimbauandinas as $item )
-                        
+
                     <article class="quoteblock">
                         <div class="quotetxt arrow">
                             <p><img style="width:10%" src="{{asset('storage/' . $item->foto_pejabat)}}" alt="{{asset('storage/' . $item->foto_pejabat)}}"></p>
@@ -374,12 +374,12 @@
                             <figcaption>{{$item->jabatan}}</figcaption>
                         </figure>
                     </article>
-                    
+
                     @endforeach
             </div>
-        </div>
+        </div> --}}
 
-        <div class="contactUs" style="background-color: #FFCB0F; height: 60vh; margin-bottom: 0px;">
+        <div class="contactUs" style="background-color: #FFCB0F; height: 55vh; margin-bottom: -100px; margin-top:-100px;">
             <div class="container" >
             {{-- <div class="container"> --}}
                 <aside>
@@ -424,7 +424,7 @@
                             Pemerintah Kabupaten Bandung Barat </p>
                 </aside>
 
-                
+
 
 {{-- ================ --}}
 @include('tambahan.alert')
@@ -477,7 +477,7 @@
         </label>
         <input type="number" class="form-control" id="telepon" name="telepon" required style="color: #000000;" placeholder="No Whatsapp">
     </div>
-    
+
     <style>
         .badge-plus {
         background: linear-gradient(to right, navy, black);
@@ -507,12 +507,12 @@
     </div>
 </form>
 
-              
+
             </div>
         </div>
-        
 
-    </section> 
+
+    </section>
 
     {{-- ------------------------------------------------------------------------------- --}}
     {{-- ------------------------------------------------------------------------------- --}}
