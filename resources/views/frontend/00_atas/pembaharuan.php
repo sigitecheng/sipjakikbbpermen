@@ -429,3 +429,147 @@
 }
 </style>
 
+
+<style>
+    * {
+        font-family: 'Poppins', sans-serif !important;
+        box-sizing: border-box;
+    }
+
+    /* WRAPPER */
+    .login-jaspro-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 55vh;
+        background: linear-gradient(to bottom, yellow, white, black);
+        padding: 20px;
+    }
+
+    /* CONTAINER */
+    .login-jaspro-container {
+        width: 80%;
+        max-width: 480px;
+        background-color: #fff;
+        border-radius: 25px;
+        border: 1px solid black;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        padding: 35px 25px;
+    }
+
+    /* CARD */
+    .login-jaspro-card {
+        width: 100%;
+    }
+
+    /* FORM GROUP */
+    .login-jaspro-form-group {
+        margin-bottom: 1.4rem;
+    }
+
+    .login-jaspro-form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #000;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .login-jaspro-input {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 9999px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+    }
+
+    .login-jaspro-input:focus {
+        border-color: #000;
+        outline: none;
+    }
+
+    /* ERROR TEXT */
+    .login-jaspro-invalid {
+        color: #dc3545;
+        font-size: 13px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* ALERT */
+    .login-jaspro-alert {
+        color: white;
+        background-color: #dc3545;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    /* BUTTON & REGISTER */
+    .login-jaspro-btn-group {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .login-jaspro-btn {
+        background: linear-gradient(to right, yellow, black);
+        color: white;
+        padding: 10px 25px;
+        border-radius: 35px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .login-jaspro-btn:hover {
+        background: linear-gradient(to right, darkblue, white);
+        color: black;
+    }
+
+    .login-jaspro-register-wrapper {
+        margin-top: 15px;
+        font-size: 0.95rem;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .login-jaspro-register {
+        margin-left: 6px;
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .login-jaspro-register:hover {
+        color: #333;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        .login-jaspro-container {
+            width: 90%;
+            padding: 25px 15px;
+        }
+
+        .login-jaspro-form-group label {
+            font-size: 14px;
+        }
+
+        .login-jaspro-btn {
+            width: 100%;
+        }
+
+        .login-jaspro-register-wrapper {
+            font-size: 0.9rem;
+        }
+    }
+</style>
