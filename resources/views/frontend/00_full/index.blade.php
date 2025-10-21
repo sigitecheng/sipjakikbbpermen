@@ -1,4 +1,5 @@
 @include('frontend.00_atas.header')
+@include('frontend.00_atas.pembaharuan')
 
 
 {{-- ------------------------------------------------------------------------------------------ --}}
@@ -192,6 +193,7 @@
 
 
             </div>
+
 <div class="mb-6 mt-0" style="margin-bottom:50px;">
     <div class="section-title mb-0">
         <h4 class="m-0 text-uppercase font-weight-bold">
@@ -244,84 +246,6 @@
 </div>
 
 {{-- ================== CSS Responsif ================== --}}
-<style>
-/* ======= Gaya Umum ======= */
-.judul-kegiatan-text {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.3;
-    word-break: break-word;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    .judul-kegiatan-text {
-        font-size: 14px !important;
-    }
-}
-
-/* HP */
-@media (max-width: 576px) {
-    .judul-kegiatan-text {
-        font-size: 12px !important;
-    }
-}
-
-/* ======= Gaya Gambar Scroll ======= */
-.berita-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.berita-marquee {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 12px;
-    animation: scroll-rtl 60s linear infinite;
-    padding: 10px;
-}
-
-.berita-marquee img {
-    width: 220px;
-    height: 140px;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    display: inline-block;
-}
-
-@keyframes scroll-rtl {
-    from { transform: translateX(0); }
-    to { transform: translateX(100%); }
-}
-
-/* Responsif untuk Gambar */
-@media (max-width: 992px) {
-    .berita-marquee img {
-        width: 180px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 768px) {
-    .berita-marquee img {
-        width: 150px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 576px) {
-    .berita-marquee img {
-        width: 120px;
-        height: 80px;
-    }
-}
-</style>
-
 
 <!-- Popular News End -->
 

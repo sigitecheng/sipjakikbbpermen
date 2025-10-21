@@ -1,4 +1,5 @@
 @include('frontend.00_atas.header')
+@include('frontend.00_atas.pembaharuan')
 
 
 {{-- ------------------------------------------------------------------------------------------ --}}
@@ -6,48 +7,39 @@
 {{-- ------------------------------------------------------------------------------------------ --}}
 
 <section id="sec-0">
-    
+
     <div class="div" style="z-index: 9999; position: fixed;
     top: 0; left: 0; width: 100%; z-index: 9999;
-    background-color: white; border-bottom: 1px solid black; 
+    background-color: white; border-bottom: 1px solid black;
     ">
 
 @include('frontend.00_atas.header1')
 <header>
-    
+
         @include('frontend.00_atas.header2_navbar')
-    
+
 </div>
 </header>
 
-<div class="div" style="
-            justify-content: center;
-            text-align:center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            margin-top:165px;
-        ">
 
-            <h2 style="
-    margin-top: 10px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #333;
-    text-transform: uppercase;
+<div class="div responsive-hide" style="
+    justify-content: center;
     text-align: center;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 25px;
-    width: 500px;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
-    transition: background 0.5s ease, color 0.5s ease;
-    " onmouseover="this.style.background='linear-gradient(to right, #f0f0f0, #e0e0e0)'; this.style.color='black';" onmouseout="this.style.background='linear-gradient(to right, black, yellow )'; this.style.color='white';">
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px; /* space kosong untuk responsive */
+">
 
-Standar Biaya Umum Tentang Jasa Konstruksi
-</h2>
+    <h2
+    class="heading-structure"
+        onmouseover="this.style.background='linear-gradient(to right, #002060, #FFD100)'; this.style.color='white';"
+        onmouseout="this.style.background='linear-gradient(to right, #FFD100, #002060)'; this.style.color='white';"
+    >
+Standar Biaya Umum
+    </h2>
+
 </div>
 <div class="container" style="
     display: flex;
@@ -59,204 +51,164 @@ Standar Biaya Umum Tentang Jasa Konstruksi
     border-radius: 25px;
     text-align: center;
     width: 100%;
-    height: 135vh;
+    height: auto;
     background: linear-gradient(to bottom, yellow, white, black);
     align-items: center;
     position: relative;
 ">
-  <div style="display: flex; align-items: center;">
+  {{-- <div style="display: flex; align-items: center;">
     <img src="/assets/icon/pupr.png" alt="Logo SIPJAKIKBB" style="width: 50px; height: 50px; object-fit: cover; margin: 0 10px;">
     <img src="/assets/icon/sipjakikbb.png" alt="Logo SIPJAKIKBB" style="width: 70px; height: 70px; object-fit: cover; margin: 0 10px;">
 </div>
 
-    
-<h1 style="margin-top:10px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 700;">Dinas Pekerjaan Umum Dan Tata Ruang </h1>
+
+<h1 style="margin-top:10px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 700;">Dinas Pekerjaan Umum Dan Tata Ruang </h1> --}}
 <br>
 
-<div class="controls" style="  
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 20px;
-border-radius:5px;
-">
-<div class="show-entries" style="border-radius: 10px;">
-<label for="entries" style="margin-right: 5px;">
+<div class="controls-container">
+    <div class="controls">
+        <div class="badge"><i class="fas fa-file mr-2"></i>Standar Biaya Umum</div>
+
+        <div class="controls-right">
+            <a href="/datajakon/standarbiayaumum">
+                <button class="badgekembali">
+                    <i class="fa fa-arrow-left" style="margin-right: 5px;"></i> Kembali
+                </button>
+            </a>
+
+            <button class="badgedownload" id="downloadBtn">
+                <i class="fas fa-download me-2"></i> Download .pdf
+            </button>
+        </div>
+    </div>
+
+    <div class="pdf-container">
+        <iframe class="pdf-frame" src="{{ asset('storage/' . $data->peraturan) }}"></iframe>
+    </div>
+</div>
+
 <style>
+/* 🌈 RESET & WRAPPER */
+.controls-container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
+/* 🧭 Kontrol Atas */
+.controls {
+    display: flex;
+    flex-wrap: wrap; /* agar responsif */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
 
-/* Untuk memastikan tata letak responsif, Anda bisa menggunakan media queries */
-@media (min-width: 768px) {
+/* 🎖️ Badge Utama */
 .badge {
     background: linear-gradient(to right, yellow, black);
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
-    font-size: 1rem;
-    margin-right: 10px;
-    text-align: center;
     font-size: 12px;
-    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
-
 .badge:hover {
-    background-color: white;
-    color: black;
     background: white;
+    color: black;
 }
 
-
+/* 📤 Tombol Download */
 .badgedownload {
     background: linear-gradient(to right, navy, black);
     color: white;
     padding: 8px 20px;
     border-radius: 10px;
-    display: inline-block;
-    font-size: 1rem;
-    text-align: center;
+    border: none;
     font-size: 12px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
 }
 .badgedownload:hover {
-    background-color: white;
-    color: black;
     background: white;
+    color: black;
 }
 
+/* ⬅️ Tombol Kembali */
 .badgekembali {
     background: linear-gradient(to right, green, black);
     color: white;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 10px;
-    display: inline-block;
-    font-size: 1rem;
-    text-align: center;
+    border: none;
     font-size: 12px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
 }
 .badgekembali:hover {
-    background-color: white;
-    color: black;
     background: white;
+    color: black;
 }
 
-.badgehidden {
-    background: inherit ;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: inline-block;
-    font-size: 1rem;
-    text-align: center;
-    margin-left: 350px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-}
-
-</style>
-<a>
-<div class="badge"><i class="fas fa-file mr-2"></i>Standar Biaya Umum Tentang Jasa Konstruksi</div></label>
-</a>
-<a>
-<div class="badgehidden" style="color: white"></div></label>
-</a>
-<a href="/datajakon/standarbiayaumum" style="background: white;">
-<button class="badgekembali" style="border: none; font-size:12px; cursor:pointer; "> <i class="fa fa-arrow-left" style="margin-right: 5px;"></i>Kembali</button>
-</a>
-
-<button class="download-btn badgedownload" id="downloadBtn"><i class="fas fa-download me-2"></i> Download .pdf</button>
-
-            {{-- <button class="badgeupdate" style="border: none; font-size:12px; cursor:pointer; "> <i class="fas fa-file" style="margin-right: 5px;"></i> Update</button> --}}
-            <!-- <button id="downloadBtn" class="badge" style="border:none; font-size:12px; cursor:pointer "> <i class="fas fa-download"></i> Download</button> -->
-            
-            <style>
-
+/* 🧱 Area PDF Viewer */
 .pdf-container {
-text-align:center !important ;
-position: relative;
-padding: 5px; /* Jarak di dalam container */
-width: calc(100% - 20px); /* Lebar 100% dikurangi 20px total dari padding kiri dan kanan */
-max-width: 1000px; /* Lebar maksimal container */
-display: flex;
-flex-direction: column;
-align-items: center !important; /* Menempatkan elemen di tengah horizontal */
-justify-content: center; /* Menempatkan elemen di tengah vertikal */
-height: 85vh; /* Tinggi 85% dari viewport */
-margin: auto; /* Mengatur margin auto untuk sentralisasi */
-border: 1px solid black;
-border-radius: 25px;
-overflow: hidden; /* Menyembunyikan konten yang meluber */
-background-color: #FFCB0F;
-background: linear-gradient(to bottom, yellow, white, black);
-position: relative; /* Mengatur posisi relatif untuk container */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, yellow, white, black);
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pdf-frame {
-width: calc(100% - 20px); /* Lebar PDF frame dengan jarak 10px di kiri dan kanan */
-height: 100%; /* Tinggi PDF frame sama dengan tinggi container */
-border: none;
-overflow: auto; 
-border-radius: 25px; 
-padding: 5px 5px;/* Mengaktifkan scroll jika konten lebih besar dari ukuran frame */
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
 }
 
+/* 📱 Responsif */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .controls-right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .badge, .badgedownload, .badgekembali {
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 100%;
+    }
+    .pdf-container {
+        height: 70vh;
+    }
+}
 </style>
-<div style="margin-top: 15px;">
-
-<a style="background: white; margin-top:10px; margin-bottom:10px; background: inherit;">
-<div class="badge"><i class="fas fa-file mr-2"></i>{{$data->judul}}</div></label>
-</a>
-</div>
-<p><br></p>
-
-
-<div class="pdf-container">
-    <iframe class="pdf-frame" src="{{ asset('storage/' . $data->peraturan) }}"></iframe>
-</div>
-
 
 <script>
 document.getElementById('downloadBtn').addEventListener('click', function() {
-    // URL file PDF
     const pdfUrl = '{{ asset('storage/' . $data->peraturan) }}';
-    
-    // Nama file yang diunduh berdasarkan atribut judul
-    const fileName = '{{ $data->judul }}' + '.pdf'; // Pastikan menambahkan ekstensi file yang sesuai
-    
-    // Membuat elemen anchor
+    const fileName = '{{ $data->judul }}' + '.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = fileName;
-    
-    // Menyimulasikan klik pada elemen anchor
     document.body.appendChild(link);
     link.click();
-    
-    // Menghapus elemen anchor dari dokumen
     document.body.removeChild(link);
 });
 </script>
-
-</div>
-
-
-</div>
-</div>
-
- 
-
-</div>
-
-
-    
-</div>
-
-
 
 
 </div>

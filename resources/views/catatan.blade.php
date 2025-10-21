@@ -111,3 +111,26 @@ UNTUK SPASI
                     </div>
                     <!-- Comment List End -->
 
+
+{{-- ----------------------- --}}
+
+
+<div class="div responsive-hide" style="
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px; /* space kosong untuk responsive */
+">
+
+    <h2
+    class="heading-structure"
+        onmouseover="this.style.background='linear-gradient(to right, #002060, #FFD100)'; this.style.color='white';"
+        onmouseout="this.style.background='linear-gradient(to right, #FFD100, #002060)'; this.style.color='white';"
+    >
+        Struktur Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat
+    </h2>
+
+</div>

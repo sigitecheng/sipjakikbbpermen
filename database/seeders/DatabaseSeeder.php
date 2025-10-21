@@ -96,310 +96,310 @@ class DatabaseSeeder extends Seeder
         Tukangterampil::factory(994)->create();
 
 // =============== CREATE TIM ASOSIASI PENGUSAHA
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Pengusaha Konstruksi Indonesia',
-    'alamat_kantor' => 'Jl. Raya Konstruksi No. 123, Bandung, Jawa Barat',
-    'pengawasanlokasi_id' => 1,
-    'provinsi' => 'JAWA BARAT',
-    'kontak' => '+62 812-3456-7890',
-    'email' => 'info@apki.or.id',
-    'website' => 'https://www.apki.or.id',
-    'kepala_asosiasi' => 'Yuyu Yuhana, ST., MM',
-    'foto_asosiasi' => 'asosiasipengusaha/asosiasipengusaha.png',
-    'jumlah_anggota' => '234',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Pengusaha Konstruksi Indonesia',
+//     'alamat_kantor' => 'Jl. Raya Konstruksi No. 123, Bandung, Jawa Barat',
+//     'pengawasanlokasi_id' => 1,
+//     'provinsi' => 'JAWA BARAT',
+//     'kontak' => '+62 812-3456-7890',
+//     'email' => 'info@apki.or.id',
+//     'website' => 'https://www.apki.or.id',
+//     'kepala_asosiasi' => 'Yuyu Yuhana, ST., MM',
+//     'foto_asosiasi' => 'asosiasipengusaha/asosiasipengusaha.png',
+//     'jumlah_anggota' => '234',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Kontraktor Nasional',
-    'alamat_kantor' => 'Jl. Kontraktor No. 45, Jakarta',
-    'pengawasanlokasi_id' => 12,
-    'provinsi' => 'DKI JAKARTA',
-    'kontak' => '+62 811-2345-6789',
-    'email' => 'info@akn.or.id',
-    'website' => 'https://www.akn.or.id',
-    'kepala_asosiasi' => 'Budi Santoso',
-    'foto_asosiasi' => 'asosiasipengusaha/akn.png',
-    'jumlah_anggota' => '150',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Kontraktor Nasional',
+//     'alamat_kantor' => 'Jl. Kontraktor No. 45, Jakarta',
+//     'pengawasanlokasi_id' => 12,
+//     'provinsi' => 'DKI JAKARTA',
+//     'kontak' => '+62 811-2345-6789',
+//     'email' => 'info@akn.or.id',
+//     'website' => 'https://www.akn.or.id',
+//     'kepala_asosiasi' => 'Budi Santoso',
+//     'foto_asosiasi' => 'asosiasipengusaha/akn.png',
+//     'jumlah_anggota' => '150',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Jasa Konstruksi',
-    'alamat_kantor' => 'Jl. Jasa Konstruksi No. 101, Surabaya',
-    'pengawasanlokasi_id' => 13,
-    'provinsi' => 'JAWA TIMUR',
-    'kontak' => '+62 813-4567-8901',
-    'email' => 'info@ajk.or.id',
-    'website' => 'https://www.ajk.or.id',
-    'kepala_asosiasi' => 'Rina Suryani',
-    'foto_asosiasi' => 'asosiasipengusaha/ajk.png',
-    'jumlah_anggota' => '120',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Jasa Konstruksi',
+//     'alamat_kantor' => 'Jl. Jasa Konstruksi No. 101, Surabaya',
+//     'pengawasanlokasi_id' => 13,
+//     'provinsi' => 'JAWA TIMUR',
+//     'kontak' => '+62 813-4567-8901',
+//     'email' => 'info@ajk.or.id',
+//     'website' => 'https://www.ajk.or.id',
+//     'kepala_asosiasi' => 'Rina Suryani',
+//     'foto_asosiasi' => 'asosiasipengusaha/ajk.png',
+//     'jumlah_anggota' => '120',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Pengusaha Material Konstruksi',
-    'alamat_kantor' => 'Jl. Material Konstruksi No. 15, Medan',
-    'pengawasanlokasi_id' => 14,
-    'provinsi' => 'SUMATERA UTARA',
-    'kontak' => '+62 814-5678-9012',
-    'email' => 'info@apmk.or.id',
-    'website' => 'https://www.apmk.or.id',
-    'kepala_asosiasi' => 'Andi Wijaya',
-    'foto_asosiasi' => 'asosiasipengusaha/apmk.png',
-    'jumlah_anggota' => '98',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Pengusaha Material Konstruksi',
+//     'alamat_kantor' => 'Jl. Material Konstruksi No. 15, Medan',
+//     'pengawasanlokasi_id' => 14,
+//     'provinsi' => 'SUMATERA UTARA',
+//     'kontak' => '+62 814-5678-9012',
+//     'email' => 'info@apmk.or.id',
+//     'website' => 'https://www.apmk.or.id',
+//     'kepala_asosiasi' => 'Andi Wijaya',
+//     'foto_asosiasi' => 'asosiasipengusaha/apmk.png',
+//     'jumlah_anggota' => '98',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Ahli Konstruksi',
-    'alamat_kantor' => 'Jl. Ahli Konstruksi No. 22, Semarang',
-    'pengawasanlokasi_id' => 15,
-    'provinsi' => 'JAWA TENGAH',
-    'kontak' => '+62 815-6789-0123',
-    'email' => 'info@aak.or.id',
-    'website' => 'https://www.aak.or.id',
-    'kepala_asosiasi' => 'Hendrik Tanjung',
-    'foto_asosiasi' => 'asosiasipengusaha/aak.png',
-    'jumlah_anggota' => '200',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Ahli Konstruksi',
+//     'alamat_kantor' => 'Jl. Ahli Konstruksi No. 22, Semarang',
+//     'pengawasanlokasi_id' => 15,
+//     'provinsi' => 'JAWA TENGAH',
+//     'kontak' => '+62 815-6789-0123',
+//     'email' => 'info@aak.or.id',
+//     'website' => 'https://www.aak.or.id',
+//     'kepala_asosiasi' => 'Hendrik Tanjung',
+//     'foto_asosiasi' => 'asosiasipengusaha/aak.png',
+//     'jumlah_anggota' => '200',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Konsultan Konstruksi',
-    'alamat_kantor' => 'Jl. Konsultan Konstruksi No. 30, Bali',
-    'pengawasanlokasi_id' => 15,
-    'provinsi' => 'BALI',
-    'kontak' => '+62 816-7890-1234',
-    'email' => 'info@akk.or.id',
-    'website' => 'https://www.akk.or.id',
-    'kepala_asosiasi' => 'Lina Agustina',
-    'foto_asosiasi' => 'asosiasipengusaha/akk.png',
-    'jumlah_anggota' => '250',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Konsultan Konstruksi',
+//     'alamat_kantor' => 'Jl. Konsultan Konstruksi No. 30, Bali',
+//     'pengawasanlokasi_id' => 15,
+//     'provinsi' => 'BALI',
+//     'kontak' => '+62 816-7890-1234',
+//     'email' => 'info@akk.or.id',
+//     'website' => 'https://www.akk.or.id',
+//     'kepala_asosiasi' => 'Lina Agustina',
+//     'foto_asosiasi' => 'asosiasipengusaha/akk.png',
+//     'jumlah_anggota' => '250',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Pemborong Konstruksi',
-    'alamat_kantor' => 'Jl. Pemborong No. 5, Yogyakarta',
-    'pengawasanlokasi_id' => 14,
-    'provinsi' => 'DI YOGYAKARTA',
-    'kontak' => '+62 817-8901-2345',
-    'email' => 'info@apk.or.id',
-    'website' => 'https://www.apk.or.id',
-    'kepala_asosiasi' => 'Budi Prasetyo',
-    'foto_asosiasi' => 'asosiasipengusaha/apk.png',
-    'jumlah_anggota' => '80',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Pemborong Konstruksi',
+//     'alamat_kantor' => 'Jl. Pemborong No. 5, Yogyakarta',
+//     'pengawasanlokasi_id' => 14,
+//     'provinsi' => 'DI YOGYAKARTA',
+//     'kontak' => '+62 817-8901-2345',
+//     'email' => 'info@apk.or.id',
+//     'website' => 'https://www.apk.or.id',
+//     'kepala_asosiasi' => 'Budi Prasetyo',
+//     'foto_asosiasi' => 'asosiasipengusaha/apk.png',
+//     'jumlah_anggota' => '80',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Pekerja Konstruksi',
-    'alamat_kantor' => 'Jl. Pekerja Konstruksi No. 8, Makassar',
-    'pengawasanlokasi_id' => 13,
-    'provinsi' => 'SULAWESI SELATAN',
-    'kontak' => '+62 818-9012-3456',
-    'email' => 'info@apk.or.id',
-    'website' => 'https://www.apk.or.id',
-    'kepala_asosiasi' => 'Diana Suharno',
-    'foto_asosiasi' => 'asosiasipengusaha/apk.png',
-    'jumlah_anggota' => '150',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Pekerja Konstruksi',
+//     'alamat_kantor' => 'Jl. Pekerja Konstruksi No. 8, Makassar',
+//     'pengawasanlokasi_id' => 13,
+//     'provinsi' => 'SULAWESI SELATAN',
+//     'kontak' => '+62 818-9012-3456',
+//     'email' => 'info@apk.or.id',
+//     'website' => 'https://www.apk.or.id',
+//     'kepala_asosiasi' => 'Diana Suharno',
+//     'foto_asosiasi' => 'asosiasipengusaha/apk.png',
+//     'jumlah_anggota' => '150',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Perusahaan Jasa Konstruksi',
-    'alamat_kantor' => 'Jl. Jasa Konstruksi No. 11, Palembang',
-    'pengawasanlokasi_id' => 12,
-    'provinsi' => 'SUMATERA SELATAN',
-    'kontak' => '+62 819-0123-4567',
-    'email' => 'info@apjk.or.id',
-    'website' => 'https://www.apjk.or.id',
-    'kepala_asosiasi' => 'Rizky Firmansyah',
-    'foto_asosiasi' => 'asosiasipengusaha/apjk.png',
-    'jumlah_anggota' => '300',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Perusahaan Jasa Konstruksi',
+//     'alamat_kantor' => 'Jl. Jasa Konstruksi No. 11, Palembang',
+//     'pengawasanlokasi_id' => 12,
+//     'provinsi' => 'SUMATERA SELATAN',
+//     'kontak' => '+62 819-0123-4567',
+//     'email' => 'info@apjk.or.id',
+//     'website' => 'https://www.apjk.or.id',
+//     'kepala_asosiasi' => 'Rizky Firmansyah',
+//     'foto_asosiasi' => 'asosiasipengusaha/apjk.png',
+//     'jumlah_anggota' => '300',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Penyedia Konstruksi',
-    'alamat_kantor' => 'Jl. Penyedia Konstruksi No. 14, Banjarmasin',
-    'pengawasanlokasi_id' => 11,
-    'provinsi' => 'KALIMANTAN SELATAN',
-    'kontak' => '+62 820-1234-5678',
-    'email' => 'info@apk.or.id',
-    'website' => 'https://www.apk.or.id',
-    'kepala_asosiasi' => 'Teguh Santoso',
-    'foto_asosiasi' => 'asosiasipengusaha/apk.png',
-    'jumlah_anggota' => '175',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Penyedia Konstruksi',
+//     'alamat_kantor' => 'Jl. Penyedia Konstruksi No. 14, Banjarmasin',
+//     'pengawasanlokasi_id' => 11,
+//     'provinsi' => 'KALIMANTAN SELATAN',
+//     'kontak' => '+62 820-1234-5678',
+//     'email' => 'info@apk.or.id',
+//     'website' => 'https://www.apk.or.id',
+//     'kepala_asosiasi' => 'Teguh Santoso',
+//     'foto_asosiasi' => 'asosiasipengusaha/apk.png',
+//     'jumlah_anggota' => '175',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Perancang Konstruksi',
-    'alamat_kantor' => 'Jl. Perancang Konstruksi No. 6, Samarinda',
-    'pengawasanlokasi_id' => 10,
-    'provinsi' => 'KALIMANTAN TIMUR',
-    'kontak' => '+62 821-2345-6789',
-    'email' => 'info@apk.or.id',
-    'website' => 'https://www.apk.or.id',
-    'kepala_asosiasi' => 'Maya Arista',
-    'foto_asosiasi' => 'asosiasipengusaha/apk.png',
-    'jumlah_anggota' => '220',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Perancang Konstruksi',
+//     'alamat_kantor' => 'Jl. Perancang Konstruksi No. 6, Samarinda',
+//     'pengawasanlokasi_id' => 10,
+//     'provinsi' => 'KALIMANTAN TIMUR',
+//     'kontak' => '+62 821-2345-6789',
+//     'email' => 'info@apk.or.id',
+//     'website' => 'https://www.apk.or.id',
+//     'kepala_asosiasi' => 'Maya Arista',
+//     'foto_asosiasi' => 'asosiasipengusaha/apk.png',
+//     'jumlah_anggota' => '220',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Konstruksi Berkelanjutan',
-    'alamat_kantor' => 'Jl. Konstruksi Berkelanjutan No. 3, Jakarta',
-    'pengawasanlokasi_id' => 9,
-    'provinsi' => 'DKI JAKARTA',
-    'kontak' => '+62 822-3456-7890',
-    'email' => 'info@akb.or.id',
-    'website' => 'https://www.akb.or.id',
-    'kepala_asosiasi' => 'Ferry Hidayat',
-    'foto_asosiasi' => 'asosiasipengusaha/akb.png',
-    'jumlah_anggota' => '250',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Konstruksi Berkelanjutan',
+//     'alamat_kantor' => 'Jl. Konstruksi Berkelanjutan No. 3, Jakarta',
+//     'pengawasanlokasi_id' => 9,
+//     'provinsi' => 'DKI JAKARTA',
+//     'kontak' => '+62 822-3456-7890',
+//     'email' => 'info@akb.or.id',
+//     'website' => 'https://www.akb.or.id',
+//     'kepala_asosiasi' => 'Ferry Hidayat',
+//     'foto_asosiasi' => 'asosiasipengusaha/akb.png',
+//     'jumlah_anggota' => '250',
+//     'status' => 'AKTIF',
+// ]);
 
-asosiasipengusaha::create([
-    'nama_asosiasi' => 'Asosiasi Pembangunan Infrastruktur',
-    'alamat_kantor' => 'Jl. Infrastruktur No. 9, Denpasar',
-    'pengawasanlokasi_id' => 8,
-    'provinsi' => 'BALI',
-    'kontak' => '+62 823-4567-8901',
-    'email' => 'info@api.or.id',
-    'website' => 'https://www.api.or.id',
-    'kepala_asosiasi' => 'Rudi Prabowo',
-    'foto_asosiasi' => 'asosiasipengusaha/api.png',
-    'jumlah_anggota' => '400',
-    'status' => 'AKTIF',
-]);
+// asosiasipengusaha::create([
+//     'nama_asosiasi' => 'Asosiasi Pembangunan Infrastruktur',
+//     'alamat_kantor' => 'Jl. Infrastruktur No. 9, Denpasar',
+//     'pengawasanlokasi_id' => 8,
+//     'provinsi' => 'BALI',
+//     'kontak' => '+62 823-4567-8901',
+//     'email' => 'info@api.or.id',
+//     'website' => 'https://www.api.or.id',
+//     'kepala_asosiasi' => 'Rudi Prabowo',
+//     'foto_asosiasi' => 'asosiasipengusaha/api.png',
+//     'jumlah_anggota' => '400',
+//     'status' => 'AKTIF',
+// ]);
 
 
 // =============== CREATE PAKET PEKERJAAN
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Pekerjaan Umum dan Penataan Ruang',
-    'jumlah_pagu' => '3875647586',
-    'pekerjaan' => 'Pembangunan Jembatan Cikapundung',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '50',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Pekerjaan Umum dan Penataan Ruang',
+//     'jumlah_pagu' => '3875647586',
+//     'pekerjaan' => 'Pembangunan Jembatan Cikapundung',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '50',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Bina Marga',
-    'jumlah_pagu' => '2543567500',
-    'pekerjaan' => 'Perbaikan Jalan Raya',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '30',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Bina Marga',
+//     'jumlah_pagu' => '2543567500',
+//     'pekerjaan' => 'Perbaikan Jalan Raya',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '30',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Cipta Karya',
-    'jumlah_pagu' => '434500900',
-    'pekerjaan' => 'Pembangunan Gedung Serbaguna',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '70',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Cipta Karya',
+//     'jumlah_pagu' => '434500900',
+//     'pekerjaan' => 'Pembangunan Gedung Serbaguna',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '70',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Perumahan Rakyat',
-    'jumlah_pagu' => '1543236400',
-    'pekerjaan' => 'Renovasi Rumah Susun',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '20',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Perumahan Rakyat',
+//     'jumlah_pagu' => '1543236400',
+//     'pekerjaan' => 'Renovasi Rumah Susun',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '20',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Lingkungan Hidup',
-    'jumlah_pagu' => '3432546300',
-    'pekerjaan' => 'Pembangunan TPS',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '40',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Lingkungan Hidup',
+//     'jumlah_pagu' => '3432546300',
+//     'pekerjaan' => 'Pembangunan TPS',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '40',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Pendidikan',
-    'jumlah_pagu' => '543563100',
-    'pekerjaan' => 'Renovasi Sekolah Baru',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '10',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Pendidikan',
+//     'jumlah_pagu' => '543563100',
+//     'pekerjaan' => 'Renovasi Sekolah Baru',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '10',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Kesehatan',
-    'jumlah_pagu' => '843523400',
-    'pekerjaan' => 'Pembangunan Puskesmas',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '80',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Kesehatan',
+//     'jumlah_pagu' => '843523400',
+//     'pekerjaan' => 'Pembangunan Puskesmas',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '80',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Kebudayaan dan Pariwisata',
-    'jumlah_pagu' => '6748563700',
-    'pekerjaan' => 'Pembangunan Taman Wisata',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '60',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Kebudayaan dan Pariwisata',
+//     'jumlah_pagu' => '6748563700',
+//     'pekerjaan' => 'Pembangunan Taman Wisata',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '60',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Pemadam Kebakaran',
-    'jumlah_pagu' => '1364827400',
-    'pekerjaan' => 'Pengadaan Mobil Pemadam',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '90',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Pemadam Kebakaran',
+//     'jumlah_pagu' => '1364827400',
+//     'pekerjaan' => 'Pengadaan Mobil Pemadam',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '90',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Pertanian',
-    'jumlah_pagu' => '754637500',
-    'pekerjaan' => 'Pengadaan Alat Pertanian',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '20',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Pertanian',
+//     'jumlah_pagu' => '754637500',
+//     'pekerjaan' => 'Pengadaan Alat Pertanian',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '20',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Perhubungan',
-    'jumlah_pagu' => '957385700',
-    'pekerjaan' => 'Pembangunan Terminal Bus',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '75',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Perhubungan',
+//     'jumlah_pagu' => '957385700',
+//     'pekerjaan' => 'Pembangunan Terminal Bus',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '75',
+// ]);
 
-paketpekerjaan::create([
-    'metodepengadaan_id' => 2,
-    'instansi' => 'Dinas Sosial',
-    'jumlah_pagu' => '552948500',
-    'pekerjaan' => 'Pembangunan Panti Asuhan',
-    'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
-    'tahun' => '2024',
-    'progress_fisik' => '35',
-]);
+// paketpekerjaan::create([
+//     'metodepengadaan_id' => 2,
+//     'instansi' => 'Dinas Sosial',
+//     'jumlah_pagu' => '552948500',
+//     'pekerjaan' => 'Pembangunan Panti Asuhan',
+//     'foto_pekerjaan' => 'datajakon/paketpekerjaan/paketpekerjaan.png',
+//     'tahun' => '2024',
+//     'progress_fisik' => '35',
+// ]);
 
 
 // =============== CREATE PENANGGUNG JAWAB TEKNIS
@@ -506,182 +506,182 @@ penanggungjawabteknis::create([
 
 
 // =============== CREATE KETERTIBAN DAN PENGAWASAN
-ketertiban::create([
-    'pengawasanlokasi_id' => 1,
-    'pengawasanbangunangedung_id' => 1,
-    'penanggungjawabteknis_id' => 1,
-    'pengawasanstatus_id' => 1,
-    'pengawasantindakan_id' => 1,
-    'judul' => 'Laporan Ketertiban Gedung Perkantoran',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Perkantoran dalam kondisi baik dan sudah memenuhi PKKPR yang diizinkan.',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 1,
+//     'pengawasanbangunangedung_id' => 1,
+//     'penanggungjawabteknis_id' => 1,
+//     'pengawasanstatus_id' => 1,
+//     'pengawasantindakan_id' => 1,
+//     'judul' => 'Laporan Ketertiban Gedung Perkantoran',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Perkantoran dalam kondisi baik dan sudah memenuhi PKKPR yang diizinkan.',
+// ]);
 
-ketertiban::create([
-    'pengawasanlokasi_id' => 2,
-    'pengawasanbangunangedung_id' => 2,
-    'penanggungjawabteknis_id' => 2,
-    'pengawasanstatus_id' => 2,
-    'pengawasantindakan_id' => 1,
-    'judul' => 'Laporan Ketertiban Gedung Kesehatan',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Kesehatan harus menambah IMB/PBG karena ada ketidaksesuaian.',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 2,
+//     'pengawasanbangunangedung_id' => 2,
+//     'penanggungjawabteknis_id' => 2,
+//     'pengawasanstatus_id' => 2,
+//     'pengawasantindakan_id' => 1,
+//     'judul' => 'Laporan Ketertiban Gedung Kesehatan',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Kesehatan harus menambah IMB/PBG karena ada ketidaksesuaian.',
+// ]);
 
-ketertiban::create([
-    'pengawasanlokasi_id' => 3,
-    'pengawasanbangunangedung_id' => 3,
-    'penanggungjawabteknis_id' => 1,
-    'pengawasanstatus_id' => 1,
-    'pengawasantindakan_id' => 2,
-    'judul' => 'Laporan Ketertiban Gedung Pendidikan',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Pendidikan sudah memenuhi ketentuan.',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 3,
+//     'pengawasanbangunangedung_id' => 3,
+//     'penanggungjawabteknis_id' => 1,
+//     'pengawasanstatus_id' => 1,
+//     'pengawasantindakan_id' => 2,
+//     'judul' => 'Laporan Ketertiban Gedung Pendidikan',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Pendidikan sudah memenuhi ketentuan.',
+// ]);
 
-ketertiban::create([
-    'pengawasanlokasi_id' => 4,
-    'pengawasanbangunangedung_id' => 4,
-    'penanggungjawabteknis_id' => 3,
-    'pengawasanstatus_id' => 2,
-    'pengawasantindakan_id' => 2,
-    'judul' => 'Laporan Ketertiban Gedung Olahraga',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Olahraga ada ketidaksesuaian antara IMB dan Bangunan Terbangun.',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 4,
+//     'pengawasanbangunangedung_id' => 4,
+//     'penanggungjawabteknis_id' => 3,
+//     'pengawasanstatus_id' => 2,
+//     'pengawasantindakan_id' => 2,
+//     'judul' => 'Laporan Ketertiban Gedung Olahraga',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Olahraga ada ketidaksesuaian antara IMB dan Bangunan Terbangun.',
+// ]);
 
-ketertiban::create([
-    'pengawasanlokasi_id' => 5,
-    'pengawasanbangunangedung_id' => 5,
-    'penanggungjawabteknis_id' => 1,
-    'pengawasanstatus_id' => 1,
-    'pengawasantindakan_id' => 1,
-    'judul' => 'Laporan Ketertiban Gedung Komersial',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Komersial dalam keadaan Laik Fungsi.',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 5,
+//     'pengawasanbangunangedung_id' => 5,
+//     'penanggungjawabteknis_id' => 1,
+//     'pengawasanstatus_id' => 1,
+//     'pengawasantindakan_id' => 1,
+//     'judul' => 'Laporan Ketertiban Gedung Komersial',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Komersial dalam keadaan Laik Fungsi.',
+// ]);
 
-ketertiban::create([
-    'pengawasanlokasi_id' => 6,
-    'pengawasanbangunangedung_id' => 6,
-    'penanggungjawabteknis_id' => 2,
-    'pengawasanstatus_id' => 1,
-    'pengawasantindakan_id' => 2,
-    'judul' => 'Laporan Ketertiban Gedung Transportasi',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Transportasi memerlukan pemeliharaan lebih lanjut.',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 6,
+//     'pengawasanbangunangedung_id' => 6,
+//     'penanggungjawabteknis_id' => 2,
+//     'pengawasanstatus_id' => 1,
+//     'pengawasantindakan_id' => 2,
+//     'judul' => 'Laporan Ketertiban Gedung Transportasi',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Transportasi memerlukan pemeliharaan lebih lanjut.',
+// ]);
 
-ketertiban::create([
-    'pengawasanlokasi_id' => 7,
-    'pengawasanbangunangedung_id' => 7,
-    'penanggungjawabteknis_id' => 1,
-    'pengawasanstatus_id' => 2,
-    'pengawasantindakan_id' => 1,
-    'judul' => 'Laporan Ketertiban Gedung Perhotelan',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Perhotelan sudah sesuai dengan IMB yang diterbitkan.',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 7,
+//     'pengawasanbangunangedung_id' => 7,
+//     'penanggungjawabteknis_id' => 1,
+//     'pengawasanstatus_id' => 2,
+//     'pengawasantindakan_id' => 1,
+//     'judul' => 'Laporan Ketertiban Gedung Perhotelan',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Perhotelan sudah sesuai dengan IMB yang diterbitkan.',
+// ]);
 
-ketertiban::create([
-    'pengawasanlokasi_id' => 8,
-    'pengawasanbangunangedung_id' => 8,
-    'penanggungjawabteknis_id' => 3,
-    'pengawasanstatus_id' => 2,
-    'pengawasantindakan_id' => 2,
-    'judul' => 'Laporan Ketertiban Gedung Rekreasi',
-    'tanggal_laporan' => now(),
-    'keterangan' => 'Gedung Rekreasi dalam keadaan Laik Fungsi',
-]);
+// ketertiban::create([
+//     'pengawasanlokasi_id' => 8,
+//     'pengawasanbangunangedung_id' => 8,
+//     'penanggungjawabteknis_id' => 3,
+//     'pengawasanstatus_id' => 2,
+//     'pengawasantindakan_id' => 2,
+//     'judul' => 'Laporan Ketertiban Gedung Rekreasi',
+//     'tanggal_laporan' => now(),
+//     'keterangan' => 'Gedung Rekreasi dalam keadaan Laik Fungsi',
+// ]);
 
 
 // =============== CREATE BERITA AGENDA
-beritaagenda::create([
-    'pengawasanlokasi_id' => 11,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Rapat Koordinasi Proyek Konstruksi',
-    'keterangan' => 'Rapat koordinasi untuk membahas progres proyek Kabupaten Bandung Barat.',
-    'kuota' => '50',
-    'tanggal_mulai' => '2024-07-20',
-    'tanggal_selesai' => '2024-07-27',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 11,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Rapat Koordinasi Proyek Konstruksi',
+//     'keterangan' => 'Rapat koordinasi untuk membahas progres proyek Kabupaten Bandung Barat.',
+//     'kuota' => '50',
+//     'tanggal_mulai' => '2024-07-20',
+//     'tanggal_selesai' => '2024-07-27',
+// ]);
 
-beritaagenda::create([
-    'pengawasanlokasi_id' => 13,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Pelatihan Keselamatan Kerja',
-    'keterangan' => 'Pelatihan untuk meningkatkan keselamatan kerja di lokasi proyek.',
-    'kuota' => '25',
-    'tanggal_mulai' => '2024-08-02',
-    'tanggal_selesai' => '2024-08-11',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 13,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Pelatihan Keselamatan Kerja',
+//     'keterangan' => 'Pelatihan untuk meningkatkan keselamatan kerja di lokasi proyek.',
+//     'kuota' => '25',
+//     'tanggal_mulai' => '2024-08-02',
+//     'tanggal_selesai' => '2024-08-11',
+// ]);
 
-beritaagenda::create([
-    'pengawasanlokasi_id' => 11,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Pelatihan Sertifikasi Para Pekerja Konstruksi',
-    'keterangan' => 'Pelatihan Sertifikasi Pekerja Konstruksi di Kecamatan Cililin.',
-    'kuota' => '30',
-    'tanggal_mulai' => '2024-08-11',
-    'tanggal_selesai' => '2024-08-14',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 11,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Pelatihan Sertifikasi Para Pekerja Konstruksi',
+//     'keterangan' => 'Pelatihan Sertifikasi Pekerja Konstruksi di Kecamatan Cililin.',
+//     'kuota' => '30',
+//     'tanggal_mulai' => '2024-08-11',
+//     'tanggal_selesai' => '2024-08-14',
+// ]);
 
-beritaagenda::create([
-    'pengawasanlokasi_id' => 12,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Sosialisasi Proyek Baru',
-    'keterangan' => 'Sosialisasi Paket Pekerjaan Konstruksi Tahun 2024.',
-    'kuota' => '30',
-    'tanggal_mulai' => '2024-08-12',
-    'tanggal_selesai' => '2024-08-30',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 12,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Sosialisasi Proyek Baru',
+//     'keterangan' => 'Sosialisasi Paket Pekerjaan Konstruksi Tahun 2024.',
+//     'kuota' => '30',
+//     'tanggal_mulai' => '2024-08-12',
+//     'tanggal_selesai' => '2024-08-30',
+// ]);
 
-beritaagenda::create([
-    'pengawasanlokasi_id' => 15,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Workshop Teknologi Konstruksi',
-    'keterangan' => 'Workshop tentang teknologi terbaru dalam industri konstruksi.',
-    'kuota' => '40',
-    'tanggal_mulai' => '2024-11-03',
-    'tanggal_selesai' => '2024-11-15',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 15,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Workshop Teknologi Konstruksi',
+//     'keterangan' => 'Workshop tentang teknologi terbaru dalam industri konstruksi.',
+//     'kuota' => '40',
+//     'tanggal_mulai' => '2024-11-03',
+//     'tanggal_selesai' => '2024-11-15',
+// ]);
 
-beritaagenda::create([
-    'pengawasanlokasi_id' => 4,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Pelatihan Sertifikasi Para Pekerja Konstruksi',
-    'keterangan' => 'Pelatihan Sertifikasi Pekerja Konstruksi di Kecamatan Cikalong Wetan.',
-    'kuota' => '30',
-    'tanggal_mulai' => '2024-12-02',
-    'tanggal_selesai' => '2024-12-04',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 4,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Pelatihan Sertifikasi Para Pekerja Konstruksi',
+//     'keterangan' => 'Pelatihan Sertifikasi Pekerja Konstruksi di Kecamatan Cikalong Wetan.',
+//     'kuota' => '30',
+//     'tanggal_mulai' => '2024-12-02',
+//     'tanggal_selesai' => '2024-12-04',
+// ]);
 
-beritaagenda::create([
-    'pengawasanlokasi_id' => 14,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Evaluasi Proyek Tahunan',
-    'keterangan' => 'Evaluasi kinerja proyek yang telah dilaksanakan selama satu tahun.',
-    'kuota' => '20',
-    'tanggal_mulai' => '2024-12-12',
-    'tanggal_selesai' => '2024-12-23',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 14,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Evaluasi Proyek Tahunan',
+//     'keterangan' => 'Evaluasi kinerja proyek yang telah dilaksanakan selama satu tahun.',
+//     'kuota' => '20',
+//     'tanggal_mulai' => '2024-12-12',
+//     'tanggal_selesai' => '2024-12-23',
+// ]);
 
 
-beritaagenda::create([
-    'pengawasanlokasi_id' => 16,
-    'statusprogram' => 'Selesai',
-    'nama_agenda' => 'Penyampaian Laporan Proyek',
-    'keterangan' => 'Penyampaian laporan akhir proyek yang telah selesai dilaksanakan.',
-    'kuota' => '10',
-    'tanggal_mulai' => '2024-12-18',
-    'tanggal_selesai' => '2024-12-18',
-]);
+// beritaagenda::create([
+//     'pengawasanlokasi_id' => 16,
+//     'statusprogram' => 'Selesai',
+//     'nama_agenda' => 'Penyampaian Laporan Proyek',
+//     'keterangan' => 'Penyampaian laporan akhir proyek yang telah selesai dilaksanakan.',
+//     'kuota' => '10',
+//     'tanggal_mulai' => '2024-12-18',
+//     'tanggal_selesai' => '2024-12-18',
+// ]);
 
 
 // =============== CREATE QA PERTANYAAN
 qa::create([
     'qasebagai_id' => 1,
-    'qapertanyaan_id' => 3,
+'qapertanyaan_id' => 3,
     'nama_lengkap' => 'Suhardi Wiharja',
     'email' => 'suhardi@example.com',
     'telepon' => '081234567890',

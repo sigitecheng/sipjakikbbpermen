@@ -34,7 +34,7 @@ class DatajakonController extends Controller
         $dataasosiasi = asosiasipengusaha::paginate(15);
         $user = Auth::user();
 
-        
+
         return view('frontend.03_datajakon.01_asosiasi', [
             'title' => 'Asosiasi Pengusaha ',
             'data' => $dataasosiasi,
@@ -47,7 +47,7 @@ class DatajakonController extends Controller
     {
         $dataasosiasi = asosiasipengusaha::where('nama_asosiasi', $nama_asosiasi)->firstOrFail();
         $user = Auth::user();
-        
+
         return view('frontend.03_datajakon.01_asosiasishow', [
             'data' => $dataasosiasi,
             'user' => $user,
@@ -60,7 +60,7 @@ class DatajakonController extends Controller
 
     public function fepengawasandanketertiban()
     {
-        
+
         $dataketertiban = ketertiban::paginate(15);
         $user = Auth::user();
 
@@ -68,19 +68,19 @@ class DatajakonController extends Controller
             'dataketertiban' => $dataketertiban,
             'user' => $user,
             'title' => 'Pengawasan & Ketertiban',
-           
+
         ]);
 
     }
 
 // =================================================
-    
-    
-    
-    
+
+
+
+
     public function pengawasandanketertiban()
     {
-        
+
         $ketertiban = ketertiban::paginate(15);
         $user = Auth::user();
 
@@ -88,7 +88,7 @@ class DatajakonController extends Controller
             'data' => $ketertiban,
             'user' => $user,
             'title' => 'Pengawasan & Ketertiban',
-           
+
         ]);
 
     }
@@ -129,7 +129,7 @@ class DatajakonController extends Controller
                         $datapengawasanstatus = pengawasanstatus::all();
                         $datapengawasantindakan = pengawasantindakan::all();
 
-       
+
                         // Tampilkan form update dengan data yang ditemukan
                         return view('backend.03_datajakon.01_pengawasanketertiban.update', [
                             'data' => $datapengawasanketertiban,
@@ -142,7 +142,7 @@ class DatajakonController extends Controller
                             'title' => 'Update Pengawasan & Ketertiban'
                         ]);
                     }
-                    
+
                     // -------------------- UPDATE DATA CREATE UPDATE UNDANG UNDANG JASA KONSTRUKSI ----------------------
                     public function createupdatepengawasandanketertiban(Request $request, $judul)
                     {
@@ -157,10 +157,10 @@ class DatajakonController extends Controller
                             'tanggal_laporan' => 'required|date',
                             'keterangan' => 'required|string|max:255',
                         ]);
-                    
+
                         // Cari data ketertiban berdasarkan judul
                         $dataketertiban = ketertiban::where('judul', $judul)->firstOrFail();
-                    
+
                         // Update data ketertiban dengan data dari form
                         $dataketertiban->update([
                             'pengawasanlokasi_id' => $request->input('pengawasanlokasi_id'),
@@ -172,46 +172,46 @@ class DatajakonController extends Controller
                             'tanggal_laporan' => $request->input('tanggal_laporan'),
                             'keterangan' => $request->input('keterangan'),
                         ]);
-                    
+
                         // Flash pesan session
                         session()->flash('update', 'Data Pengawasan & Ketertiban Berhasil Diupdate!');
-                    
+
                         // Redirect ke halaman yang sesuai
                         return redirect('/pengawasandanketertiban');
                     }
 
                     // =====================================================
-                                    
-    //================ DELETE DATA ASOSIASI PENGUSAHA  ========================== 
+
+    //================ DELETE DATA ASOSIASI PENGUSAHA  ==========================
     public function deletepengawasandanketertiban($id)
     {
         // Cari entri berdasarkan judul
         $entry = ketertiban::where('id', $id)->first();
-    
+
         if ($entry) {
             // Hapus entri dari database
             ketertiban::destroy($entry->id);
-    
+
             // Set pesan flash untuk sukses
             session()->flash('delete', 'Data Berhasil Dihapus!');
-    
+
             // Redirect ke halaman yang sesuai
             return redirect('/pengawasandanketertiban');
         } else {
             // Set pesan flash jika data tidak ditemukan
             session()->flash('error', 'Data Tidak Ditemukan!');
-    
+
             // Redirect ke halaman yang sesuai
             return redirect('/pengawasandanketertiban');
         }
     }
 
-    
+
 
     public function createpengawasandanketertiban()
     {
         $user = Auth::user();
-        
+
         $datapengawasanlokasi = pengawasanlokasi::all();
         $datapengawasanbangunan = pengawasanbangunangedung::all();
         $datapenanggungjawabteknis = Penanggungjawabteknis::all();
@@ -228,7 +228,7 @@ class DatajakonController extends Controller
             'datapenanggungjawabteknis' => $datapenanggungjawabteknis,
             'datapengawasanstatus' => $datapengawasanstatus,
             'datapengawasantindakan' => $datapengawasantindakan,
-                            
+
         ]);
     }
 
@@ -245,7 +245,7 @@ class DatajakonController extends Controller
             'tanggal_laporan' => 'required|date',
             'keterangan' => 'required|string|max:255',
         ]);
-    
+
         // Buat entri baru di database
         ketertiban::create([
             'judul' => $request->input('judul'),
@@ -257,12 +257,12 @@ class DatajakonController extends Controller
             'tanggal_laporan' => $request->input('tanggal_laporan'),
             'keterangan' => $request->input('keterangan'),
         ]);
-    
+
         session()->flash('create', 'Data Berhasil Di Tambahkan !');
         // Redirect ke halaman yang sesuai
         return redirect('/pengawasandanketertiban');
     }
-        
+
 
     // ========================================================
     // ASOSIASI PENGUSAHA
@@ -278,17 +278,17 @@ class DatajakonController extends Controller
             'user' => $user,
             'datapengawasanlokasi' => $datapengawasanlokasi,
             'title' => 'Asosiasi Pengusaha ',
-           
+
         ]);
 
         // $datauser = user::paginate(15);
         // $datastatusadmin = statusadmin::all();
-        
+
         // return view('backend.15_administrator.user.index', [
         //     'title' => 'Daftar User Admin Sipjaki ',
-        //     'datauser' => $datauser,  
-        //     'datastatusadmin' => $datastatusadmin,  
-           
+        //     'datauser' => $datauser,
+        //     'datastatusadmin' => $datastatusadmin,
+
         // ]);
     }
 
@@ -306,25 +306,25 @@ class DatajakonController extends Controller
             'title' => 'Details Asosiasi Pengusaha',
         ]);
     }
-    
+
                 // -------------------- UPDATE ASOSIASI PENGUSAHA ----------------------
             public function updateasosiasipengusaha($nama_asosiasi)
                 {
                     // Cari data undang-undang berdasarkan nilai 'judul'
                     $dataasosiasipengusaha = asosiasipengusaha::where('nama_asosiasi', $nama_asosiasi)->firstOrFail();
                     $user = Auth::user();
-   
+
                     // Tampilkan form update dengan data yang ditemukan
                     return view('backend.03_datajakon.02_asosiasipengusaha.update', [
                         'dataasosiasipengusaha' => $dataasosiasipengusaha,
                         'user' => $user,
-                    
+
                         'title' => 'Update Asosiasi Pengusaha'
                     ]);
                 }
-                
+
                 // -------------------- UPDATE DATA CREATE UPDATE UNDANG UNDANG JASA KONSTRUKSI ----------------------
-            
+
                 public function createupdateasosiasipengusaha(Request $request, $nama_asosiasi)
                 {
                     // Validasi input
@@ -342,28 +342,28 @@ class DatajakonController extends Controller
                         'status' => 'required|string|max:255',
                         'foto_asosiasi' => 'nullable|file|mimes:jpg,jpeg,png|max:20480',
                     ]);
-                
+
                     // Cari data asosiasipengusaha berdasarkan nama
                     $dataasosiasipengusaha = asosiasipengusaha::where('nama_asosiasi', $nama_asosiasi)->firstOrFail();
-                
+
                     // Path folder penyimpanan
                     $storagePath = storage_path('app/public/asosiasipengusaha');
-                
+
                     // Cek dan buat folder jika tidak ada
                     if (!File::exists($storagePath)) {
                         File::makeDirectory($storagePath, 0755, true);
                     }
-                
+
                     // Simpan file foto_asosiasi dan ambil path-nya
                     $filePath = $dataasosiasipengusaha->foto_asosiasi; // Default ke foto yang ada jika tidak ada file baru
                     if ($request->hasFile('foto_asosiasi')) {
                         $file = $request->file('foto_asosiasi');
                         $filePath = $file->store('asosiasipengusaha', 'public');
                     }
-                
+
                     // Format tanggal sudah sesuai
                     // $tanggalBerdiri = $request->input('tanggal_berdiri');
-                
+
                     // Update data asosiasipengusaha dengan data dari form
                     $dataasosiasipengusaha->update([
                         'nama_asosiasi' => $request->input('nama_asosiasi'),
@@ -379,48 +379,48 @@ class DatajakonController extends Controller
                         'status' => $request->input('status'),
                         'foto_asosiasi' => $filePath,
                     ]);
-                
+
                     // Flash pesan session
                     session()->flash('update', 'Data Asosiasi Pengusaha Berhasil Diupdate!');
-                
+
                     // Redirect ke halaman yang sesuai
                     return redirect('/asosiasipengusaha');
                 }
 
-                
-    //================ DELETE DATA ASOSIASI PENGUSAHA  ========================== 
+
+    //================ DELETE DATA ASOSIASI PENGUSAHA  ==========================
     public function deleteasosiasipengusaha($nama_asosiasi)
     {
         // Cari entri berdasarkan name
         $entry = asosiasipengusaha::where('nama_asosiasi', $nama_asosiasi)->first();
-    
+
         if ($entry) {
             // Hapus file terkait jika ada
             if ($entry->foto_asosiasi) {
                 Storage::disk('public')->delete($entry->foto_asosiasi);
             }
-    
+
             // Hapus entri dari database
             asosiasipengusaha::destroy($entry->id);
-    
+
             // Set pesan flash untuk sukses
             session()->flash('delete', 'Data Berhasil Dihapus!');
-    
+
             // Redirect ke halaman yang sesuai
             return redirect('/asosiasipengusaha');
         } else {
             // Set pesan flash jika data tidak ditemukan
             session()->flash('error', 'Data Tidak Ditemukan!');
-    
+
             // Redirect ke halaman yang sesuai
             return redirect('/asosiasipengusaha');
         }
     }
-                
+
 
     // ==========================================================
-    // CREATE ASOSIASI PENGUSAHA JASA KONSTRUKSI 
-    
+    // CREATE ASOSIASI PENGUSAHA JASA KONSTRUKSI
+
     public function createasosiasipengusaha()
     {
         $user = Auth::user();
@@ -431,7 +431,7 @@ class DatajakonController extends Controller
             'title' => 'Create Asosiasi Pengusaha',
             'user' => $user,
             'dataasosiasipengusaha' => $data,
-                            
+
         ]);
     }
 
@@ -483,24 +483,24 @@ class DatajakonController extends Controller
         $data = standarbiayaumum::paginate(15);
 
         $user = Auth::user();
-        
+
         return view('frontend.03_datajakon.02_standarbiayaumum', [
-            'title' => 'Standar Biaya Umum ',
+            'title' => 'Standar Biaya Umum Jasa Konstruksi',
             'user' => $user,
             'data' => $data,
-           
+
         ]);
     }
 
     public function standarbiayaumumshowbyjudulfe($judul)
     {
         $datastandarbiayaumum = standarbiayaumum::where('judul', $judul)->firstOrFail();
-        $user = Auth::user();   
+        $user = Auth::user();
 
         return view('frontend.03_datajakon.02_standarbiayaumumshow', [
             'data' => $datastandarbiayaumum,
             'user' => $user,
-            'title' => 'Show Details Standar Biaya Umum',
+            'title' => 'Standar Biaya Umum',
         ]);
     }
 
@@ -511,24 +511,24 @@ class DatajakonController extends Controller
         $data = sbulampiran3::paginate(10);
 
         $user = Auth::user();
-        
+
         return view('frontend.03_datajakon.02_sbulampiran3', [
             'title' => 'Lampiran 3 Standar Biaya Umum ',
             'user' => $user,
             'data' => $data,
-           
+
         ]);
     }
 
     public function fesbulampiran3showbyjudulfe($judul)
     {
         $datastandarbiayaumum = sbulampiran3::where('judul', $judul)->firstOrFail();
-        $user = Auth::user();   
+        $user = Auth::user();
 
         return view('frontend.03_datajakon.02_sbulampiran3show', [
             'data' => $datastandarbiayaumum,
             'user' => $user,
-            'title' => 'Show Details Lampiran 3 Standar Biaya Umum',
+            'title' => 'Lampiran 3 Standar Biaya Umum',
         ]);
     }
 
@@ -539,24 +539,24 @@ class DatajakonController extends Controller
         $data = sbulampiran2::paginate(10);
 
         $user = Auth::user();
-        
+
         return view('frontend.03_datajakon.02_sbulampiran2', [
             'title' => 'Lampiran 2 Standar Biaya Umum ',
             'user' => $user,
             'data' => $data,
-           
+
         ]);
     }
 
     public function fesbulampiran2showbyjudulfe($judul)
     {
         $datastandarbiayaumum = sbulampiran2::where('judul', $judul)->firstOrFail();
-        $user = Auth::user();   
+        $user = Auth::user();
 
         return view('frontend.03_datajakon.02_sbulampiran2show', [
             'data' => $datastandarbiayaumum,
             'user' => $user,
-            'title' => 'Show Details Lampiran 2 Standar Biaya Umum',
+            'title' => 'Lampiran 2 Standar Biaya Umum',
         ]);
     }
 
@@ -567,28 +567,28 @@ class DatajakonController extends Controller
         $data = sbulampiran1::paginate(10);
 
         $user = Auth::user();
-        
+
         return view('frontend.03_datajakon.02_sbulampiran1', [
             'title' => 'Lampiran 1 Standar Biaya Umum ',
             'user' => $user,
             'data' => $data,
-           
+
         ]);
     }
 
     public function fesbulampiran1showbyjudulfe($judul)
     {
         $datastandarbiayaumum = sbulampiran1::where('judul', $judul)->firstOrFail();
-        $user = Auth::user();   
+        $user = Auth::user();
 
         return view('frontend.03_datajakon.02_sbulampiran1show', [
             'data' => $datastandarbiayaumum,
             'user' => $user,
-            'title' => 'Show Details Lampiran 1 Standar Biaya Umum',
+            'title' => 'Lampiran 1 Standar Biaya Umum',
         ]);
     }
 
-    
+
 
     // ======================================== PAKET PEKERJAAN =====================================
 
@@ -601,14 +601,14 @@ class DatajakonController extends Controller
             'title' => 'Paket Pekerjaan Kabupaten Bandung Barat',
             'data' => $datapaketpekerjaan,
             'datametodepengadaan' => $datametodepengadaan,
-           
+
         ]);
     }
 
-    
+
     public function bepaketpekerjaan()
     {
-        
+
         $paketpekerjaan = paketpekerjaan::paginate(15);
         $user = Auth::user();
 
@@ -616,7 +616,7 @@ class DatajakonController extends Controller
             'data' => $paketpekerjaan,
             'user' => $user,
             'title' => 'Paket Pekerjaan Pemerintah Kabupaten Bandung Barat ',
-           
+
         ]);
     }
 
@@ -643,11 +643,11 @@ class DatajakonController extends Controller
             'datapaketpekerjaan' => $datapaketpekerjaan,
             'datametodepengadaan' => $datametodepengadaan,
             'user' => $user,
-        
+
             'title' => 'Update Paket Pekerjaan'
         ]);
     }
-    
+
     // -------------------- UPDATE DATA CREATE UPDATE UNDANG UNDANG JASA KONSTRUKSI ----------------------
 
 public function createupdatepaketpekerjaan(Request $request, $instansi)
@@ -709,7 +709,7 @@ public function createupdatepaketpekerjaan(Request $request, $instansi)
 
 public function createpaketpekerjaan()
 {
-        
+
         $datametodepengadaan = metodepengadaan::all();
         $user = Auth::user();
 
@@ -789,31 +789,31 @@ public function deletepaketpekerjaan($instansi)
     }
 }
 
-    
 
 
 
-    
+
+
 
     // ============================================================================== =========
 
-    
+
     public function pengawasan()
     {
-        
+
         $dataketertiban = ketertiban::paginate(6);
         $user = Auth::user();
 
         return view('frontend.03_datajakon.04_pengawasan', [
             'data' => $dataketertiban,
             'user' => $user,
-            'title' => 'Pengawasan & Ketertiban',
-           
+            'title' => 'Pengawasan Dan Tertib Jasa Konstruksi ',
+
         ]);
 
     }
 
 
 
-    
+
 }
