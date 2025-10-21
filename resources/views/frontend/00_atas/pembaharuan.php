@@ -573,3 +573,71 @@
         }
     }
 </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    .dropdown-jaspro {
+        position: relative;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .dropdown-toggle-jaspro {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    .dropdown-toggle-jaspro:hover {
+        color: #000;
+    }
+
+    .dropdown-content-jaspro {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 380px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        padding: 8px 0;
+        z-index: 999;
+    }
+
+    .dropdown-jaspro:hover .dropdown-content-jaspro {
+        display: block;
+    }
+
+    .dropdown-item-jaspro {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-item-jaspro i {
+        margin-right: 10px;
+        font-size: 18px;
+        background: linear-gradient(90deg, black, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .dropdown-item-jaspro a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .dropdown-item-jaspro:hover {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+</style>
