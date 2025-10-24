@@ -337,12 +337,12 @@ nav a {
 
         <div style="display: flex; align-items: center; color: black; text-decoration: none; padding: 6px 12px; transition: all 0.3s ease; border-radius: 6px;">
             <i class="bi bi-info-circle-fill" style="margin-left: 3px; margin-right: 8px; background: linear-gradient(90deg, black, yellow); color:white; padding: 5px; border-radius: 50%;"></i>
-            <a href="/spm/informasispm" style="color: black; text-decoration: none; text-align:left; font-size: 14px; font-weight: 500;">INDIKATOR KINERJA KUNCI</a>
+            <a href="/404" style="color: black; text-decoration: none; text-align:left; font-size: 14px; font-weight: 500;">INDIKATOR KINERJA KUNCI</a>
         </div>
 
         <div style="display: flex; align-items: center; color: black; text-decoration: none; padding: 6px 12px; transition: all 0.3s ease; border-radius: 6px;">
             <i class="bi bi-graph-up-arrow" style="margin-left: 3px; margin-right: 8px; background: linear-gradient(90deg, black, yellow); color:white; padding: 5px; border-radius: 50%;"></i>
-            <a href="/404" style="color: black; text-decoration: none; text-align:left; font-size: 14px; font-weight: 500;">LAPORAN SPM</a>
+            <a href="/spm/informasispm" style="color: black; text-decoration: none; text-align:left; font-size: 14px; font-weight: 500;">LAPORAN SPM</a>
         </div>
 
     </div>

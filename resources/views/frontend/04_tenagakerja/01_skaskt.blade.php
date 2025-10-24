@@ -1,4 +1,5 @@
 @include('frontend.00_atas.header')
+@include('frontend.00_atas.pembaharuan')
 
 
 {{-- ------------------------------------------------------------------------------------------ --}}
@@ -6,51 +7,41 @@
 {{-- ------------------------------------------------------------------------------------------ --}}
 
 <section id="sec-0">
-    
-    
+
+
     <div class="div" style="z-index: 9999; position: fixed;
             top: 0; left: 0; width: 100%; z-index: 9999;
-            background-color: white; border-bottom: 1px solid black; 
+            background-color: white; border-bottom: 1px solid black;
             ">
 
         @include('frontend.00_atas.header1')
         <header>
-            
+
                 @include('frontend.00_atas.header2_navbar')
-            
+
         </div>
         </header>
 
 
-<div class="div" style="
-            justify-content: center;
-            text-align:center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            margin-top:165px;
-        ">
-        <br>
-         <h2 style="
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #333;
-    text-transform: uppercase;
+<div class="div responsive-hide" style="
+    justify-content: center;
     text-align: center;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 25px;
-    width: 500px;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
-    transition: background 0.5s ease, color 0.5s ease;
-    " onmouseover="this.style.background='linear-gradient(to right, #f0f0f0, #e0e0e0)'; this.style.color='black';" onmouseout="this.style.background='linear-gradient(to right, black, yellow )'; this.style.color='white';">
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px; /* space kosong untuk responsive */
+">
 
-Daftar Sertifikat Keterampilan Kerja <br> 
-Pemerintah Kabupaten Bandung
-</h2>
+    <h2
+    class="heading-structure"
+        onmouseover="this.style.background='linear-gradient(to right, #002060, #FFD100)'; this.style.color='white';"
+        onmouseout="this.style.background='linear-gradient(to right, #FFD100, #002060)'; this.style.color='white';"
+    >
+Tenaga Kerja Konstruksi </h2>
+
 </div>
+
 <style>
     @media (min-width: 769px) and (max-width: 1024px) {
         .container-bagan {
@@ -71,8 +62,8 @@ Pemerintah Kabupaten Bandung
     </style>
 
 
-<div class="container" 
-@media (min-width: 769px) and (max-width: 1024px) {    
+<div class="container"
+@media (min-width: 769px) and (max-width: 1024px) {
 
     style="
     display: flex;
@@ -83,20 +74,11 @@ Pemerintah Kabupaten Bandung
     border-radius: 25px;
     text-align: center;
     width: 100%;
-    height: 26vh;
+    height: 8vh;
     background: linear-gradient(to bottom, yellow, white, white);
     align-items: center;
     position: relative;
 ">
-
-<div style="display: flex; align-items: center;">
-    <img src="/assets/icon/pupr.png" alt="Logo SIPJAKIKBB" style="width: 50px; height: 50px; object-fit: cover; margin: 0 10px;">
-    <img src="/assets/icon/sipjakikbb.png" alt="Logo SIPJAKIKBB" style="width: 70px; height: 70px; object-fit: cover; margin: 0 10px;">
-</div>
-
-
-<h1 style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 700;"><button class="badgekementrian">Dinas Pekerjaan Umum Dan Tata Ruang</button> </h1>
-
 
 <style>
 
@@ -117,7 +99,7 @@ Pemerintah Kabupaten Bandung
                 background-color: white;
                 color: black;
                 background: white;
-            }    
+            }
 
 .badgekementrian {
                 background: linear-gradient(to right, #FFD700, #FFD700);
@@ -136,14 +118,14 @@ Pemerintah Kabupaten Bandung
                 background-color: white;
                 color: black;
                 background: white;
-            }    
+            }
 </style>
 
 @include('tambahan.pencarianskk.menunavigasi')
 
 
     {{-- <h1 style="margin-top:10px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 700;">Kementrian Pekerjaan Umum Dan Penataan Ruang </h1> --}}
-    
+
 </div>
 
 {{-- ====================== ====================== --}}
@@ -183,7 +165,7 @@ Pemerintah Kabupaten Bandung
                 background-color: white;
                 color: black;
                 background: white;
-            }    
+            }
 
 .badgekementrian {
                 background: linear-gradient(to right, #FFD700, #FFD700);
@@ -202,7 +184,7 @@ Pemerintah Kabupaten Bandung
                 background-color: white;
                 color: black;
                 background: white;
-            }    
+            }
 
 .badgepencarian {
                 background: linear-gradient(to right, #FFD700, #FFD700);
@@ -221,14 +203,14 @@ Pemerintah Kabupaten Bandung
                 background-color: white;
                 color: black;
                 background: white;
-            }    
+            }
 </style>
 
 @include('tambahan.pencarianskk.menunavigasiperdaerah')
 
 
     {{-- <h1 style="margin-top:10px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: 700;">Kementrian Pekerjaan Umum Dan Penataan Ruang </h1> --}}
-    
+
 </div>
 
 
@@ -238,7 +220,7 @@ Pemerintah Kabupaten Bandung
 {{-- ------------------------------------ END FITUR ------------- --}}
 
 
-           
+
         </div>
 </div>
 </div>
@@ -262,7 +244,7 @@ Pemerintah Kabupaten Bandung
     align-items: center;
     position: relative;
 ">
-{{-- 
+{{--
 <div style="display: flex; align-items: center;">
     <img src="/assets/icon/pupr.png" alt="Logo SIPJAKIKBB" style="width: 50px; height: 50px; object-fit: cover; margin: 0 10px;">
     <img src="/assets/icon/sipjakikbb.png" alt="Logo SIPJAKIKBB" style="width: 70px; height: 70px; object-fit: cover; margin: 0 10px;">
@@ -283,7 +265,7 @@ Pemerintah Kabupaten Bandung
                 /* justify-content: between; */
                 transition: background-color 0.3s, color 0.3s;
             }
-    
+
             .badge:hover {
                 background-color: white;
                 color: black;
@@ -365,7 +347,7 @@ Pemerintah Kabupaten Bandung
 
 
     </div>
-    
+
 
     <script>
         function selectOption() {
@@ -442,7 +424,7 @@ Pemerintah Kabupaten Bandung
             @endphp
 
             @foreach($data as $item )
-            
+
             <tr>
                 <td style="font-size: 12px; text-transform: uppercase; text-align:center;">{{ $loop->iteration + $start - 1 }}</td>
                 <td style="font-size: 12px; text-transform: uppercase; text-align:left;">{{ $item->nama }}</td>
@@ -450,9 +432,9 @@ Pemerintah Kabupaten Bandung
                 <td style="font-size: 12px; text-transform: uppercase; text-align:center;">{{ $item->keterampilanpekerja->keterampilan }}</td>
                 <td style="font-size: 12px; text-transform: uppercase; text-align:center;">{{ $item->tahunpilihan->tahun }}</td>
                 <td style="font-size: 12px; text-transform: uppercase; text-align:center;">{{ $item->kualifikasi }}</td>
-                
+
                 <td>
-                    
+
                 <style>
                                         /* Container for the buttons */
             .button-container {
@@ -487,14 +469,14 @@ Pemerintah Kabupaten Bandung
             .iconhover i {
                 margin: 0;
             }
-            
+
                 </style>
 
                 <div class="button-container">
                 <a href="/tenagakerja/skaskt/{{ $item->nama}}" class="iconhover" title="View">
                     <i class="fas fa-eye" style="color: black"></i>
                 </a>
-                        
+
                     </div>
 
                     <script>
@@ -506,8 +488,8 @@ Pemerintah Kabupaten Bandung
             </tr>
             @endforeach
             {{-- ============================================ --}}
-            
-            
+
+
         </tbody>
     </table>
 
@@ -543,12 +525,12 @@ Pemerintah Kabupaten Bandung
     </div>
 
 
-        
+
 </div>
 {{-- ------------------------------------ END FITUR ------------- --}}
 
 
-           
+
         </div>
 </div>
 </div>
