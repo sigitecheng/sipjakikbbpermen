@@ -15,7 +15,7 @@
                     <h2 class="brand-title">
                         <span class="brand-highlight">SIPJAKI</span>KBB
                     </h2>
-                    <p class="institution-name">Dinas Pekerjaan Umum & Penataan Ruang</p>
+                    <p class="institution-name">Dinas Pekerjaan Umum & Tata Ruang</p>
                     <p class="institution-name">Pemerintah Kabupaten Bandung Barat</p>
                 </div>
                 <div class="description-section" style="text-align: justify;">
