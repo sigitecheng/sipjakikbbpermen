@@ -4251,7 +4251,7 @@ berita::create([
 
 
 berita::create([
-    'judul' => 'Kunjungan Provinsi Jawa Barat : Implementasi Sipjaki Terhadap Dunia Konstruksi',
+    'judul' => 'Kunjungan Provinsi Jawa Barat : Implementasi Sipjaki di Kabupaten Bandung Barat',
     'user_id' => rand(1,5),
     'gambar' => 'berita/databerita/berita8.jpeg',
     'keteranganberita' => '
@@ -4295,6 +4295,39 @@ berita::create([
 <p>Melalui kegiatan ini, aparatur kecamatan, perangkat desa, dan perwakilan pelaku jasa konstruksi dilatih untuk memahami cara penginputan, validasi, dan sinkronisasi data konstruksi agar selaras dengan sistem yang digunakan oleh kabupaten. Dinas PUPR memberikan pendampingan teknis langsung untuk memastikan seluruh peserta mampu menerapkan sistem dengan benar di lapangan.</p>
 
 <p>Kegiatan kolaboratif ini menjadi langkah strategis dalam membangun tata kelola sektor konstruksi yang lebih baik di tingkat kecamatan. Dengan penguatan data yang terintegrasi, Pemerintah Kecamatan Cipatat berharap seluruh proyek konstruksi dapat terpantau secara menyeluruh, akurat, dan akuntabel melalui platform Sipjaki.</p>
+',
+    'tanggal' => Carbon::now()->toDateString(),
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+berita::create([
+    'judul' => 'Kunjungan Komisi V DPR RI: Pengawasan Jasa Konstruksi di Daerah Kabupaten Bandung Barat',
+    'user_id' => rand(1,5),
+    'gambar' => 'dokumentasipelatihan/cipatat/11.jpg',
+    'keteranganberita' => '
+<p>Komisi V DPR RI melakukan kunjungan kerja ke Kabupaten Bandung Barat dalam rangka pengawasan pelaksanaan proyek jasa konstruksi di wilayah tersebut. Kegiatan ini bertujuan memastikan seluruh proyek berjalan sesuai dengan standar teknis dan anggaran yang telah ditetapkan.</p>
+
+<p>Dalam kunjungan ini, anggota Komisi V DPR RI meninjau sejumlah proyek infrastruktur, termasuk jalan, jembatan, dan fasilitas publik lainnya. Mereka berdiskusi langsung dengan Dinas PUPR Kabupaten Bandung Barat, kontraktor, serta pengawas lapangan untuk memastikan kualitas pekerjaan dan kepatuhan terhadap peraturan yang berlaku.</p>
+
+<p>Kunjungan ini menjadi bagian dari upaya DPR RI untuk meningkatkan transparansi, efisiensi, dan akuntabilitas dalam sektor jasa konstruksi di daerah, sekaligus memberikan masukan strategis bagi pemerintah daerah dalam memperbaiki pelaksanaan proyek yang sedang berjalan maupun yang akan datang.</p>
+',
+    'tanggal' => Carbon::now()->toDateString(),
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+
+berita::create([
+    'judul' => 'Pengawasan Pembangunan Gedung Damkar Dinas Pemadam Kebakaran',
+    'user_id' => rand(1,5),
+    'gambar' => 'dokumentasipelatihan/cipatat/17.jpg',
+    'keteranganberita' => '
+<p>Dinas PUPR Kabupaten Bandung Barat melakukan pengawasan pembangunan Gedung Damkar Dinas Pemadam Kebakaran untuk memastikan proyek berjalan sesuai dengan standar teknis dan anggaran yang ditetapkan. Kegiatan ini bertujuan meningkatkan kualitas infrastruktur publik dan keselamatan masyarakat.</p>
+
+<p>Tim pengawas meninjau langsung progres pembangunan gedung, memeriksa kualitas material, serta memastikan pelaksanaan konstruksi sesuai dengan desain dan spesifikasi teknis. Selain itu, koordinasi dilakukan dengan kontraktor pelaksana dan pihak terkait agar pekerjaan berjalan lancar dan tepat waktu.</p>
+
+<p>Pengawasan ini menjadi langkah penting dalam menjaga akuntabilitas dan transparansi proyek pembangunan gedung Damkar, sekaligus memastikan fasilitas tersebut dapat segera digunakan untuk mendukung operasional pemadam kebakaran di Kabupaten Bandung Barat.</p>
 ',
     'tanggal' => Carbon::now()->toDateString(),
     'created_at' => Carbon::now(),

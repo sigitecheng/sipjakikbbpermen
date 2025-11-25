@@ -48,6 +48,32 @@ class FedashboardController extends Controller
     ]);
 }
 
+    public function new()
+{
+    $user = Auth::user();
+
+    // Semua data diurutkan berdasarkan ID terbesar (data terbaru muncul duluan)
+    $data = berita::orderBy('id', 'desc')->get();
+    $databerita = berita::orderBy('id', 'desc')->get();
+    $data_layanankami = layanankami::orderBy('id', 'desc')->get();
+    $dataqasebagai = qasebagai::orderBy('id', 'desc')->get();
+    $dataqapertanyaan = qapertanyaan::orderBy('id', 'desc')->get();
+    $himbauandinas = himbauandinas::orderBy('id', 'desc')->get();
+    $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
+
+    return view('frontend.A00_new.01_halamanutama.halamanutama', [
+        'title' => 'SIPJAKI Kabupaten Bandung Barat',
+        'data' => $data,
+        'databerita' => $databerita,
+        'data_layanankami' => $data_layanankami,
+        'data_jaskon' => $data_kegiatanjaskon,
+        'dataqasebagai' => $dataqasebagai,
+        'dataqapertanyaan' => $dataqapertanyaan,
+        'datahimbauandinas' => $himbauandinas,
+        'user' => $user,
+    ]);
+}
+
 
     // public function createstorepertanyaanpublik(Request $request)
     //         {
