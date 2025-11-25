@@ -944,21 +944,15 @@ qa::create([
 
 
         // =================================================================
-        statusadmin::create([
-            'id'  => '1',
-            'status'  => 'super_admin',
-        ]);
-
-        statusadmin::create([
-            'id'  => '2',
-            'status'  => 'admin',
-        ]);
-
-        statusadmin::create([
-            'id'  => '3',
-            'status'  => 'user',
-        ]);
-
+statusadmin::create(['id' => 1, 'statusadmin' => 'super_admin']);
+statusadmin::create(['id' => 2, 'statusadmin' => 'admin']);
+statusadmin::create(['id' => 3, 'statusadmin' => 'pekerja']);
+statusadmin::create(['id' => 4, 'statusadmin' => 'supp_pabrik']);
+statusadmin::create(['id' => 5, 'statusadmin' => 'supp_peralatan']);
+statusadmin::create(['id' => 6, 'statusadmin' => 'supp_tokobangunan']);
+statusadmin::create(['id' => 7, 'statusadmin' => 'lsppenerbit']);
+statusadmin::create(['id' => 8, 'statusadmin' => 'operator']);
+statusadmin::create(['id' => 9, 'statusadmin' => 'dinas']);
 
         // ===================================================================================
         // DATA TENAGA KERJA SKK KABUPATEN BANDUNG BARAT

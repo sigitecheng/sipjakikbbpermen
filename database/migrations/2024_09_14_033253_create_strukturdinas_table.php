@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('strukturdinas', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('peraturan');
+            $table->text('judul')->nullable();
+            $table->string('peraturan', 255)->nullable();
+            $table->text('keterangan')->nullable();
+            $table->fullText(['judul', 'keterangan']);
             $table->softDeletes();
             $table->timestamps();
         });

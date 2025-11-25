@@ -88,10 +88,10 @@ class AdminDashboardController extends Controller
         $jumlahketerampilanpekerja = keterampilanpekerja::count();
         $jumlahpilihantahun = tahunpilihan::count();
 
-    
+
         $user = Auth::user();
-    
-        return view('backend.00_dashboard.index', [
+
+        return view('backend.00_administrator.01_halamanutama.dashboard', [
             'title' => 'Admin Dashboard Sipjaki KBB',
             'user' => $user,
             'jumlahHimbauan' => $jumlahHimbauan,  // Menambahkan jumlah data ke view
@@ -134,5 +134,5 @@ class AdminDashboardController extends Controller
             'jumlahpilihantahun' => $jumlahpilihantahun, // Mengirimkan data kecamatan unik ke view
         ]);
     }
-    
+
 }

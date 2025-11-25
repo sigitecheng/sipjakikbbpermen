@@ -63,12 +63,12 @@
                         <div class="tg-header__top-right">
                             <ul class="list-wrap">
                                 <li class="log-in">
-                                    <a href="contact.html"><img src="/assets/assets/img/icons/lock.svg" alt="" class="injectable">Log in</a>
+                                    <a href="/login"><img src="/assets/assets/img/icons/lock.svg" alt="" class="injectable">Masuk</a>
                                 </li>
                                 <li class="log-in">
-                                    <a href="contact.html">
+                                    <a href="/register">
                                         <img src="/assets/assets/img/icons/user-lock.svg" alt="" class="injectable">
-                                        Daftar / Masuk
+                                        Daftar
                                     </a>
                                 </li>
 
@@ -245,16 +245,16 @@
                 <div class="nav-logo">
                     <a href="index.html"><img src="/storage/logo/sipjakikbb.png" alt="Logo"></a>
                 </div>
-                <div class="tgmobile__search">
+                {{-- <div class="tgmobile__search">
                     <form action="#">
                         <input type="text" placeholder="Search here...">
                         <button><i class="fas fa-search"></i></button>
                     </form>
-                </div>
+                </div> --}}
                 <div class="tgmobile__menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
-                <div class="social-links">
+                {{-- <div class="social-links">
                     <ul class="list-wrap">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -262,7 +262,7 @@
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
-                </div>
+                </div> --}}
             </nav>
         </div>
         <div class="tgmobile__menu-backdrop"></div>
@@ -277,7 +277,7 @@
                 <a href="index.html"><img src="/storage/logo/sipjakikbb.png" alt="Logo"></a>
             </div>
             <div class="offCanvas__content">
-                <p>Businorem ipsum dolor sit amet cons interdum quam duis variuy time honored tradition etting .</p>
+                <p>Sistem Pembina Jasa Konstruksi</p>
             </div>
             <div class="offCanvas__img">
                 <ul class="list-wrap">
@@ -461,7 +461,7 @@
                     </div>
                 </div>
                 <div class="view__all-btn text-center mt-60">
-                    <a href="#" class="tg-btn tg-btn-four tg-btn-five">See All Project <img src="/assets/assets/img/icons/right_arrow02.svg" alt="" class="injectable"></a>
+                    <a href="#" class="tg-btn tg-btn-four tg-btn-five">Lihat Semua Berita<img src="/assets/assets/img/icons/right_arrow02.svg" alt="" class="injectable"></a>
                 </div>
             </div>
             {{-- <div class="project__shape">
@@ -507,208 +507,81 @@
 </div>
 
                 </div>
-                <div class="services__item-five">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="services__item-left">
-                                <div class="services__thumb-five">
-                                    <a href="services-details.html"><img src="/assets/assets/img/services/h5_services_img01.jpg" alt="img"></a>
-                                </div>
-                                <div class="services__content-five">
-                                    <h2 class="title"><a href="services-details.html">Digital Marketing Strategy</a></h2>
-                                    <h1 class="number">01</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="services__item-right">
-                                <ul class="list-wrap about__list-item-two">
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        With our ransforative consulting
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Transform your business
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Fixes to deliver sustainable
-                                    </li>
-                                </ul>
-                                <a href="services-details.html" class="right__arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M2 14L14 2M14 2H2M14 2V14" stroke="currentColor" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__item-five">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="services__item-left">
-                                <div class="services__thumb-five">
-                                    <a href="services-details.html"><img src="/assets/assets/img/services/h5_services_img02.jpg" alt="img"></a>
-                                </div>
-                                <div class="services__content-five">
-                                    <h2 class="title"><a href="services-details.html">Search Engine Optimization</a></h2>
-                                    <h1 class="number">02</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="services__item-right">
-                                <ul class="list-wrap about__list-item-two">
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        With our ransforative consulting
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Transform your business
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Fixes to deliver sustainable
-                                    </li>
-                                </ul>
-                                <a href="services-details.html" class="right__arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M2 14L14 2M14 2H2M14 2V14" stroke="currentColor" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__item-five">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="services__item-left">
-                                <div class="services__thumb-five">
-                                    <a href="services-details.html"><img src="/assets/assets/img/services/h5_services_img03.jpg" alt="img"></a>
-                                </div>
-                                <div class="services__content-five">
-                                    <h2 class="title"><a href="services-details.html">Branding & Strategy Guideline</a></h2>
-                                    <h1 class="number">03</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="services__item-right">
-                                <ul class="list-wrap about__list-item-two">
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        With our ransforative consulting
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Transform your business
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Fixes to deliver sustainable
-                                    </li>
-                                </ul>
-                                <a href="services-details.html" class="right__arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M2 14L14 2M14 2H2M14 2V14" stroke="currentColor" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__item-five">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="services__item-left">
-                                <div class="services__thumb-five">
-                                    <a href="services-details.html"><img src="/assets/assets/img/services/h5_services_img04.jpg" alt="img"></a>
-                                </div>
-                                <div class="services__content-five">
-                                    <h2 class="title"><a href="services-details.html">Interaction Design Identity</a></h2>
-                                    <h1 class="number">04</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="services__item-right">
-                                <ul class="list-wrap about__list-item-two">
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        With our ransforative consulting
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Transform your business
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
-                                                <path d="M12.091 2L5.091 9L1.90918 5.81818" stroke="currentColor" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        Fixes to deliver sustainable
-                                    </li>
-                                </ul>
-                                <a href="services-details.html" class="right__arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M2 14L14 2M14 2H2M14 2V14" stroke="currentColor" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+             @foreach ($data_jaskon as $item)
+<div class="services__item-five" style="margin-bottom:30px;">
+
+    <!-- Gambar dokumentasi FULL TANPA TERPOTONG -->
+    <div class="services__thumb-five mb-3" style="overflow:hidden; position:relative;">
+        <div class="scroll-container" style="
+            display:flex;
+            gap:10px;
+            overflow-x:auto;
+            white-space:nowrap;
+            align-items:center;
+        ">
+
+            @foreach(range(1, 20) as $i)
+                @php $field = 'berita' . $i; @endphp
+
+                @if(!empty($item->$field))
+
+                    @php
+                        $imgPath = file_exists(public_path('storage/' . $item->$field))
+                            ? asset('storage/' . $item->$field)
+                            : asset($item->$field);
+                    @endphp
+
+                    <img src="{{ $imgPath }}" alt="Berita {{ $i }}"
+                        style="
+                            height:150px;
+                            width:auto;
+                            object-fit:contain;
+                            background:#fff;
+                            border-radius:6px;
+                            padding:2px;
+                            flex-shrink:0;
+                        "
+                        loading="lazy">
+                @endif
+
+            @endforeach
+
+        </div>
+    </div>
+
+    <!-- Judul & Alamat -->
+    <div class="services__content-five text-center">
+        <h2 class="title mb-1">
+            <a href="/kegiatansertifikasi">{{ \Illuminate\Support\Str::words($item->judul_kegiatan, 10, '...') }}</a>
+        </h2>
+        <p class="text-muted">{{ $item->alamat_kegiatan }}</p>
+    </div>
+
+</div>
+@endforeach
+
+
+<!-- Auto Scroll -->
+<script>
+document.querySelectorAll('.scroll-container').forEach(container => {
+    let scrollAmount = 0;
+    const speed = 1;
+
+    function scrollImages() {
+        scrollAmount += speed;
+        if (scrollAmount >= container.scrollWidth) scrollAmount = 0;
+        container.scrollLeft = scrollAmount;
+        requestAnimationFrame(scrollImages);
+    }
+
+    scrollImages();
+});
+</script>
+
+
                 <div class="view__all-btn text-center mt-50">
-                    <a href="#" class="tg-btn tg-btn-four tg-btn-five">See All Services <img src="/assets/assets/img/icons/right_arrow02.svg" alt="" class="injectable"></a>
+                    <a href="#" class="tg-btn tg-btn-four tg-btn-five">Lihat Semua Kegiatan <img src="/assets/assets/img/icons/right_arrow02.svg" alt="" class="injectable"></a>
                 </div>
             </div>
             <div class="services__shape-wrap-three">
@@ -720,20 +593,20 @@
 
 
         <!-- blog-post-area -->
-        <section class="blog__post-area-two blog__post-area-four section-py-130">
+        {{-- <section class="blog__post-area-two blog__post-area-four section-py-130">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section__title mb-50 mb-md-30">
-                            <span class="sub-title">Our Latest Blogs</span>
-                            <h2 class="title">Get More Update For <br> News & Articles</h2>
-                        </div>
+                                <div class="col-lg-6">
+                    <div class="section__title mb-50 mb-md-30">
+                        <h2 class="title">Artikel Jakon <br> Kabupaten Bandung Barat</h2>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="section__content mb-50">
-                            <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
-                        </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section__content mb-50">
+                        <p>Temukan informasi terbaru seputar proyek konstruksi, pengawasan bangunan, dan inovasi pelayanan jasa konstruksi di Kabupaten Bandung Barat.</p>
                     </div>
+                </div>
+
                 </div>
                 <div class="row gutter-y-20">
                     <div class="col-lg-6">
@@ -810,9 +683,10 @@
                 </div>
             </div>
         </section>
-        <!-- blog-post-area-end -->
+        <!-- blog-post-area-end --> --}}
         <!-- choose-area -->
-        <section class="choose__area-two section-py-130">
+
+        {{-- <section class="choose__area-two section-py-130">
             <div class="section__line-wrap">
                 <div class="line__item">
                     <span></span>
@@ -840,9 +714,7 @@
                                         <path d="M1.24669 25.5326L27.3173 2.42458M27.3173 2.42458L14.9937 1.68215M27.3173 2.42458L26.5748 14.7481" stroke="currentColor" stroke-width="2.18247" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
-                                {{-- <div class="content">
-                                    <h6 class="circle circle-two rotateme">Pemerintah Kabupaten Bandung Barat</h6>
-                                </div> --}}
+
                             </div>
                             <div class="mask__img" data-aos="fade-left" data-aos-delay="400">
                                 <img src="/assets/assets/img/images/h5_choose_img.jpg" alt="img">
@@ -883,11 +755,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- choose-area-end -->
 
         <!-- video-area -->
-        <div class="video__area-three">
+        {{-- <div class="video__area-three">
             <div class="section__line-wrap">
                 <div class="line__item">
                     <span></span>
@@ -921,7 +793,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- video-area-end -->
 
         <!-- counter-area -->
@@ -947,26 +819,26 @@
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-6">
                         <div class="counter__item-four">
-                            <p>Success Rate</p>
-                            <h2 class="count"><span class="odometer" data-count="95"></span>%</h2>
+                            <p>Tenaga Kerja</p>
+                            <h2 class="count"><span class="odometer" data-count="1054"></span></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6">
                         <div class="counter__item-four">
-                            <p>Complete Projects</p>
-                            <h2 class="count"><span class="odometer" data-count="23"></span>K</h2>
+                            <p>BUJK</p>
+                            <h2 class="count"><span class="odometer" data-count="471"></span></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6">
                         <div class="counter__item-four">
-                            <p>Satisfied Clients</p>
-                            <h2 class="count"><span class="odometer" data-count="31"></span>K</h2>
+                            <p>Profil Paket Pekerjaan</p>
+                            <h2 class="count"><span class="odometer" data-count="2346"></span></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6">
                         <div class="counter__item-four">
-                            <p>Trade In The World</p>
-                            <h2 class="count"><span class="odometer" data-count="620"></span>+</h2>
+                            <p>Rantai Pasok</p>
+                            <h2 class="count"><span class="odometer" data-count="500"></span>+</h2>
                         </div>
                     </div>
                 </div>

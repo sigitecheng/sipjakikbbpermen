@@ -134,3 +134,8 @@ UNTUK SPASI
     </h2>
 
 </div>
+
+
+ssh -p 65002 u870730769@153.92.9.229
+
+Adminadmin123$$

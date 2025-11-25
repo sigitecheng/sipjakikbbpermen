@@ -13,8 +13,11 @@ return new class extends Migration
     {
         Schema::create('renstras', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('peraturan');
+            $table->text('judul')->nullable();
+            $table->text('peraturan')->nullable();
+
+            $table->fullText(['judul', 'peraturan']);
+
             $table->softDeletes();
             $table->timestamps();
         });

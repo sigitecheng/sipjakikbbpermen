@@ -1,0 +1,300 @@
+
+@include('backend.00_administrator.00_baganterpisah.01_header')
+
+<!--begin::Body-->
+  <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">
+{{-- ---------------------------------------------------------------------- --}}
+
+@include('backend.00_administrator.00_baganterpisah.04_navbar')
+{{-- ---------------------------------------------------------------------- --}}
+
+      @include('backend.00_administrator.00_baganterpisah.03_sidebar')
+
+      <!--begin::App Main-->
+      <main class="app-main">
+        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
+
+<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+
+            <!--begin::App Content Header-->
+        <div class="app-content-header">
+          <!--begin::Container-->
+          <div class="container-fluid">
+            <!--begin::Row-->
+            <div class="row">
+
+                @include('backend.00_administrator.00_baganterpisah.09_selamatdatang')
+                @include('backend.00_administrator.00_baganterpisah.11_alert')
+
+            </div>
+            <!--end::Row-->
+          </div>
+          <!--end::Container-->
+        </div>
+
+        <br>
+        <!-- Menampilkan pesan sukses -->
+
+            <!-- Menyertakan FontAwesome untuk ikon -->
+
+        <div class="container-fluid">
+            <!--begin::Row-->
+            <div class="row" style="margin-right: 10px; margin-left:10px;">
+                <!-- /.card -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
+
+                           {{-- ======================================================= --}}
+        {{-- ALERT --}}
+
+
+        @include('backend.00_administrator.00_baganterpisah.06_alert')
+
+
+        <div class="card card-primary card-outline mb-6">
+            <div style="display: flex; justify-content: flex-end; margin-top:10px;">
+                <a href="/beartikeljakon">
+                    <button class="button-newvalidasi">
+                    <!-- Ikon Kembali -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16" style="margin-right: 8px;">
+                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+               </svg>
+                    Kembali
+                </button>
+            </a>
+        </div>
+        <hr>
+
+
+        {{-- ======================================================= --}}
+                    <div class="col-md-12">
+                        <!--begin::Quick Example-->
+                        <form action="{{ route('update.beberitajakoncreateupdate', $data->id) }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            @method('POST') <!-- Ganti dengan PUT untuk update -->
+
+                            <!-- begin::Body -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Left Column (6/12) -->
+                                    <div class="col-md-6">
+                                        <!-- User ID -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="user_id">
+                                                <i class="bi bi-person" style="margin-right: 8px; color: navy;"></i> User ID
+                                            </label>
+                                            <select id="user_id" name="user_id" class="form-control" disabled>
+                                                <option value="" disabled selected>Pilih Penulis</option>
+                                                @foreach($users as $user)
+                                                    <option value="{{ $user->id }}" {{ $data->user_id == $user->id ? 'selected' : '' }}>{{ $user->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+
+                                        <!-- Judul Berita -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="judulberita">
+                                                <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Judul Artikel
+                                            </label>
+                                            <input type="text" id="judul" name="judul" class="form-control" value="{{ $data->judul }}" disabled />
+                                        </div>
+
+                                        <!-- Tanggal -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="tanggal">
+                                                <i class="bi bi-calendar" style="margin-right: 8px; color: navy;"></i> Tanggal
+                                            </label>
+                                            <input type="date" id="tanggal" name="tanggal" class="form-control" value="{{ $data->tanggal }}" disabled />
+                                        </div>
+
+                                        <!-- Keterangan -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="keterangan">
+                                                <i class="bi bi-file-earmark-text" style="margin-right: 8px; color: navy;"></i> Keterangan
+                                            </label>
+                                            <textarea id="keterangan" name="keterangan" class="form-control" style="height: 400px;" disabled>{{ $data->keterangan }}</textarea>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- End Left Column -->
+
+                                    <!-- Right Column (6/12) -->
+                                    <div class="col-md-6">
+                                        <!-- Foto -->
+                                        <!-- Pastikan untuk load Bootstrap dan Popper.js yang benar -->
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="foto">
+                                                <i class="fa fa-file-pdf" style="margin-right: 8px; color: red;"></i> Berkas
+                                            </label>
+                                            <div class="form-control" style="border: none;">
+
+                                                <div style="margin-top: 10px;">
+                                                    @if($data->berkas && file_exists(public_path('storage/' . $data->berkas)))
+                                                    <!-- Display the default iframe when the file exists in the storage -->
+                                                    <iframe src="{{ asset('storage/' . $data->berkas) }}" frameborder="0" width="100%" height="300px"></iframe>
+                                                @elseif($data->berkas)
+                                                    <!-- Display the iframe with the updated file -->
+                                                    <iframe src="{{ asset($data->berkas) }}" frameborder="0" width="100%" height="300px"></iframe>
+                                                @else
+                                                    <!-- Optional: Show a placeholder if there's no file available -->
+                                                    <p>Data belum diupdate</p>
+                                                @endif
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal untuk menampilkan PDF -->
+                                        <div class="modal fade" id="modalBerkas" tabindex="-1" aria-labelledby="modalBerkasLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                                            <div class="modal-dialog" style="max-width: 80%; min-width: 600px;">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalBerkasLabel" style="font-family: 'Poppins', sans-serif;">
+                                                            <i class="fa fa-file-pdf" style="color: red; margin-right: 8px;"></i>
+                                                            Berkas Artikel Jakon
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        @if ($data->berkas)
+                                                            <iframe src="{{ asset('storage/' . $data->berkas) }}" width="100%" height="600px"></iframe>
+                                                        @else
+                                                            <p>No Berkas available</p>
+                                                        @endif
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function () {
+                                                // Menginisialisasi modal dengan Bootstrap Modal API
+                                                var modalElement = document.getElementById('modalBerkas');
+                                                var modal = new bootstrap.Modal(modalElement, {
+                                                    backdrop: 'static',  // Menonaktifkan penutupan modal jika klik di luar modal
+                                                    keyboard: false      // Menonaktifkan penutupan modal dengan tombol Escape
+                                                });
+
+                                                // Event listener untuk tombol membuka modal
+                                                document.getElementById('btnBerkas').addEventListener('click', function () {
+                                                    modal.show();  // Menampilkan modal saat tombol diklik
+                                                });
+
+                                                // Mencegah form atau event lain yang menyebabkan reload halaman
+                                                window.addEventListener('beforeunload', function (e) {
+                                                    e.preventDefault();
+                                                    e.returnValue = '';  // Menghindari refresh otomatis halaman
+                                                });
+                                            });
+                                        </script>
+
+
+                                                                                <div class="mb-3">
+                                            <label class="form-label" for="foto">
+                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto/Gambar/Brosur 1
+                                            </label>
+                                            <div class="form-control" style="border: none;">
+
+                                                <div style="margin-top: 10px;">
+                                                    @if($data->foto1 && file_exists(public_path('storage/' . $data->foto1)))
+                                                        <!-- Menampilkan gambar dari storage -->
+                                                        <img src="{{ asset('storage/' . $data->foto1) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
+                                                    @elseif($data->foto1)
+                                                        <!-- Menampilkan gambar dari path luar storage -->
+                                                        <img src="{{ asset($data->foto1) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
+                                                    @else
+                                                        <!-- Placeholder jika tidak ada data -->
+                                                        <p>Data belum diupdate</p>
+                                                    @endif
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Foto 1 -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="foto1">
+                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto/Gambar/Brosur 2
+                                            </label>
+                                            <div style="margin-top: 10px;">
+                                                @if($data->foto2 && file_exists(public_path('storage/' . $data->foto2)))
+                                                    <!-- Menampilkan gambar dari storage -->
+                                                    <img src="{{ asset('storage/' . $data->foto2) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
+                                                @elseif($data->foto2)
+                                                    <!-- Menampilkan gambar dari path luar storage -->
+                                                    <img src="{{ asset($data->foto2) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
+                                                @else
+                                                    <!-- Placeholder jika tidak ada data -->
+                                                    <p>Data belum diupdate</p>
+                                                @endif
+                                            </div>
+                                        </div>
+
+                                        <!-- Foto 2 -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="foto2">
+                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto/Gambar/Brosur 3
+                                            </label>
+                                            <div class="form-control" style="border: none;">
+                                                <div style="margin-top: 10px;">
+                                                    @if($data->foto3 && file_exists(public_path('storage/' . $data->foto3)))
+                                                        <!-- Menampilkan gambar dari storage -->
+                                                        <img src="{{ asset('storage/' . $data->foto3) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
+                                                    @elseif($data->foto3)
+                                                        <!-- Menampilkan gambar dari path luar storage -->
+                                                        <img src="{{ asset($data->foto3) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
+                                                    @else
+                                                        <!-- Placeholder jika tidak ada data -->
+                                                        <p>Data belum diupdate</p>
+                                                    @endif
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Right Column -->
+                                </div>
+                                <!-- End row -->
+                            </div>
+                            <!-- end::Body -->
+
+                        </form>
+
+
+                                                     </div>
+                        <!--end::Quick Example-->
+
+                    </div>
+                    <!-- /.card -->
+                    <!-- Button Section -->
+
+                    </div>
+                    <!--end::Row-->
+                    </div>
+
+        </div>
+        <!--end::Row-->
+        </div>
+                  <!--end::Container-->
+        <!--end::App Content Header-->
+        <!--begin::App Content-->
+          <!--end::App Content-->
+                </section>
+        </main>
+      <!--end::App Main-->
+    </div>
+    </div>
+
+
+      @include('backend.00_administrator.00_baganterpisah.02_footer')
+                                                                                <!-- Link ke Bootstrap 5 JS dan CSS -->
+                                                                                {{-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+                                                                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script> --}}

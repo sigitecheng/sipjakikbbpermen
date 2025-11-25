@@ -1,7 +1,7 @@
 @include('backend.00_dashboard.part.header')
 @include('backend.00_dashboard.part.menuheader')
 @include('backend.00_dashboard.part.sidebar')
-    
+
     <!--Page Wrapper-->
 
         <!--Main Content-->
@@ -9,12 +9,12 @@
             <!--Content right-->
             <div class="col-sm-9 col-xs-12 content  pl-0">
 
-                    
+
                 <div class="row mb-0 ">
                     <div class="font-bold col-sm-8"><h6 class="mb-4 bc-header">.</h6></div>
                     <div class="col-sm-4 text-right pb-3">
                         <div class="pull-right mr-3 btn-order-bulk">
-                        
+
                         </div>
 
                         <div class="clearfix"></div>
@@ -59,7 +59,7 @@
 
             {{-- ------------------------------------ FITUR TAMBAHAN ------------- --}}
 
-            <div class="controls" style="  
+            <div class="controls" style="
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,8 +69,8 @@
 <div class="show-entries" style="border-radius: 10px;">
     <label for="entries" style="margin-right: 5px;">
         <style>
-          
-         
+
+
           /* Untuk memastikan tata letak responsif, Anda bisa menggunakan media queries */
 @media (min-width: 768px) {
     .badge {
@@ -85,7 +85,7 @@
                 font-size: 12px;
                 transition: background-color 0.3s, color 0.3s;
             }
-    
+
             .badge:hover {
                 background-color: white;
                 color: black;
@@ -103,7 +103,7 @@
                 font-size: 12px;
                 transition: background-color 0.3s, color 0.3s;
             }
-    
+
             .badgeupdate:hover {
                 background-color: white;
                 color: black;
@@ -126,7 +126,7 @@
                 color: black;
                 background: white;
             }
-    
+
     .badgekembali {
                 background: linear-gradient(to right, navy, black);
                 color: white;
@@ -144,7 +144,7 @@
                 color: black;
                 background: white;
             }
-    
+
     .badgehidden {
                 background: linear-gradient(to right, white, white);
                 color: white;
@@ -157,7 +157,7 @@
                 cursor: pointer;
                 transition: background-color 0.3s, color 0.3s;
             }
-    
+
 }
 
         </style>
@@ -167,29 +167,30 @@
         <a style="background: white;">
             <div class="badgehidden" style="color: white"><i class="fas fa-file mr-2"></i>........ ........ ........</div>
         </a>
+
         <a href="/peruud" style="background: white;">
             <button class="badgekembali" style="border: none; font-size:12px; cursor:pointer;">
                 <i class="fas fa-arrow-circle-left mr-2"></i>Kembali
             </button>
         </a>
-        
-        
+
+
         <button class="download-btn badgedownload" id="downloadBtn"><i class="fas fa-download mr-2"></i>Download PDF</button>
-                        
+
 
 
 
                 @foreach ($data as $items )
-                    
+
                 <a href="/peruud/{{$items->judul}}" style="background: white;">
                     <button class="badgeupdate" style="border: none; font-size:12px; cursor:pointer; "> <i class="fas fa-file mr-2" ></i>Update</button>
                 </a>
                 @endforeach
                         {{-- <button class="badgeupdate" style="border: none; font-size:12px; cursor:pointer; "> <i class="fas fa-file" style="margin-right: 5px;"></i> Update</button> --}}
                         <!-- <button id="downloadBtn" class="badge" style="border:none; font-size:12px; cursor:pointer "> <i class="fas fa-download"></i> Download</button> -->
-                        
+
                         <style>
-      
+
 .pdf-container {
     text-align:center !important ;
     position: relative;
@@ -213,8 +214,8 @@
     width: calc(100% - 20px); /* Lebar PDF frame dengan jarak 10px di kiri dan kanan */
     height: 100%; /* Tinggi PDF frame sama dengan tinggi container */
     border: none;
-    overflow: auto; 
-    border-radius: 25px; 
+    overflow: auto;
+    border-radius: 25px;
     padding: 5px 5px;/* Mengaktifkan scroll jika konten lebih besar dari ukuran frame */
 }
 
@@ -267,58 +268,57 @@
     <div class="pdf-container mt-4">
         <iframe class="pdf-frame" src="{{ asset('storage/' . $items->peraturan) }}" width="100%" height="600px"></iframe>
     </div>
-    
+
     {{-- <iframe src="{{ asset(public_path('storage/undangundang/01_uud/UU_NO_02_TAHUN_2017.pdf')) }}" width="100%" height="600px"></iframe> --}}
 
-    
+
     <script>
         document.getElementById('downloadBtn').addEventListener('click', function() {
             // URL file PDF
             const pdfUrl = '{{ asset('storage/' . $items->peraturan) }}';
-            
+
             // Nama file yang diunduh berdasarkan atribut judul
             const fileName = '{{ $items->judul }}' + '.pdf'; // Pastikan menambahkan ekstensi file yang sesuai
-            
+
             // Membuat elemen anchor
             const link = document.createElement('a');
             link.href = pdfUrl;
             link.download = fileName;
-            
+
             // Menyimulasikan klik pada elemen anchor
             document.body.appendChild(link);
             link.click();
-            
+
             // Menghapus elemen anchor dari dokumen
             document.body.removeChild(link);
         });
     </script>
-    
+
 @endforeach
 
 
 </div>
 
-    
+
 </div>
 </div>
 
-             
+
 
         </div>
 
-        
-                
+
+
         </div>
         <hr style="border:0; height:5px; background-color:navy; margin: 20px 0px;">
         @include('backend.00_dashboard.part.menufooter')
     </div>
 </div>
         </div>
-        
+
         <!--Main Content-->
-        
+
     </div>
     @include('backend.00_dashboard.part.footer')
-    
 
-    
+
