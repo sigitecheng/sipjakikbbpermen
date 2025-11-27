@@ -2329,7 +2329,8 @@ Route::get('/beritajakon', [BeritaController::class, 'beritajakon']);
 Route::get('/beritajakon/show/{id}', [BeritaController::class, 'beritajakonshow'])->name('berita.detailshow');
 
 Route::get('/dokkegiatan', [BeritajakonController::class, 'dokkegiatan']);
-Route::get('/dokkegiatan/kegiatan', [BeritajakonController::class, 'dokkegiatan'])->name('dokumentasi.kegiatan');
+Route::get('/dokkegiatan/kegiatan/{id}', [BeritajakonController::class, 'showdokkegiatan'])->name('dokumentasi.kegiatan');
+
 Route::get('/dokkegiatan/berita', [BeritajakonController::class, 'dokkegiatan'])->name('berita.kegiatan');
 
 

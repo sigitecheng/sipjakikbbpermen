@@ -152,98 +152,165 @@
 
 
 
-
         <!-- breadcrumb-area -->
         <section class="breadcrumb__area">
             <div class="breadcrumb__bg" data-background="assets/img/bg/breadcrumb__bg.jpg"></div>
-        </section>
+                </section>
         <!-- breadcrumb-area-end -->
 
-        <!-- team-details -->
-        <section class="team__details-area section-py-130">
+        <!-- shop-details-area -->
+        <section class="shop__details-area section-py-130">
             <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-9">
+                        <div class="shop__details-images-wrap">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane show active" id="itemOne-tab-pane" role="tabpanel" aria-labelledby="itemOne-tab" tabindex="0">
+                                    <span class="flash-sale">-10%</span>
+                                    <a href="#" class="popup-image expand-img">
 
-                    @foreach ($data as $item)
+                                        <img src="/assets/assets/img/icons/expand.svg" alt="" class="injectable">
 
-                    <div class="row justify-content-center">
-                        <div class="col-44">
-                            <div class="team__details-img">
-                                @if($item->berita1 && file_exists(public_path('storage/' . $item->berita1)))
-                                    <img src="{{ asset('storage/' . $item->berita1) }}" alt="Berita 1" loading="lazy">
-                                @elseif($item->berita1)
-                                    <img src="{{ asset($item->berita1) }}" alt="Berita 1" loading="lazy">
-                                @else
-                                    <img src="assets/img/team/team_details.jpg" alt="Placeholder Berita 1">
-                                @endif
-                            </div>
-                        </div>
-                        <div class="col-56">
-                        <div class="team__details-info-wrap">
-                            <span>{{$item->judul_kegiatan}}</span>
-                            <div class="team__details-social">
-                                <ul class="list-wrap">
-                                    @for ($i = 1; $i <= 5; $i++)
-                                        @php
-                                            $field = 'berita' . $i;
-                                            $value = $item->$field ?? null;
-                                        @endphp
+                                    </a>
 
-                                        <li style="margin: 5px 0;">
-                                            @if($value && file_exists(public_path('storage/' . $value)))
-                                                <a href="{{ asset('storage/' . $value) }}" target="_blank">
-                                                    <img src="{{ asset('storage/' . $value) }}" alt="Berita {{ $i }}" class="injectable">
-                                                </a>
-                                            @elseif($value)
-                                                <a href="{{ asset($value) }}" target="_blank">
-                                                    <img src="{{ asset($value) }}" alt="Berita {{ $i }}" class="injectable">
-                                                </a>
-                                            @else
-                                                <span style="font-size: 12px; color: #888;">Data berita {{ $i }} belum diupdate</span>
-                                            @endif
-                                        </li>
-                                    @endfor
-                                    </ul>
+                                @if($data->berita1 && file_exists(public_path('storage/' . $data->berita1)))
+                                        <img src="{{ asset('storage/' . $data->berita1) }}" alt="Berita 1" class="injectable" loading="lazy">
+                                    @elseif($data->berita1)
+                                        <img src="{{ asset($data->berita1) }}" alt="Berita 1" class="injectable" loading="lazy">
+                                    @else
+                                        <img src="assets/img/icons/expand.svg" alt="Placeholder Berita 1" class="injectable">
+                                    @endif
+
+                                </div>
+                                {{-- <div class="tab-pane" id="itemTwo-tab-pane" role="tabpanel" aria-labelledby="itemTwo-tab" tabindex="0">
+                                    <span class="flash-sale">-10%</span>
+                                    <a href="/assets/img/shop/shop_details-img02.jpg" class="popup-image expand-img">
+                                        <img src="assets/assets/img/icons/expand.svg" alt="" class="injectable">
+                                    </a>
+                                    <img src="assets/assets/img/shop/shop_details-img02.jpg" alt="img">
+                                </div> --}}
 
                             </div>
-                            <p>{{$item->alamat_kegiatan}}</p>
+                            @php
+    $beritas = ['berita1','berita2','berita3','berita4'];
+@endphp
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    @foreach($beritas as $index => $field)
+        @php
+            $value = $data->$field ?? null;
+            $tabId = 'item' . ($index + 1) . '-tab';
+            $tabPane = 'item' . ($index + 1) . '-tab-pane';
+        @endphp
+        <li class="nav-item" role="presentation">
+            <button class="nav-link {{ $index == 0 ? 'active' : '' }}"
+                    id="{{ $tabId }}"
+                    data-bs-toggle="tab"
+                    data-bs-target="#{{ $tabPane }}"
+                    type="button"
+                    role="tab"
+                    aria-controls="{{ $tabPane }}"
+                    aria-selected="{{ $index == 0 ? 'true' : 'false' }}">
+                <img src="{{ $value && file_exists(public_path('storage/' . $value)) ? asset('storage/' . $value) : ($value ? asset($value) : '/assets/assets/img/shop/shop_details-img0' . ($index + 1) . '.jpg') }}"
+                     alt="Berita {{ $index + 1 }}">
+            </button>
+        </li>
+    @endforeach
+</ul>
 
-                            <ul class="team__details-inner list-wrap">
-
-                              <li>
-                                    <div class="icon">
-                                        <i class="flaticon-phone-call"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span>Lihat Dokumentasi Kegiatan</span>
-                               <a href="{{ route('dokumentasi.kegiatan', $item->id) }}">
-                                    Kegiatan Sertifikasi Tenaga Kerja Konstruksi
-                                </a>
-
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="icon">
-                                        <i class="flaticon-placeholder"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span>Lihat Berita Kegiatan</span>
-                                        <a href="{{ route('berita.kegiatan') }}">Berita Kegiatan Sertifikasi TKK</a>
-                                    </div>
-                                </li>
-
-
-                            </ul>
                         </div>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="shop__details-content">
+                            <h2 class="title">{{$data->judul_kegiatan}}</h2>
+                                                   </div>
+                                                   <p>{{$data->alamat_kegiatan}}</p>
 
-                    @endforeach
+    <div class="team__details-info-wrap">
+        <ul class="team__details-inner list-wrap">
+            <li>
+                <div class="icon">
+                    <i class="flaticon-placeholder"></i>
+                </div>
+                <div class="content">
+                    <span>Dokumentasi</span>
+                    <a href="{{ url('/dokkegiatan') }}" style="text-decoration: none; color: inherit;">
+                        Lihat Dokumentasi Lainnya
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+                                                </div>
+
                 </div>
 
             </div>
+
         </section>
-        <!-- team-details-end -->
+        <!-- shop-details-area-end -->
+
+        <!-- related-product-area -->
+        <section class="related__product-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="related__product-title">
+                            <h2 class="title">Dokumentasi Kegiatan</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="related__product-nav">
+                            <button class="shop-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M8.09961 15.1667L1.43294 8.50008L8.09961 1.83342" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="shop-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M1.59961 15.1667L8.26628 8.50008L1.59961 1.83342" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container shop-active fix">
+                    <div class="swiper-wrapper">
+
+                       @php
+    $beritas = range(6, 20); // berita6 sampai berita20
+@endphp
+
+@foreach($beritas as $i)
+    @php
+        $field = 'berita' . $i;
+        $value = $data->$field ?? null;
+        $path = $value && file_exists(public_path('storage/' . $value)) ? asset('storage/' . $value) : ($value ? asset($value) : null);
+        $isImage = $path && preg_match('/\.(jpg|jpeg|png|gif|webp)$/i', $path);
+    @endphp
+
+    @if($value && $isImage)
+        <div class="swiper-slide">
+            <div class="shop__item">
+                <div class="shop__thumb">
+                    <a href="{{ $path }}" target="_blank">
+                        <img class="shop-thumb-img" src="{{ $path }}" alt="Berita {{ $i }}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    @endif
+@endforeach
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
     <!-- main-area-end -->

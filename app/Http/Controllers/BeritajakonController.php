@@ -1136,6 +1136,17 @@ public function resdokumentasishow($id)
     ]);
 }
 
+ public function showdokkegiatan($id)
+    {
+        // Ambil data kegiatan berdasarkan id
+        $item = kegiatanjaskon::findOrFail($id);
+
+        // Kirim data ke view
+        return view('frontend.new.02_bagian3.04_dokkegiatan.showdokkegiatan', [
+            'title' => 'Lihat Dokumentasi Kegiatan',
+            'data'  => $item,
+        ]);
+    }
 }
 
 
