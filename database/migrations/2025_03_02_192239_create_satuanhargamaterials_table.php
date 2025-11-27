@@ -13,9 +13,13 @@ return new class extends Migration
     {
         Schema::create('satuanhargamaterials', function (Blueprint $table) {
             $table->id();
+            $table->string('gambar')->nullable();
             $table->string('uraian')->nullable();
             $table->string('satuan')->nullable();
             $table->string('besaran')->nullable();
+            $table->string('keterangan1')->nullable();
+            $table->string('keterangan2')->nullable();
+            $table->string('keterangan3')->nullable();
             // $table->string('keterangan')->nullable();
             $table->softDeletes();
             $table->timestamps();

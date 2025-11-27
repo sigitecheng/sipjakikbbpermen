@@ -134,6 +134,38 @@ UNTUK SPASI
 </div>
 
 
-ssh -p 65002 u870730769@153.92.9.229
 
-Adminadmin123$$
+
+
+
+<script>
+function searchMaterial() {
+    let input = document.getElementById("searchMaterial").value;
+
+    fetch(`/satuanhargamaterialkbb?search=${encodeURIComponent(input)}`)
+        .then(response => response.text())
+        .then(html => {
+            let parser = new DOMParser();
+            let doc = parser.parseFromString(html, "text/html");
+            let newTableBody = doc.querySelector("#tableBody").innerHTML;
+            document.querySelector("#tableBody").innerHTML = newTableBody;
+        })
+        .catch(error => console.error("Error fetching search results:", error));
+}
+</script>
+
+
+    <div class="shop__search blog__search" style="margin-bottom: 20px;">
+                            <input
+                                type="text"
+                                id="searchMaterial"
+                                placeholder="Cari Bahan Material"
+                                oninput="searchMaterial()"
+                                class="w-full appearance-none outline-none text-sm font-medium placeholder:font-normal placeholder:text-[#545768] bg-transparent font-[Poppins]"
+                            />
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681 12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681 1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945 1 15.681 4.28645 15.681 8.3405Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>

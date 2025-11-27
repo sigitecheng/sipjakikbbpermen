@@ -65,7 +65,13 @@
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Data Jakon</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Badan Usaha Jasa Konstruksi</a></li>
+                                         <li class="menu-item-has-children"><a href="#">Badan Usaha Jasa Konstruksi</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">BUJK Konstruksi</a></li>
+                                                <li><a href="#">BUJK Konsultasi Konstruksi</a></li>
+                                            </ul>
+                                        </li>
+
                                         <li><a href="#">Tenaga Kerja Konstruksi</a></li>
                                         <li><a href="#">Profil Paket Pekerjaan</a></li>
 
@@ -96,7 +102,7 @@
                                     <ul class="sub-menu">
                                         <li class="menu-item-has-children"><a href="#">Satuan Harga Dasar</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Harga Dasar Material</a></li>
+                                                <li><a href="/satuanhargamaterialkbb">Harga Dasar Material</a></li>
                                                 <li><a href="#">Harga Dasar Upah Pekerjaan</a></li>
                                                 <li><a href="#">Harga Dasar Peralatan</a></li>
                                             </ul>

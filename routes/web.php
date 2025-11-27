@@ -2324,7 +2324,7 @@ Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb']);
 Route::get('/strukturdputr', [StrukturController::class, 'strukturdputr']);
 Route::get('/tupoksidputr', [StrukturController::class, 'tupoksidputr']);
 
-// BAGIAN 2 KELEMBAGAAN FRONTEND
+// BAGIAN 3 BERITA
 Route::get('/beritajakon', [BeritaController::class, 'beritajakon']);
 Route::get('/beritajakon/show/{id}', [BeritaController::class, 'beritajakonshow'])->name('berita.detailshow');
 
@@ -2333,6 +2333,8 @@ Route::get('/dokkegiatan/kegiatan/{id}', [BeritajakonController::class, 'showdok
 
 Route::get('/dokkegiatan/berita', [BeritajakonController::class, 'dokkegiatan'])->name('berita.kegiatan');
 
+// BAGIAN 7 AHSP
+Route::get('/satuanhargamaterialkbb', [SatuanhargamaterialController::class, 'satuanhargamaterialkbb']);
 
 
 

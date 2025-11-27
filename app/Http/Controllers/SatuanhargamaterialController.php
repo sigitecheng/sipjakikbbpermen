@@ -2571,4 +2571,33 @@ public function besatuandiv7(Request $request)
     ]);
 }
 
+
+// SIPJAKI BANDUNG BARAT
+
+public function satuanhargamaterialkbb(Request $request)
+{
+    $user = Auth::user();
+    $search = $request->input('search'); // Ambil kata kunci dari form
+
+    $query = satuanhargamaterial::query();
+
+    if($search) {
+        $query->where('uraian', 'like', "%{$search}%");
+    }
+
+    // Urut abjad berdasarkan kolom 'uraian', paginate 20
+    $data = $query->orderBy('uraian', 'ASC')->paginate(20);
+
+    // Menjaga keyword search tetap di query string saat pagination
+    $data->appends(['search' => $search]);
+
+    return view('frontend.new.06_bagian7.01_satuanhargamaterial.satuanhargamaterial', [
+        'title' => 'Satuan Harga Material Kabupaten Bandung Barat',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search, // bisa ditampilkan di input
+    ]);
+}
+
+
 }
