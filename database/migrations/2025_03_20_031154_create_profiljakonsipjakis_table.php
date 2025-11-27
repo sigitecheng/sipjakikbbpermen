@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('profiljakonsipjakis', function (Blueprint $table) {
             $table->id();
-            $table->string('nomor')->nullable();;
-            $table->string('operator1')->nullable();;
-            $table->string('operator2')->nullable();;
-            $table->string('operator3')->nullable();;
-            $table->string('operator4')->nullable();;
+            $table->string('nomor')->nullable();
+            $table->string('operator1')->nullable();
+            $table->string('operator2')->nullable();
+            $table->string('operator3')->nullable();
+            $table->string('operator4')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

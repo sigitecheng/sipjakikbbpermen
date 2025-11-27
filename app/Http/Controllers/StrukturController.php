@@ -1242,4 +1242,47 @@ public function tupoksifekbb()
 
 
 
+
+
+
+
+
+
+
+
+
+// ============================================================================================================================================
+// FRONT END HALAMAN DEPAN WEB
+
+
+public function profiljakonkbb()
+{
+    $data = renstra::all(); // Menggunakan paginate() untuk pagination
+    $dataidentitasopd = profiljakonidentitasopd::all(); // Menggunakan paginate() untuk pagination
+    $datakepaladinas = profiljakonkepaladinas::all(); // Menggunakan paginate() untuk pagination
+    $datakabid = profiljakonkabid::all(); // Menggunakan paginate() untuk pagination
+    $datasubkoordinator = profiljakonsubkoordinator::all(); // Menggunakan paginate() untuk pagination
+    $datainformasi = profiljakoninformasi::all(); // Menggunakan paginate() untuk pagination
+    $datasipjaki = profiljakonsipjaki::all(); // Menggunakan paginate() untuk pagination
+    $datapersonil = profiljakonpersonil::all(); // Menggunakan paginate() untuk pagination
+
+    $user = Auth::user();
+
+    return view('frontend.new.01_bagian2.01_profiljakon.profiljakon', [
+        'title' => 'Profil Jakon DPUPR Kabupaten Bandung Barat',
+        'data' => $data, // Mengirimkan data paginasi ke view
+        'user' => $user, // Mengirimkan data paginasi ke view
+
+        'dataidentitasopd' => $dataidentitasopd, // Mengirimkan data paginasi ke view
+        'datakepaladinas' => $datakepaladinas, // Mengirimkan data paginasi ke view
+        'datakabid' => $datakabid, // Mengirimkan data paginasi ke view
+        'datasubkoordinator' => $datasubkoordinator, // Mengirimkan data paginasi ke view
+        'datainformasi' => $datainformasi, // Mengirimkan data paginasi ke view
+        'datasipjaki' => $datasipjaki, // Mengirimkan data paginasi ke view
+        'datapersonil' => $datapersonil, // Mengirimkan data paginasi ke view
+
+    ]);
+}
+
+
 }

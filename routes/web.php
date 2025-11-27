@@ -2316,7 +2316,13 @@ Route::get('/forgotpassword', [LoginController::class, 'forgotpassword'])->name(
 Route::get('/asosiasi/export', [DownloadExcelController::class, 'exportasosiasi'])->name('asosiasi.export');
 Route::get('/asosiasi/dataskk2024', [DownloadExcelController::class, 'dataskk2024'])->name('dataskk2024.export');
 
-require __DIR__.'/auth.php';
+
+
+// PEMBAHARUAN SIPJAKI KBB
+// BAGIAN 2 KELEMBAGAAN FRONTEND
+Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb']);
+
+// Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb'])->name('login')->middleware('guest');
 
 
 

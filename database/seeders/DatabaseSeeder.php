@@ -44,6 +44,12 @@ use App\Models\pengawasanketertiban;
 use App\Models\pengawasanlokasi;
 use App\Models\pengawasanstatus;
 use App\Models\pengawasantindakan;
+use App\Models\profiljakonidentitasopd;
+use App\Models\profiljakoninformasi;
+use App\Models\profiljakonkabid;
+use App\Models\profiljakonkepaladinas;
+use App\Models\profiljakonpersonil;
+use App\Models\profiljakonsipjaki;
 use App\Models\qa;
 use App\Models\qapertanyaan;
 use App\Models\qasebagai;
@@ -5890,6 +5896,72 @@ giskbb::create([
             'created_at'            => now(),
             'updated_at'            => now(),
 ]);
+
+profiljakonidentitasopd::create([
+    'namaopd'           => 'Dinas Pekerjaan Umum dan Tata Ruang Kabupaten Bandung Barat',
+    'alamatopd'         => 'Komplek Perkantoran Pemda Kabupaten Bandung Barat',
+    'rtrw'              => '01 / 03',
+    'kodepos'           => '40552',
+    'kelurahan'         => 'Mekarsari',
+    'kecamatan'         => 'Ngamprah',
+    'kota'              => 'Kabupaten Bandung Barat',
+    'provinsi'          => 'Jawa Barat',
+    'negara'            => 'Indonesia',
+    'posisigeografis'   => '-6.8370, 107.4721', // opsional, bisa diganti koordinat resmi
+    'tipedinas'         => 'Dinas Pekerjaan Umum dan Tata Ruang',
+    'created_at'        => now(),
+    'updated_at'        => now(),
+]);
+
+profiljakonkepaladinas::create([
+    'namalengkap'        => '-',
+    'nip'                => '-',
+    'ttl'                => null,
+    'pangkatgolongan'    => '-',
+    'jabatan'            => '-',
+    'perangkatdaerah'    => '-',
+    'pendidikanterakhir' => '-',
+    // 'created_at'         => now(),
+    // 'updated_at'         => now(),
+]);
+
+profiljakonkabid::create([
+    'namalengkap'        => 'Yuyu Yuhana, S.T., M.M',
+    'nip'                => '-',
+    'ttl'                => null,
+    'pangkatgolongan'    => '-',
+    'jabatan'            => 'Kepala Bidang Jasa Konstruksi',
+    'perangkatdaerah'    => '-',
+    'pendidikanterakhir' => 'S2',
+    // 'created_at'         => now(),
+    // 'updated_at'         => now(),
+]);
+
+profiljakoninformasi::create([
+    'informasiopd'        => 'OPD yang menangani Bina Jasa Konstruksi di DPUTR Kabupaten Bandung Barat setara dengan eselon IV, dibawah Bidang Jasa Konstruksi. Pada Bidang Jasa Konstruksi bidang Subkoordinator Bina Jasa Konstruksi, hal tersebut tertuang dalam Perbup Nomor 66 Tahun 2021 tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi Serta Tata Kerja Dinas Pekerjaan Umum dan Tata Ruang Kabupaten Bandung Barat.',
+    'notelepon'                => '-',
+    'instagram'                => null,
+    'tiktok'    => '-',
+    'email'            => '-',
+]);
+
+profiljakonsipjaki::create([
+    'nomor'        => '-',
+    'operator1'                => '-',
+    'operator2'                => '-',
+    'operator3'                => '-',
+    'operator4'                => '-',
+    // 'created_at'         => now(),
+    // 'updated_at'         => now(),
+]);
+
+profiljakonpersonil::create([
+    'jabatan'        => '-',
+    'namalengkap'                => '-',
+    // 'created_at'         => now(),
+    // 'updated_at'         => now(),
+]);
+
 
 
     }
