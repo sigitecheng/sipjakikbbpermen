@@ -3,8 +3,6 @@ catatan ssh
 ssh -p 65002 u870730769@153.92.9.229
 
 
-password : Adminadmin123$$
-
 
 CATATAN KODE
 
