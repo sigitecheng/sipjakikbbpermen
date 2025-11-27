@@ -15,12 +15,12 @@ class kegiatanjaskon extends Model
 
     public function laporankegiatan()
     {
-        return $this->hasMany(laporankegiatan::class);
+        return $this->belongsTo(laporankegiatan::class);
     }
 
     public function user()
     {
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(User::class);
     }
 
     public function pengawasanlokasi()

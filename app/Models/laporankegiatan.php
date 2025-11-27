@@ -15,11 +15,11 @@ class laporankegiatan extends Model
 
     public function kegiatanjaskon()
     {
-        return $this->belongsTo(kegiatanjaskon::class);
+        return $this->hasMany(kegiatanjaskon::class);
     }
 
     public function user()
     {
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(User::class);
     }
 }

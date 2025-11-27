@@ -1185,9 +1185,6 @@ public function beritajakonshow($id)
 }
 
 
-
-
-
 }
 // required|exists:users,id
 

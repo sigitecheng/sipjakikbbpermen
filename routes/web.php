@@ -2327,8 +2327,10 @@ Route::get('/tupoksidputr', [StrukturController::class, 'tupoksidputr']);
 // BAGIAN 2 KELEMBAGAAN FRONTEND
 Route::get('/beritajakon', [BeritaController::class, 'beritajakon']);
 Route::get('/beritajakon/show/{id}', [BeritaController::class, 'beritajakonshow'])->name('berita.detailshow');
-// Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb'])->name('login')->middleware('guest');
 
+Route::get('/dokkegiatan', [BeritajakonController::class, 'dokkegiatan']);
+Route::get('/dokkegiatan/kegiatan', [BeritajakonController::class, 'dokkegiatan'])->name('dokumentasi.kegiatan');
+Route::get('/dokkegiatan/berita', [BeritajakonController::class, 'dokkegiatan'])->name('berita.kegiatan');
 
 
 

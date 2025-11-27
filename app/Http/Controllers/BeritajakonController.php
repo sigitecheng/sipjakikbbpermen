@@ -9,6 +9,7 @@ use App\Models\artikeljakon;
 use App\Models\artikeljakonmasjaki;
 use App\Models\beritajakon;
 use App\Models\dokumentasijakon;
+use App\Models\kegiatanjaskon;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -1119,6 +1120,19 @@ public function resdokumentasishow($id)
         'databerita' => $databerita,
         'user' => $user,
         'users' => $users,
+    ]);
+}
+
+
+    public function dokkegiatan()
+{
+    $user = Auth::user();
+    $data = kegiatanjaskon::orderBy('created_at', 'desc')->paginate(5);
+
+    return view('frontend.new.02_bagian3.04_dokkegiatan.dokkegiatan', [
+        'title' => 'Dokumentasi Kegiatan Jasa Konstruksi',
+        'user' => $user,
+        'data' => $data,
     ]);
 }
 
