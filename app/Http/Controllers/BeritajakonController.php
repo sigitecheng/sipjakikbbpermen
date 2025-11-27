@@ -1124,10 +1124,12 @@ public function resdokumentasishow($id)
 }
 
 
-    public function dokkegiatan()
+ public function dokkegiatan()
 {
     $user = Auth::user();
-    $data = kegiatanjaskon::orderBy('created_at', 'desc')->paginate(5);
+
+    // Ambil data kegiatan, terbaru muncul paling atas
+    $data = kegiatanjaskon::orderBy('id', 'desc')->paginate(5);
 
     return view('frontend.new.02_bagian3.04_dokkegiatan.dokkegiatan', [
         'title' => 'Dokumentasi Kegiatan Jasa Konstruksi',
@@ -1135,6 +1137,7 @@ public function resdokumentasishow($id)
         'data' => $data,
     ]);
 }
+
 
  public function showdokkegiatan($id)
     {
