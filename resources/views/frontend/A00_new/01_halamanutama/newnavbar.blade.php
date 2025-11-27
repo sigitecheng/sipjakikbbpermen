@@ -58,8 +58,9 @@
                                                 <li><a href="#">Surat Keputusan</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Berita Jakon</a></li>
+                                        <li><a href="/beritajakon">Berita Jakon</a></li>
                                         <li><a href="#">Artikel Jakon</a></li>
+                                        <li><a href="#">Dokumentasi Kegiatan</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Data Jakon</a>

@@ -2324,6 +2324,9 @@ Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb']);
 Route::get('/strukturdputr', [StrukturController::class, 'strukturdputr']);
 Route::get('/tupoksidputr', [StrukturController::class, 'tupoksidputr']);
 
+// BAGIAN 2 KELEMBAGAAN FRONTEND
+Route::get('/beritajakon', [BeritaController::class, 'beritajakon']);
+Route::get('/beritajakon/show/{id}', [BeritaController::class, 'beritajakonshow'])->name('berita.detailshow');
 // Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb'])->name('login')->middleware('guest');
 
 

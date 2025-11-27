@@ -894,8 +894,8 @@ qa::create([
         // =========================================================
 
         User::create([
-            'name'  => 'Sigit Septiadi',
-            'username' => 'Sigit',
+            'name'  => 'Admin Sipjaki KBB',
+            'username' => 'Admin Sipjaki KBB',
             'statusadmin_id' => '1',
             'avatar' => 'user/avatar/foto1.png',
             'email' => 'sigitseptiadi1@gmail.com',
@@ -904,8 +904,8 @@ qa::create([
 
 
         User::create([
-            'name'  => 'Admin Sipjaki',
-            'username' => 'sipjakikbb',
+            'name'  => 'Yuyu Yuhana, S.T., M.M',
+            'username' => 'Yuyu Yuhana, S.T., M.M',
             'statusadmin_id' => '1',
             'avatar' => 'user/avatar/foto2.png',
             'email' => 'sipjakikbb@gmail.com',
@@ -913,21 +913,21 @@ qa::create([
         ]);
 
         User::create([
-            'name'  => 'User 1 Sipjaki',
-            'username' => 'sipjakikbbuser$1',
-            'statusadmin_id' => '2',
+            'name'  => 'Andri Nuryadin',
+            'username' => 'Andri Nuryadin',
+            'statusadmin_id' => '1',
             'avatar' => 'user/avatar/foto3.png',
-            'email' => 'sipjakikbbuser1@gmail.com',
-            'password' => bcrypt('sipjakiuser$$111')
+            'email' => 'sipjakikbbadmin1@gmail.com',
+            'password' => bcrypt('adminandri')
         ]);
 
         User::create([
-            'name'  => 'User 2 Sipjaki',
-            'username' => 'sipjakikbbuser$2',
-            'statusadmin_id' => '2',
+            'name'  => 'Ginanjar',
+            'username' => 'Ginanjar',
+            'statusadmin_id' => '1',
             'avatar' => 'user/avatar/foto4.png',
-            'email' => 'sipjakikbbuser2@gmail.com',
-            'password' => bcrypt('sipjakiuser$$222')
+            'email' => 'sipjakikbbadmin2@gmail.com',
+            'password' => bcrypt('adminginanjar')
         ]);
 
         User::create([
@@ -4084,7 +4084,7 @@ suratkeputusan::create([
 
 berita::create([
     'judul' => 'Tansformasi Digital Sistem Informasi Pembina Jasa Konstruksi Pemerintah Kabupaten Bandung Barat',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'berita/databerita/petakbb.jpg',
     'keteranganberita' => '
     <p>Pemerintah Kabupaten Bandung Barat telah meluncurkan inisiatif transformasi digital dalam sistem informasi pembina jasa konstruksi sebagai langkah penting untuk meningkatkan efisiensi dan transparansi dalam sektor konstruksi. Program ini bertujuan untuk memodernisasi cara pemerintah mengelola dan mengawasi proyek-proyek konstruksi di daerahnya, dengan memanfaatkan teknologi informasi terkini untuk mempermudah akses, pelaporan, dan monitoring. Transformasi ini diharapkan dapat membawa perubahan positif dalam cara proyek konstruksi dikelola dan dievaluasi, serta meningkatkan kualitas layanan kepada masyarakat.</p>
@@ -4095,14 +4095,17 @@ berita::create([
 
 <p>Peluncuran sistem informasi pembina jasa konstruksi ini merupakan bagian dari komitmen Pemerintah Kabupaten Bandung Barat untuk mendorong inovasi dan efisiensi dalam pelayanan publik. Dengan adanya transformasi digital ini, diharapkan sektor konstruksi di daerah ini dapat berkembang lebih pesat dan berkelanjutan. Ke depan, pemerintah akan terus memantau dan mengevaluasi efektivitas sistem ini, serta melakukan perbaikan yang diperlukan untuk memastikan bahwa manfaat dari transformasi digital dapat dirasakan secara optimal oleh semua pihak terkait.</p>
 ',
-    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
+
+'tanggal' => '2024-10-10',
+
+    // 'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
 
 berita::create([
     'judul' => 'Selamat Datang di Sistem Informasi Jasa Konstruksi Pemerintah Kabupaten Bandung Barat',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'berita/databerita/berita1.jpg',
     'keteranganberita' => '
 <p>Bandung Barat, 11 Agustus 2024 – Pemerintah Kabupaten Bandung Barat dengan bangga memperkenalkan Sistem Informasi Pembina Jasa Konstruksi (SIPJK), sebuah inovasi digital terbaru yang dirancang untuk memperbaiki dan memodernisasi pengelolaan proyek konstruksi di daerah ini. Dengan peluncuran sistem ini, pemerintah bertujuan untuk meningkatkan transparansi, efisiensi, dan akuntabilitas dalam administrasi konstruksi, serta memberikan kemudahan akses informasi kepada masyarakat.</p>
@@ -4112,7 +4115,8 @@ berita::create([
 <p>Bupati Bandung Barat, menyampaikan antusiasmenya atas peluncuran SIPJK dan mengungkapkan harapannya bahwa sistem ini akan membawa perubahan positif dalam pengelolaan konstruksi di wilayahnya. Ia percaya bahwa SIPJK akan menjadi alat yang efektif dalam mendukung pembangunan berkelanjutan dan menjadi contoh bagi daerah lain dalam penerapan teknologi informasi untuk sektor publik.</p>
 
 ',
-    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
+
+'tanggal' => '2024-11-05',
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
@@ -4123,7 +4127,7 @@ berita::create([
 
 berita::create([
     'judul' => 'Kabupaten Bandung Barat Gelar Pelatihan Jasa Konstruksi di Kecamatan Cisomang Barat',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'berita/databerita/cisomangbarat.jpg',
     'keteranganberita' => '
 <p>
@@ -4143,7 +4147,10 @@ Masyarakat Kecamatan Cisomang Barat menyambut baik kegiatan ini dan berharap pel
 </p>
 
 ',
-    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
+
+'tanggal' => '2024-12-08',
+
+    // 'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
@@ -4155,9 +4162,9 @@ Masyarakat Kecamatan Cisomang Barat menyambut baik kegiatan ini dan berharap pel
 
 
 berita::create([
-    'judul' => 'Pemerintah Kabupaten Bandung Barat Luncurkan Sistem Informasi Pembina Jasa Konstruksi untuk Meningkatkan Transparansi dan Efisiensi',
-    'user_id' => rand(1,5),
-    'gambar' => 'berita/databerita/berita2.jpg',
+    'judul' => 'Dinas Pekerjaan Umum dan Tata Ruang Kabupaten Bandung Barat Luncurkan Sistem Informasi Pembina Jasa Konstruksi untuk Meningkatkan Transparansi dan Efisiensi',
+    'user_id' => 1,
+    'gambar' => 'berita/databerita/beritabaru2.png',
     'keteranganberita' => '<p>Bandung Barat, 11 Agustus 2024 – Pemerintah Kabupaten Bandung Barat baru-baru ini meluncurkan Sistem Informasi Pembina Jasa Konstruksi (SIPJK) sebagai upaya untuk meningkatkan transparansi dan efisiensi dalam pengelolaan proyek konstruksi di wilayahnya. Sistem ini dirancang untuk mempermudah proses pendaftaran, pengawasan, dan evaluasi terhadap penyedia jasa konstruksi, sekaligus mempercepat akses informasi bagi masyarakat dan pemangku kepentingan.</p>
 
 <p>Dengan adanya SIPJK, diharapkan proses administrasi terkait jasa konstruksi menjadi lebih terintegrasi dan mudah diakses. Sistem ini menawarkan fitur-fitur seperti pendaftaran online, pelaporan secara real-time, dan akses langsung ke data proyek yang sedang berlangsung. Hal ini diharapkan dapat mengurangi birokrasi, meminimalisir praktik korupsi, dan memastikan bahwa setiap proyek konstruksi sesuai dengan standar dan regulasi yang berlaku.</p>
@@ -4170,8 +4177,8 @@ berita::create([
 
 berita::create([
     'judul' => 'Bimbingan Teknis : Pelatihan dan Bimbingan Teknis Tenaga Tukang Terampil oleh Gatensi Provinsi Jawa Barat',
-    'user_id' => rand(1,5),
-    'gambar' => 'berita/databerita/berita4.jpg',
+    'user_id' => 1,
+    'gambar' => 'berita/databerita/berita3.jpeg',
     'keteranganberita' => '<p>Bandung Barat, 14 Agustus 2024 – Pemerintah Kabupaten Bandung Barat secara resmi menyelenggarakan acara Bimbingan Teknis dengan tema "Pelatihan dan Bimbingan Teknis Tenaga Tukang Terampil oleh Gatensi Provinsi Jawa Barat" sebagai langkah penting dalam meningkatkan kompetensi tenaga kerja di sektor konstruksi. Acara ini bertujuan untuk memperkuat keterampilan dan pengetahuan tenaga tukang terampil, guna memastikan kualitas kerja yang lebih baik dan kepatuhan terhadap standar industri yang berlaku.</p>
 
 <p>Bimbingan teknis ini menghadirkan berbagai materi penting, termasuk teknik terbaru dalam pelaksanaan proyek konstruksi, penggunaan alat dan bahan bangunan yang efisien, serta prosedur keselamatan kerja yang sesuai dengan regulasi. Melalui pelatihan ini, diharapkan tenaga tukang akan mendapatkan keterampilan praktis yang dibutuhkan untuk menangani berbagai tantangan di lapangan dan meningkatkan kualitas pekerjaan konstruksi.</p>
@@ -4194,7 +4201,7 @@ berita::create([
 
 berita::create([
     'judul' => 'Pemerintah Kabupaten Bandung Barat Laksanakan Sertifikasi Jasa Konstruksi di Kecamatan Cisomang Barat',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'berita/databerita/pelatihancisomangbarat.jpg',
     'keteranganberita' => '
     <p>
@@ -4221,8 +4228,8 @@ Pemerintah Kabupaten Bandung Barat menegaskan komitmennya untuk terus mengadakan
 
 berita::create([
     'judul' => 'Pemerintah Kabupaten Bandung Barat Berkolaborasi dengan PT. Cisangkan dalam bimbingan teknis untuk para tukang terampil ',
-    'user_id' => rand(1,5),
-    'gambar' => 'berita/databerita/berita6.jpg',
+    'user_id' => 1,
+    'gambar' => 'berita/databerita/29.jpeg',
     'keteranganberita' => '<p>Bandung Barat, 14 Agustus 2024 – Pemerintah Kabupaten Bandung Barat bekerja sama dengan PT. Cisangkan dalam menyelenggarakan bimbingan teknis untuk para tukang terampil di Desa Batulayang, Kecamatan Cililin.</p>
 
 <p>Pemerintah Kabupaten Bandung Barat dengan bangga memperkenalkan Sistem Informasi Pembina Jasa Konstruksi (SIPJK), sebuah terobosan digital yang bertujuan untuk mendukung pembangunan berkelanjutan di wilayah tersebut. Sistem ini dirancang untuk meningkatkan transparansi, efisiensi, dan akuntabilitas dalam pengelolaan proyek konstruksi, serta memastikan bahwa semua kegiatan pembangunan mengikuti standar yang telah ditetapkan.</p>
@@ -4230,7 +4237,9 @@ berita::create([
 <p>SIPJK menawarkan berbagai fitur inovatif, termasuk pendaftaran online untuk penyedia jasa konstruksi, pemantauan proyek secara real-time, dan pelaporan kemajuan yang mudah diakses. Dengan adanya sistem ini, diharapkan akan terjadi penurunan birokrasi dan praktik korupsi yang seringkali menghambat proses konstruksi. Sistem ini juga bertujuan untuk memberikan kemudahan akses informasi kepada masyarakat, sehingga meningkatkan keterlibatan publik dalam proses pembangunan.</p>
 
 <p>Bupati Bandung Barat menegaskan bahwa peluncuran SIPJK adalah langkah strategis dalam upaya mendukung pembangunan yang lebih berkelanjutan dan terencana. Ia berharap sistem ini dapat menjadi contoh bagi daerah lain dalam penerapan teknologi untuk pengelolaan sektor publik dan memajukan kualitas serta transparansi dalam proyek-proyek konstruksi.',
-    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
+
+'tanggal' => '2024-08-14',
+
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
@@ -4238,14 +4247,16 @@ berita::create([
 
 berita::create([
     'judul' => 'Transformasi Digital di Kabupaten Bandung Barat: Sistem Informasi Pembina Jasa Konstruksi Hadir untuk Memperbaiki Pengelolaan Konstruksi',
-    'user_id' => rand(1,5),
-    'gambar' => 'berita/databerita/berita5.jpg',
+    'user_id' => 1,
+    'gambar' => 'berita/databerita/23.jpg',
     'keteranganberita' => '<p>Bandung Barat, 11 Agustus 2024 – Dalam upaya untuk mendigitalkan dan menyempurnakan pengelolaan konstruksi, Pemerintah Kabupaten Bandung Barat baru-baru ini meluncurkan Sistem Informasi Pembina Jasa Konstruksi (SIPJK). Inisiatif ini bertujuan untuk memperbaiki efisiensi, transparansi, dan akuntabilitas dalam administrasi proyek konstruksi di wilayahnya. SIPJK diharapkan akan membawa perubahan signifikan dalam cara proyek konstruksi dikelola dan diawasi.</p>
 
 <p>Sistem ini dilengkapi dengan berbagai fitur canggih yang memungkinkan pendaftaran dan pemantauan proyek secara online, serta pelaporan kemajuan yang dapat diakses secara real-time. Dengan penerapan SIPJK, diharapkan proses administrasi yang selama ini rumit dan memakan waktu dapat dipercepat, serta mengurangi potensi terjadinya penyimpangan atau praktik korupsi. Selain itu, sistem ini memberikan kemudahan bagi masyarakat untuk mendapatkan informasi yang transparan mengenai status proyek-proyek konstruksi.</p>
 
 <p>Bupati Bandung Barat, menyatakan bahwa peluncuran SIPJK adalah langkah penting dalam transformasi digital pemerintah daerah. Ia berharap sistem ini tidak hanya akan meningkatkan kualitas pengelolaan konstruksi tetapi juga dapat menjadi acuan bagi daerah lain dalam menerapkan teknologi untuk sektor publik. Peluncuran ini merupakan bagian dari komitmen pemerintah daerah untuk mendukung pembangunan yang lebih terintegrasi dan berkelanjutan.</p>',
-    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
+
+'tanggal' => '2024-08-11',
+
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
@@ -4253,7 +4264,7 @@ berita::create([
 
 berita::create([
     'judul' => 'Kunjungan Provinsi Jawa Barat : Implementasi Sipjaki di Kabupaten Bandung Barat',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'berita/databerita/berita8.jpeg',
     'keteranganberita' => '
 <p>Kunjungan dari Pemerintah Provinsi Jawa Barat baru-baru ini fokus pada implementasi Sistem Informasi Pengelolaan Jasa Konstruksi (Sipjaki) yang bertujuan untuk merevolusi sektor konstruksi di wilayah tersebut. Dalam kunjungan ini, para pejabat dan teknisi dari provinsi melakukan evaluasi mendalam mengenai penerapan Sipjaki di lapangan serta dampaknya terhadap efisiensi dan transparansi dalam pengelolaan proyek konstruksi. Sipjaki diharapkan menjadi solusi teknologi yang dapat menyederhanakan proses administrasi dan meningkatkan akuntabilitas dalam sektor konstruksi.</p>
@@ -4264,7 +4275,9 @@ berita::create([
 
 <p>Sebagai bagian dari upaya berkelanjutan untuk meningkatkan kualitas dan efisiensi di sektor konstruksi, Pemerintah Provinsi Jawa Barat berkomitmen untuk mendukung pengembangan dan penerapan teknologi seperti Sipjaki. Kunjungan ini tidak hanya bertujuan untuk mengevaluasi kemajuan implementasi tetapi juga untuk merencanakan langkah-langkah selanjutnya dalam pengembangan sistem. Dengan dukungan dan evaluasi yang terus-menerus, diharapkan bahwa Sipjaki akan semakin meningkatkan kinerja dan transparansi sektor konstruksi di Jawa Barat.</p>
 ',
-    'tanggal' => Carbon::now()->toDateString(), // Atau gunakan tanggal yang spesifik
+
+'tanggal' => '2024-09-15',
+
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
@@ -4272,7 +4285,7 @@ berita::create([
 
 berita::create([
     'judul' => 'Pelatihan Jasa Konstruksi di Kecamatan Cipatat: Tingkatkan Kompetensi Para Pekerja',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'dokumentasipelatihan/cipatat/cipatat1.jpeg',
     'keteranganberita' => '
 <p>Kecamatan Cipatat mengadakan kegiatan pelatihan jasa konstruksi bagi para tenaga kerja dan aparatur pemerintahan sebagai bentuk peningkatan kapasitas sumber daya manusia di bidang konstruksi. Kegiatan ini diinisiasi oleh Pemerintah Kabupaten Bandung Barat melalui Dinas PUPR dan mendapat dukungan penuh dari pemerintah kecamatan setempat.</p>
@@ -4281,14 +4294,16 @@ berita::create([
 
 <p>Camat Cipatat dalam sambutannya menyampaikan bahwa pelatihan ini diharapkan dapat membuka wawasan dan meningkatkan kemampuan teknis para peserta, terutama dalam hal pengelolaan data jasa konstruksi berbasis digital. Pemerintah daerah berkomitmen untuk terus mengadakan kegiatan serupa agar kualitas sumber daya manusia di sektor konstruksi semakin meningkat dan siap bersaing secara profesional.</p>
 ',
-    'tanggal' => Carbon::now()->toDateString(),
+
+'tanggal' => '2025-09-21',
+
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
 
 berita::create([
     'judul' => 'Kolaborasi Kecamatan Cipatat dan Dinas PUPR : Penguatan Pelatihan Para Pekerja Melalui Pelatihan Jasa Konstruksi',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'dokumentasipelatihan/cipatat/cipatat2.jpeg',
     'keteranganberita' => '
 <p>Pemerintah Kecamatan Cipatat menjalin kerja sama erat dengan Dinas PUPR Kabupaten Bandung Barat dalam memperkuat pengelolaan data konstruksi berbasis digital melalui pelatihan jasa konstruksi. Kolaborasi ini merupakan bagian dari upaya implementasi <strong>Sipjaki</strong> yang diharapkan mampu meningkatkan efisiensi, transparansi, dan akurasi data sektor konstruksi di wilayah Cipatat.</p>
@@ -4297,14 +4312,16 @@ berita::create([
 
 <p>Kegiatan kolaboratif ini menjadi langkah strategis dalam membangun tata kelola sektor konstruksi yang lebih baik di tingkat kecamatan. Dengan penguatan data yang terintegrasi, Pemerintah Kecamatan Cipatat berharap seluruh proyek konstruksi dapat terpantau secara menyeluruh, akurat, dan akuntabel melalui platform Sipjaki.</p>
 ',
-    'tanggal' => Carbon::now()->toDateString(),
+
+'tanggal' => '2025-10-14',
+
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
 
 berita::create([
     'judul' => 'Kunjungan Komisi V DPR RI: Pengawasan Jasa Konstruksi di Daerah Kabupaten Bandung Barat',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'dokumentasipelatihan/cipatat/11.jpg',
     'keteranganberita' => '
 <p>Komisi V DPR RI melakukan kunjungan kerja ke Kabupaten Bandung Barat dalam rangka pengawasan pelaksanaan proyek jasa konstruksi di wilayah tersebut. Kegiatan ini bertujuan memastikan seluruh proyek berjalan sesuai dengan standar teknis dan anggaran yang telah ditetapkan.</p>
@@ -4313,7 +4330,9 @@ berita::create([
 
 <p>Kunjungan ini menjadi bagian dari upaya DPR RI untuk meningkatkan transparansi, efisiensi, dan akuntabilitas dalam sektor jasa konstruksi di daerah, sekaligus memberikan masukan strategis bagi pemerintah daerah dalam memperbaiki pelaksanaan proyek yang sedang berjalan maupun yang akan datang.</p>
 ',
-    'tanggal' => Carbon::now()->toDateString(),
+
+'tanggal' => '2025-02-16',
+
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
@@ -4321,7 +4340,7 @@ berita::create([
 
 berita::create([
     'judul' => 'Pengawasan Pembangunan Gedung Damkar Dinas Pemadam Kebakaran',
-    'user_id' => rand(1,5),
+    'user_id' => 1,
     'gambar' => 'dokumentasipelatihan/cipatat/17.jpg',
     'keteranganberita' => '
 <p>Dinas PUPR Kabupaten Bandung Barat melakukan pengawasan pembangunan Gedung Damkar Dinas Pemadam Kebakaran untuk memastikan proyek berjalan sesuai dengan standar teknis dan anggaran yang ditetapkan. Kegiatan ini bertujuan meningkatkan kualitas infrastruktur publik dan keselamatan masyarakat.</p>
@@ -4330,12 +4349,27 @@ berita::create([
 
 <p>Pengawasan ini menjadi langkah penting dalam menjaga akuntabilitas dan transparansi proyek pembangunan gedung Damkar, sekaligus memastikan fasilitas tersebut dapat segera digunakan untuk mendukung operasional pemadam kebakaran di Kabupaten Bandung Barat.</p>
 ',
-    'tanggal' => Carbon::now()->toDateString(),
+
+'tanggal' => '2025-03-14',
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
 
+berita::create([
+    'judul' => 'Pembaharuan Aplikasi SIPJAKI internal DPUTR Kabupaten Bandung Barat',
+    'user_id' => 1,
+    'gambar' => 'berita/databerita/beritabaru1.png',
+    'keteranganberita' => '
+        <p>Bandung Barat, 27 Desember 2025 – Dinas Pekerjaan Umum dan Tata Ruang (DPUTR) Kabupaten Bandung Barat resmi melakukan pembaharuan pada aplikasi Sistem Informasi Pembina Jasa Konstruksi (SIPJAKI) internal. Pembaharuan ini dilakukan untuk meningkatkan efisiensi kerja, mempercepat proses pengelolaan data, serta menunjang kebutuhan administrasi dan teknis di lingkungan DPUTR.</p>
 
+        <p>Pembaruan sistem meliputi peningkatan performa aplikasi, penyempurnaan antarmuka pengguna, serta penambahan fitur-fitur baru yang mendukung monitoring dan pelaporan kegiatan pembinaan jasa konstruksi. Dengan adanya pembaruan ini, diharapkan seluruh staf internal dapat bekerja lebih cepat, terstruktur, dan akurat dalam mengolah data.</p>
+
+        <p>DPUTR Kabupaten Bandung Barat berkomitmen untuk terus meningkatkan kualitas layanan digital sebagai bagian dari transformasi teknologi di lingkungan pemerintah daerah. Pembaharuan SIPJAKI ini menjadi langkah konkrit menuju sistem administrasi yang lebih efektif, transparan, dan modern.</p>
+    ',
+    'tanggal' => '2025-11-27',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
 
 // =================================== ===================================== ===========================
 layanankami::create([

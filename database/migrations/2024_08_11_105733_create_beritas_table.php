@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('keteranganberita');
             $table->date('tanggal'); // Menambahkan kolom tanggal
             $table->softDeletes();
-            $table->timestamps();            
+            $table->timestamps();
         });
     }
 
