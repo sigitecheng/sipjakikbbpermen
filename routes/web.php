@@ -2321,6 +2321,8 @@ Route::get('/asosiasi/dataskk2024', [DownloadExcelController::class, 'dataskk202
 // PEMBAHARUAN SIPJAKI KBB
 // BAGIAN 2 KELEMBAGAAN FRONTEND
 Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb']);
+Route::get('/strukturdputr', [StrukturController::class, 'strukturdputr']);
+Route::get('/tupoksidputr', [StrukturController::class, 'tupoksidputr']);
 
 // Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb'])->name('login')->middleware('guest');
 

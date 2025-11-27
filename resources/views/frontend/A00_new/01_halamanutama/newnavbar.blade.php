@@ -27,8 +27,8 @@
                                 <li class="menu-item-has-children"><a href="#">Kelembagaan</a>
                                     <ul class="sub-menu">
                                         <li><a href="/profiljakonkbb">Profil Jakon DPUTR</a></li>
-                                        <li><a href="#">Struktur DPUTR</a></li>
-                                        <li><a href="#">Tupoksi Jakon</a></li>
+                                        <li><a href="/strukturdputr">Struktur DPUTR</a></li>
+                                        <li><a href="/tupoksidputr">Tupoksi Jakon</a></li>
                                         {{-- <li><a href="team-details.html">Team Details</a></li> --}}
                                         {{-- <li class="menu-item-has-children"><a href="shop.html">Shop</a>
                                             <ul class="sub-menu">

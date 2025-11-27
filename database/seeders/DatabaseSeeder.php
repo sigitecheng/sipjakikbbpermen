@@ -2611,6 +2611,7 @@ statusadmin::create(['id' => 9, 'statusadmin' => 'dinas']);
 strukturdinas::create([
     'judul' => 'Struktur Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat',
     'peraturan' => 'struktur/01_dinas/BAGAN_DPUTR.pdf',
+    'keterangan' => 'Dinas Pekerjaan Umum dan Tata Ruang (PUTR) Pemerintah Kabupaten Bandung Barat memiliki peran vital dalam pengelolaan infrastruktur dan penataan ruang yang mendukung pembangunan daerah. Dinas ini bertanggung jawab dalam merencanakan, melaksanakan, serta mengawasi pembangunan berbagai infrastruktur seperti jalan, jembatan, dan gedung, serta fasilitas publik lainnya. Selain itu, Dinas PUTR juga berperan dalam penataan ruang yang berfokus pada pengembangan wilayah yang terencana dan berkelanjutan. Struktur organisasi Dinas PUTR Kabupaten Bandung Barat dibangun dengan sistem yang terstruktur dan terorganisir guna memastikan efektivitas dalam pelaksanaan.',
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
     'deleted_at' => null, // Jika Anda menggunakan soft deletes

@@ -1285,4 +1285,35 @@ public function profiljakonkbb()
 }
 
 
+public function strukturdputr()
+{
+    $data = strukturdinas::all(); // Menggunakan paginate() untuk pagination
+
+    $user = Auth::user();
+
+    return view('frontend.new.01_bagian2.02_strukturdinas.strukturdinas', [
+        'title' => 'Profil Jakon DPUPR Kabupaten Bandung Barat',
+        'data' => $data, // Mengirimkan data paginasi ke view
+        'user' => $user, // Mengirimkan data paginasi ke view
+
+
+    ]);
+}
+
+public function tupoksidputr()
+{
+    $data = strukturdinas::all(); // Menggunakan paginate() untuk pagination
+
+    $user = Auth::user();
+
+    return view('frontend.new.01_bagian2.03_tupoksi.tupoksi', [
+        'title' => 'Tupoksi DPUTR Kabupaten Bandung Barat ',
+        'data' => $data, // Mengirimkan data paginasi ke view
+        'user' => $user, // Mengirimkan data paginasi ke view
+
+
+    ]);
+}
+
+
 }
