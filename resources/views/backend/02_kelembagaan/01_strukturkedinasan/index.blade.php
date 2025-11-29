@@ -14,8 +14,8 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
           <div class="app-content-header">
@@ -43,13 +43,28 @@
                         <div class="table-responsive">
                             <table class="zebra-table table-striped">
                                 <thead>
-                                    <tr>
-                                        <th style="width: 10px; text-align:center;">No</th>
-                                        <th style="width: 300px; text-align:center;">Judul</th>
-                                        <th style="width: 500px; text-align:center;">Berkas</th>
-                                        <th style="width: 600px; text-align: center;">Keterangan</th>
-                                        <th style="width: 100px; text-align: center;">Perbarui Data</th>
+                                  <tr>
+                                        <th style="width: 10px; text-align:center;">
+                                            <i class="bi bi-list-ol"></i> <!-- Icon Nomor -->
+                                        </th>
+
+                                        <th style="width: 300px; text-align:center;">
+                                            <i class="bi bi-card-text"></i> Judul  <!-- Icon Judul -->
+                                        </th>
+
+                                        <th style="width: 500px; text-align:center;">
+                                            <i class="bi bi-file-earmark-pdf"></i> Berkas  <!-- Icon PDF / File -->
+                                        </th>
+
+                                        <th style="width: 600px; text-align:center;">
+                                            <i class="bi bi-info-circle"></i> Keterangan <!-- Icon Informasi -->
+                                        </th>
+
+                                        <th style="width: 100px; text-align:center;">
+                                            <i class="bi bi-pencil-square"></i> Perbarui Data  <!-- Icon Update/Edit -->
+                                        </th>
                                     </tr>
+
                                 </thead>
                                 <tbody>
 

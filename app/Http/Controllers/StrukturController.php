@@ -32,7 +32,7 @@ class StrukturController extends Controller
         $user = Auth::user();
 
         return view('backend.02_kelembagaan.01_strukturkedinasan.index', [
-            'title' => 'Struktur Organisasi DPUPR Kabupaten Blora Provinsi Jawa Tengah',
+            'title' => 'Struktur Organisasi DPUTR Kabupaten Bandung Barat Provinsi Jawa Barat',
             'data' => $data, // Mengirimkan data paginasi ke view
             'user' => $user, // Mengirimkan data paginasi ke view
         ]);
@@ -48,7 +48,7 @@ class StrukturController extends Controller
                     return view('backend.02_kelembagaan.01_strukturkedinasan.update', [
                         'data' => $strukturdinas,
                         'user' => $user,
-                        'title' => 'Update Struktur Organisasi DPUPR Kab Blora'
+                        'title' => 'Update Struktur Organisasi DPUTR Kabupaten Bandung Barat'
                     ]);
                 }
 

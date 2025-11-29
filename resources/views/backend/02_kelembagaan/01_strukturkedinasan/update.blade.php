@@ -15,8 +15,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;">        <div class="app-content-header"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
             <div class="app-content-header">
                 <!--begin::Container-->
@@ -60,7 +59,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/bestrukturdinas">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
 
                         <!-- Ikon SVG Kembali -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -90,8 +89,8 @@
                                 <div class="row">
                                     <!-- Left Column (6/12) -->
                                     <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label class="form-label" for="judul">
+                                        <div class="form-modern mb-3">
+                                            <label class="form-label-modern" for="judul">
                                                 <i class="bi bi-calendar-event" style="margin-right: 8px; color: navy;"></i> Judul
                                             </label>
                                             <input type="text" id="judul" name="judul" class="form-control @error('judul') is-invalid @enderror" value="{{ old('judul', $data->judul) }}" />
@@ -99,8 +98,8 @@
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
                                         </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="keterangan">
+                                        <div class="form-modern mb-3">
+                                            <label class="form-label-modern" for="keterangan">
                                                 <i class="bi bi-tags-fill" style="margin-right: 8px; color: navy;"></i> Keterangan
                                             </label>
                                             <textarea id="keterangan" name="keterangan" class="form-control @error('keterangan') is-invalid @enderror" rows="6">{{ old('keterangan', $data->keterangan) }}</textarea>
@@ -112,35 +111,64 @@
                                     <!-- End Left Column -->
 
                                     <!-- Right Column (6/12) -->
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label class="form-label" for="peraturan">
-                                                <i class="bi bi-file-earmark-pdf" style="margin-right: 8px; color: navy;"></i> File Struktur Organisasi (PDF)
-                                            </label>
+                                   <div class="col-md-6">
+    <div class="form-modern mb-3">
+        <label class="form-label-modern" for="peraturan">
+            <i class="bi bi-file-earmark-pdf" style="margin-right: 8px; color: navy;"></i>
+            File Struktur Organisasi (PDF)
+        </label>
 
-                                            <!-- Preview PDF -->
-                                            <div style="margin-top: 10px;">
-                                                @if($data->peraturan && file_exists(public_path('storage/' . $data->peraturan)))
-                                                <!-- Display the default iframe when the file exists in the storage -->
-                                                <iframe src="{{ asset('storage/' . $data->peraturan) }}" frameborder="0" width="100%" height="300px"></iframe>
-                                            @elseif($data->peraturan)
-                                                <!-- Display the iframe with the updated file -->
-                                                <iframe src="{{ asset($data->peraturan) }}" frameborder="0" width="100%" height="300px"></iframe>
-                                            @else
-                                                <!-- Optional: Show a placeholder if there's no file available -->
-                                                <p>Data belum diupdate</p>
-                                            @endif
+        <!-- PREVIEW PDF BARU -->
+        <div id="preview-pdf-wrapper" style="display:none; margin-top:15px;">
+            <p style="font-weight:600;">Preview PDF Baru:</p>
 
-                                            </div>
+            <iframe id="preview-pdf"
+                    src=""
+                    frameborder="0"
+                    width="100%"
+                    height="300px"
+                    style="border:2px dashed #ffc107; border-radius:6px;">
+            </iframe>
 
-                                            <!-- Input File untuk Mengunggah PDF -->
-                                            <input type="file" name="peraturan" class="form-control @error('peraturan') is-invalid @enderror" id="peraturan" />
-                                            @error('peraturan')
-                                                <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                        </div>
+            <!-- Tombol batal preview -->
+            <button type="button" class="btn btn-sm btn-secondary mt-2"
+                onclick="clearPreviewPDF()">
+                Batal Preview
+            </button>
+        </div>
 
-                                    </div>
+        <!-- PDF LAMA -->
+        <div id="old-pdf-wrapper" style="margin-top:20px; transition:0.3s;">
+            <p style="font-weight:600;">PDF Lama:</p>
+
+            @if($data->peraturan && file_exists(public_path('storage/' . $data->peraturan)))
+                <iframe src="{{ asset('storage/' . $data->peraturan) }}"
+                        frameborder="0" width="100%" height="300px"
+                        style="border-radius:6px; border:1px solid #ddd;"></iframe>
+
+            @elseif($data->peraturan)
+                <iframe src="{{ asset($data->peraturan) }}"
+                        frameborder="0" width="100%" height="300px"
+                        style="border-radius:6px; border:1px solid #ddd;"></iframe>
+
+            @else
+                <p>Data belum diupdate</p>
+            @endif
+        </div>
+
+        <!-- INPUT FILE PDF -->
+        <input type="file" name="peraturan" id="peraturan"
+               class="form-control mt-3 @error('peraturan') is-invalid @enderror"
+               accept="application/pdf"
+               onchange="previewPDF(event)">
+
+        @error('peraturan')
+            <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+    </div>
+</div>
+
+
                                 </div> <!-- end row -->
                             </div>
                             <!-- end::Body -->
@@ -151,11 +179,11 @@
                             <div class="flex justify-end" style="margin-top: -40px;">
 <button class="button-berkas" type="button" onclick="openModal()">
 
-    <!-- Ikon BI Tools -->
-    <i class="bi bi-tools" style="font-size: 20px; margin-right: 8px;"></i>
+    <i class="bi bi-pencil-square" style="font-size: 20px; margin-right: 8px;"></i>
 
     <span style="font-family: 'Poppins', sans-serif;">Perbaikan Data ?</span>
 </button>
+
 
 
                             </div>
@@ -240,3 +268,58 @@
 
 
       @include('backend.00_administrator.00_baganterpisah.02_footer')
+
+
+<script>
+let currentPdfUrl = null;
+
+function previewPDF(event) {
+    const file = event.target.files[0];
+    const previewWrapper = document.getElementById('preview-pdf-wrapper');
+    const previewPDF = document.getElementById('preview-pdf');
+    const oldWrapper = document.getElementById('old-pdf-wrapper');
+
+    if (file) {
+        // Revoke URL lama
+        if (currentPdfUrl) {
+            URL.revokeObjectURL(currentPdfUrl);
+            currentPdfUrl = null;
+        }
+
+        currentPdfUrl = URL.createObjectURL(file);
+
+        previewPDF.src = currentPdfUrl;
+        previewWrapper.style.display = "block";
+
+        // Pudarkan PDF lama
+        oldWrapper.style.opacity = "0.45";
+        oldWrapper.style.filter = "grayscale(70%)";
+        oldWrapper.style.pointerEvents = "none";
+    } else {
+        clearPreviewPDF();
+    }
+}
+
+function clearPreviewPDF() {
+    const previewWrapper = document.getElementById('preview-pdf-wrapper');
+    const previewPDF = document.getElementById('preview-pdf');
+    const oldWrapper = document.getElementById('old-pdf-wrapper');
+    const input = document.getElementById('peraturan');
+
+    // Bersihkan URL
+    if (currentPdfUrl) {
+        URL.revokeObjectURL(currentPdfUrl);
+        currentPdfUrl = null;
+    }
+
+    previewPDF.src = "";
+    previewWrapper.style.display = "none";
+
+    oldWrapper.style.opacity = "1";
+    oldWrapper.style.filter = "none";
+    oldWrapper.style.pointerEvents = "auto";
+
+    // reset input file
+    input.value = "";
+}
+</script>
