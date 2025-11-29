@@ -180,12 +180,13 @@
                 <div class="row">
 
                     <div class="col-lg-12">
+                        @foreach ($data as $item)
     <div class="contact__info-wrap">
         <div class="contact__info-item">
 
 
             <h4 class="title" style="margin-top: 10px;">
-                Tupoksi Dan Program Jasa Konstruksi
+              {{$item->judul}}
             </h4>
 
             {{-- LIST TUGAS / ISIAN DARI GAMBAR --}}
@@ -223,20 +224,47 @@
 
             </ul>
 
+            <tr>
+    {{-- <th style="width: 100px; text-align:left;">Peraturan</th> --}}
+    {{-- <td>:</td> --}}
+    <td>
+<br>
+        <div style="margin-top: 10px;">
+            @if($item->peraturan && file_exists(public_path('storage/' . $item->peraturan)))
+                <!-- Jika PDF ada di storage -->
+                <embed
+                    src="{{ asset('storage/' . $item->peraturan) }}"
+                    type="application/pdf"
+                    style="width: 100%; height: 400px; border: 1px solid #ddd;"
+                />
+
+            @elseif($item->peraturan)
+                <!-- Jika PDF berada di path luar storage -->
+                <embed
+                    src="{{ asset($item->peraturan) }}"
+                    type="application/pdf"
+                    style="width: 100%; height: 400px; border: 1px solid #ddd;"
+                />
+
+            @else
+                <!-- Jika belum ada data -->
+                <p>Data belum diupdate</p>
+            @endif
+        </div>
+
+    </td>
+</tr>
+<br>
             {{-- PARAGRAF PENJELASAN DARI GAMBAR --}}
             <p style="margin-top: 15px; text-align: justify; font-size: 16px;">
-                Dinas Pekerjaan Umum dan Tata Ruang (DPUTR) Kabupaten Bandung Barat memiliki peran strategis
-                dalam pembinaan jasa konstruksi guna mendukung pembangunan infrastruktur yang berkualitas.
-                DPUPR bertugas menyusun kebijakan teknis, mengembangkan sistem informasi konstruksi, serta
-                meningkatkan kapasitas badan usaha konstruksi agar lebih kompetitif dan profesional.
-                Selain itu, DPUPR juga berperan dalam pengawasan dan penjaminan mutu konstruksi, penyuluhan
-                serta bimtek kepada para pelaku jasa konstruksi, serta pengembangan pasar dan kerja sama konstruksi.
-                Dengan pendekatan berbasis regulasi dan inovasi, DPUPR terus berupaya menciptakan ekosistem konstruksi
-                yang tertib, berdaya saing, dan mendukung pertumbuhan ekonomi Kabupaten Blora.
+                {!! $item->keterangan!!}
             </p>
 
         </div>
     </div>
+
+
+@endforeach
 </div>
 
                 </div>

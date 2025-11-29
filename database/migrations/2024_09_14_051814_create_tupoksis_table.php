@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('tupoksis', function (Blueprint $table) {
             $table->id();
             $table->text('judul')->nullable();
-            $table->text('peraturan')->nullable();
+            $table->string('peraturan')->nullable();
+            $table->text('keterangan')->nullable();
 
             $table->fullText(['judul', 'peraturan']);
             $table->softDeletes();

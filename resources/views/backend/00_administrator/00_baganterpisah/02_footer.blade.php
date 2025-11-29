@@ -1,5 +1,5 @@
 <!--begin::Footer-->
-<footer class="app-footer d-flex justify-content-center align-items-center">
+<footer class="app-footer d-flex justify-content-center align-items-center" style="margin-bottom:25px">
     <!--begin::To the end-->
     <div class="float-end d-none d-sm-inline"></div>
     <!--end::To the end-->
@@ -7,8 +7,8 @@
     <strong>
         <img src="/assets/icon/logokabupatenblora.png" alt="" width="20">
         <img src="/assets/icon/pupr.png" alt="" width="20">
-        &copy; Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat Provinsi Jawa Barat &nbsp; 2025 | Built and Deployed By
-        <a href="https://wa.me/6281321455855" target="_blank" class="text-decoration-none" style="color: green"> CV. Angkasa Raya Teknik</a>.
+        &copy; Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat Provinsi Jawa Barat &nbsp; {{ date('Y') }}
+        {{-- <a href="https://wa.me/6281321455855" target="_blank" class="text-decoration-none" style="color: green"> --- </a>. --}}
     </strong>
     <!--end::Copyright-->
 </footer>

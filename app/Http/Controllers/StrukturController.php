@@ -1188,35 +1188,40 @@ public function betupoksiupdate($id)
     return view('backend.02_kelembagaan.03_tupoksi.update', [
         'data' => $tupoksi,
         'user' => $user,
-        'title' => 'Update Tupoksi Jakon Kabupaten Blora'
+        'title' => 'Update Tupoksi Jakon Kabupaten Bandung Barat'
     ]);
 }
 
 // -------------------- UPDATE DATA MENU JABATAN FUNGSIONAL  ----------------------
 public function betupoksicreateupdate(Request $request, $id)
 {
-    // Validasi input dengan pesan kustom
     $validatedData = $request->validate([
-        'judul' => 'required|string|max:255', // Validasi untuk Nama Lengkap
-        'keterangan' => 'required|string', // Validasi untuk NIP
-    ], [
-        'judul.required' => 'Judul wajib diisi!',
-        'keterangan.required' => 'Keterangan wajib diisi!',
+        'judul' => 'nullable|string|max:255',
+        'keterangan' => 'nullable|string',
+        'peraturan' => 'nullable|file|max:15360',
     ]);
 
-    // Cari data strukturdinas berdasarkan nilai 'judul'
-    $tupoksi = tupoksi::where('id', $id)->firstOrFail();
+    $tupoksi = tupoksi::findOrFail($id);
 
-    // Gunakan $validatedData untuk update, agar lebih jelas dan rapi
     $tupoksi->update([
-        'judul' => $validatedData['judul'],  // Menggunakan data yang sudah tervalidasi
-        'keterangan' => $validatedData['keterangan'],  // Menggunakan data yang sudah tervalidasi
+        'judul' => $validatedData['judul'],
+        'keterangan' => $validatedData['keterangan'],
     ]);
 
-    // Flash session untuk menampilkan pesan sukses
-    session()->flash('update', 'Data Berhasil Diupdate!');
+    if ($request->hasFile('peraturan')) {
 
-    // Redirect ke halaman yang sesuai
+        // Jika ingin langsung URL publik → simpan tanpa storage
+        // pindahkan manual ke public/
+        $file = $request->file('peraturan');
+        $name = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('tupoksi_files'), $name);
+
+        $tupoksi->update([
+            'peraturan' => 'tupoksi_files/'.$name,
+        ]);
+    }
+
+    session()->flash('update', 'Data Berhasil Diupdate!');
     return redirect('/betupoksi');
 }
 
@@ -1302,7 +1307,8 @@ public function strukturdputr()
 
 public function tupoksidputr()
 {
-    $data = strukturdinas::all(); // Menggunakan paginate() untuk pagination
+    // $data = strukturdinas::all(); // Menggunakan paginate() untuk pagination
+    $data = tupoksi::all(); // Menggunakan paginate() untuk pagination
 
     $user = Auth::user();
 

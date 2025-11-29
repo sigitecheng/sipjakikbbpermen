@@ -173,3 +173,11 @@ function searchMaterial() {
 
 
 <section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
+
+
+:root {
+    --primary-green: #FF8C00;  /* Orange PUPR */
+    --dark-green: #E67300;
+    --light-green: #FFE5B4;
+    --accent-green: #FFD699;
+}

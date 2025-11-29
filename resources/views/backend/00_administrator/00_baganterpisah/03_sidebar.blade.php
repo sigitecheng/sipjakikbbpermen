@@ -786,13 +786,14 @@
                           <p style="color: white">Profil Jakon</p>
                         </a>
                       </li>
-                      <li class="nav-item">
+                     <li class="nav-item">
                         <a href="/betupoksi" class="nav-link">
-                          <!-- Ikon untuk Sosial Media -->
-                          <i class="nav-icon bi bi-facebook text-warning"></i> <!-- Bisa diganti dengan bi-twitter atau bi-instagram sesuai kebutuhan -->
-                          <p style="color: white">Tupoksi Jakon</p>
+                            <!-- Ikon untuk Tupoksi Jakon -->
+                            <i class="nav-icon bi bi-journal-text text-warning"></i>
+                            <p style="color: white">Tupoksi Jakon</p>
                         </a>
-                      </li>
+                    </li>
+
 
                 </ul>
             </li>

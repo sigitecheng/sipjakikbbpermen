@@ -14,8 +14,7 @@
       <!--begin::App Main-->
       <main class="app-main">
 
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%;">
 
             <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -60,6 +59,37 @@
                                         <td style="text-align: justify;">{{$item->keterangan}}</td>
                                     </tr>
 
+                                    <tr>
+    <th style="width: 100px; text-align:left;">Peraturan</th>
+    <td>:</td>
+    <td>
+
+        <div style="margin-top: 10px;">
+            @if($item->peraturan && file_exists(public_path('storage/' . $item->peraturan)))
+                <!-- Jika PDF ada di storage -->
+                <embed
+                    src="{{ asset('storage/' . $item->peraturan) }}"
+                    type="application/pdf"
+                    style="width: 100%; height: 400px; border: 1px solid #ddd;"
+                />
+
+            @elseif($item->peraturan)
+                <!-- Jika PDF berada di path luar storage -->
+                <embed
+                    src="{{ asset($item->peraturan) }}"
+                    type="application/pdf"
+                    style="width: 100%; height: 400px; border: 1px solid #ddd;"
+                />
+
+            @else
+                <!-- Jika belum ada data -->
+                <p>Data belum diupdate</p>
+            @endif
+        </div>
+
+    </td>
+</tr>
+
                                     @endforeach
                                 </thead>
                                 <tbody>
@@ -69,13 +99,12 @@
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
                                 <a href="/betupoksi/update/{{$item->id}}">
-                                    <button class="button-berkas">
-                                    <!-- Ikon Kembali -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 384 512" fill="white" style="margin-right: 8px;">
-                                        <path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM384 121.9V128H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"/>
-                                    </svg>
-                                    Update
-                                </button>
+                                    <button class="button-berkas" type="button">
+                                        <i class="bi bi-pencil-square"
+                                        style="font-size: 18px; margin-right: 8px; color: black;"></i>
+                                        Perbaikan Data
+                                    </button>
+
                                 </a>
 
                             </div>
