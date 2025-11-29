@@ -1,156 +1,120 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/bahan1/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="/assets/bahan1/css/animate.compat.css" rel="stylesheet" type="text/css">
-    <link href="/assets/bahan1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/assets/bahan1/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
-
-    {{-- TEMPLATE 2 --}}
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="/assets/bahan2/css/bootstrap.min.css">
-      <!----css3---->
-      <link rel="stylesheet" href="/assets/bahan2/css/custom.css">
-
-      <link rel="stylesheet" href="/assets/bahan2/font/flaticon.css">
-      <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-     <link rel="stylesheet" type="text/css" href="/assets/bahan2/css/settings.css" media="screen" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-        @include('tambahan.portalberitaheader')
-    <script defer src="/assets/bahan1/js/scripts.js"></script>
-    {{-- <title>Construction Company</title> --}}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Silahkan Login !</title>
+    <meta name="description" content="Beeko -  Business Consulting HTML Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="/assets/icon/sipjakikbb.png" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/assets/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/assets/css/tg-flaticon.css">
+    <link rel="stylesheet" href="/assets/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/assets/css/default.css">
+    <link rel="stylesheet" href="/assets/assets/css/default-icons.css">
+    <link rel="stylesheet" href="/assets/assets/css/odometer.css">
+    <link rel="stylesheet" href="/assets/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/assets/css/tg-cursor.css">
+    <link rel="stylesheet" href="/assets/assets/css/main.css">
 </head>
 
 <body>
 
-
-
-{{-- ------------------------------------------------------------------------------------------ --}}
-{{-- ------------------------------------------------------------------------------------------ --}}
-{{-- ------------------------------------------------------------------------------------------ --}}
-
-<section id="sec-0">
-
-    @include('frontend.00_atas.header1')
-    @include('frontend.00_atas.pembaharuan')
-
-        <header>
-
-        @include('frontend.00_atas.header2_navbar')
-
-        </header>
-
-
-<!-- Import Font Poppins -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<div class="login-jaspro-wrapper">
-    <div class="login-jaspro-container">
-        <div class="login-jaspro-card">
-
-            <!-- Form Login -->
-            <form action="/login" method="post">
-                @csrf
-
-                <!-- Email -->
-                <div class="login-jaspro-form-group">
-                    <label for="email">
-                        <i class="bi bi-envelope"></i> Email
-                    </label>
-                    <input
-                        type="text"
-                        name="email"
-                        id="email"
-                        placeholder="Masukkan Email"
-                        class="login-jaspro-input @error('email') is-invalid @enderror"
-                        required
-                        value="{{ old('email') }}"
-                    >
-                    @error('email')
-                        <div class="login-jaspro-invalid">{{ $message }}</div>
-                    @enderror
-                </div>
-
-                <!-- Password -->
-                <div class="login-jaspro-form-group">
-                    <label for="password">
-                        <i class="bi bi-key"></i> Password
-                    </label>
-                    <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="Masukkan Password"
-                        class="login-jaspro-input @error('password') is-invalid @enderror"
-                        required
-                    >
-                    @error('password')
-                        <div class="login-jaspro-invalid">{{ $message }}</div>
-                    @enderror
-                </div>
-
-                <!-- Error Login -->
-                @if ($errors->has('loginError'))
-                    <div class="login-jaspro-alert">
-                        {{ $errors->first('loginError') }}
-                    </div>
-                @endif
-
-                <!-- Tombol & Register -->
-                <div class="login-jaspro-btn-group">
-                    <button type="submit" class="login-jaspro-btn">
-                        <i class="bi bi-box-arrow-in-right"></i> Login
-                    </button>
-                    <div class="login-jaspro-register-wrapper">
-                        <span>Belum Punya Akun?</span>
-                        <a href="/404" class="login-jaspro-register"><strong>Daftar Di Sini!</strong></a>
-                    </div>
-                </div>
-            </form>
-
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
-</div>
+    <!-- preloader-end -->
 
-<!-- STYLE -->
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
 
-
-
-<br><br>
-    </section>
-
-
-  {{-- ------------------------------------------------------------------------------------------ --}}
-  {{-- ------------------------------------------------------------------------------------------ --}}
-  {{-- ------------------------------------------------------------------------------------------ --}}
+    <!-- main-area -->
+    <main class="main-area fix">
 
 
-  {{-- ------------------------------------------------------------------------------------------ --}}
-  {{-- ------------------------------------------------------------------------------------------ --}}
-  {{-- ------------------------------------------------------------------------------------------ --}}
+        <!-- login-area -->
+        <section class="login__area">
+            <div class="container-fluid p-0">
+                <div class="row gx-0">
+                    <div class="col-md-6">
+                        <div class="login__left-side" data-background="/assets/gambarbaru/padalarang.avif">
+                           <a href="#">
+                                    <img src="/storage/logo/sipjakikbb.png"
+                                        alt="logo"
+                                        style="height:60px; width:auto; object-fit:contain; margin-right:10px;">
+                                </a>
+
+                                <a href="#">
+                                    <img src="/assets/icon/pupr.png"
+                                        alt="logo"
+                                        style="height:60px; width:auto; object-fit:contain; margin-right:10px;">
+                                </a>
+ {{-- <a href="#"><img src="assets/img/logo/w_logo.svg" alt="logo"></a> --}}
+                            <div class="login__left-content">
+                                <p>“This software simplifies the website building process, making it a breeze to manage our online presence.”</p>
+                                <h4 class="title">David Handerson</h4>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="login__form-wrap">
+                            <h2 class="title">Halaman Login !</h2>
+                            <div class="login__form-social">
+                                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <span class="divider">or</span>
+                            <form action="#" class="login__form">
+                                <div class="form__grp">
+                                    <input type="email" placeholder="Your email">
+                                </div>
+                                <div class="form__grp">
+                                    <input type="password" placeholder="Password">
+                                </div>
+                                <div class="account__check">
+                                    <div class="account__check-remember">
+                                        <input type="checkbox" class="form-check-input" value="" id="terms-check">
+                                        <label for="terms-check" class="form-check-label">Remember me</label>
+                                    </div>
+                                    <div class="account__check-forgot">
+                                        <a href="reset.html">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <button type="submit" class="tg-btn tg-btn-three">Log in <img src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></button>
+                            </form>
+                            <div class="account__switch">
+                                <p>Have no account yet?<a href="register.html">Sign up</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- login-area-end -->
+
+
+    </main>
+    <!-- main-area-end -->
 
 
 
-
-
-
-@include('frontend.00_atas.footer1')
-
-    {{-- ------------------------------------------------------------------------------- --}}
-    {{-- ------------------------------------------------------------------------------- --}}
-    {{-- ------------------------------------------------------------------------------- --}}
-@include('frontend.00_atas.footer2')
+@include('frontend.A00_new.01_halamanutama.newfooter')

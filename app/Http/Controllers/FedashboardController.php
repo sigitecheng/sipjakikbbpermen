@@ -35,7 +35,7 @@ class FedashboardController extends Controller
     $himbauandinas = himbauandinas::orderBy('id', 'desc')->get();
     $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
 
-    return view('frontend.A00_new.01_halamanutama.halamanutama', [
+    return view('frontend.00_full.index', [
         'title' => 'SIPJAKI Kabupaten Bandung Barat',
         'data' => $data,
         'databerita' => $databerita,
@@ -61,7 +61,7 @@ class FedashboardController extends Controller
     $himbauandinas = himbauandinas::orderBy('id', 'desc')->get();
     $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
 
-    return view('frontend.00_full.index', [
+    return view('frontend.A00_new.01_halamanutama.halamanutama', [
         'title' => 'SIPJAKI Kabupaten Bandung Barat',
         'data' => $data,
         'databerita' => $databerita,
