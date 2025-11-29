@@ -86,6 +86,7 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 /* Header: Navy PUPR (#002b5b) + gradasi elegan */
@@ -114,13 +115,13 @@
 }
 
 /* Zebra effect */
-.zebra-table tbody tr:nth-child(even) {
+.zebra-table tbody tr:nth-child(even) td {
   background-color: #f8f9fc;
 }
 
-/* Hover: kuning PUPR yang lembut (#ffeb99) */
-.zebra-table tbody tr:hover {
-  background-color: #ffeb99; /* kuning pastel */
+/* Hover: abu-abu lembut saat mouse bergerak */
+.zebra-table tbody tr:hover td {
+  background-color: #e0e0e0 !important; /* override zebra */
   transition: all 0.25s ease;
 }
 
@@ -148,10 +149,7 @@
   }
 }
 
-/* Tambahan animasi saat muncul */
-.zebra-table {
-  animation: fadeIn 0.5s ease-in-out;
-}
+/* Animasi saat muncul */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }

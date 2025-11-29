@@ -1113,7 +1113,7 @@ public function bejabatancreate()
     return view('backend.02_kelembagaan.02_profiljakon.08_jabatanfungsional.create', [
         // 'data' => $jakonjabatanfungsional,
         'user' => $user,
-        'title' => 'Create Jabatan Fungsional Jasa Konstruksi'
+        'title' => 'Tambah Personil Jabatan Fungsional Jasa Konstruksi'
     ]);
 }
 

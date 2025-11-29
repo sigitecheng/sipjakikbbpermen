@@ -13,8 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
             <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -48,7 +47,7 @@
                             <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
 
                                 <a href="/bejabatan/create">
-                                    <button class="button-baru">
+                                    <button class="button-modern">
                                     <!-- Ikon Kembali -->
                                     <i class="fa fa-plus" style="margin-right: 8px;"></i>
                                     Buat Baru
@@ -66,89 +65,106 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($data as $item )
-                                    <tr class="align-middle">
-                                        <td style="text-align: center;">{{ $loop->iteration }}</td>
-                                        <td style="text-align: center;">{!! $item->jabatan !!}</td>
-                                        <td style="text-align: center;">{!! $item->namalengkap !!}</td>
-                                        <td style="text-align: center;">
-                                            <!-- Show Icon -->
-                                            {{-- <a href="/404" class="btn btn-sm btn-info me-2" title="Show">
-                                                <i class="bi bi-eye"></i>
-                                            </a> --}}
-                                            <!-- Update Icon -->
-                                            <a href="/bejabatan/update/{{$item->id}}" class="button-berkas" title="Update">
-                                                <i class="bi bi-pencil-square"></i>Update
-                                            </a>
-                                            <!-- Delete Icon -->
-                                            <!-- Tombol Delete -->
-                                            <a href="javascript:void(0)" class="button-merah" title="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                            data-judul="{{ $item->namalengkap }}" onclick="setDeleteUrl(this)">
-                                            <i class="bi bi-trash"></i> Hapus
-                                        </a>
+                                    @forelse ($data as $item)
+<tr class="align-middle">
+    <td class="text-center">{{ $loop->iteration }}</td>
+    <td class="text-center">{!! $item->jabatan !!}</td>
+    <td class="text-center">{!! $item->namalengkap !!}</td>
+    <td class="text-center">
+        <!-- Update Icon -->
+        <a href="/bejabatan/update/{{$item->id}}" class="button-berkas" title="Update">
+            <i class="bi bi-pencil-square"></i> Update
+        </a>
 
-                                        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                                        <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Apakah Anda Ingin Menghapus Data : <span id="itemName"></span>?</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                                        <form id="deleteForm" method="POST" action="">
-                                                            @csrf
-                                                            @method('DELETE') <!-- Menetapkan metode DELETE untuk penghapusan -->
-                                                            <button type="submit" class="btn btn-danger">Hapus</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+        <!-- Delete Icon -->
+        <a href="javascript:void(0)" class="button-merah" title="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"
+           data-judul="{{ $item->namalengkap }}" onclick="setDeleteUrl(this)">
+            <i class="bi bi-trash"></i> Hapus
+        </a>
+    </td>
+</tr>
+@empty
+<tr>
+    <td colspan="100%">
+        <div style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: #6c757d;
+            background-color: #f8f9fa;
+            border: 2px dashed #ced4da;
+            border-radius: 12px;
+            font-size: 16px;
+            animation: fadeIn 0.5s ease-in-out;
+        ">
+            <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+            Data Tidak Ditemukan !!
+        </div>
+    </td>
+</tr>
+@endforelse
 
+<!-- Modal Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
+                <h5 class="modal-title" id="deleteModalLabel">DPUTR Kab Bandung Barat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Apakah Anda ingin menghapus data: <span id="itemName"></span>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <form id="deleteForm" method="POST" action="">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Hapus</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                        <script>
-                                        function setDeleteUrl(button) {
-                                            // Ambil data judul dari elemen yang diklik
-                                            var namalengkap = button.getAttribute('data-judul');
+<script>
+function setDeleteUrl(button) {
+    const namalengkap = button.getAttribute('data-judul');
+    document.getElementById('itemName').innerText = namalengkap;
+    const deleteUrl = "/bejabatan/delete/" + encodeURIComponent(namalengkap);
+    document.getElementById('deleteForm').action = deleteUrl;
+}
+</script>
 
-                                            // Perbarui teks di dalam modal dengan nama item
-                                            document.getElementById('itemName').innerText = namalengkap;
+<style>
+/* Hover effect for buttons */
+.button-berkas:hover, .button-merah:hover {
+    background-color: #fff !important;
+    color: black !important;
+}
+.button-berkas:hover i, .button-merah:hover i {
+    color: black !important;
+}
 
-                                            // Atur URL penghapusan
-                                            var deleteUrl = "/bejabatan/delete/" + encodeURIComponent(namalengkap);
-                                            document.getElementById('deleteForm').action = deleteUrl;
-                                        }
+/* FadeIn animation for empty message */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
 
-
-                                        </script>
-
-                                            <style>
-                                                /* Hover effect */
-                                                .btn-info:hover, .btn-warning:hover, .btn-danger:hover {
-                                                    background-color: #fff !important; /* Keep the background white on hover */
-                                                    color: black !important; /* Change text color to black on hover */
-                                                }
-
-                                                .btn-info:hover i, .btn-warning:hover i, .btn-danger:hover i {
-                                                    color: black !important; /* Ensure the icon color changes to black */
-                                                }
-                                            </style>
-                                        </td>
-
-                                    </tr>
-                                    @endforeach
                                 </tbody>
                             </table>
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom: 20px; margin-top: 20px;">
 
                                 <a href="/beprofiljakon">
-                                    <button class="button-newvalidasi">
+                                    <button class="button-modern">
                                     <!-- Ikon Kembali -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     viewBox="0 0 16 16" style="margin-right: 8px;">

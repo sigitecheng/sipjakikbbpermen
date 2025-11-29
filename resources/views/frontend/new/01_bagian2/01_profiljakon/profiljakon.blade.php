@@ -376,11 +376,6 @@
                 <strong>Jabatan:</strong> {{ $personil->jabatan }} <br>
                 <strong>Nama Lengkap:</strong> {{ $personil->namalengkap }}
             </p>
-
-            <ul class="list-wrap">
-                <li>{{ $personil->jabatan }} - {{ $personil->namalengkap }}</li>
-            </ul>
-
             <div class="shape">
                 <img src="/storage/logo/sipjakikbb.png" alt="Logo"
                     style="

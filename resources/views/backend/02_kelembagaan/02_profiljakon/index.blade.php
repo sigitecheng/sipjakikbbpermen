@@ -273,7 +273,7 @@
             {{-- ================================================================================================= --}}
 
             <div class="row">
-<div class="col-md-3 col-sm-6 col-12">
+{{-- <div class="col-md-3 col-sm-6 col-12">
     <a href="/besubbid" style="text-decoration: none;">
         <div class="dashboard-card card-1">
             <div class="card-content">
@@ -283,17 +283,14 @@
                 <div class="info-content">
                     <i class="bi bi-diagram-3 info-icon" style="color:#FFD700"></i>
                     <p class="info-text">Sub Koordinator <br> Jasa Konstruksi</p>
-                    {{-- <div class="progress mt-2" style="height: 6px; border-radius: 4px;">
-                        <div class="progress-bar" style="width: 70%; background-color: var(--primary-green);"></div>
-                    </div> --}}
                     <small class="text-muted">Pengaturan</small>
                 </div>
             </div>
         </div>
     </a>
-</div>
+</div> --}}
 
-<div class="col-md-3 col-sm-6 col-12">
+{{-- <div class="col-md-3 col-sm-6 col-12">
     <a href="/beinformasi" style="text-decoration: none;">
         <div class="dashboard-card card-1">
             <div class="card-content">
@@ -303,15 +300,12 @@
                 <div class="info-content">
                     <i class="bi bi-info-circle info-icon" style="color:#FFD700"></i>
                     <p class="info-text">Keterangan OPD</p>
-                    {{-- <div class="progress mt-2" style="height: 6px; border-radius: 4px;">
-                        <div class="progress-bar" style="width: 60%; background-color: #3fa845;"></div>
-                    </div> --}}
                     <small class="text-muted">Pengaturan</small>
                 </div>
             </div>
         </div>
     </a>
-</div>
+</div> --}}
 
 <div class="col-md-3 col-sm-6 col-12">
     <a href="/besipjaki" style="text-decoration: none;">
