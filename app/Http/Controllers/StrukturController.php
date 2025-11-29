@@ -522,12 +522,12 @@ public function beprofiljakon()
 
 public function beinformasiopd()
 {
-    $data = renstra::all(); // Menggunakan paginate() untuk pagination
+    $data = profiljakoninformasi::all(); // Menggunakan paginate() untuk pagination
 
     $user = Auth::user();
 
     return view('backend.02_kelembagaan.02_profiljakon.01_judul.index', [
-        'title' => 'Profil Jakon Informasi OPD',
+        'title' => 'Informasi OPD DPUTR KBB',
         'data' => $data, // Mengirimkan data paginasi ke view
         'user' => $user, // Mengirimkan data paginasi ke view
 
@@ -539,7 +539,7 @@ public function beinformasiopd()
 public function beinformasiopdupdate($id)
 {
     // Cari data undang-undang berdasarkan nilai 'judul'
-    $jakonidentitasopd = renstra::where('id', $id)->firstOrFail();
+    $jakonidentitasopd = profiljakoninformasi::where('id', $id)->firstOrFail();
     $user = Auth::user();
 
     // Tampilkan form update dengan data yang ditemukan
@@ -555,32 +555,35 @@ public function beinformasiopdupdatecreate(Request $request, $id)
 {
     // Validasi input dengan pesan kustom
     $validatedData = $request->validate([
-        'judul' => 'required|string|max:255',
-        'keterangan' => 'required|string',
-        // 'peraturan' => 'nullable|file|mimes:pdf|max:5120', // Validasi untuk file PDF
+        'informasiopd' => 'nullable|string',
+        'notelepon'    => 'nullable|string|max:20',
+        'instagram'    => 'nullable|string|max:100',
+        'tiktok'       => 'nullable|string|max:100',
+        'email'        => 'nullable|email|max:100',
     ], [
-        'judul.required' => 'Judul Wajib Diisi!',
-        'judul.max' => 'Judul tidak boleh lebih dari 255 karakter.',
-        'keterangan.required' => 'Keterangan wajib diisi !',
-        // 'peraturan.mimes' => 'File yang diunggah harus berformat PDF.',
-        // 'peraturan.max' => 'Ukuran file PDF terlalu besar, maksimal 5MB.',
+        'notelepon.max' => 'No Telepon maksimal 20 karakter.',
+        'instagram.max' => 'Instagram maksimal 100 karakter.',
+        'tiktok.max'    => 'TikTok maksimal 100 karakter.',
+        'email.email'   => 'Format email tidak valid.',
+        'email.max'     => 'Email maksimal 100 karakter.',
     ]);
 
-    // Cari data strukturdinas berdasarkan nilai 'judul'
-    $judulopd = renstra::where('id', $id)->firstOrFail();
+    // Cari data berdasarkan ID
+    $opd = profiljakoninformasi::findOrFail($id);
 
-
-    // Gunakan $validatedData untuk update, agar lebih jelas dan rapi
-    $judulopd->update([
-        'judul' => $validatedData['judul'],  // Menggunakan data yang sudah tervalidasi
-        'keterangan' => $validatedData['keterangan'],
-        // 'peraturan' => $filePath, // Menyimpan path file yang baru
+    // Update data dengan nilai validasi
+    $opd->update([
+        'informasiopd' => $validatedData['informasiopd'] ?? null,
+        'notelepon'    => $validatedData['notelepon'] ?? null,
+        'instagram'    => $validatedData['instagram'] ?? null,
+        'tiktok'       => $validatedData['tiktok'] ?? null,
+        'email'        => $validatedData['email'] ?? null,
     ]);
 
     // Flash session untuk menampilkan pesan sukses
     session()->flash('update', 'Data Berhasil Diupdate!');
 
-    // Redirect ke halaman yang sesuai
+    // Redirect ke halaman daftar OPD
     return redirect('/beinformasiopd');
 }
 

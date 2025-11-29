@@ -13,8 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
             <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -60,95 +59,94 @@
                             <form>
                                 <!--begin::Body-->
                                 <div class="card-body">
-                                    <div class="row">
-                                        <!-- Left Column (6/12) -->
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">
-                                                    <i class="bi bi-house-door" style="margin-right: 8px; color: navy;"></i> Nama Organisasi Perangkat Daerah (OPD)
-                                                </label>
-                                                <input class="form-control" value="{{$item->namaopd}}" readonly/>
-                                                <div class="form-text"></div>
-                                            </div>
+    <div class="row">
+        <!-- Left Column (6/12) -->
+        <div class="col-md-6">
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-house-door" style="margin-right: 8px; color: navy;"></i> Nama Organisasi Perangkat Daerah (OPD)
+                </label>
+                <input class="form-control" value="{{$item->namaopd}}" readonly/>
+            </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
-                                                    <i class="bi bi-house-door" style="margin-right: 8px; color: navy;"></i> Alamat Organisasi Perangkat Daerah (OPD)
-                                                </label>
-                                                <input class="form-control" value="{{$item->alamatopd}}" readonly />
-                                            </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-house-door" style="margin-right: 8px; color: navy;"></i> Alamat Organisasi Perangkat Daerah (OPD)
+                </label>
+                <input class="form-control" value="{{$item->alamatopd}}" readonly/>
+            </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
-                                                    <i class="bi bi-house-door" style="margin-right: 8px; color: navy;"></i> RT/RW
-                                                </label>
-                                                <input class="form-control" value="{{$item->rtrw}}" readonly/>
-                                            </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-house-door" style="margin-right: 8px; color: navy;"></i> RT/RW
+                </label>
+                <input class="form-control" value="{{$item->rtrw}}" readonly/>
+            </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
-                                                    <i class="bi bi-mailbox" style="margin-right: 8px; color: navy;"></i> Kode Pos
-                                                </label>
-                                                <input class="form-control" value="{{$item->kodepos}}" readonly/>
-                                            </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-mailbox" style="margin-right: 8px; color: navy;"></i> Kode Pos
+                </label>
+                <input class="form-control" value="{{$item->kodepos}}" readonly/>
+            </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
-                                                    <i class="bi bi-map" style="margin-right: 8px; color: navy;"></i> Kelurahan
-                                                </label>
-                                                <input class="form-control" value="{{$item->kelurahan}}" readonly/>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label class="form-label">
-                                                    <i class="bi bi-geo-alt" style="margin-right: 8px; color: navy;"></i> Kecamatan
-                                                </label>
-                                                <input class="form-control" value="{{$item->kecamatan}}" readonly/>
-                                            </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-map" style="margin-right: 8px; color: navy;"></i> Kelurahan
+                </label>
+                <input class="form-control" value="{{$item->kelurahan}}" readonly/>
+            </div>
 
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-geo-alt" style="margin-right: 8px; color: navy;"></i> Kecamatan
+                </label>
+                <input class="form-control" value="{{$item->kecamatan}}" readonly/>
+            </div>
+        </div>
 
-                                        </div>
+        <!-- Right Column (6/12) -->
+        <div class="col-md-6">
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Kota
+                </label>
+                <input class="form-control" value="{{$item->kota}}" readonly/>
+            </div>
 
-<!-- Right Column (6/12) -->
-<div class="col-md-6">
-    <div class="mb-3">
-        <label class="form-label">
-            <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Kota
-        </label>
-        <input class="form-control" value="{{$item->kota}}" readonly/>
-    </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-geo-alt" style="margin-right: 8px; color: navy;"></i> Provinsi
+                </label>
+                <input class="form-control" value="{{$item->provinsi}}" readonly/>
+            </div>
 
-    <div class="mb-3">
-        <label class="form-label">
-            <i class="bi bi-geo-alt" style="margin-right: 8px; color: navy;"></i> Provinsi
-        </label>
-        <input class="form-control" value="{{$item->provinsi}}" readonly/>
-    </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-globe" style="margin-right: 8px; color: navy;"></i> Negara
+                </label>
+                <input class="form-control" value="{{$item->negara}}" readonly/>
+            </div>
 
-    <div class="mb-3">
-        <label class="form-label">
-            <i class="bi bi-globe" style="margin-right: 8px; color: navy;"></i> Negara
-        </label>
-        <input class="form-control" value="{{$item->negara}}" readonly/>
-    </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-map" style="margin-right: 8px; color: navy;"></i> Titik Geografis
+                </label>
+                <input class="form-control" value="{{$item->posisigeografis}}" readonly/>
+            </div>
 
-    <div class="mb-3">
-        <label class="form-label">
-            <i class="bi bi-map" style="margin-right: 8px; color: navy;"></i> Titik Geografis
-        </label>
-        <input class="form-control" value="{{$item->posisigeografis}}" readonly/>
-    </div>
+            <div class="form-modern mb-3">
+                <label class="form-label-modern">
+                    <i class="bi bi-briefcase" style="margin-right: 8px; color: navy;"></i> Tipe Dinas
+                </label>
+                <input class="form-control" value="{{$item->tipedinas}}" readonly/>
+            </div>
+        </div>
+        <!-- End Right Column -->
 
-    <div class="mb-3">
-        <label class="form-label">
-            <i class="bi bi-briefcase" style="margin-right: 8px; color: navy;"></i> Tipe Dinas
-        </label>
-        <input class="form-control" value="{{$item->tipedinas}}" readonly/>
-    </div>
+    </div> <!-- end row -->
 </div>
-<!-- End Right Column -->
 
-                                    </div> <!-- end row -->
-                                </div>
                             </form>
                             <!--end::Form-->
                         </div>
@@ -160,25 +158,20 @@
                     <br><br>
                     <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
                         <a href="/beinfoopd/update/{{$item->id}}">
-                            <button class="button-berkas" type="button" onclick="openModal()">
-    <i class="bi bi-pencil-square"></i>
-    Update ?
-</button>
+                           <button class="button-berkas" type="button" onclick="openModal()">
+                        <i class="bi bi-pencil-square"></i>
+                        Perbaikan Data ?
+                    </button>
+
 
                         </a>
 
                     <a href="/beprofiljakon">
-                        <button class="button-newvalidasi">
+                      <button class="button-modern">
+                        <i class="bi bi-arrow-left" style="margin-right: 8px;"></i>
+                            Kembali
+                    </button>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 viewBox="0 0 16 16" style="margin-right: 8px;">
-                              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-                            </svg>
-
-                            <span style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.5;">
-                                Kembali
-                            </span>
-                        </button>
                     </a>
                 </div>
 

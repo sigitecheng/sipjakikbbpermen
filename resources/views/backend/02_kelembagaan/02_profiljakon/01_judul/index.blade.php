@@ -13,8 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+        <section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
             <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -49,81 +48,41 @@
                     <!-- /.card-header -->
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <table class="zebra-table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 10px; text-align:center;">No</th>
-                                        <th style="width: 300px; text-align:center;">Judul</th>
-                                        {{-- <th style="width: 500px; text-align:center;">Berkas</th> --}}
-                                        <th style="width: 600px; text-align: center;">Keterangan</th>
-                                        <th style="width: 100px; text-align: center;">Perbarui Data</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($data as $item )
-                                    <tr class="align-middle">
-                                        <td style="text-align: center;">{{ $loop->iteration }}</td>
-                                        <td style="text-align: left;">{!! $item->judul !!}</td>
-                                        {{-- <td style="text-align: center;">
-                                            <object data="{{ asset('storage/' . $item->peraturan) }}" type="application/pdf" width="300" height="200">
-                                                <p>PDF cannot be displayed.</p>
-                                            </object>
-                                        </td> --}}
-                                        <td style="text-align: justify;">{!! $item->keterangan !!}</td>
-                                        <td style="text-align: center;">
-                                            <!-- Show Icon -->
-                                            {{-- <a href="/404" class="btn btn-sm btn-info me-2" title="Show">
-                                                <i class="bi bi-eye"></i>
-                                            </a> --}}
-                                            <!-- Update Icon -->
-                                            <a href="/beinformasiopd/update/{{$item->id}}" class="button-berkas" title="Update">
-                                                <i class="bi bi-pencil-square"></i>Update
-                                            </a>
-                                            <!-- Delete Icon -->
-                                            <!-- Tombol Delete -->
-                                            {{-- <a href="javascript:void(0)" class="btn btn-sm btn-danger" title="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                            data-judul="{{ $item->id }}" onclick="setDeleteUrl(this)">
-                                            <i class="bi bi-trash"></i>
-                                        </a> --}}
+                            @foreach($data as $item)
+                                <div class="card p-3 mb-3">
+                                    <div class="d-flex flex-column">
+                                        <div class="border-bottom pb-2 mb-2">
+                                            <strong>Informasi OPD:</strong> {{ $item->informasiopd ?? '-' }}
+                                        </div>
+                                        <div class="border-bottom pb-2 mb-2">
+                                            <strong>No Telepon:</strong> {{ $item->notelepon ?? '-' }}
+                                        </div>
+                                        <div class="border-bottom pb-2 mb-2">
+                                            <strong>Instagram:</strong> {{ $item->instagram ?? '-' }}
+                                        </div>
+                                        <div class="border-bottom pb-2 mb-2">
+                                            <strong>TikTok:</strong> {{ $item->tiktok ?? '-' }}
+                                        </div>
+                                        <div class="border-bottom pb-2 mb-2">
+                                            <strong>Email:</strong> {{ $item->email ?? '-' }}
+                                        </div>
+                                    </div>
 
-
-                                        @include('backend.00_administrator.00_baganterpisah.05_modalcarddelete')
-
-                                            <style>
-                                                /* Hover effect */
-                                                .btn-info:hover, .btn-warning:hover, .btn-danger:hover {
-                                                    background-color: #fff !important; /* Keep the background white on hover */
-                                                    color: black !important; /* Change text color to black on hover */
-                                                }
-
-                                                .btn-info:hover i, .btn-warning:hover i, .btn-danger:hover i {
-                                                    color: black !important; /* Ensure the icon color changes to black */
-                                                }
-                                            </style>
-                                        </td>
-
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-
-
-                            </table>
-
+                                    <div class="mt-3">
+                                        <a href="/beinformasiopd/update/{{$item->id}}" class="button-berkas">
+                                            <i class="bi bi-pencil-square me-1"></i> Perbaikan Data
+                                        </a>
+                                    </div>
+                                </div>
+                                @endforeach
                             <br>
 
                                 <div style="display: flex; justify-content: flex-end; margin-top:10px; margin-bottom:10px;">
                                     <a href="/beprofiljakon">
-                                        <button class="button-newvalidasi">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                 viewBox="0 0 16 16" style="margin-right: 8px;">
-                                              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-                                            </svg>
-
-                                            <span style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.5;">
-                                                Kembali
-                                            </span>
-                                        </button>
+                                    <button class="button-modern">
+                                    <i class="bi bi-arrow-left me-2"></i>
+                                    Kembali
+                                </button>
                                     </a>
                                 </div>
 

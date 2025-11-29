@@ -5946,7 +5946,7 @@ profiljakonidentitasopd::create([
     'provinsi'          => 'Jawa Barat',
     'negara'            => 'Indonesia',
     'posisigeografis'   => '-6.8370, 107.4721', // opsional, bisa diganti koordinat resmi
-    'tipedinas'         => 'Dinas Pekerjaan Umum dan Tata Ruang',
+    'tipedinas'         => 'A',
     'created_at'        => now(),
     'updated_at'        => now(),
 ]);
