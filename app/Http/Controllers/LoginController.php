@@ -14,7 +14,15 @@ class LoginController extends Controller
         //
         return view('login.index',[
             'title' => 'Under Constructions',
-        ]); 
+        ]);
+    }
+
+    public function masuk()
+    {
+        //
+        return view('login.index',[
+            'title' => 'Silahkan Login',
+        ]);
     }
 
     // public function authenticate(Request $request)
@@ -37,7 +45,7 @@ class LoginController extends Controller
         //     // Jika autentikasi gagal, kembalikan pengguna ke halaman login dengan pesan kesalahan
         //     return back()->withErrors(['email' => 'Email atau kata sandi yang Anda masukkan salah.'])->withInput($request->only('email'));
         // }
-        
+
 
         // if (Auth::attempt($credentials)) {
         //     $request->session()->regenerate();
@@ -48,36 +56,64 @@ class LoginController extends Controller
         // dd('Berhasil Masuk Iqlima');
     // }
 // =========================
+// public function authenticate(Request $request)
+// {
+//     // Validasi input dengan pesan kesalahan khusus
+//     $request->validate([
+//         'email' => 'required|email',
+//         'password' => 'required',
+//     ], [
+//         'email.required' => 'Email harus diisi.',
+//         'email.email' => 'Format email tidak valid.',
+//         'password.required' => 'Password harus diisi.',
+//     ]);
+
+//     // Coba autentikasi dengan kredensial yang diberikan
+//     $credentials = $request->only('email', 'password');
+
+//     if (Auth::attempt($credentials)) {
+//         // Regenerasi session untuk keamanan
+//         $request->session()->regenerate();
+
+//         // Redirect ke halaman dashboard setelah login berhasil
+//         return redirect()->intended('/dashboard');
+//     }
+
+//     // Jika autentikasi gagal, kembalikan ke halaman login dengan pesan kesalahan
+//     return back()->withErrors([
+//         'loginError' => 'Email atau password Anda salah!',
+//     ])->onlyInput('email'); // Hanya mengisi ulang input email
+// }
+
 public function authenticate(Request $request)
 {
-    // Validasi input dengan pesan kesalahan khusus
     $request->validate([
         'email' => 'required|email',
         'password' => 'required',
-    ], [
-        'email.required' => 'Email harus diisi.',
-        'email.email' => 'Format email tidak valid.',
-        'password.required' => 'Password harus diisi.',
     ]);
 
-    // Coba autentikasi dengan kredensial yang diberikan
-    $credentials = $request->only('email', 'password');
-    
-    if (Auth::attempt($credentials)) {
-        // Regenerasi session untuk keamanan
-        $request->session()->regenerate();
+    // Cek apakah email ada?
+    $user = \App\Models\User::where('email', $request->email)->first();
 
-        // Redirect ke halaman dashboard setelah login berhasil
-        return redirect()->intended('/dashboard');
+    if (!$user) {
+        return back()->withErrors([
+            'email' => 'Email tidak terdaftar!',
+        ])->withInput();
     }
 
-    // Jika autentikasi gagal, kembalikan ke halaman login dengan pesan kesalahan
-    return back()->withErrors([
-        'loginError' => 'Email atau password Anda salah!',
-    ])->onlyInput('email'); // Hanya mengisi ulang input email
+    // Email ada → cek password
+    if (!\Illuminate\Support\Facades\Hash::check($request->password, $user->password)) {
+        return back()->withErrors([
+            'password' => 'Password yang Anda masukkan salah!',
+        ])->withInput();
+    }
+
+    // Login berhasil
+    Auth::login($user);
+
+    $request->session()->regenerate();
+    return redirect('/dashboard');
 }
-
-
 
 
     public function logout(Request $request)

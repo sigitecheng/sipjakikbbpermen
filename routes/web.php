@@ -721,7 +721,11 @@ Route::post('/settingtahunpilihan/{id}', [SettingmenuController::class, 'deletes
 // });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate']);
+Route::get('/masuk', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login-custom', [LoginController::class, 'authenticate'])
+    ->name('login.custom');
+// Route::post('/login', [LoginController::class, 'authenticate']);
+// Route::post('/login', [LoginController::class, 'authenticate'])->name('login.custom');
 Route::post('/logout', [LoginController::class, 'logout']);
 
 

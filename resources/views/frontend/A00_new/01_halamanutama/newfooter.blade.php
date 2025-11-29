@@ -95,7 +95,7 @@
         <div class="footer__bottom-five">
             <div class="container">
                 <div class="copyright__content-four">
-                    <p>Build and Deploy By © CV. Angkasa Raya Teknik | 2025</p>
+                    <p>Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat | 2025</p>
                 </div>
             </div>
         </div>

@@ -35,15 +35,7 @@
                     <div class="col-lg-5">
                         <div class="tg-header__top-right">
                             <ul class="list-wrap">
-                                <li class="log-in">
-                                    <a href="/login"><img src="/assets/assets/img/icons/lock.svg" alt="" class="injectable">Masuk</a>
-                                </li>
-                                <li class="log-in">
-                                    <a href="/register">
-                                        <img src="/assets/assets/img/icons/user-lock.svg" alt="" class="injectable">
-                                        Daftar
-                                    </a>
-                                </li>
+                                                             @include('frontend.A00_new.01_halamanutama.newheader')
 
                                 {{-- <li>
                                     <div class="tg-header__top-social">
