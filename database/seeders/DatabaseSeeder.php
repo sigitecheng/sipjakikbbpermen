@@ -29,6 +29,7 @@ use App\Models\suratkeputusan;
 use App\Models\berita;
 use App\Models\beritaagenda;
 use App\Models\giskbb;
+use App\Models\headerberanda;
 use App\Models\himbauandinas;
 use App\Models\isadmin;
 use App\Models\kegiatanjaskon;
@@ -11037,6 +11038,22 @@ satuanhargamaterial::create([
     'uraian' => 'Fouket elbow galvanish 0,5"',
     'satuan' => 'Buah',
     'besaran' => '20000',
+]);
+
+// ====================================
+headerberanda::create([
+    'judul' => 'Sistem Informasi Pembina Jasa Konstruksi ',
+    'header' => '/assets/gambarbaru/padalarang1.jpeg',
+]);
+
+headerberanda::create([
+    'judul' => 'Transparan dan Efisien',
+    'header' => '/assets/gambarbaru/padalarang.avif',
+]);
+
+headerberanda::create([
+    'judul' => 'Peningkatan Kualitas Infrastruktur',
+    'header' => '/assets/gambarbaru/padalarang2.jpg',
 ]);
 
 

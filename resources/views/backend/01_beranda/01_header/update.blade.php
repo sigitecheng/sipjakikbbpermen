@@ -14,8 +14,7 @@
       <!--begin::App Main-->
       <main class="app-main">
 
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-     <section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
             <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -53,7 +52,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/header">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -80,8 +79,8 @@
     <!-- Left Column (6/12) -->
     <div class="col-md-6">
         <!-- Judul -->
-        <div class="mb-3">
-            <label class="form-label" for="judul">
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="judul">
                 <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Judul
             </label>
             <input type="text" id="judul" name="judul"
@@ -96,38 +95,51 @@
 
     <!-- Right Column (6/12) -->
     <div class="col-md-6">
-        <!-- Header (Upload Gambar) -->
-        <div class="mb-3">
-            <label class="form-label" for="header">
-                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Gambar Header Sebelumnya
-            </label>
-            <input type="file" id="header" name="header"
-                   class="form-control @error('header') is-invalid @enderror"
-                   accept="image/*" />
-            @error('header')
-            <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
+    <!-- Header (Upload Gambar) -->
+    <div class="form-modern mb-3">
+        <label class="form-label-modern" for="header">
+            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Gambar Tampilan
+        </label>
 
-            <!-- Preview Gambar jika sudah ada -->
-            @if(!empty($data->header))
-    <div class="mt-2">
-        @if(file_exists(public_path('storage/' . $data->header)))
-            <!-- Gambar dari storage -->
-            <img src="{{ asset('storage/' . $data->header) }}"
-                 alt="Header"
-                 style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
-        @else
-            <!-- Gambar dari path langsung -->
-            <img src="{{ asset($data->header) }}"
-                 alt="Header"
-                 style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
-        @endif
-    </div>
-@else
-    <p>Data belum diupdate</p>
-@endif
+        <!-- Input File -->
+        <input type="file" id="header" name="header"
+               class="form-control @error('header') is-invalid @enderror"
+               accept="image/*"
+               onchange="previewHeader(event)" />
 
+        @error('header')
+        <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+
+        <!-- PREVIEW GAMBAR BARU -->
+        <div id="preview-header" class="mt-2" style="display: none;">
+            <p><strong>Preview Gambar Baru:</strong></p>
+            <img id="preview-header-img"
+                style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
         </div>
+
+        <!-- GAMBAR LAMA -->
+        <div class="mt-2" id="old-header-wrapper">
+            @if(!empty($data->header))
+                <p><strong>Gambar Lama:</strong></p>
+
+                @if(file_exists(public_path('storage/' . $data->header)))
+                    <img src="{{ asset('storage/' . $data->header) }}"
+                        alt="Header Lama"
+                        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
+                @else
+                    <img src="{{ asset($data->header) }}"
+                        alt="Header Lama"
+                        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
+                @endif
+            @else
+                <p>Data belum diupdate</p>
+            @endif
+        </div>
+
+    </div>
+</div>
+
     </div>
     <!-- End Right Column -->
 </div>
@@ -136,9 +148,11 @@
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
                                     <button class="button-berkas" type="button" onclick="openModal()">
-    <i class="bi bi-pencil-square" style="margin-right: 8px; font-size: 18px; color: white; vertical-align: middle;"></i>
-    Perbaikan Data ?
-</button>
+                                    <i class="bi bi-pencil-square"
+                                    style="margin-right: 8px; font-size: 18px; color: black; vertical-align: middle;"></i>
+                                    Perbaikan Data ?
+                                </button>
+
 
                                 </div>
                                 <!-- Modal Konfirmasi -->
@@ -224,3 +238,20 @@
 
 
       @include('backend.00_administrator.00_baganterpisah.02_footer')
+<script>
+function previewHeader(event) {
+    const previewDiv = document.getElementById('preview-header');
+    const previewImg = document.getElementById('preview-header-img');
+    const oldWrapper = document.getElementById('old-header-wrapper');
+
+    const file = event.target.files[0];
+
+    if (file) {
+        previewDiv.style.display = "block";    // Tampilkan preview
+        previewImg.src = URL.createObjectURL(file);
+
+        oldWrapper.style.opacity = "0.4";      // Gambar lama dipudarkan
+        oldWrapper.style.filter = "grayscale(100%)"; // Tambah efek abu² biar jelas ini yg lama
+    }
+}
+</script>

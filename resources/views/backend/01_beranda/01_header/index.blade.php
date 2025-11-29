@@ -13,6 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -52,7 +53,7 @@
                     <!-- /.card-header -->
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="zebra-table">
                                 <thead>
                                     <tr>
                                         <th style="width: 100px; text-align:center;">No</th>
@@ -129,6 +130,7 @@
         <!--end::App Content Header-->
         <!--begin::App Content-->
           <!--end::App Content-->
+          </section>
         </main>
       <!--end::App Main-->
     </div>

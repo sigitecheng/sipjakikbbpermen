@@ -3,18 +3,19 @@
 .app-sidebar {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #6e5800, #8a6f00, #a37f00); /* gradasi kuning gelap */
+    background: linear-gradient(135deg, #001a33, #00284f, #003866); /* navy gelap PUPR */
     background-size: 400% 400%;
     animation: sidebarGradientMove 15s ease infinite;
     min-height: 100vh;
     width: 280px;
     z-index: 1;
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4),
-                5px 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.5),
+                5px 0 20px rgba(0, 0, 0, 0.35);
     padding: 25px 0;
     color: white;
-    transition: left 0.3s ease; /* animasi smooth */
+    transition: left 0.3s ease;
 }
+
 
 
 /* Animasi gradient */
@@ -1445,7 +1446,7 @@
                     <!-- Ikon untuk SHST Kab Blora -->
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i> <!-- Ikon untuk SHST Kab Blora -->
                     <p style="color: white">
-                      SHST Kab Bandung Barat
+                      SHST <br> Kab Bandung Barat
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
                     </p>

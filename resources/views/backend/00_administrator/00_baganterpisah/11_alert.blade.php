@@ -231,7 +231,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil !</div>
         <p style="margin-bottom: 4px;">
             Silahkan kunjungi link ini untuk mengetahui verifikasi anda!
@@ -254,7 +254,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil !</div>
         <p style="margin-bottom: 4px;">
             Daftar Peserta, silakan klik tautan berikut:
@@ -279,7 +279,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil !</div>
         <p style="margin-bottom: 4px;">
             Status Pendaftaran, silakan klik tautan berikut:
@@ -304,7 +304,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil !</div>
         {{-- <a href="/dashboard"><span>Silahkan Klik Untuk Mengetahui Informasi Berkas Anda</span></a> --}}
         <br>
@@ -321,7 +321,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil !</div>
         {{-- <a href="/dashboard"><span>Silahkan Klik Untuk Mengetahui Informasi Berkas Anda</span></a> --}}
         <br>
@@ -337,7 +337,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil !</div>
         {{-- <a href="/dashboard"><span>Silahkan Klik Untuk Mengetahui Informasi Berkas Anda</span></a> --}}
         <br>
@@ -354,7 +354,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil</div>
         <button class="button-text">{{ session('info') }}</button>
     </div>
@@ -369,7 +369,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil</div>
         <button class="button-verifikasi">{{ session('verifikasipesertapelatihan') }}</button>
     </div>
@@ -384,7 +384,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil</div>
         <button class="button-verifikasi1">{{ session('verifikasipesertaskk') }}</button>
     </div>
@@ -399,7 +399,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil</div>
         <button class="button-verifikasi">{{ session('verifikasipesertapelatihan') }}</button>
     </div>
@@ -415,7 +415,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-       <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+       <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-text">Berhasil</div>
         <button class="button-text">{{ session('pengesahankrk') }}</button>
     </div>
@@ -430,7 +430,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div class="success-textupdate">Update Berhasil !</div>
         <button class="button-textupdate">{{ session('update') }}</button>
     </div>
@@ -445,7 +445,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         <div style="font-size: 36px; color: red; font-weight: bold; margin: 20px 0;">Delete Berhasil !</div>
         <button class="button-delete">{{ session('delete') }}</button>
     </div>
@@ -460,7 +460,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color:black;">Dinas Pekerjaan Umum Dan Penataan Ruang <br> Kabupaten Blora</p>
+           <p style="color:black;">Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
         {{-- <div style="font-size: 36px; color: red; font-weight: bold; margin: 20px 0;">Anda Salah memasukan berkas dan data diri!</div> --}}
         <button class="button-delete">{{ session('gagaldaftar') }}</button>
     </div>
@@ -475,7 +475,7 @@
         <img src="/assets/00_masjaki/images/maskotjakon.png" alt="Logo"
         style="width: 150px !important; height: auto;"
         class="logo-animate-bounce">
-           <p style="color: black;">Pemerintah Kabupaten Blora</p>
+           <p style="color: black;">Pemerintah Kabupaten Bandung Barat</p>
         <div class="success-text" style="font-size: 18px;">Admin Kami Akan Menghubungi Saudara, Harap Menunggu!</div>
         <button class="button-text">{{ session('pertanyaan') }}</button>
         <p style="margin-top: 25px; font-size: 12px; color: #000;">Silakan muat ulang halaman ini atau tekan tanda X di pojok kanan atas.</p>

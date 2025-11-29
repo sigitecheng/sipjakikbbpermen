@@ -105,7 +105,7 @@ table.zebra-table {
   <span style="color: black; font-weight:800;">
     {{ Auth::user()?->statusadmin?->statusadmin ?? '-' }}
   </span>
-  Sistem Informasi Pembina Jasa Konstruksi Kab Blora
+  Sistem Informasi Pembina Jasa Konstruksi Kabupaten Bandung Barat
 </span>
 
             </h3>

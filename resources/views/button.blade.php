@@ -88,9 +88,9 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Header – modern green with soft shadow */
+/* Header: Navy PUPR (#002b5b) + gradasi elegan */
 .zebra-table thead {
-  background: linear-gradient(135deg, #1a3c34, #2f5d4f);
+  background: linear-gradient(135deg, #002b5b, #013a78);
 }
 
 .zebra-table th {
@@ -100,31 +100,31 @@
   padding: 16px 14px;
   letter-spacing: 0.7px;
   text-align: left;
-  border-bottom: 1px solid #2a5247;
+  border-bottom: 1px solid #01345e;
   font-size: 14px;
 }
 
 /* Isi tabel */
 .zebra-table td {
   padding: 14px 14px;
-  border-bottom: 1px solid #f0f5f3;
+  border-bottom: 1px solid #f0f2f5;
   color: #444;
   font-weight: 400;
   background-color: #fff;
 }
 
-/* Zebra effect lembut */
+/* Zebra effect */
 .zebra-table tbody tr:nth-child(even) {
-  background-color: #f8fbfa;
+  background-color: #f8f9fc;
 }
 
-/* Hover lembut dengan efek transisi */
+/* Hover: kuning PUPR yang lembut (#ffeb99) */
 .zebra-table tbody tr:hover {
-  background-color: #eaf5f1;
-  transition: all 0.3s ease;
+  background-color: #ffeb99; /* kuning pastel */
+  transition: all 0.25s ease;
 }
 
-/* Tanpa garis vertikal */
+/* Hapus garis vertikal */
 .zebra-table th,
 .zebra-table td {
   border-left: none;
