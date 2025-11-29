@@ -147,62 +147,56 @@
     <div class="swiper-container slider-active">
         <div class="swiper-wrapper">
 
-            <!-- Slide 1 -->
-            <div class="swiper-slide slider__bg"
-                 style="background-image:url('https://images.pexels.com/photos/34203866/pexels-photo-34203866.jpeg');
-                        background-size:cover; background-position:center;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="slider__content">
-                                <h1 class="title">Sistem Informasi<br>Pembina Jasa Konstruksi</h1>
-                                <p>Platform digital untuk monitoring dan pembinaan konstruksi di Kabupaten Bandung Barat.</p>
-                     <a href="https://wa.me/6281321455855" target="_blank" class="tg-btn tg-btn-four">
+@foreach($databeranda as $item)
+    <div class="swiper-slide slider__bg"
+        @if($item->header && file_exists(public_path('storage/' . $item->header)))
+            style="background-image:url('{{ asset('storage/' . $item->header) }}');
+                   background-size:cover; background-position:center;"
+        @elseif($item->header)
+            style="background-image:url('{{ asset($item->header) }}');
+                   background-size:cover; background-position:center;"
+        @else
+            style="background:#ccc; background-size:cover; background-position:center;"
+        @endif
+    >
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="slider__content">
+
+                        {{-- Judul --}}
+                        <h1 class="title">
+                            {{ $item->judul ?? 'Judul belum diupdate' }}
+                        </h1>
+
+                        {{-- Deskripsi default --}}
+                        <p>
+                            Platform digital untuk monitoring dan pembinaan konstruksi di Kabupaten Bandung Barat.
+                        </p>
+
+                        {{-- Tombol WA --}}
+                        <a href="https://wa.me/6281321455855"
+                           target="_blank"
+                           class="tg-btn tg-btn-four">
                             Kontak Kami
                         </a>
-       </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
-
-<div class="swiper-slide slider__bg"
-     style="background-image:url('/assets/gambarbaru/padalarang2.jpg');
-            background-size:cover; background-position:center;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="slider__content">
-                    <h1 class="title">Peningkatan Kualitas Infrastruktur</h1>
-                    <p>Mewujudkan pelayanan jasa konstruksi yang profesional dan tepat waktu.</p>
-                    <a href="https://wa.me/6281321455855" target="_blank" class="tg-btn tg-btn-four">
-                        Kontak Kami
-                    </a>
-
-                </div>
-            </div>
         </div>
-    </div>
-</div>
 
-<div class="swiper-slide slider__bg"
-     style="background-image:url('/assets/gambarbaru/padalarang.avif');
-            background-size:cover; background-position:center;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="slider__content">
-                    <h1 class="title">Transparan & Efisien</h1>
-                    <p>Mendukung manajemen konstruksi yang profesional dan terstruktur.</p>
-                    <a href="https://wa.me/6281321455855" target="_blank" class="tg-btn tg-btn-four">
-                        Kontak Kami
-                    </a>
-
-\                </div>
+        {{-- Jika header kosong, beri teks info --}}
+        @if(!$item->header)
+            <div style="background: rgba(0,0,0,0.5); color:white; padding:8px; text-align:center;">
+                Gambar header belum diupdate
             </div>
-        </div>
+        @endif
+
     </div>
-</div>
+@endforeach
+
 
 
 

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\berita; // Pastikan namespace model sesuai dengan struktur direktori
 use App\Models\beritaagenda;
+use App\Models\headerberanda;
 use App\Models\himbauandinas;
 use App\Models\kegiatanjaskon;
 use App\Models\laporankegiatan;
@@ -34,6 +35,7 @@ class FedashboardController extends Controller
     $dataqapertanyaan = qapertanyaan::orderBy('id', 'desc')->get();
     $himbauandinas = himbauandinas::orderBy('id', 'desc')->get();
     $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
+    $databeranda = headerberanda::all();
 
     return view('frontend.00_full.index', [
         'title' => 'SIPJAKI Kabupaten Bandung Barat',
@@ -44,11 +46,12 @@ class FedashboardController extends Controller
         'dataqasebagai' => $dataqasebagai,
         'dataqapertanyaan' => $dataqapertanyaan,
         'datahimbauandinas' => $himbauandinas,
+        'databeranda' => $databeranda,
         'user' => $user,
     ]);
 }
 
-    public function new()
+public function new()
 {
     $user = Auth::user();
 
@@ -60,6 +63,7 @@ class FedashboardController extends Controller
     $dataqapertanyaan = qapertanyaan::orderBy('id', 'desc')->get();
     $himbauandinas = himbauandinas::orderBy('id', 'desc')->get();
     $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
+    $databeranda = headerberanda::all();
 
     return view('frontend.A00_new.01_halamanutama.halamanutama', [
         'title' => 'SIPJAKI Kabupaten Bandung Barat',
@@ -70,6 +74,7 @@ class FedashboardController extends Controller
         'dataqasebagai' => $dataqasebagai,
         'dataqapertanyaan' => $dataqapertanyaan,
         'datahimbauandinas' => $himbauandinas,
+        'databeranda' => $databeranda,
         'user' => $user,
     ]);
 }

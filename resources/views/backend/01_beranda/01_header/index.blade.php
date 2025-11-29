@@ -56,11 +56,23 @@
                             <table class="zebra-table">
                                 <thead>
                                     <tr>
-                                        <th style="width: 100px; text-align:center;">No</th>
-                                        <th style="width: 400px; text-align:center;">Judul</th>
-                                        <th style="width: 500px; text-align:center;">Gambar/Foto</th>
-                                        <th style="width: 250px; text-align: center;">Aksi</th>
-                                    </tr>
+                                    <th style="width: 100px; text-align:center;">
+                                        <i class="bi bi-list-ol" style="margin-right:5px;"></i> No
+                                    </th>
+
+                                    <th style="width: 400px; text-align:center;">
+                                        <i class="bi bi-card-text" style="margin-right:5px;"></i> Judul
+                                    </th>
+
+                                    <th style="width: 500px; text-align:center;">
+                                        <i class="bi bi-image" style="margin-right:5px;"></i> Gambar/Foto
+                                    </th>
+
+                                    <th style="width: 250px; text-align:center;">
+                                        <i class="bi bi-gear" style="margin-right:5px;"></i> Aksi
+                                    </th>
+                                </tr>
+
                                 </thead>
                                 <tbody>
                                     @foreach ($data as $item )
