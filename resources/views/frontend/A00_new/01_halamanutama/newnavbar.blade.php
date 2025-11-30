@@ -43,21 +43,6 @@
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Berita</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item-has-children"><a href="#">Peraturan</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Undang-undang</a></li>
-                                                <li><a href="#">Peraturan Pemerintah</a></li>
-                                                <li><a href="#">Peraturan Presiden</a></li>
-                                                <li><a href="#">Peraturan Menteri</a></li>
-                                                <li><a href="#">Keputusan Menteri</a></li>
-                                                <li><a href="#">Surat Edaran Menteri</a></li>
-                                                <li><a href="#">Referensi</a></li>
-                                                <li><a href="#">Peraturan Daerah</a></li>
-                                                <li><a href="#">Peraturan Gubernur</a></li>
-                                                <li><a href="#">Peraturan Walikota/Bupati</a></li>
-                                                <li><a href="#">Surat Keputusan</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="/beritajakon">Berita Jakon</a></li>
                                         <li><a href="/artikeljakon">Artikel Jakon</a></li>
                                         <li><a href="/dokkegiatan">Dok Kegiatan</a></li>
@@ -132,6 +117,21 @@
                                                 {{-- <li><a href="#">Daftar Peserta TKK</a></li> --}}
                                             </ul>
                                         </li>
+                                        <li class="menu-item-has-children"><a href="#">Peraturan</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Undang-Undang</a></li>
+                                        <li><a href="#">Peraturan Pemerintah</a></li>
+                                        <li><a href="#">Peraturan Presiden</a></li>
+                                        <li><a href="#">Peraturan Menteri</a></li>
+                                        <li><a href="#">Keputusan Menteri</a></li>
+                                        <li><a href="#">Surat Edaran Menteri</a></li>
+                                        <li><a href="#">Referensi</a></li>
+                                        <li><a href="#">Peraturan Daerah</a></li>
+                                        <li><a href="#">Peraturan Gubernur</a></li>
+                                        <li><a href="#">Peraturan Walikota/Bupati</a></li>
+                                        <li><a href="#">Surat Keputusan</a></li>
+                                    </ul>
+                                </li>
                                 </li>
                             </ul>
                         </div>

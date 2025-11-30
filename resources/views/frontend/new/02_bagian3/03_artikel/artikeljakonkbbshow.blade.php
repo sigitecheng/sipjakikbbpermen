@@ -61,10 +61,8 @@
         <div class="tgmobile__menu">
             <nav class="tgmobile__menu-box">
                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
-                <div class="nav-logo">
-                    <a href="index.html"><img src="/storage/logo/sipjakikbb.png" alt="Logo"></a>
-                </div>
-                {{-- <div class="tgmobile__search">
+      @include('frontend.A00_new.01_halamanutama.newlogo')
+                          {{-- <div class="tgmobile__search">
                     <form action="#">
                         <input type="text" placeholder="Search here...">
                         <button><i class="fas fa-search"></i></button>
@@ -93,7 +91,8 @@
                 <button><img src="/assets/assets/img/icons/times.svg" alt="" class="injectable"></button>
             </div>
             <div class="offCanvas__logo mb-30">
-                <a href="index.html"><img src="/storage/logo/sipjakikbb.png" alt="Logo"></a>
+                <a href="#"><img src="/storage/logo/sipjakikbb.png" alt="Logo"></a>
+                <a href="#"><img src="/assets/icon/pupr.png" alt="Logo"></a>
             </div>
             <div class="offCanvas__content">
                 <p>Sistem Informasi <br> Pembina Jasa Konstruksi</p>
