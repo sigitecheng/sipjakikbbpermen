@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\agendastatus;
+use App\Models\artikeljakonmasjaki;
 use App\Models\berita;
 use App\Models\beritaagenda;
 use App\Models\kegiatanjaskon;
@@ -1184,7 +1185,34 @@ public function beritajakonshow($id)
     ]);
 }
 
+public function artikeljakon()
+{
+    // Urutkan berdasarkan ID terbaru + paginate
+    $data = artikeljakonmasjaki::orderBy('id', 'DESC')->paginate(4);
 
+    $user = Auth::user();
+
+    return view('frontend.new.02_bagian3.03_artikel.artikeljakonkbb', [
+        'title' => 'Artikel Jakon DPUTR Kabupaten Bandung Barat',
+        'data' => $data,
+        'user' => $user,
+    ]);
+}
+
+  public function artikeljakonshow($id)
+  {
+      $item = artikeljakonmasjaki::findOrFail($id);
+      $data = artikeljakonmasjaki::orderBy('id', 'DESC')->paginate(4);
+    //   $data = artikeljakonmasjaki::all();
+        $user = Auth::user();
+
+        return view('frontend.new.02_bagian3.03_artikel.artikeljakonkbbshow', [
+            'title' => $item->judul ?? 'Detail Artikel Jakon',
+            'dataartikel' => $item,
+            'data' => $data,
+            'user' => $user,
+        ]);
+    }
 }
 // required|exists:users,id
 

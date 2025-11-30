@@ -35,7 +35,7 @@
                     <div class="col-lg-5">
                         <div class="tg-header__top-right">
                             <ul class="list-wrap">
-                                                               @include('frontend.A00_new.01_halamanutama.newheader')
+                                                               @include('frontend.A00_new.01_halamanutama.newlogin')
 
 
                                 {{-- <li>

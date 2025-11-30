@@ -16,9 +16,9 @@ return new class extends Migration
             $table->foreignId('user_id')->nullable();
             $table->string('judul')->nullable();
             $table->date('tanggal')->nullable();
-            $table->string('foto1')->nullable();
-            $table->string('foto2')->nullable();
-            $table->string('foto3')->nullable();
+            $table->string('foto1')->nullable(); // cadangan
+            $table->string('foto2')->nullable(); // cadangan
+            $table->string('foto3')->nullable(); // cadangan
             $table->string('berkas')->nullable();
             $table->text('keterangan')->nullable();
             $table->softDeletes();

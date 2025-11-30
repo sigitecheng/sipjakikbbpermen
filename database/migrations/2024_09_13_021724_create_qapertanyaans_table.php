@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('qapertanyaans', function (Blueprint $table) {
             $table->id();
-            $table->string('pertanyaan');
+            $table->string('pertanyaan')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('giskbbs', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_kecamatan');
-            $table->string('gambar');
-            $table->string('laki_laki');
-            $table->string('perempuan');
-            $table->string('total_penduduk');
+            $table->string('nama_kecamatan')->nullable();
+            $table->string('gambar')->nullable();
+            $table->string('laki_laki')->nullable();
+            $table->string('perempuan')->nullable();
+            $table->string('total_penduduk')->nullable();
             // $table->string('gambar');
-            $table->text('keterangan_gis');
+            $table->text('keterangan_gis')->nullable();
             // $table->date('tanggal');
             $table->softDeletes();
             $table->timestamps();

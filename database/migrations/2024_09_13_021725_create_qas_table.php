@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('qas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('qasebagai_id');
-            $table->foreignId('qapertanyaan_id');
-            $table->string('nama_lengkap');
-            $table->string('email');
-            $table->text('telepon');
+            $table->foreignId('qasebagai_id')->nullable();
+            $table->foreignId('qapertanyaan_id')->nullable();
+            $table->string('nama_lengkap')->nullable();
+            $table->string('email')->nullable();
+            $table->text('telepon')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

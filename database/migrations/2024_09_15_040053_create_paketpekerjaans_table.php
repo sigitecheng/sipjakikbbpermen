@@ -11,21 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        
+
             Schema::create('paketpekerjaans', function (Blueprint $table) {
                     $table->id();
-                    $table->foreignId('metodepengadaan_id'); // Menambahkan kolom METODE PENGADAAN
-                    $table->string('instansi'); // Menambahkan kolom INSTANSI
-                    $table->bigInteger('jumlah_pagu'); // Menambahkan kolom JUMLAH PAGU sebagai BIGINT
-                    $table->string('pekerjaan'); // Menambahkan kolom PEKERJAAN
+                    $table->foreignId('metodepengadaan_id')->nullable(); // Menambahkan kolom METODE PENGADAAN
+                    $table->string('instansi')->nullable(); // Menambahkan kolom INSTANSI
+                    $table->bigInteger('jumlah_pagu')->nullable(); // Menambahkan kolom JUMLAH PAGU sebagai BIGINT
+                    $table->string('pekerjaan')->nullable(); // Menambahkan kolom PEKERJAAN
                     $table->text('foto_pekerjaan')->nullable(); // Menambahkan kolom FOTO_PEKERJAAN, tipe data TEXT dan nullable
-                    $table->year('tahun'); // Menambahkan kolom TANGGAL MULAI
+                    $table->year('tahun')->nullable(); // Menambahkan kolom TANGGAL MULAI
                     // $table->date('tanggal_selesai'); // Menambahkan kolom TANGGAL SELESAI
-                    $table->decimal('progress_fisik')->default(0); // Menambahkan kolom PROGRESS FISIK, tipe data DECIMAL dengan 5 digit total dan 2 digit desimal, dengan nilai default 0
+                    $table->decimal('progress_fisik')->default(0)->nullable(); // Menambahkan kolom PROGRESS FISIK, tipe data DECIMAL dengan 5 digit total dan 2 digit desimal, dengan nilai default 0
                     $table->softDeletes(); // Kolom untuk soft deletes
                     $table->timestamps(); // Kolom untuk created_at dan updated_at
             });
-     
+
     }
 
     /**

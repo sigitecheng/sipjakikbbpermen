@@ -8,16 +8,16 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     */ 
+     */
     public function up(): void
     {
         Schema::create('uijks', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_perusahaan');
-            $table->string('kategori_perusahaan');
-            $table->string('klasifikasi_bidang_usaha');
-            $table->string('sub_klasifikasi_bidang_usaha');
-            $table->string('keterangan');
+            $table->string('nama_perusahaan')->nullable();
+            $table->string('kategori_perusahaan')->nullable();
+            $table->string('klasifikasi_bidang_usaha')->nullable();
+            $table->string('sub_klasifikasi_bidang_usaha')->nullable();
+            $table->string('keterangan')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -59,8 +59,9 @@
                                             </ul>
                                         </li>
                                         <li><a href="/beritajakon">Berita Jakon</a></li>
-                                        <li><a href="#">Artikel Jakon</a></li>
+                                        <li><a href="/artikeljakon">Artikel Jakon</a></li>
                                         <li><a href="/dokkegiatan">Dok Kegiatan</a></li>
+                                        <li><a href="/dokkegiatan/berita">Berita Kegiatan</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Data Jakon</a>

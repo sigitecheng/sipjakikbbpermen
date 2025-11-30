@@ -8,6 +8,7 @@ namespace Database\Seeders;
 use App\Models\agendasertifikasi;
 use App\Models\agendastatus;
 use App\Models\Agendastatus as ModelsAgendastatus;
+use App\Models\artikeljakonmasjaki;
 use App\Models\asosiasipengusaha;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -11055,6 +11056,14 @@ headerberanda::create([
 headerberanda::create([
     'judul' => 'Peningkatan Kualitas Infrastruktur',
     'header' => '/assets/gambarbaru/padalarang2.jpg',
+]);
+
+artikeljakonmasjaki::create([
+    'user_id'    => 1, // ID user yang sesuai
+    'judul'      => 'Perubahan alur permohonan akun tenaga kerja konstruksi untuk pencatatan pengalaman kerja',
+    'tanggal'    => now(), // otomatis tanggal sekarang
+    'berkas'     => '/assets/gambarbaru/Panduan.pdf', // path file
+    'keterangan' => 'Artikel ini menjelaskan perubahan alur permohonan akun bagi tenaga kerja konstruksi, yang digunakan untuk pencatatan pengalaman kerja secara resmi sesuai panduan terbaru dari Kementerian.',
 ]);
 
 

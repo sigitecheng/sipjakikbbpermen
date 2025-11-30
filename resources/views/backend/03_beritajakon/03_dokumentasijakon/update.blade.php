@@ -13,10 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
             <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -56,7 +53,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/bedokumentasijakon">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -73,207 +70,93 @@
                     <div class="col-md-12">
                         <!--begin::Quick Example-->
                         <form action="{{ route('update.bedokumentasijakon', $data->id) }}" method="POST" enctype="multipart/form-data">
-                            @csrf
-                            @method('POST') <!-- Ganti dengan PUT untuk update -->
-
-                            <!-- begin::Body -->
+                                    @csrf
+                                    @method('POST')
+                                                            <!-- begin::Body -->
                             <div class="card-body">
 
                                 <div class="row">
     <!-- Judul -->
-    <div class="col-12 mb-3">
-        <label class="form-label" for="judul">
-            <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Judul Dokumentasi
+    <div class="form-modern col-12 mb-3">
+        <label class="form-label-modern" for="judul_kegiatan">
+            <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Judul Kegiatan
         </label>
-        <input type="text" id="judul" name="judul" class="form-control @error('judul') is-invalid @enderror" value="{{ old('judul', $data->judul) }}">
-        @error('judul')
+        <input type="text" id="judul_kegiatan" name="judul_kegiatan" class="form-control @error('judul_kegiatan') is-invalid @enderror" value="{{ old('judul_kegiatan', $data->judul_kegiatan) }}">
+        @error('judul_kegiatan')
         <div class="invalid-feedback">{{ $message }}</div>
         @enderror
     </div>
 
     <!-- Foto Kegiatan 1 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan1">
-            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 1
-        </label>
-        <input type="file" id="fotokegiatan1" name="fotokegiatan1"
-               class="form-control @error('fotokegiatan1') is-invalid @enderror"
-               accept="image/*"
-               onchange="previewImage(event, 'previewBaru1')">
-        @error('fotokegiatan1')
-        <div class="invalid-feedback">{{ $message }}</div>
-        @enderror
-        <div class="mt-2">
-            <p>Gambar sebelumnya:</p>
-            @if($data->fotokegiatan1 && file_exists(public_path($data->fotokegiatan1)))
-                <img src="{{ asset($data->fotokegiatan1) }}" alt="Foto Lama 1" style="width:100%; max-height:200px; object-fit:contain;">
-            @else
-                <p>Data belum diupdate</p>
-            @endif
+   <div class="row">
+    @for ($i = 1; $i <= 20; $i++)
+        <div class="form-modern col-md-6 mb-3">
+            <label class="form-label-modern" for="berita{{ $i }}">
+                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan {{ $i }}
+            </label>
+            <input type="file" id="berita{{ $i }}" name="berita{{ $i }}"
+                   class="form-control @error('berita'.$i) is-invalid @enderror"
+                   accept="image/*"
+                   onchange="previewImage(event, 'previewBaru{{ $i }}')">
+
+            @error('berita'.$i)
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+
+            <div class="mt-2">
+                <p>Dokumentasi Sebelumnya :</p>
+                @php $field = 'berita'.$i; @endphp
+                @if($data->{$field} && file_exists(public_path('storage/' . $data->{$field})))
+                    <!-- Menampilkan gambar dari storage -->
+                    <img src="{{ asset('storage/' . $data->{$field}) }}"
+                         alt="Foto Lama {{ $i }}"
+                         style="width:100%; max-height:200px; object-fit:contain;">
+                @elseif($data->{$field})
+                    <!-- Menampilkan gambar dari path luar storage -->
+                    <img src="{{ asset($data->{$field}) }}"
+                         alt="Foto Lama {{ $i }}"
+                         style="width:100%; max-height:200px; object-fit:contain;">
+                @else
+                    <p>Data belum diupdate</p>
+                @endif
+            </div>
+
+            <div class="mt-2">
+                <p>Dokumentasi Baru :</p>
+                <img id="previewBaru{{ $i }}" style="width:100%; max-height:200px; object-fit:contain; display:none;">
+            </div>
         </div>
-        <div class="mt-2">
-            <p>Preview baru:</p>
-            <img id="previewBaru1" style="width:100%; max-height:200px; object-fit:contain; display:none;">
-        </div>
-    </div>
-
-    <!-- Foto Kegiatan 2 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan2">
-            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 2
-        </label>
-        <input type="file" id="fotokegiatan2" name="fotokegiatan2"
-               class="form-control @error('fotokegiatan2') is-invalid @enderror"
-               accept="image/*"
-               onchange="previewImage(event, 'previewBaru2')">
-        @error('fotokegiatan2')
-        <div class="invalid-feedback">{{ $message }}</div>
-        @enderror
-        <div class="mt-2">
-            <p>Gambar sebelumnya:</p>
-            @if($data->fotokegiatan2 && file_exists(public_path($data->fotokegiatan2)))
-                <img src="{{ asset($data->fotokegiatan2) }}" alt="Foto Lama 2" style="width:100%; max-height:200px; object-fit:contain;">
-            @else
-                <p>Data belum diupdate</p>
-            @endif
-        </div>
-        <div class="mt-2">
-            <p>Preview baru:</p>
-            <img id="previewBaru2" style="width:100%; max-height:200px; object-fit:contain; display:none;">
-        </div>
-    </div>
-
-    <!-- Foto Kegiatan 3 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan3"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 3</label>
-        <input type="file" id="fotokegiatan3" name="fotokegiatan3" class="form-control @error('fotokegiatan3') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru3')">
-        @error('fotokegiatan3') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">
-            <p>Gambar sebelumnya:</p>
-            @if($data->fotokegiatan3 && file_exists(public_path($data->fotokegiatan3)))
-                <img src="{{ asset($data->fotokegiatan3) }}" style="width:100%; max-height:200px; object-fit:contain;">
-            @else <p>Data belum diupdate</p> @endif
-        </div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru3" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 4 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan4"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 4</label>
-        <input type="file" id="fotokegiatan4" name="fotokegiatan4" class="form-control @error('fotokegiatan4') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru4')">
-        @error('fotokegiatan4') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">
-            <p>Gambar sebelumnya:</p>
-            @if($data->fotokegiatan4 && file_exists(public_path($data->fotokegiatan4)))
-                <img src="{{ asset($data->fotokegiatan4) }}" style="width:100%; max-height:200px; object-fit:contain;">
-            @else <p>Data belum diupdate</p> @endif
-        </div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru4" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 5 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan5"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 5</label>
-        <input type="file" id="fotokegiatan5" name="fotokegiatan5" class="form-control @error('fotokegiatan5') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru5')">
-        @error('fotokegiatan5') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan5 && file_exists(public_path($data->fotokegiatan5))) <img src="{{ asset($data->fotokegiatan5) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru5" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 6 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan6"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 6</label>
-        <input type="file" id="fotokegiatan6" name="fotokegiatan6" class="form-control @error('fotokegiatan6') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru6')">
-        @error('fotokegiatan6') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan6 && file_exists(public_path($data->fotokegiatan6))) <img src="{{ asset($data->fotokegiatan6) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru6" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 7 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan7"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 7</label>
-        <input type="file" id="fotokegiatan7" name="fotokegiatan7" class="form-control @error('fotokegiatan7') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru7')">
-        @error('fotokegiatan7') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan7 && file_exists(public_path($data->fotokegiatan7))) <img src="{{ asset($data->fotokegiatan7) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru7" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 8 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan8"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 8</label>
-        <input type="file" id="fotokegiatan8" name="fotokegiatan8" class="form-control @error('fotokegiatan8') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru8')">
-        @error('fotokegiatan8') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan8 && file_exists(public_path($data->fotokegiatan8))) <img src="{{ asset($data->fotokegiatan8) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru8" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 9 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan9"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 9</label>
-        <input type="file" id="fotokegiatan9" name="fotokegiatan9" class="form-control @error('fotokegiatan9') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru9')">
-        @error('fotokegiatan9') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan9 && file_exists(public_path($data->fotokegiatan9))) <img src="{{ asset($data->fotokegiatan9) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru9" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 10 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan10"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 10</label>
-        <input type="file" id="fotokegiatan10" name="fotokegiatan10" class="form-control @error('fotokegiatan10') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru10')">
-        @error('fotokegiatan10') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan10 && file_exists(public_path($data->fotokegiatan10))) <img src="{{ asset($data->fotokegiatan10) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru10" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 11 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan11"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 11</label>
-        <input type="file" id="fotokegiatan11" name="fotokegiatan11" class="form-control @error('fotokegiatan11') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru11')">
-        @error('fotokegiatan11') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan11 && file_exists(public_path($data->fotokegiatan11))) <img src="{{ asset($data->fotokegiatan11) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru11" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
-
-    <!-- Foto Kegiatan 12 -->
-    <div class="col-md-6 mb-3">
-        <label class="form-label" for="fotokegiatan12"><i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Kegiatan 12</label>
-        <input type="file" id="fotokegiatan12" name="fotokegiatan12" class="form-control @error('fotokegiatan12') is-invalid @enderror" accept="image/*" onchange="previewImage(event, 'previewBaru12')">
-        @error('fotokegiatan12') <div class="invalid-feedback">{{ $message }}</div> @enderror
-        <div class="mt-2">@if($data->fotokegiatan12 && file_exists(public_path($data->fotokegiatan12))) <img src="{{ asset($data->fotokegiatan12) }}" style="width:100%; max-height:200px; object-fit:contain;"> @else <p>Data belum diupdate</p> @endif</div>
-        <div class="mt-2"><p>Preview baru:</p><img id="previewBaru12" style="width:100%; max-height:200px; object-fit:contain; display:none;"></div>
-    </div>
+    @endfor
 </div>
-    <!-- End Right Column -->
-                                </div>
-                                <!-- End row -->
 
+<!-- Javascript Preview Image -->
 <script>
 function previewImage(event, previewId) {
-    const file = event.target.files[0];
+    const input = event.target;
     const preview = document.getElementById(previewId);
-
-    if (file) {
+    if (input.files && input.files[0]) {
         const reader = new FileReader();
         reader.onload = function(e) {
             preview.src = e.target.result;
-            preview.style.display = "block";
+            preview.style.display = 'block';
         }
-        reader.readAsDataURL(file);
-    } else {
-        preview.style.display = "none";
+        reader.readAsDataURL(input.files[0]);
     }
 }
-</script>
+</script>                                </div>
+                                <!-- End row -->
 
                             </div>
                             <!-- end::Body -->
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                    <button type="button" onclick="openModal()" class="button-berkas">
-
+                                   <button type="button" onclick="openModal()" class="button-berkas">
+                                    <!-- Icon Pen Square -->
+                                    <i class="bi bi-pencil-square" style="margin-right: 8px;"></i>
                                     <span style="font-family: 'Poppins', sans-serif;">Perbaikan Data ?</span>
                                 </button>
+
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">

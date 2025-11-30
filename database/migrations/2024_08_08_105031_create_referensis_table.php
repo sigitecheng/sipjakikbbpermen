@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('referensis', function (Blueprint $table) {
             $table->id();
-            $table->text('judul')->index();
-            $table->string('peraturan', 255)->index();
+            $table->text('judul')->nullable()->index();
+            $table->string('peraturan', 255)->nullable()->index();
             $table->softDeletes();
             $table->timestamps();
         });

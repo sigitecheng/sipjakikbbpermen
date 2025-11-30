@@ -14,6 +14,7 @@
       <!--begin::App Main-->
       <main class="app-main">
 
+
 <section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
             <!--begin::App Content Header-->
@@ -79,8 +80,8 @@
     <!-- Left Column (6/12) -->
     <div class="col-md-6">
         <!-- Judul -->
-        <div class="form-modern mb-3">
-            <label class="form-label-modern" for="judul">
+        <div class="mb-3">
+            <label class="form-label" for="judul">
                 <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Judul
             </label>
             <input type="text" id="judul" name="judul"
@@ -94,65 +95,52 @@
     <!-- End Left Column -->
 
     <!-- Right Column (6/12) -->
-    <div class="col-md-6">
+  <!-- Right Column (6/12) -->
+<div class="col-md-6">
     <!-- Header (Upload Gambar) -->
-    <div class="form-modern mb-3">
-        <label class="form-label-modern" for="header">
-            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Gambar Tampilan
+    <div class="mb-3">
+        <label class="form-label" for="header">
+            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Gambar Header
         </label>
-
-        <!-- Input File -->
         <input type="file" id="header" name="header"
                class="form-control @error('header') is-invalid @enderror"
                accept="image/*"
-               onchange="previewHeader(event)" />
-
+               onchange="previewHeader(event, 'preview-header', 'old-header-wrapper')" />
         @error('header')
         <div class="invalid-feedback">{{ $message }}</div>
         @enderror
 
-        <!-- PREVIEW GAMBAR BARU -->
-        <div id="preview-header" class="mt-2" style="display: none;">
-            <p><strong>Preview Gambar Baru:</strong></p>
-            <img id="preview-header-img"
-                style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
+        <!-- Preview Gambar Baru -->
+        <div id="preview-header" style="margin-top: 10px; display: none;">
+            <p style="font-weight: bold; color: green; margin-bottom: 5px;">Foto/Gambar Baru:</p>
+            <img id="preview-header-img" src="" alt="Preview Header" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
         </div>
 
-        <!-- GAMBAR LAMA -->
-        <div class="mt-2" id="old-header-wrapper">
-            @if(!empty($data->header))
-                <p><strong>Gambar Lama:</strong></p>
-
-                @if(file_exists(public_path('storage/' . $data->header)))
-                    <img src="{{ asset('storage/' . $data->header) }}"
-                        alt="Header Lama"
-                        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
-                @else
-                    <img src="{{ asset($data->header) }}"
-                        alt="Header Lama"
-                        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
-                @endif
+        <!-- Gambar Lama -->
+        @if(!empty($data->header))
+        <div id="old-header-wrapper" style="margin-top: 10px;">
+            <p style="font-weight: bold; color: gray; margin-bottom: 5px;">Foto/Gambar Lama:</p>
+            @if(file_exists(public_path('storage/' . $data->header)))
+                <img src="{{ asset('storage/' . $data->header) }}" alt="Header" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
             @else
-                <p>Data belum diupdate</p>
+                <img src="{{ asset($data->header) }}" alt="Header" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 4px;">
             @endif
         </div>
-
+        @else
+        <p>Data belum diupdate</p>
+        @endif
     </div>
 </div>
 
-    </div>
-    <!-- End Right Column -->
 </div>
 
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
                                     <button class="button-berkas" type="button" onclick="openModal()">
-                                    <i class="bi bi-pencil-square"
-                                    style="margin-right: 8px; font-size: 18px; color: black; vertical-align: middle;"></i>
-                                    Perbaikan Data ?
-                                </button>
-
+    <i class="bi bi-pencil-square" style="margin-right: 8px; font-size: 18px; color: black; vertical-align: middle;"></i>
+    Perbaikan Data ?
+</button>
 
                                 </div>
                                 <!-- Modal Konfirmasi -->
@@ -238,20 +226,21 @@
 
 
       @include('backend.00_administrator.00_baganterpisah.02_footer')
+
 <script>
-function previewHeader(event) {
-    const previewDiv = document.getElementById('preview-header');
+function previewHeader(event, previewId, oldWrapperId) {
+    const previewDiv = document.getElementById(previewId);
     const previewImg = document.getElementById('preview-header-img');
-    const oldWrapper = document.getElementById('old-header-wrapper');
+    const oldWrapper = document.getElementById(oldWrapperId);
 
     const file = event.target.files[0];
-
     if (file) {
-        previewDiv.style.display = "block";    // Tampilkan preview
+        previewDiv.style.display = "block";
         previewImg.src = URL.createObjectURL(file);
 
-        oldWrapper.style.opacity = "0.4";      // Gambar lama dipudarkan
-        oldWrapper.style.filter = "grayscale(100%)"; // Tambah efek abu² biar jelas ini yg lama
+        oldWrapper.style.opacity = "0.4";
+        oldWrapper.style.filter = "grayscale(100%)";
     }
 }
 </script>
+  <!-- End Right Column -->

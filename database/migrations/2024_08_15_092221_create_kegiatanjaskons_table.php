@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('kegiatanjaskons', function (Blueprint $table) {
             $table->id();
             // $table->foreignId('laporankegiatan_id');
-            $table->foreignId('user_id');            
-            $table->foreignId('pengawasanlokasi_id');            
-            $table->text('judul_kegiatan');
-            $table->text('alamat_kegiatan');
-            $table->string('berita1')->nullable(); 
+            $table->foreignId('user_id')->nullable();
+            $table->foreignId('pengawasanlokasi_id')->nullable();
+            $table->text('judul_kegiatan')->nullable();
+            $table->text('alamat_kegiatan')->nullable();
+            $table->string('berita1')->nullable();
             $table->string('berita2')->nullable();
             $table->string('berita3')->nullable();
             $table->string('berita4')->nullable();
@@ -66,7 +66,7 @@ return new class extends Migration
             // $table->string('laporanfoto26')->nullable();
             // $table->string('laporanfoto27')->nullable();
             // $table->string('laporanfoto28')->nullable();
-            $table->date('tanggal'); 
+            $table->date('tanggal')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

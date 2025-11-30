@@ -13,22 +13,22 @@ return new class extends Migration
     {
         Schema::create('tukangterampils', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->foreignId('pengawasanlokasi_id');
-            $table->foreignId('keterampilanpekerja_id');
-            $table->foreignId('tahunpilihan_id');
-            $table->string('desa');
-            $table->string('alamat');
-            $table->date('tanggal_lahir');
-            $table->string('nik');
-            $table->string('kualifikasi');
-            $table->string('registrasi');
+            $table->string('nama')->nullable();
+            $table->foreignId('pengawasanlokasi_id')->nullable();
+            $table->foreignId('keterampilanpekerja_id')->nullable();
+            $table->foreignId('tahunpilihan_id')->nullable();
+            $table->string('desa')->nullable();
+            $table->string('alamat')->nullable();
+            $table->date('tanggal_lahir')->nullable();
+            $table->string('nik')->nullable();
+            $table->string('kualifikasi')->nullable();
+            $table->string('registrasi')->nullable();
             // ------------------------------------------
-            $table->string('foto');
-            $table->string('kta_gatensi');
-            $table->string('skk_pekerja');
-            $table->string('foto_kegiatanpekerja1');
-            $table->string('foto_kegiatanpekerja2');
+            $table->string('foto')->nullable();
+            $table->string('kta_gatensi')->nullable();
+            $table->string('skk_pekerja')->nullable();
+            $table->string('foto_kegiatanpekerja1')->nullable();
+            $table->string('foto_kegiatanpekerja2')->nullable();
             // $table->integer('usia');
             $table->softDeletes();
             $table->timestamps();

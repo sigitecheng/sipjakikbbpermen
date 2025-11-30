@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('pelatihans', function (Blueprint $table) {
             $table->id();
-            $table->string('tahun');
-            $table->bigInteger('kasus');
+            $table->string('tahun')->nullable();
+            $table->bigInteger('kasus')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -1,22 +1,19 @@
 <style>
-/* Sidebar umum */
 .app-sidebar {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #001a33, #00284f, #003866); /* navy gelap PUPR */
-    background-size: 400% 400%;
-    animation: sidebarGradientMove 15s ease infinite;
+    background: linear-gradient(135deg, #000228, #01012F, #020243); /* navy gelap sesuai gambar */
+    background-size: 300% 300%;
+    animation: sidebarGradientMove 20s ease infinite;
     min-height: 100vh;
     width: 280px;
     z-index: 1;
-    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.5),
-                5px 0 20px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.6),
+                5px 0 20px rgba(0, 0, 0, 0.45);
     padding: 25px 0;
     color: white;
     transition: left 0.3s ease;
 }
-
-
 
 /* Animasi gradient */
 @keyframes sidebarGradientMove {
@@ -850,6 +847,13 @@
     <!-- Ikon untuk Dokumentasi Jakon -->
     <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
     <p style="color: white">Dokumentasi Jakon</p>
+  </a>
+</li>
+                      <li class="nav-item">
+  <a href="/bedokberitajakon" class="nav-link">
+    <!-- Ikon untuk Dokumentasi Jakon -->
+    <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
+    <p style="color: white">Dokumentasi <br> Kegiatan Sertifikasi </p>
   </a>
 </li>
 

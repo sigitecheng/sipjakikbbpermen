@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('layanankamis', function (Blueprint $table) {
             $table->id();
-            $table->string('gambar');
-            $table->string('program');
-            $table->string('keterangan');
+            $table->string('gambar')->nullable();
+            $table->string('program')->nullable();
+            $table->string('keterangan')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

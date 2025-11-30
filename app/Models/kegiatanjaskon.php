@@ -15,7 +15,7 @@ class kegiatanjaskon extends Model
 
     public function laporankegiatan()
     {
-        return $this->belongsTo(laporankegiatan::class);
+        return $this->hasMany(laporankegiatan::class);
     }
 
     public function user()

@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('beritaagendas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pengawasanlokasi_id');
+            $table->foreignId('pengawasanlokasi_id')->nullable();
             // $table->foreignId('user_id');
-            $table->string('statusprogram');
-            $table->text('nama_agenda');    
-            $table->text('keterangan');
-            $table->integer('kuota');
-            $table->date('tanggal_mulai');
-            $table->date('tanggal_selesai');
+            $table->string('statusprogram')->nullable();
+            $table->text('nama_agenda')->nullable();
+            $table->text('keterangan')->nullable();
+            $table->integer('kuota')->nullable();
+            $table->date('tanggal_mulai')->nullable();
+            $table->date('tanggal_selesai')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

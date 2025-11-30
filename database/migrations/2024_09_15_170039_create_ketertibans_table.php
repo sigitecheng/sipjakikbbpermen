@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('ketertibans', function (Blueprint $table) {
             $table->id(); // ID auto-increment, sebagai primary key
-            $table->foreignId('pengawasanlokasi_id'); // Lokasi
-            $table->foreignId('pengawasanbangunangedung_id'); // Bangunan Gedung
-            $table->foreignId('penanggungjawabteknis_id');// PJT (Penanggung Jawab Teknis)
-            $table->foreignId('pengawasanstatus_id');
-            $table->foreignId('pengawasantindakan_id'); // Tindakan
-            $table->text('judul'); // Judul laporan
-            $table->date('tanggal_laporan'); // Tanggal laporan
-            $table->text('keterangan'); // Keterangan
+            $table->foreignId('pengawasanlokasi_id')->nullable(); // Lokasi
+            $table->foreignId('pengawasanbangunangedung_id')->nullable(); // Bangunan Gedung
+            $table->foreignId('penanggungjawabteknis_id')->nullable();// PJT (Penanggung Jawab Teknis)
+            $table->foreignId('pengawasanstatus_id')->nullable();
+            $table->foreignId('pengawasantindakan_id')->nullable(); // Tindakan
+            $table->text('judul')->nullable(); // Judul laporan
+            $table->date('tanggal_laporan')->nullable(); // Tanggal laporan
+            $table->text('keterangan')->nullable(); // Keterangan
             $table->softDeletes(); // Kolom untuk soft deletes
             $table->timestamps(); // Kolom created_at dan updated_at
         });

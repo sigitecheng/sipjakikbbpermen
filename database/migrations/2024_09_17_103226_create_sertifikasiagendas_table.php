@@ -13,14 +13,14 @@ return new class extends Migration
     {
             Schema::create('sertifikasiagenda', function (Blueprint $table) {
                 $table->id();
-                $table->foreignId('pengawasanlokasi_id');
-                $table->foreignId('user_id');
-                $table->foreignId('agendastatus_id');
-                $table->text('nama_agenda');
-                $table->text('keterangan');
-                $table->integer('kuota');
-                $table->date('tanggal_mulai');
-                $table->date('tanggal_selesai');
+                $table->foreignId('pengawasanlokasi_id')->nullable();
+                $table->foreignId('user_id')->nullable();
+                $table->foreignId('agendastatus_id')->nullable();
+                $table->text('nama_agenda')->nullable();
+                $table->text('keterangan')->nullable();
+                $table->integer('kuota')->nullable();
+                $table->date('tanggal_mulai')->nullable();
+                $table->date('tanggal_selesai')->nullable();
                 $table->softDeletes();
                 $table->timestamps();
             });

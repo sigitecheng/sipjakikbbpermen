@@ -35,7 +35,7 @@
                     <div class="col-lg-5">
                         <div class="tg-header__top-right">
                             <ul class="list-wrap">
-                                                             @include('frontend.A00_new.01_halamanutama.newheader')
+                                                                                  @include('frontend.A00_new.01_halamanutama.newlogin')
 
 
                                 {{-- <li>
@@ -206,8 +206,50 @@
         <h2 class="title">{{ $datashow->judul }}</h2>
 
         <p>{!! $datashow->keteranganberita !!}</p>
+        <br>
+                     {{-- Tampilkan hanya jika ada gambar1 --}}
+@if($datashow->gambar1 || $datashow->gambar2)
+<div class="d-flex justify-content-between flex-wrap gap-2">
+
+    @if($datashow->gambar1)
+        <div style="width: 48%; max-height: 250px; overflow: hidden; border: 1px solid #ddd; border-radius: 6px;">
+            @if(file_exists(public_path('storage/' . $datashow->gambar1)))
+                <img src="{{ asset('storage/' . $datashow->gambar1) }}"
+                     alt="Gambar Berita 1"
+                     style="width: 100%; height: 100%; object-fit: cover;"
+                     loading="lazy">
+            @else
+                <img src="{{ asset($datashow->gambar1) }}"
+                     alt="Gambar Berita 1"
+                     style="width: 100%; height: 100%; object-fit: cover;"
+                     loading="lazy">
+            @endif
+        </div>
+    @endif
+
+    @if($datashow->gambar2)
+        <div style="width: 48%; max-height: 250px; overflow: hidden; border: 1px solid #ddd; border-radius: 6px;">
+            @if(file_exists(public_path('storage/' . $datashow->gambar2)))
+                <img src="{{ asset('storage/' . $datashow->gambar2) }}"
+                     alt="Gambar Berita 2"
+                     style="width: 100%; height: 100%; object-fit: cover;"
+                     loading="lazy">
+            @else
+                <img src="{{ asset($datashow->gambar2) }}"
+                     alt="Gambar Berita 2"
+                     style="width: 100%; height: 100%; object-fit: cover;"
+                     loading="lazy">
+            @endif
+        </div>
+    @endif
+
+</div>
+@endif
+
 
     </div>
+
+
 
 </div>
 

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('profiljenispekerjaans', function (Blueprint $table) {
             $table->id();
-            $table->string('jenispekerjaan');
+            $table->string('jenispekerjaan')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

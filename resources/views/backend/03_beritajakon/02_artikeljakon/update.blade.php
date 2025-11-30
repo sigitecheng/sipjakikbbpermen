@@ -13,10 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
             <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -56,7 +53,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/beartikeljakon">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -132,76 +129,6 @@
                                         </div>
 
 
-                                        <div class="mb-3">
-                                            <label class="form-label" for="foto1">
-                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto/Gambar/Brosur 1
-                                            </label>
-                                            <input type="file" id="foto1" name="foto1" class="form-control @error('foto1') is-invalid @enderror" />
-                                            @error('foto1')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                            <div style="margin-top: 10px;">
-                                                @if($data->foto1 && file_exists(public_path('storage/' . $data->foto1)))
-                                                    <!-- Menampilkan gambar dari storage -->
-                                                    <img src="{{ asset('storage/' . $data->foto1) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
-                                                @elseif($data->foto1)
-                                                    <!-- Menampilkan gambar dari path luar storage -->
-                                                    <img src="{{ asset($data->foto1) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
-                                                @else
-                                                    <!-- Placeholder jika tidak ada data -->
-                                                    <p>Data belum diupdate</p>
-                                                @endif
-                                            </div>
-
-                                        </div>
-
-                                        <!-- Foto 2 -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="foto2">
-                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto/Gambar/Brosur 2
-                                            </label>
-                                            <input type="file" id="foto2" name="foto2" class="form-control @error('foto2') is-invalid @enderror" />
-                                            @error('foto2')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                            <div style="margin-top: 10px;">
-                                                @if($data->foto2 && file_exists(public_path('storage/' . $data->foto2)))
-                                                    <!-- Menampilkan gambar dari storage -->
-                                                    <img src="{{ asset('storage/' . $data->foto2) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
-                                                @elseif($data->foto2)
-                                                    <!-- Menampilkan gambar dari path luar storage -->
-                                                    <img src="{{ asset($data->foto2) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
-                                                @else
-                                                    <!-- Placeholder jika tidak ada data -->
-                                                    <p>Data belum diupdate</p>
-                                                @endif
-                                            </div>
-                                        </div>
-
-                                        <!-- Foto 3 -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="foto3">
-                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto/Gambar/Brosur 3
-                                            </label>
-                                            <input type="file" id="foto3" name="foto3" class="form-control @error('foto3') is-invalid @enderror" />
-                                            @error('foto3')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                            <div style="margin-top: 10px;">
-                                                @if($data->foto3 && file_exists(public_path('storage/' . $data->foto3)))
-                                                    <!-- Menampilkan gambar dari storage -->
-                                                    <img src="{{ asset('storage/' . $data->foto3) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
-                                                @elseif($data->foto3)
-                                                    <!-- Menampilkan gambar dari path luar storage -->
-                                                    <img src="{{ asset($data->foto3) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
-                                                @else
-                                                    <!-- Placeholder jika tidak ada data -->
-                                                    <p>Data belum diupdate</p>
-                                                @endif
-                                            </div>
-                                        </div>
-
-
                                     </div>
                                     <!-- End Left Column -->
 
@@ -209,33 +136,67 @@
                                     <div class="col-md-6">
                                         <!-- Keterangan -->
 
-                                        <!-- Foto -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="berkas">
-                                                <i class="bi bi-file-earmark-pdf" style="margin-right: 8px; color: red;"></i> Berkas (PDF)
-                                            </label>
-                                            <!-- Mengubah input untuk menerima file PDF -->
-                                            <input type="file" id="berkas" name="berkas" class="form-control @error('berkas') is-invalid @enderror" accept="application/pdf" />
+                                    <div class="mb-3">
+    <label class="form-label" for="berkas">
+        <i class="bi bi-file-earmark-pdf" style="margin-right: 8px; color: red;"></i> Berkas (PDF)
+    </label>
 
-                                            @error('berkas')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
+    <!-- Input PDF baru -->
+    <input type="file" id="berkas" name="berkas"
+           class="form-control @error('berkas') is-invalid @enderror"
+           accept="application/pdf"
+           onchange="previewPDF('berkas', 'previewBerkasBaru')" />
 
-                                            <div style="margin-top: 10px;">
-                                                @if($data->berkas && file_exists(public_path('storage/' . $data->berkas)))
-                                                <!-- Display the default iframe when the file exists in the storage -->
-                                                <iframe src="{{ asset('storage/' . $data->berkas) }}" frameborder="0" width="100%" height="300px"></iframe>
-                                            @elseif($data->berkas)
-                                                <!-- Display the iframe with the updated file -->
-                                                <iframe src="{{ asset($data->berkas) }}" frameborder="0" width="100%" height="300px"></iframe>
-                                            @else
-                                                <!-- Optional: Show a placeholder if there's no file available -->
-                                                <p>Data belum diupdate</p>
-                                            @endif
+    @error('berkas')
+    <div class="invalid-feedback">{{ $message }}</div>
+    @enderror
 
-                                            </div>
+    <!-- Preview Berkas Lama -->
+    <div style="margin-top: 10px;">
+        @if($data->berkas && file_exists(public_path('storage/' . $data->berkas)))
+            <label><strong>Berkas Lama:</strong></label>
+            <iframe src="{{ asset('storage/' . $data->berkas) }}"
+                    frameborder="0"
+                    width="100%"
+                    height="300px"
+                    style="margin-top:5px;"></iframe>
+        @elseif($data->berkas)
+            <label><strong>Berkas Lama:</strong></label>
+            <iframe src="{{ asset($data->berkas) }}"
+                    frameborder="0"
+                    width="100%"
+                    height="300px"
+                    style="margin-top:5px;"></iframe>
+        @else
+            <p>Berkas lama belum diupdate</p>
+        @endif
+    </div>
 
-                                        </div>
+    <!-- Preview Berkas Baru -->
+    <div style="margin-top: 10px;" id="previewBerkasBaruWrapper" hidden>
+        <label><strong>Berkas Baru:</strong></label>
+        <iframe id="previewBerkasBaru" src="" frameborder="0" width="100%" height="300px" style="margin-top:5px;"></iframe>
+    </div>
+</div>
+
+<!-- JS untuk preview PDF baru -->
+<script>
+function previewPDF(inputId, previewId) {
+    const file = document.getElementById(inputId).files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const previewWrapper = document.getElementById('previewBerkasBaruWrapper');
+        const preview = document.getElementById(previewId);
+
+        preview.src = e.target.result;  // tampilkan PDF baru
+        previewWrapper.hidden = false;  // munculkan wrapper
+    }
+    reader.readAsDataURL(file);
+}
+</script>
+
 
                                     </div>
                                     <!-- End Right Column -->
@@ -246,10 +207,12 @@
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                    <button type="button" onclick="openModal()" class="button-berkas">
-
+                                   <button type="button" onclick="openModal()" class="button-berkas">
+                                    <!-- Icon Pencil Square -->
+                                    <i class="bi bi-pencil-square" style="margin-right: 8px;"></i>
                                     <span style="font-family: 'Poppins', sans-serif;">Perbaikan Data ?</span>
                                 </button>
+
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">

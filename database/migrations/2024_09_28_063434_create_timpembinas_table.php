@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('timpembinas', function (Blueprint $table) {
             $table->id();
-            $table->string('jabatandalamkedinasan');
-            $table->string('nama_lengkap');
+            $table->string('jabatandalamkedinasan')->nullable();
+            $table->string('nama_lengkap')->nullable();
             // $table->string('jabatan');
-            $table->string('email');
+            $table->string('email')->nullable();
             // $table->string('alamatkantor');
-            $table->string('telepon');
-            $table->string('fototimpembina');
+            $table->string('telepon')->nullable();
+            $table->string('fototimpembina')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

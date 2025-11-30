@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('pengawasanlokasis', function (Blueprint $table) {
             $table->id();
-            $table->string('kota');
+            $table->string('kota')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

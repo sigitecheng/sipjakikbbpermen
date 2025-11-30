@@ -1422,7 +1422,7 @@ Route::get('/beberitajakon/create', [BeritajakonController::class, 'beberitajako
 // Route::get('/beberitajakon/create', [BeritajakonController::class, 'beberitajakoncreate'])->middleware(['auth'])->name('create.beberitajakoncreate');
 Route::post('/beberitajakon/createnew', [BeritajakonController::class, 'beberitajakoncreatenew'])->middleware(['auth', 'can:admin2'])->name('create.beberitajakoncreatenew'); // DIRUBAH
 // Route::post('/beberitajakon/createnew', [BeritajakonController::class, 'beberitajakoncreatenew'])->middleware(['auth'])->name('create.beberitajakoncreatenew');
-Route::delete('/beberitajakon/delete/{judulberita}', [BeritajakonController::class, 'beberitajakondelete'])->middleware(['auth', 'can:admin2']); // DOIRUBAH
+Route::delete('/beberitajakon/delete/{judul}', [BeritajakonController::class, 'beberitajakondelete'])->middleware(['auth', 'can:admin2']); // DOIRUBAH
 // Route::delete('/beberitajakon/delete/{judulberita}', [BeritajakonController::class, 'beberitajakondelete'])->middleware(['auth']);
 
 // ___________________________________________________________________________________________________________________________________
@@ -1456,7 +1456,19 @@ Route::get('/bedokumentasijakon/update/{id}', [BeritajakonController::class, 'be
 Route::post('/bedokumentasijakon/updatecreate/{id}', [BeritajakonController::class, 'bedokumentasijakoncreaupdate'])->middleware(['auth', 'can:admin2'])->name('update.bedokumentasijakon'); // DIRUBAH
 Route::get('/bedokumentasijakon/create', [BeritajakonController::class, 'bedokumentasijakoncreate'])->middleware(['auth', 'can:admin2'])->name('create.beartikeljakoncreate'); // DIRUBAH
 Route::post('/bedokumentasijakon/createnew', [BeritajakonController::class, 'bedokumentasijakoncreatenew'])->middleware(['auth', 'can:admin2'])->name('create.dokumentasijakon'); // DIRUBAH
-Route::delete('/bedokumentasijakondelete/{judul}', [BeritajakonController::class, 'bedokumentasijakondelete'])->middleware(['auth', 'can:admin2']); // DIRUBAH
+Route::delete('/bedokumentasijakondelete/{judul_kegiatan}', [BeritajakonController::class, 'bedokumentasijakondelete'])->middleware(['auth', 'can:admin2']); // DIRUBAH
+// ___________________________________________________________________________________________________________________________________
+// ___________________________________________________________________________________________________________________________________
+Route::get('/bedokberitajakon', [BeritajakonController::class, 'bedokberitajakon'])->middleware(['auth', 'can:admin2']); // DIRUBAH
+Route::get('/bedokberitajakon/show/{id}', [BeritajakonController::class, 'bedokberitajakonshow'])->middleware(['auth', 'can:admin2']); // DIRUBAH
+Route::get('/bedokberitajakon/update/{id}', [BeritajakonController::class, 'bedokberitajakonupdate'])->middleware(['auth', 'can:admin2'])->name('bedokberitakegiatanjakon'); // DIRUBAH
+// Route::get('/bedokumentasijakon/update/{id}', [BeritajakonController::class, 'bedokumentasijakonupdate'])
+//     ->middleware(['auth', 'can:admin2'])
+//     ->name('bedokumentasijakon.update');
+Route::post('/bedokberitajakon/updatecreate/{id}', [BeritajakonController::class, 'bedokberitajakonupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.beberitakegiatanjakonnew'); // DIRUBAH
+Route::get('/bedokberitajakon/create', [BeritajakonController::class, 'bedokberitajakoncreate'])->middleware(['auth', 'can:admin2'])->name('create.beberitakegiaran'); // DIRUBAH
+Route::post('/bedokberitajakon/createnew', [BeritajakonController::class, 'bedokberitajakoncreatenew'])->middleware(['auth', 'can:admin2'])->name('create.dokberitakegiatan'); // DIRUBAH
+Route::delete('/bedokberitajakondelete/{id}', [BeritajakonController::class, 'bedokberitajakondelete'])->middleware(['auth', 'can:admin2']); // DIRUBAH
 // ___________________________________________________________________________________________________________________________________
 
 // ------------------------- FRONTEND HALAMAN DOKUMENTASI KEGIATAN KONSTRUKSI  --------------------------
@@ -2328,6 +2340,10 @@ Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb']);
 Route::get('/strukturdputr', [StrukturController::class, 'strukturdputr']);
 Route::get('/tupoksidputr', [StrukturController::class, 'tupoksidputr']);
 
+// BAGIAN 3 ARTIKEL JAKON DPUPR KBB
+Route::get('/artikeljakon', [BeritaController::class, 'artikeljakon']);
+Route::get('/artikeljakon/show/{id}', [BeritaController::class, 'artikeljakonshow'])->name('artikeljakon.show');
+
 // BAGIAN 3 BERITA
 Route::get('/beritajakon', [BeritaController::class, 'beritajakon']);
 Route::get('/beritajakon/show/{id}', [BeritaController::class, 'beritajakonshow'])->name('berita.detailshow');
@@ -2335,7 +2351,8 @@ Route::get('/beritajakon/show/{id}', [BeritaController::class, 'beritajakonshow'
 Route::get('/dokkegiatan', [BeritajakonController::class, 'dokkegiatan']);
 Route::get('/dokkegiatan/kegiatan/{id}', [BeritajakonController::class, 'showdokkegiatan'])->name('dokumentasi.kegiatan');
 
-Route::get('/dokkegiatan/berita', [BeritajakonController::class, 'dokkegiatan'])->name('berita.kegiatan');
+Route::get('/dokkegiatan/berita', [BeritajakonController::class, 'dokberitakegiatan'])->name('berita.showkegiatan');
+Route::get('/dokkegiatan/berita/{id}', [BeritajakonController::class, 'dokberitakegiatanshow'])->name('berita.detailskegiatan');
 
 // BAGIAN 7 AHSP
 Route::get('/satuanhargamaterialkbb', [SatuanhargamaterialController::class, 'satuanhargamaterialkbb']);

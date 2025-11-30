@@ -7,9 +7,11 @@ use Illuminate\Support\Facades\File;
 
 use App\Models\artikeljakon;
 use App\Models\artikeljakonmasjaki;
+use App\Models\berita;
 use App\Models\beritajakon;
 use App\Models\dokumentasijakon;
 use App\Models\kegiatanjaskon;
+use App\Models\laporankegiatan;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -124,55 +126,48 @@ class BeritajakonController extends Controller
     ]);
     }
 
+public function beberitajakon(Request $request)
+{
+    $perPage = $request->input('perPage', 7);
+    $search = $request->input('search');
 
+    $query = berita::with('user');
 
-    public function beberitajakon(Request $request)
-    {
-        $perPage = $request->input('perPage', 15);  // Ambil jumlah data per halaman dari request
-        $search = $request->input('search');  // Ambil query pencarian dari input
+    if ($search) {
+        $query->where('judul', 'LIKE', "%{$search}%")
+              ->orWhere('keteranganberita', 'LIKE', "%{$search}%")
+              ->orWhereHas('user', function ($q) use ($search) {
+                  $q->where('name', 'LIKE', "%{$search}%");
+              });
+    }
 
-        $query = beritajakon::query();
+    // Mengurutkan data terbaru terlebih dahulu
+    $data = $query->orderBy('id', 'desc')->paginate($perPage);
 
-        if ($search) {
-            // Menambahkan kondisi pencarian pada berbagai kolom
-            $query->where('judulberita', 'LIKE', "%{$search}%")
-                ->orWhere('tanggal', 'LIKE', "%{$search}%")
-                // ->orWhere('keterangan', 'LIKE', "%{$search}%")
-                ->orWhereHas('user', function ($q) use ($search) {
-                    $q->where('name', 'LIKE', "%{$search}%");
-                });
-        }
-
-        // Ambil data yang sesuai dengan pencarian dan pagination
-        // $data = $query->paginate($perPage);
-        $data = $query->orderBy('created_at', 'desc')  // Mengurutkan berdasarkan created_at (terbaru dulu)
-        ->paginate($perPage);
-
-        if ($request->ajax()) {
-            // Kembalikan data dalam bentuk JSON untuk AJAX
-            return response()->json([
-                'html' => view('backend.03_beritajakon.01_beritajakon.partials.table', compact('data'))->render()
-            ]);
-        }
-
-        // $users = User::all();  // Ambil semua pengguna
-        $users = User::where('statusadmin_id', 1)->get();
-
-        return view('backend.03_beritajakon.01_beritajakon.index', [
-            'title' => 'Berita Jasa Konstruksi Kabupaten Blora',
-            'data' => $data,
-            'perPage' => $perPage,
-            'search' => $search,
-            'users' => $users
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view('backend.03_beritajakon.01_beritajakon.partials.table', compact('data'))->render()
         ]);
     }
+
+    $users = User::where('statusadmin_id', 1)->get();
+
+    return view('backend.03_beritajakon.01_beritajakon.index', [
+        'title' => 'Berita Jasa Konstruksi Kabupaten Bandung Barat',
+        'data' => $data,
+        'perPage' => $perPage,
+        'search' => $search,
+        'users' => $users
+    ]);
+}
+
 
     // MENU SHOW BERITA JASA KONSTRUKSI ------------------------------------------------------------------------------------
 
 public function beberitajakonshow($id)
 {
     // Cari data undang-undang berdasarkan nilai 'judul'
-    $databeritajakon = beritajakon::where('id', $id)->firstOrFail();
+    $databeritajakon = berita::where('id', $id)->firstOrFail();
     $user = Auth::user();
     $users = user::all();
     // Tampilkan form update dengan data yang ditemukan
@@ -180,7 +175,7 @@ public function beberitajakonshow($id)
         'data' => $databeritajakon,
         'user' => $user,
         'users' => $users,
-        'title' => 'Data Details Berita Jasa Konstruksi Kabupaten Blora'
+        'title' => 'View Berita Jasa Konstruksi Kabupaten Bandung Barat'
     ]);
 }
 
@@ -190,7 +185,7 @@ public function beberitajakonshow($id)
 public function beberitajakonupdate($id)
 {
     // Cari data undang-undang berdasarkan nilai 'judul'
-    $databeritajakon = beritajakon::where('id', $id)->firstOrFail();
+    $databeritajakon = berita::where('id', $id)->firstOrFail();
     $user = Auth::user();
     // $users = User::all();  // Ambil semua pengguna
 
@@ -211,36 +206,36 @@ public function beberitajakoncreateupdate(Request $request, $id)
 {
     // Validasi input
     $validatedData = $request->validate([
-        'user_id' => 'required|exists:users,id',
-        'judulberita' => 'required|string|max:255',
-        'tanggal' => 'required|date',
-        'keterangan' => 'required|string',
-        'foto' => 'nullable|image|max:15168',
-        'foto1' => 'nullable|image|max:15168',
-        'foto2' => 'nullable|image|max:15168',
+        'user_id' => 'nullable|exists:users,id',
+        'judul' => 'nullable|string|max:255',
+        'tanggal' => 'nullable|date',
+        'keteranganberita' => 'nullable|string',
+        'gambar' => 'nullable|image|max:15168',
+        'gambar1' => 'nullable|image|max:15168',
+        'gambar2' => 'nullable|image|max:15168',
     ], [
-        'user_id.required' => 'Penulis harus dipilih!',
         'user_id.exists' => 'Penulis tidak ditemukan!',
-        'judulberita.required' => 'Judul berita wajib diisi!',
-        'tanggal.required' => 'Tanggal harus diisi!',
-        'keterangan.required' => 'Keterangan wajib diisi!',
-        'foto.image' => 'Foto harus berupa gambar!',
-        'foto1.image' => 'Foto 1 harus berupa gambar!',
-        'foto2.image' => 'Foto 2 harus berupa gambar!',
+        'judul.string' => 'Judul harus berupa teks!',
+        'judul.max' => 'Judul maksimal 255 karakter!',
+        'tanggal.date' => 'Tanggal harus berupa format tanggal yang valid!',
+        'keteranganberita.string' => 'Keterangan harus berupa teks!',
+        'gambar.image' => 'Gambar harus berupa file gambar!',
+        'gambar1.image' => 'Gambar 1 harus berupa file gambar!',
+        'gambar2.image' => 'Gambar 2 harus berupa file gambar!',
     ]);
 
     // Cari data berdasarkan ID
-    $databeritajakon = beritajakon::where('id', $id)->firstOrFail();
+    $databeritajakon = berita::findOrFail($id);
 
     // Persiapkan data update
     $updateData = [
         'user_id' => $validatedData['user_id'] ?? $databeritajakon->user_id,
-        'judulberita' => $validatedData['judulberita'] ?? $databeritajakon->judulberita,
+        'judul' => $validatedData['judul'] ?? $databeritajakon->judul,
         'tanggal' => $validatedData['tanggal'] ?? $databeritajakon->tanggal,
-        'keterangan' => $validatedData['keterangan'] ?? $databeritajakon->keterangan,
+        'keteranganberita' => $validatedData['keteranganberita'] ?? $databeritajakon->keteranganberita,
     ];
 
-    // Fungsi untuk menyimpan file langsung ke folder public
+    // Fungsi untuk menyimpan file ke public
     $saveToPublic = function ($file, $pathFolder) {
         $path = public_path($pathFolder);
         if (!File::exists($path)) {
@@ -251,17 +246,15 @@ public function beberitajakoncreateupdate(Request $request, $id)
         return $pathFolder . '/' . $filename;
     };
 
-    // Simpan foto jika ada
-    if ($request->hasFile('foto')) {
-        $updateData['foto'] = $saveToPublic($request->file('foto'), '02_berita/01_berita/01_foto1');
+    // Upload file jika ada
+    if ($request->hasFile('gambar')) {
+        $updateData['gambar'] = $saveToPublic($request->file('gambar'), '02_berita/01_berita/01_gambar');
     }
-
-    if ($request->hasFile('foto1')) {
-        $updateData['foto1'] = $saveToPublic($request->file('foto1'), '02_berita/01_berita/02_foto2');
+    if ($request->hasFile('gambar1')) {
+        $updateData['gambar1'] = $saveToPublic($request->file('gambar1'), '02_berita/01_berita/02_gambar1');
     }
-
-    if ($request->hasFile('foto2')) {
-        $updateData['foto2'] = $saveToPublic($request->file('foto2'), '02_berita/01_berita/03_foto2');
+    if ($request->hasFile('gambar2')) {
+        $updateData['gambar2'] = $saveToPublic($request->file('gambar2'), '02_berita/01_berita/03_gambar2');
     }
 
     // Update data ke database
@@ -272,6 +265,7 @@ public function beberitajakoncreateupdate(Request $request, $id)
 
     return redirect('/beberitajakon');
 }
+
 
 
 // MENU CREATE BERITA JAKON      ----------------------------------------------------------------------------
@@ -300,29 +294,29 @@ public function beberitajakoncreatenew(Request $request)
 
     // Validasi input dengan pesan kustom
     $validatedData = $request->validate([
-        'judulberita' => 'required|string|max:255',
+        'judul' => 'required|string|max:255',
         'tanggal' => 'required|date',
-        'keterangan' => 'required|string',
-        'foto' => 'required|image|max:17168',
-        'foto1' => 'required|image|max:17168',
-        'foto2' => 'required|image|max:17168',
+        'keteranganberita' => 'required|string',
+        'gambar' => 'required|image|max:17168',
+        'gambar1' => 'required|image|max:17168',
+        'gambar2' => 'required|image|max:17168',
     ], [
-        'judulberita.required' => 'Judul berita wajib diisi!',
-        'judulberita.string' => 'Judul berita harus berupa teks!',
-        'judulberita.max' => 'Judul berita tidak boleh lebih dari 255 karakter!',
+        'judul.required' => 'Judul wajib diisi!',
+        'judul.string' => 'Judul harus berupa teks!',
+        'judul.max' => 'Judul tidak boleh lebih dari 255 karakter!',
         'tanggal.required' => 'Tanggal wajib diisi!',
         'tanggal.date' => 'Tanggal harus berupa format tanggal yang valid!',
-        'keterangan.required' => 'Keterangan wajib diisi!',
-        'keterangan.string' => 'Keterangan harus berupa teks!',
-        'foto.required' => 'Foto wajib diisi!',
-        'foto.image' => 'Foto harus berupa gambar!',
-        'foto.max' => 'Foto maksimal 17MB!',
-        'foto1.required' => 'Foto 1 wajib diisi!',
-        'foto1.image' => 'Foto 1 harus berupa gambar!',
-        'foto1.max' => 'Foto 1 maksimal 17MB!',
-        'foto2.required' => 'Foto 2 wajib diisi!',
-        'foto2.image' => 'Foto 2 harus berupa gambar!',
-        'foto2.max' => 'Foto 2 maksimal 17MB!',
+        'keteranganberita.required' => 'Keterangan wajib diisi!',
+        'keteranganberita.string' => 'Keterangan harus berupa teks!',
+        'gambar.required' => 'Gambar wajib diisi!',
+        'gambar.image' => 'Gambar harus berupa file gambar!',
+        'gambar.max' => 'Gambar maksimal 17MB!',
+        'gambar1.required' => 'Gambar 1 wajib diisi!',
+        'gambar1.image' => 'Gambar 1 harus berupa file gambar!',
+        'gambar1.max' => 'Gambar 1 maksimal 17MB!',
+        'gambar2.required' => 'Gambar 2 wajib diisi!',
+        'gambar2.image' => 'Gambar 2 harus berupa file gambar!',
+        'gambar2.max' => 'Gambar 2 maksimal 17MB!',
     ]);
 
     // Fungsi menyimpan file ke public
@@ -337,19 +331,19 @@ public function beberitajakoncreatenew(Request $request)
     };
 
     // Simpan file langsung ke public
-    $foto = $saveToPublic($request->file('foto'), '02_berita/01_berita/01_foto1');
-    $foto1 = $saveToPublic($request->file('foto1'), '02_berita/01_berita/02_foto2');
-    $foto2 = $saveToPublic($request->file('foto2'), '02_berita/01_berita/03_foto2');
+    $gambar = $saveToPublic($request->file('gambar'), '02_berita/01_berita/01_gambar');
+    $gambar1 = $saveToPublic($request->file('gambar1'), '02_berita/01_berita/02_gambar1');
+    $gambar2 = $saveToPublic($request->file('gambar2'), '02_berita/01_berita/03_gambar2');
 
     // Simpan ke database
-    beritajakon::create([
+    berita::create([
         'user_id' => $user_id,
-        'judulberita' => $validatedData['judulberita'],
+        'judul' => $validatedData['judul'],
         'tanggal' => $validatedData['tanggal'],
-        'keterangan' => $validatedData['keterangan'],
-        'foto' => $foto,
-        'foto1' => $foto1,
-        'foto2' => $foto2,
+        'keteranganberita' => $validatedData['keteranganberita'],
+        'gambar' => $gambar,
+        'gambar1' => $gambar1,
+        'gambar2' => $gambar2,
     ]);
 
     session()->flash('create', 'Data Berhasil Dibuat!');
@@ -357,11 +351,10 @@ public function beberitajakoncreatenew(Request $request)
 }
 
 
-
-        public function beberitajakondelete($judulberita)
+        public function beberitajakondelete($judul)
 {
     // Cari item berdasarkan judul
-    $entry = beritajakon::where('judulberita', $judulberita)->first();
+    $entry = berita::where('judul', $judul)->first();
 
     if ($entry) {
         // Jika ada file header yang terdaftar, hapus dari storage
@@ -388,7 +381,7 @@ public function beberitajakoncreatenew(Request $request)
 
         public function beartikeljakon(Request $request)
                 {
-                    $perPage = $request->input('perPage', 15);
+                    $perPage = $request->input('perPage', 5);
                     $search = $request->input('search');
 
                     $query = artikeljakonmasjaki::query();
@@ -470,7 +463,7 @@ public function beartikeljakoncreateupdate(Request $request, $id)
         'foto1' => 'nullable|image|max:7168',
         'foto2' => 'nullable|image|max:7168',
         'foto3' => 'nullable|image|max:7168',
-   'berkas' => 'required|file|mimes:pdf',
+   'berkas' => 'nullable|file|mimes:pdf',
  ], [
         'user_id.required' => 'Penulis harus dipilih!',
         'user_id.exists' => 'Penulis tidak ditemukan!',
@@ -547,68 +540,61 @@ public function beartikeljakoncreate()
         // 'data' => $jakonjabatanfungsional,
         'user' => $user,
         'users' => $users,
-        'title' => 'Create Artikel Jasa Konstruksi'
+        'title' => 'Tambah Artikel Jasa Konstruksi'
     ]);
 }
 
 // -------------------- CREATE MENU JABATAN FUNGSIONAL   ----------------------
 public function beartikeljakoncreatenew(Request $request)
 {
-    // Pastikan user yang sedang login adalah super_admin (id = 1)
+    // User ID hanya super admin (id = 1)
     $user_id = Auth::user()->statusadmin->id == 1 ? Auth::user()->id : null;
 
-    // Validasi input dengan pesan kustom
+    // Validasi input
     $validatedData = $request->validate([
-        'judul' => 'required|string|max:255',
-        'tanggal' => 'required|date',
-        'keterangan' => 'required|string',
-        'foto1' => 'required|image|max:7168',
-        'foto2' => 'required|image|max:7168',
-        'foto3' => 'required|image|max:7168',
-        'berkas' => 'required|mimes:pdf|max:8192',
+        'judul'      => 'nullable|string|max:255',
+        'tanggal'    => 'nullable|date',
+        'keterangan' => 'nullable|string',
+        'berkas'     => 'required|mimes:pdf|max:15192',
+        'foto1'      => 'nullable|image|max:7168',
+        'foto2'      => 'nullable|image|max:7168',
+        'foto3'      => 'nullable|image|max:7168',
     ], [
-        'judul.required' => 'Judul berita wajib diisi!',
-        'judul.string' => 'Judul berita harus berupa teks!',
-        'judul.max' => 'Judul berita tidak boleh lebih dari 255 karakter!',
-        'tanggal.required' => 'Tanggal wajib diisi!',
-        'tanggal.date' => 'Tanggal harus berupa format tanggal yang valid!',
-        'keterangan.required' => 'Keterangan wajib diisi!',
+        'judul.string'      => 'Judul harus berupa teks!',
+        'judul.max'         => 'Judul maksimal 255 karakter!',
+        'tanggal.date'      => 'Tanggal harus berupa format tanggal yang valid!',
         'keterangan.string' => 'Keterangan harus berupa teks!',
-        'berkas.required' => 'Berkas wajib diisi!',
-        'foto1.required' => 'Foto/Brosur 1 wajib diisi!',
-        'foto1.image' => 'Foto/Brosur 1 harus berupa gambar!',
-        'foto1.max' => 'Foto/Brosur 1 maksimal 7MB!',
-        'foto2.required' => 'Foto/Brosur 2 wajib diisi!',
-        'foto2.image' => 'Foto/Brosur 2 harus berupa gambar!',
-        'foto2.max' => 'Foto/Brosur 2 maksimal 7MB!',
-        'foto3.required' => 'Foto/Brosur 3 wajib diisi!',
-        'foto3.image' => 'Foto/Brosur 3 harus berupa gambar!',
-        'foto3.max' => 'Foto/Brosur 3 maksimal 7MB!',
+        'berkas.required'   => 'Berkas wajib diisi!',
+        'berkas.mimes'      => 'Berkas harus berupa PDF!',
+        'berkas.max'        => 'Berkas maksimal 15MB!',
+        'foto1.image'       => 'Foto 1 harus berupa gambar!',
+        'foto1.max'         => 'Foto 1 maksimal 7MB!',
+        'foto2.image'       => 'Foto 2 harus berupa gambar!',
+        'foto2.max'         => 'Foto 2 maksimal 7MB!',
+        'foto3.image'       => 'Foto 3 harus berupa gambar!',
+        'foto3.max'         => 'Foto 3 maksimal 7MB!',
     ]);
 
-    // Function kecil untuk menyimpan file ke public/
+    // Function untuk menyimpan file ke public/
     $saveToPublic = function($file, $path) {
         $filename = time() . '_' . $file->getClientOriginalName();
         $file->move(public_path($path), $filename);
         return $path . '/' . $filename;
     };
 
-    // Simpan gambar dan berkas ke public/
-    $foto1 = $saveToPublic($request->file('foto1'), '02_berita/02_artikel/01_foto1');
-    $foto2 = $saveToPublic($request->file('foto2'), '02_berita/02_artikel/02_foto2');
-    $foto3 = $saveToPublic($request->file('foto3'), '02_berita/02_artikel/03_foto3');
+    // Simpan berkas PDF
     $berkas = $saveToPublic($request->file('berkas'), '02_berita/02_artikel/04_berkas01');
 
-    // Membuat data baru di tabel beritajakon
+    // Simpan data baru ke database
     artikeljakonmasjaki::create([
-        'user_id' => $user_id,
-        'judul' => $validatedData['judul'],
-        'tanggal' => $validatedData['tanggal'],
-        'keterangan' => $validatedData['keterangan'],
-        'foto1' => $foto1,
-        'foto2' => $foto2,
-        'foto3' => $foto3,
-        'berkas' => $berkas,
+        'user_id'    => $user_id,
+        'judul'      => $validatedData['judul'] ?? null,
+        'tanggal'    => $validatedData['tanggal'] ?? null,
+        'keterangan' => $validatedData['keterangan'] ?? null,
+        'foto1'      => null, // cadangan, kosong otomatis
+        'foto2'      => null, // cadangan, kosong otomatis
+        'foto3'      => null, // cadangan, kosong otomatis
+        'berkas'     => $berkas,
     ]);
 
     session()->flash('create', 'Data Berhasil Dibuat!');
@@ -733,13 +719,13 @@ public function androidberita()
 
     public function bedokumentasijakon(Request $request)
 {
-    $perPage = $request->input('perPage', 15);
+    $perPage = $request->input('perPage', 5);
     $search = $request->input('search');
 
-    $query = dokumentasijakon::query();
+    $query = kegiatanjaskon::query();
 
     if ($search) {
-        $query->where('judul', 'LIKE', "%{$search}%");
+        $query->where('judul_kegiatan', 'LIKE', "%{$search}%");
         // Jika nanti ada kolom lain, bisa ditambahkan di sini
     }
 
@@ -752,7 +738,7 @@ public function androidberita()
     }
 
     return view('backend.03_beritajakon.03_dokumentasijakon.index', [
-        'title' => 'Dokumentasi Kegiatan Jasa Konstruksi',
+        'title' => 'Dokumentasi Kegiatan Jasa Konstruksi DPUTR KBB',
         'data' => $data,
         'perPage' => $perPage,
         'search' => $search
@@ -880,77 +866,64 @@ public function bedokumentasijakoncreate()
 public function bedokumentasijakoncreatenew(Request $request)
 {
     // Validasi
-    $validatedData = $request->validate([
-        'judul' => 'required|string|max:255',
-        'fotokegiatan1' => 'nullable|image|max:15168',
-        'fotokegiatan2' => 'nullable|image|max:15168',
-        'fotokegiatan3' => 'nullable|image|max:15168',
-        'fotokegiatan4' => 'nullable|image|max:15168',
-        'fotokegiatan5' => 'nullable|image|max:15168',
-        'fotokegiatan6' => 'nullable|image|max:15168',
-        'fotokegiatan7' => 'nullable|image|max:15168',
-        'fotokegiatan8' => 'nullable|image|max:15168',
-        'fotokegiatan9' => 'nullable|image|max:15168',
-        'fotokegiatan10' => 'nullable|image|max:15168',
-        'fotokegiatan11' => 'nullable|image|max:15168',
-        'fotokegiatan12' => 'nullable|image|max:15168',
-    ], [
-        'judul.required' => 'Judul wajib diisi!',
-        'judul.max' => 'Judul maksimal 255 karakter!',
-        'fotokegiatan1.image' => 'Foto Kegiatan 1 harus berupa gambar!',
-        'fotokegiatan1.max' => 'Foto Kegiatan 1 maksimal 15 MB!',
-        // (Kalau mau bikin pesan custom sampai foto12 tinggal duplikat aja bro)
+    $rules = [
+        'user_id' => 'required|string',
+        // 'pengawasanlokasi_id' => 'nullable|string',
+        'judul_kegiatan' => 'required|string|max:255',
+        'alamat_kegiatan' => 'required|string',
+    ];
+
+    // Tambahkan aturan untuk 20 foto (berita1–berita20)
+    for ($i = 1; $i <= 20; $i++) {
+        $rules['berita'.$i] = 'nullable|image|max:15168';
+    }
+
+    $validatedData = $request->validate($rules, [
+        'user_id.required' => 'User wajib dipilih!',
+        // 'pengawasanlokasi_id.required' => 'Pengawasan Lokasi wajib dipilih!',
+        'judul_kegiatan.required' => 'Judul Kegiatan wajib diisi!',
+        'alamat_kegiatan.required' => 'Alamat Kegiatan wajib diisi!',
     ]);
 
-    // Function simpan ke folder public/dokumentasijakon/fotoX
-    $saveToPublic = function ($file, $folder) {
+    // Helper untuk simpan file ke public/dokumentasijakon/berita{i}
+    $saveToPublic = function($file, $i) {
         if (!$file) return null;
         $filename = time() . '_' . $file->getClientOriginalName();
+        $folder = 'dokumentasijakon/berita'.$i;
         $file->move(public_path($folder), $filename);
-        return $folder . '/' . $filename;
+        return $folder . '/' . $filename; // bisa diakses via asset()
     };
 
-    // Simpan satu-satu (tanpa loop)
-    $fotokegiatan1 = $saveToPublic($request->file('fotokegiatan1'), 'dokumentasijakon/foto1');
-    $fotokegiatan2 = $saveToPublic($request->file('fotokegiatan2'), 'dokumentasijakon/foto2');
-    $fotokegiatan3 = $saveToPublic($request->file('fotokegiatan3'), 'dokumentasijakon/foto3');
-    $fotokegiatan4 = $saveToPublic($request->file('fotokegiatan4'), 'dokumentasijakon/foto4');
-    $fotokegiatan5 = $saveToPublic($request->file('fotokegiatan5'), 'dokumentasijakon/foto5');
-    $fotokegiatan6 = $saveToPublic($request->file('fotokegiatan6'), 'dokumentasijakon/foto6');
-    $fotokegiatan7 = $saveToPublic($request->file('fotokegiatan7'), 'dokumentasijakon/foto7');
-    $fotokegiatan8 = $saveToPublic($request->file('fotokegiatan8'), 'dokumentasijakon/foto8');
-    $fotokegiatan9 = $saveToPublic($request->file('fotokegiatan9'), 'dokumentasijakon/foto9');
-    $fotokegiatan10 = $saveToPublic($request->file('fotokegiatan10'), 'dokumentasijakon/foto10');
-    $fotokegiatan11 = $saveToPublic($request->file('fotokegiatan11'), 'dokumentasijakon/foto11');
-    $fotokegiatan12 = $saveToPublic($request->file('fotokegiatan12'), 'dokumentasijakon/foto12');
+    // Siapkan data untuk insert
+    $insertData = [
+        'user_id' => $validatedData['user_id'],
+        // 'pengawasanlokasi_id' => null,
+        'judul_kegiatan' => $validatedData['judul_kegiatan'],
+        'alamat_kegiatan' => $validatedData['alamat_kegiatan'],
+         'tanggal' => now(), // <-- tambahkan ini
+    ];
+
+    // Upload berita1–berita20
+    for ($i = 1; $i <= 20; $i++) {
+        $file = $request->file('berita'.$i);
+        $saved = $saveToPublic($file, $i);
+        if ($saved) {
+            $insertData['berita'.$i] = $saved;
+        }
+    }
 
     // Simpan ke database
-    dokumentasijakon::create([
-        'judul' => $validatedData['judul'],
-        'fotokegiatan1' => $fotokegiatan1,
-        'fotokegiatan2' => $fotokegiatan2,
-        'fotokegiatan3' => $fotokegiatan3,
-        'fotokegiatan4' => $fotokegiatan4,
-        'fotokegiatan5' => $fotokegiatan5,
-        'fotokegiatan6' => $fotokegiatan6,
-        'fotokegiatan7' => $fotokegiatan7,
-        'fotokegiatan8' => $fotokegiatan8,
-        'fotokegiatan9' => $fotokegiatan9,
-        'fotokegiatan10' => $fotokegiatan10,
-        'fotokegiatan11' => $fotokegiatan11,
-        'fotokegiatan12' => $fotokegiatan12,
-    ]);
+    kegiatanjaskon::create($insertData);
 
     session()->flash('create', 'Kegiatan Dokumentasi Berhasil Disimpan!');
     return redirect('/bedokumentasijakon');
-
 }
 
 
-       public function bedokumentasijakondelete($judul)
+       public function bedokumentasijakondelete($judul_kegiatan)
 {
     // Cari item berdasarkan judul
-    $entry = dokumentasijakon::where('judul', $judul)->first();
+    $entry = kegiatanjaskon::where('judul_kegiatan', $judul_kegiatan)->first();
 
     if ($entry) {
         // Jika ada file header yang terdaftar, hapus dari storage
@@ -973,7 +946,7 @@ public function bedokumentasijakoncreatenew(Request $request)
     public function bedokumentasijakonshow($id)
 {
     // Cari data undang-undang berdasarkan nilai 'judul'
-    $databeritajakon = dokumentasijakon::where('id', $id)->firstOrFail();
+    $databeritajakon = kegiatanjaskon::where('id', $id)->firstOrFail();
     $user = Auth::user();
     $users = user::all();
     // Tampilkan form update dengan data yang ditemukan
@@ -981,7 +954,7 @@ public function bedokumentasijakoncreatenew(Request $request)
         'data' => $databeritajakon,
         'user' => $user,
         'users' => $users,
-        'title' => 'Data Informasi Dokumentasi Kegiatan Konstruksi'
+        'title' => 'Data Informasi Dokumentasi Kegiatan Konstruksi KBB'
     ]);
 }
 
@@ -989,7 +962,7 @@ public function bedokumentasijakoncreatenew(Request $request)
 public function bedokumentasijakonupdate($id)
 {
     // Cari data undang-undang berdasarkan nilai 'judul'
-    $databeritajakon = dokumentasijakon::where('id', $id)->firstOrFail();
+    $databeritajakon = kegiatanjaskon::where('id', $id)->firstOrFail();
     $user = Auth::user();
     // $users = User::all();  // Ambil semua pengguna
 
@@ -1004,93 +977,62 @@ public function bedokumentasijakonupdate($id)
     ]);
 }
 
-
 public function bedokumentasijakoncreaupdate(Request $request, $id)
 {
     // Validasi input
-    $validatedData = $request->validate([
-        'judul' => 'required|string|max:255',
-        'fotokegiatan1' => 'nullable|image|max:20168',
-        'fotokegiatan2' => 'nullable|image|max:20168',
-        'fotokegiatan3' => 'nullable|image|max:20168',
-        'fotokegiatan4' => 'nullable|image|max:20168',
-        'fotokegiatan5' => 'nullable|image|max:20168',
-        'fotokegiatan6' => 'nullable|image|max:20168',
-        'fotokegiatan7' => 'nullable|image|max:20168',
-        'fotokegiatan8' => 'nullable|image|max:20168',
-        'fotokegiatan9' => 'nullable|image|max:20168',
-        'fotokegiatan10' => 'nullable|image|max:20168',
-        'fotokegiatan11' => 'nullable|image|max:20168',
-        'fotokegiatan12' => 'nullable|image|max:20168',
-    ], [
-        'judul.required' => 'Judul dokumentasi wajib diisi!',
-        'fotokegiatan1.image' => 'Foto Kegiatan 1 harus berupa gambar!',
-        'fotokegiatan2.image' => 'Foto Kegiatan 2 harus berupa gambar!',
-        'fotokegiatan3.image' => 'Foto Kegiatan 3 harus berupa gambar!',
-        'fotokegiatan4.image' => 'Foto Kegiatan 4 harus berupa gambar!',
-        'fotokegiatan5.image' => 'Foto Kegiatan 5 harus berupa gambar!',
-        'fotokegiatan6.image' => 'Foto Kegiatan 6 harus berupa gambar!',
-        'fotokegiatan7.image' => 'Foto Kegiatan 7 harus berupa gambar!',
-        'fotokegiatan8.image' => 'Foto Kegiatan 8 harus berupa gambar!',
-        'fotokegiatan9.image' => 'Foto Kegiatan 9 harus berupa gambar!',
-        'fotokegiatan10.image' => 'Foto Kegiatan 10 harus berupa gambar!',
-        'fotokegiatan11.image' => 'Foto Kegiatan 11 harus berupa gambar!',
-        'fotokegiatan12.image' => 'Foto Kegiatan 12 harus berupa gambar!',
-    ]);
-
-    // Cari data
-    $dokumentasi = dokumentasijakon::findOrFail($id);
-
-    // Helper simpan file
-    $saveToPublic = function ($file, $folder) {
-        if (!$file) return null;
-        $filename = time() . '_' . $file->getClientOriginalName();
-        $file->move(public_path($folder), $filename);
-        return $folder . '/' . $filename;
-    };
-
-    // Upload satu-satu (tanpa loop)
-    $fotokegiatan1  = $saveToPublic($request->file('fotokegiatan1'), 'dokumentasijakon/foto1');
-    $fotokegiatan2  = $saveToPublic($request->file('fotokegiatan2'), 'dokumentasijakon/foto2');
-    $fotokegiatan3  = $saveToPublic($request->file('fotokegiatan3'), 'dokumentasijakon/foto3');
-    $fotokegiatan4  = $saveToPublic($request->file('fotokegiatan4'), 'dokumentasijakon/foto4');
-    $fotokegiatan5  = $saveToPublic($request->file('fotokegiatan5'), 'dokumentasijakon/foto5');
-    $fotokegiatan6  = $saveToPublic($request->file('fotokegiatan6'), 'dokumentasijakon/foto6');
-    $fotokegiatan7  = $saveToPublic($request->file('fotokegiatan7'), 'dokumentasijakon/foto7');
-    $fotokegiatan8  = $saveToPublic($request->file('fotokegiatan8'), 'dokumentasijakon/foto8');
-    $fotokegiatan9  = $saveToPublic($request->file('fotokegiatan9'), 'dokumentasijakon/foto9');
-    $fotokegiatan10 = $saveToPublic($request->file('fotokegiatan10'), 'dokumentasijakon/foto10');
-    $fotokegiatan11 = $saveToPublic($request->file('fotokegiatan11'), 'dokumentasijakon/foto11');
-    $fotokegiatan12 = $saveToPublic($request->file('fotokegiatan12'), 'dokumentasijakon/foto12');
-
-    // Data yang diupdate
-    $updateData = [
-        'judul' => $validatedData['judul'],
+    $rules = [
+        'judul_kegiatan' => 'required|string|max:255',
     ];
 
-    if ($fotokegiatan1)  $updateData['fotokegiatan1']  = $fotokegiatan1;
-    if ($fotokegiatan2)  $updateData['fotokegiatan2']  = $fotokegiatan2;
-    if ($fotokegiatan3)  $updateData['fotokegiatan3']  = $fotokegiatan3;
-    if ($fotokegiatan4)  $updateData['fotokegiatan4']  = $fotokegiatan4;
-    if ($fotokegiatan5)  $updateData['fotokegiatan5']  = $fotokegiatan5;
-    if ($fotokegiatan6)  $updateData['fotokegiatan6']  = $fotokegiatan6;
-    if ($fotokegiatan7)  $updateData['fotokegiatan7']  = $fotokegiatan7;
-    if ($fotokegiatan8)  $updateData['fotokegiatan8']  = $fotokegiatan8;
-    if ($fotokegiatan9)  $updateData['fotokegiatan9']  = $fotokegiatan9;
-    if ($fotokegiatan10) $updateData['fotokegiatan10'] = $fotokegiatan10;
-    if ($fotokegiatan11) $updateData['fotokegiatan11'] = $fotokegiatan11;
-    if ($fotokegiatan12) $updateData['fotokegiatan12'] = $fotokegiatan12;
+    for ($i = 1; $i <= 20; $i++) {
+        $rules['berita'.$i] = 'nullable|image|max:20168'; // max ~20MB
+    }
 
-    // Update ke DB
+    $validatedData = $request->validate($rules, [
+        'judul_kegiatan.required' => 'Judul kegiatan wajib diisi!',
+    ]);
+
+    // Ambil data
+    $dokumentasi = kegiatanjaskon::findOrFail($id);
+
+    // Helper simpan file langsung ke public/
+    $saveToPublic = function ($file, $i) {
+        if (!$file) return null;
+
+        $folder = public_path('dokumentasijakon/berita'.$i);
+        if (!file_exists($folder)) {
+            mkdir($folder, 0755, true); // buat folder jika belum ada
+        }
+
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move($folder, $filename);
+
+        // Simpan path relatif supaya bisa diakses via asset()
+        return 'dokumentasijakon/berita'.$i.'/'.$filename;
+    };
+
+    // Data yang akan diupdate
+    $updateData = [
+        'judul_kegiatan' => $validatedData['judul_kegiatan'],
+    ];
+
+    // Upload dan update 20 foto
+    for ($i = 1; $i <= 20; $i++) {
+        $file = $request->file('berita'.$i);
+        $saved = $saveToPublic($file, $i);
+        if ($saved) {
+            $updateData['berita'.$i] = $saved;
+        }
+    }
+
+    // Update database
     $dokumentasi->update($updateData);
 
-    // Flash message
-session()->flash('update', 'Dokumentasi berhasil diperbarui!');
-
-// Redirect ke route update dengan id
-return redirect()->route('bedokumentasijakon.update', ['id' => $id]);
-
+    // Flash message & redirect
+    session()->flash('update', 'Dokumentasi berhasil diperbarui!');
+    return redirect()->route('bedokumentasijakon.update', $id);
 }
+
 // DATA KEGIATAN KONSTRUKSI JASA KONSTRUKSI KABUPATEN BLORA
 
 
@@ -1150,10 +1092,265 @@ public function resdokumentasishow($id)
             'data'  => $item,
         ]);
     }
+
+
+  public function dokberitakegiatan()
+{
+    $user = Auth::user();
+
+    // Data terbaru muncul paling atas
+    $data = laporankegiatan::orderBy('created_at', 'desc')->paginate(4);
+
+    return view('frontend.new.02_bagian3.05_laporankegiatan.dokberitakegiatan', [
+        'title' => 'Berita Kegiatan Jasa Konstruksi',
+        'user' => $user,
+        'data' => $data,
+    ]);
+}
+
+
+      public function dokberitakegiatanshow($id)
+  {
+      $item = laporankegiatan::findOrFail($id);
+      $data = laporankegiatan::orderBy('id', 'DESC')->paginate(4);
+    //   $data = artikeljakonmasjaki::all();
+        $user = Auth::user();
+
+        return view('frontend.new.02_bagian3.05_laporankegiatan.dokberitakegiatanshow', [
+            'title' => $item->judul ?? 'Berita Dokumentasi Sertifkasi TKK',
+            'databerita' => $item,
+            'data' => $data,
+            'user' => $user,
+        ]);
+    }
+
+
+
+   public function bedokberitajakon(Request $request)
+{
+    $perPage = $request->input('perPage', 8);
+    $search  = $request->input('search');
+
+    $query = laporankegiatan::query();
+
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+
+            // Pencarian kolom langsung
+            $q->where('judul_kegiatan', 'LIKE', "%{$search}%")
+              ->orWhere('jabatan', 'LIKE', "%{$search}%")
+              ->orWhere('keterangan_berita', 'LIKE', "%{$search}%")
+              ->orWhere('gambar', 'LIKE', "%{$search}%")
+              ->orWhereDate('tanggal', $search)
+              ->orWhere('user_id', $search);
+
+        })
+        // Pencarian relasi kegiatanjaskon -> judul_kegiatan
+        ->orWhereHas('kegiatanjaskon', function ($rel) use ($search) {
+            $rel->where('judul_kegiatan', 'LIKE', "%{$search}%");
+        });
+    }
+
+    $data = $query->orderBy('created_at', 'desc')->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view('backend.03_beritajakon.04_beritadokkegiatan.partials.table', compact('data'))->render()
+        ]);
+    }
+
+    return view('backend.03_beritajakon.04_beritadokkegiatan.index', [
+        'title' => 'Dokumentasi Berita Kegiatan Sertifikasi TKK',
+        'data' => $data,
+        'perPage' => $perPage,
+        'search' => $search
+    ]);
+}
+
+
+       public function bedokberitajakondelete($id)
+{
+    // Cari item berdasarkan judul
+    $entry = laporankegiatan::where('id', $id)->first();
+
+    if ($entry) {
+        // Jika ada file header yang terdaftar, hapus dari storage
+        // if (Storage::disk('public')->exists($entry->header)) {
+            //     Storage::disk('public')->delete($entry->header);
+        // }
+
+        // Hapus entri dari database
+        $entry->delete();
+
+        // Redirect atau memberi respons sesuai kebutuhan
+        return redirect('/bedokberitajakon')->with('delete', 'Data Berhasil Di Hapus !');
+
+    }
+
+    return redirect()->back()->with('error', 'Item not found');
+    }
+
+
+
+    public function bedokberitajakonshow($id)
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    $databeritajakon = laporankegiatan::where('id', $id)->firstOrFail();
+    $user = Auth::user();
+    $users = user::all();
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.03_beritajakon.04_beritadokkegiatan.show', [
+        'data' => $databeritajakon,
+        'user' => $user,
+        'users' => $users,
+        'title' => 'Informasi Kegiatan Sertifikasi TKK'
+    ]);
+}
+
+
+public function bedokberitajakonupdate($id)
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    $databeritajakon = laporankegiatan::where('id', $id)->firstOrFail();
+    $datakegiatan = kegiatanjaskon::all();
+    $user = Auth::user();
+    // $users = User::all();  // Ambil semua pengguna
+
+    // $users = User::where('statusadmin_id', 1)->get();
+
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.03_beritajakon.04_beritadokkegiatan.update', [
+        'data' => $databeritajakon,
+        'datakegiatan' => $datakegiatan,
+        'user' => $user,
+        // 'users' => $users,
+        'title' => 'Update Berita Kegiatan Jasa Konstruksi'
+    ]);
 }
 
 
 
+public function bedokberitajakonupdatecreate(Request $request, $id)
+{
+    // Validasi input
+    $validatedData = $request->validate([
+        'kegiatanjaskon_id'   => 'nullable|integer',
+        'user_id'             => 'nullable|integer',
+        'judul_kegiatan'      => 'required|string|max:255',
+        'jabatan'             => 'nullable|string|max:255',
+        'gambar'              => 'nullable|image|max:20168', // max ~20MB
+        'keterangan_berita'   => 'nullable|string',
+        'tanggal'             => 'nullable|date',
+    ], [
+        'judul_kegiatan.required' => 'Judul kegiatan wajib diisi!',
+    ]);
 
+    // Ambil data lama
+    $dokumentasi = laporankegiatan::findOrFail($id);
+
+    // Upload gambar single
+    if ($request->hasFile('gambar')) {
+        $file = $request->file('gambar');
+
+        $folder = public_path('dokumentasijakon/gambar');
+        if (!file_exists($folder)) {
+            mkdir($folder, 0755, true);
+        }
+
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move($folder, $filename);
+
+        $validatedData['gambar'] = 'dokumentasijakon/gambar/' . $filename;
+    }
+
+    // Update database
+    $dokumentasi->update([
+        'kegiatanjaskon_id'  => $validatedData['kegiatanjaskon_id'] ?? $dokumentasi->kegiatanjaskon_id,
+        'user_id'            => $validatedData['user_id'] ?? $dokumentasi->user_id,
+        'judul_kegiatan'     => $validatedData['judul_kegiatan'],
+        'jabatan'            => $validatedData['jabatan'] ?? $dokumentasi->jabatan,
+        'gambar'             => $validatedData['gambar'] ?? $dokumentasi->gambar,
+        'keterangan_berita'  => $validatedData['keterangan_berita'] ?? $dokumentasi->keterangan_berita,
+        'tanggal'            => $validatedData['tanggal'] ?? $dokumentasi->tanggal,
+    ]);
+
+    // Flash message & redirect
+    session()->flash('update', 'Data dokumentasi berhasil diperbarui!');
+    return redirect()->route('bedokberitakegiatanjakon', $id);
+}
+
+
+
+public function bedokberitajakoncreate()
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    // $jakonjabatanfungsional = profiljakonpersonil::where('id', $id)->firstOrFail();
+    $user = Auth::user();
+    $users = User::all();  // Ambil semua pengguna
+    $kegiatan = kegiatanjaskon::all();  // Ambil semua pengguna
+
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.03_beritajakon.04_beritadokkegiatan.create', [
+        // 'data' => $jakonjabatanfungsional,
+        'user' => $user,
+        'users' => $users,
+        'kegiatan' => $kegiatan,
+        'title' => 'Buat Dokumentasi Berita Kegiatan Jasa Konstruksi'
+    ]);
+}
+
+public function bedokberitajakoncreatenew(Request $request)
+{
+    // Validasi input
+    $validatedData = $request->validate([
+        'kegiatanjaskon_id'   => 'required|string',
+        'user_id'             => 'required|string',
+        'judul_kegiatan'      => 'required|string|max:255',
+        'jabatan'             => 'nullable|string|max:255',
+        'keterangan_berita'   => 'nullable|string',
+        'tanggal'             => 'required|date',
+        'gambar'              => 'nullable|image|max:15168', // max 15MB
+    ], [
+        'kegiatanjaskon_id.required' => 'Kegiatan wajib dipilih!',
+        'user_id.required'           => 'User wajib diisi!',
+        'judul_kegiatan.required'    => 'Judul kegiatan wajib diisi!',
+        'tanggal.required'           => 'Tanggal wajib diisi!',
+    ]);
+
+    // Upload gambar jika ada
+    if ($request->hasFile('gambar')) {
+
+        $file     = $request->file('gambar');
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $folder   = 'dokumentasijakon/gambar';
+
+        // buat folder jika belum ada
+        if (!file_exists(public_path($folder))) {
+            mkdir(public_path($folder), 0755, true);
+        }
+
+        // pindahkan file
+        $file->move(public_path($folder), $filename);
+
+        // simpan path ke database
+        $validatedData['gambar'] = $folder . '/' . $filename;
+    }
+
+    // Simpan ke database
+    laporankegiatan::create([
+        'kegiatanjaskon_id'  => $validatedData['kegiatanjaskon_id'] ?? null,
+        'user_id'            => $validatedData['user_id'] ?? null,
+        'judul_kegiatan'     => $validatedData['judul_kegiatan'],
+        'jabatan'            => $validatedData['jabatan'] ?? null,
+        'gambar'             => $validatedData['gambar'] ?? null,
+        'keterangan_berita'  => $validatedData['keterangan_berita'] ?? null,
+        'tanggal'            => $validatedData['tanggal'] ?? null, // dari input form
+    ]);
+
+    session()->flash('create', 'Data Dokumentasi berhasil disimpan!');
+    return redirect('/bedokberitajakon');
+}
+
+}
 
 

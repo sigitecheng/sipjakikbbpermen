@@ -14,9 +14,7 @@
 
 <!--begin::App Main-->
 <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">        <!--begin::App Content Header--> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
         <div class="app-content-header">
        <!--begin::Container-->
@@ -48,10 +46,11 @@
                     @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
 
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
-                        <div style="position: relative; display: inline-block; margin-right:10px;">
-                            <input type="search" id="searchInput" placeholder="Cari Berita Jasa Konstruksi ...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
-                            <i class="fas fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
-                        </div>
+                       <div style="position: relative; display: inline-block; margin-right:10px;">
+                        <input type="search" id="searchInput" placeholder="Cari Berita Jasa Konstruksi ...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
+                        <i class="bi bi-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
+                    </div>
+
                         <script>
                             function updateEntries() {
                                 let selectedValue = document.getElementById("entries").value;
@@ -78,7 +77,7 @@
 
 
                          <a href="/beberitajakon/create">
-                             <button class="button-baru">
+                             <button class="button-modern">
                              <!-- Ikon Kembali -->
                              <i class="fa fa-plus" style="margin-right: 8px;"></i>
                              Buat Berita
@@ -102,6 +101,9 @@
     <th style="width: 500px; text-align:center;">
         <i class="bi bi-newspaper"></i> Judul Berita
     </th>
+    <th style="width: 500px; text-align:center;">
+        <i class="bi bi-newspaper"></i> Foto Berita
+    </th>
     <th style="width: 150px; text-align:center;">
         <i class="bi bi-calendar3"></i> Tanggal
     </th>
@@ -112,37 +114,117 @@
 
  </thead>
  <tbody id="tableBody">
-     @foreach ($data as $item )
-     <tr class="align-middle">
-         <td style="text-align: center;">{{ $loop->iteration }}</td>
-         <td style="text-align: center;">{{$item->user->name ?? 'Data Tidak Ditemukan !'}}</td>
-         <td style="text-align: left;">{{$item->judulberita ?? 'Data Tidak Ditemukan !'}}</td>
-         <td style="text-align: center;">{{ \Carbon\Carbon::parse($item->tanggal)->translatedFormat('l, d F Y') }}</td>
+     @forelse ($data as $item)
+<tr class="align-middle">
+    <td style="text-align: center;">
+    {{ $data->firstItem() + $loop->index }}
+</td>
 
-         <td style="text-align: center; vertical-align: middle;">
-             <a href="/beberitajakon/show/{{$item->id}}" class="button-baru" title="Show">
-                 <i class="bi bi-eye"></i>View
-             </a>
-             <a href="/beberitajakon/update/{{$item->id}}" class="button-berkas" title="Update">
-                 <i class="bi bi-pencil-square"></i>Update
-             </a>
-             <a href="javascript:void(0)" class="button-merah" title="Delete"
-                   data-bs-toggle="modal" data-bs-target="#deleteModal"
-                   data-judul="{{ $item->judulberita }}"
-                   onclick="setDeleteUrl(this)">
-                    <i class="bi bi-trash"></i>Hapus
-            </a>
-         </td>
+    <td style="text-align: center;">{{ $item->user->name ?? 'Data Tidak Ditemukan !' }}</td>
+    <td style="text-align: left;">
+    @php
+        $words = explode(' ', $item->judul ?? 'Data Tidak Ditemukan !');
+        $chunks = array_chunk($words, 7); // setiap 7 kata
+    @endphp
 
-        </tr>
+    @foreach ($chunks as $chunk)
+        {{ implode(' ', $chunk) }}<br>
+    @endforeach
+</td>
+    <td style="text-align: left;">
+      <div style="margin-top: 10px;">
+            @if($item->gambar && file_exists(public_path('storage/' . $item->gambar)))
+                <img src="{{ asset('storage/' . $item->gambar) }}"
+                     alt="Gambar Berita"
+                     style="width: 100%; max-height: 300px; object-fit: contain;"
+                     loading="lazy">
+            @elseif($item->gambar)
+                <img src="{{ asset($item->gambar) }}"
+                     alt="Gambar Berita"
+                     style="width: 100%; max-height: 300px; object-fit: contain;"
+                     loading="lazy">
+            @else
+                <p style="color:#6c757d;">Data belum diupdate</p>
+            @endif
+        </div>
+    </td>
+    {{-- <td style="text-align: left;">
+    @php
+        $text = $item->keteranganberita ?? 'Data Tidak Ditemukan !';
+        $words = explode(' ', $text);
+        $chunks = array_chunk($words, 7); // setiap 7 kata
+    @endphp
 
-     @endforeach
+    @foreach ($chunks as $chunk)
+        {!! implode(' ', $chunk) !!}<br>
+    @endforeach
+</td> --}}
+
+    <td style="text-align: center;">
+    {{ $item->tanggal ? \Carbon\Carbon::parse($item->tanggal)->locale('id')->translatedFormat('l, d F Y') : '-' }}
+    </td>
+
+    <td style="text-align: center; vertical-align: middle;">
+        <a href="/beberitajakon/show/{{$item->id}}" class="button-baru" title="Show">
+            <i class="bi bi-eye"></i>
+        </a>
+        <a href="/beberitajakon/update/{{$item->id}}" class="button-berkas" title="Update">
+            <i class="bi bi-pencil-square"></i>
+        </a>
+        <a href="javascript:void(0)" class="button-merah" title="Delete"
+           data-bs-toggle="modal" data-bs-target="#deleteModal"
+           data-judul="{{ $item->judul }}"
+           onclick="setDeleteUrl(this)">
+            <i class="bi bi-trash"></i>
+        </a>
+    </td>
+</tr>
+@empty
+<tr>
+    <td colspan="100%">
+        <div style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: #6c757d;
+            background-color: #f8f9fa;
+            border: 2px dashed #ced4da;
+            border-radius: 12px;
+            font-size: 16px;
+            animation: fadeIn 0.5s ease-in-out;
+        ">
+            <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+            Data Tidak Ditemukan !!
+        </div>
+    </td>
+</tr>
+@endforelse
+
+<script>
+function setDeleteUrl(button) {
+    var judul = button.getAttribute('data-judul');
+    document.getElementById('itemName').innerText = judul;
+    document.getElementById('deleteForm').action = "/beberitajakon/delete/" + encodeURIComponent(judul);
+}
+</script>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
  </tbody>
 </table>
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 
@@ -153,11 +235,11 @@
                          <div class="modal-content">
                              <div class="modal-header">
                                  <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;" loading="lazy">
-                                 <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                              </div>
                              <div class="modal-body">
-                                 <p>Apakah Anda Ingin Menghapus Data : <span id="itemName"></span>?</p>
+                                 <p>Apakah Anda Ingin Menghapus Berita: <span id="itemName"></span>?</p>
                              </div>
                              <div class="modal-footer">
                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>

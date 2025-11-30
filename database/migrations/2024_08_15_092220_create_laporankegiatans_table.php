@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('laporankegiatans', function (Blueprint $table) {
             $table->id();
             // $table->foreignId('kegiatanjaskon_id');
-            $table->foreignId('kegiatanjaskon_id');
-            $table->foreignId('user_id');
-            $table->string('judul_kegiatan');
-            $table->string('jabatan');
+            $table->foreignId('kegiatanjaskon_id')->nullable();
+            $table->foreignId('user_id')->nullable();
+            $table->string('judul_kegiatan')->nullable();
+            $table->string('jabatan')->nullable();
             $table->string('gambar')->nullable();
             $table->text('keterangan_berita')->nullable();
-            $table->date('tanggal');
+            $table->date('tanggal')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -215,3 +215,30 @@ function searchMaterial() {
     to { opacity: 1; transform: translateY(0); }
 }
 </style>
+
+
+
+<script>
+function previewHeader(event) {
+    const previewDiv = document.getElementById('preview-header');
+    const previewImg = document.getElementById('preview-header-img');
+    const oldWrapper = document.getElementById('old-header-wrapper');
+
+    const file = event.target.files[0];
+
+    if (file) {
+        previewDiv.style.display = "block";    // Tampilkan preview
+        previewImg.src = URL.createObjectURL(file);
+
+        oldWrapper.style.opacity = "0.4";      // Gambar lama dipudarkan
+        oldWrapper.style.filter = "grayscale(100%)"; // Tambah efek abu² biar jelas ini yg lama
+    }
+}
+</script>
+
+
+
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
+
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')

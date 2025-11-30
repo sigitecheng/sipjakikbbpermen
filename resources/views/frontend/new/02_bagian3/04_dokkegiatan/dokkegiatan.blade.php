@@ -35,8 +35,7 @@
                     <div class="col-lg-5">
                         <div class="tg-header__top-right">
                             <ul class="list-wrap">
-                                                             @include('frontend.A00_new.01_halamanutama.newheader')
-
+                                                      @include('frontend.A00_new.01_halamanutama.newlogin')
 
                                 {{-- <li>
                                     <div class="tg-header__top-social">
@@ -160,15 +159,24 @@
 
                     <div class="row justify-content-center">
                         <div class="col-44">
-                            <div class="team__details-img">
-                                @if($item->berita1 && file_exists(public_path('storage/' . $item->berita1)))
-                                    <img src="{{ asset('storage/' . $item->berita1) }}" alt="Berita 1" loading="lazy">
-                                @elseif($item->berita1)
-                                    <img src="{{ asset($item->berita1) }}" alt="Berita 1" loading="lazy">
-                                @else
-                                    <img src="assets/img/team/team_details.jpg" alt="Placeholder Berita 1">
-                                @endif
-                            </div>
+                           <div class="team__details-img" style="width: 100%; max-height: 300px; overflow: hidden; text-align: center;">
+    @if($item->berita1 && file_exists(public_path('storage/' . $item->berita1)))
+        <img src="{{ asset('storage/' . $item->berita1) }}"
+             alt="Berita 1"
+             loading="lazy"
+             style="width: 100%; max-height: 300px; object-fit: cover;">
+    @elseif($item->berita1)
+        <img src="{{ asset($item->berita1) }}"
+             alt="Berita 1"
+             loading="lazy"
+             style="width: 100%; max-height: 300px; object-fit: cover;">
+    @else
+        <img src="assets/img/team/team_details.jpg"
+             alt="Placeholder Berita 1"
+             style="width: 100%; max-height: 300px; object-fit: cover;">
+    @endif
+</div>
+
                         </div>
                         <div class="col-56">
                         <div class="team__details-info-wrap">
@@ -191,8 +199,9 @@
                                                     <img src="{{ asset($value) }}" alt="Berita {{ $i }}" class="injectable">
                                                 </a>
                                             @else
-                                                <span style="font-size: 12px; color: #888;">Data berita {{ $i }} belum diupdate</span>
-                                            @endif
+                                            <span style="display:none;">Data berita {{ $i }} belum diupdate</span>
+
+                                                @endif
                                         </li>
                                     @endfor
                                     </ul>
@@ -222,7 +231,7 @@
                                     </div>
                                     <div class="content">
                                         <span>Lihat Berita Kegiatan</span>
-                                        <a href="{{ route('berita.kegiatan') }}">Berita Kegiatan Sertifikasi TKK</a>
+                                        <a href="{{ route('berita.showkegiatan') }}">Berita Kegiatan Sertifikasi TKK</a>
                                     </div>
                                 </li>
 

@@ -1,23 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -33,9 +13,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
      <div class="app-content-header">
@@ -67,9 +45,13 @@
 
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
                         <div style="position: relative; display: inline-block; margin-right:10px;">
-                            <input type="search" id="searchInput" placeholder="Cari Dokumentasi Kegiatan ...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
-                            <i class="fas fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
+                            <input type="search" id="searchInput" placeholder="Cari Dokumentasi Kegiatan ...." onkeyup="searchTable()"
+                                style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
+
+                            <!-- Icon kaca pembesar -->
+                            <i class="bi bi-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
                         </div>
+
                         <script>
                             function updateEntries() {
                                 let selectedValue = document.getElementById("entries").value;
@@ -96,7 +78,7 @@
 
 
                          <a href="/bedokumentasijakon/create">
-                             <button class="button-baru">
+                             <button class="button-modern">
                              <!-- Ikon Kembali -->
                              <i class="fa fa-plus" style="margin-right: 8px;"></i>
                              Buat Dokumentasi
@@ -127,7 +109,7 @@
      @forelse ($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
-         <td style="text-align: left;">{{$item->judul ?? 'Data Tidak Di Temukan'}}</td>
+         <td style="text-align: left;">{{$item->judul_kegiatan ?? 'Data Tidak Di Temukan'}}</td>
          <td style="text-align: center; vertical-align: middle;">
              <a href="/bedokumentasijakon/show/{{$item->id}}" class="button-baru" title="Show">
                  <i class="bi bi-eye"></i>
@@ -137,7 +119,7 @@
              </a>
              <a href="javascript:void(0)" class="button-merah" title="Delete"
                    data-bs-toggle="modal" data-bs-target="#deleteModal"
-                   data-judul="{{ $item->judul }}"
+                   data-judul="{{ $item->judul_kegiatan }}"
                    onclick="setDeleteUrl(this)">
                     <i class="bi bi-trash"></i>
             </a>
@@ -181,7 +163,7 @@
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 
@@ -192,7 +174,7 @@
                          <div class="modal-content">
                              <div class="modal-header">
                                  <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                 <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                              </div>
                              <div class="modal-body">

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('agendastatuses', function (Blueprint $table) {
             $table->id();
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

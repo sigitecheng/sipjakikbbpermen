@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('metodepengadaans', function (Blueprint $table) {
             $table->id();
-            $table->string('metode');
+            $table->string('metode')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

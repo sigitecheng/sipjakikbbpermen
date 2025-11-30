@@ -13,9 +13,8 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
 
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
             <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -56,15 +55,18 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/beberitajakon">
-                    <button class="button-newvalidasi">
-                    <!-- Ikon Kembali -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    viewBox="0 0 16 16" style="margin-right: 8px;">
-                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-               </svg>
-
-                    Kembali
-                </button>
+                   <button class="button-modern">
+    <!-- Ikon Panah Kiri -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16" height="16"
+         fill="currentColor"
+         viewBox="0 0 16 16"
+         style="margin-right: 8px;">
+        <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+    </svg>
+    Kembali
+</button>
             </a>
         </div>
         <hr>
@@ -79,153 +81,163 @@
 
                             <!-- begin::Body -->
                             <div class="card-body">
-                                <div class="row">
-                                    <!-- Left Column (6/12) -->
-                                    <div class="col-md-6">
-                                        <!-- User ID -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="user_id">
-                                                <i class="bi bi-person" style="margin-right: 8px; color: navy;"></i> User ID
-                                            </label>
-                                            <select id="user_id" name="user_id" class="form-control @error('user_id') is-invalid @enderror">
-                                                <option value="" disabled selected>Pilih Penulis</option>
-                                                @foreach($users as $user)
-                                                    <option value="{{ $user->id }}" {{ old('user_id', $data->user_id) == $user->id ? 'selected' : '' }}>
-                                                        {{ $user->name }}
-                                                    </option>
-                                                @endforeach
-                                            </select>
-                                            @error('user_id')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                        </div>
+                            <div class="row">
+    <!-- Left Column (6/12) -->
+    <div class="col-md-6">
+        <!-- User ID -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="user_id">
+                <i class="bi bi-person" style="margin-right: 8px; color: navy;"></i> Penulis Berita
+            </label>
+            <select id="user_id" name="user_id" class="form-control @error('user_id') is-invalid @enderror">
+                <option value="" disabled selected>Pilih Penulis</option>
+                @foreach($users as $user)
+                    <option value="{{ $user->id }}" {{ old('user_id', $data->user_id) == $user->id ? 'selected' : '' }}>
+                        {{ $user->name }}
+                    </option>
+                @endforeach
+            </select>
+            @error('user_id')
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
 
-                                        <!-- Judul Berita -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="judulberita">
-                                                <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Judul Berita
-                                            </label>
-                                            <input type="text" id="judulberita" name="judulberita" class="form-control @error('judulberita') is-invalid @enderror" value="{{ old('judulberita', $data->judulberita) }}" />
-                                            @error('judulberita')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                        </div>
+        <!-- Judul Berita -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="judul">
+                <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Judul Berita
+            </label>
+            <input type="text" id="judul" name="judul" class="form-control @error('judul') is-invalid @enderror"
+                   value="{{ old('judul', $data->judul) }}" />
+            @error('judul')
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
 
-                                        <!-- Tanggal -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="tanggal">
-                                                <i class="bi bi-calendar" style="margin-right: 8px; color: navy;"></i> Tanggal
-                                            </label>
-                                            <input type="date" id="tanggal" name="tanggal" class="form-control @error('tanggal') is-invalid @enderror" value="{{ old('tanggal', $data->tanggal) }}" />
-                                            @error('tanggal')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                        </div>
+        <!-- Tanggal -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="tanggal">
+                <i class="bi bi-calendar" style="margin-right: 8px; color: navy;"></i> Tanggal
+            </label>
+            <input type="date" id="tanggal" name="tanggal" class="form-control @error('tanggal') is-invalid @enderror"
+                   value="{{ old('tanggal', $data->tanggal) }}" />
+            @error('tanggal')
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
 
-                                        <div class="mb-3">
-                                            <label class="form-label" for="keterangan">
-                                                <i class="bi bi-file-earmark-text" style="margin-right: 8px; color: navy;"></i> Keterangan
-                                            </label>
-                                            <textarea id="keterangan" name="keterangan" class="form-control @error('keterangan') is-invalid @enderror" style="height: 300px;">{{ old('keterangan', $data->keterangan) }}</textarea>
-                                            @error('keterangan')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                        </div>
+        <!-- keteranganberita -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="keteranganberita">
+                <i class="bi bi-file-earmark-text" style="margin-right: 8px; color: navy;"></i> keteranganberita
+            </label>
+            <textarea id="keteranganberita" name="keteranganberita" class="form-control @error('keteranganberita') is-invalid @enderror" style="height: 300px;">{{ old('keteranganberita', $data->keteranganberita) }}</textarea>
+            @error('keteranganberita')
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+    </div>
+    <!-- End Left Column -->
 
-                                    </div>
-                                    <!-- End Left Column -->
+    <!-- Right Column (6/12) -->
+    <div class="col-md-6">
+    <!-- Foto 1 -->
+    <div class="form-modern mb-3">
+        <label class="form-label-modern" for="gambar">
+            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Berita 1
+        </label>
+        <input type="file" id="gambar" name="gambar" class="form-control @error('gambar') is-invalid @enderror" onchange="previewHeader(event, 'preview-gambar', 'old-gambar-wrapper')" />
+        @error('gambar')
+        <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
 
-                                    <!-- Right Column (6/12) -->
-                                    <div class="col-md-6">
-                                        <!-- Keterangan -->
+        <!-- Preview Gambar Baru -->
+        <div id="preview-gambar" style="margin-top: 10px; display: none;">
+            <p style="font-weight: bold; color: green; margin-bottom: 5px;">Foto Baru:</p>
+            <img src="" alt="Preview Foto 1" style="width: 100%; max-height: 200px; object-fit: contain;">
+        </div>
 
-                                        <!-- Foto -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="foto">
-                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto 1
-                                            </label>
-                                            <input type="file" id="foto" name="foto" class="form-control @error('foto') is-invalid @enderror" />
-                                            @error('foto')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                            @if ($data->foto)
-                                            <div style="margin-top: 10px;">
-                                                @if($data->foto && file_exists(public_path('storage/' . $data->foto)))
-                                                    <!-- Menampilkan gambar dari storage -->
-                                                    <img src="{{ asset('storage/' . $data->foto) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 200px; object-fit: contain;">
-                                                @elseif($data->foto)
-                                                    <!-- Menampilkan gambar dari path luar storage -->
-                                                    <img src="{{ asset($data->foto) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 200px; object-fit: contain;">
-                                                @else
-                                                    <!-- Placeholder jika tidak ada data -->
-                                                    <p>Data belum diupdate</p>
-                                                @endif
-                                            @endif
-                                            </div>
+        <!-- Gambar Lama -->
+        @if($data->gambar)
+        <div id="old-gambar-wrapper" style="margin-top: 10px;">
+            <p style="font-weight: bold; color: gray; margin-bottom: 5px;">Foto Lama:</p>
+            @if(file_exists(public_path('storage/' . $data->gambar)))
+                <img src="{{ asset('storage/' . $data->gambar) }}" alt="Foto 1" style="width: 100%; max-height: 200px; object-fit: contain;">
+            @else
+                <img src="{{ asset($data->gambar) }}" alt="Foto 1" style="width: 100%; max-height: 200px; object-fit: contain;">
+            @endif
+        </div>
+        @endif
+    </div>
 
-                                        <!-- Foto 1 -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="foto1">
-                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto 2
-                                            </label>
-                                            <input type="file" id="foto1" name="foto1" class="form-control @error('foto1') is-invalid @enderror" />
-                                            @error('foto1')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                            @if ($data->foto1)
-                                            <div style="margin-top: 10px;">
-                                                @if($data->foto1 && file_exists(public_path('storage/' . $data->foto1)))
-                                                    <!-- Menampilkan gambar dari storage -->
-                                                    <img src="{{ asset('storage/' . $data->foto1) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 200px; object-fit: contain;">
-                                                @elseif($data->foto1)
-                                                    <!-- Menampilkan gambar dari path luar storage -->
-                                                    <img src="{{ asset($data->foto1) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 200px; object-fit: contain;">
-                                                @else
-                                                    <!-- Placeholder jika tidak ada data -->
-                                                    <p>Data belum diupdate</p>
-                                                @endif
-                                            @endif
-                                            </div>
-                                        </div>
+    <!-- Foto 2 -->
+    <div class="form-modern mb-3">
+        <label class="form-label-modern" for="gambar1">
+            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Berita 2
+        </label>
+        <input type="file" id="gambar1" name="gambar1" class="form-control @error('gambar1') is-invalid @enderror" onchange="previewHeader(event, 'preview-gambar1', 'old-gambar1-wrapper')" />
+        @error('gambar1')
+        <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
 
-                                        <!-- Foto 2 -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="foto2">
-                                                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto 3
-                                            </label>
-                                            <input type="file" id="foto2" name="foto2" class="form-control @error('foto2') is-invalid @enderror" />
-                                            @error('foto2')
-                                            <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
-                                            @if ($data->foto2)
-                                            <div style="margin-top: 10px;">
-                                                @if($data->foto2 && file_exists(public_path('storage/' . $data->foto2)))
-                                                    <!-- Menampilkan gambar dari storage -->
-                                                    <img src="{{ asset('storage/' . $data->foto2) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 200px; object-fit: contain;">
-                                                @elseif($data->foto2)
-                                                    <!-- Menampilkan gambar dari path luar storage -->
-                                                    <img src="{{ asset($data->foto2) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 200px; object-fit: contain;">
-                                                @else
-                                                    <!-- Placeholder jika tidak ada data -->
-                                                    <p>Data belum diupdate</p>
-                                                @endif
-                                            @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Right Column -->
-                                </div>
-                                <!-- End row -->
+        <div id="preview-gambar1" style="margin-top: 10px; display: none;">
+            <p style="font-weight: bold; color: green; margin-bottom: 5px;">Foto Baru:</p>
+            <img src="" alt="Preview Foto 2" style="width: 100%; max-height: 200px; object-fit: contain;">
+        </div>
+
+        @if($data->gambar1)
+        <div id="old-gambar1-wrapper" style="margin-top: 10px;">
+            <p style="font-weight: bold; color: gray; margin-bottom: 5px;">Foto Lama:</p>
+            @if(file_exists(public_path('storage/' . $data->gambar1)))
+                <img src="{{ asset('storage/' . $data->gambar1) }}" alt="Foto 2" style="width: 100%; max-height: 200px; object-fit: contain;">
+            @else
+                <img src="{{ asset($data->gambar1) }}" alt="Foto 2" style="width: 100%; max-height: 200px; object-fit: contain;">
+            @endif
+        </div>
+        @endif
+    </div>
+
+    <!-- Foto 3 -->
+    <div class="form-modern mb-3">
+        <label class="form-label-modern" for="gambar2">
+            <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Foto Berita 3
+        </label>
+        <input type="file" id="gambar2" name="gambar2" class="form-control @error('gambar2') is-invalid @enderror" onchange="previewHeader(event, 'preview-gambar2', 'old-gambar2-wrapper')" />
+        @error('gambar2')
+        <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+
+        <div id="preview-gambar2" style="margin-top: 10px; display: none;">
+            <p style="font-weight: bold; color: green; margin-bottom: 5px;">Foto Baru:</p>
+            <img src="" alt="Preview Foto 3" style="width: 100%; max-height: 200px; object-fit: contain;">
+        </div>
+
+        @if($data->gambar2)
+        <div id="old-gambar2-wrapper" style="margin-top: 10px;">
+            <p style="font-weight: bold; color: gray; margin-bottom: 5px;">Foto Lama:</p>
+            @if(file_exists(public_path('storage/' . $data->gambar2)))
+                <img src="{{ asset('storage/' . $data->gambar2) }}" alt="Foto 3" style="width: 100%; max-height: 200px; object-fit: contain;">
+            @else
+                <img src="{{ asset($data->gambar2) }}" alt="Foto 3" style="width: 100%; max-height: 200px; object-fit: contain;">
+            @endif
+        </div>
+        @endif
+    </div>
+</div>
+
+</div>
+
                             </div>
                             <!-- end::Body -->
 
-                            <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
+                            <div style="display: flex; justify-content: flex-end; margin-top:20px; margin-bottom:20px;">
                                 <div class="flex justify-end">
                                     <button type="button" onclick="openModal()" class="button-berkas">
-
-
-                                    <span style="font-family: 'Poppins', sans-serif;">Perbaikan Berita ?</span>
+                                    <!-- Icon Pencil Square -->
+                                    <i class="bi bi-pencil-square" style="margin-right: 6px;"></i>
+                                    <span style="font-family: 'Poppins', sans-serif;">Perbaikan Data ?</span>
                                 </button>
+
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
@@ -309,3 +321,23 @@
 
 
       @include('backend.00_administrator.00_baganterpisah.02_footer')
+
+
+
+<!-- Script Preview -->
+<script>
+function previewHeader(event, previewId, oldWrapperId) {
+    const previewDiv = document.getElementById(previewId);
+    const previewImg = previewDiv.querySelector('img');
+    const oldWrapper = document.getElementById(oldWrapperId);
+
+    const file = event.target.files[0];
+    if (file) {
+        previewDiv.style.display = "block";
+        previewImg.src = URL.createObjectURL(file);
+
+        oldWrapper.style.opacity = "0.4";
+        oldWrapper.style.filter = "grayscale(100%)";
+    }
+}
+</script>

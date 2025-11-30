@@ -89,47 +89,37 @@
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Header: Navy PUPR (#002b5b) + gradasi elegan */
+/* Header dengan warna sesuai sidebar navy-orange */
 .zebra-table thead {
-  background: linear-gradient(135deg, #002b5b, #013a78);
-}
-
-.zebra-table th {
+  background: linear-gradient(135deg,
+      #020237,   /* navy gelap */
+      #05054D,   /* navy keunguan */
+      #0A0A70    /* biru navy terang */
+  );
   color: #fff;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 16px 14px;
-  letter-spacing: 0.7px;
+}
+
+.zebra-table thead th {
+  padding: 12px 16px;
+  font-weight: 600;
   text-align: left;
-  border-bottom: 1px solid #01345e;
-  font-size: 14px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Isi tabel */
-.zebra-table td {
-  padding: 14px 14px;
-  border-bottom: 1px solid #f0f2f5;
-  color: #444;
-  font-weight: 400;
-  background-color: #fff;
+/* Hover baris dengan aksen orange */
+.zebra-table tbody tr:hover {
+  background: rgba(245, 166, 35, 0.12); /* orange lembut */
+  transition: 0.3s ease;
 }
 
-/* Zebra effect */
-.zebra-table tbody tr:nth-child(even) td {
-  background-color: #f8f9fc;
+/* Zebra style */
+.zebra-table tbody tr:nth-child(even) {
+  background: #f7f9fc;
 }
 
-/* Hover: abu-abu lembut saat mouse bergerak */
-.zebra-table tbody tr:hover td {
-  background-color: #e0e0e0 !important; /* override zebra */
-  transition: all 0.25s ease;
-}
-
-/* Hapus garis vertikal */
-.zebra-table th,
-.zebra-table td {
-  border-left: none;
-  border-right: none;
+.zebra-table tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
 }
 
 /* Corner radius header */
