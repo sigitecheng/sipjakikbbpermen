@@ -142,10 +142,16 @@
 
     <!-- main-area -->
     <main class="main-area fix">
-         <section class="breadcrumb__area">
-            <div class="breadcrumb__bg" data-background="/assets/assets/img/bg/perbaikanbanner.png"></div>
-                   </section>
 
+<section style="
+    background-image: url('/assets/assets/img/bg/perbaikanbanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 145px;
+">
+</section>
+<br>
         <section class="department-details-section";>
     <div class="container">
         <div class="row">

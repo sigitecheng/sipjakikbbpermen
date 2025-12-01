@@ -144,11 +144,15 @@
     <!-- main-area -->
     <main class="main-area fix">
 
+<section style="
+    background-image: url('/assets/assets/img/bg/perbaikanbanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 215px;
+">
+</section>
 
-        <!-- breadcrumb-area -->
-<section class="breadcrumb__area">
-            <div class="breadcrumb__bg" data-background="/assets/assets/img/bg/perbaikanbanner.png"></div>
-                   </section>
         <!-- breadcrumb-area-end -->
 
         <!-- contact-map -->

@@ -141,9 +141,14 @@
     <!-- main-area -->
     <main class="main-area fix">
 
-<section class="breadcrumb__area">
-            <div class="breadcrumb__bg" data-background="/assets/assets/img/bg/perbaikanbanner.png"></div>
-                   </section>
+<section style="
+    background-image: url('/assets/assets/img/bg/perbaikanbanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 215px;
+">
+</section>
 
         <!-- contact-map -->
         <div class="contact-map" style="margin-top: -75px;">
