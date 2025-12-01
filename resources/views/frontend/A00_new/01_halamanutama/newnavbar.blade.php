@@ -53,8 +53,10 @@
                                     <ul class="sub-menu">
                                          <li class="menu-item-has-children"><a href="#">Badan Usaha Jasa Konstruksi</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">BUJK Konstruksi</a></li>
-                                                <li><a href="#">BUJK Konsultasi Konstruksi</a></li>
+                                                <li><a href="/databujkkontruksi">BUJK Konstruksi</a></li>
+                                                <li><a href="/databujkkonsultasi">BUJK Konsultasi Konstruksi</a></li>
+                                                <li><a href="/dataasosiasi">Asosiasi Konstruksi</a></li>
+                                                <li><a href="/statistikbujk">Data Statistik BUJK</a></li>
                                             </ul>
                                         </li>
 

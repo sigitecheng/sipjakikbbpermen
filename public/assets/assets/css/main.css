@@ -1214,7 +1214,10 @@ textarea {
     padding: 50px 0 60px;
   }
 }
-.breadcrumb__bg {
+
+
+
+/* .breadcrumb__bg {
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -1235,7 +1238,30 @@ textarea {
   height: 100%;
   background: linear-gradient(90deg, #01022E 0%, rgba(1, 2, 46, 0.5) 102.5%);
   z-index: -1;
+} */
+
+
+.breadcrumb__bg {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 65%;
+    z-index: -1;
+
+    /* HILANGKAN efek aneh */
+    background-blend-mode: normal !important;
+    background-color: transparent !important;
 }
+
+/* HILANGKAN OVERLAY GRADIENT */
+.breadcrumb__bg::before {
+    content: none !important;
+}
+
 .breadcrumb__content .title {
   margin-bottom: 12px;
   font-size: 40px;

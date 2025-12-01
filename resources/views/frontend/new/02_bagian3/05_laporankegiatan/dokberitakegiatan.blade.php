@@ -141,14 +141,12 @@
 
     <!-- main-area -->
     <main class="main-area fix">
-
-
-        <!-- breadcrumb-area -->
-        <section class="breadcrumb__area">
-            <div class="breadcrumb__bg"></div>
+<section class="breadcrumb__area">
+            <div class="breadcrumb__bg" data-background="/assets/assets/img/bg/perbaikanbanner.png"></div>
                    </section>
+
         <!-- about-area -->
-        <section class="about__area-six section-py-130">
+        <section class="about__area-six section-py-200">
             <div class="container">
                 @foreach ($data->sortByDesc('created_at')->take(1) as $item)
                 <div class="row align-items-center justify-content-center">

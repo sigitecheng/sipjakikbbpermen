@@ -140,18 +140,12 @@
 
     <!-- main-area -->
     <main class="main-area fix">
-
-
-
-
-        <!-- breadcrumb-area -->
-        <section class="breadcrumb__area">
-            <div class="breadcrumb__bg" data-background="assets/img/bg/breadcrumb__bg.jpg"></div>
-        </section>
-        <!-- breadcrumb-area-end -->
+<section class="breadcrumb__area">
+            <div class="breadcrumb__bg" data-background="/assets/assets/img/bg/perbaikanbanner.png"></div>
+                   </section>
 
         <!-- team-details -->
-        <section class="team__details-area section-py-130">
+        <section class="team__details-area section-py-200">
             <div class="container">
 
                     @foreach ($data as $item)

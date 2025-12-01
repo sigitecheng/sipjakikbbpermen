@@ -60,9 +60,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -87,11 +85,13 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
-                <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
+
+                       <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
 
                     <a href="/bebujkkonsultan">
-                         <button class="button-newvalidasi">
+                         <button class="button-modern">
                          <!-- Ikon Kembali -->
                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -102,10 +102,10 @@
                      </button>
                      </a>
                      <a href="/bebujkkonsultan/createsubklasifikasi/{{$data->id}}">
-                        <button class="button-baru">
+                        <button class="button-modern">
                          <!-- Ikon Kembali -->
                          <i class="fa fa-plus" style="margin-right: 8px;"></i>
-                         Create
+                         Tambah Data
                      </button>
                      </a>
                  </div>

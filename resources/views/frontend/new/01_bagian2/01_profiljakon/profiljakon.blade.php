@@ -146,14 +146,13 @@
 
 
         <!-- breadcrumb-area -->
-        <section class="breadcrumb__area">
-            <div class="breadcrumb__bg" data-background="assets/img/bg/breadcrumb__bg.jpg"></div>
-
-        </section>
+<section class="breadcrumb__area">
+            <div class="breadcrumb__bg" data-background="/assets/assets/img/bg/perbaikanbanner.png"></div>
+                   </section>
         <!-- breadcrumb-area-end -->
 
         <!-- contact-map -->
-        <div class="contact-map">
+        <div class="contact-map" style="margin-top: -75px;">
        <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.708872415356!2d107.5077697!3d-6.8426327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e30b6d2e588f%3A0x771927a54beabd65!2sDINAS%20PUTR%20Kabupaten%20Bandung%20Barat!5e0!3m2!1sid!2sid!4v1732690000000!5m2!1sid!2sid"
   width="600"

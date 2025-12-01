@@ -78,7 +78,7 @@ class BujkkontraktorController extends Controller
             }
 
             return view('backend.04_datajakon.03_asosiasimasjaki.index', [
-                'title' => 'Asosiasi Mas Jaki Blora',
+                'title' => 'Asosiasi Jasa Konstruksi Kabupaten Bandung Barat',
                 'data' => $data,
                 'perPage' => $perPage,
                 'search' => $search
@@ -91,7 +91,7 @@ class BujkkontraktorController extends Controller
             $data = asosiasimasjaki::all();
 
             return view('backend.04_datajakon.03_asosiasimasjaki.create', [
-                'title' => 'Asosiasi Mas Jaki Blora',
+                'title' => 'Asosiasi Jasa Konstruksi Kabupaten Bandung Barat',
                 'data' => $data,
                 'user' => $user,
                 // 'search' => $search
@@ -154,7 +154,7 @@ class BujkkontraktorController extends Controller
             $user = Auth::user();
 
         return view('backend.04_datajakon.01_bujkkonstruksi.show', [
-            'title' => 'Data Asosiasi Mas Jaki',
+            'title' => 'Data Asosiasi Jasa Konstruksi KBB',
             'data' => $datasosiasi,
         ]);
         }
@@ -166,7 +166,7 @@ class BujkkontraktorController extends Controller
             $user = Auth::user();
 
         return view('backend.04_datajakon.03_asosiasimasjaki.update', [
-            'title' => 'Update Data Asosiasi Mas Jaki',
+            'title' => 'Update Data Asosiasi Jasa Konstruksi Kabupaten Bandung Barat',
             'data' => $datasosiasi,
         ]);
         }
@@ -366,69 +366,54 @@ public function bebujkkonstruksicreatenew(Request $request)
         'asosiasimasjaki_id' => 'nullable|integer',
         'namalengkap' => 'nullable|string|max:255',
         'alamat' => 'nullable|string',
-        'no_telepon' => 'nullable|string|max:255',
+        'no_telepon' => 'nullable|string|max:20', // aman untuk nomor diawali 0
         'email' => 'nullable|email',
-        'nomorindukberusaha' => 'nullable|string|max:255',
+        'nomorindukberusaha' => 'nullable|string|max:20',
         'pju' => 'nullable|string|max:255',
         'no_akte' => 'nullable|string|max:255',
         'tanggal' => 'nullable|date',
         'nama_notaris' => 'nullable|string|max:255',
         'no_pengesahan' => 'nullable|string|max:255',
         'uploadberkas' => 'nullable|mimes:pdf|max:15360',
-    ], [
-        // 'asosiasimasjaki_id.required' => 'Asosiasi harus dipilih!',
-        // 'namalengkap.required' => 'Nama Lengkap wajib diisi!',
-        // 'alamat.required' => 'Alamat wajib diisi!',
-        // 'no_telepon.required' => 'Nomor Telepon wajib diisi!',
-        // 'email.required' => 'Email wajib diisi!',
-        // 'nomorindukberusaha.required' => 'Nomor Induk Berusaha wajib diisi!',
-        // 'pju.required' => 'PJU wajib diisi!',
-        // 'no_akte.required' => 'No Akte wajib diisi!',
-        // 'tanggal.required' => 'Tanggal wajib diisi!',
-        // 'nama_notaris.required' => 'Nama Notaris wajib diisi!',
-        // 'no_pengesahan.required' => 'No Pengesahan wajib diisi!',
-        // 'uploadberkas.required' => 'Berkas wajib diunggah!',
-        // 'uploadberkas.mimes' => 'Berkas harus berupa file PDF!',
     ]);
 
-    // Ambil ID default dari sub kontraktor (pastikan tidak null di DB!)
-    $bujkkontraktorsub_id = bujkkonsultansub::first()->id;
+    // Ambil record bujkkonsultansub pertama (fallback null jika kosong)
+    $bujkkontraktorsub = bujkkonsultansub::first();
+    $bujkkontraktorsub_id = $bujkkontraktorsub ? $bujkkontraktorsub->id : null;
 
     // Ambil ID user yang sedang login
     $user_id = Auth::user()->id;
 
+    // Handle upload file jika ada
     if ($request->hasFile('uploadberkas')) {
         $file = $request->file('uploadberkas');
         $namaFile = time() . '_' . $file->getClientOriginalName();
         $tujuanPath = public_path('03_datajakon/02_sertifikasi');
 
-        // Pastikan foldernya ada
         if (!file_exists($tujuanPath)) {
             mkdir($tujuanPath, 0777, true);
         }
 
         $file->move($tujuanPath, $namaFile);
-
-        // Simpan nama file ke database
         $validatedData['uploadberkas'] = '03_datajakon/02_sertifikasi/' . $namaFile;
     }
 
     // Simpan ke DB
     bujkkontraktor::create([
-        'user_id' => $user_id, // Menyimpan user_id berdasarkan login
+        'user_id' => $user_id,
         'bujkkontraktorsub_id' => $bujkkontraktorsub_id,
-        'asosiasimasjaki_id' => $validatedData['asosiasimasjaki_id'] ?? null ,
-        'namalengkap' => $validatedData['namalengkap'] ?? null ,
-        'alamat' => $validatedData['alamat'] ?? null ,
-        'no_telepon' => $validatedData['no_telepon'] ?? null ,
-        'email' => $validatedData['email'] ?? null ,
-        'nomorindukberusaha' => $validatedData['nomorindukberusaha'] ?? null ,
-        'pju' => $validatedData['pju'] ?? null ,
-        'no_akte' => $validatedData['no_akte'] ?? null ,
-        'tanggal' => $validatedData['tanggal'] ?? null ,
-        'nama_notaris' => $validatedData['nama_notaris'] ?? null ,
-        'no_pengesahan' => $validatedData['no_pengesahan'] ?? null ,
-        'uploadberkas' => $validatedData['uploadberkas'] ?? null ,
+        'asosiasimasjaki_id' => $validatedData['asosiasimasjaki_id'] ?? null,
+        'namalengkap' => $validatedData['namalengkap'] ?? null,
+        'alamat' => $validatedData['alamat'] ?? null,
+        'no_telepon' => $validatedData['no_telepon'] ?? null,
+        'email' => $validatedData['email'] ?? null,
+        'nomorindukberusaha' => $validatedData['nomorindukberusaha'] ?? null,
+        'pju' => $validatedData['pju'] ?? null,
+        'no_akte' => $validatedData['no_akte'] ?? null,
+        'tanggal' => $validatedData['tanggal'] ?? null,
+        'nama_notaris' => $validatedData['nama_notaris'] ?? null,
+        'no_pengesahan' => $validatedData['no_pengesahan'] ?? null,
+        'uploadberkas' => $validatedData['uploadberkas'] ?? null,
     ]);
 
     session()->flash('create', 'Data Berhasil Dibuat!');
@@ -444,7 +429,7 @@ public function bebujkkonstruksishow($namalengkap)
     $user = Auth::user();
 
 return view('backend.04_datajakon.01_bujkkonstruksi.show', [
-    'title' => 'Data BUJK Konstruksi',
+    'title' => 'View Data BUJK Konstruksi',
     'data' => $databujkkontraktor,
 ]);
 }
@@ -478,7 +463,7 @@ public function bebujkkonstruksicreateklasifikasicreate(Request $request)
         'nama_psjk' => 'required|string|max:255',
         'sub_kualifikasi_bu' => 'required|string|max:255',
         'tanggal_terbit' => 'required|date',
-        'tanggal_berlaku' => 'required|date',
+        'masa_berlaku' => 'required|date',
     ], [
         // Pesan kesalahan custom
         'nama_pengurus.required' => 'Nama Pengurus harus diisi.',
@@ -489,7 +474,7 @@ public function bebujkkonstruksicreateklasifikasicreate(Request $request)
         'penerbit.required' => 'Penerbit harus diisi.',
         'nama_psjk.required' => 'Nama PSJK harus diisi.',
         'tanggal_terbit.required' => 'Tanggal Terbit harus diisi.',
-        'tanggal_berlaku.required' => 'Tanggal Berlaku harus diisi.',
+        'masa_berlaku.required' => 'Tanggal Berlaku harus diisi.',
     ]);
 
     // Menyimpan data ke tabel BujkKontraktorSub
@@ -503,7 +488,7 @@ public function bebujkkonstruksicreateklasifikasicreate(Request $request)
         'penerbit' => $validated['penerbit'],
         'nama_psjk' => $validated['nama_psjk'],
         'tanggal_terbit' => $validated['tanggal_terbit'],
-        'tanggal_berlaku' => $validated['tanggal_berlaku'],
+        'masa_berlaku' => $validated['masa_berlaku'],
     ]);
 
 // Ambil bujkkontraktor_id yang baru saja disimpan
@@ -784,12 +769,67 @@ $query = bujkkontraktor::query();
     }
 
     return view('backend.04_datajakon.01_bujkkonstruksi.index', [
-        'title' => 'BUJK Konstruksi',
+        'title' => 'BUJK Konstruksi Kabupaten Bandung Barat',
         'data' => $data,
         'perPage' => $perPage,
         'search' => $search
     ]);
 }
+
+public function databujkkontruksi(Request $request)
+{
+    $user = Auth::user();
+    $search = $request->input('search'); // Ambil kata kunci dari form
+
+    $query = bujkkontraktor::query();
+
+    if($search) {
+        $query->where(function($q) use ($search) {
+            $q->where('namalengkap', 'like', "%{$search}%")
+              ->orWhere('alamat', 'like', "%{$search}%")
+              ->orWhere('no_telepon', 'like', "%{$search}%")
+              ->orWhere('email', 'like', "%{$search}%")
+              ->orWhere('nomorindukberusaha', 'like', "%{$search}%")
+              ->orWhere('pju', 'like', "%{$search}%")
+              ->orWhere('no_akte', 'like', "%{$search}%")
+              ->orWhere('nama_notaris', 'like', "%{$search}%")
+              ->orWhere('no_pengesahan', 'like', "%{$search}%");
+        });
+    }
+
+    // Urut abjad berdasarkan kolom 'namalengkap', paginate 20
+    $data = $query->orderBy('namalengkap', 'ASC')->paginate(10);
+
+    // Menjaga keyword search tetap di query string saat pagination
+    $data->appends(['search' => $search]);
+
+    return view('frontend.new.03_bagian4.01_bujkkontraktor.databujkkontraktor', [
+        'title' => 'Data BUJK Kontraktor Kabupaten Bandung Barat',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search, // bisa ditampilkan di input
+    ]);
+}
+
+public function databujkkontruksilayanan($namalengkap)
+{
+    $databujkkontraktor = bujkkontraktor::where('namalengkap', $namalengkap)->first();
+
+    if (!$databujkkontraktor) {
+        return abort(404, 'Data sub-klasifikasi tidak ditemukan');
+    }
+
+        // Menggunakan paginate() untuk pagination
+        $datasublayanan = bujkkontraktorsub::where('bujkkontraktor_id', $databujkkontraktor->id)->paginate(10);
+
+    return view('frontend.new.03_bagian4.01_bujkkontraktor.databujkkontraktordetails', [
+        'title' => 'Data Klasifikasi Layanan BUJK Konstruksi',
+        'subdata' => $datasublayanan,
+        'data' => $databujkkontraktor,
+        'user' => Auth::user()
+    ]);
+}
+
 
 }
 

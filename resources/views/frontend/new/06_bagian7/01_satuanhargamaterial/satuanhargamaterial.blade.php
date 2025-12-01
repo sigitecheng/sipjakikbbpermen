@@ -141,13 +141,9 @@
 
     <!-- main-area -->
     <main class="main-area fix">
-
-
-        <!-- breadcrumb-area -->
-        <section class="breadcrumb__area">
-            <div class="breadcrumb__bg" data-background="assets/img/bg/breadcrumb__bg.jpg"></div>
+<section class="breadcrumb__area">
+            <div class="breadcrumb__bg" data-background="/assets/assets/img/bg/perbaikanbanner.png"></div>
                    </section>
-        <!-- breadcrumb-area-end -->
 
         <!-- blog-post-area -->
         <section class="blog__post-area-five section-py-130">

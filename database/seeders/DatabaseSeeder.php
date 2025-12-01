@@ -6,6 +6,7 @@ namespace Database\Seeders;
 // namespace App\Models;
 
 use App\Models\agendasertifikasi;
+use App\Models\asosiasimasjaki;
 use App\Models\agendastatus;
 use App\Models\Agendastatus as ModelsAgendastatus;
 use App\Models\artikeljakonmasjaki;
@@ -29,6 +30,8 @@ use App\Models\pergubernur;
 use App\Models\suratkeputusan;
 use App\Models\berita;
 use App\Models\beritaagenda;
+use App\Models\bujkkonsultan;
+use App\Models\bujkkontraktor;
 use App\Models\giskbb;
 use App\Models\headerberanda;
 use App\Models\himbauandinas;
@@ -11066,9 +11069,68 @@ artikeljakonmasjaki::create([
     'keterangan' => 'Artikel ini menjelaskan perubahan alur permohonan akun bagi tenaga kerja konstruksi, yang digunakan untuk pencatatan pengalaman kerja secara resmi sesuai panduan terbaru dari Kementerian.',
 ]);
 
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'              => 1,
+
+    'namalengkap'          => 'Konstruksi PT Maju Jaya Konstruksi',
+    'alamat'               => 'Jl. Raya Cihampelas No. 88, Kabupaten Bandung Barat',
+    'no_telepon'           => '081234567890',
+    'email'                => 'majujaya@example.com',
+    'nomorindukberusaha'   => '9876543210123',
+
+    'pju'                  => 'Direktur Utama',
+    'no_akte'              => 'AKT-55/2022',
+    'tanggal'              => now(),
+    'nama_notaris'         => 'Notaris Bambang Wijaya, SH',
+    'no_pengesahan'        => 'SK-PNG-8891/2023',
+
+    'uploadberkas'         => null, // mengikuti format contoh kamu
+]);
+
+bujkkonsultan::create([
+    'bujkkonsultansub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'              => 1,
+
+    'namalengkap'          => 'Konsultasi Konstruksi PT Maju Jaya Konstruksi',
+    'alamat'               => 'Jl. Raya Cihampelas No. 88, Kabupaten Bandung Barat',
+    'no_telepon'           => '081234567890',
+    'email'                => 'majujaya@example.com',
+    'nomorindukberusaha'   => '9876543210123',
+
+    'pju'                  => 'Direktur Utama',
+    'no_akte'              => 'AKT-55/2022',
+    'tanggal'              => now(),
+    'nama_notaris'         => 'Notaris Bambang Wijaya, SH',
+    'no_pengesahan'        => 'SK-PNG-8891/2023',
+
+    'uploadberkas'         => null, // mengikuti format contoh kamu
+]);
+
+    asosiasimasjaki::create([
+    'namaasosiasi'   => 'Asosiasi Jakon Kabupaten Bandung Barat ', // Nama asosiasi
+    'alamat'         => 'Jl. Pemuda No. 10, KBB, Jawa Barat', // Alamat asosiasi
+    'notelepon'      => '081234567890', // Nomor telepon asosiasi
+    'pic'            => 'Budi Santoso', // Person In Charge
+    'jumlahanggota'  => '50', // Jumlah anggota
+]);
+
+
+    asosiasimasjaki::create([
+    'namaasosiasi'   => 'Konsultan Baru  ', // Nama asosiasi
+    'alamat'         => 'Jl. Pemuda No. 10, KBB, Jawa Barat', // Alamat asosiasi
+    'notelepon'      => '081234567890', // Nomor telepon asosiasi
+    'pic'            => 'Budi Santoso', // Person In Charge
+    'jumlahanggota'  => '50', // Jumlah anggota
+]);
+
 
     }
- /**
+
+
+    /**
      * Menghitung usia berdasarkan tanggal lahir.
      *
      * @param  string  $birthDate

@@ -2354,6 +2354,17 @@ Route::get('/dokkegiatan/kegiatan/{id}', [BeritajakonController::class, 'showdok
 Route::get('/dokkegiatan/berita', [BeritajakonController::class, 'dokberitakegiatan'])->name('berita.showkegiatan');
 Route::get('/dokkegiatan/berita/{id}', [BeritajakonController::class, 'dokberitakegiatanshow'])->name('berita.detailskegiatan');
 
+// BAGIAN 4 DATA JAKON
+Route::get('/databujkkontruksi', [BujkkontraktorController::class, 'databujkkontruksi']);
+Route::get('/databujkkontruksi/layanan/{namalengkap}', [BujkkontraktorController::class, 'databujkkontruksilayanan'])->name('bujkkontraktor.showlayanan');
+
+Route::get('/databujkkonsultasi', [BujkkonsultanController::class, 'databujkkonsultasi']);
+Route::get('/databujkkonsultasi/layanan/{namalengkap}', [BujkkonsultanController::class, 'databujkkonsultasilayanan'])->name('bujkkonsultan.showlayanan');
+// Route::get('/bebujkkonsultan/showsubklasifikasi/{namalengkap}', [BujkkonsultanController::class, 'bebujkkonsultanshowklasifikasi'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/dataasosiasi', [BujkkonsultanController::class, 'dataasosiasi']);
+Route::get('/statistikbujk', [BujkkonsultanController::class, 'datastatistikbujk']);
+
 // BAGIAN 7 AHSP
 Route::get('/satuanhargamaterialkbb', [SatuanhargamaterialController::class, 'satuanhargamaterialkbb']);
 

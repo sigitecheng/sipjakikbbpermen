@@ -640,14 +640,14 @@ document.querySelectorAll('.scroll-container').forEach(container => {
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-6">
                         <div class="counter__item-four">
-                            <p>Tenaga Kerja</p>
+                            <p>Tenaga Kerja Konstruksi</p>
                             <h2 class="count"><span class="odometer" data-count="1054"></span></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6">
                         <div class="counter__item-four">
-                            <p>BUJK</p>
-                            <h2 class="count"><span class="odometer" data-count="471"></span></h2>
+                            <p>BUJK Konstruksi & Konsultasi Konstruksi</p>
+                            <h2 class="count"><span class="odometer" data-count="231"></span></h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6">
@@ -658,7 +658,7 @@ document.querySelectorAll('.scroll-container').forEach(container => {
                     </div>
                     <div class="col-lg-3 col-6">
                         <div class="counter__item-four">
-                            <p>Rantai Pasok</p>
+                            <p>Rantai Pasok Bahan Material</p>
                             <h2 class="count"><span class="odometer" data-count="500"></span>+</h2>
                         </div>
                     </div>

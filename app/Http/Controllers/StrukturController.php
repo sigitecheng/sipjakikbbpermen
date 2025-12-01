@@ -505,7 +505,7 @@ public function beprofiljakon()
     $user = Auth::user();
 
     return view('backend.02_kelembagaan.02_profiljakon.index', [
-        'title' => 'Profil Jakon DPUPR Kabupaten Blora',
+        'title' => 'Profil Jakon DPUTR Kabupaten Bandung Barat',
         // 'data' => $data, // Mengirimkan data paginasi ke view
         'user' => $user, // Mengirimkan data paginasi ke view
 
