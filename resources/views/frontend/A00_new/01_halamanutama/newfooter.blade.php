@@ -54,8 +54,7 @@
     <li style="display:flex; align-items:center; gap:8px;">
         <i class="flaticon-placeholder" style="font-size:20px; color:white;"></i>
         <a href="#" style="text-decoration:none; color:white;">
-            Mekarsari, Kec. Ngamprah, Kabupaten Bandung Barat, Jawa Barat 40552, Indonesia
-        </a>
+Komplek Pemda Kabupaten Bandung Barat Jl. Raya Padalarang-Cisarua Km.2 Ngamprah        </a>
     </li>
 </ul>
 
