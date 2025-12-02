@@ -40,6 +40,7 @@ use App\Models\himbauandinas;
 use App\Models\isadmin;
 use App\Models\jabatankerja;
 use App\Models\jenjangpendidikan;
+use App\Models\kecamatankbb;
 use App\Models\kegiatanjaskon;
 use App\Models\keterampilanpekerja;
 use App\Models\ketertiban;
@@ -960,7 +961,7 @@ qa::create([
         ]);
 
         User::create([
-            'name'  => 'Akun Penampungan SKK KBB',
+            'name'  => 'Akun Admin Migrasi SKK KBB',
             'username' => 'allskkkbb',
             'statusadmin_id' => '3',
             'avatar' => 'user/avatar/foto6.png',
@@ -12062,7 +12063,7 @@ allskktenagakerjablora::create([
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
-    'kecamatankbb_id' => null,
+    'kecamatankbb_id' => 13,
     'namalengkap' => 'Wahyudin',
     'nik' => '-',
     'tempatlahir' => null,
@@ -12123,6 +12124,126 @@ agendaskk::create([
 
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
+]);
+
+kecamatankbb::create([
+    'id' => 1,
+    'kecamatankbb' => 'Ngamprah',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 2,
+    'kecamatankbb' => 'Padalarang',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 3,
+    'kecamatankbb' => 'Parongpong',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 4,
+    'kecamatankbb' => 'Cisarua',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 5,
+    'kecamatankbb' => 'Lembang',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 6,
+    'kecamatankbb' => 'Cililin',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 7,
+    'kecamatankbb' => 'Batujajar',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 8,
+    'kecamatankbb' => 'Saguling',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 9,
+    'kecamatankbb' => 'Cipeundeuy',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 10,
+    'kecamatankbb' => 'Rongga',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 11,
+    'kecamatankbb' => 'Sindangkerta',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 12,
+    'kecamatankbb' => 'Gununghalu',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 13,
+    'kecamatankbb' => 'Cikalong Wetan',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 14,
+    'kecamatankbb' => 'Cihampelas',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 15,
+    'kecamatankbb' => 'Cipongkor',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
 ]);
 
 

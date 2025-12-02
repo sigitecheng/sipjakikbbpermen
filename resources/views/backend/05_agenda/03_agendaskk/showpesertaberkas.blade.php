@@ -1,69 +1,3 @@
-<style>
-    /* Gaya untuk tabel */
-    .custom-table-container {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        background: #fff;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        border-radius: 20px;
-    }
-
-    .custom-fl-table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: fixed; /* Membuat kolom lebih konsisten */
-        min-width: 700px;
-    }
-
-    .custom-fl-table th,
-    .custom-fl-table td {
-        padding: 12px 15px;
-        border-bottom: 1px solid #998282;
-        text-align: left;
-        vertical-align: middle;
-        height: 48px; /* Tinggi baris tetap */
-        box-sizing: border-box;
-    }
-
-    .custom-fl-table th {
-        background-color:#4ADE80;
-        font-weight: 600;
-        color: #2d3436;
-        font-size: 14px;
-        border-bottom: 2px solid #e0e0e0;
-    }
-
-    .custom-fl-table td {
-        font-size: 14px;
-        color: #000000;
-        line-height: 1.5;
-    }
-
-    /* Zebra striping untuk baris */
-    .custom-fl-table tbody tr:nth-child(even) {
-        background-color: #f7f7f7;
-    }
-
-    /* Hover effect */
-    .custom-fl-table tbody tr:hover {
-        background-color: #f7f7f7;
-    }
-
-    /* Scrollbar styling */
-    .custom-table-container::-webkit-scrollbar {
-        height: 6px;
-    }
-
-    .custom-table-container::-webkit-scrollbar-thumb {
-        background-color: #c0c0c0;
-        border-radius: 4px;
-    }
-
-    .custom-table-container::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-</style>
 
 <style>
     @media (max-width: 768px) {
@@ -505,9 +439,7 @@ button:hover {
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-            <section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+        <section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -533,13 +465,15 @@ button:hover {
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
+
                 <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
 
 
 @canany(['super_admin', 'admin'])
            <a href="{{ url()->previous() }}">
-    <button class="button-newvalidasi">
+    <button class="button-modern">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
       viewBox="0 0 16 16">
       <path fill-rule="evenodd"
@@ -576,7 +510,7 @@ button:hover {
 @can('pekerja')
 
            <a href="/hakaksespekerjaberkas">
-    <button class="button-newvalidasi">
+    <button class="button-modern">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
     viewBox="0 0 16 16">
     <path fill-rule="evenodd"
@@ -591,7 +525,7 @@ button:hover {
 @endcan
 
 @can('lsppenerbit')
-   <button class="button-newvalidasi"
+   <button class="button-modern"
     onclick="history.back();">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -613,7 +547,7 @@ button:hover {
 }
 </style>
 
-<button class="button-berkas">
+<button class="button-baru">
     <!-- Ikon User -->
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         viewBox="0 0 16 16">
@@ -1009,17 +943,17 @@ button:hover {
     <div class="halaman-pertamaku" style="text-align: center; margin-bottom: 10px;">
     <div style="display: flex; align-items: center; justify-content: center;">
         <!-- Logo -->
-        <img src="/assets/icon/logokabupatenblora.png" alt="Logo Kabupaten Blora"
-             style="width: 100px; height: auto; margin-right: 20px; margin-top: 10px;">
         <img src="/assets/icon/pupr.png" alt="Logo Kabupaten Blora"
-             style="width: 100px; height: auto; margin-right: 20px; margin-top: 10px;">
+             style="width: 85px; height: auto; margin-right: 20px; margin-top: 10px;">
+        <img src="/storage/logo/sipjakikbb.png" alt="Logo Kabupaten Blora"
+             style="width: 125px; height: auto; margin-right: 20px; margin-top: 10px;">
 
         <!-- Teks Kop -->
         <div style="text-align: center; margin-left:50px;">
-            <h3 style="margin: 0;">PEMERINTAH KABUPATEN BLORA</h3>
-            <h3 style="margin: 0;">DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</h3>
-            <p style="margin: 0;">Jl. Nusantara No. 62 Telp. (0296) 531004</p>
-            <h3 style="margin: 0;">KABUPATEN BLORA 58214 PROVINSI JAWA TENGAH</h3>
+            <h4 style="margin: 0;">PEMERINTAH KABUPATEN BANDUNG BARAT</h4>
+            <h4 style="margin: 0;">DINAS PEKERJAAN UMUM DAN TATA RUANG</h4>
+            <p style="margin: 0;">Komplek Pemda Kabupaten Bandung Barat Jl. Raya Padalarang-Cisarua Km.2 Ngamprah</p>
+            <h4 style="margin: 0;">KABUPATEN BANDUNG BARAT 40552 PROVINSI JAWA BARAT</h4>
         </div>
     </div>
 
@@ -1042,11 +976,12 @@ button:hover {
                     <td style="width:50px; text-align:center; font-size:16px;">1</td>
                     <td style="width:200px; text-align:center; font-size:16px;">Nama Lengkap</td>
                     <td style="width:50px; text-align:center; font-size:16px;" >:</td>
-                    <td style="width:200px; text-align:center; font-size:16px;">{{ ucwords(strtolower($datapeserta->user->name ?? 'Nama lengkap Belum Diisi')) }}</td>
+                    <td style="width:200px; text-align:center; font-size:16px;">{{ ucwords(strtolower($datapeserta->namalengkap ?? 'Nama lengkap Belum Diisi')) }}</td>
+                    {{-- <td style="width:200px; text-align:center; font-size:16px;">{{ ucwords(strtolower($datapeserta->user->name ?? 'Nama lengkap Belum Diisi')) }}</td> --}}
             <td style="width:500px; text-align:center; font-size:16px;">
 
                 <div style="margin-top: 10px;">
-                    @if($datapeserta->uploadfoto && file_exists(public_path('storage/' . $datapeserta->uploadfoto)))
+                @if($datapeserta->uploadfoto && file_exists(public_path('storage/' . $datapeserta->uploadfoto)))
                         <!-- Menampilkan gambar dari storage -->
                         <img src="{{ asset('storage/' . $datapeserta->uploadfoto) }}" alt="Pas Foto 4 x 6 " style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
                         @elseif($datapeserta->uploadfoto)
@@ -1054,7 +989,7 @@ button:hover {
                         <img src="{{ asset($datapeserta->uploadfoto) }}" alt="Pas Foto 4 x 6 " style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
                     @else
                         <!-- Placeholder jika tidak ada data -->
-                        <p style="font-size: 14px;">Data belum diupdate</p>
+                        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
                     @endif
                 </div>
             </td>
@@ -1152,11 +1087,24 @@ button:hover {
     {{-- <h5>KEPALA DINAS</h5> --}}
     <div class="table-responsive">
     <table class="zebra-table table-striped">
-        <tr>
-            <td style="text-align: center; font-size:16px;">KTP/KITAS*</td>
-            <td style="text-align: center; font-size:16px;">Foto</td>
-            <td style="text-align: center; font-size:16px;">Ijazah</td>
-        </tr>
+  <tr>
+    <td style="text-align: center; font-size:16px;">
+        <button class="button-baru">
+            <i class="bi bi-credit-card" style="margin-right: 6px;"></i> KTP/KITAS*
+        </button>
+    </td>
+    <td style="text-align: center; font-size:16px;">
+        <button class="button-baru">
+            <i class="bi bi-person" style="margin-right: 6px;"></i> Foto
+        </button>
+    </td>
+    <td style="text-align: center; font-size:16px;">
+        <button class="button-baru">
+            <i class="bi bi-file-earmark-text" style="margin-right: 6px;"></i> Ijazah
+        </button>
+    </td>
+</tr>
+
         <tr>
             <td style="text-align: center;">
                  <div style="margin-top: 10px;">
@@ -1180,38 +1128,28 @@ button:hover {
         </iframe>
     @else
         <!-- Optional: Show a placeholder if there's no file available -->
-        <p style="font-size: 14px;">Data belum diupdate</p>
+        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
     @endif
 </div>
 
             </td>
 
-            <td style="text-align: center;">
-                    <div style="margin-top: 10px;">
-    @if($datapeserta->uploadfoto && file_exists(public_path('storage/' . $datapeserta->uploadfoto)))
-        <!-- Display the default iframe when the file exists in the storage -->
-        <iframe
-            src="{{ asset('storage/' . $datapeserta->uploadfoto) }}"
-            frameborder="0"
-            width="100%"
-            height="600px"
-            style="transform: scale(0.8); transform-origin: top left; width: 125%; height: 500px;">
-        </iframe>
-    @elseif($datapeserta->uploadfoto)
-        <!-- Display the iframe with the updated file -->
-        <iframe
-            src="{{ asset($datapeserta->uploadfoto) }}"
-            frameborder="0"
-            width="100%"
-            height="600px"
-            style="transform: scale(0.8); transform-origin: top left; width: 125%; height: 500px;">
-        </iframe>
-    @else
-        <!-- Optional: Show a placeholder if there's no file available -->
-        <p style="font-size: 14px;">Data belum diupdate</p>
-    @endif
-</div>
-            </td>
+           <td style="text-align: center;">
+    <div style="margin-top: 10px;">
+        @if($datapeserta->uploadfoto && file_exists(public_path('storage/' . $datapeserta->uploadfoto)))
+            <img src="{{ asset('storage/' . $datapeserta->uploadfoto) }}"
+                 alt="Foto Peserta"
+                 style="width: 300px; height: auto; border-radius: 8px; object-fit: cover;">
+        @elseif($datapeserta->uploadfoto)
+            <img src="{{ asset($datapeserta->uploadfoto) }}"
+                 alt="Foto Peserta"
+                 style="width: 300px; height: auto; border-radius: 8px; object-fit: cover;">
+        @else
+            <p style="font-size: 14px; color: #888;">Data Tidak Ditemukan !!</p>
+        @endif
+    </div>
+</td>
+
 
             <td style="text-align: center;">
                         <div style="margin-top: 10px;">
@@ -1235,18 +1173,31 @@ button:hover {
         </iframe>
     @else
         <!-- Optional: Show a placeholder if there's no file available -->
-        <p style="font-size: 14px;">Data belum diupdate</p>
+        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
     @endif
 </div>
             </td>
 
         </tr>
 
-        <tr>
-            <td style="text-align: center; font-size:16px;">Pengalaman Kerja</td>
-            <td style="text-align: center; font-size:16px;">NPWP</td>
-            <td style="text-align: center; font-size:16px;">Daftar Riwayat Hidup</td>
-        </tr>
+      <tr>
+    <td style="text-align: center; font-size:16px;">
+        <button class="button-baru">
+            <i class="bi bi-briefcase" style="margin-right: 6px;"></i> Pengalaman Kerja
+        </button>
+    </td>
+    <td style="text-align: center; font-size:16px;">
+        <button class="button-baru">
+            <i class="bi bi-file-earmark-text" style="margin-right: 6px;"></i> NPWP
+        </button>
+    </td>
+    <td style="text-align: center; font-size:16px;">
+        <button class="button-baru">
+            <i class="bi bi-file-earmark-person" style="margin-right: 6px;"></i> Daftar Riwayat Hidup
+        </button>
+    </td>
+</tr>
+
         <tr>
             <td style="text-align: center;">
                 <div style="margin-top: 10px;">
@@ -1270,7 +1221,7 @@ button:hover {
         </iframe>
     @else
         <!-- Optional: Show a placeholder if there's no file available -->
-        <p style="font-size: 14px;">Data belum diupdate</p>
+        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
     @endif
 </div>
             </td>
@@ -1296,7 +1247,7 @@ button:hover {
         </iframe>
     @else
         <!-- Optional: Show a placeholder if there's no file available -->
-        <p style="font-size: 14px;">Data belum diupdate</p>
+        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
     @endif
 </div>
             </td>
@@ -1322,7 +1273,7 @@ button:hover {
         </iframe>
     @else
         <!-- Optional: Show a placeholder if there's no file available -->
-        <p style="font-size: 14px;">Data belum diupdate</p>
+        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
     @endif
 </div>
             </td>
@@ -1355,7 +1306,7 @@ button:hover {
         </iframe>
     @else
         <!-- Optional: Show a placeholder if there's no file available -->
-        <p style="font-size: 14px;">Data belum diupdate</p>
+        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
     @endif
 </div>
             </td>
@@ -1474,14 +1425,14 @@ button:hover {
 
     </div>
 
-  <div class="hide-on-mobile" style="display: flex; justify-content: flex-end; padding: 10px;">
+  {{-- <div class="hide-on-mobile" style="display: flex; justify-content: flex-end; padding: 10px;">
    <button class="button-berkas"
 
   id="downloadPDF">
   <i class="bi bi-download" style="margin-right: 5px;"></i>
   <span>Download PDF</span>
 </button>
-</div>
+</div> --}}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -1568,7 +1519,7 @@ button:hover {
                                                 <div class="modal-dialog modal-xl modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                            {{-- <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2"> --}}
                                                             <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                             <h5 class="modal-title" id="modalSKKLbl{{ $datapeserta->id }}">Dokumen SKK</h5>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -1608,7 +1559,7 @@ button:hover {
                                                 <div class="modal-dialog modal-xl modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                            {{-- <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2"> --}}
                                                             <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                             <h5 class="modal-title" id="modalKTPLbl{{ $datapeserta->id }}">Dokumen KTP</h5>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -1642,7 +1593,7 @@ button:hover {
                                                                     @endif
                                                                 @endif
                                                             @else
-                                                                <p style="color: red; font-weight: bold; font-size:14px;" >Data belum diupdate</p>
+                                                                <p style="color: red; font-weight: bold; font-size:14px;" >Data Tidak Ditemukan !!</p>
                                                             @endif
                                                         </div>
 
@@ -1811,7 +1762,7 @@ button:hover {
                                                 <div class="modal-dialog modal-xl modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                            {{-- <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2"> --}}
                                                             <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                             <h5 class="modal-title" id="modalFotoLbl{{ $datapeserta->id }}">Dokumen Foto</h5>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -1824,7 +1775,7 @@ button:hover {
                                                                 <img src="{{ asset($datapeserta->uploadfoto) }}" alt="Foto" style="max-width:100%; max-height:600px;">
                                                                 <a href="{{ asset($datapeserta->uploadfoto) }}" class="btn btn-primary mt-2" download>Download Foto</a>
                                                             @else
-                                                                <p style="font-size: 14px;">Data belum diupdate</p>
+                                                                <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
                                                             @endif
                                                         </div>
                                                     </div>
@@ -1911,7 +1862,7 @@ button:hover {
                                                     <div class="modal-dialog modal-xl modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                                {{-- <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2"> --}}
                                                                 <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                                 <h5 class="modal-title" id="modalIjazahLbl{{ $datapeserta->id }}">Dokumen Ijazah</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -1926,7 +1877,7 @@ button:hover {
                                                                     <iframe src="{{ asset($datapeserta->uploadijazah) }}" frameborder="0" width="100%" height="750px"></iframe>
                                                                 @else
                                                                     <!-- Optional: Show a placeholder if there's no file available -->
-                                                                    <p style="font-size: 14px;">Data belum diupdate</p>
+                                                                    <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
                                                                 @endif
 
                                                                 </div>
@@ -2014,7 +1965,7 @@ button:hover {
                                                     <div class="modal-dialog modal-xl modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                                {{-- <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2"> --}}
                                                                 <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                                 <h5 class="modal-title" id="modalPengalamanLbl{{ $datapeserta->id }}">Dokumen Pengalaman Kerja</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -2029,7 +1980,7 @@ button:hover {
                                                                     <iframe src="{{ asset($datapeserta->uploadpengalaman) }}" frameborder="0" width="100%" height="750px"></iframe>
                                                                 @else
                                                                     <!-- Optional: Show a placeholder if there's no file available -->
-                                                                    <p style="font-size: 14px;">Data belum diupdate</p>
+                                                                    <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
                                                                 @endif
 
                                                                 </div>
@@ -2116,7 +2067,7 @@ button:hover {
                                                     <div class="modal-dialog modal-xl modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                                {{-- <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2"> --}}
                                                                 <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                                 <h5 class="modal-title" id="modalKebenaranDataLbl{{ $datapeserta->id }}">Dokumen Pernyataan Kebenaran Data</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -2131,7 +2082,7 @@ button:hover {
                                                                     <iframe src="{{ asset($datapeserta->uploadkebenarandata) }}" frameborder="0" width="100%" height="750px"></iframe>
                                                                 @else
                                                                     <!-- Optional: Show a placeholder if there's no file available -->
-                                                                    <p style="font-size: 14px;">Data belum diupdate</p>
+                                                                    <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
                                                                 @endif
 
                                                                 </div>
@@ -2219,7 +2170,7 @@ button:hover {
                                                     <div class="modal-dialog modal-xl modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                                {{-- <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2"> --}}
                                                                 <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                                 <h5 class="modal-title" id="modalNPWPLbl{{ $datapeserta->id }}">Dokumen NPWP</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -2249,7 +2200,7 @@ button:hover {
                                                                             @endif
                                                                         @endif
                                                                     @else
-                                                                        <p style="color: red; font-weight: bold; font-size:14px;">Data belum diupdate</p>
+                                                                        <p style="color: red; font-weight: bold; font-size:14px;">Data Tidak Ditemukan !!</p>
                                                                     @endif
                                                                 </div>
 
@@ -2336,7 +2287,7 @@ button:hover {
                                                     <div class="modal-dialog modal-xl modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <img src="/assets/icon/logokabupatenblora.png" width="25" class="me-2">
+                                                                <img src="/storage/logo/sipjakikbb.png" width="25" class="me-2">
                                                                 <img src="/assets/icon/pupr.png" width="25" class="me-2">
                                                                 <h5 class="modal-title" id="modalDaftarRiwayatHidupLbl{{ $datapeserta->id }}">Dokumen Daftar Riwayat Hidup</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -2349,7 +2300,7 @@ button:hover {
                                                                     @elseif($datapeserta->uploaddaftarriwayathidup)
                                                                         <iframe src="{{ asset($datapeserta->uploaddaftarriwayathidup) }}" frameborder="0" width="100%" height="750px"></iframe>
                                                                     @else
-                                                                        <p style="font-size: 14px;">Data belum diupdate</p>
+                                                                        <p style="font-size: 14px;">Data Tidak Ditemukan !!</p>
                                                                     @endif
                                                                 </div>
                                                             </div>
@@ -2464,15 +2415,11 @@ button:hover {
 
                 <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                     <div class="flex justify-end">
-                                            <button class="button-hijau" type="button" onclick="openModal()">
-                                            <!-- Ikon SVG Save -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                                class="bi bi-save" viewBox="0 0 16 16">
-                                                <path d="M8.5 1.5v5h-1v-5H5v5H4V1.5A1.5 1.5 0 0 1 5.5 0h5A1.5 1.5 0 0 1 12 1.5v5h-1v-5h-2.5z"/>
-                                                <path d="M1 4.5V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4.5L13.5 3h-11L1 4.5zM3 4h10l.5.5V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4.5L3 4z"/>
-                                            </svg>
+                                         <button class="button-baru" type="button" onclick="openModal()">
+                                            <i class="bi bi-save" style="margin-right: 6px; font-size: 18px;"></i>
                                             Simpan Validasi
-                                            </button>
+                                        </button>
+
 
                                     </div>
                                     <!-- Modal Konfirmasi -->

@@ -18,11 +18,15 @@ use App\Models\agendaskk;
 use App\Models\asosiasimasjaki;
 use App\Models\jabatankerja;
 use App\Models\jenjang;
+use App\Models\jenjangpendidikan;
 use App\Models\kategoripelatihan;
+use App\Models\kecamatankbb;
 use App\Models\pembinaan;
 use App\Models\pesertapelatihan;
 use App\Models\materipelatihan;
 use App\Models\materipelatihanskk;
+use App\Models\namasekolah;
+use App\Models\tahunpilihan;
 use App\Models\User;
 
 use Illuminate\Support\Facades\Auth;
@@ -1483,7 +1487,7 @@ return redirect()->back();
 public function beagendaskktkk2025(Request $request)
 {
     // Default jumlah data per halaman = 100
-    $perPage = $request->input('perPage', 15);
+    $perPage = $request->input('perPage', 10);
     $search  = $request->input('search');
 
     // Ambil user login
@@ -1492,7 +1496,7 @@ public function beagendaskktkk2025(Request $request)
     // Query semua data dari allskktenagakerjablora
     $query = allskktenagakerjablora::select([
         'id', 'user_id', 'agendaskk_id', 'jenjangpendidikan_id', 'jabatankerja_id',
-        'namasekolah_id', 'tahunpilihan_id', 'namalengkap', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
+        'namasekolah_id', 'kecamatankbb_id','tahunpilihan_id', 'namalengkap', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
         'alamat', 'notelepon', 'email', 'tahunlulus', 'uploadktp', 'uploadfoto', 'uploadijazah',
         'uploadpengalaman', 'uploadnpwp', 'uploaddaftarriwayathidup', 'namaasosiasi', 'punyaskk',
         'punyasiki', 'siappatuh', 'verifikasipu', 'verifikasilps', 'sertifikat'
@@ -1506,6 +1510,7 @@ public function beagendaskktkk2025(Request $request)
                 $u->where('username', 'LIKE', "%{$search}%");
             })
             ->orWhere('nik', 'LIKE', "%{$search}%")
+            ->orWhere('namalengkap', 'LIKE', "%{$search}%")
             ->orWhere('jeniskelamin', 'LIKE', "%{$search}%")
             ->orWhereDate('ttl', $search) // cocokkan full tanggal (YYYY-MM-DD)
             ->orWhere('tahunlulus', 'LIKE', "%{$search}%");
@@ -1538,6 +1543,138 @@ public function beagendaskktkk2025(Request $request)
     ]);
 }
 
+
+public function allskktenagakerjakbbdelete($id)
+{
+// Cari item berdasarkan judul
+$entry = allskktenagakerjablora::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/beagendaskktkk')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
+
+return redirect()->back()->with('error', 'Item not found');
+}
+
+
+
+public function bedatatkkkbbupdate($id)
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    $datatkkkbb = allskktenagakerjablora::where('id', $id)->firstOrFail();
+    $dataagendaskk = agendaskk::all(); // Ambil semua asosiasi
+    $datajenjangpendidikan = jenjangpendidikan::all(); // Ambil semua asosiasi
+    $datajabatankerja = jabatankerja::all(); // Ambil semua asosiasi
+    $datanamasekolah = namasekolah::all(); // Ambil semua asosiasi
+    $datatahunpilihan = tahunpilihan::all(); // Ambil semua asosiasi
+    $datakecamatankbb = kecamatankbb::all(); // Ambil semua asosiasi
+
+    $user = Auth::user();
+
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.05_agenda.04_pesertaskk.02_sertifikasi2025.update', [
+        'data' => $datatkkkbb,
+        'user' => $user,
+
+        'dataagendaskk' => $dataagendaskk,
+        'datajenjangpendidikan' => $datajenjangpendidikan,
+        'datajabatankerja' => $datajabatankerja,
+        'datanamasekolah' => $datanamasekolah,
+        'datatahunpilihan' => $datatahunpilihan,
+        'datakecamatankbb' => $datakecamatankbb,
+
+        'title' => 'Perbaikan Data TKK Tenaga Kerja Konstruksi'
+    ]);
+}
+
+ public function bedatatkkkbbupdatenew(Request $request, $id)
+    {
+        $data = allskktenagakerjablora::findOrFail($id);
+
+        // Validasi dasar
+        $request->validate([
+            'namalengkap' => 'required|string|max:255',
+            'nik' => 'nullable|string|max:20',
+            'ttl' => 'nullable|date',
+            'jeniskelamin' => 'nullable|string',
+            'alamat' => 'nullable|string',
+            'notelepon' => 'nullable|string|max:20',
+            'email' => 'nullable|string|email|max:255',
+            'agendaskk_id' => 'nullable|string',
+            'jenjangpendidikan_id' => 'nullable|string',
+            'jabatankerja_id' => 'nullable|string',
+            'namasekolah_id' => 'nullable|string',
+            'tahunpilihan_id' => 'nullable|string',
+            'kecamatankbb_id' => 'nullable|string',
+            'skkanda' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+            'uploadktp' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+            'uploadfoto' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+            'uploadijazah' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+            'uploadpengalaman' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+            'uploadkebenarandata' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+            'uploadnpwp' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+            'uploaddaftarriwayathidup' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
+        ]);
+
+        // Update data text & foreign key
+        $data->update([
+            'namalengkap' => $request->namalengkap,
+            'nik' => $request->nik,
+            'ttl' => $request->ttl,
+            'jeniskelamin' => $request->jeniskelamin,
+            'alamat' => $request->alamat,
+            'notelepon' => $request->notelepon,
+            'email' => $request->email,
+            'agendaskk_id' => $request->agendaskk_id,
+            'jenjangpendidikan_id' => $request->jenjangpendidikan_id,
+            'jabatankerja_id' => $request->jabatankerja_id,
+            'namasekolah_id' => $request->namasekolah_id,
+            'tahunpilihan_id' => $request->tahunpilihan_id,
+            'kecamatankbb_id' => $request->kecamatankbb_id,
+        ]);
+
+        // Upload file langsung ke public
+        $fileFields = [
+            'skkanda',
+            'uploadktp',
+            'uploadfoto',
+            'uploadijazah',
+            'uploadpengalaman',
+            'uploadkebenarandata',
+            'uploadnpwp',
+            'uploaddaftarriwayathidup'
+        ];
+
+        foreach ($fileFields as $field) {
+            if ($request->hasFile($field)) {
+                $file = $request->file($field);
+                $folder = public_path('skktenagakerja/' . $field);
+
+                if (!file_exists($folder)) {
+                    mkdir($folder, 0755, true);
+                }
+
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $file->move($folder, $filename);
+
+                $data->$field = 'skktenagakerja/' . $field . '/' . $filename;
+                $data->save();
+            }
+        }
+
+        return redirect('/beagendaskktkk')->with('update', 'Data berhasil diperbarui!');
+
+    }
 
 }
 

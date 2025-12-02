@@ -2368,6 +2368,10 @@ Route::get('/statistikbujk', [BujkkonsultanController::class, 'datastatistikbujk
 // BAGIAN 7 AHSP
 Route::get('/satuanhargamaterialkbb', [SatuanhargamaterialController::class, 'satuanhargamaterialkbb']);
 
+// BACKEND DATA JAKON KBB
+Route::delete('/allskktenagakerjakbb/delete/{id}', [PembinaanController::class, 'allskktenagakerjakbbdelete'])->middleware(['auth', 'can:admin2']);
+Route::get('/bedatatkkkbb/update/{id}', [PembinaanController::class, 'bedatatkkkbbupdate'])->middleware(['auth', 'can:admin2'])->name('update.datatkkkbb');
+Route::post('/bedatatkkkbb/updatecreate/{id}', [PembinaanController::class, 'bedatatkkkbbupdatenew'])->middleware(['auth', 'can:admin2'])->name('update.datatkkkbbenw');
 
 
 // Route::get('/dashboard', function () {

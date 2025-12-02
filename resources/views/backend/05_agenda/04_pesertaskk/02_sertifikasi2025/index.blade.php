@@ -58,8 +58,8 @@
                         </div>
 
                         <button onclick="exportTableToExcel('tablepeserta', 'data_tkkdpupr2025')" class="button-berkas">
-    <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
-</button>
+                                <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
+                            </button>
 
 <script>
 function exportTableToExcel(tableID, filename = ''){
@@ -165,7 +165,10 @@ function exportTableToExcel(tableID, filename = ''){
                                             <i class="bi bi-bookmark-fill" style="margin-right: 5px;"></i>Jenjang Pendidikan
                                         </th> --}}
                                         <th style="width: 100px; text-align:center;">
-                                            <i class="bi bi-person" style="margin-right: 5px;"></i>NIk
+                                            <i class="bi bi-person" style="margin-right: 5px;"></i>NIK
+                                        </th>
+                                        <th style="width: 100px; text-align:center;">
+                                            <i class="bi bi-person" style="margin-right: 5px;"></i>Kecamatan
                                         </th>
                                         <th style="width: 200px; text-align:center;">
                                             <i class="bi bi-gender-ambiguous" style="margin-right: 5px;"></i>Gender
@@ -174,7 +177,7 @@ function exportTableToExcel(tableID, filename = ''){
                                             <i class="bi bi-calendar-date" style="margin-right: 5px;"></i>Tanggal Lahir
                                         </th>
                                           <th style="width: 200px; text-align:center;">
-                                            <i class="bi bi-calendar-date" style="margin-right: 5px;"></i>Tahun Lulus
+                                            <i class="bi bi-calendar-date" style="margin-right: 5px;"></i>Tahun Bimtek
                                         </th>
                                           {{-- <th style="width: 200px; text-align:center;">
                                             <i class="bi bi-calendar-date" style="margin-right: 5px;"></i>Jarak Kelulusan
@@ -189,7 +192,7 @@ function exportTableToExcel(tableID, filename = ''){
                                             <i class="bi bi-building" style="margin-right: 5px;"></i>Universitas/Sekolah/Intansi
                                         </th> --}}
                                         <th style="width: 300px; text-align:center;">
-                                            <i class="bi bi-file-earmark-pdf-fill" style="margin-right: 5px;"></i>Sertifikat
+                                            <i class="bi bi-file-earmark-pdf-fill" style="margin-right: 5px;"></i>Status Sertifikat
                                         </th>
                                         <th style="width: 200px; text-align:center;">
                                             <i class="bi bi-check-circle" style="margin-right: 5px;"></i>Lihat Peserta
@@ -200,9 +203,9 @@ function exportTableToExcel(tableID, filename = ''){
                                         {{-- <th style="width: 200px; text-align:center;">
                                             <i class="bi bi-check-circle" style="margin-right: 5px;"></i>Verifikasi PU
                                         </th> --}}
-                                        {{-- <th style="width: 200px; text-align:center;">
+                                        <th style="width: 200px; text-align:center;">
                                             <i class="bi bi-gear" style="margin-right: 5px;"></i>Aksi
-                                        </th> --}}
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody id="tableBody">
@@ -221,12 +224,13 @@ function exportTableToExcel(tableID, filename = ''){
 
                                         {{-- <td style="text-align: left;">{{ $item->jenjangpendidikan->jenjangpendidikan}}</td> --}}
                                         <td style="text-align: center;">{{ $item->nik ?? '-' }}</td>
+                                        <td style="text-align: center;">{{ $item->kecamatan->kecamatankbb ?? '' }}</td>
                                         <td style="text-align: center;">{{ $item->jeniskelamin ?? '-'  }}</td>
                                         <td style="text-align: center;">
                                             {{ \Carbon\Carbon::parse($item->ttl)->translatedFormat('d F Y') }}
                                         </td>
                                         <td style="text-align: center;">
-                                            {{$item->tahunlulus ?? '-' }}
+                                            {{$item->tahunpilihan->tahunpilihan ?? '-' }}
                                         </td>
                                         {{-- @php
                                                 $tahunLulus = $item->tahunlulus;
@@ -287,7 +291,7 @@ function exportTableToExcel(tableID, filename = ''){
                                                 <div class="modal-dialog modal-xl modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <a href="#"><img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
+                                                            {{-- <a href="#"><img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" style="margin-right: 5px;"></a> --}}
                                                             <a href="#"><img src="/assets/icon/pupr.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
                                                             <span>:</span>
                                                             <h5 class="modal-title" id="modalKtpLabel{{ $item->id }}">
@@ -298,9 +302,9 @@ function exportTableToExcel(tableID, filename = ''){
                                                         <div class="modal-body text-center">
                                                             <div style="margin-top: 10px;">
                                                                 @if($item->sertifikat && file_exists(public_path('storage/' . $item->sertifikat)))
-                                                                    <iframe src="{{ asset('storage/' . $item->sertifikat) }}" frameborder="0" width="100%" height="300px"></iframe>
+                                                                    <iframe src="{{ asset('storage/' . $item->sertifikat) }}" frameborder="0" width="100%" height="1000px"></iframe>
                                                                 @elseif($item->sertifikat)
-                                                                    <iframe src="{{ asset($item->sertifikat) }}" frameborder="0" width="100%" height="700px"></iframe>
+                                                                    <iframe src="{{ asset($item->sertifikat) }}" frameborder="0" width="100%" height="1000px"></iframe>
                                                                 @else
                                                                     <p>Sertifikat Belum Di Upload !!</p>
                                                                 @endif
@@ -444,7 +448,21 @@ function exportTableToExcel(tableID, filename = ''){
                                             </style>
                                         </td> --}}
 
+            <td style="text-align: center; vertical-align: middle;">
+            <a href="/bedatatkkkbb/update/{{$item->id}}" class="button-berkas" title="Update">
+                <i class="bi bi-pencil-square"></i>
+            </a>
+            <a href="javascript:void(0)" class="button-merah" title="Delete"
+               data-bs-toggle="modal" data-bs-target="#deleteModal"
+               data-judul="{{ $item->id }}"
+               onclick="setDeleteUrl(this)">
+                <i class="bi bi-trash"></i>
+            </a>
+        </td>
+
                                     </tr>
+
+
                                     @empty
     <tr>
         <td colspan="100%"> {{-- Memenuhi semua kolom --}}
@@ -469,6 +487,38 @@ function exportTableToExcel(tableID, filename = ''){
         </td>
     </tr>
 @endforelse
+
+       <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                             </div>
+                             <div class="modal-body">
+                                 <p>Apakah Anda Ingin Menghapus Data : <span id="itemName"></span>?</p>
+                             </div>
+                             <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                 <form id="deleteForm" method="POST" action="">
+                                     @csrf
+                                     @method('DELETE')
+                                     <button type="submit" class="btn btn-danger">Hapus</button>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <script>
+                 function setDeleteUrl(button) {
+                     var id = button.getAttribute('data-judul');
+                     document.getElementById('itemName').innerText = id;
+                     var deleteUrl = "/allskktenagakerjakbb/delete/" + encodeURIComponent(id);
+                     document.getElementById('deleteForm').action = deleteUrl;
+                 }
+                 </script>
 
 <style>
 @keyframes fadeIn {

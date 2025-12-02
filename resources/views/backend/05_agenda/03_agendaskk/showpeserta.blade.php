@@ -121,22 +121,22 @@
                                     @forelse($datapeserta as $item )
                                     <tr class="align-middle">
                                         <td style="text-align: center;">{{ $loop->iteration }}</td>
-                                      <td style="text-align: left; text-transform: uppercase;">
+                                        <td style="text-align: center;">{{ $item->namalengkap ?? '-' }}</td>
+                                      {{-- <td style="text-align: left; text-transform: uppercase;">
                                             @if(!empty($item->user->name))
                                                 {{ $item->user->name }}
                                             @else
                                                 <span style="color: red;">Nama Lengkap Belum Diisi</span>
                                             @endif
-                                        </td>
+                                        </td> --}}
 
                                         {{-- <td style="text-align: left;">{{ $item->jenjangpendidikan->jenjangpendidikan}}</td> --}}
-                                        <td style="text-align: center;">{{ $item->nik }}</td>
-                                        <td style="text-align: center;">{{ $item->jeniskelamin }}</td>
+                                        <td style="text-align: center;">{{ $item->jeniskelamin ?? '-'}}</td>
                                         <td style="text-align: center;">
-                                            {{ \Carbon\Carbon::parse($item->ttl)->translatedFormat('d F Y') }}
+                                            {{ \Carbon\Carbon::parse($item->ttl)->translatedFormat('d F Y') ?? '-' }}
                                         </td>
                                         <td style="text-align: center;">
-                                            {{$item->tahunlulus}}
+                                            {{$item->tahunlulus ?? '-'}}
                                         </td>
                                         @php
                                                 $tahunLulus = $item->tahunlulus;
@@ -150,9 +150,9 @@
                                                 <small>{{ $diff->y }} tahun, {{ $diff->m }} bulan, {{ $diff->d }} hari</small>
                                             </td>
 
-                                        <td style="text-align: left;">{{ $item->notelepon }}</td>
-                                        <td style="text-align: left;">{{ $item->jenjangpendidikan->jenjangpendidikan }}</td>
-                                        <td style="text-align: left;">{{ $item->namasekolah->namasekolah }}</td>
+                                        <td style="text-align: left;">{{ $item->notelepon ?? '-'}}</td>
+                                        <td style="text-align: left;">{{ $item->jenjangpendidikan->jenjangpendidikan  ?? '-'}}</td>
+                                        <td style="text-align: left;">{{ $item->namasekolah->namasekolah ?? '-'}}</td>
 
                                         <td style="text-align: center; gap:10px;" id="status-sertifikat-{{ $item->id }}">
                                             @if($item->sertifikat)
