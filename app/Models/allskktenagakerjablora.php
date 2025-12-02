@@ -54,5 +54,10 @@ class allskktenagakerjablora extends Model
             return $this->belongsTo(jabatankerja::class, 'jabatanskkanda_id');
         }
 
+        public function kecamatankbb()
+        {
+            return $this->belongsTo(kecamatankbb::class, 'kecamatankbb_id');
+        }
+
 
 }

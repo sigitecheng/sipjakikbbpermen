@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tahunpilihans', function (Blueprint $table) {
             $table->id();
-            $table->string('tahun')->nullable();
+            $table->string('tahunpilihan')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tahuns');
+        Schema::dropIfExists('tahunpilihans');
     }
 };
