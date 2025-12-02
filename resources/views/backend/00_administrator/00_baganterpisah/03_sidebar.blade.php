@@ -935,12 +935,12 @@
                   </li>
 
                   <!-- Tenaga Kerja Konstruksi (Duplicate) -->
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                     <a href="/beskkallblora" class="nav-link">
                       <i class="nav-icon bi bi-person-workspace text-warning"></i> <!-- Ikon untuk Tenaga Kerja Konstruksi -->
                       <p style="color: white">Semua TKK</p>
                     </a>
-                  </li>
+                  </li> --}}
 
                   <!-- Profil Paket Pekerjaan Konstruksi -->
                   <li class="nav-item">

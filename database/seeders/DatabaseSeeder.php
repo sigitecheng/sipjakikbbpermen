@@ -983,7 +983,7 @@ statusadmin::create(['id' => 9, 'statusadmin' => 'dinas']);
         // DATA TENAGA KERJA SKK KABUPATEN BANDUNG BARAT
         // skktenagakerja::factory(1235)->create();
 
-
+// / MULAI BARU TKK KBB
         Tukangterampil::create([
             'pengawasanlokasi_id' => '4',
             'desa' => 'Kanangasari',
@@ -12042,9 +12042,9 @@ allskktenagakerjablora::create([
     'jenjangpendidikan_id' => null,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
-
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => null,
+    'namalengkap' => 'Wahyudin',
     'nik' => '-',
     'tempatlahir' => null,
     'ttl' => '1962-08-10',
@@ -12053,7 +12053,6 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
     'uploadktp' => null, // tidak ada file ktp lama
     'uploadfoto' => 'skktenagakerja/arsip/pas/A01_Paspoto.png',
     'uploadijazah' => null,
