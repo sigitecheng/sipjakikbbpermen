@@ -1492,7 +1492,7 @@ public function beagendaskktkk2025(Request $request)
     // Query semua data dari allskktenagakerjablora
     $query = allskktenagakerjablora::select([
         'id', 'user_id', 'agendaskk_id', 'jenjangpendidikan_id', 'jabatankerja_id',
-        'namasekolah_id', 'tahunpilihan_id', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
+        'namasekolah_id', 'tahunpilihan_id', 'namalengkap', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
         'alamat', 'notelepon', 'email', 'tahunlulus', 'uploadktp', 'uploadfoto', 'uploadijazah',
         'uploadpengalaman', 'uploadnpwp', 'uploaddaftarriwayathidup', 'namaasosiasi', 'punyaskk',
         'punyasiki', 'siappatuh', 'verifikasipu', 'verifikasilps', 'sertifikat'
@@ -1530,7 +1530,7 @@ public function beagendaskktkk2025(Request $request)
 
     // Return ke view utama
     return view('backend.05_agenda.04_pesertaskk.02_sertifikasi2025.index', [
-        'title'   => 'Daftar SKK DPUPR Tahun 2025',
+        'title'   => 'Daftar TKK DPUTR Kab Bandung Barat',
         'data'    => $datapesertaskk,
         'perPage' => $perPage,
         'search'  => $search,

@@ -14,9 +14,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -41,10 +39,7 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
-
-
-
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                 <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
 <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
                             <label for="entries" style="font-weight: 600; font-size: 14px;">Tampilkan data : </label>
@@ -62,7 +57,7 @@
                             </select>
                         </div>
 
-                        <button onclick="exportTableToExcel('tablepeserta', 'data_tkkdpupr2025')" class="button-baru">
+                        <button onclick="exportTableToExcel('tablepeserta', 'data_tkkdpupr2025')" class="button-berkas">
     <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
 </button>
 
@@ -215,22 +210,23 @@ function exportTableToExcel(tableID, filename = ''){
                                     @forelse($data as $item )
                                     <tr class="align-middle">
                                         <td style="text-align: center;">{{ $loop->iteration }}</td>
-                                      <td style="text-align: left; text-transform: uppercase;">
+                                        <td style="text-align: center;">{{ $item->namalengkap }}</td>
+                                      {{-- <td style="text-align: left; text-transform: uppercase;">
                                             @if(!empty($item->user->name))
                                                 {{ $item->user->name }}
                                             @else
                                                 <span style="color: red;">Nama Lengkap Belum Diisi</span>
                                             @endif
-                                        </td>
+                                        </td> --}}
 
                                         {{-- <td style="text-align: left;">{{ $item->jenjangpendidikan->jenjangpendidikan}}</td> --}}
-                                        <td style="text-align: center;">{{ $item->nik }}</td>
-                                        <td style="text-align: center;">{{ $item->jeniskelamin }}</td>
+                                        <td style="text-align: center;">{{ $item->nik ?? '-' }}</td>
+                                        <td style="text-align: center;">{{ $item->jeniskelamin ?? '-'  }}</td>
                                         <td style="text-align: center;">
                                             {{ \Carbon\Carbon::parse($item->ttl)->translatedFormat('d F Y') }}
                                         </td>
                                         <td style="text-align: center;">
-                                            {{$item->tahunlulus}}
+                                            {{$item->tahunlulus ?? '-' }}
                                         </td>
                                         {{-- @php
                                                 $tahunLulus = $item->tahunlulus;
@@ -249,7 +245,7 @@ function exportTableToExcel(tableID, filename = ''){
                                         <td style="text-align: left;">{{ $item->namasekolah->namasekolah }}</td> --}}
 
                                         <td style="text-align: center; gap:10px;" id="status-sertifikat-{{ $item->id }}">
-                                            @if($item->sertifikat)
+                                            @if($item->sertifikat ?? '-')
                                                 <p>Terbit</p>
                                             @else
                                                 <p>Belum Terbit</p>
@@ -484,8 +480,7 @@ function exportTableToExcel(tableID, filename = ''){
 
                                 </tbody>
                             </table>
-
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
 <br><br>
                         </div>

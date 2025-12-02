@@ -1070,77 +1070,77 @@ button:hover {
             <td style="text-align: center; font-size:16px;">2</td>
             <td style="font-size:16px;">Jabatan Kerja </td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->jabatankerja->jabatankerja}}</td>
+            <td style="font-size:16px;">{{$datapeserta->jabatankerja->jabatankerja ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">3</td>
             <td style="font-size:16px;">Tempat Lahir </td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->tempatlahir}}</td>
+            <td style="font-size:16px;">{{$datapeserta->tempatlahir ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">4</td>
             <td style="font-size:16px;">Jenis Kelamin </td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->jeniskelamin}}</td>
+            <td style="font-size:16px;">{{$datapeserta->jeniskelamin ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">5</td>
             <td style="font-size:16px;">KTP/KITAS</td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->nik}}</td>
+            <td style="font-size:16px;">{{$datapeserta->nik ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;" >6</td>
             <td style="font-size:16px;">Alamat</td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->alamat}}</td>
+            <td style="font-size:16px;">{{$datapeserta->alamat ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">7</td>
             <td style="font-size:16px;">Telepon</td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->notelepon}}</td>
+            <td style="font-size:16px;">{{$datapeserta->notelepon ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">8</td>
             <td style="font-size:16px;">Email</td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->email}}</td>
+            <td style="font-size:16px;">{{$datapeserta->email ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">9</td>
             <td style="font-size:16px;">Jenjang Pendidikan</td>
             <td style="font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->jenjangpendidikan->jenjangpendidikan}}</td>
+            <td style="font-size:16px;">{{$datapeserta->jenjangpendidikan->jenjangpendidikan ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">10</td>
             <td style="font-size:16px;">Sekolah/Universitas</td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->namasekolah->namasekolah}}</td>
+            <td style="font-size:16px;">{{$datapeserta->namasekolah->namasekolah ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">11</td>
             <td style="font-size:16px;">Tahun Lulus</td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->tahunlulus}}</td>
+            <td style="font-size:16px;">{{$datapeserta->tahunlulus ?? '-' }}</td>
         </tr>
 
         <tr>
             <td style="text-align: center; font-size:16px;">12</td>
             <td style="font-size:16px;">Tahun Bimtek</td>
             <td style="text-align: center; font-size:16px;">:</td>
-            <td style="font-size:16px;">{{$datapeserta->tahunpilihan->tahunpilihan}}</td>
+            <td style="font-size:16px;">{{$datapeserta->tahunpilihan->tahunpilihan ?? '-' }}</td>
         </tr>
 
     </table>

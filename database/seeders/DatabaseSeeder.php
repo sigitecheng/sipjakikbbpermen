@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 // namespace App\Models;
 
+use App\Models\agendaskk;
 use App\Models\agendasertifikasi;
 use App\Models\asosiasimasjaki;
 use App\Models\agendastatus;
@@ -904,8 +905,8 @@ qa::create([
         // =========================================================
 
         User::create([
-            'name'  => 'Admin Sipjaki KBB',
-            'username' => 'Admin Sipjaki KBB',
+            'name'  => 'Sigit Septiadi ',
+            'username' => 'Sigit Septiadi',
             'statusadmin_id' => '1',
             'avatar' => 'user/avatar/foto1.png',
             'email' => 'sigitseptiadi1@gmail.com',
@@ -965,6 +966,16 @@ qa::create([
             'avatar' => 'user/avatar/foto6.png',
             'email' => 'sigitechindo@gmail.com',
             'password' => bcrypt('adminadmin123$$')
+        ]);
+
+        // akun id 8
+        User::create([
+            'name'  => 'Akun LSP',
+            'username' => 'Akun LSP',
+            'statusadmin_id' => '7',
+            'avatar' => 'user/avatar/foto6.png',
+            'email' => 'lsptkkkbb@gmail.com',
+            'password' => bcrypt('adminlsptkkkbb$$')
         ]);
 
 
@@ -11034,6 +11045,14 @@ bujkkonsultan::create([
 ]);
 
     asosiasimasjaki::create([
+    'namaasosiasi'   => 'DPUTR Kabupaten Bandung Barat ', // Nama asosiasi
+    'alamat'         => 'Komplek Pemda Kabupaten Bandung Barat Jl. Raya Padalarang-Cisarua Km.2 Ngamprah', // Alamat asosiasi
+    'notelepon'      => null, // Nomor telepon asosiasi
+    'pic'            => null, // Person In Charge
+    'jumlahanggota'  => null, // Jumlah anggota
+]);
+
+    asosiasimasjaki::create([
     'namaasosiasi'   => 'Asosiasi Jakon Kabupaten Bandung Barat ', // Nama asosiasi
     'alamat'         => 'Jl. Pemuda No. 10, KBB, Jawa Barat', // Alamat asosiasi
     'notelepon'      => '081234567890', // Nomor telepon asosiasi
@@ -12037,8 +12056,8 @@ tahunpilihan::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null, // atau 'namalengkap' jika kamu pakai field itu
-    'agendaskk_id' => null, // isi sesuai kebutuhan
-    'user_id' => 3,
+    'agendaskk_id' => 1, // isi sesuai kebutuhan
+    'user_id' => 7,
     'jenjangpendidikan_id' => null,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
@@ -12086,10 +12105,28 @@ allskktenagakerjablora::create([
     'deleted_at' => null,
 ]);
 
-    }
+
+agendaskk::create([
+    'materipelatihanskk_id' => null,       // ID materi pelatihan (sesuaikan yang ada di tabel)
+    'allskktenagakerjablora_id' => null,   // ID peserta SKK Tenaga Kerja Blora
+    'user_id' => 8,                     // ID LSP penerbit
+    'asosiasimasjaki_id' => 1,          // ID asosiasi penyelenggara
+    'namakegiatan' => 'Pelatihan Tenaga Konstruksi Kecamatan Cikalong Wetan ',
+    'jabatankerja_id' => 76,
+    'penutupan' => '2024-08-13',
+    'waktupelaksanaan' => '2024-08-14',
+    'jumlahpeserta' => 30,
+    'lokasi' => 'Gedung Serba Guna Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'keterangan' => 'Pelatihan Jenjang 1 Tenaga Kerja Konstruksi',
+    'isiagenda' => 'Materi meliputi keselamatan kerja, manajemen proyek, dan teknik konstruksi dasar.',
+    'foto' => 'agendaskk/arsip/foto_kegiatan1.jpg',
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
 
 
-    /**
+    }    /**
      * Menghitung usia berdasarkan tanggal lahir.
      *
      * @param  string  $birthDate
