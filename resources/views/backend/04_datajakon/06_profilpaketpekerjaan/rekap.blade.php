@@ -30,8 +30,7 @@
 
         <!--begin::App Main-->
         <main class="app-main">
-            <section style="background: linear-gradient(to bottom, #a8e6a1, #ffffff); width: 100%; min-height: 100vh;" loading="lazy">
-                <!--begin::App Content Header-->
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
                 <div class="app-content-header">
                     <!--begin::Container-->
                     <div class="container-fluid">
@@ -157,7 +156,7 @@
                                     </button>
                                 </a>
 
-<button onclick="exportTableToExcel('tablePaket', 'data_profilpaketpekerjaan')" class="button-modern">
+<button onclick="exportTableToExcel('tablePaket', 'data_profilpaketpekerjaan')" class="button-berkas">
     <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
 </button>
 
@@ -185,7 +184,7 @@
                                 <a href="/bepaketpekerjaancreate">
                                     <button class="button-baru">
                                         <i class="fa fa-plus" style="margin-right: 8px;"></i>
-                                        Buat Baru
+                                        Tambah Paket
                                     </button>
                                 </a>
                             </div>
@@ -388,12 +387,12 @@
 <td style="text-align: center; vertical-align: middle; white-space: nowrap;">
   <div style="display: inline-flex; gap: 0px; align-items: center; justify-content: center;">
  <a href="{{ url('/bepaketpekerjaan/view/' . $item->id) }}"
-   class="button-modern"
+   class="button-baru"
    title="View">
   <i class="bi bi-eye"></i>
 </a>
  <a href="{{ url('/bepaketpekerjaan/update/' . $item->id) }}"
-   class="button-modern"
+   class="button-berkas"
    title="Update">
   <i class="bi bi-pencil-square"></i>
 </a>
@@ -449,7 +448,9 @@
                             </div>
                         </div>
 
-                        @include('backend.00_administrator.00_baganterpisah.07_paginations')
+
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
+
                         <br><br>
 
                         <!-- Modal Konfirmasi Hapus -->

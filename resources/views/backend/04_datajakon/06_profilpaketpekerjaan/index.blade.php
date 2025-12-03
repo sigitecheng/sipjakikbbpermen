@@ -136,7 +136,7 @@
                                     </button>
                                 </a>
 
-<button onclick="exportTableToExcel('tablePaket', 'data_profilpaketpekerjaan')" class="button-modern">
+<button onclick="exportTableToExcel('tablePaket', 'data_profilpaketpekerjaan')" class="button-berkas">
     <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
 </button>
 
@@ -164,7 +164,7 @@
                                 <a href="/bepaketpekerjaancreate">
                                     <button class="button-baru">
                                         <i class="fa fa-plus" style="margin-right: 8px;"></i>
-                                        Buat Baru
+                                        Tambah Paket
                                     </button>
                                 </a>
                             </div>
@@ -387,7 +387,7 @@
  <a href="{{ url('/bepaketpekerjaan/update/' . $item->id) }}"
    class="button-berkas"
    title="Update">
-  <i class="bi bi-pencil-square"></i> Update
+  <i class="bi bi-pencil-square"></i>
 </a>
 
     <a href="javascript:void(0)" class="button-merah" title="Delete"
@@ -396,7 +396,7 @@
        onclick="setDeleteUrl(this)"
        {{-- style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background-color: #f44336; color: white; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 14px;" --}}
        >
-      <i class="bi bi-trash"></i> Hapus
+      <i class="bi bi-trash"></i>
     </a>
   </div>
 </td>
@@ -452,7 +452,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                        <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                        <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">

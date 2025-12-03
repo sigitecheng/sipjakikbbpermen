@@ -209,8 +209,7 @@ button:hover {
 
       <!--begin::App Main-->
       <main class="app-main">
-        <section style="background-image: url('/assets/gambarbaru/padalarang2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
-
+        <section style="background-color: #ECEEF3; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -479,7 +478,7 @@ button:hover {
 {{-- /====================================== --}}
 <div class="row" style="margin-top: 10px;">
     <!-- 1. TKK DPUPR 2024 -->
-    <div class="col-md-3 col-sm-6 col-12">
+    {{-- <div class="col-md-3 col-sm-6 col-12">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
                 <div class="card-content">
@@ -489,7 +488,6 @@ button:hover {
                     <div class="info-content">
                         <p class="info-text">
                             <i class="bi bi-people-fill" style="margin-right: 6px;"></i>
-                            {{-- <span class="info-number">{{$data_2024}}</span>  --}}
                             TKK DPUPR 2024
                         </p>
                         <p class="small-text">Data tenaga kerja kontrak tahun 2024</p>
@@ -497,7 +495,7 @@ button:hover {
                 </div>
             </div>
         </a>
-    </div>
+    </div> --}}
 
     <!-- 2. TKK DPUPR 2025 -->
     <div class="col-md-3 col-sm-6 col-12">
@@ -511,9 +509,9 @@ button:hover {
                         <p class="info-text">
                             <i class="bi bi-person-workspace" style="margin-right: 6px;"></i>
                             {{-- <span class="info-number">{{$data_2025}}</span>  --}}
-                            TKK DPUPR 2025
+                            TKK DPUTR Kab Bandung Barat
                         </p>
-                        <p class="small-text">Data tenaga kerja kontrak tahun 2025</p>
+                        <p class="small-text">Data Tenaga Kerja Konstruksi</p>
                     </div>
                 </div>
             </div>
@@ -534,7 +532,7 @@ button:hover {
                             {{-- <span class="info-number">{{$data_semuatkk}}</span>  --}}
                             Semua TKK
                         </p>
-                        <p class="small-text">Gabungan seluruh tenaga kerja kontrak</p>
+                        <p class="small-text">Seluruh Tenaga Kerja Konstruksi Kabupaten Bandung Barat</p>
                     </div>
                 </div>
             </div>
@@ -561,6 +559,27 @@ button:hover {
             </div>
         </a>
     </div>
+        <div class="col-md-3 col-sm-6 col-12">
+        <a href="#" style="text-decoration: none;">
+            <div class="dashboard-card card-1">
+                <div class="card-content">
+                    <div class="number-container">
+                        <img src="/assets/icon/pupr.png" alt="icon" width="40">
+
+                    </div>
+                    <div class="info-content">
+                        <p class="info-text">
+                            <i class="bi bi-exclamation-triangle-fill" style="margin-right: 6px;"></i>
+                            {{-- <span class="info-number">{{$data_kecelakaankerja}}</span>  --}}
+                            Kecelakaan Kerja
+                        </p>
+                        <p class="small-text">Data laporan dan analisis kecelakaan kerja konstruksi</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
 </div>
 
 <div class="row" style="margin-top: 10px;">
@@ -738,26 +757,6 @@ button:hover {
 
 <div class="row" style="margin-top: 10px;">
     <!-- 1. Kecelakaan Kerja -->
-    <div class="col-md-3 col-sm-6 col-12">
-        <a href="#" style="text-decoration: none;">
-            <div class="dashboard-card card-1">
-                <div class="card-content">
-                    <div class="number-container">
-                        <img src="/assets/icon/pupr.png" alt="icon" width="40">
-
-                    </div>
-                    <div class="info-content">
-                        <p class="info-text">
-                            <i class="bi bi-exclamation-triangle-fill" style="margin-right: 6px;"></i>
-                            {{-- <span class="info-number">{{$data_kecelakaankerja}}</span>  --}}
-                            Kecelakaan Kerja
-                        </p>
-                        <p class="small-text">Data laporan dan analisis kecelakaan kerja konstruksi</p>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
 
     <!-- 2. Satuan Harga Material -->
     <div class="col-md-3 col-sm-6 col-12">
@@ -825,7 +824,7 @@ button:hover {
 
 <!-- Judul Bagian -->
 <div style="text-align: center; margin-bottom: 20px; margin-top: 20px">
-    <h4 style="font-weight: bold; color: #ffffff; border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 5px;">
+    <h4 style="font-weight: bold; color: black; border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 5px;">
         <i class="bi bi-card-checklist" style="margin-right: 8px; color: #ffb703;"></i>
         Daftar Harga Divisi Pekerjaan
     </h4>

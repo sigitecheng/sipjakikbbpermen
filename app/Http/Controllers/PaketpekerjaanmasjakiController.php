@@ -239,7 +239,7 @@ public function bepaketpekerjaanrekap(Request $request)
     }
 
     // ✅ View utama
-    return view('backend.04_datajakon.06_profilpaketpekerjaan.rekap', [
+return view('backend.04_datajakon.06_profilpaketpekerjaan.rekap', [
         'title'   => 'Profil Paket Pekerjaan Konstruksi dan Konsultasi Konstruksi',
         'data'    => $data,
         'perPage' => $perPage,

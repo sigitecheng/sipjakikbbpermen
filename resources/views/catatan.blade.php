@@ -242,3 +242,5 @@ function previewHeader(event) {
 
 
                      @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
+
+                     <section style="background-color: #ECEEF3; width: 100%; min-height: 100vh;">

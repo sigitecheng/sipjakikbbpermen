@@ -1,23 +1,3 @@
-<style>
-    table {
-        table-layout: fixed;
-        width: 100%;
-    }
-
-    td {
-        padding: 10px;
-        vertical-align: top;
-        word-wrap: break-word;
-    }
-
-    .isi-berita {
-        max-width: 600px;
-        word-wrap: break-word;
-        white-space: normal;
-        overflow-wrap: break-word;
-    }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -30,8 +10,7 @@
 
         <!--begin::App Main-->
         <main class="app-main">
-            <section style="background: linear-gradient(to bottom, #a8e6a1, #ffffff); width: 100%; min-height: 100vh;" loading="lazy">
-                <!--begin::App Content Header-->
+        <section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
                 <div class="app-content-header">
                     <!--begin::Container-->
                     <div class="container-fluid">
@@ -185,7 +164,7 @@
                                 <a href="/bepaketpekerjaancreate">
                                     <button class="button-baru">
                                         <i class="fa fa-plus" style="margin-right: 8px;"></i>
-                                        Buat Baru
+                                        Tambah Paket
                                     </button>
                                 </a>
                             </div>
@@ -224,7 +203,7 @@
     <!-- Konten Statistik 1 -->
     <div id="statistik1" class="statistik-content">
         <div class="text-center mt-3">
-    <button type="button" class="btn btn-outline-success"
+    <button type="button" class="btn btn-outline-primary"
             data-bs-toggle="modal" data-bs-target="#modalStatistikTahunPelaksanaan"
             style="font-family:'Poppins',sans-serif; font-weight:600; font-size:14px;">
         <i class="bi bi-calendar3 me-2"></i> Lihat Statistik Data Jenis Pekerjaan
@@ -237,7 +216,7 @@
     <div class="modal-content" style="border-radius:16px; font-family:'Poppins', sans-serif; font-size:16px;">
 
       <!-- Header -->
-      <div class="modal-header" style="background:#1a3c34; color:white; border-top-left-radius:16px; border-top-right-radius:16px;">
+      <div class="modal-header" style="background:#020243; color:white; border-top-left-radius:16px; border-top-right-radius:16px;">
         <h5 class="modal-title" id="modalStatistikTahunPelaksanaanLabel" style="font-size:16px;">
           <i class="bi bi-calendar3 me-2"></i> Statistik Jenis Paket Pekerjaan
         </h5>
@@ -248,7 +227,7 @@
       <div class="modal-body" style="font-size:16px;">
         <div class="table-responsive">
           <table class="table table-bordered align-middle text-center" style="font-size:16px;">
-            <thead style="background:#f3f4f6; color:#1a3c34; font-weight:600;">
+            <thead style="background:#f3f4f6; color:#020243; font-weight:600;">
               <tr>
                 <th style="width: 5%;">No</th>
                 <th style="text-align:left;">Jenis Pekerjaan</th>
@@ -261,7 +240,7 @@
               <tr>
                 <td>{{ $index + 1 }}</td>
                 <td style="text-align: left;">{{ $item['jenis'] }}</td>
-                <td style="font-weight:600; color:#1a3c34;">{{ $item['jumlah'] }} Paket</td>
+                <td style="font-weight:600; color:#020243;">{{ $item['jumlah'] }} Paket</td>
                 <td>{{ number_format($item['persentase'], 1) }}%</td>
               </tr>
               @endforeach
@@ -287,23 +266,23 @@
     <div class="col-md-2 col-sm-4 col-6 mb-4">
         <div class="stats-card h-100">
             <div class="stats-content d-flex flex-column align-items-center justify-content-center p-3">
-                <div class="stats-icon-box mb-2" style="width:60px; height:60px; border-radius:12px; background:#1a3c34; display:flex; align-items:center; justify-content:center;">
+                <div class="stats-icon-box mb-2" style="width:60px; height:60px; border-radius:12px; background:#020243; display:flex; align-items:center; justify-content:center;">
                     <i class="bi bi-briefcase-fill" style="color:white; font-size:24px;"></i>
                 </div>
                 <div class="stats-info text-center">
                     <p class="stats-title" style="font-size:14px; font-weight:600; margin-bottom:4px; color:#333;">
                         {{ $item['jenis'] }}
                     </p>
-                    <p style="font-weight:700; font-size:16px; margin:0; color:#1a3c34;">
+                    <p style="font-weight:700; font-size:16px; margin:0; color:#020243;">
                         <span class="stats-count" data-target="{{ $item['jumlah'] }}">0</span> Paket Pekerjaan
                     </p>
-                    <div class="stats-percentage mt-1" style="font-size:12px; color:#1a3c34;">
+                    <div class="stats-percentage mt-1" style="font-size:12px; color:#020243;">
                         <i class="bi bi-graph-up-arrow"></i>
                         <span>{{ number_format($item['persentase'], 1) }}%</span>
                     </div>
                     <div class="stats-progress-wrap mt-2" style="width:100%; height:6px; background:#eee; border-radius:4px;">
                         <div class="stats-progress-bar"
-                             style="width: {{ $item['persentase'] }}%; height:100%; background:#1a3c34; border-radius:4px;">
+                             style="width: {{ $item['persentase'] }}%; height:100%; background:#020243; border-radius:4px;">
                         </div>
                     </div>
                 </div>
@@ -324,23 +303,23 @@
         <div class="stats-card h-100">
             <div class="stats-content d-flex align-items-center p-3">
                 <div class="stats-icon-box me-3"
-                     style="width:70px; height:70px; border-radius:14px; background:#1a3c34; display:flex; align-items:center; justify-content:center;">
+                     style="width:70px; height:70px; border-radius:14px; background:#020243; display:flex; align-items:center; justify-content:center;">
                     <i class="bi bi-briefcase-fill" style="color:white; font-size:28px;"></i>
                 </div>
                 <div class="stats-info w-100">
                     <p class="stats-title mb-1" style="font-size:16px; font-weight:600; color:#333;">
                         {{ $item['jenis'] }}
                     </p>
-                    <p style="font-weight:700; font-size:18px; margin:0; color:#1a3c34;">
+                    <p style="font-weight:700; font-size:18px; margin:0; color:#020243;">
                         <span class="stats-count" data-target="{{ $item['jumlah'] }}">0</span> Paket Pekerjaan
                     </p>
-                    <div class="stats-percentage mt-1" style="font-size:13px; color:#1a3c34;">
+                    <div class="stats-percentage mt-1" style="font-size:13px; color:#020243;">
                         <i class="bi bi-graph-up-arrow"></i>
                         <span>{{ number_format($item['persentase'], 1) }}%</span>
                     </div>
                     <div class="stats-progress-wrap mt-2" style="height:6px; background:#eee; border-radius:4px;">
                         <div class="stats-progress-bar"
-                             style="width: {{ $item['persentase'] }}%; height:100%; background:#1a3c34; border-radius:4px;">
+                             style="width: {{ $item['persentase'] }}%; height:100%; background:#020243; border-radius:4px;">
                         </div>
                     </div>
                 </div>
@@ -362,23 +341,23 @@
         <div class="stats-card h-100">
             <div class="stats-content d-flex align-items-center p-3">
                 <div class="stats-icon-box me-3"
-                     style="width:70px; height:70px; border-radius:14px; background:#1a3c34; display:flex; align-items:center; justify-content:center;">
+                     style="width:70px; height:70px; border-radius:14px; background:#020243; display:flex; align-items:center; justify-content:center;">
                     <i class="bi bi-briefcase-fill" style="color:white; font-size:28px;"></i>
                 </div>
                 <div class="stats-info w-100">
                     <p class="stats-title mb-1" style="font-size:16px; font-weight:600; color:#333;">
                         {{ $item['jenis'] }}
                     </p>
-                    <p style="font-weight:700; font-size:18px; margin:0; color:#1a3c34;">
+                    <p style="font-weight:700; font-size:18px; margin:0; color:#020243;">
                         <span class="stats-count" data-target="{{ $item['jumlah'] }}">0</span> Paket Pekerjaan
                     </p>
-                    <div class="stats-percentage mt-1" style="font-size:13px; color:#1a3c34;">
+                    <div class="stats-percentage mt-1" style="font-size:13px; color:#020243;">
                         <i class="bi bi-graph-up-arrow"></i>
                         <span>{{ number_format($item['persentase'], 1) }}%</span>
                     </div>
                     <div class="stats-progress-wrap mt-2" style="height:6px; background:#eee; border-radius:4px;">
                         <div class="stats-progress-bar"
-                             style="width: {{ $item['persentase'] }}%; height:100%; background:#1a3c34; border-radius:4px;">
+                             style="width: {{ $item['persentase'] }}%; height:100%; background:#020243; border-radius:4px;">
                         </div>
                     </div>
                 </div>
@@ -399,23 +378,23 @@
         <div class="stats-card h-100">
             <div class="stats-content d-flex align-items-center p-3">
                 <div class="stats-icon-box me-3"
-                     style="width:70px; height:70px; border-radius:14px; background:#1a3c34; display:flex; align-items:center; justify-content:center;">
+                     style="width:70px; height:70px; border-radius:14px; background:#020243; display:flex; align-items:center; justify-content:center;">
                     <i class="bi bi-briefcase-fill" style="color:white; font-size:28px;"></i>
                 </div>
                 <div class="stats-info w-100">
                     <p class="stats-title mb-1" style="font-size:16px; font-weight:600; color:#333;">
                         {{ $item['jenis'] }}
                     </p>
-                    <p style="font-weight:700; font-size:18px; margin:0; color:#1a3c34;">
+                    <p style="font-weight:700; font-size:18px; margin:0; color:#020243;">
                         <span class="stats-count" data-target="{{ $item['jumlah'] }}">0</span> Paket Pekerjaan
                     </p>
-                    <div class="stats-percentage mt-1" style="font-size:13px; color:#1a3c34;">
+                    <div class="stats-percentage mt-1" style="font-size:13px; color:#020243;">
                         <i class="bi bi-graph-up-arrow"></i>
                         <span>{{ number_format($item['persentase'], 1) }}%</span>
                     </div>
                     <div class="stats-progress-wrap mt-2" style="height:6px; background:#eee; border-radius:4px;">
                         <div class="stats-progress-bar"
-                             style="width: {{ $item['persentase'] }}%; height:100%; background:#1a3c34; border-radius:4px;">
+                             style="width: {{ $item['persentase'] }}%; height:100%; background:#020243; border-radius:4px;">
                         </div>
                     </div>
                 </div>
@@ -430,7 +409,7 @@
     <div id="statistik5" class="statistik-content" style="display:none;">
         <!-- Tombol Pemicu Modal -->
 <div class="text-center mt-3">
-    <button type="button" class="btn btn-outline-success"
+    <button type="button" class="btn btn-outline-primary"
             data-bs-toggle="modal" data-bs-target="#modalStatistikTahun"
             style="font-family:'Poppins',sans-serif; font-weight:600; font-size:14px;">
         <i class="bi bi-bank2 me-2"></i> Lihat Statistik Data Satuan Kerja
@@ -443,7 +422,7 @@
     <div class="modal-content" style="border-radius:16px; font-family:'Poppins', sans-serif; font-size:16px;">
 
       <!-- Header -->
-      <div class="modal-header" style="background:#1a3c34; color:white; border-top-left-radius:16px; border-top-right-radius:16px;">
+      <div class="modal-header" style="background:#020243; color:white; border-top-left-radius:16px; border-top-right-radius:16px;">
         <h5 class="modal-title" id="modalStatistikTahunLabel" style="font-size:16px;">
           <i class="bi bi-bank2 me-2"></i> Statistik Paket Pekerjaan Per Satuan Kerja
         </h5>
@@ -454,7 +433,7 @@
       <div class="modal-body" style="font-size:16px;">
         <div class="table-responsive">
           <table class="table table-bordered align-middle text-center" style="font-size:16px;">
-            <thead style="background:#f3f4f6; color:#1a3c34; font-weight:600;">
+            <thead style="background:#f3f4f6; color:#020243; font-weight:600;">
               <tr>
                 <th style="width: 5%;">No</th>
                 <th style="text-align:left;">Dinas/Instansi</th>
@@ -467,7 +446,7 @@
               <tr>
                 <td>{{ $index + 1 }}</td>
                 <td style="text-align: left;">{{ $item['jenis'] }}</td>
-                <td style="font-weight:600; color:#1a3c34;">{{ $item['jumlah'] }} Paket</td>
+                <td style="font-weight:600; color:#020243;">{{ $item['jumlah'] }} Paket</td>
                 <td>{{ number_format($item['persentase'], 1) }}%</td>
               </tr>
               @endforeach
@@ -497,7 +476,7 @@
 
                 <!-- Ikon Instansi Pemerintah -->
                 <div class="stats-icon-box mb-2"
-                     style="width:70px; height:70px; border-radius:14px; background:#1a3c34; display:flex; align-items:center; justify-content:center;">
+                     style="width:70px; height:70px; border-radius:14px; background:#020243; display:flex; align-items:center; justify-content:center;">
                     <i class="bi bi-bank2" style="color:white; font-size:32px;"></i>
                 </div>
 
@@ -506,17 +485,17 @@
                     <p class="stats-title mb-1" style="font-size:14px; font-weight:600; color:#333;">
                         {{ $item['jenis'] }}
                     </p>
-                    <p style="font-weight:700; font-size:16px; margin:0; color:#1a3c34;">
+                    <p style="font-weight:700; font-size:16px; margin:0; color:#020243;">
                         <span class="stats-count" data-target="{{ $item['jumlah'] }}">0</span> Paket
                     </p>
-                    <div class="stats-percentage mt-1" style="font-size:12px; color:#1a3c34;">
+                    <div class="stats-percentage mt-1" style="font-size:12px; color:#020243;">
                         <i class="bi bi-graph-up-arrow"></i>
                         <span>{{ number_format($item['persentase'], 1) }}%</span>
                     </div>
                     <div class="stats-progress-wrap mt-2"
                          style="width:100%; height:6px; background:#eee; border-radius:4px;">
                         <div class="stats-progress-bar"
-                             style="width: {{ $item['persentase'] }}%; height:100%; background:#1a3c34; border-radius:4px;">
+                             style="width: {{ $item['persentase'] }}%; height:100%; background:#020243; border-radius:4px;">
                         </div>
                     </div>
                 </div>
