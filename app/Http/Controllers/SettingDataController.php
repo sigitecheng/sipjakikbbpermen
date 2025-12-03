@@ -7,6 +7,7 @@ use App\Models\peralatankonstruksi;
 use App\Models\alatberat;
 use App\Models\jabatankerja;
 use App\Models\jenjangpendidikan;
+use App\Models\kecamatankbb;
 use App\Models\namasekolah;
 use App\Models\profiljenispekerjaan;
 use App\Models\subklasifikasi;
@@ -546,6 +547,94 @@ jabatankerja::create([
 
     session()->flash('create', 'Data berhasil dibuat!');
     return redirect('/settingsjabatankerja');
+}
+
+public function settingkecamatankbb(Request $request)
+{
+    $perPage = $request->input('perPage', 10);
+    $search  = $request->input('search');
+
+    $query = kecamatankbb::query();
+
+    if ($search) {
+        $query->where('kecamatankbb', 'LIKE', "%{$search}%");
+    }
+
+    // Urutkan berdasarkan abjad A-Z
+    $query->orderBy('kecamatankbb', 'asc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view(
+                'backend.16_settingsdata.04_jenjangpendidikan.partials.table',
+                compact('data')
+            )->render()
+        ]);
+    }
+
+    return view('backend.16_settingsdata.07_kecamatankbb.index', [
+        'title'   => 'Daftar Kecamatan Kabupaten Bandung Barat',
+        'data'    => $data,
+        'perPage' => $perPage,
+        'search'  => $search
+    ]);
+}
+
+
+public function kecamatankbbdelete($id)
+{
+// Cari item berdasarkan judul
+$entry = kecamatankbb::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/settingkecamatankbb')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
+}
+
+
+
+    public function kecamatankbbcreate()
+    {
+            $user = Auth::user();
+
+        return view('backend.16_settingsdata.07_kecamatankbb.create', [
+            'title' => 'Tambah Kecamatan Kab Bandung Barat',
+            // 'data' => $dataagendapelatihan,
+            'user' => $user,
+        ]);
+    }
+
+
+
+    public function kecamatankbbcreatenew(Request $request)
+{
+    $request->validate([
+        'kecamatankbb' => 'required|string',
+    ], [
+        'kecamatankbb.required' => 'Nama Kecamatan tidak boleh kosong.',
+        'kecamatankbb.string'   => 'Nama Kecamatan harus berupa teks.',
+        'kecamatankbb.max'      => 'Nama Kecamatan tidak boleh lebih dari 50 karakter.',
+        'kecamatankbb.unique'   => 'Nama Kecamatan ini sudah terdaftar.',
+    ]);
+
+kecamatankbb::create([
+        'kecamatankbb' => $request->kecamatankbb,
+    ]);
+
+    session()->flash('create', 'Data berhasil dibuat!');
+    return redirect('/settingkecamatankbb');
 }
 
 }

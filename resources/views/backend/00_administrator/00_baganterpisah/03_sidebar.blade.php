@@ -987,6 +987,13 @@
     </a>
 </li>
 
+<li class="nav-item">
+    <a href="/settingkecamatankbb" class="nav-link">
+        <i class="nav-icon bi bi-person-badge-fill text-warning"></i> <!-- Ikon Jabatan Kerja -->
+        <p style="color: white">Kecamatan KBB</p>
+    </a>
+</li>
+
 {{-- <li class="nav-item">
     <a href="/404" class="nav-link">
         <i class="nav-icon bi bi-journal-bookmark-fill text-warning"></i> <!-- Ikon Jurusan -->
