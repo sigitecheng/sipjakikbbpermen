@@ -10,8 +10,7 @@
 
         <!--begin::App Main-->
         <main class="app-main">
-            <section style="background: linear-gradient(to bottom, #a8e6a1, #ffffff); width: 100%; min-height: 100vh;" loading="lazy">
-                <!--begin::App Content Header-->
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
                 <div class="app-content-header">
                     <!--begin::Container-->
                     <div class="container-fluid">
@@ -173,7 +172,7 @@
 
                         <div class="card-body p-0">
                             <div class="table-responsive" style="overflow-x: auto; white-space: nowrap;">
-                                <table id="tablePaket" class="zebra-table table-striped">
+                                <table id="tablePaket" class="zebra-table">
                                     <thead>
                                         <tr>
                                             <th style="width: 75px; text-align:center;">
@@ -182,7 +181,7 @@
                                             <th style="width: 175px; text-align:center;">
                                                 <i class="bi bi-briefcase" style="margin-right: 5px;"></i>Jenis Pekerjaan
                                             </th>
-                                            <th style="width: 400px; text-align:center;">
+                                            <th style="width: 1200px; text-align:center;">
                                                 <i class="bi bi-card-text" style="margin-right: 5px;"></i>Nama Pekerjaan
                                             </th>
                                             <th style="width: 400px; text-align:center;">
@@ -221,7 +220,7 @@
                                             <th style="width: 200px; text-align:center;">
                                                 <i class="bi bi-graph-up-arrow" style="margin-right: 5px;"></i>Progress
                                             </th>
-                                            <th style="width: 400px; text-align:center;">
+                                            <th style="width: 2000px; text-align:center;">
                                                 <i class="bi bi-diagram-3" style="margin-right: 5px;"></i>Satuan Kerja
                                             </th>
                                             {{-- <th style="width: 200px; text-align:center;">
@@ -243,10 +242,20 @@
         <span class="button-berkas">Data Belum Di Update !</span>
     @endif
 </td>
-<td style="text-align: left; max-width: 380px; word-wrap: break-word; white-space: normal;">
-    {!! $item->namapekerjaan
-        ? ucfirst(strtolower($item->namapekerjaan))
-        : '<span class="button-berkas">Data Belum Di Update !</span>' !!}
+
+<td style="text-align: left;">
+    @if ($item->namapekerjaan)
+        @php
+            $words = explode(' ', strtolower($item->namapekerjaan));
+            $chunks = array_chunk($words, 7); // setiap 7 kata
+        @endphp
+
+        @foreach ($chunks as $chunk)
+            {!! ucfirst(implode(' ', $chunk)) !!}<br>
+        @endforeach
+    @else
+        <span class="button-berkas">Data Belum Di Update !</span>
+    @endif
 </td>
 
 <td style="text-align: center;">
@@ -353,9 +362,18 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                        <td style="text-align: left; max-width: 380px; word-wrap: break-word; white-space: normal;">
-                                            {{ ucwords(strtolower($item->user->name ?? 'Data Belum Di Update'))  }}
-                                            </td>
+                                  <td style="text-align: left;">
+                                    @php
+                                        $nama = strtolower($item->user->name ?? 'Data Belum Di Update');
+                                        $words = explode(' ', $nama);
+                                        $chunks = array_chunk($words, 2); // setiap 2 kata
+                                    @endphp
+
+                                    @foreach ($chunks as $chunk)
+                                        {{ ucwords(implode(' ', $chunk)) }}<br>
+                                    @endforeach
+                                </td>
+
 
                                             {{-- <td style="text-align: center;">
                                                 <div style="display: flex; flex-direction: column; align-items: center;">
@@ -423,7 +441,9 @@
                             </div>
                         </div>
 
-                        @include('backend.00_administrator.00_baganterpisah.07_paginations')
+
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
+
                         <br><br>
 
                         <!-- Modal Konfirmasi Hapus -->

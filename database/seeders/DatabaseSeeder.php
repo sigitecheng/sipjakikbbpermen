@@ -34,6 +34,7 @@ use App\Models\berita;
 use App\Models\beritaagenda;
 use App\Models\bujkkonsultan;
 use App\Models\bujkkontraktor;
+use App\Models\bulanrekap;
 use App\Models\giskbb;
 use App\Models\headerberanda;
 use App\Models\himbauandinas;
@@ -48,6 +49,8 @@ use App\Models\metodepengadaan;
 use App\Models\namasekolah;
 use App\Models\paketpekerjaan;
 use App\Models\Paketpekerjaan as ModelsPaketpekerjaan;
+use App\Models\paketpekerjaanmasjaki;
+use App\Models\paketstatuspekerjaan;
 use App\Models\pelatihan;
 use App\Models\penanggungjawabteknis;
 use App\Models\pengawasanbangunangedung;
@@ -61,6 +64,7 @@ use App\Models\profiljakonkabid;
 use App\Models\profiljakonkepaladinas;
 use App\Models\profiljakonpersonil;
 use App\Models\profiljakonsipjaki;
+use App\Models\profiljenispekerjaan;
 use App\Models\qa;
 use App\Models\qapertanyaan;
 use App\Models\qasebagai;
@@ -73,6 +77,7 @@ use App\Models\sbulampiran3;
 use App\Models\standarbiayaumum;
 use App\Models\statusadmin;
 use App\Models\strukturdinas;
+use App\Models\sumberdana;
 use App\Models\tahunpilihan;
 use App\Models\timpembina;
 use App\Models\tupoksi;
@@ -12245,6 +12250,740 @@ kecamatankbb::create([
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
     'deleted_at' => null,
+]);
+
+/// PROFIL PAKET PEKERJAAN MAS JAKI
+//======================== ===================================================================================
+// DATA NAMA SEKOLAH MAS JAKI BLORA
+profiljenispekerjaan::create([
+    'id' => '1',
+    'jenispekerjaan' => 'Checkdam',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '2',
+    'jenispekerjaan' => 'Belanja Konstruksi',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '3',
+    'jenispekerjaan' => 'Drainase',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '4',
+    'jenispekerjaan' => 'Embung',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '5',
+    'jenispekerjaan' => 'Gedung',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '6',
+    'jenispekerjaan' => 'Irigasi',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '7',
+    'jenispekerjaan' => 'Jalan',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '8',
+    'jenispekerjaan' => 'Jembatan   ',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '9',
+    'jenispekerjaan' => 'Pasar',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '10',
+    'jenispekerjaan' => 'Ruang Terbuka Hijau',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '11',
+    'jenispekerjaan' => 'SPAM',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '12',
+    'jenispekerjaan' => 'Bangunan Air',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '13',
+    'jenispekerjaan' => 'Belanja Konstruksi',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '14',
+    'jenispekerjaan' => 'Fasilitas Umum',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '15',
+    'jenispekerjaan' => 'Pipanisasi',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '16',
+    'jenispekerjaan' => 'Sumur',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '17',
+    'jenispekerjaan' => 'Talud',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '18',
+    'jenispekerjaan' => 'Penyusunan Database',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '19',
+    'jenispekerjaan' => 'Pengawasan Jalan',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '20',
+    'jenispekerjaan' => 'Konstruksi Jalan',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '21',
+    'jenispekerjaan' => 'Taman',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '22',
+    'jenispekerjaan' => 'Database',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '23',
+    'jenispekerjaan' => 'Database Gedung',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '24',
+    'jenispekerjaan' => 'Database Jalan',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '25',
+    'jenispekerjaan' => 'Konsultasi',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+profiljenispekerjaan::create([
+    'id' => '26',
+    'jenispekerjaan' => 'Survey Harga Bahan',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+
+// PAKET STATUS PEKERJAAN
+
+paketstatuspekerjaan::create([
+    'id' => 1,
+    'paketstatuspekerjaan' => 'Pekerjaan Konstruksi Tender',
+]);
+
+paketstatuspekerjaan::create([
+    'id' => 2,
+    'paketstatuspekerjaan' => 'Pekerjaan Konstruksi Non Tender',
+]);
+
+paketstatuspekerjaan::create([
+    'id' => 3,
+    'paketstatuspekerjaan' => 'Pekerjaan Konsultasi Konstruksi Tender',
+]);
+
+paketstatuspekerjaan::create([
+    'id' => 4,
+    'paketstatuspekerjaan' => 'Pekerjaan Konsultasi Konstruksi Non Tender',
+]);
+
+
+// SUMBER DANA
+
+sumberdana::create([
+    'id' => '1',
+    'sumberdana' => 'APBN',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+sumberdana::create([
+    'id' => '2',
+    'sumberdana' => 'APBD',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+sumberdana::create([
+    'id' => '3',
+    'sumberdana' => 'APBDP',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
+
+// bulan rekap bro
+        // =================================================================
+        bulanrekap::create([
+            'id'  => '1',
+            'bulanrekap'  => 'Januari',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '2',
+            'bulanrekap'  => 'Februari',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '3',
+            'bulanrekap'  => 'Maret',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '4',
+            'bulanrekap'  => 'April',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '5',
+            'bulanrekap'  => 'Mei',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '6',
+            'bulanrekap'  => 'Juni',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '7',
+            'bulanrekap'  => 'Juli',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '8',
+            'bulanrekap'  => 'Agustus',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '9',
+            'bulanrekap'  => 'September',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '10',
+            'bulanrekap'  => 'Oktober',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '11',
+            'bulanrekap'  => 'November',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '12',
+            'bulanrekap'  => 'Desember',
+        ]);
+
+        bulanrekap::create([
+            'id'  => '13',
+            'bulanrekap'  => 'Selesai',
+        ]);
+
+    // ============================
+    //  USER ID 11
+    // ============================
+    User::create([
+        'id' => 11,
+        'name'  => 'DINAS PEKERJAAN UMUM DAN TATA RUANG',
+        'username' => 'DINAS PEKERJAAN UMUM DAN TATA RUANG',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto1.png',
+        'email' => 'dputr@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 12
+    // ============================
+    User::create([
+        'id' => 12,
+        'name'  => 'DINAS PERUMAHAN PEMUKIMAN DAN PERHUBUNGAN',
+        'username' => 'DINAS PERUMAHAN PEMUKIMAN DAN PERHUBUNGAN',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto2.png',
+        'email' => 'dinasperkimkbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 13
+    // ============================
+    User::create([
+        'id' => 13,
+        'name'  => 'DINAS PENDIDIKAN',
+        'username' => 'DINAS PENDIDIKAN',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto3.png',
+        'email' => 'dindikkbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 16
+    // ============================
+    User::create([
+        'id' => 14,
+        'name'  => 'DINAS PANGAN, PERTANIAN, PETERNAKAN, DAN PERIKANAN',
+        'username' => 'DINAS PANGAN, PERTANIAN, PETERNAKAN, DAN PERIKANAN',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto6.png',
+        'email' => 'dinaspangankbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 17
+    // ============================
+    User::create([
+        'id' => 15,
+        'name'  => 'DINAS KESEHATAN',
+        'username' => 'DINAS KESEHATAN',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto1.png',
+        'email' => 'dinkeskbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 20
+    // ============================
+    User::create([
+        'id' => 16,
+        'name'  => 'DINAS PERDAGANGAN, KOPERASI USAHA KECIL DAN MENENGAH',
+        'username' => 'DINAS PERDAGANGAN, KOPERASI USAHA KECIL DAN MENENGAH',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto4.png',
+        'email' => 'dinkopkbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 21
+    // ============================
+    User::create([
+        'id' => 17,
+        'name'  => 'SEKRETARIAT DAERAH',
+        'username' => 'SEKRETARIAT DAERAH',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto5.png',
+        'email' => 'stdakbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 23
+    // ============================
+    User::create([
+        'id' => 18,
+        'name'  => 'DINAS LINGKUNGAN HIDUP',
+        'username' => 'DINAS LINGKUNGAN HIDUP',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto1.png',
+        'email' => 'dlhkbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 24
+    // ============================
+    User::create([
+        'id' => 19,
+        'name'  => 'DINAS KOMUNIKASI DAN INFORMATIKA',
+        'username' => 'DINAS KOMUNIKASI DAN INFORMATIKA',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto2.png',
+        'email' => 'dinkominfokbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 25
+    // ============================
+    User::create([
+        'id' => 20,
+        'name'  => 'BADAN PERENCANAAN PEMBANGUNAN DAERAH',
+        'username' => 'BADAN PERENCANAAN PEMBANGUNAN DAERAH',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto3.png',
+        'email' => 'dinasperencanaankbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 27
+    // ============================
+    User::create([
+        'id' => 21,
+        'name'  => 'DINAS KEPEMUDAAN, OLAH RAGA, KEBUDAYAAN DAN PARIWISATA',
+        'username' => 'DINAS KEPEMUDAAN, OLAH RAGA, KEBUDAYAAN DAN PARIWISATA',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto5.png',
+        'email' => 'disporakbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+
+    // ============================
+    //  USER ID 30
+    // ============================
+    User::create([
+        'id' => 22,
+        'name'  => 'DINAS PENGENDALIAN PENDUDUK DAN KELUARGA BERENCANA',
+        'username' => 'DINAS PENGENDALIAN PENDUDUK DAN KELUARGA BERENCANA',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto2.png',
+        'email' => 'dinaspendudukkbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 31
+    // ============================
+    User::create([
+        'id' => 23,
+        'name'  => 'DINAS SOSIAL PEMBERDAYAAN PEREMPUAN DAN PERLINDUNGAN ANAK',
+        'username' => 'DINAS SOSIAL PEMBERDAYAAN PEREMPUAN DAN PERLINDUNGAN ANAK',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto3.png',
+        'email' => 'dinsoskbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 35
+    // ============================
+    User::create([
+        'id' => 24,
+        'name'  => 'DINAS PERINDUSTRIAN DAN TENAGA KERJA',
+        'username' => 'DINAS PERINDUSTRIAN DAN TENAGA KERJA',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto1.png',
+        'email' => 'dinindustrikbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 37
+    // ============================
+    User::create([
+        'id' => 25,
+        'name'  => 'SEKRETARIAT DEWAN',
+        'username' => 'SEKRETARIAT DEWAN',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto3.png',
+        'email' => 'sekwankbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 38
+    // ============================
+    User::create([
+        'id' => 26,
+        'name'  => 'BADAN KEPEGAWAIAN DAERAH',
+        'username' => 'BADAN KEPEGAWAIAN DAERAH',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto4.png',
+        'email' => 'bpdkbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+    // ============================
+    //  USER ID 40 (TERAKHIR)
+    // ============================
+    User::create([
+        'id' => 27,
+        'name'  => 'INSPEKTORAT DAERAH',
+        'username' => 'INSPEKTORAT DAERAH',
+        'statusadmin_id' => 9,
+        'avatar' => 'user/avatar/foto6.png',
+        'email' => 'inspektoratkbb@gmail.com',
+        'password' => bcrypt('sipjakikbbadmin'),
+    ]);
+
+
+
+// ------------
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 5,
+    'paketstatuspekerjaan_id' => 2,
+    'sumberdana_id' => 1,
+    'tahunpilihan_id' => 11,
+    'user_id' => 11,
+    'bulanrekap_id' => 1,
+    'namapekerjaan' => 'Pembangunan Drainase Lingkungan Kabupaten Bandung Barat',
+    'cvptpenyedia' => 'PT Maju Jaya KBB',
+    'nib' => '8123456789012',
+    'nilaikontrak' => 450000000.00,
+    'jeniskontrak' => 'Harga Satuan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Januari',
+    'bulanselesai' => 'Maret',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 12,
+    'paketstatuspekerjaan_id' => 3,
+    'sumberdana_id' => 2,
+    'tahunpilihan_id' => 11,
+    'user_id' => 12,
+    'bulanrekap_id' => 2,
+    'namapekerjaan' => 'Rehabilitasi Gedung Kantor Kecamatan Lembang',
+    'cvptpenyedia' => 'CV Karya Barokah',
+    'nib' => '7123456789012',
+    'nilaikontrak' => 875000000.00,
+    'jeniskontrak' => 'Harga Borongan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Februari',
+    'bulanselesai' => 'April',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 7,
+    'paketstatuspekerjaan_id' => 1,
+    'sumberdana_id' => 3,
+    'tahunpilihan_id' => 11,
+    'user_id' => 13,
+    'bulanrekap_id' => 3,
+    'namapekerjaan' => 'Peningkatan Jalan Cisarua – Parongpong',
+    'cvptpenyedia' => 'PT Konstruksi Prima',
+    'nib' => '6234567890123',
+    'nilaikontrak' => 1250000000.00,
+    'jeniskontrak' => 'Harga Satuan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Maret',
+    'bulanselesai' => 'Juli',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 16,
+    'paketstatuspekerjaan_id' => 4,
+    'sumberdana_id' => 2,
+    'tahunpilihan_id' => 11,
+    'user_id' => 14,
+    'bulanrekap_id' => 4,
+    'namapekerjaan' => 'Pengadaan Sarana Air Bersih Kabupaten Bandung Barat',
+    'cvptpenyedia' => 'CV Tirta Mandiri',
+    'nib' => '5345678901234',
+    'nilaikontrak' => 380000000.00,
+    'jeniskontrak' => 'Harga Borongan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'April',
+    'bulanselesai' => 'Juni',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 20,
+    'paketstatuspekerjaan_id' => 2,
+    'sumberdana_id' => 4,
+    'tahunpilihan_id' => 11,
+    'user_id' => 15,
+    'bulanrekap_id' => 5,
+    'namapekerjaan' => 'Pemeliharaan Rutin Irigasi Pertanian Ngamprah',
+    'cvptpenyedia' => 'PT Agro Karya',
+    'nib' => '4456789012345',
+    'nilaikontrak' => 220000000.00,
+    'jeniskontrak' => 'Harga Satuan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Mei',
+    'bulanselesai' => 'Juni',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 3,
+    'paketstatuspekerjaan_id' => 1,
+    'sumberdana_id' => 1,
+    'tahunpilihan_id' => 11,
+    'user_id' => 16,
+    'bulanrekap_id' => 6,
+    'namapekerjaan' => 'Pembangunan Jembatan Desa Sukajaya',
+    'cvptpenyedia' => 'CV Mitra Konstruksi',
+    'nib' => '3567890123456',
+    'nilaikontrak' => 980000000.00,
+    'jeniskontrak' => 'Harga Borongan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Juni',
+    'bulanselesai' => 'September',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 9,
+    'paketstatuspekerjaan_id' => 3,
+    'sumberdana_id' => 3,
+    'tahunpilihan_id' => 11,
+    'user_id' => 17,
+    'bulanrekap_id' => 7,
+    'namapekerjaan' => 'Pembangunan TPS3R Kecamatan Padalarang',
+    'cvptpenyedia' => 'PT Bersih Mandiri',
+    'nib' => '2678901234567',
+    'nilaikontrak' => 540000000.00,
+    'jeniskontrak' => 'Harga Satuan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Juli',
+    'bulanselesai' => 'Oktober',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 11,
+    'paketstatuspekerjaan_id' => 2,
+    'sumberdana_id' => 1,
+    'tahunpilihan_id' => 11,
+    'user_id' => 18,
+    'bulanrekap_id' => 8,
+    'namapekerjaan' => 'Rehabilitasi Sekolah Dasar Negeri di Batujajar',
+    'cvptpenyedia' => 'CV Pendidikan Jaya',
+    'nib' => '1789012345678',
+    'nilaikontrak' => 760000000.00,
+    'jeniskontrak' => 'Harga Borongan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Agustus',
+    'bulanselesai' => 'November',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 22,
+    'paketstatuspekerjaan_id' => 4,
+    'sumberdana_id' => 2,
+    'tahunpilihan_id' => 11,
+    'user_id' => 19,
+    'bulanrekap_id' => 9,
+    'namapekerjaan' => 'Pemasangan PJU Jalan Utama Kabupaten Bandung Barat',
+    'cvptpenyedia' => 'PT Cahaya Nusantara',
+    'nib' => '0890123456789',
+    'nilaikontrak' => 630000000.00,
+    'jeniskontrak' => 'Harga Satuan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'September',
+    'bulanselesai' => 'Desember',
+    'progress' => 100
+]);
+
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 14,
+    'paketstatuspekerjaan_id' => 1,
+    'sumberdana_id' => 4,
+    'tahunpilihan_id' => 11,
+    'user_id' => 20,
+    'bulanrekap_id' => 10,
+    'namapekerjaan' => 'Penataan Kawasan Wisata Curug Cimahi',
+    'cvptpenyedia' => 'CV Pesona Alam',
+    'nib' => '1901234567890',
+    'nilaikontrak' => 1450000000.00,
+    'jeniskontrak' => 'Harga Borongan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Oktober',
+    'bulanselesai' => 'Desember',
+    'progress' => 100
 ]);
 
 
