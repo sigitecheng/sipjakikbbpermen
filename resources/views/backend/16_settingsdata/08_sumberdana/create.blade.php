@@ -46,7 +46,7 @@
 
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
-                <a href="/settingsjenispekerjaan">
+                <a href="/settingsjenjangpendidikan">
                     <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -63,7 +63,7 @@
         {{-- ======================================================= --}}
                     <div class="col-md-12">
                         <!--begin::Quick Example-->
-                        <form action="{{ route('create.jenispekerjaan') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('create.sumberdana') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <!-- begin::Body -->
                             <div class="card-body">
@@ -71,13 +71,13 @@
                                     <!-- Left Column (6/12) -->
                                     <div class="col-md-6">
 <div class="form-modern mb-3">
-    <label class="form-label" for="jenispekerjaan">
-        <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Jenis Pekerjaan
+    <label class="form-label-modern" for="sumberdana">
+        <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Sumber Dana
     </label>
-    <input type="text" id="jenispekerjaan" name="jenispekerjaan"
-           class="form-control @error('jenispekerjaan') is-invalid @enderror"
-           value="{{ old('jenispekerjaan') }}" />
-    @error('jenispekerjaan')
+    <input type="text" id="sumberdana" name="sumberdana"
+           class="form-control @error('sumberdana') is-invalid @enderror"
+           value="{{ old('sumberdana') }}" />
+    @error('sumberdana')
         <div class="invalid-feedback">{{ $message }}</div>
     @enderror
 </div>
@@ -100,14 +100,14 @@
                                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                </svg>
-                                    <span style="font-family: 'Poppins', sans-serif;">Tambah Data</span>
+                                    <span style="font-family: 'Poppins', sans-serif;">Buat Baru</span>
                                 </button>
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
                                     <div style="background: white; padding: 24px 30px; border-radius: 12px; max-width: 400px; width: 90%; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
                                       <p style="font-size: 16px; font-weight: 600; margin-bottom: 20px;">
-                                        Apakah Anda ingin menambahkan Jenis Pekerjaan baru?
+                                        Apakah Anda ingin menambahkan Pendidikan Baru?
                                     </p>
 
                                       <!-- Tombol -->

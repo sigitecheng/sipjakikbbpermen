@@ -2138,6 +2138,16 @@ Route::get('/settingsjenispekerjaan/create', [SettingDataController::class, 'set
 Route::post('/settingsjenispekerjaan/createnew', [SettingDataController::class, 'settingsjenispekerjaannew'])->middleware(['auth', 'can:admin2'])->name('create.jenispekerjaan');
 Route::delete('/jenispekerjaan/delete/{id}', [SettingDataController::class, 'jenispekerjaandelete'])->middleware(['auth', 'can:admin2']);
 
+Route::get('/settingssumberdana', [SettingDataController::class, 'settingssumberdana'])->middleware(['auth', 'can:admin2']);
+Route::get('/sumberdana/create', [SettingDataController::class, 'sumberdanacreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/sumberdana/createnew', [SettingDataController::class, 'sumberdanacreatenew'])->middleware(['auth', 'can:admin2'])->name('create.sumberdana');
+Route::delete('/sumberdana/delete/{id}', [SettingDataController::class, 'sumberdanadelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/settingstahun', [SettingDataController::class, 'settingstahun'])->middleware(['auth', 'can:admin2']);
+// Route::get('/sumberdana/create', [SettingDataController::class, 'sumberdanacreate'])->middleware(['auth', 'can:admin2']);
+// Route::post('/sumberdana/createnew', [SettingDataController::class, 'sumberdanacreatenew'])->middleware(['auth', 'can:admin2'])->name('create.sumberdana');
+Route::delete('/tahunpilihan/delete/{id}', [SettingDataController::class, 'tahunpilihandelete'])->middleware(['auth', 'can:admin2']);
+
 
 
 // ------------------- BACKEND BAGIAN HIMBAUAN DINAS ---------------------------

@@ -157,7 +157,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-<section style="background-image: url('/assets/gambarbaru/padalarang2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
+                     <section style="background-color: #ECEEF3; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
         <div class="app-content-header">

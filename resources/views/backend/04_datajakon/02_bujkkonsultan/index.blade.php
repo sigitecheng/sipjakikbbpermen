@@ -124,7 +124,7 @@
                          </button>
                          </a>
 
-                         <button onclick="exportTableToExcel('tabelBujkkonsultan', 'data_bujkkonsultan')" class="button-berkas">
+                         <button onclick="exportTableToExcel('tabelBujkkonsultan', 'data_bujkkonsultankbb')" class="button-berkas">
                          <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
                          </button>
 

@@ -93,7 +93,7 @@
 
                         <div style="position: relative; display: inline-block; margin-right:10px;">
     <input type="search" id="searchInput"
-           placeholder="Cari Jabatan Kerja ...."
+           placeholder="Cari Sumber Dana ...."
            onkeyup="searchTable()"
            style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
 
@@ -112,7 +112,7 @@
                             function searchTable() {
                             let input = document.getElementById("searchInput").value;
 
-                            fetch(`/settingsjabatankerja?search=${input}`)
+                            fetch(`/settingssumberdana?search=${input}`)
                                 .then(response => response.text())
                                 .then(html => {
                                     let parser = new DOMParser();
@@ -125,13 +125,13 @@
 
                                 </script>
 <!-- Tombol Download Excel -->
-<button class="button-berkas" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_kecamatankbb')">
+<button class="button-berkas" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_sumberdana')">
 
     <i class="bi bi-download" style="margin-right: 5px;"></i> Download Excel
 </button>
 
 <!-- Tombol Create -->
-<a href="/kecamatankbb/create">
+<a href="/sumberdana/create">
     <button class="button-modern">
         <i class="fa fa-plus" style="margin-right: 8px;"></i> Tambah Data
     </button>
@@ -148,7 +148,8 @@
      <tr>
         <th style="width: 75px; text-align:center;"><i class="bi bi-list-ol"></i> No</th>
       <th style="width: 800px; text-align:center;">
-    <i class="bi bi-geo-alt-fill"></i> Kecamatan Kab Bandung Barat
+<i class="bi bi-cash-stack"></i> Sumber Dana
+
 </th>
         <th style="width: 200px; text-align:center;"><i class="bi bi-tools"></i> Aksi</th>
      </tr>
@@ -157,7 +158,7 @@
      @forelse ($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
-         <td style="text-align: left;">{{ $item->kecamatankbb }}</td>
+         <td style="text-align: left;">{{ $item->sumberdana }}</td>
 
         <td style="text-align: center; vertical-align: middle;">
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
@@ -259,7 +260,7 @@
                  function setDeleteUrl(button) {
                      var id = button.getAttribute('data-judul');
                      document.getElementById('itemName').innerText = id;
-                     var deleteUrl = "/kecamatankbb/delete/" + encodeURIComponent(id);
+                     var deleteUrl = "/sumberdana/delete/" + encodeURIComponent(id);
                      document.getElementById('deleteForm').action = deleteUrl;
                  }
                  </script>

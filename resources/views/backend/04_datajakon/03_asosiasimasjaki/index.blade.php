@@ -101,7 +101,7 @@
                          </button>
                          </a> --}}
                          <a href="{{ route('asosiasi.export') }}" >
-                             <button onclick="exportTableToExcel('tabelAsosiasi', 'data_asosiasi')" class="button-berkas">
+                             <button onclick="exportTableToExcel('tabelAsosiasi', 'data_asosiasijasakonstruksi')" class="button-berkas">
                              <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
                             </button>
                         </a>

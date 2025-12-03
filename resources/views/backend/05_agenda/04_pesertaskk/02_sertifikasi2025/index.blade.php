@@ -57,7 +57,7 @@
                             </select>
                         </div>
 
-                        <button onclick="exportTableToExcel('tablepeserta', 'data_tkkdpupr2025')" class="button-berkas">
+                        <button onclick="exportTableToExcel('tablepeserta', 'data_tenagakerjakonstruksikbb')" class="button-berkas">
                                 <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
                             </button>
 

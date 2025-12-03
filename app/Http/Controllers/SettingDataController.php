@@ -11,6 +11,8 @@ use App\Models\kecamatankbb;
 use App\Models\namasekolah;
 use App\Models\profiljenispekerjaan;
 use App\Models\subklasifikasi;
+use App\Models\sumberdana;
+use App\Models\tahunpilihan;
 use App\Models\tandatangan;
 use Illuminate\Http\Request;
 
@@ -635,6 +637,148 @@ kecamatankbb::create([
 
     session()->flash('create', 'Data berhasil dibuat!');
     return redirect('/settingkecamatankbb');
+}
+
+
+public function settingssumberdana(Request $request)
+{
+    $perPage = $request->input('perPage', 10);
+    $search  = $request->input('search');
+
+    $query = sumberdana::query();
+
+    if ($search) {
+        $query->where('sumberdana', 'LIKE', "%{$search}%");
+    }
+
+    // Urutkan berdasarkan data terbaru
+    $query->orderBy('created_at', 'desc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view(
+                'backend.16_settingsdata.08_sumberdana.partials.table',
+                compact('data')
+            )->render()
+        ]);
+    }
+
+    return view('backend.16_settingsdata.08_sumberdana.index', [
+        'title'   => 'Daftar Jenis Pekerjaan',
+        'data'    => $data,
+        'perPage' => $perPage,
+        'search'  => $search
+    ]);
+}
+
+
+
+public function sumberdanadelete($id)
+{
+// Cari item berdasarkan judul
+$entry = sumberdana::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/settingssumberdana')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
+}
+
+   public function sumberdanacreate()
+    {
+            $user = Auth::user();
+
+        return view('backend.16_settingsdata.08_sumberdana.create', [
+            'title' => 'Tambah Sumber Dana',
+            // 'data' => $dataagendapelatihan,
+            'user' => $user,
+        ]);
+    }
+
+        public function sumberdanacreatenew(Request $request)
+{
+    $request->validate([
+        'sumberdana' => 'required|string|max:100',
+    ], [
+        'sumberdana.required' => 'Sumber Dana tidak boleh kosong.',
+        'sumberdana.string'   => 'Sumber Dana harus berupa teks.',
+        'sumberdana.max'      => 'Sumber Dana tidak boleh lebih dari 50 karakter.',
+        'sumberdana.unique'   => 'Sumber Dana ini sudah terdaftar.',
+    ]);
+
+sumberdana::create([
+        'sumberdana' => $request->sumberdana,
+    ]);
+
+    session()->flash('create', 'Data berhasil dibuat!');
+    return redirect('/settingssumberdana');
+}
+
+
+
+public function settingstahun(Request $request)
+{
+    $perPage = $request->input('perPage', 10);
+    $search  = $request->input('search');
+
+    $query = tahunpilihan::query();
+
+    if ($search) {
+        $query->where('tahunpilihan', 'LIKE', "%{$search}%");
+    }
+
+    // Urutkan berdasarkan data terbaru
+    $query->orderBy('created_at', 'desc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view(
+                'backend.16_settingsdata.08_sumberdana.partials.table',
+                compact('data')
+            )->render()
+        ]);
+    }
+
+    return view('backend.16_settingsdata.09_tahunpilihan.index', [
+        'title'   => 'Tahun Pelaksanaan',
+        'data'    => $data,
+        'perPage' => $perPage,
+        'search'  => $search
+    ]);
+}
+
+
+public function tahunpilihandelete($id)
+{
+// Cari item berdasarkan judul
+$entry = tahunpilihan::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/settingstahun')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
 }
 
 }
