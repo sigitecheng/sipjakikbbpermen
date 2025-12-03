@@ -1676,6 +1676,106 @@ public function bedatatkkkbbupdate($id)
 
     }
 
+
+public function bedatatkkkbbcreate()
+{
+    // Ambil semua data dropdown
+    $dataagendaskk = agendaskk::all();
+    $datajenjangpendidikan = jenjangpendidikan::all();
+    $datajabatankerja = jabatankerja::all();
+    $datanamasekolah = namasekolah::all();
+    $datatahunpilihan = tahunpilihan::all();
+    $datakecamatankbb = kecamatankbb::all();
+
+    // User login
+    $user = Auth::user();
+
+    // Return ke form create (BUKAN UPDATE)
+    return view('backend.05_agenda.04_pesertaskk.02_sertifikasi2025.create', [
+        'user' => $user,
+
+        'dataagendaskk' => $dataagendaskk,
+        'datajenjangpendidikan' => $datajenjangpendidikan,
+        'datajabatankerja' => $datajabatankerja,
+        'datanamasekolah' => $datanamasekolah,
+        'datatahunpilihan' => $datatahunpilihan,
+        'datakecamatankbb' => $datakecamatankbb,
+
+        'title' => 'Form Input Data Baru TKK Tenaga Kerja Konstruksi'
+    ]);
+}
+public function bedatatkkkbbcreatenew(Request $request)
+{
+    $validated = $request->validate([
+        'skkanda' => 'nullable|string',
+        'agendaskk_id' => 'nullable|string',
+        'user_id' => 'nullable|string', // tetap ada biar tidak error form, tapi nanti dioverride
+        'jenjangpendidikan_id' => 'nullable|string',
+        'jabatankerja_id' => 'nullable|string',
+        'namasekolah_id' => 'nullable|string',
+        'tahunpilihan_id' => 'nullable|string',
+        'kecamatankbb_id' => 'nullable|string',
+
+        'namalengkap' => 'nullable|string',
+        'nik' => 'nullable|string',
+        'tempatlahir' => 'nullable|string',
+        'ttl' => 'nullable|date',
+        'jeniskelamin' => 'nullable|string',
+        'alamat' => 'nullable|string',
+        'notelepon' => 'nullable|string',
+        'email' => 'nullable|email',
+        'tahunlulus' => 'nullable|integer',
+
+        // File hanya PDF dan max 15MB
+        'uploadktp' => 'nullable|file|mimes:pdf|max:15000',
+        'uploadfoto' => 'nullable|file|mimes:pdf|max:15000',
+        'uploadijazah' => 'nullable|file|mimes:pdf|max:15000',
+        'uploadpengalaman' => 'nullable|file|mimes:pdf|max:15000',
+        'uploadkebenarandata' => 'nullable|file|mimes:pdf|max:15000',
+        'uploadnpwp' => 'nullable|file|mimes:pdf|max:15000',
+        'uploaddaftarriwayathidup' => 'nullable|file|mimes:pdf|max:15000',
+
+        'namaasosiasi' => 'nullable|string',
+    ]);
+
+    // ===============================
+    //  USER ID DIPAKSA JADI 7
+    // ===============================
+    $validated['user_id'] = 7;
+
+    // ===============================
+    //  UPLOAD FILE MANUAL KE PUBLIC
+    // ===============================
+    $fileFields = [
+        'uploadktp',
+        'uploadfoto',
+        'uploadijazah',
+        'uploadpengalaman',
+        'uploadkebenarandata',
+        'uploadnpwp',
+        'uploaddaftarriwayathidup',
+    ];
+
+    foreach ($fileFields as $field) {
+        if ($request->hasFile($field)) {
+            $file = $request->file($field);
+            $filename = time() . '-' . $field . '-' . $file->getClientOriginalName();
+
+            // simpan ke folder public/uploads/
+            $file->move(public_path('uploads'), $filename);
+
+            // simpan nama file ke database
+            $validated[$field] = 'uploads/' . $filename;
+        }
+    }
+
+    // SIMPAN KE DATABASE
+    $data = allskktenagakerjablora::create($validated);
+
+    return redirect('/beagendaskktkk')->with('create', 'Data berhasil disimpan!');
+}
+
+
 }
 
 

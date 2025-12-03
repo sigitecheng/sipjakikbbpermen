@@ -960,6 +960,7 @@ qa::create([
             'password' => bcrypt('sipjakiuser$$444')
         ]);
 
+        // akun penampungan skk 7
         User::create([
             'name'  => 'Akun Admin Migrasi SKK KBB',
             'username' => 'allskkkbb',

@@ -2373,6 +2373,9 @@ Route::delete('/allskktenagakerjakbb/delete/{id}', [PembinaanController::class, 
 Route::get('/bedatatkkkbb/update/{id}', [PembinaanController::class, 'bedatatkkkbbupdate'])->middleware(['auth', 'can:admin2'])->name('update.datatkkkbb');
 Route::post('/bedatatkkkbb/updatecreate/{id}', [PembinaanController::class, 'bedatatkkkbbupdatenew'])->middleware(['auth', 'can:admin2'])->name('update.datatkkkbbenw');
 
+Route::get('/bedatatkkkbbcreate', [PembinaanController::class, 'bedatatkkkbbcreate'])->middleware('auth');
+Route::post('/bedatatkkkbbcreatenew', [PembinaanController::class, 'bedatatkkkbbcreatenew'])->middleware('auth')->name('create.bedatatkkkbbcreatenew');
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

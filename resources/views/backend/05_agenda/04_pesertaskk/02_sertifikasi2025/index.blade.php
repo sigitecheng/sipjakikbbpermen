@@ -61,6 +61,10 @@
                                 <i class="bi bi-download" style="margin-right: 5px"></i> Download Excel
                             </button>
 
+                            <a href="/bedatatkkkbbcreate" class="button-modern">
+                                <i class="bi bi-download" style="margin-right: 5px"></i> Tambah TKK
+                            </a>
+
 <script>
 function exportTableToExcel(tableID, filename = ''){
     // Ambil tabel berdasarkan ID

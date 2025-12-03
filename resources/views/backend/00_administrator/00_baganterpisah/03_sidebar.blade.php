@@ -1218,12 +1218,12 @@
                   </li>
 
                   <!-- Pengawasan BUJk -->
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                     <a href="/bepengawasanbujk" class="nav-link">
                       <i class="nav-icon bi bi-shield-lock text-warning"></i> <!-- Ikon untuk Pengawasan BUJk -->
                       <p style="color: white">Pengawasan BUJK</p>
                     </a>
-                  </li>
+                  </li> --}}
 
                   <!-- Kecelakaan Kerja -->
                   <li class="nav-item">
