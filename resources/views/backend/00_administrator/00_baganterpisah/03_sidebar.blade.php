@@ -981,18 +981,18 @@
 </li>
 
 <li class="nav-item">
-    <a href="/404" class="nav-link">
+    <a href="/settingsjabatankerja" class="nav-link">
         <i class="nav-icon bi bi-person-badge-fill text-warning"></i> <!-- Ikon Jabatan Kerja -->
         <p style="color: white">Jabatan Kerja</p>
     </a>
 </li>
 
-<li class="nav-item">
+{{-- <li class="nav-item">
     <a href="/404" class="nav-link">
         <i class="nav-icon bi bi-journal-bookmark-fill text-warning"></i> <!-- Ikon Jurusan -->
         <p style="color: white">Jurusan</p>
     </a>
-</li>
+</li> --}}
 
 
 

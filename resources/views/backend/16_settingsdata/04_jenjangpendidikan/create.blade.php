@@ -14,8 +14,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -48,7 +47,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/settingsjenjangpendidikan">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -71,8 +70,8 @@
                                 <div class="row">
                                     <!-- Left Column (6/12) -->
                                     <div class="col-md-6">
-<div class="mb-3">
-    <label class="form-label" for="jenjangpendidikan">
+<div class="form-modern mb-3">
+    <label class="form-label-modern" for="jenjangpendidikan">
         <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Jenjang Pendidikan
     </label>
     <input type="text" id="jenjangpendidikan" name="jenjangpendidikan"
@@ -93,7 +92,7 @@
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                    <button class="button-hijau" type="button" onclick="openModal()">
+                                    <button class="button-baru" type="button" onclick="openModal()">
 
                                     <!-- Ikon SVG Pensil -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -108,7 +107,7 @@
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
                                     <div style="background: white; padding: 24px 30px; border-radius: 12px; max-width: 400px; width: 90%; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
                                       <p style="font-size: 16px; font-weight: 600; margin-bottom: 20px;">
-                                        Apakah Anda ingin menambahkan Universitas/Sekolah baru?
+                                        Apakah Anda ingin menambahkan Pendidikan Baru?
                                     </p>
 
                                       <!-- Tombol -->

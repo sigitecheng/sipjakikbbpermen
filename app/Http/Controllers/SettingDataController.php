@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\rantaipasokblora;
 use App\Models\peralatankonstruksi;
 use App\Models\alatberat;
+use App\Models\jabatankerja;
 use App\Models\jenjangpendidikan;
 use App\Models\namasekolah;
 use App\Models\profiljenispekerjaan;
@@ -19,7 +20,7 @@ class SettingDataController extends Controller
 
 public function settingssekolah(Request $request)
 {
-    $perPage = $request->input('perPage', 25);
+    $perPage = $request->input('perPage', 10);
     $search = $request->input('search');
 
     $query = namasekolah::query();
@@ -443,5 +444,108 @@ profiljenispekerjaan::create([
     return redirect('/settingsjenispekerjaan');
 }
 
+ public function settingssekolahdelete($namasekolah)
+    {
+        // Cari data berdasarkan nama sekolah
+        $data = namasekolah::where('namasekolah', $namasekolah)->first();
+
+        if (!$data) {
+            return redirect()->back()->with('error', 'Data sekolah tidak ditemukan!');
+        }
+
+        // Hapus data
+        $data->delete();
+
+        return redirect('/settingssekolah')->with('delete', 'Data sekolah berhasil dihapus!');
+    }
+
+
+
+public function settingsjabatankerja(Request $request)
+{
+    $perPage = $request->input('perPage', 10);
+    $search  = $request->input('search');
+
+    $query = jabatankerja::query();
+
+    if ($search) {
+        $query->where('jabatankerja', 'LIKE', "%{$search}%");
+    }
+
+    // Urutkan berdasarkan abjad A-Z
+    $query->orderBy('jabatankerja', 'asc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view(
+                'backend.16_settingsdata.04_jenjangpendidikan.partials.table',
+                compact('data')
+            )->render()
+        ]);
+    }
+
+    return view('backend.16_settingsdata.06_jabatankerja.index', [
+        'title'   => 'Daftar Jabatan Kerja',
+        'data'    => $data,
+        'perPage' => $perPage,
+        'search'  => $search
+    ]);
+}
+
+
+
+public function jabatankerjadelete($id)
+{
+// Cari item berdasarkan judul
+$entry = jabatankerja::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/settingsjabatankerja')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
+}
+
+    public function settingsjabatankerjacreate()
+    {
+            $user = Auth::user();
+
+        return view('backend.16_settingsdata.06_jabatankerja.create', [
+            'title' => 'Tambah Jabatan Kerja',
+            // 'data' => $dataagendapelatihan,
+            'user' => $user,
+        ]);
+    }
+
+
+
+    public function jabatankerjacreatenew(Request $request)
+{
+    $request->validate([
+        'jabatankerja' => 'required|string',
+    ], [
+        'jabatankerja.required' => 'Jabatan Kerja tidak boleh kosong.',
+        'jabatankerja.string'   => 'Jabatan Kerja harus berupa teks.',
+        'jabatankerja.max'      => 'Jabatan Kerja tidak boleh lebih dari 50 karakter.',
+        'jabatankerja.unique'   => 'Jabatan Kerja ini sudah terdaftar.',
+    ]);
+
+jabatankerja::create([
+        'jabatankerja' => $request->jabatankerja,
+    ]);
+
+    session()->flash('create', 'Data berhasil dibuat!');
+    return redirect('/settingsjabatankerja');
+}
 
 }

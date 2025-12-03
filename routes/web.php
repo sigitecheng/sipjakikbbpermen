@@ -2109,6 +2109,11 @@ Route::get('/settingsjenjangpendidikan/create', [SettingDataController::class, '
 Route::post('/settingsjenjangpendidikan/createnew', [SettingDataController::class, 'settingsjenjangpencreatenew'])->middleware(['auth', 'can:admin2'])->name('create.jenjangpendidikan');
 Route::delete('/jenjangpendidikan/delete/{id}', [SettingDataController::class, 'settingspendidikandelete'])->middleware(['auth', 'can:admin2']);
 
+Route::get('/settingsjabatankerja', [SettingDataController::class, 'settingsjabatankerja'])->middleware(['auth', 'can:admin2']);
+Route::get('/jabatankerja/create', [SettingDataController::class, 'settingsjabatankerjacreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/jabatankerja/createnew', [SettingDataController::class, 'jabatankerjacreatenew'])->middleware(['auth', 'can:admin2'])->name('create.jabatankerja');
+Route::delete('/jabatankerja/delete/{id}', [SettingDataController::class, 'jabatankerjadelete'])->middleware(['auth', 'can:admin2']);
+
 // DATA PENGATURAN SUB KLASIFIKASI TERTIB JASA KONSTRUKSI
 Route::get('/settingssubklasifikasi', [SettingDataController::class, 'settingssubklasifikasi'])->middleware(['auth']);
 Route::get('/settingssubklasifikasi/create', [SettingDataController::class, 'settingssubklasifikasicreate'])->middleware(['auth']);
