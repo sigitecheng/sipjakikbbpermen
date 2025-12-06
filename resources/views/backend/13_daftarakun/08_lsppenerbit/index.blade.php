@@ -1,4 +1,3 @@
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -59,7 +58,7 @@
 <div class="button-container">
 
 
-  <button class="button-modern superadmin">
+  <button class="button-modern">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
       class="bi bi-person-workspace" viewBox="0 0 16 16">
       <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -74,8 +73,7 @@
                  </div>
                  <!-- /.card-header -->
                  <div class="card-header">
-
-                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
+                    @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
 
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
                         <div style="position: relative; display: inline-block; margin-right:10px;">
@@ -94,7 +92,7 @@
                             function searchTable() {
                             let input = document.getElementById("searchInput").value;
 
-                            fetch(`/alllsppenerbit?search=${input}`)
+                            fetch(`/allsuperadmin?search=${input}`)
                                 .then(response => response.text())
                                 .then(html => {
                                     let parser = new DOMParser();
@@ -111,16 +109,15 @@
 <!-- Tombol Download Excel -->
 <!-- Tombol Download Excel -->
 <button onclick="exportTableToExcel('tabelSemuaakun', 'data_semuaakun')"
-  class="button-berkas">
+class="button-berkas">
   <i class="bi bi-download"></i> Download Excel
 </button>
 
 <!-- Tombol Create -->
 <a href="/akuncreate">
   <button
-  class="button-modern"
-  >
-    <i class="fa fa-plus"></i> Tambah Akun
+  class="button-modern">
+    <i class="fa fa-plus"></i> Tambah Data
   </button>
 </a>
                      </div>
@@ -144,7 +141,7 @@
      </tr>
  </thead>
  <tbody id="tableBody">
-     @forelse($data as $item )
+     @foreach ($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
 
@@ -152,8 +149,9 @@
             @if($item->name)
                 {{ $item->name }}
             @else
-                <button
-                class="button-berkas">
+                <button style="background-color: #000080; color: white; font-size: 14px; padding: 6px 10px; border-radius: 4px; border: 1px solid #000080; cursor: pointer; transition: none;"
+                        onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
+                        onmouseout="this.style.backgroundColor='#000080'; this.style.color='white';">
                     Data Belum Di Update !
                 </button>
             @endif
@@ -163,8 +161,9 @@
             @if($item->statusadmin->statusadmin)
                 {{ $item->statusadmin->statusadmin }}
             @else
-                <button
-               class="button-berkas">
+                <button style="background-color: #000080; color: white; font-size: 14px; padding: 6px 10px; border-radius: 4px; border: 1px solid #000080; cursor: pointer; transition: none;"
+                        onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
+                        onmouseout="this.style.backgroundColor='#000080'; this.style.color='white';">
                     Data Belum Di Update !
                 </button>
             @endif
@@ -173,8 +172,10 @@
         <td>
     @if($item->password)
         <button onclick="showTempPassword({{ $item->id }})"
-            class="button-baru">
-            Generate
+                class="button-baru"
+                >
+
+                Generate
         </button>
     @else
         <span style="color: red;">No password set</span>
@@ -193,8 +194,7 @@ function showTempPassword(userId) {
             @if($item->username)
                 {{ $item->username }}
             @else
-                <button
-                class="button-berkas">
+                <button class="button-berkas">
                     Data Belum Di Update !
                 </button>
             @endif
@@ -204,8 +204,7 @@ function showTempPassword(userId) {
             @if($item->phone_number)
                 {{ $item->phone_number }}
             @else
-                <button
-            class="button-berkas">
+                <button class="button-berkas">
                     Data Belum Di Update !
                 </button>
             @endif
@@ -223,7 +222,7 @@ function showTempPassword(userId) {
         </td>
 
             <td style="text-align: center;">
-                    <button class="button-modern"
+                    <button class="button-baru"
                         data-bs-toggle="modal" data-bs-target="#modalKtp3">
                         <i class="bi bi-eye-fill" style="margin-right: 5px;"></i> Lihat
                     </button>
@@ -233,7 +232,7 @@ function showTempPassword(userId) {
                         <div class="modal-dialog modal-xl modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    {{-- <a href="#"><img src="/assets/icon/sipjakikbb.png" alt="Logo" width="25" style="margin-right: 5px;"></a> --}}
+                                    <a href="#"><img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
                                     <a href="#"><img src="/assets/icon/pupr.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
                                     <span>:</span>
                                     <h5 class="modal-title" id="modalKtpLabel3">Foto Profil</h5>
@@ -264,9 +263,9 @@ function showTempPassword(userId) {
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
                 <i class="bi bi-eye"></i>
             </a> --}}
-            {{-- <a href="/bebujkkonstruksi/update/{{$item->id}}" class="button-berkas" title="Update">
+            <a href="/bebujkkonstruksi/update/{{$item->id}}" class="button-berkas" title="Update">
                 <i class="bi bi-pencil-square"></i>
-            </a> --}}
+            </a>
             <a href="javascript:void(0)" class="button-merah" title="Delete"
                data-bs-toggle="modal" data-bs-target="#deleteModal"
                data-judul="{{ $item->name }}"
@@ -290,39 +289,9 @@ function showTempPassword(userId) {
         </style>
 
         </tr>
-@empty
-    <tr>
-        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
-            <div style="
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 30px;
-                font-weight: 600;
-                font-family: 'Poppins', sans-serif;
-                color: #6c757d;
-                background-color: #f8f9fa;
-                border: 2px dashed #ced4da;
-                border-radius: 12px;
-                font-size: 16px;
-                animation: fadeIn 0.5s ease-in-out;
-            ">
-                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
-                Data Tidak Ditemukan !!
-            </div>
-        </td>
-    </tr>
-@endforelse
 
-<style>
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-</style>
-
-    </tbody>
+     @endforeach
+ </tbody>
 </table>
                      </div>
                  </div>
@@ -338,7 +307,7 @@ function showTempPassword(userId) {
                          <div class="modal-content">
                              <div class="modal-header">
                                  <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                 <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                              </div>
                              <div class="modal-body">

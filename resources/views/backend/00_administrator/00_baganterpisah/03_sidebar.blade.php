@@ -375,7 +375,7 @@
                 <ul class="nav nav-treeview">
 
                       <li class="nav-item">
-                        <a href="/dashboard" target="_blank" class="nav-link">
+                        <a href="/dashboard"  class="nav-link">
                           <!-- Ikon untuk Halaman Web (Rumah) -->
                           <i class="nav-icon bi bi-house-door text-warning"></i>
                           <p style="color: white;">Halaman Dashboard</p>
@@ -1248,14 +1248,14 @@
 </div>
 
 <li class="nav-item">
-  <a href="/settingssubklasifikasi" target="_blank" class="nav-link">
+  <a href="/settingssubklasifikasi"  class="nav-link">
     <i class="nav-icon bi bi-diagram-3 text-warning"></i>
     <p style="color: white;">Sub Klasifikasi</p>
   </a>
 </li>
 
 <li class="nav-item">
-  <a href="/settingstandatangan" target="_blank" class="nav-link">
+  <a href="/settingstandatangan"  class="nav-link">
     <i class="nav-icon bi bi-pen text-warning"></i>
     <p style="color: white;">Tanda Tangan</p>
   </a>
@@ -1694,7 +1694,7 @@
             <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-speedometer" style="color: white"></i>
-                  <p style="color: white">
+                  <p style="color: red">
                     Daftar Akun
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
@@ -1702,63 +1702,63 @@
                 <ul class="nav nav-treeview">
 
                   <li class="nav-item">
-                    <a href="/allakun" target="_blank" class="nav-link">
+                    <a href="/allakun"  class="nav-link">
                       <i class="nav-icon bi bi-person-gear text-warning"></i>
                       <p style="color: white;">Semua Akun</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/allsuperadmin" target="_blank" class="nav-link">
+                    <a href="/allsuperadmin"  class="nav-link">
                       <i class="nav-icon bi bi-person-gear text-warning"></i>
                       <p style="color: white;">Super Admin</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/alladmin" target="_blank" class="nav-link">
+                    <a href="/alladmin"  class="nav-link">
                       <i class="nav-icon bi bi-person-fill text-warning"></i>
                       <p style="color: white;">Admin</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/allpekerja" target="_blank" class="nav-link">
+                    <a href="/allpekerja"  class="nav-link">
                       <i class="nav-icon bi bi-person-workspace text-warning"></i>
                       <p style="color: white;">Pekerja</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/allsupppabrik" target="_blank" class="nav-link">
+                    <a href="/allsupppabrik"  class="nav-link">
                       <i class="nav-icon bi bi-truck-front-fill text-warning"></i>
                       <p style="color: white;">Supplier Pabrik</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/allsuppperalatan" target="_blank" class="nav-link">
+                    <a href="/allsuppperalatan"  class="nav-link">
                       <i class="nav-icon bi bi-tools text-warning"></i>
                       <p style="color: white;">Supplier Peralatan</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/allsupptokobangunan" target="_blank" class="nav-link">
+                    <a href="/allsupptokobangunan"  class="nav-link">
                       <i class="nav-icon bi bi-shop text-warning"></i>
                       <p style="color: white;">Supplier Toko Bangunan</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/alllsppenerbit" target="_blank" class="nav-link">
+                    <a href="/alllsppenerbit"  class="nav-link">
                       <i class="nav-icon bi bi-journal-text text-warning"></i>
                       <p style="color: white;">LSP Penerbit</p>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="/alldinas" target="_blank" class="nav-link">
+                    <a href="/alldinas"  class="nav-link">
                       <i class="nav-icon bi bi-building text-warning"></i>
                       <p style="color: white;">Dinas</p>
                     </a>

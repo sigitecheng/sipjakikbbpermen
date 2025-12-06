@@ -1,79 +1,3 @@
-<style>
-  /* Sembunyikan di layar dengan lebar max 767px (umumnya HP) */
-  @media (max-width: 767px) {
-    .hide-on-mobile {
-      display: none !important;
-    }
-  }
-</style>
-
-
-<style>
-  .btn-custom {
-    background: linear-gradient(45deg, #FFD700, #008000);
-    color: white;
-    border: none;
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-  }
-
-  .btn-custom:hover {
-    background: white !important;
-    color: black !important;
-    transform: scale(1.05);
-  }
-
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: start;
-  }
-
-  /* Optional: Responsive font-size atau padding */
-  @media (max-width: 768px) {
-    .btn-custom {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .btn-custom {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-</style>
-
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -89,8 +13,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -135,7 +58,7 @@
 <div class="button-container">
 
 
-  <button class="btn-custom superadmin">
+  <button class="button-modern">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
       class="bi bi-person-workspace" viewBox="0 0 16 16">
       <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -169,7 +92,7 @@
                             function searchTable() {
                             let input = document.getElementById("searchInput").value;
 
-                            fetch(`/allsupppabrik?search=${input}`)
+                            fetch(`/allsuperadmin?search=${input}`)
                                 .then(response => response.text())
                                 .then(html => {
                                     let parser = new DOMParser();
@@ -186,19 +109,15 @@
 <!-- Tombol Download Excel -->
 <!-- Tombol Download Excel -->
 <button onclick="exportTableToExcel('tabelSemuaakun', 'data_semuaakun')"
-  class="hide-on-mobile"
-  onmouseover="this.style.background='white'; this.style.color='black'; this.style.transform='scale(1.05)'"
-  onmouseout="this.style.background='linear-gradient(45deg, #d4af37, #4caf50)'; this.style.color='white'; this.style.transform='scale(1)'"
-  style="background: linear-gradient(45deg, #d4af37, #4caf50); color: white; border: none; margin-right: 10px; padding: 10px 20px; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease;">
+class="button-berkas">
   <i class="bi bi-download"></i> Download Excel
 </button>
 
 <!-- Tombol Create -->
-<a href="/akuncreate" class="hide-on-mobile">
-  <button onmouseover="this.style.background='white'; this.style.color='black'; this.style.transform='scale(1.05)'"
-    onmouseout="this.style.background='linear-gradient(45deg, #d4af37, #4caf50)'; this.style.color='white'; this.style.transform='scale(1)'"
-    style="background: linear-gradient(45deg, #d4af37, #4caf50); color: white; border: none; margin-right: 10px; padding: 10px 20px; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease;">
-    <i class="fa fa-plus"></i> Create
+<a href="/akuncreate">
+  <button
+  class="button-modern">
+    <i class="fa fa-plus"></i> Tambah Data
   </button>
 </a>
                      </div>
@@ -253,8 +172,10 @@
         <td>
     @if($item->password)
         <button onclick="showTempPassword({{ $item->id }})"
-                style="background: #2196F3; color: white; padding: 5px 10px; border: none; border-radius: 4px;">
-            Generate
+                class="button-baru"
+                >
+
+                Generate
         </button>
     @else
         <span style="color: red;">No password set</span>
@@ -273,9 +194,7 @@ function showTempPassword(userId) {
             @if($item->username)
                 {{ $item->username }}
             @else
-                <button style="background-color: #000080; color: white; font-size: 14px; padding: 6px 10px; border-radius: 4px; border: 1px solid #000080; cursor: pointer; transition: none;"
-                        onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-                        onmouseout="this.style.backgroundColor='#000080'; this.style.color='white';">
+                <button class="button-berkas">
                     Data Belum Di Update !
                 </button>
             @endif
@@ -285,9 +204,7 @@ function showTempPassword(userId) {
             @if($item->phone_number)
                 {{ $item->phone_number }}
             @else
-                <button style="background-color: #000080; color: white; font-size: 14px; padding: 6px 10px; border-radius: 4px; border: 1px solid #000080; cursor: pointer; transition: none;"
-                        onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-                        onmouseout="this.style.backgroundColor='#000080'; this.style.color='white';">
+                <button class="button-berkas">
                     Data Belum Di Update !
                 </button>
             @endif
@@ -297,19 +214,15 @@ function showTempPassword(userId) {
             @if($item->email)
                 {{ $item->email }}
             @else
-                <button style="background-color: #000080; color: white; font-size: 14px; padding: 6px 10px; border-radius: 4px; border: 1px solid #000080; cursor: pointer; transition: none;"
-                        onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-                        onmouseout="this.style.backgroundColor='#000080'; this.style.color='white';">
+                <button
+                class="button-berkas">
                     Data Belum Di Update !
                 </button>
             @endif
         </td>
 
             <td style="text-align: center;">
-                    <button class="btn btn-secondary btn-sm"
-                        style="border-radius: 15px; padding: 8px 16px; background-color: #6c757d; color: white; border: none; transition: background-color 0.3s, color 0.3s;"
-                        onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#6c757d'; this.style.border='1px solid #6c757d';"
-                        onmouseout="this.style.backgroundColor='#6c757d'; this.style.color='white'; this.style.border='none';"
+                    <button class="button-baru"
                         data-bs-toggle="modal" data-bs-target="#modalKtp3">
                         <i class="bi bi-eye-fill" style="margin-right: 5px;"></i> Lihat
                     </button>
@@ -350,10 +263,10 @@ function showTempPassword(userId) {
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
                 <i class="bi bi-eye"></i>
             </a> --}}
-            <a href="/bebujkkonstruksi/update/{{$item->id}}" class="btn btn-sm btn-warning me-2" title="Update">
+            <a href="/bebujkkonstruksi/update/{{$item->id}}" class="button-berkas" title="Update">
                 <i class="bi bi-pencil-square"></i>
             </a>
-            <a href="javascript:void(0)" class="btn btn-sm btn-danger" title="Delete"
+            <a href="javascript:void(0)" class="button-merah" title="Delete"
                data-bs-toggle="modal" data-bs-target="#deleteModal"
                data-judul="{{ $item->name }}"
                onclick="setDeleteUrl(this)">
@@ -383,7 +296,7 @@ function showTempPassword(userId) {
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 

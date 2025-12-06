@@ -21,7 +21,7 @@ class AkunController extends Controller
 // DAFTAR AKUN MASUK MAS JAKI BLORA
 public function allakun(Request $request)
 {
-    $perPage = $request->input('perPage', 15);
+    $perPage = $request->input('perPage', 10);
     $search = $request->input('search');
 
     $query = User::query();

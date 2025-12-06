@@ -1,79 +1,3 @@
-<style>
-  /* Sembunyikan di layar dengan lebar max 767px (umumnya HP) */
-  @media (max-width: 767px) {
-    .hide-on-mobile {
-      display: none !important;
-    }
-  }
-</style>
-
-
-<style>
-  .button-hijau {
-    background: linear-gradient(45deg, #FFD700, #008000);
-    color: white;
-    border: none;
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-  }
-
-  .button-hijau:hover {
-    background: white !important;
-    color: black !important;
-    transform: scale(1.05);
-  }
-
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: start;
-  }
-
-  /* Optional: Responsive font-size atau padding */
-  @media (max-width: 768px) {
-    .button-hijau {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .button-hijau {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-</style>
-
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -90,10 +14,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -138,7 +59,7 @@
 <div class="button-container">
 
     <a href="/allpekerja">
-        <button class="button-hijau pekerja">
+        <button class="button-modern pekerja">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-person-workspace" viewBox="0 0 16 16">
             <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -150,7 +71,7 @@
 </button>
 </a>
 
-  {{-- <button class="button-hijau superadmin">
+  {{-- <button class="button-modern superadmin">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
       class="bi bi-person-workspace" viewBox="0 0 16 16">
       <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -162,7 +83,7 @@
   </button> --}}
 <a href="/alladmin">
 
-    <button class="button-hijau admin">
+    <button class="button-modern admin">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
       class="bi bi-person-workspace" viewBox="0 0 16 16">
       <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -176,7 +97,7 @@
 
 <a href="/allsupppabrik">
 
-    <button class="button-hijau supp-pabrik">
+    <button class="button-modern supp-pabrik">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-person-workspace" viewBox="0 0 16 16">
         <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -190,7 +111,7 @@
 
 <a href="/allsuppperalatan">
 
-    <button class="button-hijau supp-peralatan">
+    <button class="button-modern supp-peralatan">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-person-workspace" viewBox="0 0 16 16">
         <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -204,7 +125,7 @@
 
 <a href="/allsupptokobangunan">
 
-    <button class="button-hijau supp-toko">
+    <button class="button-modern supp-toko">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-person-workspace" viewBox="0 0 16 16">
         <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -218,7 +139,7 @@
 
 <a href="/alllsppenerbit">
 
-    <button class="button-hijau lsp-penerbit">
+    <button class="button-modern lsp-penerbit">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-person-workspace" viewBox="0 0 16 16">
         <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -232,7 +153,7 @@
 
 <a href="/alldinas">
 
-    <button class="button-hijau dinas">
+    <button class="button-modern dinas">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-person-workspace" viewBox="0 0 16 16">
         <path d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -247,7 +168,8 @@
                  </div>
                  <!-- /.card-header -->
                  <div class="card-header">
-                    @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
 
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
                         <div style="position: relative; display: inline-block; margin-right:10px;">
@@ -283,13 +205,13 @@
 <!-- Tombol Download Excel -->
 <!-- Tombol Download Excel -->
 <button onclick="exportTableToExcel('tabelSemuaakun', 'data_semuaakun')"
-  class="button-baru hide-on-mobile">
+  class="button-berkas">
   <i class="bi bi-download"></i> Download Excel
 </button>
 
 <!-- Tombol Create -->
 <a href="/akuncreate" class="hide-on-mobile">
-  <button class="button-baru">
+  <button class="button-modern">
     <i class="fa fa-plus"></i> Buat Akun
   </button>
 </a>
@@ -299,14 +221,14 @@
                  <div class="card-body p-0">
                      <div class="table-responsive" style="overflow-x: auto; white-space: nowrap;">
 
-<table id="tabelSemuaakun" class="zebra-table table-striped" >
+<table id="tabelSemuaakun" class="zebra-table" >
  <thead>
      <tr>
         <th style="width: 75px; text-align:center;"><i class="bi bi-list-ol"></i> No</th>
         <th style="width: 300px; text-align:center;"><i class="bi bi-person-fill"></i> Nama Lengkap</th>
         <th style="width: 200px; text-align:center;"><i class="bi bi-person-fill-gear"></i> Status Admin</th>
         <th style="width: 200px; text-align:center;"><i class="bi bi-person-fill-gear"></i> Password</th>
-        <th style="width: 250px; text-align:center;"><i class="bi bi-person-badge-fill"></i> Username</th>
+        {{-- <th style="width: 250px; text-align:center;"><i class="bi bi-person-badge-fill"></i> Username</th> --}}
         <th style="width: 400px; text-align:center;"><i class="bi bi-phone-fill"></i> No Telepon</th>
         <th style="width: 350px; text-align:center;"><i class="bi bi-envelope-fill"></i> Email</th>
         <th style="width: 150px; text-align:center; width:200px;"><i class="bi bi-image-fill"></i> Foto Profil</th>
@@ -318,16 +240,21 @@
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
 
-        <td style="text-align: left; text-transform:uppercase;">
-            @if($item->name)
-                {{ $item->name }}
-            @else
-                <button class="button-berkas" >
-                    Data Belum Di Update !
-                </button>
-            @endif
-        </td>
+         @php
+    $nameText = trim($item->name ?? '');
+    $nameWords = $nameText === '' ? [] : preg_split('/\s+/', $nameText);
+    $nameChunks = array_chunk($nameWords, 2);
+@endphp
 
+<td style="text-align: left; text-transform:uppercase;">
+    @if(count($nameChunks) === 0)
+        <button class="button-berkas">Data Belum Di Update !</button>
+    @else
+        @foreach($nameChunks as $index => $chunk)
+            {{ e(implode(' ', $chunk)) }}@if($index < count($nameChunks) - 1)<br>@endif
+        @endforeach
+    @endif
+</td>
         <td style="text-align: left;">
             @if($item->statusadmin->statusadmin)
                 {{ $item->statusadmin->statusadmin }}
@@ -340,7 +267,7 @@
 
         <td style="text-align: center;">
     @if($item->password)
-        <button class="button-newvalidasi" onclick="showTempPassword({{ $item->id }})">
+        <button class="button-baru" onclick="showTempPassword({{ $item->id }})">
 
                 Generate
         </button>
@@ -357,7 +284,7 @@ function showTempPassword(userId) {
 }
 </script>
 
-        <td style="text-align: left; text-transform:uppercase;">
+        {{-- <td style="text-align: left; text-transform:uppercase;">
             @if($item->username)
                 {{ $item->username }}
             @else
@@ -365,7 +292,7 @@ function showTempPassword(userId) {
                     Data Belum Di Update !
                 </button>
             @endif
-        </td>
+        </td> --}}
 
         <td style="text-align: center;">
             @if($item->phone_number)
@@ -392,7 +319,7 @@ function showTempPassword(userId) {
         </td>
 
             <td style="text-align: center;">
-                    <button class="button-baru"
+                    <button class="button-modern"
                         data-bs-toggle="modal" data-bs-target="#modalKtp3">
                         <i class="bi bi-eye-fill" style="margin-right: 5px;"></i> Lihat Profil
                     </button>
@@ -402,7 +329,7 @@ function showTempPassword(userId) {
                         <div class="modal-dialog modal-xl modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <a href="#"><img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
+                                    {{-- <a href="#"><img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" style="margin-right: 5px;"></a> --}}
                                     <a href="#"><img src="/assets/icon/pupr.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
                                     <span>:</span>
                                     <h5 class="modal-title" id="modalKtpLabel3">Foto Profil</h5>
@@ -433,14 +360,14 @@ function showTempPassword(userId) {
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
                 <i class="bi bi-eye"></i>
             </a> --}}
-            <a href="/bebujkkonstruksi/update/{{$item->id}}" class="button-berkas" title="Update">
-                <i class="bi bi-pencil-square"></i>Update
-            </a>
+            {{-- <a href="/bebujkkonstruksi/update/{{$item->id}}" class="button-berkas" title="Update">
+                <i class="bi bi-pencil-square"></i>
+            </a> --}}
             <a href="javascript:void(0)" class="button-merah" title="Delete"
                data-bs-toggle="modal" data-bs-target="#deleteModal"
                data-judul="{{ $item->name }}"
                onclick="setDeleteUrl(this)">
-                <i class="bi bi-trash"></i>Hapus
+                <i class="bi bi-trash"></i>
             </a>
         </td>
 
@@ -466,7 +393,7 @@ function showTempPassword(userId) {
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 
@@ -477,7 +404,7 @@ function showTempPassword(userId) {
                          <div class="modal-content">
                              <div class="modal-header">
                                  <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                 <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                              </div>
                              <div class="modal-body">
