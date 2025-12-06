@@ -13,10 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -48,7 +45,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/beagendapelatihan">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -73,9 +70,9 @@
                                     <div class="col-md-6">
                                         <!-- Kategori Pelatihan -->
                                      <!-- Kategori Pelatihan -->
-<div class="mb-3">
-    <label for="kategoripelatihan_id" class="form-label">
-        <i class="bi bi-card-text text-primary"></i> Kategori Pelatihan
+<div class="form-modern mb-3">
+    <label for="kategoripelatihan_id" class="form-label-modern">
+        <i class="bi bi-card-text" style="color:#032ebd;"></i> Kategori Pelatihan
     </label>
     <select id="kategoripelatihan_id" name="kategoripelatihan_id" class="form-control @error('kategoripelatihan_id') is-invalid @enderror">
         <option value="">-- Pilih Kategori --</option>
@@ -91,9 +88,9 @@
 </div>
 
 <!-- LSP Penerbit -->
-<div class="mb-3">
-    <label for="user_id" class="form-label">
-        <i class="bi bi-person-circle text-primary"></i> LSP Penerbit
+<div class="form-modern mb-3">
+    <label for="user_id" class="form-label-modern">
+        <i class="bi bi-person-circle" style="color:#032ebd;"></i> LSP Penerbit
     </label>
     <select id="user_id" name="user_id" class="form-control @error('user_id') is-invalid @enderror">
         <option value="">-- Pilih LSP Penerbit --</option>
@@ -111,9 +108,9 @@
 </div>
 
 <!-- Nama Kegiatan -->
-<div class="mb-3">
-    <label for="namakegiatan" class="form-label">
-        <i class="bi bi-clipboard text-primary"></i> Nama Kegiatan
+<div class="form-modern mb-3">
+    <label for="namakegiatan" class="form-label-modern">
+        <i class="bi bi-clipboard" style="color:#032ebd;"></i> Nama Kegiatan
     </label>
     <input type="text" id="namakegiatan" name="namakegiatan"
         class="form-control @error('namakegiatan') is-invalid @enderror"
@@ -124,14 +121,14 @@
 </div>
 
 <!-- Penyelenggara / Asosiasi -->
-<div class="mb-3">
-    <label for="asosiasimasjaki_id" class="form-label">
-        <i class="bi bi-people-fill text-primary"></i> Penyelenggara
+<div class="form-modern mb-3">
+    <label for="asosiasimasjaki_id" class="form-label-modern">
+        <i class="bi bi-people-fill" style="color:#032ebd;"></i> Penyelenggara
     </label>
     <select id="asosiasimasjaki_id" name="asosiasimasjaki_id"
         class="form-control @error('asosiasimasjaki_id') is-invalid @enderror">
         <option value="">-- Pilih Penyelenggara --</option>
-        <option value="{{ $dataasosiasi->id }}" selected>
+        <option value="{{ $dataasosiasi->id  }}" selected>
             {{ $dataasosiasi->namaasosiasi }}
         </option>
     </select>
@@ -141,9 +138,9 @@
 </div>
 
 <!-- Waktu Pelaksanaan -->
-<div class="mb-3">
-    <label for="waktupelaksanaan" class="form-label">
-        <i class="bi bi-calendar-date text-primary"></i> Tanggal Pelaksanaan
+<div class="form-modern mb-3">
+    <label for="waktupelaksanaan" class="form-label-modern">
+        <i class="bi bi-calendar-date" style="color:#032ebd;"></i> Tanggal Pelaksanaan
     </label>
     <input type="date" id="waktupelaksanaan" name="waktupelaksanaan"
         class="form-control @error('waktupelaksanaan') is-invalid @enderror"
@@ -154,9 +151,9 @@
 </div>
 
 <!-- Tanggal Penutupan -->
-<div class="mb-3">
-    <label for="penutupan" class="form-label">
-        <i class="bi bi-calendar-check text-primary"></i> Tanggal Penutupan
+<div class="form-modern mb-3">
+    <label for="penutupan" class="form-label-modern">
+        <i class="bi bi-calendar-check" style="color:#032ebd;"></i> Tanggal Penutupan
     </label>
     <input type="date" id="penutupan" name="penutupan"
         class="form-control @error('penutupan') is-invalid @enderror"
@@ -167,9 +164,9 @@
 </div>
 
 <!-- Jumlah Peserta -->
-<div class="mb-3">
-    <label for="jumlahpeserta" class="form-label">
-        <i class="bi bi-people text-primary"></i> Jumlah Peserta
+<div class="form-modern mb-3">
+    <label for="jumlahpeserta" class="form-label-modern">
+        <i class="bi bi-people" style="color:#032ebd;"></i> Jumlah Peserta
     </label>
     <input type="number" id="jumlahpeserta" name="jumlahpeserta"
         class="form-control @error('jumlahpeserta') is-invalid @enderror"
@@ -180,9 +177,9 @@
 </div>
 
 <!-- Lokasi -->
-<div class="mb-3">
-    <label for="lokasi" class="form-label">
-        <i class="bi bi-geo-alt text-primary"></i> Lokasi
+<div class="form-modern mb-3">
+    <label for="lokasi" class="form-label-modern">
+        <i class="bi bi-geo-alt" style="color:#032ebd;"></i> Lokasi
     </label>
     <input type="text" id="lokasi" name="lokasi"
         class="form-control @error('lokasi') is-invalid @enderror"
@@ -193,9 +190,9 @@
 </div>
 
 <!-- Keterangan -->
-<div class="mb-3">
-    <label for="keterangan" class="form-label">
-        <i class="bi bi-info-circle text-primary"></i> Keterangan
+<div class="form-modern mb-3">
+    <label for="keterangan" class="form-label-modern">
+        <i class="bi bi-info-circle" style="color:#032ebd;"></i> Keterangan
     </label>
     <input type="text" id="keterangan" name="keterangan"
         class="form-control @error('keterangan') is-invalid @enderror"
@@ -204,13 +201,14 @@
         <div class="invalid-feedback">{{ $message }}</div>
     @enderror
 </div>
+
 </div>
 
 <!-- Kolom Kanan -->
 <div class="col-md-6">
     <!-- Isi Agenda -->
-    <div class="mb-3">
-        <label for="jabatankerja_id" class="form-label">
+    <div class="form-modern mb-3">
+        <label for="jabatankerja_id" class="form-label-modern">
             <i class="bi bi-journal-text text-primary"></i> Jabatan Kerja
         </label>
         <select id="jabatankerja_id" name="jabatankerja_id"
@@ -228,8 +226,8 @@
         @enderror
     </div>
 
-    <div class="mb-3">
-        <label for="isiagenda" class="form-label">
+    <div class="form-modern mb-3">
+        <label for="isiagenda" class="form-label-modern">
             <i class="bi bi-journal-text text-primary"></i> Isi Agenda
         </label>
         <textarea id="isiagenda" name="isiagenda"
@@ -241,8 +239,8 @@
     </div>
 
     <!-- Foto Kegiatan -->
-    <div class="mb-3">
-    <label for="foto" class="form-label">
+    <div class="form-modern mb-3">
+    <label for="foto" class="form-label-modern">
         <i class="bi bi-image text-primary"></i> Foto Kegiatan
     </label>
     <input type="file" id="foto" name="foto"
@@ -296,7 +294,7 @@
 
                                 <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                     <div class="flex justify-end">
-                                        <button class="button-hijau" type="button" onclick="openModal()">
+                                        <button class="button-baru" type="button" onclick="openModal()">
 
                                         <!-- Ikon SVG Pensil -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"

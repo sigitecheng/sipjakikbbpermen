@@ -16,9 +16,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+        <section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -43,11 +41,50 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
-
-
-
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                 <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
+
+                   <div style="position: relative; display: inline-block; margin-right:10px; width:300px;">
+                    <input type="search" id="searchInput"
+                        placeholder="Cari Peserta TKK ...."
+                        onkeyup="searchTable()"
+                        style="border: 1px solid #ccc;
+                                padding: 10px 40px 10px 15px;
+                                font-size: 14px;
+                                border-radius: 10px;
+                                width: 100%;">
+                    <i class="bi bi-search"
+                    style="position: absolute;
+                            right: 15px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 16px;
+                            color: #888;"></i>
+                        </div>
+
+                        <script>
+                            function updateEntries() {
+                                let selectedValue = document.getElementById("entries").value;
+                                let url = new URL(window.location.href);
+                                url.searchParams.set("perPage", selectedValue);
+                                window.location.href = url.toString();
+                            }
+
+                            function searchTable() {
+                            let input = document.getElementById("searchInput").value;
+
+                            fetch(`/beskkdatapesertajumlah/show/{{$data->id}}?search=${input}`)
+                                .then(response => response.text())
+                                .then(html => {
+                                    let parser = new DOMParser();
+                                    let doc = parser.parseFromString(html, "text/html");
+                                    let newTableBody = doc.querySelector("#tableBody").innerHTML;
+                                    document.querySelector("#tableBody").innerHTML = newTableBody;
+                                })
+                                .catch(error => console.error("Error fetching search results:", error));
+                        }
+
+                                </script>
 
 
         <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
@@ -77,9 +114,9 @@
         </script>
 
 
-                        <button class="hide-on-mobile button-baru"
+                        <button class="hide-on-mobile button-berkas"
                         onclick="exportTableToExcel('daftarpesertaskk', 'Data Peserta {{$data->namakegiatan}}')">
-                        <i class="bi bi-file-earmark-excel-fill icon-create" style="margin-right: 8px; font-size: 16px;"></i> Download Excel
+                        <i class="bi bi-file-earmark-excel-fill" style="margin-right: 8px; font-size: 16px;"></i> Download Excel
                     </button>
 
                     <script>
@@ -122,10 +159,10 @@
     }
 </script>
 
-<button class="hide-on-mobile button-baru"
+{{-- <button class="hide-on-mobile button-berkas"
     onclick="generatePDF()">
     <i class="bi bi-download" style="margin-right: 8px;"></i> Download PDF
-</button>
+</button> --}}
 
 
 
@@ -145,7 +182,7 @@
         });
 
         // Tambah logo
-        const logo1 = await loadImage("/assets/icon/logokabupatenblora.png");
+        // const logo1 = await loadImage("/assets/icon/sipjakikbb.png");
         const logo2 = await loadImage("/assets/icon/pupr.png");
 
         doc.addImage(logo1, "PNG", 10, 5, 20, 20);    // Kiri
@@ -224,7 +261,7 @@
 
 
                     <a href="/beagendaskkdatapeserta">
-  <button class="button-newvalidasi">
+  <button class="button-modern">
         <i class="bi bi-arrow-left icon-create"></i> Kembali
 </button>
 
@@ -322,11 +359,12 @@
 
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="tableBody">
                                 @forelse ($datapeserta as $item )
                                     <tr class="align-middle">
                                         <td style="text-align: center;">{{ $loop->iteration }}</td>
-                                        <td style="text-align: left;">{{ strtoupper($item->user->name ?? '-') }}</td>
+                                        {{-- <td style="text-align: left;">{{ strtoupper($item->user->name ?? '-') }}</td> --}}
+                                        <td style="text-align: left;">{{ strtoupper($item->namalengkap ?? '-') }}</td>
 <td style="text-align: center;">{{ $item->jenjangpendidikan->jenjangpendidikan ?? '-' }}</td>
 <td style="text-align: center;">{{ $item->jabatankerja->jabatankerja ?? '-' }}</td>
 <td style="text-align: center;">{{ $item->namasekolah->namasekolah ?? '-' }}</td>
@@ -350,15 +388,14 @@
 
 <td style="text-align: center; vertical-align: middle; width: 100%; display: flex; justify-content: center; align-items: center;">
     <a href="{{ url('/bepesertaskkshowberkas/show/' . $item->id) }}" style="text-decoration: none;">
-        <button class="button-baru">
+        <button class="button-modern">
             <i class="bi bi-eye-fill" style="margin-right: 5px;"></i> Lihat
         </button>
     </a>
 </td>
 
-
                                         <td style="text-align: center;">
-                                            <button class="button-baru"
+                                            <button class="button-modern"
                                             data-bs-toggle="modal" data-bs-target="#modalKtp{{ $item->id }}">
                                             <i class="bi bi-eye-fill" style="margin-right: 5px;"></i> Lihat
                                         </button>
@@ -368,12 +405,12 @@
                                                 <div class="modal-dialog modal-xl modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <a href="#"><img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
+                                                            {{-- <a href="#"><img src="/assets/icon/sipjakikbb.png" alt="Logo" width="25" style="margin-right: 5px;"></a> --}}
                                                             <a href="#"><img src="/assets/icon/pupr.png" alt="Logo" width="25" style="margin-right: 5px;"></a>
-                                                            <span>:</span>
-                                                            <h5 class="modal-title" id="modalKtpLabel{{ $item->id }}">
+                                                            {{-- <span>: Sertifikat Tenaga Kerja Konstruksi</span> --}}
+                                                            {{-- <h5 class="modal-title" id="modalKtpLabel{{ $item->id }}">
                                                                 Sertifikat : <i class="bi bi-file-earmark-pdf-fill text-danger"></i> {{ $data->namakegiatan }}
-                                                            </h5>
+                                                            </h5> --}}
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body text-center">
@@ -552,36 +589,85 @@
 
                                     </tr>
                                           @empty
-                                   <style>
-    .empty-message {
-        background-color: #fff3cd;
-        color: #850404;
-        border: 1px solid #ffeeba;
-        padding: 15px 20px;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 500;
-        max-width: 500px;
-        margin: 20px auto;
-        text-align: center;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
+    <tr>
+        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
+            <div style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                color: #6c757d;
+                background-color: #f8f9fa;
+                border: 2px dashed #ced4da;
+                border-radius: 12px;
+                font-size: 16px;
+                animation: fadeIn 0.5s ease-in-out;
+            ">
+                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+                Data Tidak Ditemukan !!
+            </div>
+        </td>
+    </tr>
+@endforelse
 
-    .empty-message i {
-        margin-right: 8px;
-    }
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 </style>
 
-<p class="empty-message">
-    <i class="fas fa-exclamation-circle"></i>
-    Peserta belum ada yang diverifikasi DPUPR.
-</p>
-
-                                            @endforelse
 
                                 </tbody>
                             </table>
 <br><br>
+
+<div class="pagination-container" style="margin-top: 50px; display: flex; flex-direction: column; align-items: center; color:black;">
+    <!-- Info Data -->
+    <div class="pagination-info mb-2" style="margin-bottom: 10px; color:black;">
+        Data Ke {{ $datapeserta->firstItem() }} Sampai {{ $datapeserta->lastItem() }} Dari {{ $datapeserta->total() }} Jumlah Data
+    </div>
+
+    <!-- Pagination Buttons -->
+    <ul class="pagination" style="display: flex; padding-left: 0; list-style: none; color: black;">
+
+        {{-- PREVIOUS --}}
+        <li class="page-item {{ $datapeserta->onFirstPage() ? 'disabled' : '' }}" style="margin-right: 5px;">
+            <a class="page-link" href="{{ $datapeserta->previousPageUrl() }}"
+               style="padding: 0.5rem 0.75rem; color: black; background-color: #fff; border: 1px solid #dee2e6; border-radius: 5px;">
+               <i class="bi bi-arrow-left" style="margin-right: 5px;"></i> Previous
+            </a>
+        </li>
+
+        {{-- RANGE HALAMAN (maks 5 tombol) --}}
+        @php
+            $start = max(1, $datapeserta->currentPage() - 2);
+            $end = min($datapeserta->lastPage(), $datapeserta->currentPage() + 2);
+        @endphp
+
+        @for ($page = $start; $page <= $end; $page++)
+            <li class="page-item {{ $page == $datapeserta->currentPage() ? 'active' : '' }}" style="margin-right: 5px;">
+                <a class="page-link" href="{{ $datapeserta->url($page) }}"
+                   style="padding: 0.5rem 0.75rem; color: black; background-color: #fff; border: 1px solid #dee2e6; border-radius: 5px;">
+                   {{ $page }}
+                </a>
+            </li>
+        @endfor
+
+        {{-- NEXT --}}
+        <li class="page-item {{ $datapeserta->hasMorePages() ? '' : 'disabled' }}">
+            <a class="page-link" href="{{ $datapeserta->nextPageUrl() }}"
+               style="padding: 0.5rem 0.75rem; color: black; background-color: #fff; border: 1px solid #dee2e6; border-radius: 5px;">
+               Next <i class="bi bi-arrow-right" style="margin-left: 5px;"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
                         </div>
                     </div>
                     <!-- /.card-body -->

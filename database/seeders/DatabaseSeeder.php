@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 // namespace App\Models;
 
+use App\Models\agendapelatihan;
 use App\Models\agendaskk;
 use App\Models\agendasertifikasi;
 use App\Models\asosiasimasjaki;
@@ -41,6 +42,7 @@ use App\Models\himbauandinas;
 use App\Models\isadmin;
 use App\Models\jabatankerja;
 use App\Models\jenjangpendidikan;
+use App\Models\kategoripelatihan;
 use App\Models\kecamatankbb;
 use App\Models\kegiatanjaskon;
 use App\Models\keterampilanpekerja;
@@ -58,6 +60,7 @@ use App\Models\pengawasanketertiban;
 use App\Models\pengawasanlokasi;
 use App\Models\pengawasanstatus;
 use App\Models\pengawasantindakan;
+use App\Models\pesertapelatihan;
 use App\Models\profiljakonidentitasopd;
 use App\Models\profiljakoninformasi;
 use App\Models\profiljakonkabid;
@@ -12986,6 +12989,49 @@ paketpekerjaanmasjaki::create([
     'progress' => 100
 ]);
 
+
+agendapelatihan::create([
+            'materipelatihan_id'   => null,
+            'kategoripelatihan_id' => 2,
+            'pesertapelatihan_id'  => null,
+            'user_id'              => 7, // contoh user id
+            'jampelajaran_id'      => null,
+
+            'namakegiatan'         => 'Pelatihan Dasar Konstruksi',
+            'asosiasimasjaki_id'   => 1, // contoh data asosiasi
+            'penutupan'            => '2025-01-30',
+            'waktupelaksanaan'     => '2025-01-25',
+            'jumlahpeserta'        => 35,
+            'lokasi'               => 'Aula Dinas DPUTR Kabupaten Bandung Barat',
+            'keterangan'           => 'Pelatihan peningkatan kompetensi tenaga kerja konstruksi.',
+            'isiagenda'            => 'Pembukaan, sesi materi konstruksi dasar, praktik lapangan, penutupan.',
+            'foto'                 => '04_pembinaan/03_sertifikasi/foto_default.jpg',
+            'barcodepelatihan'     => 'barcode/default_barcode.png',
+            'suratundangan'        => '04_pembinaan/03_sertifikasi/suratundangan_default.pdf',
+        ]);
+
+kategoripelatihan::create([
+            'kategoripelatihan'   => 'Sosialisasi',
+        ]);
+
+kategoripelatihan::create([
+            'kategoripelatihan'   => 'Workshop',
+        ]);
+
+kategoripelatihan::create([
+            'kategoripelatihan'   => 'Bimbingan Teknis',
+        ]);
+
+        pesertapelatihan::create([
+    'agendapelatihan_id'   => 1,
+    'namalengkap'          => 'Sigit Septiadi',
+    'jenjangpendidikan_id' => 3,
+    'nik'                  => '12345678912031245',
+    'jeniskelamin'         => 'Laki-laki',
+    'tanggallahir'         => '1995-08-21',
+    'notelepon'            => '081654654654',
+    'instansi'             => 'DPUTR Kabupaten Bandung Barat',
+]);
 
     }    /**
      * Menghitung usia berdasarkan tanggal lahir.

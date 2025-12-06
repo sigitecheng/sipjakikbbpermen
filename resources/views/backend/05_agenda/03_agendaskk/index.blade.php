@@ -14,9 +14,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -138,7 +136,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
                                 </script>
 
                  <a href="/beagendaskk/create">
-    <button class="button-baru">
+    <button class="button-modern">
         <!-- Ikon Plus -->
         <i class="fa fa-plus" style="margin-right: 8px;"></i>
         <span>Buat Agenda SKK</span>
@@ -241,10 +239,57 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
         </script>
 
         <td style="text-align: center;">{{$item->jumlahpeserta}}</td>
-         <td style="text-align: left;">{{$item->lokasi}}</td>
-         <td style="text-align: left;">{{$item->keterangan}}</td>
-         <td style="text-align: left;">{{$item->isiagenda}}</td>
-         <td style="text-align: center; gap:10px;">
+        @php
+    // Untuk Lokasi
+    $lokasiText = trim($item->lokasi ?? '');
+    $lokasiWords = $lokasiText === '' ? [] : preg_split('/\s+/', $lokasiText);
+    $lokasiChunks = array_chunk($lokasiWords, 5);
+
+    // Untuk Keterangan
+    $keteranganText = trim($item->keterangan ?? '');
+    $keteranganWords = $keteranganText === '' ? [] : preg_split('/\s+/', $keteranganText);
+    $keteranganChunks = array_chunk($keteranganWords, 5);
+@endphp
+
+<td style="text-align: left;">
+    @if(count($lokasiChunks) === 0)
+        &nbsp;
+    @else
+        @foreach($lokasiChunks as $index => $chunk)
+            {{ e(implode(' ', $chunk)) }}@if($index < count($lokasiChunks) - 1)<br>@endif
+        @endforeach
+    @endif
+</td>
+
+<td style="text-align: left;">
+    @if(count($keteranganChunks) === 0)
+        &nbsp;
+    @else
+        @foreach($keteranganChunks as $index => $chunk)
+            {{ e(implode(' ', $chunk)) }}@if($index < count($keteranganChunks) - 1)<br>@endif
+        @endforeach
+    @endif
+</td>
+
+@php
+    // Isi Agenda
+    $isiagendaText = trim($item->isiagenda ?? '');
+    $isiagendaWords = $isiagendaText === '' ? [] : preg_split('/\s+/', $isiagendaText);
+    $isiagendaChunks = array_chunk($isiagendaWords, 5);
+@endphp
+
+
+<td style="text-align: left;">
+    @if(count($isiagendaChunks) === 0)
+        &nbsp;
+    @else
+        @foreach($isiagendaChunks as $index => $chunk)
+            {{ e(implode(' ', $chunk)) }}@if($index < count($isiagendaChunks) - 1)<br>@endif
+        @endforeach
+    @endif
+</td>
+
+<td style="text-align: center; gap:10px;">
             <div style="margin-top: 10px;">
                 @if($item->foto && file_exists(public_path('storage/' . $item->foto)))
                     <!-- Menampilkan gambar dari storage -->
@@ -262,7 +307,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
 
         <td style="text-align: center; vertical-align: middle;">
             <a href="{{ url('/beagendaskkmateri/' . $item->id) }}" style="text-decoration: none;">
-                <button class="button-baru">
+                <button class="button-berkas">
              <i class="bi bi-eye"></i> Lihat Materi
             </button>
             </a>
@@ -270,7 +315,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
 
         <td style="text-align: center; vertical-align: middle;">
             <a href="{{ url('/beagendaskkpeserta/show/' . $item->id) }}" style="text-decoration: none;">
-                <button class="button-newvalidasi">
+                <button class="button-modern">
                  <span style="display: inline-flex; align-items: center;">
                     <i class="bi bi-people-fill" style="margin-right: 6px;"></i>
                     {{ $item->allskktenagakerjablora_count }} Peserta Dari / {{$item->jumlahpeserta}} Kuota
@@ -281,17 +326,17 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
 
 
          <td style="text-align: center; vertical-align: middle;">
-             <a href="/beagendaskk/show/{{$item->namakegiatan}}" class="button-newvalidasi" title="Show">
-                 <i class="bi bi-eye"></i>View
+             <a href="/beagendaskk/show/{{$item->namakegiatan}}" class="button-baru" title="Show">
+                 <i class="bi bi-eye"></i>
              </a>
              <a href="/beagendaskk/update/{{$item->namakegiatan}}" class="button-berkas" title="Update">
-                 <i class="bi bi-pencil-square"></i>Update
+                 <i class="bi bi-pencil-square"></i>
              </a>
              <a href="javascript:void(0)" class="button-merah" title="Delete"
                    data-bs-toggle="modal" data-bs-target="#deleteModal"
                    data-judul="{{ $item->namakegiatan }}"
                    onclick="setDeleteUrl(this)">
-                    <i class="bi bi-trash"></i>Hapus
+                    <i class="bi bi-trash"></i>
             </a>
          </td>
 
@@ -303,7 +348,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 
@@ -314,7 +359,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
                          <div class="modal-content">
                              <div class="modal-header">
                                  <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                 <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                              </div>
                              <div class="modal-body">

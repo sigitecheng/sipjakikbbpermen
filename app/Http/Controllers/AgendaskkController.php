@@ -682,7 +682,7 @@ public function daftarpesertasertifikasiskkcreatenew2(Request $request)
 
 public function beskkdatapesertajumlah(Request $request, $id)
 {
-    $perPage = $request->input('perPage', 100);
+    $perPage = $request->input('perPage', 50);
     $search = $request->input('search');
 
     $agendaskk = agendaskk::findOrFail($id);
@@ -699,6 +699,7 @@ public function beskkdatapesertajumlah(Request $request, $id)
             'jabatankerja_id',
             'namasekolah_id',
             'tahunpilihan_id',
+            'namalengkap',
             'nik',
             'tempatlahir',
             'ttl',
@@ -729,6 +730,7 @@ public function beskkdatapesertajumlah(Request $request, $id)
     if ($search) {
         $query->where(function ($q) use ($search) {
             $q->where('jeniskelamin', 'LIKE', "%{$search}%")
+              ->orWhere('namalengkap', 'LIKE', "%{$search}%")
               ->orWhere('alamat', 'LIKE', "%{$search}%")
               ->orWhere('notelepon', 'LIKE', "%{$search}%")
               ->orWhere('email', 'LIKE', "%{$search}%")

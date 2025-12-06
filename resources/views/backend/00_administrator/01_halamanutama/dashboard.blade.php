@@ -248,10 +248,10 @@ button:hover {
 
 <style>
 :root {
-    --primary-green: #FF8C00;  /* Orange PUPR */
-    --dark-green: #E67300;
-    --light-green: #FFE5B4;
-    --accent-green: #FFD699;
+    --primary-green: #ffd100;  /* Orange PUPR */
+    --dark-green: #ffd100;
+    --light-green: #ffd100;
+    --accent-green: #ffd100;
 }
 
     .dashboard-card {
@@ -1012,11 +1012,11 @@ button:hover {
 
 <style>
         :root {
-            --primary-green: #42b549; /* Hijau Tokopedia */
-            --dark-green: #2c9e32;
-            --light-green: #e8f5e9;
-            --accent-green: #c8e6c9;
-        }
+            --primary-green: #FF8C00;  /* Orange PUPR */
+    --dark-green: #E67300;
+    --light-green: #FFE5B4;
+    --accent-green: #FFD699;
+    }
 
 
         .dashboard-card {
@@ -1091,7 +1091,7 @@ button:hover {
 
         /* Warna khusus untuk setiap kartu */
         .card-1 .number-container {
-            background-color: #42b549;
+            background-color: #ffd100;
         }
 
         .card-2 .number-container {
@@ -1111,7 +1111,7 @@ button:hover {
         }
 
         .card-1 .info-icon {
-            color: #42b549;
+            color: #ffd100;
         }
 
         .card-2 .info-icon {
@@ -1174,7 +1174,7 @@ button:hover {
             </div>
 
             <div class="col-md-4 col-sm-6 col-12 mb-4">
-                <div class="dashboard-card card-2">
+                <div class="dashboard-card card-1">
                     <div class="card-content">
                         <div class="number-container">
                             <h4 class="animated-number">{{$jumlahDikembalikan ?? '-'}}</h4>
@@ -1190,7 +1190,7 @@ button:hover {
             </div>
 
             <div class="col-md-4 col-sm-6 col-12 mb-4">
-                <div class="dashboard-card card-3">
+                <div class="dashboard-card card-1">
                     <div class="card-content">
                         <div class="number-container">
                             <h4 class="animated-number">{{$jumlahLolos ?? '-'}}</h4>
@@ -1209,7 +1209,7 @@ button:hover {
         <div class="row">
             <!-- Baris 2: 2 kolom -->
             <div class="col-md-6 col-sm-6 col-12 mb-4">
-                <div class="dashboard-card card-4">
+                <div class="dashboard-card card-1">
                     <div class="card-content">
                         <div class="number-container">
                             <h4 class="animated-number">{{$jumlahVerifikasiLps ?? '-'}}</h4>
@@ -1225,7 +1225,7 @@ button:hover {
             </div>
 
             <div class="col-md-6 col-sm-6 col-12 mb-4">
-                <div class="dashboard-card card-5">
+                <div class="dashboard-card card-1">
                     <div class="card-content">
                         <div class="number-container">
                             <h4 class="animated-number">{{$jumlahDenganSertifikat ?? '-'}}</h4>

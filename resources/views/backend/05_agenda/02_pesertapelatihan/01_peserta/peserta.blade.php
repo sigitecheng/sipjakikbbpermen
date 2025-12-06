@@ -13,10 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -41,10 +38,7 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
-
-
-
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                 <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
                         {{-- <button
                         onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
@@ -115,37 +109,20 @@
 </script>
 
                     <a href="{{ url('/bepelatihanjampelajaran/' . $agendaId) }}" style="text-decoration: none;">
-                        <button
-                            onmouseover="this.style.background='white'; this.style.color='black'; this.style.border='1px solid #ccc';"
-                            onmouseout="this.style.background='linear-gradient(135deg, #2e7d32, #d4af37)'; this.style.color='white'; this.style.border='none';"
-                            style="background: linear-gradient(135deg, #2e7d32, #d4af37); color: white; border: none; padding: 10px 20px;
-                                   border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center;
-                                   transition: background 0.3s, color 0.3s, border 0.3s;">
+                        <button class="button-modern">
                             <i class="bi bi-printer-fill" style="margin-right: 8px; font-size: 16px;"></i>Isi Jam Pelajaran
                         </button>
                     </a>
+                       <button onclick="generatePDF()" class="button-berkas">
+                            <i class="bi bi-file-earmark-pdf" style="font-size: 18px; margin-right: 6px;"></i>
+                            Download PDF
+                        </button>
 
-                    <button
-                        onclick="generatePDF()"
-                        onmouseover="this.style.background='white'; this.style.color='black'; this.style.border='1px solid #ccc';"
-                        onmouseout="this.style.background='linear-gradient(135deg, #2e7d32, #d4af37)'; this.style.color='white'; this.style.border='none';"
-                        style="background: linear-gradient(135deg, #2e7d32, #d4af37); color: white; border: none; padding: 10px 20px;
-                               border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center;
-                               transition: background 0.3s, color 0.3s, border 0.3s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-download" viewBox="0 0 16 16" style="margin-right: 8px;">
-                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v3.6a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.6a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14V10.4a.5.5 0 0 1 .5-.5z"/>
-                            <path d="M7.646 1.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V10.5a.5.5 0 0 1-1 0V2.707L5.354 5.354a.5.5 0 1 1-.708-.708l3-3z"/>
-                        </svg>
-                        Download PDF
-                    </button>
+
 
                     <button
                         onclick="exportTableToExcel('daftarPeserta', 'Data Peserta {{$data->namakegiatan}}')"
-                        onmouseover="this.style.background='white'; this.style.color='black'; this.style.border='1px solid #ccc';"
-                        onmouseout="this.style.background='linear-gradient(135deg, #2e7d32, #d4af37)'; this.style.color='white'; this.style.border='none';"
-                        style="background: linear-gradient(135deg, #2e7d32, #d4af37); color: white; border: none; padding: 10px 20px;
-                               border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center;
-                               transition: background 0.3s, color 0.3s, border 0.3s;">
+                        class="button-berkas">
                         <i class="bi bi-file-earmark-excel-fill" style="margin-right: 8px; font-size: 16px;"></i> Download Excel
                     </button>
 
@@ -285,12 +262,7 @@
 </script>
 
 <a href="/bepesertapelatihanindex" style="text-decoration: none;">
-    <button
-        onmouseover="this.style.background='white'; this.style.color='black'; this.style.border='1px solid #ccc';"
-        onmouseout="this.style.background='linear-gradient(135deg, #4B5563, #E5E7EB)'; this.style.color='white'; this.style.border='none';"
-        style="background: linear-gradient(135deg, #4B5563, #E5E7EB); color: white; border: none; padding: 10px 20px;
-               border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center;
-               transition: background 0.3s, color 0.3s, border 0.3s; margin-left:10px;">
+    <button class="button-modern">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
              viewBox="0 0 16 16" style="margin-right: 8px;">
             <path fill-rule="evenodd"
@@ -372,19 +344,20 @@
     <div style="display: inline-block;">
         @if ($item->verifikasikehadiran)
             <a href="/bepesertapuploadsertifikat/show/{{ $item->id }}"
-               style="background-color: #2600ff; color: white; padding: 8px 16px; border-radius: 8px; font-weight: 600;
-                      display: inline-flex; align-items: center; gap: 6px; border: none; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-                      transition: 0.3s; font-size: 14px; text-decoration: none;"
-               onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.querySelector('i').style.color='black';"
-               onmouseout="this.style.backgroundColor='#2600ff'; this.style.color='white'; this.querySelector('i').style.color='white';"
+class="button-baru"
                title="Upload Sertifikat">
-                <i class="bi bi-file-earmark-arrow-up" style="font-size: 1.2rem; color: white;"></i> SERTIFIKAT
+                <i class="bi bi-file-earmark-arrow-up"></i> Sertifikat
             </a>
         @else
-            <span style="background-color: #e20000; color: white; padding: 8px 16px; border-radius: 8px; font-weight: 600;
-                         display: inline-flex; align-items: center; gap: 6px; font-size: 14px;">
-                <i class="bi bi-file-earmark-arrow-up" style="font-size: 1.2rem; color: #999;"></i> TIDAK ADA SERTIFIKAT
-            </span>
+        <button class="button-merah">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+        class="bi bi-x-circle" viewBox="0 0 16 16" style="margin-right: 6px;">
+        <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14z"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+    </svg>
+    Tidak Ada Sertifikat
+</button>
+
         @endif
     </div>
 </td>
@@ -400,17 +373,13 @@
         transition: 0.3s;"
         onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.querySelector('i').style.color='black';"
         onmouseout="this.style.backgroundColor='#9CA3AF'; this.style.color='white'; this.querySelector('i').style.color='white';">
-        <i class="bi bi-patch-check" style="color: white;"></i> DI VERIFIKASI
+        <i class="bi bi-patch-check" style="color: white;"></i> Verifikasi
     </button>
     @elseif($item->verifikasi === 'lolos')
     <!-- LOLOS -->
     <button type="button" disabled
-        style="background-color: #10B981; color: white; padding: 8px 16px; border-radius: 8px; font-weight: 600;
-        display: inline-flex; align-items: center; gap: 6px; border: none; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        transition: 0.3s; cursor: not-allowed;"
-        onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.querySelector('i').style.color='black';"
-        onmouseout="this.style.backgroundColor='#10B981'; this.style.color='white'; this.querySelector('i').style.color='white';">
-        <i class="bi bi-patch-check-fill" style="font-size: 1.2rem; color: white;"></i> LOLOS
+    class="button-hijau">
+        <i class="bi bi-patch-check-fill"></i> Lolos
     </button>
     @elseif($item->verifikasi === 'gugur')
     <!-- GUGUR -->
@@ -420,7 +389,7 @@
         transition: 0.3s; cursor: not-allowed;"
         onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.querySelector('i').style.color='black';"
         onmouseout="this.style.backgroundColor='#EF4444'; this.style.color='white'; this.querySelector('i').style.color='white';">
-        <i class="bi bi-x-circle" style="font-size: 1.2rem; color: white;"></i> GUGUR
+        <i class="bi bi-x-circle" style="font-size: 1.2rem; color: white;"></i> Gugur
     </button>
     @endif
 </td>
@@ -428,26 +397,14 @@
         <td style="text-align: center;">
             @if($item->verifikasikehadiran == false)
                 <button type="button" onclick="openKehadiranModal({{ $item->id }})"
-                    class="btn btn-danger">
-                    <i class="bi bi-x-circle"></i> TIDAK HADIR
+                    class="button-merah">
+                    <i class="bi bi-x-circle"></i> Tidak Hadir
                 </button>
             @else
                 <button type="button" disabled
-                    class="btn"
-                    style="
-                        background-color: rgba(16, 185, 129, 0.85);
-                        color: white;
-                        border: none;
-                        padding: 8px 16px;
-                        border-radius: 8px;
-                        font-weight: 600;
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 6px;
-                        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-                        cursor: not-allowed;
-                    ">
-                    <i class="bi bi-patch-check-fill" style="font-size: 1.2rem;"></i> HADIR
+                    class="button-hijau"
+                    >
+                    <i class="bi bi-patch-check-fill"></i> Hadir
                 </button>
             @endif
         </td>
@@ -497,27 +454,20 @@
     @if($item->terbitkansertifikat == false)
     @if($item->verifikasikehadiran)
         <button type="button" onclick="openTerbitkanModal({{ $item->id }})"
-            style="background-color: #FFD700; color: black; padding: 8px 16px; border-radius: 8px;
-                   font-weight: 600; display: inline-flex; align-items: center; gap: 6px; border: none;
-                   box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: 0.3s; cursor: pointer;"
-            onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.querySelector('i').style.color='black';"
-            onmouseout="this.style.backgroundColor='#FFD700'; this.style.color='black'; this.querySelector('i').style.color='black';">
-            <i class="bi bi-file-earmark-check" style="font-size: 1.2rem; color: black;"></i> TERBITKAN
+            class="button-berkas"
+            >
+            <i class="bi bi-file-earmark-check"></i> Terbitkan
         </button>
     @else
         <button type="button" disabled
-            style="background-color: #d1d5db; color: #6b7280; padding: 8px 16px; border-radius: 8px;
-                   font-weight: 600; display: inline-flex; align-items: center; gap: 6px; border: none;
-                   box-shadow: 0 2px 6px rgba(0,0,0,0.1); cursor: not-allowed;">
-            <i class="bi bi-x-circle" style="font-size: 1.2rem; color: #6b7280;"></i> BELUM HADIR
+        class="button-merah">
+            <i class="bi bi-x-circle"></i> Tidak Hadir
         </button>
     @endif
 @else
     <button type="button" disabled
-        style="background-color: #10B981; color: white; padding: 8px 16px; border-radius: 8px; font-weight: 600;
-               display: inline-flex; align-items: center; gap: 6px; border: none; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-               cursor: not-allowed;">
-        <i class="bi bi-check-circle" style="font-size: 1.2rem; color: white;"></i> DITERBITKAN
+class="button-hijau">
+        <i class="bi bi-check-circle"></i> Diterbitkan
     </button>
 @endif
 

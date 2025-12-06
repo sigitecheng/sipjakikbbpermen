@@ -223,13 +223,14 @@ public function daftarpesertapelatihan(Request $request)
     if ($search) {
         $query->where(function ($q) use ($search) {
             $q->where('namakegiatan', 'LIKE', "%{$search}%")
-              ->orWhere('penutupan', 'LIKE', "%{$search}%")
-              ->orWhere('waktupelaksanaan', 'LIKE', "%{$search}%")
-              ->orWhere('jumlahpeserta', 'LIKE', "%{$search}%")
-              ->orWhere('lokasi', 'LIKE', "%{$search}%")
-              ->orWhere('keterangan', 'LIKE', "%{$search}%")
-              ->orWhere('isiagenda', 'LIKE', "%{$search}%")
-              ->orWhere('materi', 'LIKE', "%{$search}%");
+            //   ->orWhere('penutupan', 'LIKE', "%{$search}%")
+            //   ->orWhere('waktupelaksanaan', 'LIKE', "%{$search}%")
+            //   ->orWhere('jumlahpeserta', 'LIKE', "%{$search}%")
+            //   ->orWhere('lokasi', 'LIKE', "%{$search}%")
+            //   ->orWhere('keterangan', 'LIKE', "%{$search}%")
+            //   ->orWhere('isiagenda', 'LIKE', "%{$search}%")
+            //   ->orWhere('materi', 'LIKE', "%{$search}%");;
+            ;
         })
         ->orWhereHas('kategoripelatihan', function ($q) use ($search) {
             $q->where('kategoripelatihan', 'LIKE', "%{$search}%");
@@ -544,7 +545,7 @@ public function beagendapelatihancreate()
     })->get();
 
     $datajabatankerja = jabatankerja::orderBy('jabatankerja', 'asc')->get();
-    $dataasosiasi = asosiasimasjaki::where('id', 99)->first();
+    $dataasosiasi = asosiasimasjaki::where('id', 1)->first();
 
     return view('backend.05_agenda.01_agendapelatihan.create', [
         'title' => 'Buat Agenda Pelatihan ',
@@ -717,7 +718,7 @@ public function beagendaskk(Request $request)
     }
 
     return view('backend.05_agenda.03_agendaskk.index', [
-        'title' => 'Agenda Sertifikasi Tenaga Kerja Konstruksi Kabupaten Blora',
+        'title' => 'Agenda Sertifikasi Tenaga Kerja Konstruksi Kabupaten Bandung Barat',
         'data' => $data,
         'perPage' => $perPage,
         'search' => $search
@@ -910,7 +911,7 @@ public function beagendaskkcreate()
     $dataasosiasi = asosiasimasjaki::all();
 
     return view('backend.05_agenda.03_agendaskk.create', [
-        'title' => 'Buat Agenda Baru Sertifikasi TKK Kabupaten Blora ',
+        'title' => 'Buat Agenda Baru Sertifikasi TKK Kabupaten Bandung Barat ',
         'data' => null, // <<--- penting!
         'lspList' => $datalsp,
         'dataasosiasi' => $dataasosiasi,
@@ -1075,7 +1076,7 @@ public function beagendaskkpesertashow(Request $request, $id)
     $query = allskktenagakerjablora::where('agendaskk_id', $id)
         ->select([
             'id', 'user_id', 'agendaskk_id', 'jenjangpendidikan_id', 'jabatankerja_id',
-            'namasekolah_id', 'tahunpilihan_id', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
+            'namasekolah_id', 'tahunpilihan_id', 'namalengkap', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
             'alamat', 'notelepon', 'email', 'tahunlulus', 'uploadktp', 'uploadfoto', 'uploadijazah',
             'uploadpengalaman', 'uploadnpwp', 'uploaddaftarriwayathidup', 'namaasosiasi', 'punyaskk',
             'punyasiki', 'siappatuh', 'verifikasipu', 'verifikasilps'

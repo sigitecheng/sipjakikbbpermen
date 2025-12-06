@@ -733,7 +733,7 @@
                     <a href="#" class="nav-link">
                     <!-- Ikon untuk Beranda -->
                     <i class="nav-icon bi bi-house-door" style="color: white;"></i>
-                    <p style="color: white">
+                    <p style="color: red">
                       Kelembagaan
                       <!-- Ikon panah kanan (Chevron) -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -792,7 +792,7 @@
                         <a href="#" class="nav-link">
                             <!-- Ikon untuk Berita Jakon (Newspaper) -->
                             <i class="nav-icon bi bi-newspaper" style="color: white"></i>
-                            <p style="color: white">
+                            <p style="color: red">
                               Berita Jakon
                               <!-- Ikon panah kanan (Chevron) -->
                               <i class="nav-arrow bi bi-chevron-right"></i>
@@ -876,7 +876,7 @@
                 <a href="#" class="nav-link">
                     <!-- Ikon untuk Data Jakon -->
                     <i class="nav-icon bi bi-bar-chart" style="color: white"></i>
-                    <p style="color: white">
+                    <p style="color: red">
                       Data Jakon
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1057,7 +1057,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk Pembinaan -->
                   <i class="nav-icon bi bi-person-check" style="color: white"></i>
-                  <p style="color: white">
+                  <p style="color: red">
                     Pembinaan
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>

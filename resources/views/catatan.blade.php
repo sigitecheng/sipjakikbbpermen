@@ -244,3 +244,52 @@ function previewHeader(event) {
                      @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
 
                      <section style="background-color: #ECEEF3; width: 100%; min-height: 100vh;">
+
+
+
+
+                        {{-- ============================================================================= --}}
+
+
+                        <div style="position: relative; display: inline-block; margin-right:10px; width:300px;">
+    <input type="search" id="searchInput"
+           placeholder="Cari Badan Usaha ...."
+           onkeyup="searchTable()"
+           style="border: 1px solid #ccc;
+                  padding: 10px 40px 10px 15px;
+                  font-size: 14px;
+                  border-radius: 10px;
+                  width: 100%;">
+    <i class="bi bi-search"
+       style="position: absolute;
+              right: 15px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 16px;
+              color: #888;"></i>
+</div>
+
+                        <script>
+                            function updateEntries() {
+                                let selectedValue = document.getElementById("entries").value;
+                                let url = new URL(window.location.href);
+                                url.searchParams.set("perPage", selectedValue);
+                                window.location.href = url.toString();
+                            }
+
+                            function searchTable() {
+                            let input = document.getElementById("searchInput").value;
+
+                            fetch(`/bebujkkonstruksi?search=${input}`)
+                                .then(response => response.text())
+                                .then(html => {
+                                    let parser = new DOMParser();
+                                    let doc = parser.parseFromString(html, "text/html");
+                                    let newTableBody = doc.querySelector("#tableBody").innerHTML;
+                                    document.querySelector("#tableBody").innerHTML = newTableBody;
+                                })
+                                .catch(error => console.error("Error fetching search results:", error));
+                        }
+
+                                </script>
+

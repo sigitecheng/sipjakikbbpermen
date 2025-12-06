@@ -18,8 +18,8 @@
     width: 297mm;
     height: 210mm;
     background: linear-gradient(to right, #f1f8e9 0%, #f9f5e8 100%);
-    border: 15px double #2e7d32;
-    border-image: linear-gradient(45deg, #2e7d32, #d4af37, #2e7d32) 1;
+    border: 15px double #ffffff;
+    border-image: linear-gradient(45deg, #1229f7, #f5f1e6, #1229f7) 1;
     padding: 30px;
     box-shadow: 0 0 30px rgba(0,0,0,0.3);
     position: relative;
@@ -45,7 +45,7 @@
     left: 0;
     width: 100px;
     height: 40px;
-    background: linear-gradient(135deg, #d4af37, #2e7d32);
+    background: linear-gradient(135deg, #ffffff, #1229f7);
 clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
  z-index: 2;
 }
@@ -133,7 +133,7 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
         .cert-h1 {
             font-size: 32px;
             margin: 0;
-            color: #1b5e20;
+            color: black;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
             letter-spacing: 1px;
         }
@@ -141,14 +141,14 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
         .cert-h2 {
             font-size: 20px;
             margin: 10px 0;
-            color: #2e7d32;
+            color: black;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .cert-h3 {
             font-size: 16pt;
             margin: 5px 0;
-            color: #1b5e20;
+            color: black;
         }
 
         .cert-hr {
@@ -161,7 +161,7 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 
         .cert-highlight {
             font-weight: bold;
-            color: #1b5e20;
+            color: black;
             text-shadow: 1px 1px 1px rgba(0,0,0,0.05);
         }
 
@@ -219,9 +219,7 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 
       <!--begin::App Main-->
       <main class="app-main">
-
-        <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -256,24 +254,23 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
 
 
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
-                <button
-    onclick="history.back()"
-    onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-    onmouseout="this.style.backgroundColor='#374151'; this.style.color='white';"
-    style="background-color: #374151; color: white; border: none; margin-right: 10px; padding: 10px 20px; border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center; transition: background-color 0.3s, color 0.3s;">
-    <!-- Ikon Kembali -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-        viewBox="0 0 16 16" style="margin-right: 8px;">
-        <path fill-rule="evenodd"
-            d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z" />
-    </svg>
-    Kembali
-</button>
+                <a href="{{ url()->previous() }}">
+                <button class="button-modern">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16" style="margin-right: 8px;">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z" />
+                    </svg>
+                    Kembali
+                </button>
+            </a>
+
 
         </div>
         <hr>
@@ -284,17 +281,24 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
                         <div class="cert-container">
                             <div class="cert-header" style="text-align: center;">
                                 <!-- Logo di atas -->
-                                <div class="cert-logos" style="margin-bottom: 10px;">
-                                    <img src="/assets/icon/logokabupatenblora.png" width="70" height="70" alt="Blora" style="margin-right: 2px;">
+                               <div class="cert-logos" style="
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 10px;
+                                    margin-bottom: 15px;
+                                ">
+                                    <img src="/assets/icon/sipjakikbb.png" width="90" height="85" alt="Blora">
                                     <img src="/assets/icon/pupr.png" width="70" height="70" alt="PUPR">
                                 </div>
+
                             </div>
 
                             <hr class="cert-hr" style="margin-top: -5px;">
 
                             <div class="cert-title" style="margin-top: -10px;">
                                 <h1 class="cert-h1">SERTIFIKAT</h1>
-                                <h2 class="cert-h2">Nomor : DPUPR/BG/TKK/V/{{$data->id}}</h2>
+                                <h2 class="cert-h2">Nomor : DPUTR/KBB/TKK/{{$data->id}}</h2>
                             </div>
 
                             <div class="cert-content">
@@ -322,22 +326,22 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
                             </div>
 
                             <div class="cert-signature" style="margin-top: -10px;">
-                                <p style="margin: 0;"><strong>Kabupaten Blora, {{ \Carbon\Carbon::parse($data->agendapelatihan->waktupelaksanaan)->locale('id')->isoFormat('D MMMM YYYY') }}</strong> </p>
-                                <p style="margin: 0;"><strong>Plt. KEPALA DINAS <br> PEKERJAAN UMUM DAN PENATAAN RUANG</strong></p>
-                                <p style="margin: 0;"><strong>KABUPATEN BLORA</strong></p>
-
-                                <div style="display: flex; justify-content: flex-end; margin-right: -125px;"> <!-- Tambah ini -->
+                                <p style="margin: 0;"><strong>Kabupaten Bandung Barat, {{ \Carbon\Carbon::parse($data->agendapelatihan->waktupelaksanaan)->locale('id')->isoFormat('D MMMM YYYY') }}</strong> </p>
+                                <p style="margin: 0;"><strong>Plt. KEPALA DINAS <br> PEKERJAAN UMUM DAN TATA RUANG</strong></p>
+                                <p style="margin: 0;"><strong>KABUPATEN BANDUNG BARAT</strong></p>
+<br><br><br><br>
+                                {{-- <div style="display: flex; justify-content: flex-end; margin-right: -125px;"> <!-- Tambah ini -->
                                     <div style="position: relative; width: 400px; height: 100px;">
                                         <img src="/assets/icon/ttdpahuda.png" alt="" width="250px;" style="position: absolute; top: 0; left: 0; z-index: 1;">
                                         <img src="/assets/icon/ttdkabblora.png" alt="" width="115px;" style="position: absolute; top: 0; left: 50px; z-index: 2;">
                                     </div>
-                                </div>
+                                </div> --}}
 
 
 
-                                <p style="margin: 0;"><strong>NIDZAMUDIN AL HUDAA, ST</strong></p>
+                                {{-- <p style="margin: 0;"><strong>NIDZAMUDIN AL HUDAA, ST</strong></p> --}}
                                 {{-- <p>PEKBINA UTAMA MADYA</p> --}}
-                                <p style="margin: 0;">NIP. 19720326 200604 1 005</p>
+                                {{-- <p style="margin: 0;">NIP. 19720326 200604 1 005</p> --}}
                             </div>
                             <div class="ribbon-left"></div>
                             {{-- <div class="ribbon-right"></div> --}}
@@ -351,8 +355,14 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
                         <div class="cert-container">
                             <div class="cert-header" style="text-align: center;">
                                 <!-- Logo di atas -->
-                                <div class="cert-logos" style="margin-bottom: 10px;">
-                                    <img src="/assets/icon/logokabupatenblora.png" width="70" height="70" alt="Blora" style="margin-right: 2px;">
+                                <div class="cert-logos" style="
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 10px;
+                                    margin-bottom: 15px;
+                                ">
+                                    <img src="/assets/icon/sipjakikbb.png" width="90" height="85" alt="Blora">
                                     <img src="/assets/icon/pupr.png" width="70" height="70" alt="PUPR">
                                 </div>
                             </div>
@@ -360,7 +370,7 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
                             <hr class="cert-hr" style="margin-top: -5px;">
 
                             <div class="cert-title" style="margin-top: -10px;">
-                                <h2 class="cert-h2" style="text-align: center; margin: 15px 0; font-weight:800;">Agenda Pelatihan : <br>{{$data->agendapelatihan->namakegiatan}}</h2>
+                                <h2 class="cert-h2" style="text-align: center; margin: 15px 0; font-weight:800; color:black;" >Agenda Pelatihan : <br>{{$data->agendapelatihan->namakegiatan}}</h2>
                             </div>
 
                             <div class="cert-content">
@@ -430,7 +440,7 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 
                                         /* Gradasi hijau dan emas untuk header */
                                         .custom-table thead tr th {
-                                            background: linear-gradient(135deg, #4caf50, #ffb300); /* Gradasi hijau ke emas */
+                                            background: linear-gradient(135deg, #1229f7, #f5f1e6); /* Gradasi hijau ke emas */
                                             color: white;
                                         }
 
@@ -465,7 +475,7 @@ clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
                                 <h4 style="text-transform: uppercase;">{{ strtoupper($data->namalengkap) }}</h4>
                                                                 {{-- <h4 class="carved-text">Miftahunnuril Anam, S.E</h4> --}}
 
-                                <p> Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora
+                                <p> Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat
                                 <br> Diterbitkan Pada : {{ \Carbon\Carbon::parse($data->agendapelatihan->waktupelaksanaan)->locale('id')->isoFormat('D MMMM YYYY') }}
                                 </p>
                             </div>

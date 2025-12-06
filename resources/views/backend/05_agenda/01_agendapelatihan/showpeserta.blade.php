@@ -13,10 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -41,13 +38,10 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
-
-
-
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                 <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
                     <a href="/beagendapelatihan">
-                        <button class="button-newvalidasi">
+                        <button class="button-modern">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         viewBox="0 0 16 16" style="margin-right: 8px;">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
@@ -149,18 +143,18 @@
 <td style="text-align: center;">
     @if($item->verifikasi == false)
         <!-- Tombol DI VERIFIKASI -->
-        <button type="button" onclick="openModal({{ $item->id }})" class="button-newvalidasi">
-            <i class="bi bi-patch-check-fill"></i> DI VERIFIKASI
+        <button type="button" onclick="openModal({{ $item->id }})" class="button-baru">
+            <i class="bi bi-patch-check-fill"></i> verifikasi
         </button>
     @elseif($item->verifikasi == 'gugur')
         <!-- Tombol GUGUR -->
         <button type="button" disabled class="button-merah">
-            <i class="bi bi-x-circle"></i> GUGUR
+            <i class="bi bi-x-circle"></i> Gugur
         </button>
     @elseif($item->verifikasi == 'lolos')
         <!-- Tombol LOLOS -->
         <button type="button" disabled class="button-hijau">
-            <i class="bi bi-patch-check-fill" style="font-size: 1.2rem;"></i> LOLOS
+            <i class="bi bi-patch-check-fill" style="font-size: 1.2rem;"></i> Lolos
         </button>
     @endif
 </td>

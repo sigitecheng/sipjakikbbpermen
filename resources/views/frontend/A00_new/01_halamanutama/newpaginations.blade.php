@@ -1,7 +1,7 @@
 <div class="pagination-container" style="margin-top: 50px; display: flex; flex-direction: column; align-items: center; color:black;">
     <!-- Info Data -->
     <div class="pagination-info mb-2" style="margin-bottom: 10px; color:black;">
-        Data Ke {{ $data->firstItem() }} Sampai {{ $data->lastItem() }} Dari {{ $data->total() }} Jumlah Data
+        Data Ke {{ $data->firstItem() }} Sampai {{ $data->lastItem() }} Dari {{ $data->total() }} Jumlah Data {{$title}}
     </div>
 
     <!-- Pagination Buttons -->

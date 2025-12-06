@@ -14,9 +14,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -49,7 +47,7 @@
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
 
                       <a href="javascript:history.back()">
-<button class="button-newvalidasi">
+<button class="button-modern">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
          viewBox="0 0 16 16" style="margin-right: 8px;">
         <path fill-rule="evenodd"
@@ -76,11 +74,10 @@
                                     <div class="col-md-6">
                                         <!-- Kategori Pelatihan -->
                                      <!-- Kategori Pelatihan -->
-
 <!-- LSP Penerbit -->
-<div class="mb-3">
-    <label for="user_id" class="form-label">
-        <i class="bi bi-person-circle text-primary"></i> LSP Penerbit
+<div class="form-modern mb-3">
+    <label for="user_id" class="form-label-modern">
+        <i class="bi bi-person-circle" style="color: navy;"></i> LSP Penerbit
     </label>
     <select id="user_id" name="user_id" class="form-control @error('user_id') is-invalid @enderror">
         <option value="">-- Pilih LSP Penerbit --</option>
@@ -97,9 +94,9 @@
 </div>
 
 <!-- Nama Kegiatan -->
-<div class="mb-3">
-    <label for="namakegiatan" class="form-label">
-        <i class="bi bi-clipboard text-primary"></i> Nama Kegiatan
+<div class="form-modern mb-3">
+    <label for="namakegiatan" class="form-label-modern">
+        <i class="bi bi-clipboard" style="color: navy;"></i> Nama Kegiatan
     </label>
     <input type="text" id="namakegiatan" name="namakegiatan"
         class="form-control @error('namakegiatan') is-invalid @enderror"
@@ -110,9 +107,9 @@
 </div>
 
 <!-- Penyelenggara / Asosiasi -->
-<div class="mb-3">
-    <label for="asosiasimasjaki_id" class="form-label">
-        <i class="bi bi-people-fill text-primary"></i> Penyelenggara / Asosiasi
+<div class="form-modern mb-3">
+    <label for="asosiasimasjaki_id" class="form-label-modern">
+        <i class="bi bi-people-fill" style="color: navy;"></i> Penyelenggara / Asosiasi
     </label>
     <select id="asosiasimasjaki_id" name="asosiasimasjaki_id"
         class="form-control @error('asosiasimasjaki_id') is-invalid @enderror">
@@ -130,9 +127,9 @@
 </div>
 
 <!-- Waktu Pelaksanaan -->
-<div class="mb-3">
-    <label for="waktupelaksanaan" class="form-label">
-        <i class="bi bi-calendar-date text-primary"></i> Tanggal Pelaksanaan
+<div class="form-modern mb-3">
+    <label for="waktupelaksanaan" class="form-label-modern">
+        <i class="bi bi-calendar-date" style="color: navy;"></i> Tanggal Pelaksanaan
     </label>
     <input type="date" id="waktupelaksanaan" name="waktupelaksanaan"
         class="form-control @error('waktupelaksanaan') is-invalid @enderror"
@@ -143,9 +140,9 @@
 </div>
 
 <!-- Tanggal Penutupan -->
-<div class="mb-3">
-    <label for="penutupan" class="form-label">
-        <i class="bi bi-calendar-check text-primary"></i> Tanggal Penutupan
+<div class="form-modern mb-3">
+    <label for="penutupan" class="form-label-modern">
+        <i class="bi bi-calendar-check" style="color: navy;"></i> Tanggal Penutupan
     </label>
     <input type="date" id="penutupan" name="penutupan"
         class="form-control @error('penutupan') is-invalid @enderror"
@@ -156,9 +153,9 @@
 </div>
 
 <!-- Jumlah Peserta -->
-<div class="mb-3">
-    <label for="jumlahpeserta" class="form-label">
-        <i class="bi bi-people text-primary"></i> Jumlah Peserta
+<div class="form-modern mb-3">
+    <label for="jumlahpeserta" class="form-label-modern">
+        <i class="bi bi-people" style="color: navy;"></i> Jumlah Peserta
     </label>
     <input type="number" id="jumlahpeserta" name="jumlahpeserta"
         class="form-control @error('jumlahpeserta') is-invalid @enderror"
@@ -169,9 +166,9 @@
 </div>
 
 <!-- Lokasi -->
-<div class="mb-3">
-    <label for="lokasi" class="form-label">
-        <i class="bi bi-geo-alt text-primary"></i> Lokasi
+<div class="form-modern mb-3">
+    <label for="lokasi" class="form-label-modern">
+        <i class="bi bi-geo-alt" style="color: navy;"></i> Lokasi
     </label>
     <input type="text" id="lokasi" name="lokasi"
         class="form-control @error('lokasi') is-invalid @enderror"
@@ -182,9 +179,9 @@
 </div>
 
 <!-- Keterangan -->
-<div class="mb-3">
-    <label for="keterangan" class="form-label">
-        <i class="bi bi-info-circle text-primary"></i> Keterangan
+<div class="form-modern mb-3">
+    <label for="keterangan" class="form-label-modern">
+        <i class="bi bi-info-circle" style="color: navy;"></i> Keterangan
     </label>
     <input type="text" id="keterangan" name="keterangan"
         class="form-control @error('keterangan') is-invalid @enderror"
@@ -193,14 +190,16 @@
         <div class="invalid-feedback">{{ $message }}</div>
     @enderror
 </div>
+
 </div>
 
 <!-- Kolom Kanan -->
 <div class="col-md-6">
+
     <!-- Isi Agenda -->
-    <div class="mb-3">
-        <label for="isiagenda" class="form-label">
-            <i class="bi bi-journal-text text-primary"></i> Isi Agenda
+    <div class="form-modern mb-3">
+        <label for="isiagenda" class="form-label-modern">
+            <i class="bi bi-journal-text" style="color: navy;"></i> Isi Agenda
         </label>
         <textarea id="isiagenda" name="isiagenda"
             class="form-control @error('isiagenda') is-invalid @enderror"
@@ -211,9 +210,9 @@
     </div>
 
     <!-- Foto Kegiatan -->
-    <div class="mb-3">
-        <label for="foto" class="form-label">
-            <i class="bi bi-image text-primary"></i> Foto Kegiatan
+    <div class="form-modern mb-3">
+        <label for="foto" class="form-label-modern">
+            <i class="bi bi-image" style="color: navy;"></i> Foto Kegiatan
         </label>
         <input type="file" id="foto" name="foto"
             class="form-control @error('foto') is-invalid @enderror">
@@ -239,18 +238,21 @@
     </div>
 </div>
 
+
                                 <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                     <div class="flex justify-end">
-                                        <button class="button-hijau" type="button" onclick="openModal()">
+                                      <button class="button-baru" type="button" onclick="openModal()">
 
-                                        <!-- Ikon SVG Pensil -->
+                                        <!-- Ikon SVG Plus -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
-                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                   </svg>
+                                            fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        </svg>
+
                                         <span style="font-family: 'Poppins', sans-serif;">Buat Agenda</span>
                                     </button>
+
                                     </div>
                                     <!-- Modal Konfirmasi -->
                                     <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">

@@ -14,9 +14,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;"> --}}
-        <section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
             <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -54,17 +52,14 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
 
-             <button class="button-newvalidasi"
+             <button class="button-modern"
     onclick="window.history.back();">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
          viewBox="0 0 16 16" style="margin-right: 8px;">
       <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
     </svg>
-
-    <span style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.5;">
-        Kembali
-    </span>
+Kembali
 </button>
 
         </div>
@@ -84,19 +79,19 @@
                                     <!-- Left Column (6/12) -->
                                     <div class="col-md-6">
                                         <!-- Nama Lengkap -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="user_id">
+                                        <div class="form-modern mb-3">
+                                            <label class="form-label-modern" for="user_id">
                                                 <i class="bi bi-person" style="margin-right: 8px; color: navy;"></i>Nama Tenaga Kerja Konstruksi
                                             </label>
-                                            <input type="text" id="user_id" name="user_id" class="form-control @error('user_id') is-invalid @enderror" value="{{ old('user_id', $data->user->name) }}" />
+                                            <input type="text" id="user_id" name="user_id" class="form-control @error('user_id') is-invalid @enderror" value="{{ old('user_id', $data->namalengkap) }}"  readonly/>
                                             @error('user_id')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
                                         </div>
 
                                         <!-- NIP -->
-<div class="mb-3">
-    <label class="form-label" for="sertifikat">
+<div class="form-modern mb-3">
+    <label class="form-label-modern" for="sertifikat">
         <i class="bi bi-credit-card" style="margin-right: 8px; color: navy;"></i> Upload Sertifikat (PDF)
     </label>
     <input type="file" id="sertifikat" name="sertifikat" accept="application/pdf"

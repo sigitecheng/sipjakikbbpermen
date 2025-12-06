@@ -13,10 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -56,7 +53,7 @@
 
                                 <!-- Tombol Kanan -->
                                 <a href="/beagendapelatihan">
-                                    <button class="button-newvalidasi">
+                                    <button class="button-modern">
                                         <!-- Ikon Kembali -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                             viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -84,8 +81,8 @@
                                         <!-- ID BUJK Kontraktor (Hidden atau Select jika mau pilih) -->
                                         <input type="hidden"  name="agendapelatihan_id" value="{{ $agendapelatihan_id }}">
                                         <!-- Nama Pengurus -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="judulmateripelatihan">
+                                        <div class="form-modern mb-3">
+                                            <label class="form-label-modern" for="judulmateripelatihan">
                                                 <i class="bi bi-person" style="margin-right:8px; color:navy;"></i> Judul Materi Pelatihan
                                             </label>
                                             <input type="text" id="judulmateripelatihan" name="judulmateripelatihan" class="form-control @error('judulmateripelatihan') is-invalid @enderror" value="{{ old('judulmateripelatihan') }}">
@@ -96,8 +93,8 @@
 
 
     <!-- Foto Kegiatan -->
-    <div class="mb-3">
-    <label for="materipelatihan" class="form-label">
+    <div class="form-modern mb-3">
+    <label for="materipelatihan" class="form-label-modern">
         <i class="bi bi-file-earmark-pdf text-danger"></i> Upload Materi (PDF)
     </label>
     <input type="file" id="materipelatihan" name="materipelatihan"
@@ -158,7 +155,7 @@ document.getElementById('materipelatihan').addEventListener('change', function(e
                                 <!-- Tombol Submit -->
                                 <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                     <div class="flex justify-end">
-                                        <button class="button-hijau" type="button" onclick="openModal()">
+                                        <button class="button-baru" type="button" onclick="openModal()">
 
                                         <!-- Ikon SVG Pensil -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"

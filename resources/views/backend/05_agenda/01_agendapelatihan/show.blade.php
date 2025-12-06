@@ -15,11 +15,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -47,13 +43,6 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h2 class="card-title" style="color: black;">
-                            Nama Kegiatan :
-                            <button class="button-berkas">
-                                {{ $data->namakegiatan }}
-                            </button>
-                        </h2>
-
                         {{-- <button id="status-{{ $data->id }}" class="btn btn-sm"></button> --}}
 
                         <script>
@@ -121,47 +110,46 @@
                                 <!--begin::Body-->
                                 <div class="card-body">
                                     <div class="row">
-                                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
-
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                                         <!-- Left Column (6/12) -->
                                         <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-calendar-event" style="margin-right: 8px; color: navy;"></i> Nama Kegiatan
                                                 </label>
                                                 <input class="form-control" value="{{$data->namakegiatan}}" readonly/>
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-tags-fill" style="margin-right: 8px; color: navy;"></i> Kategori Pelatihan
                                                 </label>
                                                 <input class="form-control" value="{{$data->kategoripelatihan->kategoripelatihan}}" readonly />
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Penyelenggara
                                                 </label>
                                                 <input class="form-control" value="{{$data->penyelenggara}}" readonly/>
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-calendar-x-fill" style="margin-right: 8px; color: navy;"></i> Penutupan
                                                 </label>
                                                 <input class="form-control" value="{{ \Carbon\Carbon::parse($data->penutupan)->translatedFormat('d F Y') }}" readonly/>
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-clock-fill" style="margin-right: 8px; color: navy;"></i> Waktu Pelaksanaan
                                                 </label>
                                                 <input class="form-control" value="{{ \Carbon\Carbon::parse($data->waktupelaksanaan)->translatedFormat('d F Y') }}" readonly/>
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-people-fill" style="margin-right: 8px; color: navy;"></i> Jumlah Peserta
                                                 </label>
                                                 <input class="form-control" value="{{$data->jumlahpeserta}}" readonly/>
@@ -170,22 +158,22 @@
                                           <!-- End Left Column -->
                                         <!-- Right Column (6/12) -->
                                         <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-geo-alt-fill" style="margin-right: 8px; color: navy;"></i> Lokasi
                                                 </label>
                                                 <input class="form-control" value="{{$data->lokasi}}" readonly/>
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-info-circle-fill" style="margin-right: 8px; color: navy;"></i> Keterangan
                                                 </label>
                                                 <input class="form-control" value="{{$data->keterangan}}" readonly/>
                                             </div>
 
-                                            <div class="mb-3">
-                                                <label class="form-label">
+                                            <div class="form-modern mb-3">
+                                                <label class="form-label-modern">
                                                     <i class="bi bi-journal-text" style="margin-right: 8px; color: navy;"></i> Isi Agenda
                                                 </label>
                                                 <input class="form-control" value="{{$data->isiagenda}}" readonly/>
@@ -233,7 +221,7 @@
                             Update
                         </button>
                         </a> --}}
-                        <button class="button-newvalidasi"
+                        <button class="button-modern"
                         onclick="window.history.back();">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16" style="margin-right: 8px;">
