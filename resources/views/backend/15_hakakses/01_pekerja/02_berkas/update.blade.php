@@ -14,9 +14,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-          {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-        <section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -51,7 +49,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                        <a href="{{ url()->previous() }}">
-                            <button class="button-newvalidasi">
+                            <button class="button-modern">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -59,9 +57,7 @@
                         </svg>
                         Kembali
                         </button>
-
-                        </a>
-
+                    </a>
         </div>
         <hr>
 {{--  --}}
@@ -71,7 +67,7 @@
     <hr class="my-4" style="border-top: 2px dashed #03157e; width: 60%; margin: auto;">
     <h5 style="color: #03157e; font-weight: bold; margin-top: 5px; font-size:16px;">
         <i class="bi bi-upload" style="margin-right: 6px;"></i>
-        Upload Perbaikan Berkas Saudara !
+        Upload Perbaikan Berkas Sertifikasi Saudara !
     </h5>
     <hr class="my-4" style="border-top: 2px dashed #03157e; width: 60%; margin: auto;">
 </div>
@@ -81,7 +77,7 @@
         {{-- ======================================================= --}}
                     <div class="col-md-12">
                         <!--begin::Quick Example-->
-                        <form action="{{ route('berkasperbaikandatapeserta', $data->id) }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('berkasperbaikandatapeserta', $data->namalengkap) }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('POST') <!-- Ganti dengan PUT untuk update -->
 
@@ -709,10 +705,11 @@ document.getElementById('uploaddaftarriwayathidup').addEventListener('change', f
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                <button type="button" onclick="openModal()"
-                                        class="button-berkas flex items-center gap-2 px-4 py-2">
-                                    <!-- Ikon Pensil dari Bootstrap Icons -->
-                                    <i class="bi bi-pencil" style="font-size: 20px;"></i>
+                             <button type="button" onclick="openModal()"
+                                    class="button-berkas flex items-center gap-2 px-4 py-2">
+
+                                    <!-- Ikon Pensil Kotak -->
+                                    <i class="bi bi-pencil-square" style="font-size: 20px;"></i>
 
                                     <span style="font-family: 'Poppins', sans-serif;">Perbaikan Data ?</span>
                                 </button>

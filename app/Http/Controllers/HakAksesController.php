@@ -102,18 +102,22 @@ public function downsertifikatskk(Request $request)
     $search = $request->input('search');
     $userId = Auth::id();
 
-    // Ambil data allskktenagakerjablora milik user login yang punya sertifikat
     $query = allskktenagakerjablora::with(['user'])
-        ->where('user_id', $userId)
-        ->whereNotNull('sertifikat')
-        ->where('sertifikat', '!=', '');
+    ->where('user_id', $userId)
+    ->whereNotNull('sertifikat')
+    ->where('sertifikat', '!=', '')
+    ->where('namalengkap', '!=', '');
 
-    // Jika ada pencarian berdasarkan nama user (opsional)
-    if ($search) {
-        $query->whereHas('user', function ($q) use ($search) {
-            $q->where('name', 'LIKE', "%{$search}%");
-        });
-    }
+// Jika ada pencarian
+if ($search) {
+    $query->where(function ($q) use ($search) {
+        $q->where('namalengkap', 'LIKE', "%{$search}%") // mencari di tabel ini
+          ->orWhereHas('user', function ($u) use ($search) {
+              $u->where('name', 'LIKE', "%{$search}%"); // mencari di tabel user
+          });
+    });
+}
+
 
     // Ambil data lengkap + hitung jumlah kegiatan (agendaskk_id)
     $items = $query->paginate($perPage);
@@ -161,7 +165,7 @@ public function hakaksespekerjaskkdaftar(Request $request)
     $user = Auth::user();
 
     return view('backend.15_hakakses.01_pekerja.03_daftarskk.index', [
-        'title' => 'Agenda SKK Tenaga Konstruksi Kab Blora, Silahkan Daftar !',
+        'title' => 'Agenda SKK Tenaga Konstruksi Kab Bandung Barat, Silahkan Daftar !',
         'data' => $data,
         'perPage' => $perPage,
         'search' => $search,

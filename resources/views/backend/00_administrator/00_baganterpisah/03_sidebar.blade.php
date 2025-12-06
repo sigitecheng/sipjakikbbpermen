@@ -390,16 +390,6 @@
               @can('pekerja')
 
 
-                 <li class="nav-item">
-                <a href="/" class="nav-link">
-                    <i class="nav-icon bi bi-android2" style="color: white"></i>
-                    <p style="color: white">
-                    Menu Android
-                    <i class="nav-arrow bi bi-chevron-right"></i>
-                    </p>
-                </a>
-                </li>
-
               <li class="nav-item">
                 <a href="/hakaksespekerjaskkdaftar" class="nav-link">
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i>

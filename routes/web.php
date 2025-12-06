@@ -1736,8 +1736,8 @@ Route::put('/besertifikatskkcreate/{id}', [PembinaanController::class, 'besertif
 
 Route::post('/peserta/downloadberkas/{id}', [PembinaanController::class, 'downloadSemuaBerkas'])->middleware('auth')->name('peserta.downloadSemua');
 
-Route::get('/perbaikandataskk/{id}', [PembinaanController::class, 'perbaikandataskk'])->middleware('auth');
-Route::post('/perbaikandataskk/createnew/{id}', [PembinaanController::class, 'perbaikandataskkupdate'])->middleware('auth')->name('berkasperbaikandatapeserta');
+Route::get('/perbaikandataskk/{namalengkap}', [PembinaanController::class, 'perbaikandataskk'])->middleware('auth');
+Route::post('/perbaikandataskk/createnew/{namalengkap}', [PembinaanController::class, 'perbaikandataskkupdate'])->middleware('auth')->name('berkasperbaikandatapeserta');
 
 // TKK DPUPR 2025
 Route::get('/beagendaskktkk', [PembinaanController::class, 'beagendaskktkk2025'])->middleware('auth');

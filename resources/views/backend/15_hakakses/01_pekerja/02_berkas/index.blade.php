@@ -1,23 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -34,8 +14,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
     <!--begin::App Content Header-->
      <div class="app-content-header">
@@ -185,7 +164,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
             <td style="text-align: left;">{{ $item->namakegiatan }}</td>
             <td style="text-align: center; vertical-align: middle;">
                 <a href="{{ url('/bepesertaskkshowberkas/show/' . $item->id . '/' . $peserta->user->id) }}" style="text-decoration: none;">
-                    <button class="button-baru">
+                    <button class="button-berkas">
                         <i class="bi bi-eye"></i> Lihat Berkas
                     </button>
                 </a>
@@ -229,7 +208,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 

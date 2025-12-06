@@ -1482,8 +1482,8 @@ button:hover {
       Silahkan Lakukan Perbaikan Data <i class="bi bi-arrow-right"></i>
     </p>
 
-    <a href="/perbaikandataskk/{{$datapeserta->id}}">
-      <button class="button-baru">
+    <a href="/perbaikandataskk/{{$datapeserta->namalengkap}}">
+      <button class="button-berkas">
         <i class="bi bi-pencil-square"></i> Perbaikan Data
       </button>
     </a>

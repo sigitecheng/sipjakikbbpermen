@@ -742,7 +742,7 @@ public function beagendaskkmateri($id)
     // Ambil data user saat ini
     $user = Auth::user();
     return view('backend.05_agenda.03_agendaskk.01_daftarmateri.index', [
-        'title' => 'Daftar Materi Agenda Sertifikasi Tenaga Kerja Konstruksi Kabupaten Blora',
+        'title' => 'Daftar Materi Agenda Sertifikasi Tenaga Kerja Konstruksi Kabupaten Bandung Barat',
         'data' => $dataagendaskk,
         'subdata' => $subdata,
         'user' => $user,
@@ -1375,10 +1375,10 @@ public function downloadSemuaBerkas($id)
 
 
 
-public function perbaikandataskk($id)
+public function perbaikandataskk($namalengkap)
 {
     // Cari data undang-undang berdasarkan nilai 'judul'
-    $dataallskktenagakerjablora = allskktenagakerjablora::where('id', $id)->firstOrFail();
+    $dataallskktenagakerjablora = allskktenagakerjablora::where('namalengkap', $namalengkap)->firstOrFail();
 
     $user = Auth::user();
 
@@ -1392,7 +1392,7 @@ public function perbaikandataskk($id)
 
 
 // Update data existing
-    public function perbaikandataskkupdate(Request $request, $id)
+    public function perbaikandataskkupdate(Request $request, $namalengkap)
 {
     // Validasi dengan pesan kustom
     $validator = Validator::make($request->all(), [
@@ -1415,7 +1415,9 @@ public function perbaikandataskk($id)
                          ->withInput();
     }
 
-    $data = allskktenagakerjablora::findOrFail($id);
+    $data = allskktenagakerjablora::where('namalengkap', $namalengkap)->firstOrFail();
+
+    // $data = allskktenagakerjablora::findOrFail($namalengkap);
 
     $uploadPaths = [
         'uploadktp' => '04_pembinaan/03_sertifikasi/01_uploadktp',

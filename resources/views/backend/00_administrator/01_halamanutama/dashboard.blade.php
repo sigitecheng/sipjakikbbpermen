@@ -1161,7 +1161,7 @@ button:hover {
                 <div class="dashboard-card card-1">
                     <div class="card-content">
                         <div class="number-container">
-                            <h4 class="animated-number">{{$jumlahKegiatan}}</h4>
+                            <h4 class="animated-number">{{$jumlahKegiatan ?? '-'}}</h4>
                         </div>
                         <div class="info-content">
                             <div class="info-icon">
@@ -1177,7 +1177,7 @@ button:hover {
                 <div class="dashboard-card card-2">
                     <div class="card-content">
                         <div class="number-container">
-                            <h4 class="animated-number">{{$jumlahDikembalikan}}</h4>
+                            <h4 class="animated-number">{{$jumlahDikembalikan ?? '-'}}</h4>
                         </div>
                         <div class="info-content">
                             <div class="info-icon">
@@ -1193,7 +1193,7 @@ button:hover {
                 <div class="dashboard-card card-3">
                     <div class="card-content">
                         <div class="number-container">
-                            <h4 class="animated-number">{{$jumlahLolos}}</h4>
+                            <h4 class="animated-number">{{$jumlahLolos ?? '-'}}</h4>
                         </div>
                         <div class="info-content">
                             <div class="info-icon">
@@ -1212,7 +1212,7 @@ button:hover {
                 <div class="dashboard-card card-4">
                     <div class="card-content">
                         <div class="number-container">
-                            <h4 class="animated-number">{{$jumlahVerifikasiLps}}</h4>
+                            <h4 class="animated-number">{{$jumlahVerifikasiLps ?? '-'}}</h4>
                         </div>
                         <div class="info-content">
                             <div class="info-icon">
@@ -1228,7 +1228,7 @@ button:hover {
                 <div class="dashboard-card card-5">
                     <div class="card-content">
                         <div class="number-container">
-                            <h4 class="animated-number">{{$jumlahDenganSertifikat}}</h4>
+                            <h4 class="animated-number">{{$jumlahDenganSertifikat ?? '-'}}</h4>
                         </div>
                         <div class="info-content">
                             <div class="info-icon">
