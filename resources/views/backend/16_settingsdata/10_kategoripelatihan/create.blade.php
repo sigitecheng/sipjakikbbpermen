@@ -45,18 +45,16 @@
 
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
-             <a href="{{ url()->previous() }}">
-    <button class="button-modern">
-        <!-- Ikon Kembali -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            viewBox="0 0 16 16" style="margin-right: 8px;">
-            <path fill-rule="evenodd"
-                d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-        </svg>
-        Kembali
-    </button>
-</a>
-
+                <a href="/settingkatpelatihan/">
+                    <button class="button-modern">
+                    <!-- Ikon Kembali -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16" style="margin-right: 8px;">
+                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+               </svg>
+                    Kembali
+                </button>
+            </a>
         </div>
         <hr>
 
@@ -64,163 +62,49 @@
         {{-- ======================================================= --}}
                     <div class="col-md-12">
                         <!--begin::Quick Example-->
-                        <form action="{{ route('akuncreatenew') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('create.kategoripelatihan') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <!-- begin::Body -->
-<div class="card-body">
-    <div class="row">
-        <!-- Kolom Kiri -->
-        <div class="col-md-6">
-            <!-- Status Admin -->
-            <div class="form-modern mb-3">
-                <label class="form-label-modern" for="status_admin_select">
-                    <i class="bi bi-person-badge" style="margin-right: 8px; color: navy;"></i> Status Admin
-                </label>
-                <select id="status_admin_select" name="statusadmin_id" class="form-control">
-                    @foreach ($data as $item)
-                        <option value="{{ $item->id }}">{{ $item->statusadmin }}</option>
-                    @endforeach
-                </select>
-            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Left Column (6/12) -->
+                                    <div class="col-md-6">
+                                        <div class="form-modern mb-3">
+                                            <label class="form-label-modern" for="kategoripelatihan">
+                                                <i class="bi bi-layers" style="margin-right: 8px; color: navy;"></i> Kategori Pelatihan
+                                            </label>
+                                            <input type="text" id="kategoripelatihan" name="kategoripelatihan"
+                                                class="form-control @error('kategoripelatihan') is-invalid @enderror"
+                                                value="{{ old('kategoripelatihan') }}" />
 
-            <!-- Nama Lengkap -->
-            <div class="form-modern mb-3">
-                <label class="form-label-modern" for="name">
-                    <i class="bi bi-person" style="margin-right: 8px; color: navy;"></i> Nama Lengkap
-                </label>
-                <input type="text" id="name" name="name" class="form-control" value="{{ old('name') }}">
-            </div>
-
-            <!-- Username -->
-            <div class="form-modern mb-3">
-                <label class="form-label-modern" for="username">
-                    <i class="bi bi-person-badge" style="margin-right: 8px; color: navy;"></i> Username
-                </label>
-                <input type="text" id="username" name="username" class="form-control" value="{{ old('username') }}">
-            </div>
-
-            <!-- Nomor HP -->
-            <div class="form-modern mb-3">
-                <label class="form-label-modern" for="phone_number">
-                    <i class="bi bi-telephone" style="margin-right: 8px; color: navy;"></i> Nomor HP
-                </label>
-                <input type="text" id="phone_number" name="phone_number" class="form-control" value="{{ old('phone_number') }}">
-            </div>
-
-            <!-- Email -->
-            <div class="form-modern mb-3">
-                <label class="form-label-modern" for="email">
-                    <i class="bi bi-envelope" style="margin-right: 8px; color: navy;"></i> Email
-                </label>
-                <input type="email" id="email" name="email" class="form-control" value="{{ old('email') }}">
-            </div>
-
-            <!-- Password -->
-            <div class="form-modern mb-3 position-relative">
-                <label class="form-label-modern" for="password">
-                    <i class="bi bi-key" style="margin-right: 8px; color: navy;"></i> Password
-                </label>
-                <div class="input-group">
-                    <input type="password" id="password" name="password" class="form-control">
-                    <button type="button" class="btn btn-outline-secondary" onclick="togglePassword('password', this)">
-                        <i class="bi bi-eye"></i>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Konfirmasi Password -->
-            <div class="form-modern mb-3 position-relative">
-                <label class="form-label-modern" for="password_confirmation">
-                    <i class="bi bi-shield-lock" style="margin-right: 8px; color: navy;"></i> Konfirmasi Password
-                </label>
-                <div class="input-group">
-                    <input type="password" id="password_confirmation" name="password_confirmation" class="form-control">
-                    <button type="button" class="btn btn-outline-secondary" onclick="togglePassword('password_confirmation', this)">
-                        <i class="bi bi-eye"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Kolom Kanan -->
-        <div class="col-md-6">
-            <!-- Upload Foto Profil -->
-            <div class="mb-3">
-                <label class="form-label-modern" for="avatar">
-                    <i class="bi bi-person-circle" style="margin-right: 8px; color: navy;"></i> Upload Foto Profil
-                </label>
-                <input type="file" id="avatar" name="avatar"
-                       class="form-control @error('avatar') is-invalid @enderror"
-                       accept="image/*" onchange="previewImage('avatar', 'previewFoto')" />
-
-                <div class="mt-2" id="previewContainer">
-                    <img id="previewFoto"
-                         src="{{ old('avatar') ? asset('storage/' . old('avatar')) : '' }}"
-                         style="max-width: 100%; max-height: 200px; margin-top: 10px; {{ old('avatar') ? '' : 'display: none;' }}" />
-                </div>
-
-                @error('avatar')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                @enderror
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Script untuk Preview Gambar & Show/Hide Password -->
-<script>
-    function previewImage(inputId, previewId) {
-        const file = document.getElementById(inputId).files[0];
-        const imgPreview = document.getElementById(previewId);
-
-        if (file && file.type.startsWith('image/')) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                imgPreview.src = e.target.result;
-                imgPreview.style.display = 'block';
-            }
-            reader.readAsDataURL(file);
-        } else {
-            imgPreview.src = '';
-            imgPreview.style.display = 'none';
-        }
-    }
-
-    function togglePassword(inputId, btn) {
-        const input = document.getElementById(inputId);
-        const icon = btn.querySelector("i");
-
-        if (input.type === "password") {
-            input.type = "text";
-            icon.classList.remove("bi-eye");
-            icon.classList.add("bi-eye-slash");
-        } else {
-            input.type = "password";
-            icon.classList.remove("bi-eye-slash");
-            icon.classList.add("bi-eye");
-        }
-    }
-</script>
+                                            @error('kategoripelatihan')
+                                                <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End row -->
+                            </div>
+                            <!-- end::Body -->
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                  <button class="button-baru" type="button" onclick="openModal()">
+                                    <button class="button-baru" type="button" onclick="openModal()">
 
-                                    <!-- Ikon SVG Plus tanpa lingkaran -->
+                                    <!-- Ikon SVG Pensil -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
-                                        <path d="M8 1a.5.5 0 0 1 .5.5v6h6a.5.5 0 0 1 0 1h-6v6a.5.5 0 0 1-1 0v-6h-6a.5.5 0 0 1 0-1h6v-6A.5.5 0 0 1 8 1z"/>
-                                    </svg>
-
-                                    <span style="font-family: 'Poppins', sans-serif;">Buat Akun</span>
+                                    fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                               </svg>
+                                    <span style="font-family: 'Poppins', sans-serif;">Tambah Data</span>
                                 </button>
-
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
                                     <div style="background: white; padding: 24px 30px; border-radius: 12px; max-width: 400px; width: 90%; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
                                       <p style="font-size: 16px; font-weight: 600; margin-bottom: 20px;">
-                                        Apakah Anda ingin menambahkan data?
+                                        Apakah Anda ingin menambahkan kategori baru?
                                     </p>
 
                                       <!-- Tombol -->

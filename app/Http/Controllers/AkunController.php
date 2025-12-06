@@ -120,6 +120,24 @@ return redirect('/allakun')->with('delete', 'Data Berhasil Di Hapus !');
 return redirect()->back()->with('error', 'Item not found');
 }
 
+public function allsemuaakunlsp($name)
+{
+    // Cari item berdasarkan nama
+    $entry = User::where('name', $name)->first();
+
+    if ($entry) {
+
+        // Hapus entri dari database
+        $entry->delete();
+
+        // Redirect kembali ke halaman sebelumnya
+        return redirect()->back()->with('delete', 'Data Berhasil Di Hapus !');
+    }
+
+    return redirect()->back()->with('error', 'Item not found');
+}
+
+
 
 
 
@@ -144,7 +162,8 @@ public function akuncreatenew(Request $request)
         'username'       => 'required|string|max:255',
         'phone_number'   => 'required|string|max:255',
         'email'          => 'required|email|unique:users,email',
-        'avatar'         => 'required|image|mimes:jpeg,png,jpg|max:2048',
+        'password'       => 'required|string|min:6|confirmed', // <-- VALIDASI PASSWORD
+        'avatar'         => 'required|image|mimes:jpeg,png,jpg|max:15048',
     ], [
         'statusadmin_id.required' => 'Status Admin wajib dipilih!',
         'name.required'           => 'Nama wajib diisi!',
@@ -152,32 +171,32 @@ public function akuncreatenew(Request $request)
         'phone_number.required'   => 'Nomor HP wajib diisi!',
         'email.required'          => 'Email wajib diisi!',
         'email.unique'            => 'Email sudah terdaftar!',
-        'avatar.required'            => 'Avatar harus berupa gambar!',
+        'password.required'       => 'Password wajib diisi!',
+        'password.min'            => 'Password minimal 6 karakter!',
+        'password.confirmed'      => 'Konfirmasi password tidak sama!',
+        'avatar.required'         => 'Avatar harus diupload!',
         'avatar.image'            => 'Avatar harus berupa gambar!',
-        'avatar.mimes'            => 'Avatar harus berupa file JPEG, JPG, atau PNG!',
+        'avatar.mimes'            => 'Avatar harus JPEG, JPG, atau PNG!',
     ]);
 
-    // Default avatar jika tidak diunggah
+    // Default avatar
     $avatarPath = 'assets/abgblora/logo/iconabgblora.png';
 
-    // Simpan avatar jika diupload
+    // Upload avatar
     if ($request->hasFile('avatar')) {
         $file = $request->file('avatar');
         $namaFile = time() . '_' . $file->getClientOriginalName();
         $tujuanPath = public_path('00_user/akun');
 
-        // Buat folder jika belum ada
         if (!file_exists($tujuanPath)) {
             mkdir($tujuanPath, 0777, true);
         }
 
-        // Pindahkan file ke direktori tujuan
         $file->move($tujuanPath, $namaFile);
-
         $avatarPath = '00_user/akun/' . $namaFile;
     }
 
-    // Simpan user ke database
+    // Simpan user
     User::create([
         'statusadmin_id' => $validatedData['statusadmin_id'],
         'name'           => $validatedData['name'],
@@ -185,11 +204,11 @@ public function akuncreatenew(Request $request)
         'phone_number'   => $validatedData['phone_number'],
         'email'          => $validatedData['email'],
         'avatar'         => $avatarPath,
-        'password'       => bcrypt('password123'), // ganti dengan sistem password sesungguhnya
+        'password'       => bcrypt($validatedData['password']), // <-- PASSWORD DARI FORM
     ]);
 
     session()->flash('create', 'Data pengguna berhasil dibuat!');
-    return redirect('/allakun'); // sesuaikan route tujuan
+    return redirect('/allakun');
 }
 
 

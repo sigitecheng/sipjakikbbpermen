@@ -2071,6 +2071,7 @@ Route::post('/besatuanhargaperalatan/updatecreate/{id}', [SatuanhargamaterialCon
 
 Route::get('/allakun', [AkunController::class, 'allakun'])->middleware(['auth', 'can:admin2']);
 // Route::get('/allakun', [AkunController::class, 'allakun']);
+Route::delete('/allsemuaakunlsp/delete/{name}', [AkunController::class, 'allsemuaakunlsp'])->middleware(['auth', 'can:admin2']);
 Route::delete('/allsemuaakun/delete/{name}', [AkunController::class, 'allsemuaakun'])->middleware(['auth', 'can:admin2']);
 // Route::delete('/allsemuaakun/delete/{name}', [AkunController::class, 'allsemuaakun']);
 Route::get('/akuncreate', [AkunController::class, 'akuncreate'])->middleware(['auth', 'can:admin2']);
@@ -2098,6 +2099,11 @@ Route::get('/alldinas', [AkunController::class, 'alldinas'])->middleware(['auth'
 
 
 // DATA PENGATURAN DATABASE DATA ALL
+
+Route::get('/settingkatpelatihan', [SettingDataController::class, 'settingkatpelatihan'])->middleware(['auth', 'can:admin2']);
+Route::get('/settingkatpelatihan/create', [SettingDataController::class, 'settingkatpelatihancreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/settingkatpelatihan/createnew', [SettingDataController::class, 'settingkatpelatihancreatenew'])->middleware(['auth', 'can:admin2'])->name('create.kategoripelatihan');
+Route::delete('/settingkatpelatihan/delete/{id}', [SettingDataController::class, 'settingkatpelatihandelete'])->middleware(['auth', 'can:admin2']);
 
 Route::get('/settingssekolah', [SettingDataController::class, 'settingssekolah'])->middleware(['auth', 'can:admin2']);
 Route::get('/settingssekolah/create', [SettingDataController::class, 'settingssekolahcreate'])->middleware(['auth', 'can:admin2']);

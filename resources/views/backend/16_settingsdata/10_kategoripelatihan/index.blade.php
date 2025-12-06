@@ -94,7 +94,7 @@
 
                         <div style="position: relative; display: inline-block; margin-right:10px;">
     <input type="search" id="searchInput"
-           placeholder="Cari Universitas/Sekolah ...."
+           placeholder="Cari Kategori Pelatihan...."
            onkeyup="searchTable()"
            style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
 
@@ -113,7 +113,7 @@
                             function searchTable() {
                             let input = document.getElementById("searchInput").value;
 
-                            fetch(`/settingssekolah?search=${input}`)
+                            fetch(`/settingkatpelatihan?search=${input}`)
                                 .then(response => response.text())
                                 .then(html => {
                                     let parser = new DOMParser();
@@ -126,13 +126,13 @@
 
                                 </script>
 <!-- Tombol Download Excel -->
-<button class="button-berkas" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_universitas_sekolah')">
+<button class="button-berkas" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_kategoripelatihan')">
 
     <i class="bi bi-download" style="margin-right: 5px;"></i> Download Excel
 </button>
 
 <!-- Tombol Create -->
-<a href="/settingssekolah/create">
+<a href="/settingkatpelatihan/create">
     <button class="button-baru">
         <i class="fa fa-plus" style="margin-right: 8px;"></i> Tambah Baru
     </button>
@@ -156,7 +156,7 @@
      @forelse($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
-         <td style="text-align: left;">{{ $item->namasekolah }}</td>
+         <td style="text-align: left;">{{ $item->kategoripelatihan }}</td>
 
         <td style="text-align: center; vertical-align: middle;">
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
@@ -167,7 +167,7 @@
             </a> --}}
             <a href="javascript:void(0)" class="button-merah" title="Delete"
                data-bs-toggle="modal" data-bs-target="#deleteModal"
-               data-judul="{{ $item->namasekolah }}"
+               data-judul="{{ $item->id }}"
                onclick="setDeleteUrl(this)">
                 <i class="bi bi-trash"></i>Hapus
             </a>
@@ -257,9 +257,9 @@
 
                  <script>
                  function setDeleteUrl(button) {
-                     var namasekolah = button.getAttribute('data-judul');
-                     document.getElementById('itemName').innerText = namasekolah;
-                     var deleteUrl = "/settingssekolah/delete/" + encodeURIComponent(namasekolah);
+                     var id = button.getAttribute('data-judul');
+                     document.getElementById('itemName').innerText = id;
+                     var deleteUrl = "/settingkatpelatihan/delete/" + encodeURIComponent(id);
                      document.getElementById('deleteForm').action = deleteUrl;
                  }
                  </script>

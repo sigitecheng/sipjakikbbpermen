@@ -1149,7 +1149,7 @@
 </li>
 
 <li class="nav-item">
-  <a href="/404" class="nav-link">
+  <a href="/settingkatpelatihan" class="nav-link">
     <i class="nav-icon bi bi-card-list text-warning"></i> <!-- Ikon Kategori Pelatihan -->
     <p style="color: white">Kategori Pelatihan</p>
   </a>
@@ -1671,11 +1671,11 @@
 
         {{-- ========================== --}}
 
-            <li class="nav-header" style="color: white;">Administrator</li>
+            <li class="nav-header" style="color: white;">ADMINISTRATOR AKUN</li>
 
 
 
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-speedometer" style="color: white"></i>
                   <p style="color: white">
@@ -1689,7 +1689,7 @@
 
 
                 </ul>
-            </li>
+            </li> --}}
 
             <li class="nav-item">
                 <a href="#" class="nav-link">

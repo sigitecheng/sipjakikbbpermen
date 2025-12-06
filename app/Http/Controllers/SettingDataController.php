@@ -7,6 +7,7 @@ use App\Models\peralatankonstruksi;
 use App\Models\alatberat;
 use App\Models\jabatankerja;
 use App\Models\jenjangpendidikan;
+use App\Models\kategoripelatihan;
 use App\Models\kecamatankbb;
 use App\Models\namasekolah;
 use App\Models\profiljenispekerjaan;
@@ -780,5 +781,89 @@ return redirect('/settingstahun')->with('delete', 'Data Berhasil Di Hapus !');
 
 }
 }
+
+
+
+public function settingkatpelatihan(Request $request)
+{
+    $perPage = $request->input('perPage', 10);
+    $search = $request->input('search');
+
+    $query = kategoripelatihan::query();
+
+    if ($search) {
+        $query->where('kategoripelatihan', 'LIKE', "%{$search}%");
+    }
+
+    // Urutkan berdasarkan abjad A-Z
+    $query->orderBy('kategoripelatihan', 'asc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view('backend.16_settingsdata.10_kategoripelatihan.partials.table', compact('data'))->render()
+        ]);
+    }
+
+    return view('backend.16_settingsdata.10_kategoripelatihan.index', [
+        'title' => 'Daftar Kategori Pelatihan Tenaga Kerja',
+        'data' => $data,
+        'perPage' => $perPage,
+        'search' => $search
+    ]);
+}
+
+
+
+ public function settingkatpelatihandelete($id)
+    {
+        // Cari data berdasarkan nama sekolah
+        $data = kategoripelatihan::where('id', $id)->first();
+
+        if (!$data) {
+            return redirect()->back()->with('error', 'Data sekolah tidak ditemukan!');
+        }
+
+        // Hapus data
+        $data->delete();
+
+        return redirect('/settingkatpelatihan')->with('delete', 'Data kategori pelatihan berhasil dihapus!');
+    }
+
+
+
+    public function settingkatpelatihancreate()
+    {
+            $user = Auth::user();
+
+        return view('backend.16_settingsdata.10_kategoripelatihan.create', [
+            'title' => 'Tambah Kategori Pelatihan',
+            // 'data' => $dataagendapelatihan,
+            'user' => $user,
+        ]);
+    }
+
+
+
+  public function settingkatpelatihancreatenew(Request $request)
+{
+    $request->validate([
+        'kategoripelatihan' => 'required|string|max:255',
+    ], [
+        'kategoripelatihan.required' => 'Kategori Pelatihan tidak boleh kosong.',
+        'kategoripelatihan.string'   => 'Kategori Pelatihan harus berupa teks.',
+        'kategoripelatihan.max'      => 'Kategori Pelatihan tidak boleh lebih dari 255 karakter.',
+        'kategoripelatihan.unique'   => 'Kategori Pelatihan ini sudah terdaftar.',
+    ]);
+
+    kategoripelatihan::create([
+        'kategoripelatihan' => $request->kategoripelatihan,
+    ]);
+
+    session()->flash('create', 'Data berhasil dibuat!');
+    return redirect('/settingkatpelatihan');
+}
+
 
 }
