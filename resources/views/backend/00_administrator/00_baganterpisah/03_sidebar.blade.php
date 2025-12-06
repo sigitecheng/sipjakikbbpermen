@@ -1057,7 +1057,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk Pembinaan -->
                   <i class="nav-icon bi bi-person-check" style="color: white"></i>
-                  <p style="color: red">
+                  <p style="color: orange">
                     Pembinaan
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1273,7 +1273,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk AHSP Keciptakaryaan -->
                   <i class="nav-icon bi bi-clipboard-check" style="color: white"></i> <!-- Ikon untuk AHSP Keciptakaryaan -->
-                  <p style="color: white">
+                  <p style="color: orange">
                     Satuan <br> Harga Dasar
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1439,7 +1439,7 @@
                 <a href="/beshstkabblora" class="nav-link">
                     <!-- Ikon untuk SHST Kab Blora -->
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i> <!-- Ikon untuk SHST Kab Blora -->
-                    <p style="color: red">
+                    <p style="color: orange">
                       SHST <br> Kab Bandung Barat
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
