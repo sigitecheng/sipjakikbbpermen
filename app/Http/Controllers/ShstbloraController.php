@@ -41,7 +41,7 @@ public function beshstkabblora()
     $data = shstblora::all();
 
     return view('backend.08_shstkabblora.index', [
-        'title' => 'Daftar Satuan Harga Dasar Tertinggi Kabupaten Blora',
+        'title' => 'Daftar Satuan Harga Dasar Tertinggi Kabupaten Bandung Barat',
         'data' => $data
     ]);
 }
@@ -57,7 +57,7 @@ public function beshstkabbloraupdate($id)
     return view('backend.08_shstkabblora.update', [
         'data' => $datashstkabblora,
         'user' => $user,
-        'title' => 'Update SHST Kabupaten Blora'
+        'title' => 'Update SHST Kabupaten Bandung Barat'
     ]);
 }
 

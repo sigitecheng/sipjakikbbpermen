@@ -13,9 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;"> --}}
-         <section style="background: linear-gradient(to bottom, #a8e6a1, #ffffff); width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
             <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -60,10 +58,7 @@
                              viewBox="0 0 16 16" style="margin-right: 8px;">
                           <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
                         </svg>
-
-                        <span style="font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 1.5;">
-                            Kembali
-                        </span>
+                        Kembali
                     </button>
                 </a>
         </div>
@@ -169,11 +164,14 @@
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                    <button type="button" onclick="openModal()"
-                                    class="button-berkas"
-                                    >
-                                    <span style="font-family: 'Poppins', sans-serif;">Perbaikan Data ?</span>
+                                   <button type="button" onclick="openModal()"
+                                    class="button-berkas">
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                Perbaikan Data ?
                                 </button>
+
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">

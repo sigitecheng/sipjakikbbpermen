@@ -1685,7 +1685,7 @@ public function satuanhargamaterialcreate()
     return view('backend.07_satuanharga.01_satuanhargamaterial.create', [
         // 'data' => $jakonjabatanfungsional,
         'user' => $user,
-        'title' => 'Create Satuan Harga Material'
+        'title' => 'Tambah Satuan Harga Material'
     ]);
 }
 
@@ -1735,9 +1735,9 @@ public function besatuanhargamaterialupdatecreate(Request $request, $id)
 {
     // Validasi input
     $validatedData = $request->validate([
-        'uraian' => 'required|string|max:255',
-        'satuan' => 'required|string|max:100',
-        'besaran' => 'required|numeric|min:0',
+        'uraian' => 'nullable|string|max:255',
+        'satuan' => 'nullable|string|max:100',
+        'besaran' => 'nullable|numeric|min:0',
     ], [
         'uraian.required' => 'Uraian bahan material wajib diisi.',
         'satuan.required' => 'Satuan wajib diisi.',
@@ -1766,7 +1766,7 @@ public function besatuanhargamaterialupdatecreate(Request $request, $id)
 
 public function besatuanhargaupahpekerjaan(Request $request)
 {
-    $perPage = $request->input('perPage', 25);
+    $perPage = $request->input('perPage', 10);
     $search = $request->input('search');
 
     $query = satuanhargaupahtenagakerja::query();
@@ -1932,7 +1932,7 @@ public function besatuanhargaupahpekerjaanupdatecreate(Request $request, $id)
 
 public function besatuanhargaperalatan(Request $request)
 {
-    $perPage = $request->input('perPage', 25);
+    $perPage = $request->input('perPage', 10);
     $search = $request->input('search');
 
     $query = satuanhargaperalatan::query();
@@ -2004,7 +2004,7 @@ public function besatuanhargaperalatancreate()
     return view('backend.07_satuanharga.03_satuanhargaperalatan.create', [
         // 'data' => $jakonjabatanfungsional,
         'user' => $user,
-        'title' => 'Create Satuan Harga Peralatan'
+        'title' => 'Tambah Satuan Harga Peralatan'
     ]);
 }
 

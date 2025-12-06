@@ -1,23 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 @include('button')
 
@@ -36,8 +16,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -71,15 +50,15 @@
 
 
 <!-- Tombol Download Excel -->
-<button class="button-modern" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_shstkabupatenblora')">
-    <i class="bi bi-download" style="font-size: 18px;"></i> Download Excel
+<button class="button-berkas" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_shstkabupatenblora')">
+    <i class="bi bi-download"></i> Download Excel
 </button>
 @foreach ($data as $item)
 
 <!-- Tombol Create -->
 <a href="/beshstkabblora/update/{{$item->id}}" style="text-decoration: none;">
-    <button class="button-baru hide-on-mobile">
-        <i class="bi bi-plus-lg" style="font-size: 18px;"></i> Update
+    <button class="button-modern">
+        <i class="bi bi-plus-lg"></i> Update
     </button>
 </a>
 
@@ -97,7 +76,7 @@
 <table id="tabelBujkkonstruksi" class="zebra-table table-striped" class="table table-bordered">
     <thead>
         <tr>
-          <th style="width: 1000px; text-align:center;">
+          <th style="width: 800px; text-align:center;">
                 <i class="bi bi-hammer" style="margin-right: 6px;"></i> Pekerjaan
             </th>
             <th style="width: 65px; text-align:center;">

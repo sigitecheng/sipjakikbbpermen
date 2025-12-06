@@ -1,23 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -33,8 +13,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-          <section style="background: linear-gradient(to bottom, #a8e6a1, #ffffff); width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -119,15 +98,15 @@
                                 </script>
 <!-- Tombol Download Excel -->
 <button onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_satuanhargamaterial')"
-class="button-modern"
+class="button-berkas"
 >
-    <i class="bi bi-download" style="font-size: 18px;"></i> Download Excel
+    <i class="bi bi-download"></i> Download Excel
 </button>
 
 <!-- Tombol Create -->
 <a href="/besatuanhargamaterial/create" style="text-decoration: none;">
-    <button class="button-baru">
-        <i class="bi bi-plus-lg" style="font-size: 18px;"></i> Tambah Data
+    <button class="button-modern">
+        <i class="bi bi-plus-lg"></i> Tambah Data
     </button>
 </a>
 
@@ -162,7 +141,7 @@ class="button-modern"
      </tr>
  </thead>
  <tbody id="tableBody">
-     @foreach ($data as $item )
+     @forelse($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
          <td style="text-align: left;">{{ $item->uraian }}</td>
@@ -174,7 +153,7 @@ class="button-modern"
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
                 <i class="bi bi-eye"></i>
             </a> --}}
-            <a href="/besatuanhargamaterial/update/{{$item->id}}" class="button-modern" title="Update">
+            <a href="/besatuanhargamaterial/update/{{$item->id}}" class="button-berkas" title="Update">
                 <i class="bi bi-pencil-square"></i>
             </a>
             <a href="javascript:void(0)" class="button-merah" title="Delete"
@@ -201,13 +180,45 @@ class="button-modern"
 
         </tr>
 
-     @endforeach
- </tbody>
+ @empty
+    <tr>
+        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
+            <div style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                color: #6c757d;
+                background-color: #f8f9fa;
+                border: 2px dashed #ced4da;
+                border-radius: 12px;
+                font-size: 16px;
+                animation: fadeIn 0.5s ease-in-out;
+            ">
+                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+                Data Tidak Ditemukan !!
+            </div>
+        </td>
+    </tr>
+@endforelse
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+    </tbody>
 </table>
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 
@@ -218,7 +229,7 @@ class="button-modern"
                          <div class="modal-content">
                              <div class="modal-header">
                                  <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                 <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                              </div>
                              <div class="modal-body">

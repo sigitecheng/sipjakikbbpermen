@@ -1439,7 +1439,7 @@
                 <a href="/beshstkabblora" class="nav-link">
                     <!-- Ikon untuk SHST Kab Blora -->
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i> <!-- Ikon untuk SHST Kab Blora -->
-                    <p style="color: white">
+                    <p style="color: red">
                       SHST <br> Kab Bandung Barat
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>

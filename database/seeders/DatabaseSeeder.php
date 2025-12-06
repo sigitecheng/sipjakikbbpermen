@@ -73,9 +73,12 @@ use App\Models\qapertanyaan;
 use App\Models\qasebagai;
 use App\Models\renstra;
 use App\Models\satuanhargamaterial;
+use App\Models\satuanhargaperalatan;
+use App\Models\satuanhargaupahtenagakerja;
 use App\Models\sbulampiran1;
 use App\Models\sbulampiran2;
 use App\Models\sbulampiran3;
+use App\Models\shstblora;
 // use App\Models\sertifikasiagenda;
 use App\Models\standarbiayaumum;
 use App\Models\statusadmin;
@@ -13032,6 +13035,1398 @@ kategoripelatihan::create([
     'notelepon'            => '081654654654',
     'instansi'             => 'DPUTR Kabupaten Bandung Barat',
 ]);
+
+ shstblora::create([
+        'kabupaten' => 'Bandung Barat',
+        'bangunankantortidaksederhana' => '6080000',
+        'bangunankantorsederhana' => '5050000',
+        'rumahnegaratipea' => '5940000',
+        'rumahnegaratipeb' => '5370000',
+        'rumahnegaratipecde' => '4630000',
+        'pagarrumahdepan' => '2730000',
+        'pagarrumahbelakang' => '2090000',
+        'pagarrumahsamping' => '1440000',
+        'pagarrumahnegaradepan' => '2310000',
+        'pagarrumahnegarabelakang' => '2030000',
+        'pagarrumahnegarasamping' => '1380000',
+    ]);
+
+
+
+
+//======================== ===================================================================================
+// SATUAN HARGA UPAH MAS JAKI BLORA
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Pekerja',
+    'kode' => 'L.01',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '96000',
+    'besaranperjam' => '13714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang batu/tembok',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang kayu',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang besi/besi beton',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang cat/pelitur',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang pipa',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang penganyam bronjong',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang tebas',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang las',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang las geotextile',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang listrik/ elektronik',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang alumunium',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang kaca',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang Ereksi',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang tanam',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tukang pemelihara taman',
+    'kode' => 'L.02',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Kepala tukang',
+    'kode' => 'L.03',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '122000.00',
+    'besaranperjam' => '17429.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Mandor',
+    'kode' => 'L.04',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '133000.00',
+    'besaranperjam' => '19000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Juru ukur',
+    'kode' => 'L.05',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '106000.00',
+    'besaranperjam' => '15143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Pembantu juru ukur',
+    'kode' => 'L.06',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '96000.00',
+    'besaranperjam' => '13714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Mekanik alat berat',
+    'kode' => 'L.07',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '122000.00',
+    'besaranperjam' => '17429.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Operator alat berat',
+    'kode' => 'L.08',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '122000.00',
+    'besaranperjam' => '17429.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Pembantu operator',
+    'kode' => 'L.09',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '96000.00',
+    'besaranperjam' => '13714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Supir truk',
+    'kode' => 'L.10',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '122000.00',
+    'besaranperjam' => '17429.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Kenek truk',
+    'kode' => 'L.11',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '96000.00',
+    'besaranperjam' => '13714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tenaga ahli utama',
+    'kode' => 'L.12a',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '300000.00',
+    'besaranperjam' => '42857.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tenaga ahli madya',
+    'kode' => 'L.12b',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '234000.00',
+    'besaranperjam' => '33429.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tenaga ahli muda',
+    'kode' => 'L.12c',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '130000.00',
+    'besaranperjam' => '18571.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tenaga ahli pratama',
+    'kode' => 'L.12d',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '120000.00',
+    'besaranperjam' => '17143.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Narasumber pejabat eselon II',
+    'kode' => 'L.13a',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '7000000.00',
+    'besaranperjam' => '1000000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Narasumber pejabat eselon III',
+    'kode' => 'L.13b',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '6300000.00',
+    'besaranperjam' => '900000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Narasumber praktisi',
+    'kode' => 'L.13c',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '11900000.00',
+    'besaranperjam' => '1700000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tenaga terampil teknisi',
+    'kode' => 'L.14a',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '110000.00',
+    'besaranperjam' => '15714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tenaga terampil operator',
+    'kode' => 'L.14b',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '110000.00',
+    'besaranperjam' => '15714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Tenaga terampil operator',
+    'kode' => 'L.14c',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '110000.00',
+    'besaranperjam' => '15714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaupahtenagakerja::create([
+    'uraian' => 'Lainnya',
+    'kode' => 'L.15',
+    'satuan' => 'Orang/Hari',
+    'besaran' => '110000.00',
+    'besaranperjam' => '15714.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+
+
+
+//======================== ===================================================================================
+// SATUAN HARGA PERALATAN MAS JAKI BLORA
+satuanhargaperalatan::create([
+    'uraian' => 'Linggis (baja keras)/bh',
+    'kode' => null,
+    'satuan' => 'Buah',
+    'besaran' => '50000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pahat beton (baja keras)',
+    'kode' => null,
+    'satuan' => 'Buah',
+    'besaran' => '50000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Palu/godam (baja keras)/bh',
+    'kode' => null,
+    'satuan' => 'Buah',
+    'besaran' => '50000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa pipe support',
+    'kode' => null,
+    'satuan' => 'Buah',
+    'besaran' => '1900',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa scaffolding',
+    'kode' => null,
+    'satuan' => 'Buah',
+    'besaran' => '10000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Alat Pancang Mini Pile Driver (Vibrator) Hammer 500 kg (10 HP)',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '413228.39',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Alat Pancang Mini Pile Driver (Vibratory) Hammer 50 kg (1 HP)',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '413228.39',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bender baja beton',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '268819.47',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bor: Auger ∅ 20 cm',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '100000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bor: Auger ∅ 30 cm',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '100000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bor: Auger ∅ 40 cm',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '100000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bor: Auger ∅ 50 cm',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '100000',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Concrete Cutter',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '325462.24',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crane Truck 3 T',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '3773717.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Cutter besi beton',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '268819.47',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Cutter baja beton',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '268819.47',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Flat deck truck kap 7 ton',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '1991352.50',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Gergaji Besi (Baja Keras)',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '50000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Jack  Hammer  Drill- 1,5  KW  +  Genset  3 KWH',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '286000.86',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Jack  Hammer  Drill 2,5  KW  +  Genset  5 KW',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '286000.86',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Jack hammer',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '286000.86',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Jack hammer (5 KW)+ Genset (12 HP)',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '286000.86',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Jack hammer dan genset; 12 HP',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '286000.86',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Kunci momen',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '286000.86',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Linggis (baja keras)',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '50000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin Las Geotextile',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '894923.85',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin Molen 1m3',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '554168.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mobile crane  ≤  3 ton',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '3773717.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Molen 0,35 m3',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '554168.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Molen/Beton 0,35 m3 + Bahan',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '554168.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Molen 0,35 m3 + Automatic feeder',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '554168.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Molen kapasitas 0,35 m3 termasuk feeder',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '554168.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Molen/Beton mixer 0,35 m3',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '554168.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Molen/Beton mixer 0,35 m3 dilengkapi Automatic Feeder',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '554168.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Palu/godam',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '50000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Peralatan potong pipa T1/manual (gergaji) / saw',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '1900.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Peralatan potong pipa T2/mekanik / cilinder saw',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '1900.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pompa    beton   ∅3", 140KW; 180 bar, T = 75 m / H =150',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '6311421.79',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pompa  beton  ∅2,5", 20KW; 20 bar, T = 18 m',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '6311421.79',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pompa beton ∅  2,5", 75KW; 120 bar, T= 50 m/H=80 m',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '6311421.79',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pompa beton φ 1,5"; 5 KW; 8 bar; T = 5 m',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '6311421.79',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pompa  sedot  pasir, diesel 7,5 KW; 5',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '370190.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pompa lumpur diesel 10 KW; 5"',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '370190.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pompa lumpur diesel 7,5 KW; 4"',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '370190.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Alat Pemasangan',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '10000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa  Tripot/Tackel  & handle crane 2T',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '345000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa crane 2 T',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '3773717.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa excavator type 225 kapasitas 0,5 - 1,0 m3',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '2762325.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa excavator type kapasitas 0,5 -1,0 m3',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '2762325.48',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Genset 5 KW',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '2206866.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Mesin Hydroseeding 2000L',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '264164.10',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Pompa Sedot  Ø 5”',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '370190.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Tripot/Tackel',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '345000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Water Truck*)',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '2284246.61',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Stamper  Kodok  150 kg',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '339533.36',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Stamper D-Drum 550 kg',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '339533.36',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Stamper Kuda 70 kg',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '339533.36',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Stamper Smooth Drum 1,5 Ton',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '339533.36',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Stang bor, batang bor diameter 1 1/4"',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '105000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Stang bor, batang bor diameter 4"',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '105000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Stang bor, batang bor diameter 8"',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '110000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Tandon Air kap. 2 m3',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '10000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Theodolit',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '100000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Tower crane arm 30 m',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '3773717.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Tripod tinggi 7 m kap 2 ton',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '345000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Vibrator',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '357769.29',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Waterpass',
+    'kode' => null,
+    'satuan' => 'Hari',
+    'besaran' => '100000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bull Dozer',
+    'kode' => 'E04',
+    'satuan' => 'Jam',
+    'besaran' => '651069.74',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Compressor',
+    'kode' => 'E05',
+    'satuan' => 'Jam',
+    'besaran' => '157118.99',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Dump Truck',
+    'kode' => 'E09',
+    'satuan' => 'Jam',
+    'besaran' => '229571.18',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Motor Grader',
+    'kode' => 'E13',
+    'satuan' => 'Jam',
+    'besaran' => '404725.97',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Track Loader',
+    'kode' => 'E14',
+    'satuan' => 'Jam',
+    'besaran' => '372272.12',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Wheel Loader',
+    'kode' => 'E15',
+    'satuan' => 'Jam',
+    'besaran' => '472750.77',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Tandem Roller',
+    'kode' => 'E17',
+    'satuan' => 'Jam',
+    'besaran' => '378192.54',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Vibratory Roller',
+    'kode' => 'E19a',
+    'satuan' => 'Jam',
+    'besaran' => '74796.56',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Water Tanker',
+    'kode' => 'E23',
+    'satuan' => 'Jam',
+    'besaran' => '326320.94',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Asp. Distributor',
+    'kode' => 'E41',
+    'satuan' => 'Jam',
+    'besaran' => '316602.16',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Alat las Listrik',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '127846.26',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Alat pancang Hidraulik Pile Driver 2 ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '59032.63',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Alat pancang Hidraulik Pile Driver 3 ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '59032.63',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'AMP',
+    'kode' => 'E01a',
+    'satuan' => 'Jam',
+    'besaran' => '8809318.35',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Asphalt Distributor',
+    'kode' => 'E41',
+    'satuan' => 'Jam',
+    'besaran' => '316602.16',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Asphalt Finisher',
+    'kode' => 'E02',
+    'satuan' => 'Jam',
+    'besaran' => '1560100.19',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bored Pile Machine (Hidraulik) Auger ø 100 cm',
+    'kode' => 'E50',
+    'satuan' => 'Jam',
+    'besaran' => '441754.72',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bored Pile Machine (Hidraulik) Auger ø 120 cm',
+    'kode' => 'E50',
+    'satuan' => 'Jam',
+    'besaran' => '441754.72',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bored Pile Machine (Hidraulik) Auger ø 60 cm',
+    'kode' => 'E50',
+    'satuan' => 'Jam',
+    'besaran' => '441754.72',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Bored Pile Machine (Hidraulik) Auger ø 80 cm',
+    'kode' => 'E50',
+    'satuan' => 'Jam',
+    'besaran' => '441754.72',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin pengeboran',
+    'kode' => 'E50',
+    'satuan' => 'Jam',
+    'besaran' => '441754.72',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Chainsaw 20”; 5,5HP',
+    'kode' => 'E87',
+    'satuan' => 'Jam',
+    'besaran' => '36946.35',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Chainsaw 30”; 10 HP',
+    'kode' => 'E87',
+    'satuan' => 'Jam',
+    'besaran' => '36946.35',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Chainsaw 30”; 7,5HP',
+    'kode' => 'E87',
+    'satuan' => 'Jam',
+    'besaran' => '36946.35',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Compressor',
+    'kode' => 'E05',
+    'satuan' => 'Jam',
+    'besaran' => '157118.99',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Concrete Pump',
+    'kode' => 'E28',
+    'satuan' => 'Jam',
+    'besaran' => '901631.68',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Concrete Vibrator',
+    'kode' => 'E20',
+    'satuan' => 'Jam',
+    'besaran' => '47167.54',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crane Mobile 7 ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crane truck 10 Ton, Winch 12 Ton *)',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crane truck 3 Ton, Winch 5 Ton *)',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crane truck 5 Ton, Winch 8 Ton *)',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crane truck 8 Ton, Winch 10 Ton *)',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crawler Crane 10 Ton + ladder 14 ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Crawler Crane 20 Ton + ladder 14 ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Driver Hammer 1 Ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '132527.17',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Driver Hammer 2 Ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '132527.17',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Driver Hammer 3 Ton',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '132527.17',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Dump Truck',
+    'kode' => 'E08',
+    'satuan' => 'Jam',
+    'besaran' => '229571.18',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Dump Truck 1',
+    'kode' => 'E08',
+    'satuan' => 'Jam',
+    'besaran' => '229571.18',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Dump Truck 2',
+    'kode' => 'E08',
+    'satuan' => 'Jam',
+    'besaran' => '229571.18',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Dump Truck 3',
+    'kode' => 'E08',
+    'satuan' => 'Jam',
+    'besaran' => '229571.18',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Excavator  (Std.);  Bucket 0,55 m3; 95 HP *)',
+    'kode' => 'E10',
+    'satuan' => 'Jam',
+    'besaran' => '394617.93',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Genset',
+    'kode' => 'E12',
+    'satuan' => 'Jam',
+    'besaran' => '315266.70',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin bor',
+    'kode' => 'E71',
+    'satuan' => 'Jam',
+    'besaran' => '100000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin Las listrik 150 A',
+    'kode' => 'E58',
+    'satuan' => 'Jam',
+    'besaran' => '127846.26',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin Las listrik 250 A',
+    'kode' => 'E58',
+    'satuan' => 'Jam',
+    'besaran' => '127846.26',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin Las listrik 350 A',
+    'kode' => 'E58',
+    'satuan' => 'Jam',
+    'besaran' => '127846.26',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin Las listrik 500 A',
+    'kode' => 'E58',
+    'satuan' => 'Jam',
+    'besaran' => '127846.26',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mobil sedot lumpur kapasitas 3 m3',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '229571.18',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'P. Tyre Roller',
+    'kode' => 'E18',
+    'satuan' => 'Jam',
+    'besaran' => '478124.71',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Pressure Grout machine 30 KW; 60 - 75 bar (D)',
+    'kode' => null,
+    'satuan' => 'Jam',
+    'besaran' => '157118.99',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa crane kapasitas 1 ton',
+    'kode' => 'E07',
+    'satuan' => 'Jam',
+    'besaran' => '539102.45',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Tandem Roller',
+    'kode' => 'E17',
+    'satuan' => 'Jam',
+    'besaran' => '37819254',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Three Wheel Roller',
+    'kode' => 'E16',
+    'satuan' => 'Jam',
+    'besaran' => '198152.67',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Wheel Loader',
+    'kode' => 'E15',
+    'satuan' => 'Jam',
+    'besaran' => '472750.77',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Casing Pipa Baja Diameter 30 cm',
+    'kode' => null,
+    'satuan' => 'm1',
+    'besaran' => '10000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Casing Pipa Baja Diameter 40 cm',
+    'kode' => null,
+    'satuan' => 'm1',
+    'besaran' => '10000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Casing Pipa Baja Diameter 50 cm',
+    'kode' => null,
+    'satuan' => 'm1',
+    'besaran' => '10000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Casing PVC Diameter 20 cm',
+    'kode' => null,
+    'satuan' => 'm1',
+    'besaran' => '10000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa Lahan',
+    'kode' => null,
+    'satuan' => 'm2',
+    'besaran' => '50000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Sewa crane',
+    'kode' => null,
+    'satuan' => 'Unit/Hari',
+    'besaran' => '3773717.15',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+satuanhargaperalatan::create([
+    'uraian' => 'Mesin Poles',
+    'kode' => null,
+    'satuan' => 'Unit/Hari',
+    'besaran' => '150000.00',
+    // 'keterangan' => 'AHSP Kab Blora Tahun 2025',
+]);
+
+
 
     }    /**
      * Menghitung usia berdasarkan tanggal lahir.

@@ -13,8 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -46,26 +45,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                <a href="/besatuanhargaperalatan">
-  <button
-    onmouseover="this.style.background='white'; this.style.color='black'; this.style.transform='scale(1.05)'"
-    onmouseout="this.style.background='linear-gradient(45deg, #6c757d, #adb5bd)'; this.style.color='white'; this.style.transform='scale(1)'"
-    style="
-      background: linear-gradient(45deg, #6c757d, #adb5bd);
-      color: white;
-      border: none;
-      margin-right: 10px;
-      padding: 10px 20px;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    "
-  >
+  <button class="button-modern">
     <!-- Ikon Kembali -->
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         viewBox="0 0 16 16">
@@ -98,8 +78,8 @@
     @endphp
 
 <!-- Uraian Bahan Material -->
-<div class="mb-3">
-    <label class="form-label" for="uraian">
+<div class="form-modern mb-3">
+    <label class="form-label-modern" for="uraian">
         <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Uraian Keahliaan Tenaga Kerja
     </label>
     <input type="text" id="uraian" name="uraian" class="form-control @error('uraian') is-invalid @enderror" value="{{ old('uraian') }}" />
@@ -109,8 +89,8 @@
 </div>
 
 <!-- Besaran -->
-<div class="mb-3">
-    <label class="form-label" for="besaran_view">
+<div class="form-modern mb-3">
+    <label class="form-label-modern" for="besaran_view">
         <i class="bi bi-123" style="margin-right: 8px; color: navy;"></i> Besaran Rp.
     </label>
     <input type="text" id="besaran_view" class="form-control @error('besaran') is-invalid @enderror" value="{{ old('besaran') }}" />
@@ -123,8 +103,8 @@
 </div>
 <div class="col-md-6">
 <!-- Kode -->
-<div class="mb-3">
-    <label class="form-label" for="kode">
+<div class="form-modern mb-3">
+    <label class="form-label-modern" for="kode">
         <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Kode
     </label>
     <input type="text" id="kode" name="kode" class="form-control @error('kode') is-invalid @enderror" value="{{ old('kode') }}" />
@@ -135,8 +115,8 @@
 
 
 <!-- Satuan -->
-<div class="mb-3">
-    <label class="form-label" for="satuan">
+<div class="form-modern mb-3">
+    <label class="form-label-modern" for="satuan">
         <i class="bi bi-rulers" style="margin-right: 8px; color: navy;"></i> Satuan
     </label>
     <select id="satuan" name="satuan" class="form-select @error('satuan') is-invalid @enderror">
@@ -209,35 +189,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                               <div class="flex justify-end">
-                                    <button type="button" onclick="openModal()"
-                                        onmouseover="this.style.background='white'; this.style.color='black'; this.style.transform='scale(1.05)'"
-                                        onmouseout="this.style.background='linear-gradient(45deg, #d4af37, #189200)'; this.style.color='white'; this.style.transform='scale(1)'"
-                                        style="
-                                        background: linear-gradient(45deg, #d4af37, #189200);
-                                        color: white;
-                                        border: none;
-                                        margin-right: 10px;
-                                        padding: 10px 20px;
-                                        border-radius: 15px;
-                                        font-size: 16px;
-                                        font-family: 'Poppins', sans-serif;
-                                        font-weight: bold;
-                                        cursor: pointer;
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 8px;
-                                        transition: all 0.3s ease;
-                                        text-decoration: none;
-                                        "
-                                    >
-                                        <!-- Ikon SVG Plus -->
+                                    <button type="button" onclick="openModal()" class="button-baru">
+                                        <!-- Ikon SVG Plus TANPA lingkaran -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                            fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+                                            <path d="M8 1a1 1 0 0 1 1 1v5h5a1 1 0 0 1 0 2H9v5a1 1 0 0 1-2 0V9H2a1 1 0 0 1 0-2h5V2a1 1 0 0 1 1-1z"/>
                                         </svg>
-                                        <span>Create</span>
+
+                                        <span>Tambah Data</span>
                                     </button>
+
                                     </div>
 
                                 <!-- Modal Konfirmasi -->
