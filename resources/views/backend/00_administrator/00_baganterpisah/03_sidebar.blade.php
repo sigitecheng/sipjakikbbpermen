@@ -1333,7 +1333,7 @@
                   <!-- Ikon untuk HSP Konstruksi Umum -->
                   <i class="nav-icon bi bi-building" style="color: white"></i> <!-- Ikon untuk Konstruksi Umum -->
                   <p style="color: white">
-                    HSP Konstruksi
+                    AHSP <br> Konstruksi Umum
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
@@ -1361,7 +1361,7 @@
                   <li class="nav-item">
                     <a href="/besatuandiv1" class="nav-link">
                       <i class="nav-icon bi bi-gear text-warning"></i> <!-- Ikon untuk Divisi I -->
-                      <p style="color: white">Divisi I <br> Persiapan Pekerjaan</p>
+                      <p style="color: white">Divisi I <br> Persiapan Lapangan</p>
                     </a>
                   </li>
 

@@ -109,8 +109,8 @@
                                                 <li><a href="#">DIV V Pekerjaan Mekanikal Elektrikal </a></li>
                                                 <li><a href="#">DIV VI Pekerjaan Plumbing</a></li>
                                                 <li><a href="#">DIV VII Pekerjaan Jalan Pada Permukiman</a></li>
-                                                <li><a href="#">DIV VII Pekerjaan Drainase</a></li>
-                                                <li><a href="#">DIV VII Pekerjaan Jaringan Pipa Di Luar Bangunan</a></li>
+                                                <li><a href="#">DIV VIII Pekerjaan Drainase</a></li>
+                                                <li><a href="#">DIV IX Pekerjaan Jaringan Pipa Di Luar Bangunan</a></li>
                                             </ul>
                                         </li>
                                             <li><a href="/shstkbb">SHST Kab Bandung Barat</a></li>
