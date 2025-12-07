@@ -10148,7 +10148,7 @@ satuanhargamaterial::create([
 ]);
 
 
-// KATEGORI 1 KAYU
+// KATEGORI 2 KAYU
 
 satuanhargamaterial::create([
     'kategorimaterial_id' => 2,
@@ -10622,18 +10622,8665 @@ satuanhargamaterial::create([
     'keterangan1' => null,
 ]);
 
+// KATEGORI 3 MATERIAL PVC
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Assesoris PVC',
+    'satuan' => "m'",
+    'besaran' => 5700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE 40/33 mm',
+    'satuan' => "m'",
+    'besaran' => 13300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC tipe D Ø 2"',
+    'satuan' => "m'",
+    'besaran' => 23500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 1"',
+    'satuan' => "m'",
+    'besaran' => 11250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PIPA PVC AW DN 1" (25 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 11500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW DN 1" (25 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 11700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 1/2" (batang)',
+    'satuan' => 'batang',
+    'besaran' => 27500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 1/2" (meter)',
+    'satuan' => "m'",
+    'besaran' => 6875,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PIPA PVC AW DN 1/2" (15 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 6900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW DN 1/2" (15 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 7100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 10"',
+    'satuan' => "m'",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 1-1/2"',
+    'satuan' => "m'",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PIPA PVC AW DN 1-1/2" (40 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 20500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW DN 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 22000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 1-1/4"',
+    'satuan' => "m'",
+    'besaran' => 18500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PIPA PVC AW DN 1-1/4" (32 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 18900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW DN 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 19000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 12"',
+    'satuan' => "m'",
+    'besaran' => 177500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW DN 12" (300 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 179000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 14"',
+    'satuan' => "m'",
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW DN 14" (350 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 201000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 16"',
+    'satuan' => "m'",
+    'besaran' => 233750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW DN 16" (400 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 234000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 2"',
+    'satuan' => "m'",
+    'besaran' => 26000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PIPA PVC AW DN 2" (50 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 26500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 28000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 2-1/2"',
+    'satuan' => "m'",
+    'besaran' => 33625,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 2-1/2" (65 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 33900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 40000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 3"',
+    'satuan' => "m'",
+    'besaran' => 51075,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 3" (80 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 51500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 53000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 3/4"',
+    'satuan' => 'batang',
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 3/4" (m)',
+    'satuan' => "m'",
+    'besaran' => 8750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 3/4" (20 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 8900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 3/4" (20 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 9300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 4"',
+    'satuan' => "m'",
+    'besaran' => 72375,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 4" (100 mm) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 72700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 74000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 5"',
+    'satuan' => "m'",
+    'besaran' => 100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 5" (125 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 101000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 6"',
+    'satuan' => "m'",
+    'besaran' => 107500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pemasangan 1 m pipa PVC AW, DN. 6" (150 mm)',
+    'satuan' => "m'",
+    'besaran' => 108000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW Ø 8"',
+    'satuan' => "m'",
+    'besaran' => 132500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 8" (200 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 133000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 10"',
+    'satuan' => "m'",
+    'besaran' => 232900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 10" (250 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 233000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC AW ; DN. 10" (250 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 232000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 1-1/2"',
+    'satuan' => "m'",
+    'besaran' => 11175,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 12000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 1-1/4"',
+    'satuan' => "m'",
+    'besaran' => 10000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 11000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 12"',
+    'satuan' => "m'",
+    'besaran' => 319750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 12" (300 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 320000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 14"',
+    'satuan' => "m'",
+    'besaran' => 325000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 14" (350 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 323000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 16"',
+    'satuan' => "m'",
+    'besaran' => 362500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 16" (400 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 363000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 2"',
+    'satuan' => "m'",
+    'besaran' => 14750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 2-1/2"',
+    'satuan' => "m'",
+    'besaran' => 20625,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 21000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 3"',
+    'satuan' => "m'",
+    'besaran' => 28600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 29000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 4"',
+    'satuan' => "m'",
+    'besaran' => 39575,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 40000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 5"',
+    'satuan' => "m'",
+    'besaran' => 63200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 5" (125 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 64000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 6"',
+    'satuan' => "m'",
+    'besaran' => 79775,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 6" (150 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 80000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D Ø 8"',
+    'satuan' => "m'",
+    'besaran' => 139575,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC D ; DN. 8" (200 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 140000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 1"',
+    'satuan' => "m'",
+    'besaran' => 11250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 2"',
+    'satuan' => "m'",
+    'besaran' => 26000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 1/4"',
+    'satuan' => "m'",
+    'besaran' => 34300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Duct Tape',
+    'satuan' => 'gulung',
+    'besaran' => 9050,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 3/8"',
+    'satuan' => 'm\'',
+    'besaran' => 45300,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 1/2"',
+    'satuan' => 'm\'',
+    'besaran' => 46400,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 5/8"',
+    'satuan' => 'm\'',
+    'besaran' => 101600,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 3/4"',
+    'satuan' => 'm\'',
+    'besaran' => 122700,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 7/8"',
+    'satuan' => 'm\'',
+    'besaran' => 351600,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 1"',
+    'satuan' => 'm\'',
+    'besaran' => 370000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 1-1/8"',
+    'satuan' => 'm\'',
+    'besaran' => 375000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 1-3/8"',
+    'satuan' => 'm\'',
+    'besaran' => 380000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tembaga B280 1-5/8"',
+    'satuan' => 'm\'',
+    'besaran' => 290000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV SET dia. 50 mm dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 6131000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV SET dia. 65 mm dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 8397000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV SET dia. 80 mm dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 8550000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV SET dia. 100 mm dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 14250000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV SET dia. 150 mm dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 14500000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV SET dia. 200 mm dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 15500000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'MCV Set dia. 80 mm',
+    'satuan' => 'unit',
+    'besaran' => 20500000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'MCV Set dia. 100 mm',
+    'satuan' => 'unit',
+    'besaran' => 20900000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'MCV Set dia. 150 mm',
+    'satuan' => 'unit',
+    'besaran' => 30300000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'BCV Set dia. 50 mm',
+    'satuan' => 'set',
+    'besaran' => 1700000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flow Switch dia. 50 mm',
+    'satuan' => 'buah',
+    'besaran' => 83000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Sigh Glass',
+    'satuan' => 'buah',
+    'besaran' => 85000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flow Switch',
+    'satuan' => 'buah',
+    'besaran' => 104000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Test Drain Valve',
+    'satuan' => 'buah',
+    'besaran' => 750000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Coupling 1 set',
+    'satuan' => 'set',
+    'besaran' => 115000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Temper Switch',
+    'satuan' => 'buah',
+    'besaran' => 700000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'BCV Set dia. 65 mm',
+    'satuan' => 'set',
+    'besaran' => 1900000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'BCV Set dia. 80 mm',
+    'satuan' => 'set',
+    'besaran' => 2100000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'BCV Set dia. 100 mm',
+    'satuan' => 'set',
+    'besaran' => 2400000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'BCV Set dia. 150 mm',
+    'satuan' => 'set',
+    'besaran' => 2600000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Automatic Air Vent dia. 50 mm',
+    'satuan' => 'unit',
+    'besaran' => 635000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Automatic Air Vent dia. 80 mm',
+    'satuan' => 'unit',
+    'besaran' => 766500,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Automatic Air Vent dia. 100 mm',
+    'satuan' => 'unit',
+    'besaran' => 980000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Automatic Air Vent dia. 150 mm',
+    'satuan' => 'unit',
+    'besaran' => 1150000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flow Meter Analog dia. 100 mm',
+    'satuan' => 'unit',
+    'besaran' => 1300000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flow Meter Analog dia. 200 mm',
+    'satuan' => 'unit',
+    'besaran' => 1500000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Landing Velve 2,5"',
+    'satuan' => 'unit',
+    'besaran' => 1259000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Orifice Plate dia. 25 mm',
+    'satuan' => 'unit',
+    'besaran' => 1500000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Sprinkler Head Pendant dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 85000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Sprinkler Head Upright dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 82900,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Hydrant Pillar dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 3750000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Indoor Hydrant Box dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 1200000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Outdoor Hydrant Box dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 1700000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Siamesse Connection dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 2200000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Fire Extinguisher 3 kg dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 171500,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Fire Extinguisher 5 kg dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 227900,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Fire Extinguisher 25 kg dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 1900000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Jockey Fire Pump Vertical Multi Stage 25 USGPM',
+    'satuan' => 'unit',
+    'besaran' => 7400000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Main Fire Pump Centrifugal End Suction 1.000 USGPM',
+    'satuan' => 'unit',
+    'besaran' => 10000000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Diesel Fire Pump Centrifugal End Suction dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 12000000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Main Fire Pump Centrifugal End Suction dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 14000000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Diesel Fire Pump Centrifugal End Suction dan Aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 12000000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 63 mm',
+    'satuan' => "m'",
+    'besaran' => 14750,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 2-1/2" (65 mm)',
+    'satuan' => "m'",
+    'besaran' => 15000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 90 mm',
+    'satuan' => "m'",
+    'besaran' => 28600,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 3" (80 mm)',
+    'satuan' => "m'",
+    'besaran' => 29000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 110 mm',
+    'satuan' => "m'",
+    'besaran' => 39575,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 4" (100 mm)',
+    'satuan' => "m'",
+    'besaran' => 40000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 150 mm',
+    'satuan' => "m'",
+    'besaran' => 63200,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 6" (150 mm)',
+    'satuan' => "m'",
+    'besaran' => 64000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 200 mm',
+    'satuan' => "m'",
+    'besaran' => 139575,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 8" (200 mm)',
+    'satuan' => "m'",
+    'besaran' => 140000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 250 mm',
+    'satuan' => "m'",
+    'besaran' => 287500,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 10" (250 mm)',
+    'satuan' => "m'",
+    'besaran' => 288000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Sewa Tripot',
+    'satuan' => 'hari',
+    'besaran' => 108000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 300 mm',
+    'satuan' => "m'",
+    'besaran' => 305000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 12" (300 mm)',
+    'satuan' => "m'",
+    'besaran' => 306000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 400 mm',
+    'satuan' => "m'",
+    'besaran' => 336700,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 16" (400 mm)',
+    'satuan' => "m'",
+    'besaran' => 337000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 450 mm',
+    'satuan' => "m'",
+    'besaran' => 368000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 18" (450 mm)',
+    'satuan' => "m'",
+    'besaran' => 369000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 500 mm',
+    'satuan' => "m'",
+    'besaran' => 398500,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 20" (500 mm)',
+    'satuan' => "m'",
+    'besaran' => 399000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 600 mm',
+    'satuan' => "m'",
+    'besaran' => 425000,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 24" (600 mm)',
+    'satuan' => "m'",
+    'besaran' => 426000,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 800 mm',
+    'satuan' => "m'",
+    'besaran' => 487000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 32" (800 mm)',
+    'satuan' => "m'",
+    'besaran' => 488000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 900 mm',
+    'satuan' => "m'",
+    'besaran' => 515000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 36" (900 mm)',
+    'satuan' => "m'",
+    'besaran' => 516000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 1000 mm',
+    'satuan' => "m'",
+    'besaran' => 547000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 40" (1000 mm)',
+    'satuan' => "m'",
+    'besaran' => 548000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 1100 mm',
+    'satuan' => "m'",
+    'besaran' => 589000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 44" (1100 mm)',
+    'satuan' => "m'",
+    'besaran' => 590000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 1200 mm',
+    'satuan' => "m'",
+    'besaran' => 617000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 48" (1200 mm)',
+    'satuan' => "m'",
+    'besaran' => 618000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 15 mm',
+    'satuan' => "m'",
+    'besaran' => 5200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 1/2" (15 mm)',
+    'satuan' => "m'",
+    'besaran' => 5300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 20 mm',
+    'satuan' => "m'",
+    'besaran' => 7500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 3/4" (20 mm)',
+    'satuan' => "m'",
+    'besaran' => 7600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 25 mm',
+    'satuan' => "m'",
+    'besaran' => 8300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 1" (25 mm)',
+    'satuan' => "m'",
+    'besaran' => 8400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 32 mm',
+    'satuan' => "m'",
+    'besaran' => 9700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 1-1/4" (32 mm)',
+    'satuan' => "m'",
+    'besaran' => 10000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 40 mm',
+    'satuan' => "m'",
+    'besaran' => 10500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 1-1/2" (40 mm)',
+    'satuan' => "m'",
+    'besaran' => 10600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC dia. 50 mm',
+    'satuan' => "m'",
+    'besaran' => 13700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PVC, DN. 2" (50 mm)',
+    'satuan' => "m'",
+    'besaran' => 13800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gergaji Pipa',
+    'satuan' => 'hari',
+    'besaran' => 32500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Peralatan potong pipa T1/manual (gergaji) / saw',
+    'satuan' => 'hari',
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 63 mm',
+    'satuan' => "m'",
+    'besaran' => 183333,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 2-1/2" (65 mm)',
+    'satuan' => "m'",
+    'besaran' => 185000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 100 mm',
+    'satuan' => "m'",
+    'besaran' => 309000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 4" (100 mm)',
+    'satuan' => "m'",
+    'besaran' => 310000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 125 mm',
+    'satuan' => "m'",
+    'besaran' => 435000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 5" (125 mm)',
+    'satuan' => "m'",
+    'besaran' => 436000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 150 mm',
+    'satuan' => "m'",
+    'besaran' => 395000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 6" (150 mm)',
+    'satuan' => "m'",
+    'besaran' => 396000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 200 mm',
+    'satuan' => "m'",
+    'besaran' => 417000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 8" (200 mm)',
+    'satuan' => "m'",
+    'besaran' => 418000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 250 mm',
+    'satuan' => "m'",
+    'besaran' => 467000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 10" (250 mm)',
+    'satuan' => "m'",
+    'besaran' => 468000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 300 mm',
+    'satuan' => "m'",
+    'besaran' => 512000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 12" (300 mm)',
+    'satuan' => "m'",
+    'besaran' => 513000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 400 mm',
+    'satuan' => "m'",
+    'besaran' => 593000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 16" (400 mm)',
+    'satuan' => "m'",
+    'besaran' => 594000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 450 mm',
+    'satuan' => "m'",
+    'besaran' => 612000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 18" (450 mm)',
+    'satuan' => "m'",
+    'besaran' => 61300, // harga asli tertulis 61.300,00
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 500 mm',
+    'satuan' => "m'",
+    'besaran' => 655000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 20" (500 mm)',
+    'satuan' => "m'",
+    'besaran' => 656000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 600 mm',
+    'satuan' => "m'",
+    'besaran' => 697000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 24" (600 mm)',
+    'satuan' => "m'",
+    'besaran' => 698000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 800 mm',
+    'satuan' => "m'",
+    'besaran' => 715000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 32" (800 mm)',
+    'satuan' => "m'",
+    'besaran' => 716000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 900 mm',
+    'satuan' => "m'",
+    'besaran' => 756000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 36" (900 mm)',
+    'satuan' => "m'",
+    'besaran' => 757000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 1000 mm',
+    'satuan' => "m'",
+    'besaran' => 799000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 40 (1000 mm)',
+    'satuan' => "m'",
+    'besaran' => 780000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 1100 mm',
+    'satuan' => "m'",
+    'besaran' => 830000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 44 (1100 mm)',
+    'satuan' => "m'",
+    'besaran' => 831000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 1200 mm',
+    'satuan' => "m'",
+    'besaran' => 867000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 48 (1200 mm)',
+    'satuan' => "m'",
+    'besaran' => 868000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 15 mm',
+    'satuan' => "m'",
+    'besaran' => 51000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 1/2 (15 mm)',
+    'satuan' => "m'",
+    'besaran' => 52000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 20 mm',
+    'satuan' => "m'",
+    'besaran' => 67000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 3/4 (20 mm)',
+    'satuan' => "m'",
+    'besaran' => 68000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 25 mm',
+    'satuan' => "m'",
+    'besaran' => 71000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 1 (25 mm)',
+    'satuan' => "m'",
+    'besaran' => 72000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 32 mm',
+    'satuan' => "m'",
+    'besaran' => 79000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 1-1/4 (32 mm)',
+    'satuan' => "m'",
+    'besaran' => 80000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 40 mm',
+    'satuan' => "m'",
+    'besaran' => 86000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 1-1/2 (40 mm)',
+    'satuan' => "m'",
+    'besaran' => 87000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis dia. 50 mm',
+    'satuan' => "m'",
+    'besaran' => 94000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Galvanis, DN. 2 (50 mm)',
+    'satuan' => "m'",
+    'besaran' => 95000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Cilinder Saw',
+    'satuan' => 'hari',
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Peralatan potong pipa T2/mekanik / cilinder saw',
+    'satuan' => 'hari',
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 63 mm',
+    'satuan' => "m'",
+    'besaran' => 24700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 2-1/2 (65 mm)',
+    'satuan' => "m'",
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 100 mm',
+    'satuan' => "m'",
+    'besaran' => 49000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 4 (100 mm)',
+    'satuan' => "m'",
+    'besaran' => 50000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 125 mm',
+    'satuan' => "m'",
+    'besaran' => 57000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 5" (125 mm)',
+    'satuan' => "m'",
+    'besaran' => 58000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 150 mm',
+    'satuan' => "m'",
+    'besaran' => 63000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 6" (150 mm)',
+    'satuan' => "m'",
+    'besaran' => 64000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 200 mm',
+    'satuan' => "m'",
+    'besaran' => 74000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 8" (200 mm)',
+    'satuan' => "m'",
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 250 mm',
+    'satuan' => "m'",
+    'besaran' => 81000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 10" (250 mm)',
+    'satuan' => "m'",
+    'besaran' => 82000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 300 mm',
+    'satuan' => "m'",
+    'besaran' => 93000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 12" (300 mm)',
+    'satuan' => "m'",
+    'besaran' => 94000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 400 mm',
+    'satuan' => "m'",
+    'besaran' => 101000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 16" (400 mm)',
+    'satuan' => "m'",
+    'besaran' => 102000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 450 mm',
+    'satuan' => "m'",
+    'besaran' => 123000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 18" (450 mm)',
+    'satuan' => "m'",
+    'besaran' => 124000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 500 mm',
+    'satuan' => "m'",
+    'besaran' => 142000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 20" (500 mm)',
+    'satuan' => "m'",
+    'besaran' => 143000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 600 mm',
+    'satuan' => "m'",
+    'besaran' => 156000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 24" (600 mm)',
+    'satuan' => "m'",
+    'besaran' => 157000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 800 mm',
+    'satuan' => "m'",
+    'besaran' => 164000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 32" (800 mm)',
+    'satuan' => "m'",
+    'besaran' => 165000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 900 mm',
+    'satuan' => "m'",
+    'besaran' => 172000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 36" (900 mm)',
+    'satuan' => "m'",
+    'besaran' => 173000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 1000 mm',
+    'satuan' => "m'",
+    'besaran' => 186000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 40" (1000 mm)',
+    'satuan' => "m'",
+    'besaran' => 187000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 1100 mm',
+    'satuan' => "m'",
+    'besaran' => 197000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 44" (1100 mm)',
+    'satuan' => "m'",
+    'besaran' => 198000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 1200 mm',
+    'satuan' => "m'",
+    'besaran' => 215000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 48" (1200 mm)',
+    'satuan' => "m'",
+    'besaran' => 216000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 15 mm',
+    'satuan' => "m'",
+    'besaran' => 12500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 1/2" (15 mm)',
+    'satuan' => "m'",
+    'besaran' => 13000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 20 mm',
+    'satuan' => "m'",
+    'besaran' => 17900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 3/4" (20 mm)',
+    'satuan' => "m'",
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 25 mm',
+    'satuan' => "m'",
+    'besaran' => 20700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 1" (25 mm)',
+    'satuan' => "m'",
+    'besaran' => 21000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 32 mm',
+    'satuan' => "m'",
+    'besaran' => 21300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 1-1/4" (32 mm)',
+    'satuan' => "m'",
+    'besaran' => 22000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 40 mm',
+    'satuan' => "m'",
+    'besaran' => 22500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 1-1/2" (40 mm)',
+    'satuan' => "m'",
+    'besaran' => 23000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE dia. 50 mm',
+    'satuan' => "m'",
+    'besaran' => 23100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa HDPE, DN. 2" (50 mm)',
+    'satuan' => "m'",
+    'besaran' => 24000,
+    'keterangan1' => null,
+]);
+
+/* --- PIPA BAJA --- */
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 63 mm',
+    'satuan' => "m'",
+    'besaran' => 520000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 2-1/2" (65 mm)',
+    'satuan' => "m'",
+    'besaran' => 525000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 100 mm',
+    'satuan' => "m'",
+    'besaran' => 645000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 4" (100 mm)',
+    'satuan' => "m'",
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 125 mm',
+    'satuan' => "m'",
+    'besaran' => 766000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 5" (125 mm)',
+    'satuan' => "m'",
+    'besaran' => 770000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 150 mm',
+    'satuan' => "m'",
+    'besaran' => 810000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 6" (150 mm)',
+    'satuan' => "m'",
+    'besaran' => 815000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 200 mm',
+    'satuan' => "m'",
+    'besaran' => 890000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 8" (200 mm)',
+    'satuan' => "m'",
+    'besaran' => 895000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 250 mm',
+    'satuan' => "m'",
+    'besaran' => 940000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 10" (250 mm)',
+    'satuan' => "m'",
+    'besaran' => 945000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 300 mm',
+    'satuan' => "m'",
+    'besaran' => 1050000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 12" (300 mm)',
+    'satuan' => "m'",
+    'besaran' => 1055000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 400 mm',
+    'satuan' => "m'",
+    'besaran' => 2300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 16" (400 mm)',
+    'satuan' => "m'",
+    'besaran' => 2305000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 450 mm',
+    'satuan' => "m'",
+    'besaran' => 2450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 18" (450 mm)',
+    'satuan' => "m'",
+    'besaran' => 2455000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 500 mm',
+    'satuan' => "m'",
+    'besaran' => 2560000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 20" (500 mm)',
+    'satuan' => "m'",
+    'besaran' => 2565000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 600 mm',
+    'satuan' => "m'",
+    'besaran' => 2650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 24" (600 mm)',
+    'satuan' => "m'",
+    'besaran' => 2655000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 800 mm',
+    'satuan' => "m'",
+    'besaran' => 2790000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 32" (800 mm)',
+    'satuan' => "m'",
+    'besaran' => 2795000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 900 mm',
+    'satuan' => "m'",
+    'besaran' => 2950000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 36" (900 mm)',
+    'satuan' => "m'",
+    'besaran' => 2955000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 1000 mm',
+    'satuan' => "m'",
+    'besaran' => 3110000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 40" (1000 mm)',
+    'satuan' => "m'",
+    'besaran' => 3115000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 1100 mm',
+    'satuan' => "m'",
+    'besaran' => 3230000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 44" (1100 mm)',
+    'satuan' => "m'",
+    'besaran' => 3235000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja dia. 1200 mm',
+    'satuan' => "m'",
+    'besaran' => 3350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Baja Karbon, DN. 48" (1200 mm)',
+    'satuan' => "m'",
+    'besaran' => 3355000,
+    'keterangan1' => null,
+]);
+
+/* --- PVC --- */
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 1 1/4" s10 tekanan nominal 10 bar (4m)',
+    'satuan' => 'batang',
+    'besaran' => 79700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 1 1/5" s10 tekanan nominal 10 bar (6m)',
+    'satuan' => 'batang',
+    'besaran' => 145400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 1" s10 tekanan nominal 10 bar (4m)',
+    'satuan' => 'batang',
+    'besaran' => 51600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 1/2" s10 tekanan nominal 10 bar (4m)',
+    'satuan' => 'batang',
+    'besaran' => 30700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 2" s12,5 tekanan nominal 10 bar (6m)',
+    'satuan' => 'batang',
+    'besaran' => 214900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 3" s12,5 tekanan nominal 10 bar (6m)',
+    'satuan' => 'batang',
+    'besaran' => 423300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 3/4" s10 tekanan nominal 10 bar (4m)',
+    'satuan' => 'batang',
+    'besaran' => 33400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 4" s12,5 tekanan nominal 10 bar (6m)',
+    'satuan' => 'batang',
+    'besaran' => 641300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 6" s12,5 tekanan nominal 10 bar (6m)',
+    'satuan' => 'batang',
+    'besaran' => 1823000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PVC Ø 8" s12,5 tekanan nominal 10 bar (6m)',
+    'satuan' => 'batang',
+    'besaran' => 2043200,
+    'keterangan1' => null,
+]);
+
+// ===== MATERIAL PIPA GALVANIS =====
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Assesoris galvanis',
+    'satuan' => "m'",
+    'besaran' => 5500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 1 1/2" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 405700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 1" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 263000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 1/2" panjang 6 m',
+    'satuan' => "m'",
+    'besaran' => 24400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 2 1/2" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 550000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 3" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 1035100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 3/4" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 181200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 4" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 1475300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa besi stainless steel Ø1" t=1.5 mm',
+    'satuan' => "m'",
+    'besaran' => 44800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa besi stainless steel Ø2" t=1.5 mm',
+    'satuan' => "m'",
+    'besaran' => 92400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 1 1/2" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 461800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 1" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 266100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 1/2" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 132500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 2" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 528600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 3" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 1021000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 3/4" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 177900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 4" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 1487200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 5" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 1981200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 6" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 1558300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium A Ø 8" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 2267400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 2" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 598800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 5" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 2031000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 6" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 2451200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium B Ø 8" panjang 6 m',
+    'satuan' => 'batang',
+    'besaran' => 3466200,
+    'keterangan1' => null,
+]);
+
+// ==== MEDIUM CLASS + AKSESORIS ====
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 1 1/2" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 82466,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 82500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 1 1/4" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 80633,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 81000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 1" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 49850,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 1" (25 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 50000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 1/2" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 27583,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 1/2" (15 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 28000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 2" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 93600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 94000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 2-1/2" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 94666,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 95000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 3" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 175666,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 176000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 3/4" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 35150,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 3/4" (20 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 36000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 4" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 253366,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS DN 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 253500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 5" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 335700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS ; DN. 5" (125 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 336000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 6" + Aksesoris',
+    'satuan' => "m'",
+    'besaran' => 265216.67,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS ; DN. 6" (150 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 266000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 8" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 383400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS ; DN. 8" (200 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 384000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 10" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 390500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS ; DN. 10" (250 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 391000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 12" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 399500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS ; DN. 12" (300 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 14" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 410500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS ; DN. 14" (350 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 411000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis medium Class Ø 16" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 417500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis MED CLASS ; DN. 16" (400 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 418000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 39666.67,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 1/2" (15 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 40000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 3/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 47666.67,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 3/4" (20 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 48000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 1" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 66333.33,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 1" (25 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 66500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 1-1/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 88000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 88500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 1-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 102500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 103000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 188833.33,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 189000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 2-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 205500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 206000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 3" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 359666.67,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 380500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 381000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 5" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 505500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 5" (125 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 502000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 6" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 635500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 6" (150 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 636000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 8" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 987166.67,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 8" (200 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 987500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 10" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 1322166.67,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 10" (250 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 1322500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 12" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 1405500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 12" (300 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 1406000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 14" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 1463833.33,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 14" (350 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 1464000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 Ø 16" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 1501666.67,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa galvanis SCH 40 ; DN. 16" (400 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 1502000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 16050,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 1/2" (15 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 16100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 3/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 19475,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 3/4" (20 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 19700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 1" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 28275,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 1" (25 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 28500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 1-1/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 41875,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 42000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 1-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 62175,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 62500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 95500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 96000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 2-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 131625,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 132000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 3" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 183275,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 183500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 276425,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 276600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 Ø 6" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 930025,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 10 ; DN. 6" (150 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 930500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 20325,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 1/2" (15 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 931000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 3/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 28525,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 3/4" (20 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 29000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 1" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 43675,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 1" (25 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 44000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 1-1/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 64625,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 65000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 1-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 98175,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 98500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 152625,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 153000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 2-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 214000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 214500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 3" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 305375,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 305500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 453900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 454000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 Ø 6" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 1534825,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa PPR PN 20 ; DN. 6" (150 mm) + fitting & akseso',
+    'satuan' => "m'",
+    'besaran' => 1535000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 1/2" (15 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 30500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 3/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 37000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 3/4" (20 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 37500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 1" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 52500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 1" (25 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 53000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 1-1/4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 67500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS DN. 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 68000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 1-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 76666.67,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS DN. 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 77000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 102666.67,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 103000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 2-1/2" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 129333.33,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS DN. 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 130000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 3" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 165500,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 166000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 4" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 237167,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 237500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 5" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 317167,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 5" (125 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 317500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 6" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 376500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 6" (150 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 377000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 8" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 663000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 8" (200 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 663500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 10" (250 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 756000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 10" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 755917,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 12" (300 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 883000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 12" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 882667,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 14" (350 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 1086000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 14" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 1085500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS MED CLASS ; DN. 16" (400 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 1241000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS Ø 16" + Aksesois',
+    'satuan' => "m'",
+    'besaran' => 1240500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 1/2" (15 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 3/4" (20 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 260000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 1-1/4" (32 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 270000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 1-1/2" (40 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 280000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 2" (50 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 290000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 2-1/2" (65 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 300000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 3" (80 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 310000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 4" (100 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 320000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 5" (125 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 330000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 6" (150 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 8" (200 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 10" (250 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 12" (300 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 14" (350 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa BS SCH 40 ; DN. 16" (400 mm) + fitting & aksesoris',
+    'satuan' => "m'",
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tanah, DN. 6" (150 mm)',
+    'satuan' => "m'",
+    'besaran' => 187500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Tanah, DN. 8" (200 mm)',
+    'satuan' => "m'",
+    'besaran' => 205000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia. 1/2"',
+    'satuan' => "unit",
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia. 3/4"',
+    'satuan' => "unit",
+    'besaran' => 1700000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia. 1"',
+    'satuan' => "unit",
+    'besaran' => 1900000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia. 1-1/4"',
+    'satuan' => "unit",
+    'besaran' => 2050000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia. 1-1/2"',
+    'satuan' => "unit",
+    'besaran' => 2125000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.2"',
+    'satuan' => "unit",
+    'besaran' => 2315000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.2-1/2"',
+    'satuan' => "unit",
+    'besaran' => 2475000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.3"',
+    'satuan' => "unit",
+    'besaran' => 2750000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.4"',
+    'satuan' => "unit",
+    'besaran' => 2995000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.5"',
+    'satuan' => "unit",
+    'besaran' => 3250000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.6"',
+    'satuan' => "unit",
+    'besaran' => 3570000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.8"',
+    'satuan' => "unit",
+    'besaran' => 3950000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.10"',
+    'satuan' => "unit",
+    'besaran' => 4210000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.12"',
+    'satuan' => "unit",
+    'besaran' => 4520000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Gate Valve dia.6"',
+    'satuan' => "unit",
+    'besaran' => 5750000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 1/2"',
+    'satuan' => "unit",
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 3/4"',
+    'satuan' => 'unit',
+    'besaran' => 36750,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 46100,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 1-1/4"',
+    'satuan' => 'unit',
+    'besaran' => 68000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 1-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 79000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 118000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 145000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 215000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Ball Velve dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 233300,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 39000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 3/4"',
+    'satuan' => 'unit',
+    'besaran' => 59000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 88350,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 1-1/4"',
+    'satuan' => 'unit',
+    'besaran' => 110960,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 1-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 148960,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 215460,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 265000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 587000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 1440000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 5"',
+    'satuan' => 'unit',
+    'besaran' => 2750000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 3050000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 8"',
+    'satuan' => 'unit',
+    'besaran' => 3470000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 10"',
+    'satuan' => 'unit',
+    'besaran' => 3680000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Check Velve dia. 12"',
+    'satuan' => 'unit',
+    'besaran' => 3970000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 36000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 3/4"',
+    'satuan' => 'unit',
+    'besaran' => 47000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 59000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 1-1/4"',
+    'satuan' => 'unit',
+    'besaran' => 95600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 1-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 143000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 303600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 415600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 552000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 809600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 5"',
+    'satuan' => 'unit',
+    'besaran' => 873000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 970500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 8"',
+    'satuan' => 'unit',
+    'besaran' => 1260000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 10"',
+    'satuan' => 'unit',
+    'besaran' => 1540000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 12"',
+    'satuan' => 'unit',
+    'besaran' => 1670000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Strainer dia. 14"',
+    'satuan' => 'unit',
+    'besaran' => 1820000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 221000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 3/4"',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 375000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 1-1/4"',
+    'satuan' => 'unit',
+    'besaran' => 485000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 1-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 630000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 870000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 980000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 1170000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 1370000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 5"',
+    'satuan' => 'unit',
+    'besaran' => 1520000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 1740000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 8"',
+    'satuan' => 'unit',
+    'besaran' => 1960000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 10"',
+    'satuan' => 'unit',
+    'besaran' => 2130000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floater Velve dia. 12"',
+    'satuan' => 'unit',
+    'besaran' => 2480000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 21450,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 3/4"',
+    'satuan' => 'unit',
+    'besaran' => 69400,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 83800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 1-1/4"',
+    'satuan' => 'unit',
+    'besaran' => 134600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 1-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 202000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 331300,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 348000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 609000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 870000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 5"',
+    'satuan' => 'unit',
+    'besaran' => 920500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 1055000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 8"',
+    'satuan' => 'unit',
+    'besaran' => 1315000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 10"',
+    'satuan' => 'unit',
+    'besaran' => 1525000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 12"',
+    'satuan' => 'unit',
+    'besaran' => 1740000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Foot Velve dia. 14"',
+    'satuan' => 'unit',
+    'besaran' => 1980000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 33600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 3/4"',
+    'satuan' => 'unit',
+    'besaran' => 46500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 87500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 1-1/4"',
+    'satuan' => 'unit',
+    'besaran' => 97800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 1-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 105700,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 136500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 157900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 165400,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 5"',
+    'satuan' => 'unit',
+    'besaran' => 740900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 937500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 8"',
+    'satuan' => 'unit',
+    'besaran' => 1050900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 10"',
+    'satuan' => 'unit',
+    'besaran' => 1345000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 12"',
+    'satuan' => 'unit',
+    'besaran' => 1678000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flexible Joint dia. 14"',
+    'satuan' => 'unit',
+    'besaran' => 1945000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 136100,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 170700,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 276400,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 303600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 5"',
+    'satuan' => 'unit',
+    'besaran' => 515200,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 829300,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 8"',
+    'satuan' => 'unit',
+    'besaran' => 1364500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 10"',
+    'satuan' => 'unit',
+    'besaran' => 1808900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Butterfly Velve dia. 12"',
+    'satuan' => 'unit',
+    'besaran' => 2170800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 104500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 3/4"',
+    'satuan' => 'unit',
+    'besaran' => 118000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 140500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 1-1/4"',
+    'satuan' => 'unit',
+    'besaran' => 189900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 1-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 252900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 966300,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 1214300,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 1573100,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 2121400,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 5"',
+    'satuan' => 'unit',
+    'besaran' => 3890000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 4996000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Globe Velve dia. 8"',
+    'satuan' => 'unit',
+    'besaran' => 5740000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pressure Gauge dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 58000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pressure Gauge dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 79800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pressure Gauge dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 123000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pressure Gauge dia. 2-1/2"',
+    'satuan' => 'unit',
+    'besaran' => 132700,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pressure Gauge dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 165400,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pressure Gauge dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 218500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 1/2"',
+    'satuan' => 'Bh',
+    'besaran' => 270750,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 3/4"',
+    'satuan' => 'Bh',
+    'besaran' => 655914,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 1"',
+    'satuan' => 'Bh',
+    'besaran' => 1416800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 1-1/2"',
+    'satuan' => 'Bh',
+    'besaran' => 1740600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 2"',
+    'satuan' => 'Bh',
+    'besaran' => 2392000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 3"',
+    'satuan' => 'Bh',
+    'besaran' => 2700000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 4"',
+    'satuan' => 'Bh',
+    'besaran' => 2980000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 6"',
+    'satuan' => 'Bh',
+    'besaran' => 3540900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 8"',
+    'satuan' => 'Bh',
+    'besaran' => 3947000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 10"',
+    'satuan' => 'Bh',
+    'besaran' => 4230900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 12"',
+    'satuan' => 'Bh',
+    'besaran' => 4560000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Water Meter dia. 16"',
+    'satuan' => 'Bh',
+    'besaran' => 4760900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Flow Meter Analog dia.4"',
+    'satuan' => 'bh',
+    'besaran' => 2449000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Clean Out dia. 2"',
+    'satuan' => 'bh',
+    'besaran' => 47500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Clean Out dia. 2-1/2"',
+    'satuan' => 'bh',
+    'besaran' => 56700,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Clean Out dia. 3"',
+    'satuan' => 'bh',
+    'besaran' => 65000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Clean Out dia. 4"',
+    'satuan' => 'bh',
+    'besaran' => 72500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Clean Out dia. 5"',
+    'satuan' => 'bh',
+    'besaran' => 178900,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Clean Out dia. 6"',
+    'satuan' => 'bh',
+    'besaran' => 230880,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Clean Out dia. 8"',
+    'satuan' => 'bh',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 2"',
+    'satuan' => 'Bh',
+    'besaran' => 29800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 2-1/2"',
+    'satuan' => 'Bh',
+    'besaran' => 33925,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 3"',
+    'satuan' => 'Bh',
+    'besaran' => 37375,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 4"',
+    'satuan' => 'Bh',
+    'besaran' => 40250,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 5"',
+    'satuan' => 'Bh',
+    'besaran' => 51700,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 6"',
+    'satuan' => 'Bh',
+    'besaran' => 61100,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 8"',
+    'satuan' => 'Bh',
+    'besaran' => 90250,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 10"',
+    'satuan' => 'Bh',
+    'besaran' => 142500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Roof Drain dia. 12"',
+    'satuan' => 'Bh',
+    'besaran' => 167500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floor Clean Out dia. 2"',
+    'satuan' => 'Bh',
+    'besaran' => 136800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floor Clean Out dia. 2-1/2"',
+    'satuan' => 'Bh',
+    'besaran' => 163100,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floor Clean Out dia. 3"',
+    'satuan' => 'Bh',
+    'besaran' => 199500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floor Clean Out dia. 4"',
+    'satuan' => 'Bh',
+    'besaran' => 300300,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floor Clean Out dia. 6"',
+    'satuan' => 'Bh',
+    'besaran' => 415500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Floor Clean Out dia. 8"',
+    'satuan' => 'Bh',
+    'besaran' => 507600,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Vent Cap dia. 2"',
+    'satuan' => 'Bh',
+    'besaran' => 45000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Vent Cap dia. 3"',
+    'satuan' => 'Bh',
+    'besaran' => 65000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Vent Cap dia. 4"',
+    'satuan' => 'Bh',
+    'besaran' => 80000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV set dia. 2"',
+    'satuan' => 'Bh',
+    'besaran' => 4900000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV set dia. 2-1/2"',
+    'satuan' => 'Bh',
+    'besaran' => 5350000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV Set dia. 3"',
+    'satuan' => 'Bh',
+    'besaran' => 7500000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV set dia. 4"',
+    'satuan' => 'Bh',
+    'besaran' => 8450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV set dia. 6"',
+    'satuan' => 'Bh',
+    'besaran' => 8930000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'PRV set dia. 8"',
+    'satuan' => 'Bh',
+    'besaran' => 9430000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'AAV dia. 1/2"',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'AAV dia. 1"',
+    'satuan' => 'unit',
+    'besaran' => 850000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'AAV dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 1050000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'AAV dia. 3"',
+    'satuan' => 'unit',
+    'besaran' => 1230800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'AAV dia. 4"',
+    'satuan' => 'unit',
+    'besaran' => 1432000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'AAV dia. 6"',
+    'satuan' => 'unit',
+    'besaran' => 1653000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Vent Out dia. 2"',
+    'satuan' => 'unit',
+    'besaran' => 235000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'WLC dan Pengkabelan',
+    'satuan' => 'unit',
+    'besaran' => 81100,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pressure Switch',
+    'satuan' => 'unit',
+    'besaran' => 220800,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Header Pipa PVC AW Dia. 4"',
+    'satuan' => "m'",
+    'besaran' => 1325000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Header Pipa Galvanis MED Class Dia. 4"',
+    'satuan' => "m'",
+    'besaran' => 5600000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Header Pipa BS SCH 40 Dia. 8"',
+    'satuan' => "m'",
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Header Pipa BS SCH 40 Dia. 10"',
+    'satuan' => "m'",
+    'besaran' => 4600000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Dop PVC dia. 3"',
+    'satuan' => 'Bh',
+    'besaran' => 9950,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Dop PVC dia. 4"',
+    'satuan' => 'Bh',
+    'besaran' => 19500,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Dop PVC dia. 6"',
+    'satuan' => 'Bh',
+    'besaran' => 28000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 100 mm',
+    'satuan' => "m'",
+    'besaran' => 1083333,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 4" (100 mm)',
+    'satuan' => "m'",
+    'besaran' => 1083000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 125 mm',
+    'satuan' => "m'",
+    'besaran' => 1100000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 5" (125 mm)',
+    'satuan' => "m'",
+    'besaran' => 1100000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 150 mm',
+    'satuan' => "m'",
+    'besaran' => 1300000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 6" (150 mm)',
+    'satuan' => "m'",
+    'besaran' => 1300000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 200 mm',
+    'satuan' => "m'",
+    'besaran' => 1450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 8" (200 mm)',
+    'satuan' => "m'",
+    'besaran' => 1450000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 250 mm',
+    'satuan' => "m'",
+    'besaran' => 1570000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 10" (250 mm)',
+    'satuan' => "m'",
+    'besaran' => 1570000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 300 mm',
+    'satuan' => "m'",
+    'besaran' => 1630000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 12" (300 mm)',
+    'satuan' => "m'",
+    'besaran' => 1640000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 400 mm',
+    'satuan' => "m'",
+    'besaran' => 1780000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 16" (400 mm)',
+    'satuan' => "m'",
+    'besaran' => 1790000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 450 mm',
+    'satuan' => "m'",
+    'besaran' => 1840000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 18" (450 mm)',
+    'satuan' => "m'",
+    'besaran' => 1850000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 500 mm',
+    'satuan' => "m'",
+    'besaran' => 1950000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 20" (500 mm)',
+    'satuan' => "m'",
+    'besaran' => 1960000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 600 mm',
+    'satuan' => "m'",
+    'besaran' => 2100000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 24" (600 mm)',
+    'satuan' => "m'",
+    'besaran' => 2115000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 800 mm',
+    'satuan' => "m'",
+    'besaran' => 2350000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 32" (800 mm)',
+    'satuan' => "m'",
+    'besaran' => 2360000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 900 mm',
+    'satuan' => "m'",
+    'besaran' => 2430000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 36" (900 mm)',
+    'satuan' => "m'",
+    'besaran' => 2440000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 1000 mm',
+    'satuan' => "m'",
+    'besaran' => 2560000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 40" (1000 mm)',
+    'satuan' => "m'",
+    'besaran' => 2570000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI dia. 1100 mm',
+    'satuan' => "m'",
+    'besaran' => 2720000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 44" (1100 mm)',
+    'satuan' => "m'",
+    'besaran' => 2730000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa DCI, DN. 48" (1200 mm)',
+    'satuan' => "m'",
+    'besaran' => 236000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 200 mm',
+    'satuan' => "m'",
+    'besaran' => 235000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 8" (200 mm)',
+    'satuan' => "m'",
+    'besaran' => 236000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 300 mm',
+    'satuan' => "m'",
+    'besaran' => 264000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 12" (300 mm)',
+    'satuan' => "m'",
+    'besaran' => 265000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 400 mm',
+    'satuan' => "m'",
+    'besaran' => 285000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 16" (400 mm)',
+    'satuan' => "m'",
+    'besaran' => 286000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 500 mm',
+    'satuan' => "m'",
+    'besaran' => 299000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 20" (500 mm)',
+    'satuan' => "m'",
+    'besaran' => 300000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 600 mm',
+    'satuan' => "m'",
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 24" (600 mm)',
+    'satuan' => "m'",
+    'besaran' => 351000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 700 mm',
+    'satuan' => "m'",
+    'besaran' => 410000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 28" (700 mm)',
+    'satuan' => "m'",
+    'besaran' => 411000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 800 mm',
+    'satuan' => "m'",
+    'besaran' => 490000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 32" (800 mm)',
+    'satuan' => "m'",
+    'besaran' => 491000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 1000 mm',
+    'satuan' => "m'",
+    'besaran' => 570000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 40" (1000 mm)',
+    'satuan' => "m'",
+    'besaran' => 571000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton dia. 1200 mm',
+    'satuan' => "m'",
+    'besaran' => 640000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Pipa Beton, DN. 48" (1200 mm)',
+    'satuan' => "m'",
+    'besaran' => 641000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 6" (150 mm)',
+    'satuan' => "buah",
+    'besaran' => 225000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 8" (200 mm)',
+    'satuan' => "buah",
+    'besaran' => 290000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 10" (250 mm)',
+    'satuan' => "buah",
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 12" (300 mm)',
+    'satuan' => "buah",
+    'besaran' => 410000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 16" (400 mm)',
+    'satuan' => "buah",
+    'besaran' => 490000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 18" (450 mm)',
+    'satuan' => "buah",
+    'besaran' => 530000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 20" (500 mm)',
+    'satuan' => "buah",
+    'besaran' => 590000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 24" (600 mm)',
+    'satuan' => "buah",
+    'besaran' => 670000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 28" (700 mm)',
+    'satuan' => "buah",
+    'besaran' => 750000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 32" (800 mm)',
+    'satuan' => "buah",
+    'besaran' => 810000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 36" (900 mm)',
+    'satuan' => "buah",
+    'besaran' => 890000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 40" (1000 mm)',
+    'satuan' => "buah",
+    'besaran' => 950000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 44" (1100 mm)',
+    'satuan' => "buah",
+    'besaran' => 1050000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 48" (1200 mm)',
+    'satuan' => "buah",
+    'besaran' => 1119000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 1/2" (15 mm)',
+    'satuan' => "buah",
+    'besaran' => 95000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 3/4" (20 mm)',
+    'satuan' => "buah",
+    'besaran' => 105000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 1" (25 mm)',
+    'satuan' => "buah",
+    'besaran' => 115000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 1-1/4" (32 mm)',
+    'satuan' => "buah",
+    'besaran' => 129000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 1-1/2" (40 mm)',
+    'satuan' => "buah",
+    'besaran' => 135000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 2" (50 mm)',
+    'satuan' => "buah",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 2-1/2" (65 mm)',
+    'satuan' => "buah",
+    'besaran' => 170000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 3" (80 mm)',
+    'satuan' => "buah",
+    'besaran' => 192000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 4" (100 mm)',
+    'satuan' => "buah",
+    'besaran' => 205000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Valve Ø 5" (125 mm)',
+    'satuan' => "buah",
+    'besaran' => 215000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 6" (150 mm)',
+    'satuan' => "buah",
+    'besaran' => 65000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 8" (200 mm)',
+    'satuan' => "buah",
+    'besaran' => 138000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 10" (250 mm)',
+    'satuan' => "buah",
+    'besaran' => 215000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 18" (450 mm)',
+    'satuan' => "buah",
+    'besaran' => 285000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 20" (500 mm)',
+    'satuan' => "buah",
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 24" (600 mm)',
+    'satuan' => "buah",
+    'besaran' => 435000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 28" (700 mm)',
+    'satuan' => "buah",
+    'besaran' => 510000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 32" (800 mm)',
+    'satuan' => "buah",
+    'besaran' => 599000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 36" (900 mm)',
+    'satuan' => "buah",
+    'besaran' => 670000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 40" (1000 mm)',
+    'satuan' => "buah",
+    'besaran' => 750000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 44" (1100 mm)',
+    'satuan' => "buah",
+    'besaran' => 830000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 48" (1200 mm)',
+    'satuan' => "buah",
+    'besaran' => 950000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 1/2" (15 mm)',
+    'satuan' => "buah",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 3/4" (20 mm)',
+    'satuan' => "buah",
+    'besaran' => 27000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 1" (25 mm)',
+    'satuan' => "buah",
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 1-1/4" (32 mm)',
+    'satuan' => "buah",
+    'besaran' => 32000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 1-1/2" (40 mm)',
+    'satuan' => "buah",
+    'besaran' => 39000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 2" (50 mm)',
+    'satuan' => "buah",
+    'besaran' => 42000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 2-1/2" (65 mm)',
+    'satuan' => "buah",
+    'besaran' => 48000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 5" (125 mm)',
+    'satuan' => "buah",
+    'besaran' => 55000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 3" (80 mm)',
+    'satuan' => "buah",
+    'besaran' => 59000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 4" (100 mm)',
+    'satuan' => "buah",
+    'besaran' => 62000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 12" (300 mm)',
+    'satuan' => "buah",
+    'besaran' => 235000,
+    'keterangan1' => null,
+]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 3,
+    'uraian' => 'Tee Ø 16" (400 mm)',
+    'satuan' => "buah",
+    'besaran' => 255000,
+    'keterangan1' => null,
+]);
+
+
+// KATEGORI 4 BESI DAN BAJA
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja (ulir) U-39',
+    'satuan' => 'kg',
+    'besaran' => 14600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja (ulir) U-48',
+    'satuan' => 'kg',
+    'besaran' => 14600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja Tahan Karat (Stainless Steel)',
+    'satuan' => 'kg',
+    'besaran' => 80340,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja L 40.40.4',
+    'satuan' => 'kg',
+    'besaran' => 14840,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Frame besi L.30.30.3',
+    'satuan' => 'kg',
+    'besaran' => 14840,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Frame Allum L.10.1',
+    'satuan' => 'kg',
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi angkur diameter 8',
+    'satuan' => 'kg',
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi angkur/mur/baut',
+    'satuan' => 'kg',
+    'besaran' => 16660,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baut',
+    'satuan' => 'kg',
+    'besaran' => 17000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi hollow 38.38.2',
+    'satuan' => 'kg',
+    'besaran' => 13700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi hollow 50.50.3',
+    'satuan' => 'kg',
+    'besaran' => 13800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi hollow galvanis 40.40',
+    'satuan' => "m'",
+    'besaran' => 6250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi lis kaca (1 x 1) cm',
+    'satuan' => "m'",
+    'besaran' => 10500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi plat baja tebal 2 mm',
+    'satuan' => 'kg',
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi profil',
+    'satuan' => 'kg',
+    'besaran' => 14840,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi siku',
+    'satuan' => 'kg',
+    'besaran' => 14700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi siku 30x30x3 mm',
+    'satuan' => 'kg',
+    'besaran' => 13000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi siku 40x40x4 mm',
+    'satuan' => 'kg',
+    'besaran' => 15667,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja Profil Siku',
+    'satuan' => 'kg',
+    'besaran' => 15500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi siku 40x40x4',
+    'satuan' => "m'",
+    'besaran' => 20825,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi siku 20x20 tebal 2 mm',
+    'satuan' => 'm',
+    'besaran' => 19500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi strip',
+    'satuan' => 'kg',
+    'besaran' => 7500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Teralis Besi Strip lengkap dengan accessories',
+    'satuan' => 'M2',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pelat Strip t=2,6 mm, L=12 cm',
+    'satuan' => 'buah',
+    'besaran' => 21000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pelat Strip t=2,6 mm, L=14 cm',
+    'satuan' => 'buah',
+    'besaran' => 29000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pelat Strip t=2,6 mm, L=17 cm',
+    'satuan' => 'buah',
+    'besaran' => 39000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pelat Strip t=2,6 mm, L=34 cm',
+    'satuan' => 'buah',
+    'besaran' => 58000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Angkur Baja Full Drat ASTM 307 dia. 10 mm Panjang 35 cm',
+    'satuan' => 'buah',
+    'besaran' => 9200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Angkur Baja Full Drat ASTM 307 dia 10 mm Panjang 65 cm',
+    'satuan' => 'buah',
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi strip (0,2x2) cm',
+    'satuan' => "m'",
+    'besaran' => 5000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi strip (0,2x2) cm',
+    'satuan' => 'kg',
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi strip (20x3) mm',
+    'satuan' => 'kg',
+    'besaran' => 17250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Plat Strip 3/30 mm',
+    'satuan' => "m'",
+    'besaran' => 9900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Besi strip tebal 5 mm',
+    'satuan' => 'kg',
+    'besaran' => 7500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'BjTP',
+    'satuan' => 'kg',
+    'besaran' => 14250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja Tulangan Polos (BjTP) diameter < 12 mm',
+    'satuan' => 'kg',
+    'besaran' => 14250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja Tulangan Polos (BjTP) diameter >12 mm',
+    'satuan' => 'kg',
+    'besaran' => 16000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'BjTS',
+    'satuan' => 'kg',
+    'besaran' => 14500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja Tulangan Sirip (BjTS) diameter < 12 mm',
+    'satuan' => 'kg',
+    'besaran' => 14500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Baja Tulangan Sirip (BjTS) diameter >12 mm',
+    'satuan' => 'kg',
+    'besaran' => 16500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Bronjong kawat pabrikan Uk.2x1x0,5 ø 3mm mesh 8x10',
+    'satuan' => 'Unit',
+    'besaran' => 460000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Bronjong kawat pabrikan Uk.3x1,5x0,5 ø 3mm mesh 8x10',
+    'satuan' => 'Unit',
+    'besaran' => 891000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Bronjong kawat pabrikan Uk.3x1x0,5 ø 3mm mesh 8x10',
+    'satuan' => 'Unit',
+    'besaran' => 656000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Bronjong kawat pabrikan Uk.4x1x0,5 ø 3mm mesh 8x10',
+    'satuan' => 'Unit',
+    'besaran' => 805000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Dinabolt dia. 12mm (10-15 cm)',
+    'satuan' => 'buah',
+    'besaran' => 4550,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Dynabolt M12',
+    'satuan' => 'buah',
+    'besaran' => 30500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Jaring Kawat Baja dilas',
+    'satuan' => 'kg',
+    'besaran' => 15150,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat bronjong',
+    'satuan' => 'kg',
+    'besaran' => 15680,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat duri',
+    'satuan' => 'roll',
+    'besaran' => 116750,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat galvanis Ø 3 mm',
+    'satuan' => 'kg',
+    'besaran' => 26020,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat galvanis Ø 4 mm',
+    'satuan' => 'kg',
+    'besaran' => 25400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat galvanis Ø 5 mm',
+    'satuan' => 'kg',
+    'besaran' => 22800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat harmonika 12 x 24 mm',
+    'satuan' => 'm2',
+    'besaran' => 28450,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat harmonika 14 x 30 mm',
+    'satuan' => 'm2',
+    'besaran' => 28470,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat harmonika 14 x 35 mm',
+    'satuan' => 'm2',
+    'besaran' => 27900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat kasa',
+    'satuan' => 'm2',
+    'besaran' => 26900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat beton',
+    'satuan' => 'kg',
+    'besaran' => 18800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat bendrat',
+    'satuan' => 'kg',
+    'besaran' => 18800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat duri',
+    'satuan' => "m'",
+    'besaran' => 1750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat seng 3mm',
+    'satuan' => 'kg',
+    'besaran' => 18800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat harmonika',
+    'satuan' => 'm2',
+    'besaran' => 34620,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat jaring panjang 240 cm',
+    'satuan' => 'lembar',
+    'besaran' => 300000,
+    'keterangan1' => 'Lebar 120 cm',
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat las',
+    'satuan' => 'kg',
+    'besaran' => 45550,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat nyamuk',
+    'satuan' => 'm3',
+    'besaran' => 20190,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat nyamuk nylon',
+    'satuan' => 'm2',
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Kawat Ø 4 mm',
+    'satuan' => 'kg',
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Lapisan hot deep galvanis',
+    'satuan' => 'kg',
+    'besaran' => 8400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku',
+    'satuan' => 'kg',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 1 inch',
+    'satuan' => 'kg',
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 12 cm',
+    'satuan' => 'buah',
+    'besaran' => 1500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 2 inch',
+    'satuan' => 'kg',
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 4 inch',
+    'satuan' => 'kg',
+    'besaran' => 19000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku biasa 5 inchi',
+    'satuan' => 'kg',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 5 dan 10 cm',
+    'satuan' => 'kg',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 5 dan 7 cm',
+    'satuan' => 'kg',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 7 - 10 cm',
+    'satuan' => 'kg',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku 3 cm',
+    'satuan' => 'kg',
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku Tripleks',
+    'satuan' => 'kg',
+    'besaran' => 17500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku beton',
+    'satuan' => 'kg',
+    'besaran' => 39450,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku Beton 5 cm',
+    'satuan' => 'buah',
+    'besaran' => 200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku hak panj 15cm',
+    'satuan' => 'kg',
+    'besaran' => 22070,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku pancing 6x23',
+    'satuan' => 'kg',
+    'besaran' => 19460,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku payung',
+    'satuan' => 'kg',
+    'besaran' => 35590,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku rivet',
+    'satuan' => 'buah',
+    'besaran' => 200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku sekrup',
+    'satuan' => 'kg',
+    'besaran' => 30090,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku sekrup (buah)',
+    'satuan' => 'buah',
+    'besaran' => 1600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku Sekrup 1-2 cm',
+    'satuan' => 'buah',
+    'besaran' => 1600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku Fishes/kotak',
+    'satuan' => 'kotak',
+    'besaran' => 29000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Paku Fishes',
+    'satuan' => 'buah',
+    'besaran' => 580,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pintu tahan api',
+    'satuan' => 'unit',
+    'besaran' => 8000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pipa baja dia. 30 cm',
+    'satuan' => "m'",
+    'besaran' => 1680000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pipa baja dia. 40 cm',
+    'satuan' => "m'",
+    'besaran' => 2240000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pipa baja dia. 50 cm',
+    'satuan' => "m'",
+    'besaran' => 2800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pipa besi hitam 1 inch',
+    'satuan' => "m'",
+    'besaran' => 15500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pipa besi hitam 1,5 inch',
+    'satuan' => "m'",
+    'besaran' => 22000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pipa besi hitam 2 inch',
+    'satuan' => "m'",
+    'besaran' => 31000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Pipa besi hitam 3 inch',
+    'satuan' => "m'",
+    'besaran' => 42000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Saringan pasir',
+    'satuan' => "m'",
+    'besaran' => 16650,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Sekrup kait',
+    'satuan' => "buah",
+    'besaran' => 700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Wiremesh M10',
+    'satuan' => 'kg',
+    'besaran' => 12430,
+    'keterangan1' => '96,54 kg/lembar',
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Wiremesh M12',
+    'satuan' => 'kg',
+    'besaran' => 12660,
+    'keterangan1' => '139,02 kg/lembar',
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Wiremesh M6',
+    'satuan' => 'kg',
+    'besaran' => 11522,
+    'keterangan1' => '34,76 kg/lembar',
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Wiremesh M7',
+    'satuan' => 'kg',
+    'besaran' => 11816,
+    'keterangan1' => '47,31 kg/lembar',
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Wiremesh M8',
+    'satuan' => 'kg',
+    'besaran' => 12049,
+    'keterangan1' => '61,79 kg/lembar',
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 4,
+    'uraian' => 'Wiremesh M9',
+    'satuan' => 'kg',
+    'besaran' => 12276,
+    'keterangan1' => '8,20 kg/lembar',
+]);
+
+
+
+// kategori 5
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Aluminium gelombang 95x180 cm',
+    'satuan' => 'lembar',
+    'besaran' => 180400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang kecil 4mm (150x105)',
+    'satuan' => 'lembar',
+    'besaran' => 47800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang kecil 4mm (180x105)',
+    'satuan' => 'lembar',
+    'besaran' => 57300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang kecil 4mm (210x105)',
+    'satuan' => 'lembar',
+    'besaran' => 65300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang kecil 4mm (240x105)',
+    'satuan' => 'lembar',
+    'besaran' => 75500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 150x105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 120000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 180x92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 85500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 200x92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 94000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 210x105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 225x92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 104900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 240x105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 130000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 250x92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 113400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 5 mm, 300x105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 135000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 6 mm, 180x108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 93000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 6 mm, 210x108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 92900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 6 mm, 240x108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 99600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 6 mm, 270x108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 113400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang besar 6 mm, 300x108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 131000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang kecil 4 mm, 270x105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 88400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang kecil 4 mm, 300x105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 100500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Atap metal berpasir',
+    'satuan' => 'm2',
+    'besaran' => 112500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Atap metal lembaran',
+    'satuan' => 'm2',
+    'besaran' => 112500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Atap metal menerus',
+    'satuan' => 'm2',
+    'besaran' => 80000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Atap Rumbia / Atap Saung 150cmx50cm',
+    'satuan' => 'buah',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Atap UPVC uk. 86x119 cm',
+    'satuan' => 'm2',
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Bitumen tekstur genting',
+    'satuan' => 'lembar',
+    'besaran' => 62700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Bubung genteng kodok',
+    'satuan' => 'buah',
+    'besaran' => 8600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Bubung genteng palentong',
+    'satuan' => 'buah',
+    'besaran' => 10700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Bubungan asbes besar',
+    'satuan' => 'buah',
+    'besaran' => 30700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Bubungan asbes kecil',
+    'satuan' => 'buah',
+    'besaran' => 48100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Bubungan beton press',
+    'satuan' => 'buah',
+    'besaran' => 5300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Fibre glass (jabes) 180x105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 78500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Fibre glass (jabes) 200x92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 68500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Fibre glass (jabes) 210x105 cm',
+    'satuan' => 'buah',
+    'besaran' => 89700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Fibre glass (jabes) 250x105 cm',
+    'satuan' => 'buah',
+    'besaran' => 122300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Fibre glass (jabes) 250x92 cm',
+    'satuan' => 'buah',
+    'besaran' => 162500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Fibreglass 180x90 cm',
+    'satuan' => 'lembar',
+    'besaran' => 59600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Frame \'S\' 85.50 tinggi profil 85 dan tebal 0,75 mm',
+    'satuan' => 'batang',
+    'besaran' => 145000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Galvalum Gelombang Lapis Pasir',
+    'satuan' => 'lembar',
+    'besaran' => 61200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng aspal 80x100 cm',
+    'satuan' => 'buah',
+    'besaran' => 149700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng beton',
+    'satuan' => 'buah',
+    'besaran' => 6800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng decra bond',
+    'satuan' => 'buah',
+    'besaran' => 9800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng kodok',
+    'satuan' => 'buah',
+    'besaran' => 3400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng kodok glazuur',
+    'satuan' => 'buah',
+    'besaran' => 5800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng metal',
+    'satuan' => 'lembar',
+    'besaran' => 50700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng metal berpasir',
+    'satuan' => 'lembar',
+    'besaran' => 30500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng palentong',
+    'satuan' => 'buah',
+    'besaran' => 2800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Genteng palentong super',
+    'satuan' => 'buah',
+    'besaran' => 5300,
+    'keterangan1' => 'setara morando',
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Listplang papan kalsiboard',
+    'satuan' => 'buah',
+    'besaran' => 56200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Listplang tekstur kayu',
+    'satuan' => 'buah',
+    'besaran' => 54500,
+    'keterangan1' => null,
+]);
+
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok genteng aspal',
+    'satuan' => 'buah',
+    'besaran' => 95000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok genteng beton',
+    'satuan' => 'buah',
+    'besaran' => 9600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok genteng metal',
+    'satuan' => 'buah',
+    'besaran' => 25600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok paten 105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok paten 108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok paten 92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 65000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok setel rata 105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok setel rata 108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 80000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok setel rata 92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok standar',
+    'satuan' => 'lembar',
+    'besaran' => 67000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok stel gelombang 105 cm',
+    'satuan' => 'lembar',
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok stel gelombang 108 cm',
+    'satuan' => 'lembar',
+    'besaran' => 80000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Nok stel gelombang 92 cm',
+    'satuan' => 'lembar',
+    'besaran' => 60000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Reng batten 0,5',
+    'satuan' => 'batang',
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Roof light fiberglass',
+    'satuan' => 'lembar',
+    'besaran' => 116300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang',
+    'satuan' => 'lembar',
+    'besaran' => 85000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang 3x6 inch',
+    'satuan' => 'lembar',
+    'besaran' => 83100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng Gelombang 105 cm x 180 cm',
+    'satuan' => 'lembar',
+    'besaran' => 85000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang bjls 0.18 panjang 180 cm',
+    'satuan' => 'lembar',
+    'besaran' => 55200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang bjls 0.20 panjang 180 cm',
+    'satuan' => 'lembar',
+    'besaran' => 63900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang bjls 30 panjang 180 cm',
+    'satuan' => 'lembar',
+    'besaran' => 73300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang bjls 0.40 panjang 180 cm',
+    'satuan' => 'lembar',
+    'besaran' => 73000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang bjls 28',
+    'satuan' => 'lembar',
+    'besaran' => 85500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang bljs 30',
+    'satuan' => 'lembar',
+    'besaran' => 79000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng gelombang panjang 200 cm',
+    'satuan' => 'lembar',
+    'besaran' => 85000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat BJLS 0.18 lebar 55 cm',
+    'satuan' => 'm\'',
+    'besaran' => 24800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat BJLS 0.20 lebar 55 cm',
+    'satuan' => 'm\'',
+    'besaran' => 28100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat BJLS 0.28 lebar 55 cm',
+    'satuan' => 'm\'',
+    'besaran' => 30400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat BJLS 0.30 lebar 55 cm',
+    'satuan' => 'm\'',
+    'besaran' => 34600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat 3x6 inch',
+    'satuan' => 'lembar',
+    'besaran' => 66900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat 3x6 inch bjls 28',
+    'satuan' => 'lembar',
+    'besaran' => 72200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng pelat',
+    'satuan' => 'lembar',
+    'besaran' => 72200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng Pelat 90x180 cm bjls 28',
+    'satuan' => 'lembar',
+    'besaran' => 72200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat bjls 28',
+    'satuan' => 'm\'',
+    'besaran' => 70200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat bjls 30',
+    'satuan' => 'm\'',
+    'besaran' => 74400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Seng plat bjls 30 (lembar)',
+    'satuan' => 'lembar',
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Sirap (100 lbr)',
+    'satuan' => 'pak',
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Sirap kayu',
+    'satuan' => 'buah',
+    'besaran' => 5000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Wab capsule 62.27 tinggi 62 mm dan tebal 0,4mm',
+    'satuan' => 'batang',
+    'besaran' => 55000,
+    'keterangan1' => null,
+]);
+
+// MATERIAL PLAFON
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes 1,00 x 1,00 m',
+    'satuan' => 'lembar',
+    'besaran' => 17400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Compon Flafond',
+    'satuan' => 'kg',
+    'besaran' => 5000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'cross tee',
+    'satuan' => 'batang',
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'GRC Pelat t=4 mm uk 122x244 cm',
+    'satuan' => 'lembar',
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'GRCboard (120 cm x 240 cm x 5 mm)',
+    'satuan' => 'm2',
+    'besaran' => 80800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'GRCboard (120 cm x 240 cm x 6 mm)',
+    'satuan' => 'm2',
+    'besaran' => 99300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Gypsum Board (120 cm x 240 cm x 12 mm)',
+    'satuan' => 'lembar',
+    'besaran' => 93000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Gypsum Board (122 cm x 244 cm x 12 mm)',
+    'satuan' => 'lembar',
+    'besaran' => 96000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Gypsum board (120 cm x 240 cm x 9 mm)',
+    'satuan' => 'lembar',
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Rockwool tebal 50 mm',
+    'satuan' => 'm2',
+    'besaran' => 290000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Lambersening plafon <3',
+    'satuan' => 'm2',
+    'besaran' => 180000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Lambersening plafon >3',
+    'satuan' => 'm2',
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'List gypsum profil',
+    'satuan' => 'm\'',
+    'besaran' => 15800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Listplank GRC lebar 20 cm',
+    'satuan' => 'm\'',
+    'besaran' => 21000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Listplank GRC lebar 30 cm',
+    'satuan' => 'm\'',
+    'besaran' => 23000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Main tee',
+    'satuan' => 'batang',
+    'besaran' => 34000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Papan semen',
+    'satuan' => 'm2',
+    'besaran' => 45000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Asbes gelombang',
+    'satuan' => 'lembar',
+    'besaran' => 62400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Pelat asbes tebal 3,5 mm',
+    'satuan' => 'lembar',
+    'besaran' => 62400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Pelat asbes tebal 4 mm',
+    'satuan' => 'lembar',
+    'besaran' => 69800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Plafon akustik 30x30 cm',
+    'satuan' => 'lembar',
+    'besaran' => 6200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Plafon akustik 30x60 cm',
+    'satuan' => 'lembar',
+    'besaran' => 13900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 5,
+    'uraian' => 'Plafon akustik 60x120 cm',
+    'satuan' => 'lembar',
+    'besaran' => 24000,
+    'keterangan1' => null,
+]);
+
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Bata Ekspose Tempel warna natural 8x24x2 cm',
+    'satuan' => "m'",
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Bata tempel',
+    'satuan' => "buah",
+    'besaran' => 2500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Batako 20x40x10 cm',
+    'satuan' => "buah",
+    'besaran' => 3000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Batu andesit 30x30 t=3cm',
+    'satuan' => "m2",
+    'besaran' => 165000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Batu andesit 30x30 t=5cm',
+    'satuan' => "m2",
+    'besaran' => 265000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Batu paras',
+    'satuan' => "m2",
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Batu paros',
+    'satuan' => "m2",
+    'besaran' => 131600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Batu tempel hitam',
+    'satuan' => "m2",
+    'besaran' => 121600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Floor hardener',
+    'satuan' => "kg",
+    'besaran' => 5000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Flooring Kayu Kruing 1,5x13,5x60 cm',
+    'satuan' => "m2",
+    'besaran' => 195000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Flooring Kayu Merbau 1,5x9x30cm',
+    'satuan' => "m2",
+    'besaran' => 420000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Flooring Kayu Sonokeling Grade B 1,5x9x30cm',
+    'satuan' => "m2",
+    'besaran' => 420000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granit bakar 10x10, t=2cm',
+    'satuan' => "m2",
+    'besaran' => 275000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granit bakar 30x30, t=2cm',
+    'satuan' => "m2",
+    'besaran' => 315000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granit tile unpolish / anti skid',
+    'satuan' => "m2",
+    'besaran' => 220100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granit tile 30x30 cm (double loading)',
+    'satuan' => "buah",
+    'besaran' => 27700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granit tile 40x40 cm (double loading)',
+    'satuan' => "buah",
+    'besaran' => 39200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granit tile 60x60 cm (double loading)',
+    'satuan' => "buah",
+    'besaran' => 92800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granito 30 x 30 cm',
+    'satuan' => "m2",
+    'besaran' => 326400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Granito 40 x 40 cm',
+    'satuan' => "m2",
+    'besaran' => 242500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Guiding Block Warna t = 6 cm',
+    'satuan' => "m2",
+    'besaran' => 330600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 50000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile unpolish 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 27000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile unpolish 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 39000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile unpolish 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 56000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile dinding 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 22000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile dinding 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Homogenous tile dinding 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Karpet',
+    'satuan' => "m2",
+    'besaran' => 45000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik 20 x 25 cm',
+    'satuan' => "buah",
+    'besaran' => 2400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik 10 x 20 cm',
+    'satuan' => "buah",
+    'besaran' => 2300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik 20x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik 25 x 25 cm',
+    'satuan' => "buah",
+    'besaran' => 3100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 8100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 12000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik Variasi 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik Variasi 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 8100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik Variasi 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 12000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Step Nosing Keramik 10x60 cm',
+    'satuan' => "buah",
+    'besaran' => 28000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik Tactile 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 37000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik Tactile 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 39500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik artistik 10x10 cm',
+    'satuan' => "buah",
+    'besaran' => 1500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik artistik 20x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik artistik 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 3000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik artistik 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik artistik 8x8 cm',
+    'satuan' => "buah",
+    'besaran' => 1000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik cuting 50x50',
+    'satuan' => "buah",
+    'besaran' => 27500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik dinding 10x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik dinding 20x20 cm',
+    'satuan' => "buah",
+    'besaran' => 3000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik dinding artistik 10x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Keramik dinding artistik 5x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lamparquet Kayu Merbau 1x6x20cm',
+    'satuan' => "m2",
+    'besaran' => 190000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lamparquet Kayu Merbau 1x9x20cm',
+    'satuan' => "m2",
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai engineering wood',
+    'satuan' => "m2",
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade A 1,2x5x17 cm',
+    'satuan' => "m2",
+    'besaran' => 175000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade A 1,2x5x20cm',
+    'satuan' => "m2",
+    'besaran' => 222000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade A 1,2x5x25 cm',
+    'satuan' => "m2",
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade A 1,2x5x30 cm',
+    'satuan' => "m2",
+    'besaran' => 280000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade B 1,2x5x17 cm',
+    'satuan' => "m2",
+    'besaran' => 160000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade B 1,2x5x20cm',
+    'satuan' => "m2",
+    'besaran' => 195000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade B 1,2x5x25 cm',
+    'satuan' => "m2",
+    'besaran' => 210000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade B 1,2x5x30 cm',
+    'satuan' => "m2",
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade C 1,2x5x20cm',
+    'satuan' => "m2",
+    'besaran' => 140000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade C 1,2x5x25 cm',
+    'satuan' => "m2",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lantai Parket Jati grade C 1,2x5x30 cm',
+    'satuan' => "m2",
+    'besaran' => 160000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Lem',
+    'satuan' => "kg",
+    'besaran' => 60000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Marmer (buah)',
+    'satuan' => "buah",
+    'besaran' => 800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Marmer (m2)',
+    'satuan' => "m2",
+    'besaran' => 492600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Marmer Graphir 10x10 cm',
+    'satuan' => "buah",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Marmer Graphir 12x12 cm',
+    'satuan' => "buah",
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Pen Kuningan titik acuan',
+    'satuan' => "buah",
+    'besaran' => 27000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Mozaik porselen 10 x 20 cm',
+    'satuan' => "m2",
+    'besaran' => 73400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Mozaik porselen 15 x 15 cm',
+    'satuan' => "m2",
+    'besaran' => 74400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Mozaik porselen 20 x 20 cm',
+    'satuan' => "m2",
+    'besaran' => 75400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Mozaik porselen 20 x 25 cm',
+    'satuan' => "m2",
+    'besaran' => 75400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Parquet kayu solid',
+    'satuan' => "m2",
+    'besaran' => 306600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint Kayu 10 cm',
+    'satuan' => "buah",
+    'besaran' => 85000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint keramik 10 x 20 cm',
+    'satuan' => "buah",
+    'besaran' => 8200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint keramik 5 x 20 cm',
+    'satuan' => "buah",
+    'besaran' => 3400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint granit 10 cm x 40 cm',
+    'satuan' => "buah",
+    'besaran' => 24000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint granit 10cm x 30cm',
+    'satuan' => "buah",
+    'besaran' => 22600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint homogenous tile uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 5000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint homogenous tile uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 7000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint homogenous tile uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 10000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint homogenous tile unpolish uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 7000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint homogenous tile unpolish uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 9000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint homogenous tile unpolish uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 13000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint internal cove uk. 5x5x20 cm',
+    'satuan' => "buah",
+    'besaran' => 5000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint keramik 10 x 30 cm',
+    'satuan' => "buah",
+    'besaran' => 15300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint keramik uk. 10-15x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint keramik uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 3000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint keramik uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint keramik uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 5000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint teralux kerang uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint teralux kerang uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 3000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint teralux kerang uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint teralux marmer uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 2500,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint teralux marmer uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 3000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint teralux marmer uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin granit uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 6000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin granit uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 8000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin granit uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 10000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin PC abu-abu uk. 10-15x20 cm',
+    'satuan' => "buah",
+    'besaran' => 1000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin PC abu-abu uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 1500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin PC abu-abu uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin PC abu-abu uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 2500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin teraso uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin teraso uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 6000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin warna uk. 10-15x20 cm',
+    'satuan' => "buah",
+    'besaran' => 1500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin warna uk. 10-15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin warna uk. 10-15x40 cm',
+    'satuan' => "buah",
+    'besaran' => 3000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Plint ubin warna uk. 10-15x60 cm',
+    'satuan' => "buah",
+    'besaran' => 4500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Porselen 10x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Porselen 11x11 cm',
+    'satuan' => "buah",
+    'besaran' => 1000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Porselen 11x11 cm (dus)',
+    'satuan' => "dus",
+    'besaran' => 83000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Porselen 20x20 cm',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Tangga Papan',
+    'satuan' => "m2",
+    'besaran' => 160000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Tangga Parquet / Flooring',
+    'satuan' => "m2",
+    'besaran' => 180000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Tegel plint, PC abu-abu 15 x 20 cm',
+    'satuan' => "buah",
+    'besaran' => 6100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Tegel plint, PC warna 10 x 20 cm',
+    'satuan' => "buah",
+    'besaran' => 5300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Teraso cor',
+    'satuan' => "m3",
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin granit 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 14200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin granit 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin granit 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin PC abu-abu 20x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin PC abu-abu 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 3400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin PC abu-abu 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 4600,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin PC abu-abu 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 6000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin porselen lokal 11 x 11 putih',
+    'satuan' => "dos",
+    'besaran' => 43800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin porselen lokal 11 x 11 warna',
+    'satuan' => "dos",
+    'besaran' => 46900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin porselen lokal 15 x 15 putih',
+    'satuan' => "dos",
+    'besaran' => 48400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin porselen lokal 15 x 15 warna',
+    'satuan' => "dos",
+    'besaran' => 49900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin teralux marmer 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 45000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin teralux marmer 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 60000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin teralux marmer 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin teraso 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 24000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin teraso 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin warna 20x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin warna 30x30 cm',
+    'satuan' => "buah",
+    'besaran' => 4500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin warna 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 6000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Ubin warna 60x60 cm',
+    'satuan' => "buah",
+    'besaran' => 8000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Underlayer karpet',
+    'satuan' => "m2",
+    'besaran' => 10000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'UPVC decking',
+    'satuan' => "m2",
+    'besaran' => 500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 6,
+    'uraian' => 'Vinyl',
+    'satuan' => "buah",
+    'besaran' => 7000,
+    'keterangan1' => null,
+]);
+
+
+
+
+
+
+
+
+
+
 
 
 
 // KATEGORI MATERIAL
 kategorimaterial::create([
     'id' => 1,
-    'material' => 'Material Tanah Dan Batuan',
+    'material' => 'Tanah Dan Batuan',
 ]);
 
 kategorimaterial::create([
     'id' => 2,
-    'material' => 'Kayu',
+    'material' => 'Kayu Dan Bambu',
+]);
+
+kategorimaterial::create([
+    'id' => 3,
+    'material' => 'Pipa PVC Dan HDPE
+',
+]);
+
+kategorimaterial::create([
+    'id' => 4,
+    'material' => 'Besi Dan Baja
+',
+]);
+
+kategorimaterial::create([
+    'id' => 5,
+    'material' => 'Penutup Atap
+',
+]);
+
+kategorimaterial::create([
+    'id' => 6,
+    'material' => 'Penutup Lantai Dan Dinding',
 ]);
 
 
