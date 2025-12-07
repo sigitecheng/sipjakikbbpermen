@@ -1223,12 +1223,12 @@
                   </li> --}}
 
                   <!-- Kecelakaan Kerja -->
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                     <a href="/404" class="nav-link">
                       <i class="nav-icon bi bi-emoji-dizzy text-warning"></i> <!-- Ikon untuk Kecelakaan Kerja -->
                       <p style="color: white">Kecelakaan Kerja</p>
                     </a>
-                  </li>
+                  </li> --}}
 
 <div style="margin-bottom: 10px; margin-top: 10px;">
     <p style="
@@ -1273,7 +1273,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk AHSP Keciptakaryaan -->
                   <i class="nav-icon bi bi-clipboard-check" style="color: white"></i> <!-- Ikon untuk AHSP Keciptakaryaan -->
-                  <p style="color: orange">
+                  <p style="color: red">
                     Satuan <br> Harga Dasar
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1439,7 +1439,7 @@
                 <a href="/beshstkabblora" class="nav-link">
                     <!-- Ikon untuk SHST Kab Blora -->
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i> <!-- Ikon untuk SHST Kab Blora -->
-                    <p style="color: orange">
+                    <p style="color: red">
                       SHST <br> Kab Bandung Barat
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1528,12 +1528,12 @@
                 <ul class="nav nav-treeview">
                   <!-- Satuan Harga Material -->
 
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                     <a href="/404" class="nav-link">
                       <i class="nav-icon bi bi-archive text-warning"></i> <!-- Ikon untuk Satuan Harga Material -->
                       <p style="color: white">Asuransi Konstruksi</p>
                     </a>
-                  </li>
+                  </li> --}}
 
                   <li class="nav-item">
                     <a href="/404" class="nav-link">

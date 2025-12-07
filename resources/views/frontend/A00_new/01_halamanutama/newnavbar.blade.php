@@ -113,7 +113,7 @@
                                                 <li><a href="#">DIV VII Pekerjaan Jaringan Pipa Di Luar Bangunan</a></li>
                                             </ul>
                                         </li>
-                                            <li><a href="#">SHST Kab Bandung Barat</a></li>
+                                            <li><a href="/shstkbb">SHST Kab Bandung Barat</a></li>
 
                                     </ul>
                                         <li class="menu-item-has-children"><a href="#">Rantai Pasok</a>

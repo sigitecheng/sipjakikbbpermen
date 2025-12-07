@@ -19,6 +19,7 @@ use App\Models\hspkonstruksiumum6;
 use App\Models\hspkonstruksiumum7;
 use App\Models\hspkonstruksiumum8;
 use App\Models\hspkonstruksiumum9;
+use App\Models\shstblora;
 // use App\Models\hspkonstruksiumum2;
 // DIVISI 1
 use App\Models\subhargadiv1;
@@ -2648,6 +2649,20 @@ public function satuanhargaalatkbb(Request $request)
         'search' => $search, // bisa ditampilkan di input
     ]);
 }
+public function shstkbb()
+{
+    $user = Auth::user();
+
+    // Ambil semua data shstblora, urut abjad berdasarkan 'uraian', paginate 20
+    $data = shstblora::all();
+
+    return view('frontend.new.06_bagian7.04_shstkbb.shstkbb', [
+        'title' => 'Standar Harga Satuan Tertinggi Kabupaten Bandung Barat',
+        'data' => $data,
+        'user' => $user,
+    ]);
+}
+
 
 
 }
