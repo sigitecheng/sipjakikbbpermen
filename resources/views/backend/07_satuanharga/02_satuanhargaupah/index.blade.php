@@ -154,10 +154,14 @@
          <td style="text-align: left;">{{ $item->kode }}</td>
          <td style="text-align: center;">{{ $item->satuan }}</td>
          <td style="text-align: center;">Rp</td>
-         <td style="text-align: right;">{{ number_format($item->besaran, 0, ',', '.') }},00</td>
-         <td style="text-align: center;">Rp</td>
-        <td style="text-align: right;">{{ number_format($item->besaranperjam, 0, ',', '.') }},00</td>
+         <td style="text-align: right;">
+                {{ number_format((int) str_replace(['.', ','], '', $item->besaran), 0, ',', '.') }},00
+            </td>
 
+         <td style="text-align: center;">Rp</td>
+         <td style="text-align: right;">
+    {{ number_format((int) $item->besaranperjam, 0, ',', '.') }},00
+</td>
         <td style="text-align: center; vertical-align: middle;">
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
                 <i class="bi bi-eye"></i>

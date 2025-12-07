@@ -12,4 +12,10 @@ class satuanhargamaterial extends Model
     use HasFactory, SoftDeletes, HasApiTokens;
 
     protected $guarded = ['id'];
+
+        public function kategorimaterial()
+    {
+        return $this->belongsTo(kategorimaterial::class, 'kategorimaterial_id');
+    }
+
 }
