@@ -2393,6 +2393,8 @@ Route::get('/statistikbujk', [BujkkonsultanController::class, 'datastatistikbujk
 
 // BAGIAN 7 AHSP
 Route::get('/satuanhargamaterialkbb', [SatuanhargamaterialController::class, 'satuanhargamaterialkbb']);
+Route::get('/satuanhargupahkbb', [SatuanhargamaterialController::class, 'satuanhargupahkbb']);
+Route::get('/satuanhargaalatkbb', [SatuanhargamaterialController::class, 'satuanhargaalatkbb']);
 
 // BACKEND DATA JAKON KBB
 Route::delete('/allskktenagakerjakbb/delete/{id}', [PembinaanController::class, 'allskktenagakerjakbbdelete'])->middleware(['auth', 'can:admin2']);

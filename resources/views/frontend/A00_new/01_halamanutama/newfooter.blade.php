@@ -17,14 +17,12 @@
              style="height:48px; width:auto; object-fit:contain;">
     </a>
 </div>
-
-
                             </div>
                             <div class="footer__content footer__content-three">
                                 <p>Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
                             </div>
-                            <div class="footer__content footer__content-three">
-                                <p>Sistem Informasi Pembina Jasa Konstruksi Kabupaten Bandung Barat adalah platform digital untuk meningkatkan efisiensi dan transparansi pengelolaan proyek konstruksi. Sistem ini memantau pelaksanaan, memastikan kepatuhan standar, serta memudahkan komunikasi antara pemerintah, kontraktor, pengawas, dan masyarakat.</p>
+                            <div class="footer__content footer__content-three" style="text-align: justify;">
+                                <p>SIPJAKI Kabupaten Bandung Barat, Sistem Informasi Pembina Jasa Konstruksi Kabupaten Bandung Barat adalah platform digital untuk meningkatkan efisiensi dan transparansi pengelolaan proyek konstruksi. Sistem ini memantau pelaksanaan, memastikan kepatuhan standar, serta memudahkan komunikasi antara pemerintah, kontraktor, pengawas, dan masyarakat.</p>
                             </div>
                             {{-- <div class="footer__social footer__social-four">
                                 <ul class="list-wrap">

@@ -2599,5 +2599,55 @@ public function satuanhargamaterialkbb(Request $request)
     ]);
 }
 
+public function satuanhargupahkbb(Request $request)
+{
+    $user = Auth::user();
+    $search = $request->input('search'); // Ambil kata kunci dari form
+
+    $query = satuanhargaupahtenagakerja::query();
+
+    if($search) {
+        $query->where('uraian', 'like', "%{$search}%");
+    }
+
+    // Urut abjad berdasarkan kolom 'uraian', paginate 20
+    $data = $query->orderBy('uraian', 'ASC')->paginate(20);
+
+    // Menjaga keyword search tetap di query string saat pagination
+    $data->appends(['search' => $search]);
+
+    return view('frontend.new.06_bagian7.02_upahpekerjaan.upahpekerjaan', [
+        'title' => 'Satuan Harga Upah Pekerjaan Kabupaten Bandung Barat',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search, // bisa ditampilkan di input
+    ]);
+}
+
+public function satuanhargaalatkbb(Request $request)
+{
+    $user = Auth::user();
+    $search = $request->input('search'); // Ambil kata kunci dari form
+
+    $query = satuanhargaperalatan::query();
+
+    if($search) {
+        $query->where('uraian', 'like', "%{$search}%");
+    }
+
+    // Urut abjad berdasarkan kolom 'uraian', paginate 20
+    $data = $query->orderBy('uraian', 'ASC')->paginate(20);
+
+    // Menjaga keyword search tetap di query string saat pagination
+    $data->appends(['search' => $search]);
+
+    return view('frontend.new.06_bagian7.03_peralatan.peralatan', [
+        'title' => 'Satuan Harga Peralatan Kabupaten Bandung Barat',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search, // bisa ditampilkan di input
+    ]);
+}
+
 
 }

@@ -165,7 +165,7 @@
                             <input
                                 type="text"
                                 id="searchMaterial"
-                                placeholder="Cari Bahan Material"
+                                placeholder="Cari Pekerjaan"
                                 oninput="searchMaterial()"
                                 class="w-full appearance-none outline-none text-sm font-medium placeholder:font-normal placeholder:text-[#545768] bg-transparent font-[Poppins]"
                             />
@@ -304,7 +304,7 @@
 function searchMaterial() {
     let input = document.getElementById("searchMaterial").value;
 
-    fetch(`/satuanhargamaterialkbb?search=${encodeURIComponent(input)}`)
+    fetch(`/satuanhargupahkbb?search=${encodeURIComponent(input)}`)
         .then(response => response.text())
         .then(html => {
             let parser = new DOMParser();

@@ -96,8 +96,8 @@
                                         <li class="menu-item-has-children"><a href="#">Satuan Harga Dasar</a>
                                             <ul class="sub-menu">
                                                 <li><a href="/satuanhargamaterialkbb">Harga Dasar Material</a></li>
-                                                <li><a href="#">Harga Dasar Upah Pekerjaan</a></li>
-                                                <li><a href="#">Harga Dasar Peralatan</a></li>
+                                                <li><a href="/satuanhargupahkbb">Harga Dasar Upah Pekerjaan</a></li>
+                                                <li><a href="/satuanhargaalatkbb">Harga Dasar Peralatan</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">HSP Konstruksi Umum</a>
