@@ -67,103 +67,156 @@
                             @csrf
                             <!-- begin::Body -->
                             <div class="card-body">
-                                <div class="row">
-                                    <!-- Left Column (6/12) -->
-                                   <!-- Right Column (6/12) -->
-                                    <div class="col-md-6">
+      <div class="row">
 
-    <!-- Uraian Bahan Material -->
-    <div class="form-modern mb-3">
-        <label class="form-label-modern" for="uraian">
-            <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Uraian Bahan Material
-        </label>
-        <input type="text" id="uraian" name="uraian" class="form-control @error('uraian') is-invalid @enderror" value="{{ old('uraian') }}" />
-        @error('uraian')
-            <div class="invalid-feedback">{{ $message }}</div>
-        @enderror
+    <!-- Left Column -->
+    <div class="col-md-6">
+
+        <!-- Kategori Material -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="kategorimaterial_id">
+                <i class="bi bi-layers" style="margin-right: 8px; color: navy;"></i> Kategori Material
+            </label>
+            <select id="kategorimaterial_id"
+                name="kategorimaterial_id"
+                class="form-select @error('kategorimaterial_id') is-invalid @enderror">
+                <option value="">-- Pilih Kategori --</option>
+                @foreach($kategori as $k)
+                    <option value="{{ $k->id }}" {{ old('kategorimaterial_id') == $k->id ? 'selected' : '' }}>
+                        {{ $k->material }}
+                    </option>
+                @endforeach
+            </select>
+            @error('kategorimaterial_id')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <!-- Upload Gambar -->
+        {{-- <div class="form-modern mb-3">
+            <label class="form-label-modern" for="gambar">
+                <i class="bi bi-image" style="margin-right: 8px; color: navy;"></i> Gambar Material
+            </label>
+            <input type="file" id="gambar" name="gambar"
+                class="form-control @error('gambar') is-invalid @enderror">
+            @error('gambar')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div> --}}
+
+        <!-- Keterangan 1 -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="keterangan1">
+                <i class="bi bi-text-paragraph" style="margin-right: 8px; color: navy;"></i> Keterangan Tambahan
+            </label>
+            <input type="text" id="keterangan1" name="keterangan1"
+                class="form-control @error('keterangan1') is-invalid @enderror"
+                value="{{ old('keterangan1') }}">
+            @error('keterangan1')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
     </div>
+    <!-- End Left Column -->
 
-    <!<!-- Satuan -->
-<div class="form-modern mb-3">
-    <label class="form-label-modern" for="satuan">
-        <i class="bi bi-rulers" style="margin-right: 8px; color: navy;"></i> Satuan
-    </label>
-    <select id="satuan" name="satuan" class="form-select @error('satuan') is-invalid @enderror">
-        <option value="">-- Pilih Satuan --</option>
-        <option value="buah" {{ old('satuan') == 'Buah' ? 'selected' : '' }}>Buah</option>
-        <option value="lembar" {{ old('satuan') == 'Lembar' ? 'selected' : '' }}>Lembar</option>
-        <option value="batang" {{ old('satuan') == 'Batang' ? 'selected' : '' }}>Batang</option>
-        <option value="kg" {{ old('satuan') == 'Kg' ? 'selected' : '' }}>Kilogram (kg)</option>
-        <option value="liter" {{ old('satuan') == 'Liter' ? 'selected' : '' }}>Liter</option>
-        <option value="m" {{ old('satuan') == 'M' ? 'selected' : '' }}>Meter (m)</option>
-        <option value="meter lari" {{ old('satuan') == 'Meter Lari' ? 'selected' : '' }}>Meter Lari</option>
-        <option value="m2" {{ old('satuan') == 'M2' ? 'selected' : '' }}>Meter Persegi (m²)</option>
-        <option value="m3" {{ old('satuan') == 'M3' ? 'selected' : '' }}>Meter Kubik (m³)</option>
-        <option value="set" {{ old('satuan') == 'Set' ? 'selected' : '' }}>Set</option>
-        <option value="paket" {{ old('satuan') == 'Paket' ? 'selected' : '' }}>Paket</option>
-        <option value="roll" {{ old('satuan') == 'Roll' ? 'selected' : '' }}>Roll</option>
-        <option value="kaleng" {{ old('satuan') == 'Kaleng' ? 'selected' : '' }}>Kaleng</option>
-        <option value="pasang" {{ old('satuan') == 'Pasang' ? 'selected' : '' }}>Pasang</option>
-        <option value="unit" {{ old('satuan') == 'Unit' ? 'selected' : '' }}>Unit</option>
-    </select>
-    @error('satuan')
-        <div class="invalid-feedback">{{ $message }}</div>
-    @enderror
+    <!-- Right Column -->
+    <div class="col-md-6">
+
+        <!-- Uraian -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="uraian">
+                <i class="bi bi-card-text" style="margin-right: 8px; color: navy;"></i> Uraian Bahan Material
+            </label>
+            <input type="text" id="uraian" name="uraian"
+                class="form-control @error('uraian') is-invalid @enderror"
+                value="{{ old('uraian') }}">
+            @error('uraian')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <!-- Satuan -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="satuan">
+                <i class="bi bi-rulers" style="margin-right: 8px; color: navy;"></i> Satuan
+            </label>
+            <select id="satuan" name="satuan"
+                class="form-select @error('satuan') is-invalid @enderror">
+                <option value="">-- Pilih Satuan --</option>
+                <option value="buah" {{ old('satuan') == 'buah' ? 'selected' : '' }}>Buah</option>
+                <option value="lembar" {{ old('satuan') == 'lembar' ? 'selected' : '' }}>Lembar</option>
+                <option value="batang" {{ old('satuan') == 'batang' ? 'selected' : '' }}>Batang</option>
+                <option value="kg" {{ old('satuan') == 'kg' ? 'selected' : '' }}>Kilogram (kg)</option>
+                <option value="liter" {{ old('satuan') == 'liter' ? 'selected' : '' }}>Liter</option>
+                <option value="m" {{ old('satuan') == 'm' ? 'selected' : '' }}>Meter (m)</option>
+                <option value="meter lari" {{ old('satuan') == 'meter lari' ? 'selected' : '' }}>Meter Lari</option>
+                <option value="m2" {{ old('satuan') == 'm2' ? 'selected' : '' }}>Meter Persegi (m²)</option>
+                <option value="m3" {{ old('satuan') == 'm3' ? 'selected' : '' }}>Meter Kubik (m³)</option>
+                <option value="set" {{ old('satuan') == 'set' ? 'selected' : '' }}>Set</option>
+                <option value="paket" {{ old('satuan') == 'paket' ? 'selected' : '' }}>Paket</option>
+                <option value="roll" {{ old('satuan') == 'roll' ? 'selected' : '' }}>Roll</option>
+                <option value="kaleng" {{ old('satuan') == 'kaleng' ? 'selected' : '' }}>Kaleng</option>
+                <option value="pasang" {{ old('satuan') == 'pasang' ? 'selected' : '' }}>Pasang</option>
+                <option value="unit" {{ old('satuan') == 'unit' ? 'selected' : '' }}>Unit</option>
+            </select>
+            @error('satuan')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <!-- Besaran -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="besaran_view">
+                <i class="bi bi-123" style="margin-right: 8px; color: navy;"></i> Besaran
+            </label>
+            <input type="text" id="besaran_view"
+                class="form-control @error('besaran') is-invalid @enderror"
+                value="{{ old('besaran') }}">
+            <input type="hidden" id="besaran" name="besaran" value="{{ old('besaran') }}">
+            @error('besaran')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <!-- Script Besaran -->
+        <script>
+            const inputView = document.getElementById('besaran_view');
+            const inputHidden = document.getElementById('besaran');
+
+            function formatRupiah(angka) {
+                let number_string = angka.replace(/[^,\d]/g, '').toString();
+                let split = number_string.split(',');
+                let sisa = split[0].length % 3;
+                let rupiah = split[0].substr(0, sisa);
+                let ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+                if (ribuan) {
+                    let separator = sisa ? '.' : '';
+                    rupiah += separator + ribuan.join('.');
+                }
+
+                return split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
+            }
+
+            inputView.addEventListener('input', function () {
+                let raw = this.value.replace(/\./g, '').replace(/[^0-9]/g, '');
+                this.value = formatRupiah(raw);
+                inputHidden.value = raw;
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                let oldValue = inputView.value.replace(/\./g, '').replace(/[^0-9]/g, '');
+                inputHidden.value = oldValue;
+                inputView.value = formatRupiah(oldValue);
+            });
+        </script>
+
+    </div>
+    <!-- End Right Column -->
+
 </div>
-
-<!-- Besaran -->
-<!-- Besaran (view untuk user) -->
-<div class="form-modern mb-3">
-    <label class="form-label-modern" for="besaran_view">
-        <i class="bi bi-123" style="margin-right: 8px; color: navy;"></i> Besaran
-    </label>
-    <input type="text" id="besaran_view" class="form-control @error('besaran') is-invalid @enderror" value="{{ old('besaran') }}" />
-    <input type="hidden" id="besaran" name="besaran" value="{{ old('besaran') }}">
-    @error('besaran')
-        <div class="invalid-feedback">{{ $message }}</div>
-    @enderror
-</div>
-
-<script>
-    const inputView = document.getElementById('besaran_view');
-    const inputHidden = document.getElementById('besaran');
-
-    // Format angka → ribuan
-    function formatRupiah(angka) {
-        let number_string = angka.replace(/[^,\d]/g, '').toString();
-        let split = number_string.split(',');
-        let sisa = split[0].length % 3;
-        let rupiah = split[0].substr(0, sisa);
-        let ribuan = split[0].substr(sisa).match(/\d{3}/gi);
-
-        if (ribuan) {
-            let separator = sisa ? '.' : '';
-            rupiah += separator + ribuan.join('.');
-        }
-
-        return split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
-    }
-
-    // Saat diketik
-    inputView.addEventListener('input', function() {
-        let raw = this.value.replace(/\./g, '').replace(/[^0-9]/g, '');
-        this.value = formatRupiah(raw);
-        inputHidden.value = raw; // angka asli disimpan ke input hidden
-    });
-
-    // Set ulang nilai hidden jika user sudah pernah isi (dari old value)
-    window.addEventListener('DOMContentLoaded', () => {
-        let oldValue = inputView.value.replace(/\./g, '').replace(/[^0-9]/g, '');
-        inputHidden.value = oldValue;
-        inputView.value = formatRupiah(oldValue);
-    });
-</script>
-
-</div>
-
-                                    <!-- End Right Column -->
-                                </div>
-                                <!-- End row -->
+                          <!-- End row -->
                             </div>
                             <!-- end::Body -->
 

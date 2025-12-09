@@ -19,6 +19,7 @@ use App\Models\hspkonstruksiumum6;
 use App\Models\hspkonstruksiumum7;
 use App\Models\hspkonstruksiumum8;
 use App\Models\hspkonstruksiumum9;
+use App\Models\kategorimaterial;
 use App\Models\shstblora;
 // use App\Models\hspkonstruksiumum2;
 // DIVISI 1
@@ -1615,13 +1616,13 @@ class SatuanhargamaterialController extends Controller
     }
 
 // MENU BACKEND SATUAN HARGA MERTIAL
-
 public function besatuanhargamaterial(Request $request)
 {
-    $perPage = $request->input('perPage', 10);
+    $perPage = $request->input('perPage', 15);
     $search = $request->input('search');
+    $kategori_id = $request->input('kategori_id');
 
-    $query = satuanhargamaterial::query();
+    $query = satuanhargamaterial::with('kategorimaterial');
 
     if ($search) {
         $query->where(function ($q) use ($search) {
@@ -1631,10 +1632,18 @@ public function besatuanhargamaterial(Request $request)
         });
     }
 
-    // Urut berdasarkan kolom 'uraian' dari A-Z
+    // Filter kategori jika dipilih
+    if ($kategori_id && $kategori_id != 'all') {
+        $query->where('kategorimaterial_id', $kategori_id);
+    }
+
+    // Urut berdasarkan uraian
     $query->orderBy('uraian', 'asc');
 
     $data = $query->paginate($perPage);
+
+    // Ambil daftar kategori untuk select dropdown
+    $kategori = kategorimaterial::orderBy('material','asc')->get();
 
     if ($request->ajax()) {
         return response()->json([
@@ -1645,6 +1654,8 @@ public function besatuanhargamaterial(Request $request)
     return view('backend.07_satuanharga.01_satuanhargamaterial.index', [
         'title' => 'Daftar Satuan Harga Material',
         'data' => $data,
+        'kategori' => $kategori,
+        'kategori_id' => $kategori_id,
         'perPage' => $perPage,
         'search' => $search
     ]);
@@ -1681,11 +1692,13 @@ public function satuanhargamaterialcreate()
     // Cari data undang-undang berdasarkan nilai 'judul'
     // $jakonjabatanfungsional = profiljakonpersonil::where('id', $id)->firstOrFail();
     $user = Auth::user();
+    $kategori = kategorimaterial::all();
 
     // Tampilkan form update dengan data yang ditemukan
     return view('backend.07_satuanharga.01_satuanhargamaterial.create', [
         // 'data' => $jakonjabatanfungsional,
         'user' => $user,
+        'kategori' => $kategori,
         'title' => 'Tambah Satuan Harga Material'
     ]);
 }
@@ -1694,10 +1707,17 @@ public function satuanhargamaterialcreatenew(Request $request)
 {
     // Validasi input
     $validatedData = $request->validate([
+        'kategorimaterial_id' => 'nullable|string',
+        'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:1548',
         'uraian' => 'required|string|max:255',
         'satuan' => 'required|string|max:100',
         'besaran' => 'required|numeric|min:0',
+        'keterangan1' => 'nullable|string|max:255',
     ], [
+        'kategorimaterial_id.exists' => 'Kategori material tidak ditemukan.',
+        'gambar.image' => 'File harus berupa gambar.',
+        'gambar.mimes' => 'Format gambar harus JPG, JPEG, atau PNG.',
+        'gambar.max' => 'Ukuran gambar maksimal 2MB.',
         'uraian.required' => 'Uraian bahan material wajib diisi.',
         'satuan.required' => 'Satuan wajib diisi.',
         'besaran.required' => 'Besaran wajib diisi.',
@@ -1705,17 +1725,25 @@ public function satuanhargamaterialcreatenew(Request $request)
         'besaran.min' => 'Besaran tidak boleh negatif.',
     ]);
 
+    // Upload gambar bila ada
+    $gambarPath = null;
+    if ($request->hasFile('gambar')) {
+        $gambarPath = $request->file('gambar')->store('gambar_material', 'public');
+    }
+
     // Simpan ke database
     satuanhargamaterial::create([
-        'uraian' => $validatedData['uraian'],
-        'satuan' => $validatedData['satuan'],
-        'besaran' => $validatedData['besaran'],
+        'kategorimaterial_id' => $validatedData['kategorimaterial_id'] ?? null,
+        'gambar' => $gambarPath ?? null,
+        'uraian' => $validatedData['uraian'] ?? null,
+        'satuan' => $validatedData['satuan'] ?? null,
+        'besaran' => $validatedData['besaran'] ?? null, // sudah angka murni dari hidden input
+        'keterangan1' => $validatedData['keterangan1'] ?? null,
     ]);
 
     session()->flash('create', 'Data Satuan Harga Material Berhasil Dibuat!');
     return redirect('/besatuanhargamaterial');
 }
-
 
 public function besatuanhargamaterialupdate($id)
 {

@@ -43,7 +43,32 @@
 
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
 
-                            <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
+                        <form method="GET" action="" id="filterForm">
+    <div style="display: flex; align-items: center; gap: 10px;">
+
+        <label for="entries"
+               style="font-weight: 600; font-size: 14px; white-space: nowrap;">
+            Pilih Material:
+        </label>
+
+        <select name="kategori_id"
+                onchange="document.getElementById('filterForm').submit()"
+                class="form-select"
+                style="width: 250px;">
+            <option value="all">Semua Bahan</option>
+
+            @foreach($kategori as $k)
+                <option value="{{ $k->id }}" {{ ($kategori_id == $k->id) ? 'selected' : '' }}>
+                    {{ $k->material }}
+                </option>
+            @endforeach
+        </select>
+
+    </div>
+</form>
+
+
+                            <div style="margin-left: 10px;" style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
             <label for="entries" style="font-weight: 600; font-size: 14px;">Tampilkan data : </label>
             <select id="entries" onchange="updateEntries()" style="padding: 8px 12px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; font-size: 14px; cursor: pointer;">
                 {{-- <option value="10">10</option> --}}
@@ -122,6 +147,9 @@ class="button-berkas"
      <th style="width: 60px; text-align:center;">
   <i class="bi bi-hash"></i> No
 </th>
+<th style="width: 200px; text-align:center;">
+  <i class="bi bi-card-text"></i> Jenis Material
+</th>
 <th style="width: 500px; text-align:center;">
   <i class="bi bi-card-text"></i> Uraian
 </th>
@@ -144,6 +172,7 @@ class="button-berkas"
      @forelse($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
+         <td>{{ $item->kategorimaterial->material ?? '-' }}</td>
          <td style="text-align: left;">{{ $item->uraian }}</td>
          <td style="text-align: left;">{{ $item->satuan }}</td>
          <td style="text-align: center;">Rp</td>

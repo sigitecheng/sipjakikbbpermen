@@ -19240,6 +19240,7701 @@ satuanhargamaterial::create([
 
 
 
+// Kategori 7
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Additive',
+    'satuan' => "liter",
+    'besaran' => 51600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Zat Aditif',
+    'satuan' => "kg",
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Floor lantai (Beton lantai kerja)',
+    'satuan' => "m3",
+    'besaran' => 805600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Lantai Kerja',
+    'satuan' => "m3",
+    'besaran' => 805000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton berpori (Aggregat 10/20mm) ready mix',
+    'satuan' => "m3",
+    'besaran' => 2250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-100 ready mix',
+    'satuan' => "m3",
+    'besaran' => 788100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-125 ready mix',
+    'satuan' => "m3",
+    'besaran' => 805600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-175 ready mix',
+    'satuan' => "m3",
+    'besaran' => 848100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-200 ready mix',
+    'satuan' => "m3",
+    'besaran' => 869200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-225 ready mix',
+    'satuan' => "m3",
+    'besaran' => 887700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-250 ready mix',
+    'satuan' => "m3",
+    'besaran' => 911300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-275 ready mix',
+    'satuan' => "m3",
+    'besaran' => 937100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-300 ready mix',
+    'satuan' => "m3",
+    'besaran' => 961200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-350 ready mix',
+    'satuan' => "m3",
+    'besaran' => 1001900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-400 ready mix',
+    'satuan' => "m3",
+    'besaran' => 1066100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Adukan beton K-500 ready mix',
+    'satuan' => "m3",
+    'besaran' => 1152800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Beton fc' 15 Mpa",
+    'satuan' => "m3",
+    'besaran' => 848100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Compound gypsum",
+    'satuan' => "kg",
+    'besaran' => 3500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Compound hardboard",
+    'satuan' => "kg",
+    'besaran' => 3700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Curing compound",
+    'satuan' => "liter",
+    'besaran' => 44100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Flexible waterproofing",
+    'satuan' => "kg",
+    'besaran' => 52400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Membran Bakar",
+    'satuan' => "m2",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Cairan Primer",
+    'satuan' => "kg",
+    'besaran' => 57500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Formtie/penjaga jarak bekesting/spacer",
+    'satuan' => "buah",
+    'besaran' => 7000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Kassa",
+    'satuan' => "m'",
+    'besaran' => 8100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Kolom beton pracetak",
+    'satuan' => "batang",
+    'besaran' => 282000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Panel beton pracetak",
+    'satuan' => "lembar",
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Paper tape hardboard",
+    'satuan' => "m'",
+    'besaran' => 4800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => "Pengisi khusus rongga nat",
+    'satuan' => "kg",
+    'besaran' => 15500,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Perekat khusus penutup dinding',
+    'satuan' => "kg",
+    'besaran' => 21100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Perekat khusus penutup lantai',
+    'satuan' => "kg",
+    'besaran' => 17200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen 40 Kg',
+    'satuan' => "zak",
+    'besaran' => 46600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen 50 Kg',
+    'satuan' => "zak",
+    'besaran' => 58200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen grout',
+    'satuan' => "kg",
+    'besaran' => 6000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen merah',
+    'satuan' => "kg",
+    'besaran' => 15800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen Merk II 40 Kg',
+    'satuan' => "zak",
+    'besaran' => 46500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen Merk II 50 Kg',
+    'satuan' => "zak",
+    'besaran' => 57600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen nat',
+    'satuan' => "kg",
+    'besaran' => 16100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen Portland (PC)',
+    'satuan' => "kg",
+    'besaran' => 1300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen putih 40 Kg',
+    'satuan' => "zak",
+    'besaran' => 89700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen putih 50 Kg',
+    'satuan' => "zak",
+    'besaran' => 97700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Semen warna',
+    'satuan' => "kg",
+    'besaran' => 7800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Waterproofing',
+    'satuan' => "kg",
+    'besaran' => 61200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Waterproofing Cristalin',
+    'satuan' => "kg",
+    'besaran' => 62000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Waterproofing Semen Base',
+    'satuan' => "kg",
+    'besaran' => 74500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Waterproofing Acrylic Base',
+    'satuan' => "kg",
+    'besaran' => 64000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Joint Sealant',
+    'satuan' => "kg",
+    'besaran' => 22000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Polytene 125 Mikron',
+    'satuan' => "kg",
+    'besaran' => 46000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Dowel dia. 25 mm (BjTs)',
+    'satuan' => "kg",
+    'besaran' => 15368,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tie Bar Dia. 16 mm (BjTS)',
+    'satuan' => "kg",
+    'besaran' => 17722,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Lolos screen 2 ukuran 9,5-19,0',
+    'satuan' => "m3",
+    'besaran' => 1970000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Lolos screen 2 ukuran 0-5',
+    'satuan' => "m3",
+    'besaran' => 1799000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Lantai Kerja fc 10 Mpa',
+    'satuan' => "m3",
+    'besaran' => 1236000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Lantai Kerja fc 7,5 Mpa',
+    'satuan' => "m3",
+    'besaran' => 928000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 30x30x120 cm',
+    'satuan' => "buah",
+    'besaran' => 220000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 30x40x120 cm',
+    'satuan' => "buah",
+    'besaran' => 240000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 40x40x120 cm',
+    'satuan' => "buah",
+    'besaran' => 270000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 40x50x120 cm',
+    'satuan' => "buah",
+    'besaran' => 290000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 40x60x120 cm',
+    'satuan' => "buah",
+    'besaran' => 320000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 50x50x120 cm',
+    'satuan' => "buah",
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 50x60x120 cm',
+    'satuan' => "buah",
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 50x70x120 cm',
+    'satuan' => "buah",
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 60x60x120 cm',
+    'satuan' => "buah",
+    'besaran' => 420000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 60x70x120 cm',
+    'satuan' => "buah",
+    'besaran' => 440000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 60x80x120 cm',
+    'satuan' => "buah",
+    'besaran' => 470000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 80x60x120 cm',
+    'satuan' => "buah",
+    'besaran' => 490000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 80x80x120 cm',
+    'satuan' => "buah",
+    'besaran' => 520000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 80x100x120 cm',
+    'satuan' => "buah",
+    'besaran' => 540000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 100x100x120 cm',
+    'satuan' => "buah",
+    'besaran' => 570000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 100x120x120 cm',
+    'satuan' => "buah",
+    'besaran' => 590000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 120x120x120 cm',
+    'satuan' => "buah",
+    'besaran' => 620000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 120x140x120 cm',
+    'satuan' => "buah",
+    'besaran' => 640000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 140x140x120 cm',
+    'satuan' => "buah",
+    'besaran' => 670000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 150x100x120 cm',
+    'satuan' => "buah",
+    'besaran' => 680000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 150x150x120 cm',
+    'satuan' => "buah",
+    'besaran' => 710000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 150x170x120 cm',
+    'satuan' => "buah",
+    'besaran' => 730000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 160x160x120 cm',
+    'satuan' => "buah",
+    'besaran' => 750000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 160x180x120 cm',
+    'satuan' => "buah",
+    'besaran' => 780000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 180x180x120 cm',
+    'satuan' => "buah",
+    'besaran' => 800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 180x200x120 cm',
+    'satuan' => "buah",
+    'besaran' => 830000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'U-Ditch 200x200x120 cm',
+    'satuan' => "buah",
+    'besaran' => 850000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 39x60x6 (tipe LD)',
+    'satuan' => "buah",
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 51x60x7 (tipe LD)',
+    'satuan' => "buah",
+    'besaran' => 100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 62x60x7,5 (tipe LD)',
+    'satuan' => "buah",
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 73x60x7,8 (tipe LD)',
+    'satuan' => "buah",
+    'besaran' => 165000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 94x60x10 (tipe LD)',
+    'satuan' => "buah",
+    'besaran' => 195000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 39x60x9 (tipe HD)',
+    'satuan' => "buah",
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 51x60x10 (tipe HD)',
+    'satuan' => "buah",
+    'besaran' => 176000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 73x60x14 (tipe HD)',
+    'satuan' => "buah",
+    'besaran' => 235000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 7,
+    'uraian' => 'Tutup U-Ditch 94x60x15 (tipe HD)',
+    'satuan' => "buah",
+    'besaran' => 375000,
+    'keterangan1' => null,
+]);
+
+
+// kategori 8
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat anti karat',
+    'satuan' => "kg",
+    'besaran' => 58200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat besi',
+    'satuan' => "kg",
+    'besaran' => 62800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat coating',
+    'satuan' => "liter",
+    'besaran' => 75700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat genteng',
+    'satuan' => "kg",
+    'besaran' => 52800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat tembok per 20 kg',
+    'satuan' => "kg",
+    'besaran' => 528800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat antara (cat besi)',
+    'satuan' => "kg",
+    'besaran' => 49700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat dasar (cat besi)',
+    'satuan' => "kg",
+    'besaran' => 52300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat dasar (cat kayu)',
+    'satuan' => "kg",
+    'besaran' => 38200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat kayu',
+    'satuan' => "kg",
+    'besaran' => 50000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat dasar (cat tembok eksterior)',
+    'satuan' => "kg",
+    'besaran' => 128500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat dasar (cat tembok interior)',
+    'satuan' => "kg",
+    'besaran' => 119100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat Dasar Plafond',
+    'satuan' => "kg",
+    'besaran' => 128500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat Plafond Eksterior',
+    'satuan' => "kg",
+    'besaran' => 119100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat epoxy',
+    'satuan' => "kg",
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat kedap air (water base)',
+    'satuan' => "kg",
+    'besaran' => 53300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat penutup (cat besi)',
+    'satuan' => "kg",
+    'besaran' => 54700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat penutup (cat kayu)',
+    'satuan' => "kg",
+    'besaran' => 58500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat penutup (cat tembok eksterior)',
+    'satuan' => "kg",
+    'besaran' => 136600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat penutup (cat tembok interior)',
+    'satuan' => "kg",
+    'besaran' => 130500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat dinding',
+    'satuan' => "m2",
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat zyncromate',
+    'satuan' => "kg",
+    'besaran' => 26000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Cat Thermoplast',
+    'satuan' => "kg",
+    'besaran' => 29120,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Glass Beads',
+    'satuan' => "kg",
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Compressor',
+    'satuan' => "jam",
+    'besaran' => 92500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Logo PU Akrilik 40x40 cm',
+    'satuan' => "buah",
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Logo PU Plat Baja 80x80 cm',
+    'satuan' => "buah",
+    'besaran' => 450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Nomor Rumah Akrilik 15x30 cm',
+    'satuan' => "buah",
+    'besaran' => 55000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Bak Cuci Piring',
+    'satuan' => "unit",
+    'besaran' => 436500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Shower Set',
+    'satuan' => "unit",
+    'besaran' => 666000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Dempul',
+    'satuan' => "kg",
+    'besaran' => 33500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Dempul jadi',
+    'satuan' => "kg",
+    'besaran' => 35500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Kuas 1"',
+    'satuan' => "buah",
+    'besaran' => 7100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Kuas 2"',
+    'satuan' => "buah",
+    'besaran' => 9800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Kuas 4"',
+    'satuan' => "buah",
+    'besaran' => 14100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Kuas 3 inch',
+    'satuan' => "buah",
+    'besaran' => 10400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Melamic',
+    'satuan' => "kg",
+    'besaran' => 60000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Meni besi',
+    'satuan' => "kg",
+    'besaran' => 39700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Meni kayu',
+    'satuan' => "kg",
+    'besaran' => 34500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Pelitur',
+    'satuan' => "liter",
+    'besaran' => 73700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Pelitur jadi',
+    'satuan' => "liter",
+    'besaran' => 66200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Pengencer cat kayu/besi',
+    'satuan' => "liter",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Pengencer cat kayu/besi',
+    'satuan' => "kg",
+    'besaran' => 17400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Pewarna Beton',
+    'satuan' => "kg",
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Plamir kayu',
+    'satuan' => "kg",
+    'besaran' => 30100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Plamir tembok',
+    'satuan' => "kg",
+    'besaran' => 26500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Sanding',
+    'satuan' => "kg",
+    'besaran' => 90000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Vernis',
+    'satuan' => "liter",
+    'besaran' => 44500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Wood filler',
+    'satuan' => "kg",
+    'besaran' => 53000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 8,
+    'uraian' => 'Woodstain',
+    'satuan' => "kg",
+    'besaran' => 87000,
+    'keterangan1' => null,
+]);
+
+
+
+// Kategori 9
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => '1 set kunci pintu (kw 1)',
+    'satuan' => "buah",
+    'besaran' => 180900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => '1 set kunci pintu (kw 2)',
+    'satuan' => "buah",
+    'besaran' => 117900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => '1 set handle+kunci',
+    'satuan' => "buah",
+    'besaran' => 279000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Door closer',
+    'satuan' => "buah",
+    'besaran' => 167500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Door holder',
+    'satuan' => "buah",
+    'besaran' => 81000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Door stop',
+    'satuan' => "buah",
+    'besaran' => 58500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Engsel angin',
+    'satuan' => "buah",
+    'besaran' => 27400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Engsel jendela',
+    'satuan' => "buah",
+    'besaran' => 18900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Engsel kupu-kupu',
+    'satuan' => "buah",
+    'besaran' => 41700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Engsel lengan jendela',
+    'satuan' => "buah",
+    'besaran' => 26500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Engsel pintu (kw 1)',
+    'satuan' => "buah",
+    'besaran' => 31500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Engsel pintu (kw 2)',
+    'satuan' => "buah",
+    'besaran' => 23700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Floor hinge',
+    'satuan' => "buah",
+    'besaran' => 500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Gerendel Biasa',
+    'satuan' => "buah",
+    'besaran' => 32600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Grendel',
+    'satuan' => "buah",
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Grendel tanam',
+    'satuan' => "buah",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Handle pintu (kw 1)',
+    'satuan' => "buah",
+    'besaran' => 140800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Hendle Jendela',
+    'satuan' => "buah",
+    'besaran' => 58500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kait angin',
+    'satuan' => "buah",
+    'besaran' => 12000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci lemari',
+    'satuan' => "buah",
+    'besaran' => 14100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci silinder',
+    'satuan' => "buah",
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci slot',
+    'satuan' => "buah",
+    'besaran' => 101300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci tanam',
+    'satuan' => "buah",
+    'besaran' => 65800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci tanam antik',
+    'satuan' => "buah",
+    'besaran' => 144300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci tanam biasa',
+    'satuan' => "buah",
+    'besaran' => 65800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci Tanam ex lokal 2x slag',
+    'satuan' => "buah",
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Kunci tanam kamar mandi',
+    'satuan' => "buah",
+    'besaran' => 46900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Pull handle (kw 1)',
+    'satuan' => "buah",
+    'besaran' => 290800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Pull handle stainless jumbo (kw 1)',
+    'satuan' => "buah",
+    'besaran' => 435200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Rel pintu dorong',
+    'satuan' => "set",
+    'besaran' => 243100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Spring knip',
+    'satuan' => "buah",
+    'besaran' => 21600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Tarikan Pintu Stainless',
+    'satuan' => "buah",
+    'besaran' => 60000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 9,
+    'uraian' => 'Venetions blinds dan vertical blinds',
+    'satuan' => "m2",
+    'besaran' => 140000,
+    'keterangan1' => null,
+]);
+
+
+// Kategori 10
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Glass block 20x20 cm',
+    'satuan' => "buah",
+    'besaran' => 2500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Frame besi kaca nako',
+    'satuan' => "daun",
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Jendela nako',
+    'satuan' => "buah",
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Jendela Kaca Upvc 2 daun',
+    'satuan' => "buah",
+    'besaran' => 2000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Jendela Ornamen GRC',
+    'satuan' => "buah",
+    'besaran' => 596000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Jendela Nako Rangka Aluminium (rangka+kaca 5 mm)',
+    'satuan' => "m2",
+    'besaran' => 242000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca buram 12mm',
+    'satuan' => "m2",
+    'besaran' => 317000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca cermin 5 mm',
+    'satuan' => "m2",
+    'besaran' => 221400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca cermin 6mm',
+    'satuan' => "m2",
+    'besaran' => 270900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca cermin 8 mm',
+    'satuan' => "m2",
+    'besaran' => 796100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca es kabur 3 mm',
+    'satuan' => "m2",
+    'besaran' => 85000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca es kabur 5 mm',
+    'satuan' => "m2",
+    'besaran' => 95000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca gravire 5mm',
+    'satuan' => "m2",
+    'besaran' => 794400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca gravire putih 5mm',
+    'satuan' => "m2",
+    'besaran' => 750000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca laminated 12 mm',
+    'satuan' => "m2",
+    'besaran' => 900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca laminated 8 mm',
+    'satuan' => "m2",
+    'besaran' => 700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca lukis alur 5mm',
+    'satuan' => "m2",
+    'besaran' => 688700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca patri 5 mm',
+    'satuan' => "m2",
+    'besaran' => 1516300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca polos',
+    'satuan' => "m2",
+    'besaran' => 120000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca polos 3 mm',
+    'satuan' => "m2",
+    'besaran' => 120000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca polos 5 mm',
+    'satuan' => "m2",
+    'besaran' => 198000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca polos 6 mm',
+    'satuan' => "m2",
+    'besaran' => 237000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca polos 8 mm',
+    'satuan' => "m2",
+    'besaran' => 226400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca tanpa tripel 5mm',
+    'satuan' => "m2",
+    'besaran' => 3447000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca tempered 12 mm',
+    'satuan' => "m2",
+    'besaran' => 600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca triple 5mm',
+    'satuan' => "m2",
+    'besaran' => 3179400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca triple platinum 5mm',
+    'satuan' => "m2",
+    'besaran' => 3702800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Kaca wireglass 5 mm',
+    'satuan' => "m2",
+    'besaran' => 144800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Profil kaca',
+    'satuan' => "m¹",
+    'besaran' => 14500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Profil kaca tebal 6 mm',
+    'satuan' => "m2",
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Ray Band 3mm',
+    'satuan' => "m2",
+    'besaran' => 85100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 10,
+    'uraian' => 'Ray Band 5mm',
+    'satuan' => "m2",
+    'besaran' => 112400,
+    'keterangan1' => null,
+]);
+
+// KATEGORI 11
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak reservoir fibreglass (kapasitas 1050 liter)',
+    'satuan' => "buah",
+    'besaran' => 1793400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak reservoir fibreglass (kapasitas 1200 liter)',
+    'satuan' => "buah",
+    'besaran' => 1448700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak reservoir fibreglass (kapasitas 1550 liter)',
+    'satuan' => "buah",
+    'besaran' => 2125600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak reservoir fibreglass (kapasitas 2000 liter)',
+    'satuan' => "buah",
+    'besaran' => 2778200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak reservoir fibreglass (kapasitas 650 liter)',
+    'satuan' => "buah",
+    'besaran' => 868300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak cuci stainlesteel',
+    'satuan' => "buah",
+    'besaran' => 230600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak cuci teraso',
+    'satuan' => "buah",
+    'besaran' => 600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak fiberglass 1 m3',
+    'satuan' => "buah",
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak fiberglass 70x70x66 cm',
+    'satuan' => "buah",
+    'besaran' => 328400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bak teraso',
+    'satuan' => "buah",
+    'besaran' => 450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bathup',
+    'satuan' => "unit",
+    'besaran' => 2500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Carbon filter kap. 0,1 m3/hari',
+    'satuan' => "unit",
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Carbon filter kap. 0,6 m3/hari',
+    'satuan' => "unit",
+    'besaran' => 3000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Clean out',
+    'satuan' => "buah",
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Flexible hose',
+    'satuan' => "m'",
+    'besaran' => 55000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Flexible hose',
+    'satuan' => "buah",
+    'besaran' => 50000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Floor drain stainles steel',
+    'satuan' => "buah",
+    'besaran' => 44700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Grab bar',
+    'satuan' => "buah",
+    'besaran' => 120000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Grease trap central fiberglass, kap. 5 m3',
+    'satuan' => "unit",
+    'besaran' => 20000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Grease trap portable fiberglass, kap. 30 Liter',
+    'satuan' => "unit",
+    'besaran' => 1000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Grease trap portable stainless, kap. 30 Liter',
+    'satuan' => "unit",
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Jet washer',
+    'satuan' => "buah",
+    'besaran' => 100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Kloset duduk/monoblok',
+    'satuan' => "buah",
+    'besaran' => 1490000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Kloset jongkok',
+    'satuan' => "buah",
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Komunal 10',
+    'satuan' => "unit",
+    'besaran' => 30000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Komunal 100',
+    'satuan' => "unit",
+    'besaran' => 310000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Komunal 125',
+    'satuan' => "unit",
+    'besaran' => 390000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Komunal 150',
+    'satuan' => "unit",
+    'besaran' => 465000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Komunal 25',
+    'satuan' => "unit",
+    'besaran' => 70000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Komunal 50',
+    'satuan' => "unit",
+    'besaran' => 135000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Komunal 75',
+    'satuan' => "unit",
+    'besaran' => 245000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Kran air',
+    'satuan' => "buah",
+    'besaran' => 41700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Partisi urinoir',
+    'satuan' => "buah",
+    'besaran' => 700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pintu kubikel',
+    'satuan' => "set",
+    'besaran' => 1000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa booster 150 lpm (vertical in line-packaged)',
+    'satuan' => "unit",
+    'besaran' => 1200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa booster 450 lpm (centrifugal end suction)',
+    'satuan' => "unit",
+    'besaran' => 2970000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa jet 100 lpm',
+    'satuan' => "unit",
+    'besaran' => 2000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa jet 27 lpm',
+    'satuan' => "unit",
+    'besaran' => 900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa jet 34 lpm',
+    'satuan' => "unit",
+    'besaran' => 1200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa lift 250 lpm',
+    'satuan' => "unit",
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa lift 80 lpm',
+    'satuan' => "unit",
+    'besaran' => 1000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa transfer 150 lpm (centrifugal end suction)',
+    'satuan' => "unit",
+    'besaran' => 1000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pressure tank 1.000 liter',
+    'satuan' => "unit",
+    'besaran' => 17000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Priming tank fiber 1.000 liter',
+    'satuan' => "unit",
+    'besaran' => 2850000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Priming tank fiber 2.000 liter',
+    'satuan' => "unit",
+    'besaran' => 4000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Priming tank fiber 500 liter',
+    'satuan' => "unit",
+    'besaran' => 1300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Priming tank fiber 800 liter',
+    'satuan' => "unit",
+    'besaran' => 2080000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Robe hook',
+    'satuan' => "buah",
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Roof tank fiberglass kap. 12 m3',
+    'satuan' => "unit",
+    'besaran' => 36000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Roof tank fiberglass kap. 2 m3',
+    'satuan' => "unit",
+    'besaran' => 6000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Roof tank fiberglass kap. 4 m3',
+    'satuan' => "unit",
+    'besaran' => 12000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Roof tank stainless kap. 12 m3',
+    'satuan' => "unit",
+    'besaran' => 48000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Roof tank stainless kap. 2 m3',
+    'satuan' => "unit",
+    'besaran' => 6400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Roof tank stainless kap. 4 m3',
+    'satuan' => "unit",
+    'besaran' => 15000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sand filter kap. 0,1 m3/hari',
+    'satuan' => "unit",
+    'besaran' => 2500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sand filter kap. 14 m3/hari',
+    'satuan' => "unit",
+    'besaran' => 4800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sekat kubikel',
+    'satuan' => "m2",
+    'besaran' => 1200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Septic 0,6',
+    'satuan' => "unit",
+    'besaran' => 3200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Septic 0,8',
+    'satuan' => "unit",
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Septic 1',
+    'satuan' => "unit",
+    'besaran' => 3600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Septic 2',
+    'satuan' => "unit",
+    'besaran' => 4600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Septic 5',
+    'satuan' => "unit",
+    'besaran' => 16000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sewage Treatment Plant (STP) fiberglass kap. 10 m3',
+    'satuan' => "unit",
+    'besaran' => 53200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sewage Treatment Plant (STP) fiberglass kap. 2 m3',
+    'satuan' => "unit",
+    'besaran' => 19500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sewage Treatment Plant (STP) fiberglass kap. 30 m3',
+    'satuan' => "unit",
+    'besaran' => 100000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sewage Treatment Plant (STP) fiberglass kap. 5 m3',
+    'satuan' => "unit",
+    'besaran' => 33000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Sewage Treatment Plant (STP) precast kap. 30 m3',
+    'satuan' => "unit",
+    'besaran' => 84000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Silika filter kap. 0,1 m3/hari',
+    'satuan' => "unit",
+    'besaran' => 500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Soap holder',
+    'satuan' => "buah",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Stop kran PVC 1/2"',
+    'satuan' => "buah",
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Stop kran PVC 3/4"',
+    'satuan' => "buah",
+    'besaran' => 6000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Submersible cutter pump kap. 100 lpm',
+    'satuan' => "unit",
+    'besaran' => 8500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 0,7 m3',
+    'satuan' => "unit",
+    'besaran' => 1100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 1,5 m3',
+    'satuan' => "unit",
+    'besaran' => 1700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 2,5 m3',
+    'satuan' => "unit",
+    'besaran' => 3400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 3 m3',
+    'satuan' => "unit",
+    'besaran' => 4600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 4 m3',
+    'satuan' => "unit",
+    'besaran' => 5500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 5 m3',
+    'satuan' => "unit",
+    'besaran' => 6900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 5,5 m3',
+    'satuan' => "unit",
+    'besaran' => 7100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki toren kap. 6 m3',
+    'satuan' => "unit",
+    'besaran' => 7850000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki Panel FRP kap. 12 m3',
+    'satuan' => "unit",
+    'besaran' => 15000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki panel Stainless Steel kapasitas 12 m3 + Material Bantu / Aksesoris',
+    'satuan' => "unit",
+    'besaran' => 12500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => "Tangki panel GRP kapasitas 12 m3 + Material Bantu / Aksesoris",
+    'satuan' => "unit",
+    'besaran' => 12000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tangki Toren Kapasitas 0,5 m3',
+    'satuan' => "unit",
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Pompa Jet 30 lpm',
+    'satuan' => "unit",
+    'besaran' => 730000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Galian tanah biasa',
+    'satuan' => "m3",
+    'besaran' => 45000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Urukan Tanah',
+    'satuan' => "m2",
+    'besaran' => 65000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Timbunan Pasir',
+    'satuan' => "m3",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton 1/2 dia. 30 cm',
+    'satuan' => "buah",
+    'besaran' => 93000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton 1/2 dia. 40 cm',
+    'satuan' => "buah",
+    'besaran' => 110250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton 1/2 dia. 50 cm',
+    'satuan' => "buah",
+    'besaran' => 115000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton 1/2 dia. 60 cm',
+    'satuan' => "buah",
+    'besaran' => 125500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis beton 1/2 dia. 80 cm',
+    'satuan' => "buah",
+    'besaran' => 150600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton 1/2 dia. 100 cm',
+    'satuan' => "buah",
+    'besaran' => 190000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton dia. 30 cm',
+    'satuan' => "buah",
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton dia. 40 cm',
+    'satuan' => "buah",
+    'besaran' => 120000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton dia. 50 cm',
+    'satuan' => "buah",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton dia. 60 cm',
+    'satuan' => "buah",
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis beton dia. 80 cm',
+    'satuan' => "buah",
+    'besaran' => 255400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Buis Beton dia. 100 cm',
+    'satuan' => "buah",
+    'besaran' => 269500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Ijuk',
+    'satuan' => "kg",
+    'besaran' => 7000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Beton',
+    'satuan' => "m3",
+    'besaran' => 825000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tulangan',
+    'satuan' => "kg",
+    'besaran' => 10300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Bekisting',
+    'satuan' => "m2",
+    'besaran' => 37500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Kanstin uk. 10x20x40',
+    'satuan' => "buah",
+    'besaran' => 27383,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Kanstin uk. 15x40x60',
+    'satuan' => "buah",
+    'besaran' => 93000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 40x40x100 cm',
+    'satuan' => "buah",
+    'besaran' => 855000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 50x50x100 cm',
+    'satuan' => "buah",
+    'besaran' => 1119000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 60x60x100 cm',
+    'satuan' => "buah",
+    'besaran' => 1504000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 80x80x100 cm',
+    'satuan' => "buah",
+    'besaran' => 2560000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 100x100x100 cm',
+    'satuan' => "buah",
+    'besaran' => 3052000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 150x150x100 cm',
+    'satuan' => "buah",
+    'besaran' => 3570000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 200x200x100 cm',
+    'satuan' => "buah",
+    'besaran' => 3930000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Box Culvert 300x300x100 cm',
+    'satuan' => "buah",
+    'besaran' => 4110000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tempat sabun gantung',
+    'satuan' => "buah",
+    'besaran' => 70100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tempat sabun tanam',
+    'satuan' => "buah",
+    'besaran' => 53300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Tissue holder',
+    'satuan' => "buah",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Towel bar',
+    'satuan' => "buah",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Urinoir',
+    'satuan' => "buah",
+    'besaran' => 456800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Wastafel',
+    'satuan' => "buah",
+    'besaran' => 325100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 11,
+    'uraian' => 'Water drain',
+    'satuan' => "set",
+    'besaran' => 321900,
+    'keterangan1' => null,
+]);
+
+
+// kategori 12
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Bensin',
+    'satuan' => "liter",
+    'besaran' => 7800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Bensin (industri)',
+    'satuan' => "liter",
+    'besaran' => 8100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Bentonite',
+    'satuan' => "m3",
+    'besaran' => 20000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Cairan perontok karat',
+    'satuan' => "kg",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Cuka bibit',
+    'satuan' => "liter",
+    'besaran' => 50000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Minyak bekisting',
+    'satuan' => "liter",
+    'besaran' => 16800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Minyak cat',
+    'satuan' => "kg",
+    'besaran' => 24000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Minyak pelumas',
+    'satuan' => "liter",
+    'besaran' => 28000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Minyak tanah',
+    'satuan' => "liter",
+    'besaran' => 15300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Oli hidrolis',
+    'satuan' => "liter",
+    'besaran' => 31300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Oli mesin',
+    'satuan' => "liter",
+    'besaran' => 30300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Premium (industri)',
+    'satuan' => "liter",
+    'besaran' => 9400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Residu',
+    'satuan' => "liter",
+    'besaran' => 21000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Solar',
+    'satuan' => "liter",
+    'besaran' => 6500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Solar (industri)',
+    'satuan' => "liter",
+    'besaran' => 8800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Steamvet',
+    'satuan' => "liter",
+    'besaran' => 51000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Teak oil',
+    'satuan' => "liter",
+    'besaran' => 29200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Thinner',
+    'satuan' => "liter",
+    'besaran' => 21800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 12,
+    'uraian' => 'Thinner A',
+    'satuan' => "liter",
+    'besaran' => 18800,
+    'keterangan1' => null,
+]);
+
+
+//  KATEGORI 13
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Aluminium composite panel',
+    'satuan' => "m2",
+    'besaran' => 225800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Aluminium spandrel 10x600 cm',
+    'satuan' => "lembar",
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Aluminium strip',
+    'satuan' => "m'",
+    'besaran' => 50000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Besi as  drat',
+    'satuan' => "kg",
+    'besaran' => 40200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Besi profil',
+    'satuan' => "kg",
+    'besaran' => 34500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Blok besi cor type skep',
+    'satuan' => "bh",
+    'besaran' => 1055700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Blok besi type ronsel',
+    'satuan' => "bh",
+    'besaran' => 1508800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Buis  brons',
+    'satuan' => "bh",
+    'besaran' => 422000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'C  channel galvanis  lebar 40 mm',
+    'satuan' => "m'",
+    'besaran' => 10700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'C  channel galvanis  lebar 75 mm',
+    'satuan' => "m'",
+    'besaran' => 13600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Cat  meni',
+    'satuan' => "kg",
+    'besaran' => 50600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Daun Pintu HDF 36x720x2100',
+    'satuan' => "unit",
+    'besaran' => 475000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Pintu uPVC lebar 80 cm',
+    'satuan' => "buah",
+    'besaran' => 1043100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Pintu uPVC lebar 70 cm',
+    'satuan' => "buah",
+    'besaran' => 730000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Frame aluminium',
+    'satuan' => "m'",
+    'besaran' => 38333,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Rangka Aluminium',
+    'satuan' => "m'",
+    'besaran' => 39000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Gembok',
+    'satuan' => "bh",
+    'besaran' => 102300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Grease',
+    'satuan' => "kg",
+    'besaran' => 67800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Hollow  galvanis  20x40x0,4 mm',
+    'satuan' => "m'",
+    'besaran' => 7500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Metal Hollow 20x40 mm',
+    'satuan' => "m'",
+    'besaran' => 7500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Hollow galvanis 40x40x0,4 mm',
+    'satuan' => "m'",
+    'besaran' => 10700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Jalusi aluminium',
+    'satuan' => "m2",
+    'besaran' => 600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Jalusi uPVC',
+    'satuan' => "buah",
+    'besaran' => 49500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Kontra mur type ronsel',
+    'satuan' => "bh",
+    'besaran' => 343800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Kontra mur type skep',
+    'satuan' => "bh",
+    'besaran' => 301300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'kopel/universal join',
+    'satuan' => "bh",
+    'besaran' => 542800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Kusen aluminium 4"  putih',
+    'satuan' => "m'",
+    'besaran' => 107000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Kusen Bovenlight Upvc',
+    'satuan' => "bauh",
+    'besaran' => 270000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Lager type ronsel',
+    'satuan' => "bh",
+    'besaran' => 905000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Lager type skep',
+    'satuan' => "bh",
+    'besaran' => 693400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Mur baut  1/2"  x  4"',
+    'satuan' => "bh",
+    'besaran' => 16100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Mur baut  5/8"  x  4"',
+    'satuan' => "bh",
+    'besaran' => 19500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Mur baut  M8 steinless',
+    'satuan' => "bh",
+    'besaran' => 19500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Baut dan Mur f12 L=4"',
+    'satuan' => "buah",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Baut dan Mur f12, L=6"',
+    'satuan' => "buah",
+    'besaran' => 22000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Baut dan Mur f12, L=7"',
+    'satuan' => "buah",
+    'besaran' => 23000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Ring Plat',
+    'satuan' => "buah",
+    'besaran' => 2500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Mur brons  ronsel',
+    'satuan' => "kg",
+    'besaran' => 210400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Mur brons  type skep',
+    'satuan' => "kg",
+    'besaran' => 210400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Pen spindie type ronsel',
+    'satuan' => "bh",
+    'besaran' => 102300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Penyangga roda gigi',
+    'satuan' => "bh",
+    'besaran' => 542800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Pintu alluminium',
+    'satuan' => "m'",
+    'besaran' => 73600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Pintu KM  aluminium',
+    'satuan' => "unit",
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Pintu lipat  besi',
+    'satuan' => "m2",
+    'besaran' => 494200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Pintu lipat PVC',
+    'satuan' => "m2",
+    'besaran' => 750000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Plat  peluncur',
+    'satuan' => "kg",
+    'besaran' => 210400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Plat besi 3 mm',
+    'satuan' => "kg",
+    'besaran' => 34500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Profil aluminium',
+    'satuan' => "m'",
+    'besaran' => 130000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Profil Aluminium ”T”',
+    'satuan' => "m'",
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Profil slimar aluminium',
+    'satuan' => "m'",
+    'besaran' => 60000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Rangka metal hollow 40.40.1,2 mm',
+    'satuan' => "m'",
+    'besaran' => 16200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Rangka metal hollow 40.40.2 mm',
+    'satuan' => "m'",
+    'besaran' => 19000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'roda gigi nanas',
+    'satuan' => "bh",
+    'besaran' => 1025800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Roda gigi pinggiran',
+    'satuan' => "bh",
+    'besaran' => 1750300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Rolling door aluminium',
+    'satuan' => "m2",
+    'besaran' => 600600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Rolling door besi',
+    'satuan' => "m2",
+    'besaran' => 509100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Rubber seal',
+    'satuan' => "m'",
+    'besaran' => 1811200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Sliding pintu J4',
+    'satuan' => "buah",
+    'besaran' => 456000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Stang draft  diameter 1,5"  +  mur baut',
+    'satuan' => "m'",
+    'besaran' => 2750000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Stang draft  diameter 1,75"  +  mur baut',
+    'satuan' => "m'",
+    'besaran' => 3150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Stang draft  diameter 2"  +  mur baut',
+    'satuan' => "m'",
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Stang draft  diameter 2,25"  +  mur baut',
+    'satuan' => "m'",
+    'besaran' => 3800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Stang gembok',
+    'satuan' => "bh",
+    'besaran' => 78200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Stang pemutar type ronsel',
+    'satuan' => "bh",
+    'besaran' => 1146500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Stang pemutar type skep',
+    'satuan' => "bh",
+    'besaran' => 633600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Sunscreen aluminium',
+    'satuan' => "m2",
+    'besaran' => 381900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Talang galvalum lebar 50 cm tebal 0,4 mm',
+    'satuan' => "m'",
+    'besaran' => 53300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Talang datar/jurai seng lebar 90cm',
+    'satuan' => "m",
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Talang Seng 1/2 lingkaran diameter 15cm',
+    'satuan' => "m",
+    'besaran' => 133000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 13,
+    'uraian' => 'Thinner',
+    'satuan' => "ltr",
+    'besaran' => 35600,
+    'keterangan1' => null,
+]);
+
+
+// KATEGORI 14
+
+
+
+
+
+
+
+
+
+
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Hanger tray panjang 2,5 m',
+    'satuan' => "buah",
+    'besaran' => 300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 10 mm² (0,10 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 29000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 16 mm² (0,16 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 33000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 25 mm² (0,25 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 53000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 35 mm² (0,35 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 72000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 4 mm² (0,04 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 12000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 50 mm² (0,50 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 95500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 6 mm² (0,06 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 13200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'BCC 6 mm2 (0,06 kg/m) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 38300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 70 mm² (0,70 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 136000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel BCC 95 mm² (0,95 kg/m)',
+    'satuan' => "m'",
+    'besaran' => 185000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 1 x 150 mm²',
+    'satuan' => "m'",
+    'besaran' => 275000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 2 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 23000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 2 x 1,5 mm2 + PVC Conduit HI 20 mm dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 27100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 2 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 33500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 2 x 2,5 mm2 + PVC Conduit HI 20 mm dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 37600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 3 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 40000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 4 x 150 mm²',
+    'satuan' => "m'",
+    'besaran' => 1607400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 4 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 90000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel FRC 4 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 110000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 3200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 33000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 5300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 8300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 12200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 2 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 9200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 3 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 14000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 3 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 19448,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 5 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 51500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 35 mm²',
+    'satuan' => "m'",
+    'besaran' => 71250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYA 1 x 95 mm²',
+    'satuan' => "m'",
+    'besaran' => 181000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 2 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 22750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 2 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 60750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 2 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 82000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 2 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 30500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 2 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 35200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 2 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 43350,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 3 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 28500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 3 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 79600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 3 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 128900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 3 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 32900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 3 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 49000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 3 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 63500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 29400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 100600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 120 mm²',
+    'satuan' => "m'",
+    'besaran' => 969500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 150 mm²',
+    'satuan' => "m'",
+    'besaran' => 1187650,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 159300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 185 mm²',
+    'satuan' => "m'",
+    'besaran' => 1470650,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 38600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 240 mm²',
+    'satuan' => "m'",
+    'besaran' => 1921500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 25 mm²',
+    'satuan' => "m'",
+    'besaran' => 247200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 300 mm²',
+    'satuan' => "m'",
+    'besaran' => 2392250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 35 mm²',
+    'satuan' => "m'",
+    'besaran' => 314750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 66000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 50 mm²',
+    'satuan' => "m'",
+    'besaran' => 411600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 70200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 70 mm²',
+    'satuan' => "m'",
+    'besaran' => 575250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYFGBY 4 x 95 mm²',
+    'satuan' => "m'",
+    'besaran' => 743750,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 2 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 8880,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 2 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 49000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 2 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 13250,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 2 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 19950,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 2 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 29000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 3 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 11400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 3 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 69200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 3 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 21300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 3 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 27000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 3 x 2,5 mm2 (LSOH)',
+    'satuan' => "M'",
+    'besaran' => 21300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 3 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 43100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 4 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 14400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 4 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 92900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 4 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 4 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 22700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 4 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 37000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYM 4 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 54400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYMHY 2 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 9300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYMHY 2 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 13900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYMHY 3 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 13400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYMHY 2(3 x 1,5 mm2) + Conduit PVC HI 20 mm dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYMHY 3 x 1,5 mm2 + Conduit PVC HI 20 mm dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 17500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYMHY 3 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 21300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYMHY 4 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 28700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 120 mm²',
+    'satuan' => "m'",
+    'besaran' => 246500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 150 mm²',
+    'satuan' => "m'",
+    'besaran' => 303000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 36000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 185 mm²',
+    'satuan' => "m'",
+    'besaran' => 377000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 25 mm²',
+    'satuan' => "m'",
+    'besaran' => 56000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 250 mm²',
+    'satuan' => "m'",
+    'besaran' => 496000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 300 mm²',
+    'satuan' => "m'",
+    'besaran' => 619000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 35 mm²',
+    'satuan' => "m'",
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 7500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 400 mm²',
+    'satuan' => "m'",
+    'besaran' => 786000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 50 mm²',
+    'satuan' => "m'",
+    'besaran' => 99600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 500 mm²',
+    'satuan' => "m'",
+    'besaran' => 1004400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 12000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 630 mm²',
+    'satuan' => "m'",
+    'besaran' => 1245000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 70 mm²',
+    'satuan' => "m'",
+    'besaran' => 142000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 1 x 95 mm²',
+    'satuan' => "m'",
+    'besaran' => 196500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 2 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 12000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 2 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 57500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 2 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 92000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 2 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 16560,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 2 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 23000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 2 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 35000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 15000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 74600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 114000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 21500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 25 mm²',
+    'satuan' => "m'",
+    'besaran' => 174900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 35 mm²',
+    'satuan' => "m'",
+    'besaran' => 235500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 33000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 50 mm²',
+    'satuan' => "m'",
+    'besaran' => 305700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 3 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 46000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 1,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 18600,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 10 mm²',
+    'satuan' => "m'",
+    'besaran' => 96000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 120 mm²',
+    'satuan' => "m'",
+    'besaran' => 1011900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 150 mm²',
+    'satuan' => "m'",
+    'besaran' => 1245000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 16 mm²',
+    'satuan' => "m'",
+    'besaran' => 148500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 185 mm²',
+    'satuan' => "m'",
+    'besaran' => 1552800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 2,5 mm²',
+    'satuan' => "m'",
+    'besaran' => 28620,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 240 mm²',
+    'satuan' => "m'",
+    'besaran' => 2044800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 25 mm²',
+    'satuan' => "m'",
+    'besaran' => 228000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 300 mm²',
+    'satuan' => "m'",
+    'besaran' => 2550900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 35 mm²',
+    'satuan' => "m'",
+    'besaran' => 310500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 4 mm²',
+    'satuan' => "m'",
+    'besaran' => 43000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 50 mm²',
+    'satuan' => "m'",
+    'besaran' => 412200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 6 mm²',
+    'satuan' => "m'",
+    'besaran' => 61000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 70 mm²',
+    'satuan' => "m'",
+    'besaran' => 584700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel NYY 4 x 95 mm²',
+    'satuan' => "m'",
+    'besaran' => 805200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel STP AWG 18',
+    'satuan' => "m'",
+    'besaran' => 4500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel STP AWG 18 + PVC Conduit HI 20 mm (dari MCFA ke TB) dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 10700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel ITC 2x2x0,6 mm2',
+    'satuan' => "m'",
+    'besaran' => 3924,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel ITC 2 x 2 x 0,6 mm2 + PVC Conduit HI 20 mm dan aksesoris',
+    'satuan' => "m'",
+    'besaran' => 13100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel UTP CAT 6',
+    'satuan' => "m'",
+    'besaran' => 1500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Coaxial 7C-2V',
+    'satuan' => "m'",
+    'besaran' => 22800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Ladder 500 x100 mm',
+    'satuan' => "unit",
+    'besaran' => 494000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Ladder 600 x100 mm',
+    'satuan' => "unit",
+    'besaran' => 535000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Ladder 800 x100 mm',
+    'satuan' => "unit",
+    'besaran' => 569000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray 600 x 100 mm Hotdip Galvanized',
+    'satuan' => "unit",
+    'besaran' => 1639000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray 600 x100 mm Elektro Galvanized',
+    'satuan' => "unit",
+    'besaran' => 1255500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray 600 x 100 mm Powder Coating',
+    'satuan' => "unit",
+    'besaran' => 890000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 1000 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 1000 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 670000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 1000 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 710000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 1000 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 750000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 1000 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 670000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 1000 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 710000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 900 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 550000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 900 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 570000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 900 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 590000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 900 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 900 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 630000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 900 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 800 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 800 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 430000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 800 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 800 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 470000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 800 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 490000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 800 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 510000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 700 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 700 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 700 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 700 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 410000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 700 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 430000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 700 x 100 mm TRC',
+    'satuan' => "unit",
+    'besaran' => 450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 600 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 470000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => '(Horizontal) 600 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => "unit",
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Pemasangan 1 Unit Kabel Tray (Horizontal) 600 x 100 mm TRC OCP',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 500 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 385000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 500 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 395000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 500 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 415000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 500 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 430000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 500 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 445000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 400 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 400 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 365000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 400 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 400 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 395000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 400 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 410000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 300 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 300 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 320000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 300 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 300 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 300 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 200 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 200 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 200 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 270000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 200 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 280000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 200 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 150 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 150 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 260000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 150 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 280000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 150 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 150 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 320000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Horizontal) 150 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 1000 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 1000 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 1000 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 1000 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 1000 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 410000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 1000 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 420000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 900 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 900 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 900 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 900 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 900 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 900 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 800 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 800 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 800 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 800 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 800 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 800 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 700 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 700 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 700 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 700 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 700 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 700 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 600 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 600 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 600 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 600 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 600 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 390000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 500 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 500 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 500 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 500 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 500 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 400 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 400 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 400 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 400 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 400 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 300 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 300 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 300 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 300 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 300 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 200 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 330000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 200 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 200 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 200 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 200 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 150 x 100 mm TRU Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 330000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 150 x 100 mm TRU Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 340000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 150 x 100 mm TRU OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 150 x 100 mm TRC Powder Coating dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 360000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 150 x 100 mm TRC Hot Dip Galvanized dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 370000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Tray (Vertikal) 150 x 100 mm TRC OCP dan aksesoris',
+    'satuan' => 'Unit',
+    'besaran' => 380000,
+    'keterangan1' => null,
+]);
+
+// Kabel tray per meter
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel tray 200 x 100 mm',
+    'satuan' => 'm\'',
+    'besaran' => 175000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel tray 300 x 100 mm',
+    'satuan' => 'm\'',
+    'besaran' => 219000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel tray 400 x 100 mm',
+    'satuan' => 'm\'',
+    'besaran' => 265000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel tray 500 x 100 mm',
+    'satuan' => 'm\'',
+    'besaran' => 309000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel tray 600 x 100 mm',
+    'satuan' => 'm\'',
+    'besaran' => 352000,
+    'keterangan1' => null,
+]);
+
+// Klem, mur, dan conduit
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Klem kabel tray',
+    'satuan' => 'buah',
+    'besaran' => 6000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Klem 20 mm',
+    'satuan' => 'buah',
+    'besaran' => 900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Mur baut kabel tray',
+    'satuan' => 'buah',
+    'besaran' => 1000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'PVC conduit HI 20 mm²',
+    'satuan' => 'm\'',
+    'besaran' => 4100,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Flexible Conduit 20 mm',
+    'satuan' => 'm',
+    'besaran' => 5400,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'PVC conduit HI 32 mm²',
+    'satuan' => 'm1',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Conduit HI 20 mm',
+    'satuan' => 'm',
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+// Saklar dan stop kontak
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Saklar Tunggal',
+    'satuan' => 'buah',
+    'besaran' => 24000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Saklar Ganda',
+    'satuan' => 'buah',
+    'besaran' => 33000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Saklar Triple',
+    'satuan' => 'buah',
+    'besaran' => 76000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Grid Switch',
+    'satuan' => 'buah',
+    'besaran' => 108000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Grid Switch 4 x 2 Gang',
+    'satuan' => 'buah',
+    'besaran' => 180000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Stop Kontak',
+    'satuan' => 'buah',
+    'besaran' => 70000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Stop Kontak AC',
+    'satuan' => 'buah',
+    'besaran' => 67900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'T Dus',
+    'satuan' => 'buah',
+    'besaran' => 4000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Socket Conduit 20 mm',
+    'satuan' => 'buah',
+    'besaran' => 700,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Klem 20 mm',
+    'satuan' => 'buah',
+    'besaran' => 298,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Isolasi',
+    'satuan' => 'm',
+    'besaran' => 416,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'lasdop',
+    'satuan' => 'buah',
+    'besaran' => 580,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Elbow',
+    'satuan' => 'buah',
+    'besaran' => 550,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fischer S6 + Sekrup',
+    'satuan' => 'buah',
+    'besaran' => 21.5,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'kWh meter Token 1 Phase',
+    'satuan' => 'unit',
+    'besaran' => 534000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'kWh meter Token 3 Phase',
+    'satuan' => 'unit',
+    'besaran' => 3150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Software sistem kwh meter swakelola prabayar',
+    'satuan' => 'buah',
+    'besaran' => 2000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'PC Server',
+    'satuan' => 'buah',
+    'besaran' => 33900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Utama Tegangan Menengah',
+    'satuan' => 'unit',
+    'besaran' => 3100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Utama Tegangan Rendah',
+    'satuan' => 'unit',
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'MDP Floor Standing',
+    'satuan' => 'unit',
+    'besaran' => 4500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'MDP Wall Mounted',
+    'satuan' => 'Unit',
+    'besaran' => 4900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'SDP Floor Standing',
+    'satuan' => 'unit',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'SDP Wall Mounted',
+    'satuan' => 'unit',
+    'besaran' => 3300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Lantai Wall Mounted 800x600x200',
+    'satuan' => 'Unit',
+    'besaran' => 3200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Lantai Wall Mounted 600x400x200',
+    'satuan' => 'unit',
+    'besaran' => 3000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel kWh Meter',
+    'satuan' => 'unit',
+    'besaran' => 2500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Penerang Luar Outdoor termasuk material batu',
+    'satuan' => 'Unit',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Kontrol Pompa',
+    'satuan' => 'unit',
+    'besaran' => 5500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Power Gondola termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 5700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Power Elektronik termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Power AHU termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 4900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Power AC termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 1700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Power Chiller termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 2300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Kontrol Power Chiller termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 2500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Kontrol Power Cooling Tower termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 1900000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Panel Kontrol Fan Presurisasi termasuk material bantu',
+    'satuan' => 'unit',
+    'besaran' => 2100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'MCB Box',
+    'satuan' => 'unit',
+    'besaran' => 450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Genset Kap : 75kVA Silent Type dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 75000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Genset Kap : 100 kVA Silent Type dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 79000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Genset Kap : 400 kVA Silent Type dan aksesoris',
+    'satuan' => 'unit',
+    'besaran' => 85000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'UPS 5 KVA',
+    'satuan' => 'unit',
+    'besaran' => 18000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Tangki Solar Harian 500 liter',
+    'satuan' => 'unit',
+    'besaran' => 4000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Hand Pump Solar dan aksesoris',
+    'satuan' => 'buah',
+    'besaran' => 4000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Trafo Kap : 630 Kva : Synthetic Oil Ester',
+    'satuan' => 'unit',
+    'besaran' => 17000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Downlight 5 Inch 14,5 Watt LED + Aksesoris',
+    'satuan' => 'buah',
+    'besaran' => 82000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu LED E27 10 watt + Aksesoris',
+    'satuan' => 'buah',
+    'besaran' => 22000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fitting E27 + Aksesoris',
+    'satuan' => 'buah',
+    'besaran' => 5200,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Nicad Battery',
+    'satuan' => 'buah',
+    'besaran' => 110000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu LED E27 19 watt',
+    'satuan' => 'buah',
+    'besaran' => 70500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'RM TKI 2 x 16 Watt LED',
+    'satuan' => 'unit',
+    'besaran' => 265000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Sorot LED 100 Watt',
+    'satuan' => 'unit',
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Sorot RGB 30 Watt untuk Outdoor',
+    'satuan' => 'unit',
+    'besaran' => 34000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Pelindung Lampu',
+    'satuan' => 'unit',
+    'besaran' => 18000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu High Bay 100 Watt',
+    'satuan' => 'unit',
+    'besaran' => 1620000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Eksit LED 3 Watt c/w Battery',
+    'satuan' => 'buah',
+    'besaran' => 148000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu TLED 1 x 14 Watt 2.100 Lumen',
+    'satuan' => 'buah',
+    'besaran' => 65000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu TLED 1 x 24 Watt 2.100 Lumen',
+    'satuan' => 'buah',
+    'besaran' => 72000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu TLED 2 x 24 Watt 2.100 Lumen',
+    'satuan' => 'buah',
+    'besaran' => 144000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu PJU LED 50 Watt',
+    'satuan' => 'buah',
+    'besaran' => 495000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Tiang PJU Kawasan 6-7 m',
+    'satuan' => 'buah',
+    'besaran' => 2000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu PJU LED 50 Watt + Solar Cell',
+    'satuan' => 'buah',
+    'besaran' => 700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Taman 25 Watt + Tiang 1 m',
+    'satuan' => 'buah',
+    'besaran' => 155000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fitting',
+    'satuan' => 'buah',
+    'besaran' => 16000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu LED 7 Watt',
+    'satuan' => 'buah',
+    'besaran' => 27000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu LED 9 Watt',
+    'satuan' => 'buah',
+    'besaran' => 34000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Baret 20 Watt',
+    'satuan' => 'buah',
+    'besaran' => 77000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Baret 32 Watt',
+    'satuan' => 'buah',
+    'besaran' => 97000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Pijar 40 Watt',
+    'satuan' => 'buah',
+    'besaran' => 28000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu TL 18 Watt',
+    'satuan' => 'buah',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu TLED 18 Watt',
+    'satuan' => 'buah',
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu TL 36 Watt',
+    'satuan' => 'buah',
+    'besaran' => 25000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu TLED 36 Watt',
+    'satuan' => 'buah',
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lampu Sport Floodlight Led',
+    'satuan' => 'buah',
+    'besaran' => 375000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Brackket',
+    'satuan' => 'buah',
+    'besaran' => 11500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Junction Box IP Rated',
+    'satuan' => 'buah',
+    'besaran' => 142000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Kabel Fiber Optic Dual Core Single Mode',
+    'satuan' => 'm\'',
+    'besaran' => 11300,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Pipa HDPE Conduit 20 mm',
+    'satuan' => 'm\'',
+    'besaran' => 3800,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'DMX LED Controller 1 Universe',
+    'satuan' => 'buah',
+    'besaran' => 1400000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Sensor Cahaya',
+    'satuan' => 'buah',
+    'besaran' => 58000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Sensor Gerak',
+    'satuan' => 'buah',
+    'besaran' => 65900,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'MCP-FA (Semi Addressable 1 Loop)',
+    'satuan' => 'unit',
+    'besaran' => 26250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Programming, Testing & commisioning',
+    'satuan' => 'lot',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'PC Komputer',
+    'satuan' => 'unit',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Alarm Printer',
+    'satuan' => 'unit',
+    'besaran' => 2500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Report Printer',
+    'satuan' => 'unit',
+    'besaran' => 1900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Announciator',
+    'satuan' => 'unit',
+    'besaran' => 2100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Terminal Box Fire Alarm',
+    'satuan' => 'unit',
+    'besaran' => 265000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Smoke Detector Addressable',
+    'satuan' => 'unit',
+    'besaran' => 780000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Rate of Rise Detector Addressable',
+    'satuan' => 'unit',
+    'besaran' => 343000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fix Heat Detector Addressable',
+    'satuan' => 'unit',
+    'besaran' => 318000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Smoke Detector Konvensional',
+    'satuan' => 'unit',
+    'besaran' => 245000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Rate of Rise Detector Konvensional',
+    'satuan' => 'unit',
+    'besaran' => 240000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fix Heat Detector Konvensioanl',
+    'satuan' => 'unit',
+    'besaran' => 290000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Lamp Indicator',
+    'satuan' => 'unit',
+    'besaran' => 57000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Manual Break Glass',
+    'satuan' => 'unit',
+    'besaran' => 60000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Horn Strobe',
+    'satuan' => 'unit',
+    'besaran' => 175000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fire Fighting Telepon',
+    'satuan' => 'unit',
+    'besaran' => 135000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Alarm Bell',
+    'satuan' => 'unit',
+    'besaran' => 85000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Sirine Module',
+    'satuan' => 'buah',
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Control Module',
+    'satuan' => 'buah',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Relay Module',
+    'satuan' => 'buah',
+    'besaran' => 103500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Isolator Module',
+    'satuan' => 'buah',
+    'besaran' => 220000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Monitor Module',
+    'satuan' => 'buah',
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Rectifier',
+    'satuan' => 'unit',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Power Surge Arrester',
+    'satuan' => 'unit',
+    'besaran' => 1279000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'UPS 2 KVA 15 Menit',
+    'satuan' => 'unit',
+    'besaran' => 3800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'UPS 2 KVA 30 Menit',
+    'satuan' => 'unit',
+    'besaran' => 4100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'UPS 2 KVA 1 Jam',
+    'satuan' => 'unit',
+    'besaran' => 4900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'UPS 2 KVA 2 Jam',
+    'satuan' => 'unit',
+    'besaran' => 5200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'UPS 2 KVA 4 Jam',
+    'satuan' => 'unit',
+    'besaran' => 5700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'End of Line Resistor',
+    'satuan' => 'unit',
+    'besaran' => 20000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Patch Panel UTP Cat 6 4 Port',
+    'satuan' => 'unit',
+    'besaran' => 1540000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Wiring Management',
+    'satuan' => 'unit',
+    'besaran' => 110000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'PoE Switch HUB',
+    'satuan' => 'unit',
+    'besaran' => 273000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Network Video Recorder (NVR) Kapasitas 32 Chanel',
+    'satuan' => 'unit',
+    'besaran' => 5500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => '8 TB Hardisk',
+    'satuan' => 'unit',
+    'besaran' => 1960000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Rak 19" 12 U Lengkap dengan Power Outlet',
+    'satuan' => 'unit',
+    'besaran' => 770000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'LCD Monitor 32"',
+    'satuan' => 'unit',
+    'besaran' => 2380000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Bracket Monitor 32"',
+    'satuan' => 'unit',
+    'besaran' => 88500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'LCD Monitor 50"',
+    'satuan' => 'unit',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Bracket Monitor 50"',
+    'satuan' => 'unit',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Keyboard + Mouse',
+    'satuan' => 'unit',
+    'besaran' => 350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Indoor Fix Dome IP Camera',
+    'satuan' => 'unit',
+    'besaran' => 465000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Outdoor Fix Dome IP Camera',
+    'satuan' => 'unit',
+    'besaran' => 504000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'MDF-SS',
+    'satuan' => 'unit',
+    'besaran' => 1450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Selector Switch c/w Control Panel',
+    'satuan' => 'unit',
+    'besaran' => 850000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Power Amplifier 360 Watt',
+    'satuan' => 'unit',
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Power Amplifier 240 Watt',
+    'satuan' => 'unit',
+    'besaran' => 1200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Power Amplifier 120 Watt',
+    'satuan' => 'unit',
+    'besaran' => 1000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'System Controller (Mixer Pre Amp + Equalizer)',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'VCD/DVD/MP3/Mp4',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Automatic Alarm System',
+    'satuan' => 'unit',
+    'besaran' => 1000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Paging Mic Keypad',
+    'satuan' => 'unit',
+    'besaran' => 640000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'UPS 1 KVA 4 Jam',
+    'satuan' => 'unit',
+    'besaran' => 2475000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Rack Cabinet',
+    'satuan' => 'unit',
+    'besaran' => 670000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Terminal Box Tata Suara (TBTS)',
+    'satuan' => 'unit',
+    'besaran' => 75000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Ceiling Speaker',
+    'satuan' => 'unit',
+    'besaran' => 680000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Wall Speaker',
+    'satuan' => 'unit',
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Horn Speaker',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Tiang',
+    'satuan' => 'm\'',
+    'besaran' => 55500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'MDF 2 x 8 Pair',
+    'satuan' => 'unit',
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'MDF 2 x 10 Pair',
+    'satuan' => 'unit',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Pemasangan 1 Unit PABX Kap: 1 Line 10 Extension',
+    'satuan' => 'unit',
+    'besaran' => 1000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Pemasangan 1 Unit PABX Kap: 1 Line 8 Extension',
+    'satuan' => 'unit',
+    'besaran' => 870000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Terminal Box Telepon',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Outlet Telepon',
+    'satuan' => 'unit',
+    'besaran' => 102000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Server / Gateway c/w PC, Monitor, Keyboard, Mouse',
+    'satuan' => 'unit',
+    'besaran' => 6500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Main Switch HUB 24 Port',
+    'satuan' => 'unit',
+    'besaran' => 950000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Main Switch HUB 12 Port',
+    'satuan' => 'unit',
+    'besaran' => 650000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Router Broadband',
+    'satuan' => 'unit',
+    'besaran' => 550000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fire Wall + Anti Virus',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Outlet Data',
+    'satuan' => 'unit',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Patch Cord',
+    'satuan' => 'unit',
+    'besaran' => 30000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Patch Panel 24 Port',
+    'satuan' => 'unit',
+    'besaran' => 500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Wifi Access Point (Wifi 6 Radius 50 M)',
+    'satuan' => 'unit',
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Switch Hub 8 Port',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Media Converter',
+    'satuan' => 'unit',
+    'besaran' => 110000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'OTB',
+    'satuan' => 'unit',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Touch Screen Panel 7"',
+    'satuan' => 'unit',
+    'besaran' => 2300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Touch Screen Panel 10"',
+    'satuan' => 'unit',
+    'besaran' => 2500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Touch Screen Panel 12"',
+    'satuan' => 'unit',
+    'besaran' => 2900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Touch Screen Panel 14"',
+    'satuan' => 'unit',
+    'besaran' => 3200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Wall Mounted Rack 15U',
+    'satuan' => 'unit',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Workstation, Meja+Kursi',
+    'satuan' => 'unit',
+    'besaran' => 2550000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Connector',
+    'satuan' => 'unit',
+    'besaran' => 2550,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Splitter TV 6 Port',
+    'satuan' => 'unit',
+    'besaran' => 100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Splitter TV 7 Port',
+    'satuan' => 'unit',
+    'besaran' => 125000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Terminal Bocx TV',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Antena UHF',
+    'satuan' => 'unit',
+    'besaran' => 130000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Antena VHF',
+    'satuan' => 'unit',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'AC Wall Mounted Kap : 5.000 BTUH',
+    'satuan' => 'unit',
+    'besaran' => 3200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'AC Wall Mounted Kap : 6.500 BTUH',
+    'satuan' => 'unit',
+    'besaran' => 3800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'AC Wall Mounted Kap : 7.000 BTUH',
+    'satuan' => 'unit',
+    'besaran' => 4200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'AC Wall Mounted Kap : 9.000 BTUH',
+    'satuan' => 'unit',
+    'besaran' => 4500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'AC Wall Mounted Kap : 12.000 BTUH',
+    'satuan' => 'unit',
+    'besaran' => 5300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'AC Wall Mounted Kap : 24.000 BTUH',
+    'satuan' => 'unit',
+    'besaran' => 7600000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'AC Wall Mounted Kap : 35.000 BTUH',
+    'satuan' => 'unit',
+    'besaran' => 10000000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Ceiling Fan, 50 CFM',
+    'satuan' => 'unit',
+    'besaran' => 900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Ceiling Fan, 75 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Ceiling Fan, 100 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Ceiling Fan, 200 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Inline Fan, 500 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Inline Fan, 700 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Axial Fan ; 2.600 CFM',
+    'satuan' => 'unit',
+    'besaran' => 780000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Axial Fan ; 2.800 CFM',
+    'satuan' => 'unit',
+    'besaran' => 860000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Axial Fan ; 3.200 CFM',
+    'satuan' => 'unit',
+    'besaran' => 995000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Axial Fan ; 3.500 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1020000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Axial Fan ; 4.000 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1350000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Axial Fan ; 5.500 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1700000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Rotary Fan',
+    'satuan' => 'unit',
+    'besaran' => 750000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Ceiling Fan Rotary',
+    'satuan' => 'unit',
+    'besaran' => 1500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Bifurcated Fan; 1.500 CFM',
+    'satuan' => 'unit',
+    'besaran' => 8300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 75 CFM',
+    'satuan' => 'unit',
+    'besaran' => 1800000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 100 CFM',
+    'satuan' => 'unit',
+    'besaran' => 2100000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 150 CFM',
+    'satuan' => 'unit',
+    'besaran' => 2300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 370 CFM',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 375 CFM',
+    'satuan' => 'unit',
+    'besaran' => 2900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 500 CFM',
+    'satuan' => 'unit',
+    'besaran' => 3500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 600 CFM',
+    'satuan' => 'unit',
+    'besaran' => 3900000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Propeller Fan, 1200 CFM',
+    'satuan' => 'unit',
+    'besaran' => 4500000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Intake Grille 600 x 300 mm',
+    'satuan' => 'unit',
+    'besaran' => 95000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Intake Grille 650 x 350 mm',
+    'satuan' => 'unit',
+    'besaran' => 115000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Intake Grille 800 x 350 mm',
+    'satuan' => 'unit',
+    'besaran' => 130000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Intake Grille 800 x 400 mm',
+    'satuan' => 'unit',
+    'besaran' => 145000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Intake Louvre 700 x 400 mm',
+    'satuan' => 'unit',
+    'besaran' => 135000,
+    'keterangan1' => null,
+]);
+
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fan Louvre 750 x 400 mm',
+    'satuan' => 'unit',
+    'besaran' => 150000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fan Louvre 900 x 500 mm',
+    'satuan' => 'unit',
+    'besaran' => 220000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fan Louvre 1.000 x 400 mm',
+    'satuan' => 'unit',
+    'besaran' => 250000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Fan Louvre 1.000 x 450 mm',
+    'satuan' => 'unit',
+    'besaran' => 270000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Exhaust Grille 150 x 150 mm',
+    'satuan' => 'unit',
+    'besaran' => 140000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Exhaust Grille 200 x 200 mm',
+    'satuan' => 'unit',
+    'besaran' => 160000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Exhaust Grille 600 x 300 mm',
+    'satuan' => 'unit',
+    'besaran' => 200000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Exhaust Grille 650 x 350 mm',
+    'satuan' => 'unit',
+    'besaran' => 230000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Exhaust Grille 900 x 400 mm',
+    'satuan' => 'unit',
+    'besaran' => 300000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Exhaust Louvre',
+    'satuan' => 'unit',
+    'besaran' => 450000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'ZINK BJLS',
+    'satuan' => 'unit',
+    'besaran' => 222000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Flinkote',
+    'satuan' => 'lot',
+    'besaran' => 56500,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'finish Cat',
+    'satuan' => 'lot',
+    'besaran' => 92000,
+    'keterangan1' => null,
+]);
+
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 14,
+    'uraian' => 'Hanger + Support',
+    'satuan' => 'lolt',
+    'besaran' => 55000,
+    'keterangan1' => null,
+]);
+
+// KATEGORI 15
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Bak Kontrol Pemeriksaan dari Batu Bata 45 x 45 x 45 cm + Tutup Beton 45 x 45 x 10 cm', 'satuan' => 'buah', 'besaran' => 829900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Terminal Busbar 300 x 50 x 5 mm', 'satuan' => 'buah', 'besaran' => 135000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Batang Tembaga Pembumian Dia.5/8” (kedalaman min. 12 m)', 'satuan' => 'batang', 'besaran' => 1135000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Pantek (kedalaman min. 12 m)', 'satuan' => 'lot', 'besaran' => 245000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Kabel BC 95 mm2', 'satuan' => 'm', 'besaran' => 145000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Kabel Skun 95 mm2', 'satuan' => 'm', 'besaran' => 26400, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Rod Coupling', 'satuan' => 'buah', 'besaran' => 130000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Material Bantu', 'satuan' => 'lot', 'besaran' => 50000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Batang Tembaga Pembumian Dia.3/4” (kedalaman min. 12 m)', 'satuan' => 'batang', 'besaran' => 1666000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Air Terminal', 'satuan' => 'unit', 'besaran' => 1634000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Base Air Terminal', 'satuan' => 'unit', 'besaran' => 587600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'DC Clip Non Metalic Clamp', 'satuan' => 'unit', 'besaran' => 13500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Square Tape Clamp', 'satuan' => 'unit', 'besaran' => 55000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Bimetallic Connector', 'satuan' => 'unit', 'besaran' => 35000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Grounding Test Box', 'satuan' => 'unit', 'besaran' => 492000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => '5/8" Rod Coupling', 'satuan' => 'unit', 'besaran' => 45000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => '5/8" Driving Stud', 'satuan' => 'unit', 'besaran' => 83000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Rod to Cable Clamp (Type GUV)', 'satuan' => 'unit', 'besaran' => 252900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Polymer Inspection Pit', 'satuan' => 'unit', 'besaran' => 530000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Coupling Bonding Grounded Rod 70 mm2', 'satuan' => 'unit', 'besaran' => 2040000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Clamp BC L ukuran BC 70 mm2', 'satuan' => 'unit', 'besaran' => 25500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Clamp PVC 1"', 'satuan' => 'unit', 'besaran' => 1500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Copper Air Terminal Base 15 mm', 'satuan' => 'unit', 'besaran' => 189000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => '15x500 mm Aluminium Air Rod', 'satuan' => 'unit', 'besaran' => 160000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => '15x500 mm Copper Air Rod', 'satuan' => 'unit', 'besaran' => 582000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => '25x3 mm Bare Aluminium Tape', 'satuan' => "m'", 'besaran' => 58620, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => '5/8" x 1800 mm Extensible Copperbond Rod', 'satuan' => 'buah', 'besaran' => 496000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => '5/8" Copperbond Rod', 'satuan' => 'buah', 'besaran' => 185000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Grounding Rod Gip 1" Panjang 1 m', 'satuan' => 'buah', 'besaran' => 142500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Grounding Rod Gip 1" Panjang 2 m', 'satuan' => 'buah', 'besaran' => 285000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Exothermic Welding', 'satuan' => 'buah', 'besaran' => 185000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Surge Arrester 1 Phase (15 KA)', 'satuan' => 'unit', 'besaran' => 690000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 15, 'uraian' => 'Surge Arrester 3 Phase (15 KA)', 'satuan' => 'unit', 'besaran' => 962000, 'keterangan1' => null]);
+
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Air', 'satuan' => 'liter', 'besaran' => 200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Banner plastik 0.6x0.8 m2', 'satuan' => 'm2', 'besaran' => 100000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Air (m3)', 'satuan' => 'm3', 'besaran' => 50000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Akrilik 4 mm', 'satuan' => 'm2', 'besaran' => 179000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Alang-alang', 'satuan' => 'ikat', 'besaran' => 30000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Alat  tulis', 'satuan' => 'buah', 'besaran' => 68600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Aluminium foil', 'satuan' => 'm2', 'besaran' => 10000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Aluminium foil double side', 'satuan' => 'm2', 'besaran' => 11000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Amplas', 'satuan' => 'lembar', 'besaran' => 3900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Baja ringan C75 x 0,75 mm', 'satuan' => 'batang', 'besaran' => 77200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Baja ringan C75 x 0,75 mm (permeter)', 'satuan' => 'm', 'besaran' => 12866.67, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Baja Profil', 'satuan' => 'kg', 'besaran' => 16480, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Baja ringan C75 x 0,8 mm', 'satuan' => 'batang', 'besaran' => 82400, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Baja ringan C75 x 1,00 mm', 'satuan' => 'batang', 'besaran' => 106000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Baja ringan C75 x 1,00 mm (m)', 'satuan' => 'm\'', 'besaran' => 17667, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bata Ringan (ukuran 60x20x10 cm)', 'satuan' => 'm3', 'besaran' => 755000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Batu Andesit  Bakar 10x10, t=3cm', 'satuan' => 'Unit', 'besaran' => 145000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Batu Andesit  Bakar 30x30, t=3cm', 'satuan' => 'Unit', 'besaran' => 170000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Batu apung', 'satuan' => 'kg', 'besaran' => 6100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bollard Besi Tempa (BL1)', 'satuan' => 'unit', 'besaran' => 1262500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bollard Besi Tempa (BL2)', 'satuan' => 'unit', 'besaran' => 1040000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bollard cast  iron (tinggi 1,2m ; Ø bawah 5"  ; Ø atas  4")', 'satuan' => 'buah', 'besaran' => 2626500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bollard stainless  steel (tinggi 1m ; Ø 4")', 'satuan' => 'buah', 'besaran' => 555600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bubuk poles', 'satuan' => 'kg', 'besaran' => 180000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Aspal', 'satuan' => 'kg', 'besaran' => 1200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Coldmix  (Aspal Tambal Dingin) 25 kg', 'satuan' => 'Zak', 'besaran' => 225000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Cutting sticker', 'satuan' => 'm2', 'besaran' => 100000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Epoxy resin grout', 'satuan' => 'kg', 'besaran' => 216700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Formica', 'satuan' => 'lembar', 'besaran' => 51400, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Formika', 'satuan' => 'lembar', 'besaran' => 170000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Gebalan Rumput  Jenis  Lamuran', 'satuan' => 'm²', 'besaran' => 10600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Glasswool tebal 8 cm', 'satuan' => 'm2', 'besaran' => 29167, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Guardrail', 'satuan' => 'm\'', 'besaran' => 761200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Hebel Block (ukuran 60x20x15 cm)', 'satuan' => 'buah', 'besaran' => 20200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Huruf/letter timbul stainless  steel', 'satuan' => 'buah', 'besaran' => 9200, 'keterangan1' => null]);
+
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Ijuk', 'satuan' => 'm3', 'besaran' => 39700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Insulasi foam', 'satuan' => 'm2', 'besaran' => 70000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Jaringan udara (LVTC  2x15 mm)', 'satuan' => 'unit', 'besaran' => 2156800, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Jendela type J1', 'satuan' => 'unit', 'besaran' => 2740500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Jendela type J2', 'satuan' => 'unit', 'besaran' => 5481000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Joint  Sealent', 'satuan' => 'kg', 'besaran' => 37300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Kapur', 'satuan' => 'm3', 'besaran' => 263700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Kapur padam', 'satuan' => 'kg', 'besaran' => 7000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Karung goni', 'satuan' => 'm2', 'besaran' => 14500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Karung plastik', 'satuan' => 'buah', 'besaran' => 3900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Kisdam (sewa sheet  pile selama 2 bulan)', 'satuan' => 'batang', 'besaran' => 710500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lem Aibon', 'satuan' => 'kg', 'besaran' => 42500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lem epoxy', 'satuan' => 'kg', 'besaran' => 145000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lem kayu', 'satuan' => 'kg', 'besaran' => 16400, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lem vinyl', 'satuan' => 'kg', 'besaran' => 36900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lem Karpet', 'satuan' => 'kg', 'besaran' => 75000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lethering akrilik tinggi 100 tebal 20 cm', 'satuan' => 'buah', 'besaran' => 1167200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lethering akrilik tinggi 25 tebal 5 cm', 'satuan' => 'buah', 'besaran' => 140000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lethering akrilik tinggi 45 tebal 20 cm', 'satuan' => 'buah', 'besaran' => 525200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lethering akrilik tinggi 70 tebal 20 cm', 'satuan' => 'buah', 'besaran' => 817000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Lis  profil beton (50 cm)', 'satuan' => 'buah', 'besaran' => 8000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Mortar Acian Bata Ringan', 'satuan' => 'zak', 'besaran' => 99600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Mortar Perekat  Bata Ringan', 'satuan' => 'zak', 'besaran' => 85600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Mortar Plesteran Bata Ringan', 'satuan' => 'zak', 'besaran' => 82600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Mortar siap pakai', 'satuan' => 'kg', 'besaran' => 1850, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Mortar Skimcoat', 'satuan' => 'kg', 'besaran' => 5070, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Nako  per daun', 'satuan' => 'buah', 'besaran' => 8700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pasir Ottawa', 'satuan' => 'Zak', 'besaran' => 515000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pemasangan lantai tempered laminated glass  Jemabatan Kaca', 'satuan' => 'Unit', 'besaran' => 107070707, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pen akrilik', 'satuan' => 'buah', 'besaran' => 7000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Perekat untuk  wallpaper', 'satuan' => 'kg', 'besaran' => 36800, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pintu lipat  (folding door) bahan plastik/PVC', 'satuan' => 'm2', 'besaran' => 215000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pintu type P1', 'satuan' => 'unit', 'besaran' => 4689300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa screen pvc  Ø 4"', 'satuan' => 'm¹', 'besaran' => 94600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa stainless  steel diameter 0,5 "  panjang 6 m', 'satuan' => 'batang', 'besaran' => 1152000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa stainless  steel diameter 0,75 "  panjang 6 m', 'satuan' => 'batang', 'besaran' => 1253500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa stainless  steel diameter 1 "  panjang 6 m', 'satuan' => 'batang', 'besaran' => 1598600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa stainless  steel diameter 1,5 "  panjang 6 m', 'satuan' => 'batang', 'besaran' => 1877700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa stainless  steel diameter 2 "  panjang 6 m', 'satuan' => 'batang', 'besaran' => 2461300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa stainless  steel diameter 2,5 "  panjang 6 m', 'satuan' => 'batang', 'besaran' => 3045000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pipa stainless  steel diameter 3 "  panjang 6 m', 'satuan' => 'batang', 'besaran' => 4403200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Plastik aerator', 'satuan' => 'buah', 'besaran' => 15900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Prasasti marmer 20x20', 'satuan' => 'Unit', 'besaran' => 120000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Ramset', 'satuan' => 'buah', 'besaran' => 3200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Recorder paper', 'satuan' => 'set', 'besaran' => 174100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Rel pintu dorong', 'satuan' => 'buah', 'besaran' => 243700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Reng baja ringan', 'satuan' => 'batang', 'besaran' => 33900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Reng baja ringan', 'satuan' => 'm', 'besaran' => 6000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Roster 10 x  20 cm', 'satuan' => 'buah', 'besaran' => 11300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Roster 15 x  25 cm', 'satuan' => 'buah', 'besaran' => 19300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Roster 15 x  30 cm', 'satuan' => 'buah', 'besaran' => 19800, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Roster 20 x 20 cm', 'satuan' => 'buah', 'besaran' => 13100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Roster 25 x  25 cm', 'satuan' => 'buah', 'besaran' => 16500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Roster 30 x  30 cm', 'satuan' => 'buah', 'besaran' => 20500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Roster/terawang', 'satuan' => 'buah', 'besaran' => 21500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Rumput  sintetis  uk. 1mx1m tebal 2 cm', 'satuan' => 'buah', 'besaran' => 149300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sabun', 'satuan' => 'Kg', 'besaran' => 19400, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Screen low  carbon', 'satuan' => 'm¹', 'besaran' => 549300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Screen stainless  steel ø  4"', 'satuan' => 'm¹', 'besaran' => 1137800, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sealant', 'satuan' => 'tube', 'besaran' => 33100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sealant', 'satuan' => 'tube', 'besaran' => 33500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sealant  kaca', 'satuan' => 'kg', 'besaran' => 32100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sealtape', 'satuan' => 'buah', 'besaran' => 5700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semen Sika', 'satuan' => 'Zak', 'besaran' => 163900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Septic  tank pabrikasi 1000 liter', 'satuan' => 'buah', 'besaran' => 3605000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Septic  tank pabrikasi 1200 liter', 'satuan' => 'buah', 'besaran' => 5150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Septic  tank pabrikasi 2000 liter', 'satuan' => 'buah', 'besaran' => 9785000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Septic  tank pabrikasi 800 liter', 'satuan' => 'buah', 'besaran' => 2629500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sesek bambu', 'satuan' => 'lembar', 'besaran' => 19100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Signage RMJ', 'satuan' => 'unit', 'besaran' => 1987300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Signage Plat Baja lengkap dengan accessories', 'satuan' => 'buah', 'besaran' => 1500000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sitting Group (cast  iron, kayu)', 'satuan' => 'unit', 'besaran' => 2389300, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Skrup fixer', 'satuan' => 'buah', 'besaran' => 1600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Soda api', 'satuan' => 'kg', 'besaran' => 17900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Strorox-100', 'satuan' => 'kg', 'besaran' => 40000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Tali ijuk', 'satuan' => 'kg', 'besaran' => 8200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Tali Ijuk', 'satuan' => "m'", 'besaran' => 200, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Terpal', 'satuan' => 'm2', 'besaran' => 12000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Tiang Bolard (Bollard cast  iron) tinggi 1,2 m; ø bawah 5"; ø atas  4"', 'satuan' => 'buah', 'besaran' => 1429100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Venetions  blinds  dan vertical blinds  (tirai)', 'satuan' => 'm2', 'besaran' => 7400, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Wallpaper', 'satuan' => "m'", 'besaran' => 13500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Waterstop lebar 150 mm', 'satuan' => "m'", 'besaran' => 75000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Waterstop lebar 200 mm', 'satuan' => "m'", 'besaran' => 94000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Waterstop lebar 250 mm', 'satuan' => "m'", 'besaran' => 136000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Wax', 'satuan' => 'kg', 'besaran' => 130000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Paving Block Tebal 6 cm fc 20 Mpa', 'satuan' => 'm2', 'besaran' => 70000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pasir Filler', 'satuan' => 'm3', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Paving Block Tebal 6 cm fc 25 Mpa', 'satuan' => 'm2', 'besaran' => 82000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Paving Block Tebal 8 cm fc 20 Mpa', 'satuan' => 'm2', 'besaran' => 85000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Paving Block Tebal 8 cm fc 25 Mpa', 'satuan' => 'm2', 'besaran' => 97000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Stepping Band Lebar 15 mm', 'satuan' => "m'", 'besaran' => 8570, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palet Kayu uk. 120x120x10 cm', 'satuan' => 'buah', 'besaran' => 123000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Geotextile >100 gr/m2', 'satuan' => 'm2', 'besaran' => 17500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Geotextile >400 gr/m2', 'satuan' => 'm2', 'besaran' => 21000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Geotextile >800 gr/m2', 'satuan' => 'm2', 'besaran' => 32000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Geotekstil woven 400 gr/m2', 'satuan' => 'm2', 'besaran' => 25000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Geomembran', 'satuan' => 'm2', 'besaran' => 18950, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Geosynthetic Clay Liner', 'satuan' => 'm2', 'besaran' => 25000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bentonite', 'satuan' => 'kg', 'besaran' => 25000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pupuk Organik', 'satuan' => 'm3', 'besaran' => 178000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Kompos', 'satuan' => 'm3', 'besaran' => 165000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bunga Mentega di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 135000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bunga Mentega di Polybag 25 Liter', 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bunga Terompet Kuning di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 135000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bunga Terompet Kuning di Polybag 25 Liter', 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bunga Terompet Kuning di Polybag 50 Liter', 'satuan' => 'buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bungur Sakura di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bungur Sakura/Bungur Jepang di Polybag 25 Liter', 'satuan' => 'buah', 'besaran' => 175000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bungur di Polybag 75 Liter', 'satuan' => 'buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bungur di Polybag 100 Liter', 'satuan' => 'buah', 'besaran' => 375000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Cassia Glauca di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 155000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Cassia glauca di Polybag 25 Liter', 'satuan' => 'buah', 'besaran' => 170000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Dracaena'song of india' di polybag 20 liter", 'satuan' => 'buah', 'besaran' => 165000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Dracaena ‘Song of India’ di Polybag 25 Liter", 'satuan' => 'buah', 'besaran' => 180000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Dracaena 'Song of Jamaica' di Polybag 20 Liter", 'satuan' => 'buah', 'besaran' => 170000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Dracaena 'Song of Jamaica' di Polybag 25 Liter", 'satuan' => 'buah', 'besaran' => 190000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Jarak Batavia di Polybag 20 Liter", 'satuan' => 'buah', 'besaran' => 175000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Jarak Batavia di Polybag 25 Liter", 'satuan' => 'buah', 'besaran' => 190000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Kayu Putih Kuning di Polybag 20 Liter", 'satuan' => 'buah', 'besaran' => 180000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Kayu Putih Kuning di Polybag 25 Liter", 'satuan' => 'buah', 'besaran' => 190000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Bugenvil/bunga kertas di Polybag 20 Liter", 'satuan' => 'buah', 'besaran' => 185000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Penda Merah di Polybag 20 Liter", 'satuan' => 'buah', 'besaran' => 190000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Pucuk merah di Polybag 25 Liter", 'satuan' => 'buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Sikat Botol di Polybag 20 Liter", 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Sikat Botol di Polybag 25 Liter", 'satuan' => 'buah', 'besaran' => 165000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon kecil Anggur terompet", 'satuan' => 'buah', 'besaran' => 18000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Anti Rayap tanah", 'satuan' => 'kg', 'besaran' => 28500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon kecil Pucuk merah", 'satuan' => 'buah', 'besaran' => 50000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Pucuk Merah di Polybag 20 Liter", 'satuan' => 'Pohon', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Pucuk Merah di Polybag 25 Liter", 'satuan' => 'Pohon', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Bunga Kupu-kupu di Polybag 50 Liter", 'satuan' => 'Pohon', 'besaran' => 500000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Bunga Kupu-kupu di Polybag 75 Liter", 'satuan' => 'Pohon', 'besaran' => 530000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Pulai di Polybag 75 Liter", 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => "Pohon Pulai di Polybag 100 Liter", 'satuan' => 'buah', 'besaran' => 275000, 'keterangan1' => null]);
+
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Pulai di Polybag 150 Liter', 'satuan' => 'buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Pulai di Polybag 200 Liter', 'satuan' => 'buah', 'besaran' => 325000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Pulai di Polybag 250 Liter', 'satuan' => 'buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon sedang Ketapang Kencana', 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Mahoni di Polybag 75 Liter', 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Mahoni di Polybag 100 Liter', 'satuan' => 'Pohon', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Mahoni di Polybag 150 Liter', 'satuan' => 'Pohon', 'besaran' => 425000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Beringin di Polybag 200 Liter', 'satuan' => 'Pohon', 'besaran' => 550000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Beringin di Polybag 250 Liter', 'satuan' => 'Pohon', 'besaran' => 590000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Beringin di Polybag 100 Liter', 'satuan' => 'buah', 'besaran' => 250000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Beringin di Polybag 150 Liter', 'satuan' => 'buah', 'besaran' => 275000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Beringin di Polybag 250 Liter', 'satuan' => 'buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon sedang Tabebuya', 'satuan' => 'buah', 'besaran' => 450000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bintaro di Polybag 50 Liter', 'satuan' => 'buah', 'besaran' => 220000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bintaro di Polybag 75 Liter', 'satuan' => 'buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Besar Kamboja', 'satuan' => 'buah', 'besaran' => 550000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Besar Beringin', 'satuan' => 'buah', 'besaran' => 2900000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Besar Pulai', 'satuan' => 'buah', 'besaran' => 5390000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Besar Trembesi', 'satuan' => 'buah', 'besaran' => 650000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Trembesi di Polybag 75 Liter', 'satuan' => 'buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Trembesi di Polybag 100 Liter', 'satuan' => 'buah', 'besaran' => 275000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Trembesi di Polybag 150 Liter', 'satuan' => 'buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Trembesi di Polybag 200 Liter', 'satuan' => 'buah', 'besaran' => 325000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Trembesi di Polybag 250 Liter', 'satuan' => 'buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Thevetia di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 170000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Thevetia di Polybag 25 Liter', 'satuan' => 'buah', 'besaran' => 190000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Turi di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 180000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Turi di Polybag 25 Liter', 'satuan' => 'buah', 'besaran' => 190000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Kembang Merak di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 210000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Pandan Bali di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 200000, 'keterangan1' => null]);
+
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Yucca di Polybag 20 Liter', 'satuan' => 'buah', 'besaran' => 190000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Flamboyan di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 210000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Flamboyan Kuning di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 210000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Flamboyan di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Flamboyan di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 375000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Flamboyan di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Flamboyan di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 425000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Flamboyan Kuning di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Janda Merana di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 220000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Janda Merana di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Ketapang kencana di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 225000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Ketapang kencana di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Ketapang kencana di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 375000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Sosis di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 225000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Sosis di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Sosis di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 275000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Sosis di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Sosis di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 325000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Sosis di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Tabebuya di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 225000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Tabebuya di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Waru di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 225000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Waru di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 250000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Biola Cantik di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Biola Cantik di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 375000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Kamboja di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Kamboja di Polybag 100 Liter', 'satuan' => 'buah', 'besaran' => 375000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Kamboja di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Kamboja Fosil di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 425000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Keben di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Keben di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Kecrutan di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Kecrutan di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 375000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Putat di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Putat di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 275000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bodhi di Polybag 100 Liter', 'satuan' => 'buah', 'besaran' => 275000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bodhi di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bodhi di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 325000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Bodhi di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pohon Baobab di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 350000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem ekor tupai di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 250000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sylvertris di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 250000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sylvertris di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sylvertris di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sylvertris di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 450000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Putri di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Putri di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Putri di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Putri di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 450000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem raja di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 250000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem raja di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem raja di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem raja di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 450000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem sadeng di Polybag 100 Liter', 'satuan' => 'Buah', 'besaran' => 250000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem sadeng di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem sadeng di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Sadeng di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 450000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Kecil Palem Wregu', 'satuan' => 'buah', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Kecil Palem Kuning', 'satuan' => 'buah', 'besaran' => 45000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Besar Palem Ekor Tupai', 'satuan' => 'buah', 'besaran' => 230000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem ekor tupai di Polybag 150 Liter', 'satuan' => 'Buah', 'besaran' => 300000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem ekor tupai di Polybag 200 Liter', 'satuan' => 'Buah', 'besaran' => 400000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem ekor tupai di Polybag 250 Liter', 'satuan' => 'Buah', 'besaran' => 450000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Besar Kelapa', 'satuan' => 'buah', 'besaran' => 445000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Besar Palem Botol', 'satuan' => null, 'besaran' => 460000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem jepang di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem jepang di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem komodoria/komodor/chamadorea di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem komodoria/komodor/chamadorea di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem kuning di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem kuning di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Merah/ Pinang Merah di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem waregu di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem waregu di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sikas Halus/Mawar Jambe di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Sikas Halus/Mawar Jambe di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Phoenix di Polybag 50 Liter', 'satuan' => 'Buah', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Phoenix di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Merah/ Pinang Merah di Polybag 75 Liter', 'satuan' => 'Buah', 'besaran' => 200000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Palem Besar Palem Sadeng', 'satuan' => 'Buah', 'besaran' => 510000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Alamanda di Polybag 5 Liter', 'satuan' => 'Polybag', 'besaran' => 10000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Alamanda di Polybag 11 Liter', 'satuan' => 'Polybag', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Alamanda di Polybag 20 Liter', 'satuan' => 'Polybag', 'besaran' => 20000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Alamanda/Bunga terompet emas di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Alamanda/Bunga terompet emas di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Alamanda/Bunga terompet emas di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Agave/lidah naga di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Agave/lidah naga di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bakung Lele di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bakung Lele di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bakung Jawa di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bakung Jawa di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bromelia di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bromelia di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bugenvil/bunga kertas di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bunga Iris di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bunga Terompet Kuning di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Bunga Terompet Kuning di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Calathea di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Canna di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Capit Udang', 'satuan' => 'Buah', 'besaran' => 2100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Cendrawasih di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Costus di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Costus di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Dracaena ‘Song of India’ di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Dracaena \'Song of Jamaica\' di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Dracaena ‘Song of India’ di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Dracaena \'Song of Jamaica\' di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Helliconia di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Helliconia di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Honje/Kecombrang di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Honje/Kecombrang di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Hujan Mas di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Hujan Mas di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Hujan Mas di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Kacapiring wangi/Gardenia di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Kaca piring di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Kacapiring wangi/Gardenia di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Kacapiring wangi/Gardenia di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Kembang sepatu di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Kemuning di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Kana di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Lili Brazil di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Melati Putih di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Melati Putih di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Nusa Indah di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Oleander/Bunga Mentega di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Oleander/Bunga Mentega di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Pandan Kuning di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Penda Emas di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Pretty Pink di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Pretty Pink di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Puring di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Puring di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Ruelia / Kencana Ungu di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+
+// Semak dan tanaman
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Sansevieria/Lidah Mertua di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Sansevieria/Lidah Mertua di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Soka di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Tabernae/Mondokaki di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Tabernae di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Tabernac di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Walisongo/Umbrella tree di Polybag 5 Liter', 'satuan' => 'Buah', 'besaran' => 3000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Walisongo/Umbrella Tree di Polybag 11 Liter', 'satuan' => 'Buah', 'besaran' => 5000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Semak Walisongo/Umbrella Tree di Polybag 20 Liter', 'satuan' => 'Buah', 'besaran' => 9000, 'keterangan1' => null]);
+
+// Penutup tanah
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Penutup Tanah Kacang Hias', 'satuan' => 'Buah', 'besaran' => 2500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Penutup Tanah Kacang hias di Polybag 0.5 Liter', 'satuan' => 'm2', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Penutup Tanah Kucai Mini di Polybag 0.5 Liter', 'satuan' => 'm2', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Penutup Tanah Lantana di Polybag 0.5 Liter', 'satuan' => 'm2', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Penutup Tanah Sutra bombay di Polybag 0.5 Liter', 'satuan' => 'm2', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Penutup Tanah Widelia di Polybag 0.5 Liter', 'satuan' => 'm2', 'besaran' => 15000, 'keterangan1' => null]);
+
+// Rumput
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Rumput embun', 'satuan' => 'm2', 'besaran' => 17000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Rumput gajah', 'satuan' => 'm2', 'besaran' => 10000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Rumput Gajah Mini', 'satuan' => 'm2', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Rumput peking', 'satuan' => 'm2', 'besaran' => 19000, 'keterangan1' => null]);
+
+// Matras dan perekat
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Matras Tipe I, Termasuk angkur / penguat matras', 'satuan' => 'm2', 'besaran' => 5600, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Perekat Campuran Hydroseeding', 'satuan' => 'kg', 'besaran' => 16000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bibit Vegetasi (Biji Rumput)', 'satuan' => 'kg', 'besaran' => 80000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Mulsa', 'satuan' => 'kg', 'besaran' => 35000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pupuk anorganik *)', 'satuan' => 'kg', 'besaran' => 18000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pupuk anorganik (ex: NPK)', 'satuan' => 'm3', 'besaran' => 180000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pupuk anorganik cair (ex: NPK)', 'satuan' => 'm3', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pupuk anorganik padat', 'satuan' => 'm3', 'besaran' => 150000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Perekat Matras Perkuatan (Lem)', 'satuan' => 'kg', 'besaran' => 18000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Matras Tipe II, Termasuk angkur / penguat matras', 'satuan' => 'm2', 'besaran' => 7500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Matras Tipe III, Termasuk angkur / penguat matras', 'satuan' => 'm2', 'besaran' => 9500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bibit Vegetasi (Biji Legume Crop Cover/LCC)', 'satuan' => 'kg', 'besaran' => 166000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Material Organik', 'satuan' => 'm3', 'besaran' => 10500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Kapur', 'satuan' => 'kg', 'besaran' => 3100, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Pasir', 'satuan' => 'm3', 'besaran' => 250000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'sulfur', 'satuan' => 'kg', 'besaran' => 12000, 'keterangan1' => null]);
+
+
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Air Bersih', 'satuan' => 'liter', 'besaran' => 550, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Fungisida/Insektisida', 'satuan' => 'kg', 'besaran' => 430000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Cat Minyak', 'satuan' => 'liter', 'besaran' => 48500, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Tong Sampah 2 tabung', 'satuan' => 'buah', 'besaran' => 340000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Besi Hollow 30x60', 'satuan' => 'm3', 'besaran' => 13700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bambu dia. 3-5 cm', 'satuan' => 'm', 'besaran' => 700, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bambu dia. 5-8 cm', 'satuan' => 'm', 'besaran' => 900, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bambu dia. 8-10 cm', 'satuan' => 'm', 'besaran' => 12000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Bambu dia. 10-12 cm', 'satuan' => 'm', 'besaran' => 15000, 'keterangan1' => null]);
+satuanhargamaterial::create(['kategorimaterial_id' => 16, 'uraian' => 'Tali/pengikat sejenisnya', 'satuan' => 'm', 'besaran' => 500, 'keterangan1' => null]);
+satuanhargamaterial::create([
+    'kategorimaterial_id' => 16, // misal kategori sewa/lahan
+    'uraian' => 'Sewa Lahan',
+    'satuan' => 'm2',
+    'besaran' => 1000000,
+    'keterangan1' => null
+]);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -19282,6 +26977,63 @@ kategorimaterial::create([
     'id' => 6,
     'material' => 'Penutup Lantai Dan Dinding',
 ]);
+
+kategorimaterial::create([
+    'id' => 7,
+    'material' => 'Beton Dan Adukan Pasangan',
+]);
+
+kategorimaterial::create([
+    'id' => 8,
+    'material' => 'Cat',
+]);
+
+kategorimaterial::create([
+    'id' => 9,
+    'material' => 'Kunci Dan Engsel',
+]);
+
+kategorimaterial::create([
+    'id' => 10,
+    'material' => 'Kaca',
+]);
+
+kategorimaterial::create([
+    'id' => 11,
+    'material' => 'Sanitair',
+]);
+
+kategorimaterial::create([
+    'id' => 12,
+    'material' => 'Minyak',
+]);
+
+kategorimaterial::create([
+    'id' => 13,
+    'material' => 'Alumunium Dan Besi',
+]);
+
+kategorimaterial::create([
+    'id' => 14,
+    'material' => 'Listrik',
+]);
+
+kategorimaterial::create([
+    'id' => 15,
+    'material' => 'Sistem Pembumian',
+]);
+
+kategorimaterial::create([
+    'id' => 16,
+    'material' => 'Lain-lain',
+]);
+
+
+
+
+
+
+
 
 
 

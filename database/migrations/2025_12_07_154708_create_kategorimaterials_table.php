@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('material')->nullable();
             $table->string('keterangan1')->nullable();
             $table->string('keterangan2')->nullable();
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }
