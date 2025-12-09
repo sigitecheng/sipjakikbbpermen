@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->foreignId('informasirantaipasok_id')->nullable();
+            $table->string('gambar')->nullable();
             $table->string('namamaterial')->nullable();
             $table->string('harga')->nullable();
             $table->string('lokasi')->nullable();

@@ -1553,6 +1553,23 @@
 
 
                 <ul class="nav nav-treeview">
+
+                        <div style="margin-bottom: 10px; margin-top: 10px;">
+    <p style="
+        font-size: 13px;
+        margin-left: 12px;
+        margin-bottom: -5px;
+        font-weight: bold;
+        color: #000000;
+        background-color: #ffd100;
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 8px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    ">
+        <i class="bi bi-grid-1x2-fill" style="margin-right: 6px;"></i> Main Menu
+    </p>
+</div>
                   <!-- Satuan Harga Material -->
 
                   {{-- <li class="nav-item">
@@ -1562,26 +1579,27 @@
                     </a>
                   </li> --}}
 
-                  <li class="nav-item">
-                    <a href="/404" class="nav-link">
-                      <i class="nav-icon bi bi-archive text-warning"></i> <!-- Ikon untuk Satuan Harga Material -->
-                      <p style="color: white">Supplier Material</p>
-                    </a>
-                  </li>
 
-                  <li class="nav-item">
-                    <a href="/404" class="nav-link">
-                      <i class="nav-icon bi bi-archive text-warning"></i> <!-- Ikon untuk Satuan Harga Material -->
-                      <p style="color: white">Supplier Peratalan</p>
+               <li class="nav-item">
+                    <a href="/supplier-material" class="nav-link">
+                        <i class="nav-icon bi bi-box-seam text-warning"></i>
+                        <p style="color: white">Supplier Material</p>
                     </a>
-                  </li>
+                </li>
 
-                  <li class="nav-item">
-                    <a href="/404" class="nav-link">
-                      <i class="nav-icon bi bi-archive text-warning"></i> <!-- Ikon untuk Satuan Harga Material -->
-                      <p style="color: white">Toko Bangunan</p>
+                <li class="nav-item">
+                    <a href="/supplier-peralatan" class="nav-link">
+                        <i class="nav-icon bi bi-tools text-warning"></i>
+                        <p style="color: white">Supplier Peralatan</p>
                     </a>
-                  </li>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/toko-bangunan" class="nav-link">
+                        <i class="nav-icon bi bi-shop text-warning"></i>
+                        <p style="color: white">Toko Bangunan</p>
+                    </a>
+                </li>
 
                 </ul>
               </li>

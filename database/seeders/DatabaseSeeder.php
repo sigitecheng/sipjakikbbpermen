@@ -27040,6 +27040,7 @@ kategorimaterial::create([
 /// RANTAI PASOK MATERIAL KABUPATEN BANDUNG BARAT
  rantaipasokmaterial::create([
             'informasirantaipasok_id' => 1,
+            'gambar' => '/assets/icon/material.png',
             'namamaterial' => 'Semen Portland',
             'harga' => '55000',
             'lokasi' => 'Gudang Bandung Barat',
@@ -27053,11 +27054,12 @@ kategorimaterial::create([
             'cadangan4' => null,
         ]);
 
-rantaipasokperalatan::create([
-    'informasirantaipasok_id' => 1,
-    'namamaterial' => 'Beton Molen Mini',
-    'harga' => '350000',
-    'lokasi' => 'Workshop Cimareme - Bandung Barat',
+        rantaipasokperalatan::create([
+            'informasirantaipasok_id' => 1,
+            'namamaterial' => 'Beton Molen Mini',
+            'gambar' => '/assets/icon/peralatan.png',
+            'harga' => '350000',
+            'lokasi' => 'Workshop Cimareme - Bandung Barat',
     'ketersediaan' => 'Tersedia',
     'satuan' => 'Unit',
     'keterangan' => 'Untuk pekerjaan skala kecil',
@@ -27071,6 +27073,7 @@ rantaipasokperalatan::create([
 
 rantaipasoktokobangunan::create([
     'informasirantaipasok_id' => 1,
+    'gambar' => '/assets/icon/peralatan.png',
     'namamaterial' => 'Batu Bata Merah',
     'harga' => '750',
     'lokasi' => 'Toko Sumber Jaya - Ngamprah',
@@ -27088,6 +27091,7 @@ rantaipasoktokobangunan::create([
 informasirantaipasok::create([
             'kecamatankbb_id'      => 1,
             'user_id'              => 1,
+            'namaperusahaan' => '/assets/icon/informasirantaipasok.avif',
             'namaperusahaan'       => 'CV. Angkasa Raya Teknik',
             'tahunberdiri'         => '2019',
 

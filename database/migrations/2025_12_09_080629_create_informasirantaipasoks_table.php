@@ -16,6 +16,7 @@ return new class extends Migration
             // Informasi dasar perusahaan
     $table->foreignId('kecamatankbb_id')->nullable();
     $table->foreignId('user_id')->nullable();
+    $table->string('fotoperusahaan')->nullable();
     $table->string('namaperusahaan')->nullable();
     $table->string('tahunberdiri')->nullable();
     // Identitas legal
