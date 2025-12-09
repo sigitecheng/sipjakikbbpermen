@@ -2599,17 +2599,17 @@ public function besatuandiv7(Request $request)
         'search' => $search
     ]);
 }
-
-
-// SIPJAKI BANDUNG BARAT
 public function satuanhargamaterialkbb(Request $request)
 {
     $user = Auth::user();
 
     $search = $request->input('search');
-    $kategori_id = $request->input('kategori_id'); // ambil kategori ID
+    $kategori_id = $request->input('kategori_id');
 
-    // Query utama + relasi kategori
+    // Ambil perPage dari select
+    $perPage = $request->input('perPage', 25); // default 25
+
+    // Query utama + relasi
     $query = satuanhargamaterial::with('kategorimaterial');
 
     // Filter search
@@ -2626,16 +2626,18 @@ public function satuanhargamaterialkbb(Request $request)
         $query->where('kategorimaterial_id', $kategori_id);
     }
 
-    // Urutkan abjad berdasarkan uraian
-    $data = $query->orderBy('uraian', 'ASC')->paginate(20);
+    // PAGINATION HARUS PAKE perPage
+    $data = $query
+        ->orderBy('uraian', 'ASC')
+        ->paginate($perPage);
 
-    // Tambahkan query string agar pagination tetap jalan
+    // biar pagination tetap bawa query string
     $data->appends([
         'search' => $search,
-        'kategori_id' => $kategori_id
+        'kategori_id' => $kategori_id,
+        'perPage' => $perPage
     ]);
 
-    // Ambil kategori untuk dropdown
     $kategori = kategorimaterial::orderBy('material','asc')->get();
 
     return view('frontend.new.06_bagian7.01_satuanhargamaterial.satuanhargamaterial', [
@@ -2644,60 +2646,73 @@ public function satuanhargamaterialkbb(Request $request)
         'user' => $user,
         'search' => $search,
         'kategori' => $kategori,
-        'kategori_id' => $kategori_id
+        'kategori_id' => $kategori_id,
+        'perPage' => $perPage
     ]);
 }
-
 
 public function satuanhargupahkbb(Request $request)
 {
     $user = Auth::user();
-    $search = $request->input('search'); // Ambil kata kunci dari form
+    $search = $request->input('search');
+
+    // Ambil nilai perPage, default 20 kalau tidak ada
+    $perPage = $request->input('perPage', 20);
 
     $query = satuanhargaupahtenagakerja::query();
 
-    if($search) {
+    if ($search) {
         $query->where('uraian', 'like', "%{$search}%");
     }
 
-    // Urut abjad berdasarkan kolom 'uraian', paginate 20
-    $data = $query->orderBy('uraian', 'ASC')->paginate(20);
+    // Pagination sesuai perPage dropdown
+    $data = $query->orderBy('uraian', 'ASC')->paginate($perPage);
 
-    // Menjaga keyword search tetap di query string saat pagination
-    $data->appends(['search' => $search]);
+    // Pastikan search dan perPage ikut di pagination link
+    $data->appends([
+        'search' => $search,
+        'perPage' => $perPage,
+    ]);
 
     return view('frontend.new.06_bagian7.02_upahpekerjaan.upahpekerjaan', [
         'title' => 'Satuan Harga Upah Pekerjaan Kabupaten Bandung Barat',
         'data' => $data,
         'user' => $user,
-        'search' => $search, // bisa ditampilkan di input
+        'search' => $search,
+        'perPage' => $perPage,
     ]);
 }
 
 public function satuanhargaalatkbb(Request $request)
 {
     $user = Auth::user();
-    $search = $request->input('search'); // Ambil kata kunci dari form
+    $search = $request->input('search');
+
+    // Ambil perPage dari query, default 20
+    $perPage = $request->input('perPage', 20);
 
     $query = satuanhargaperalatan::query();
 
-    if($search) {
+    if ($search) {
         $query->where('uraian', 'like', "%{$search}%");
     }
 
-    // Urut abjad berdasarkan kolom 'uraian', paginate 20
-    $data = $query->orderBy('uraian', 'ASC')->paginate(20);
+    $data = $query->orderBy('uraian', 'ASC')->paginate($perPage);
 
-    // Menjaga keyword search tetap di query string saat pagination
-    $data->appends(['search' => $search]);
+    $data->appends([
+        'search' => $search,
+        'perPage' => $perPage
+    ]);
 
     return view('frontend.new.06_bagian7.03_peralatan.peralatan', [
-        'title' => 'Satuan Harga Peralatan Kabupaten Bandung Barat',
+        'title' => 'Satuan Harga Upah Pekerjaan Kabupaten Bandung Barat',
         'data' => $data,
         'user' => $user,
-        'search' => $search, // bisa ditampilkan di input
+        'search' => $search,
+        'perPage' => $perPage,
     ]);
 }
+
 public function shstkbb()
 {
     $user = Auth::user();
