@@ -39,6 +39,7 @@ use App\Models\bulanrekap;
 use App\Models\giskbb;
 use App\Models\headerberanda;
 use App\Models\himbauandinas;
+use App\Models\informasirantaipasok;
 use App\Models\isadmin;
 use App\Models\jabatankerja;
 use App\Models\jenjangpendidikan;
@@ -72,6 +73,9 @@ use App\Models\profiljenispekerjaan;
 use App\Models\qa;
 use App\Models\qapertanyaan;
 use App\Models\qasebagai;
+use App\Models\rantaipasokmaterial;
+use App\Models\rantaipasokperalatan;
+use App\Models\rantaipasoktokobangunan;
 use App\Models\renstra;
 use App\Models\satuanhargamaterial;
 use App\Models\satuanhargaupahtenagakerja;
@@ -919,7 +923,7 @@ qa::create([
 
         User::create([
             'name'  => 'Sigit Septiadi ',
-            'username' => 'Sigit Septiadi',
+            'username' => 'Super Admin SIPJAKI KBB',
             'statusadmin_id' => '1',
             'avatar' => 'user/avatar/foto1.png',
             'email' => 'sigitseptiadi1@gmail.com',
@@ -27033,12 +27037,73 @@ kategorimaterial::create([
 
 
 
+/// RANTAI PASOK MATERIAL KABUPATEN BANDUNG BARAT
+ rantaipasokmaterial::create([
+            'informasirantaipasok_id' => 1,
+            'namamaterial' => 'Semen Portland',
+            'harga' => '55000',
+            'lokasi' => 'Gudang Bandung Barat',
+            'ketersediaan' => 'Tersedia',
+            'satuan' => 'Zak',
+            'keterangan' => '(40 kg)',
+
+            'cadangan1' => null,
+            'cadangan2' => null,
+            'cadangan3' => null,
+            'cadangan4' => null,
+        ]);
+
+rantaipasokperalatan::create([
+    'informasirantaipasok_id' => 1,
+    'namamaterial' => 'Beton Molen Mini',
+    'harga' => '350000',
+    'lokasi' => 'Workshop Cimareme - Bandung Barat',
+    'ketersediaan' => 'Tersedia',
+    'satuan' => 'Unit',
+    'keterangan' => 'Untuk pekerjaan skala kecil',
+
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
 
 
+rantaipasoktokobangunan::create([
+    'informasirantaipasok_id' => 1,
+    'namamaterial' => 'Batu Bata Merah',
+    'harga' => '750',
+    'lokasi' => 'Toko Sumber Jaya - Ngamprah',
+    'ketersediaan' => 'Tersedia',
+    'satuan' => 'Pcs',
+    'keterangan' => 'Bata press kualitas A',
+
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
 
 
+informasirantaipasok::create([
+            'kecamatankbb_id'      => 1,
+            'user_id'              => 1,
+            'namaperusahaan'       => 'CV. Angkasa Raya Teknik',
+            'tahunberdiri'         => '2019',
 
+            'nib'                  => '8129081290812098',
+            'npwp'                 => '12.345.678.9-012.345',
 
+            'telepon'              => '081234567890',
+            'email'                => 'info@angkasarayateknik.id',
+            'website'              => 'https://angkasarayateknik.id',
+            'alamatlengkap'        => 'Jl. Puspa Kencana No. 2B, KBB, Jawa Barat',
+
+            'namapimpinan'         => 'Dicky Hermansyah, S.T.',
+            'jabatan'              => 'Direktur Utama',
+
+            'keteranganperusahaan' => 'Perusahaan yang bergerak dalam penyediaan material konstruksi dan jasa teknik bangunan.',
+        ]);
 
     }    /**
      * Menghitung usia berdasarkan tanggal lahir.

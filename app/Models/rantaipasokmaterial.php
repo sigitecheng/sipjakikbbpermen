@@ -7,21 +7,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class kecamatankbb extends Model
+class rantaipasokmaterial extends Model
 {
     use HasFactory, SoftDeletes, HasApiTokens;
 
     protected $guarded = ['id'];
 
-    public function allskktenagakerjablora()
-    {
-        return $this->hasMany(allskktenagakerjablora::class);
-    }
-
     public function informasirantaipasok()
     {
-        return $this->hasMany(informasirantaipasok::class);
+        return $this->belongsTo(informasirantaipasok::class, 'informasirantaipasok_id');
     }
 
-
 }
+
