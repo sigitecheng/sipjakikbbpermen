@@ -2058,6 +2058,15 @@ Route::post('/besatuanhargaperalatan/createnew', [SatuanhargamaterialController:
 Route::get('/besatuanhargaperalatan/update/{id}', [SatuanhargamaterialController::class, 'besatuanhargaperalatanupdate'])->middleware(['auth', 'can:admin2']);
 Route::post('/besatuanhargaperalatan/updatecreate/{id}', [SatuanhargamaterialController::class, 'besatuanhargaperalatanupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.besatuanhargaperalatanupdatecreate');
 
+
+// PENGATURAN JENIS MATERIAL SATUAN HARGA MATERIAL
+Route::get('/bejenismaterial', [SatuanhargamaterialController::class, 'bejenismaterial'])->middleware(['auth', 'can:admin2']);
+Route::delete('/bejenismaterial/delete/{id}', [SatuanhargamaterialController::class, 'bejenismaterialdelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/bejenismaterial/create', [SatuanhargamaterialController::class, 'bejenismaterialcreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/bejenismaterial/createnew', [SatuanhargamaterialController::class, 'bejenismaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.jenismaterial');
+
+
 // Route::get('/besatuanhargaupahpekerjaan', [SatuanhargamaterialController::class, 'besatuanhargaupahpekerjaan'])->middleware('auth');
 // Route::delete('/besatuanhargaupahpekerjaan/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargaupahpekerjaandelete'])->middleware('auth');
 

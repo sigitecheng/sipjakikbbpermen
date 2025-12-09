@@ -2602,31 +2602,52 @@ public function besatuandiv7(Request $request)
 
 
 // SIPJAKI BANDUNG BARAT
-
 public function satuanhargamaterialkbb(Request $request)
 {
     $user = Auth::user();
-    $search = $request->input('search'); // Ambil kata kunci dari form
 
-    $query = satuanhargamaterial::query();
+    $search = $request->input('search');
+    $kategori_id = $request->input('kategori_id'); // ambil kategori ID
 
-    if($search) {
-        $query->where('uraian', 'like', "%{$search}%");
+    // Query utama + relasi kategori
+    $query = satuanhargamaterial::with('kategorimaterial');
+
+    // Filter search
+    if ($search) {
+        $query->where(function($q) use ($search) {
+            $q->where('uraian', 'LIKE', "%{$search}%")
+              ->orWhere('satuan', 'LIKE', "%{$search}%")
+              ->orWhere('besaran', 'LIKE', "%{$search}%");
+        });
     }
 
-    // Urut abjad berdasarkan kolom 'uraian', paginate 20
+    // Filter kategori
+    if ($kategori_id && $kategori_id != "all") {
+        $query->where('kategorimaterial_id', $kategori_id);
+    }
+
+    // Urutkan abjad berdasarkan uraian
     $data = $query->orderBy('uraian', 'ASC')->paginate(20);
 
-    // Menjaga keyword search tetap di query string saat pagination
-    $data->appends(['search' => $search]);
+    // Tambahkan query string agar pagination tetap jalan
+    $data->appends([
+        'search' => $search,
+        'kategori_id' => $kategori_id
+    ]);
+
+    // Ambil kategori untuk dropdown
+    $kategori = kategorimaterial::orderBy('material','asc')->get();
 
     return view('frontend.new.06_bagian7.01_satuanhargamaterial.satuanhargamaterial', [
         'title' => 'Satuan Harga Material Kabupaten Bandung Barat',
         'data' => $data,
         'user' => $user,
-        'search' => $search, // bisa ditampilkan di input
+        'search' => $search,
+        'kategori' => $kategori,
+        'kategori_id' => $kategori_id
     ]);
 }
+
 
 public function satuanhargupahkbb(Request $request)
 {
@@ -2692,5 +2713,95 @@ public function shstkbb()
 }
 
 
+public function bejenismaterial(Request $request)
+{
+    $perPage = $request->input('perPage', 10);
+    $search = $request->input('search');
 
+    $query = kategorimaterial::query();
+
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+            $q->where('material', 'LIKE', "%{$search}%");
+            //   ->orWhere('besaranperjam', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // Urut berdasarkan kolom 'uraian' dari A-Z
+    $query->orderBy('material', 'asc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view('backend.07_satuanharga.03_satuanhargaperalatan.partials.table', compact('data'))->render()
+        ]);
+    }
+
+    return view('backend.07_satuanharga.04_jenismaterial.index', [
+        'title' => 'Pengaturan Data Jenis Material Satuan Harga Dasar Material ',
+        'data' => $data,
+        'perPage' => $perPage,
+        'search' => $search
+    ]);
+}
+
+public function bejenismaterialdelete($id)
+{
+// Cari item berdasarkan judul
+$entry = kategorimaterial::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/bejenismaterial')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
+
+return redirect()->back()->with('error', 'Item not found');
+}
+
+
+
+public function bejenismaterialcreate()
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    // $jakonjabatanfungsional = profiljakonpersonil::where('id', $id)->firstOrFail();
+    $user = Auth::user();
+
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.07_satuanharga.04_jenismaterial.create', [
+        // 'data' => $jakonjabatanfungsional,
+        'user' => $user,
+        'title' => 'Tambah Jenis Material'
+    ]);
+}
+
+
+
+public function bejenismaterialcreatenew(Request $request)
+{
+    // Validasi input
+    $validatedData = $request->validate([
+        'material' => 'required|string|max:255',
+        // 'besaranperjam' => 'required|numeric|min:0',
+    ], [
+        'material.required' => 'Uraian bahan material wajib diisi.',
+    ]);
+
+    // Simpan ke database
+    kategorimaterial::create([
+        'material' => $validatedData['material'],
+    ]);
+
+    session()->flash('create', 'Data Jenis Material Berhasil Di Tambahkan!');
+    return redirect('/bejenismaterial');
+}
 }

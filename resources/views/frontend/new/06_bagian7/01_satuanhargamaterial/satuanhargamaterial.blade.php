@@ -160,37 +160,51 @@
                     </div>
                     <div class="col-30">
                         <aside class="blog__sidebar">
-                            <div class="sidebar__widget">
-                          <div class="shop__search blog__search" style="margin-bottom: 20px;">
-                            <input
-                                type="text"
-                                id="searchMaterial"
-                                placeholder="Cari Bahan Material"
-                                oninput="searchMaterial()"
-                                class="w-full appearance-none outline-none text-sm font-medium placeholder:font-normal placeholder:text-[#545768] bg-transparent font-[Poppins]"
-                            />
-                            <button type="button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681 12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681 1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945 1 15.681 4.28645 15.681 8.3405Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
 
+    <!-- SEARCH INPUT -->
+    <div class="sidebar__widget">
+        <div class="shop__search blog__search" style="margin-bottom: 20px;">
+            <input
+                type="text"
+                id="searchMaterial"
+                placeholder="Cari Bahan Material"
+                oninput="searchMaterial()"
+                class="w-full appearance-none outline-none text-sm font-medium placeholder:font-normal placeholder:text-[#545768] bg-transparent font-[Poppins]"
+            />
+            <button type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681 12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681 1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945 1 15.681 4.28645 15.681 8.3405Z"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
 
-                            </div>
-                            {{-- <div class="sidebar__widget">
-                                <h4 class="sidebar__widget-title">Categories</h4>
-                                <div class="bs-cat-list">
-                                    <ul class="list-wrap">
-                                        <li><a href="blog.html">Business Strategy <span>(02)</span></a></li>
-                                        <li><a href="blog.html">Finance Advisory <span>(08)</span></a></li>
-                                        <li><a href="blog.html">Marketing Analysis <span>(05)</span></a></li>
-                                        <li><a href="blog.html">Investment Planning <span>(02)</span></a></li>
-                                        <li><a href="blog.html">Data Analysis <span>(11)</span></a></li>
-                                    </ul>
-                                </div>
-                            </div> --}}
-                        </aside>
+    <!-- FILTER KATEGORI MATERIAL -->
+    <div class="sidebar__widget">
+        <label style="font-weight: 600; font-size: 14px; margin-bottom: 6px; display: block;">
+            Pilih Material:
+        </label>
+
+        <form method="GET" id="filterForm">
+            <select name="kategori_id"
+                onchange="document.getElementById('filterForm').submit()"
+                class="w-full text-sm font-medium px-3 py-2 rounded-md"
+                style="border: 1px solid #d0d0d5; background: #fff; font-family: 'Poppins';">
+
+                <option value="all">Semua Bahan</option>
+
+                @foreach($kategori as $k)
+                <option value="{{ $k->id }}" {{ ($kategori_id == $k->id) ? 'selected' : '' }}>
+                    {{ $k->material }}
+                </option>
+                @endforeach
+            </select>
+        </form>
+    </div>
+
+</aside>
+
                     </div>
                 </div>
             </div>
