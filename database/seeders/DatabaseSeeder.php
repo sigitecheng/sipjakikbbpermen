@@ -27086,6 +27086,98 @@ rantaipasoktokobangunan::create([
     'cadangan3' => null,
     'cadangan4' => null,
 ]);
+// Material
+rantaipasokmaterial::create([
+    'informasirantaipasok_id' => 2,
+    'gambar' => '/assets/icon/material.png',
+    'namamaterial' => 'Semen Portland',
+    'harga' => '55000',
+    'lokasi' => 'Gudang Bandung Barat',
+    'ketersediaan' => 'Tersedia',
+    'satuan' => 'Zak',
+    'keterangan' => '(40 kg)',
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
+
+rantaipasokmaterial::create([
+    'informasirantaipasok_id' => 2,
+    'gambar' => '/assets/icon/material.png',
+    'namamaterial' => 'Pasir Beton',
+    'harga' => '35000',
+    'lokasi' => 'Gudang Cimahi',
+    'ketersediaan' => 'Tidak Tersedia',
+    'satuan' => 'm³',
+    'keterangan' => 'Pasir urug kualitas bagus',
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
+
+// Peralatan
+rantaipasokperalatan::create([
+    'informasirantaipasok_id' => 2,
+    'namamaterial' => 'Beton Molen Mini',
+    'gambar' => '/assets/icon/peralatan.png',
+    'harga' => '350000',
+    'lokasi' => 'Workshop Cimareme - Bandung Barat',
+    'ketersediaan' => 'Tidak Tersedia',
+    'satuan' => 'Unit',
+    'keterangan' => 'Untuk pekerjaan skala kecil',
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
+
+rantaipasokperalatan::create([
+    'informasirantaipasok_id' => 2,
+    'namamaterial' => 'Gerobak Semen',
+    'gambar' => '/assets/icon/peralatan.png',
+    'harga' => '250000',
+    'lokasi' => 'Workshop Lembang',
+    'ketersediaan' => 'Tidak Tersedia',
+    'satuan' => 'Unit',
+    'keterangan' => 'Untuk angkut material ringan',
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
+
+// Toko Bangunan
+rantaipasoktokobangunan::create([
+    'informasirantaipasok_id' => 2,
+    'gambar' => '/assets/icon/peralatan.png',
+    'namamaterial' => 'Batu Bata Merah',
+    'harga' => '750',
+    'lokasi' => 'Toko Sumber Jaya - Ngamprah',
+    'ketersediaan' => 'Tersedia',
+    'satuan' => 'Pcs',
+    'keterangan' => 'Bata press kualitas A',
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
+
+rantaipasoktokobangunan::create([
+    'informasirantaipasok_id' => 2,
+    'gambar' => '/assets/icon/peralatan.png',
+    'namamaterial' => 'Triplek 12 mm',
+    'harga' => '85000',
+    'lokasi' => 'Toko Mega Bangunan - Cimahi',
+    'ketersediaan' => 'Tidak Tersedia',
+    'satuan' => 'Lembar',
+    'keterangan' => 'Triplek berkualitas untuk plafon',
+    'cadangan1' => null,
+    'cadangan2' => null,
+    'cadangan3' => null,
+    'cadangan4' => null,
+]);
 
 
 informasirantaipasok::create([
@@ -27093,6 +27185,27 @@ informasirantaipasok::create([
             'user_id'              => 1,
             'namaperusahaan' => '/assets/icon/informasirantaipasok.avif',
             'namaperusahaan'       => 'CV. Angkasa Raya Teknik',
+            'tahunberdiri'         => '2019',
+
+            'nib'                  => '8129081290812098',
+            'npwp'                 => '12.345.678.9-012.345',
+
+            'telepon'              => '081234567890',
+            'email'                => 'info@angkasarayateknik.id',
+            'website'              => 'https://angkasarayateknik.id',
+            'alamatlengkap'        => 'Jl. Puspa Kencana No. 2B, KBB, Jawa Barat',
+
+            'namapimpinan'         => 'Dicky Hermansyah, S.T.',
+            'jabatan'              => 'Direktur Utama',
+
+            'keteranganperusahaan' => 'Perusahaan yang bergerak dalam penyediaan material konstruksi dan jasa teknik bangunan.',
+        ]);
+
+        informasirantaipasok::create([
+            'kecamatankbb_id'      => 1,
+            'user_id'              => 2,
+            'namaperusahaan' => '/assets/icon/informasirantaipasok.avif',
+            'namaperusahaan'       => 'PT. KBB Jaya Makmur',
             'tahunberdiri'         => '2019',
 
             'nib'                  => '8129081290812098',

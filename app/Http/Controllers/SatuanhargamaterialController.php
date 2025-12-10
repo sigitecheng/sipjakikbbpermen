@@ -2819,4 +2819,6 @@ public function bejenismaterialcreatenew(Request $request)
     session()->flash('create', 'Data Jenis Material Berhasil Di Tambahkan!');
     return redirect('/bejenismaterial');
 }
+
+
 }

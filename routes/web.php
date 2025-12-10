@@ -47,6 +47,7 @@ use App\Http\Controllers\PelatihanController;
 use App\Http\Controllers\SkktenagakerjaController;
 use App\Http\Controllers\UijkController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\RantaipasokmaterialController;
 use App\Http\Controllers\UndangundangController;
 use Database\Factories\DatajakonFactory;
 use Database\Factories\SkktenagakerjaFactory;
@@ -2418,14 +2419,14 @@ Route::post('/bedatatkkkbbcreatenew', [PembinaanController::class, 'bedatatkkkbb
 
 // BACKEND RANTAI PASOK BRO
 
-Route::get('/besatuanhargamaterial', [SatuanhargamaterialController::class, 'besatuanhargamaterial'])->middleware(['auth', 'can:admin2']);
-Route::delete('/satuanhargamaterial/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialdelete'])->middleware(['auth', 'can:admin2']);
+Route::get('/berantaimaterial', [RantaipasokmaterialController::class, 'berantaimaterial'])->middleware(['auth', 'can:admin2']);
+Route::delete('/berantaimaterial/delete/{id}', [RantaipasokmaterialController::class, 'berantaimaterialdelete'])->middleware(['auth', 'can:admin2']);
 
-Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
-Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
+Route::get('/berantaimaterial/create', [RantaipasokmaterialController::class, 'berantaimaterialcreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/berantaimaterial/createnew', [RantaipasokmaterialController::class, 'berantaimaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.berantaipasokmaterial');
 
-Route::get('/besatuanhargamaterial/update/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdate'])->middleware(['auth', 'can:admin2']);
-Route::post('/besatuanhargamaterial/updatecreate/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.besatuanhargamaterialcreateupdate');
+Route::get('/berantaimaterial/update/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdate'])->middleware(['auth', 'can:admin2']);
+// Route::post('/besatuanhargamaterial/updatecreate/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.besatuanhargamaterialcreateupdate');
 
 
 
