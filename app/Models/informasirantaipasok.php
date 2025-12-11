@@ -27,4 +27,10 @@ class informasirantaipasok extends Model
     {
         return $this->hasMany(rantaipasokmaterial::class);
     }
+
+    public function rantaipasokperalatan()
+    {
+        return $this->hasMany(rantaipasokperalatan::class);
+    }
+
 }

@@ -2426,6 +2426,16 @@ Route::post('/berantaimaterial/createnew', [RantaipasokmaterialController::class
 Route::get('/berantaimaterial/update/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdate'])->middleware(['auth', 'can:admin2']);
 Route::post('/berantaimaterial/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasokmaterial');
 
+//RANTAI PASOK SUPPLIER PERALATAN
+Route::get('/berantaiperalatan', [RantaipasokmaterialController::class, 'berantaiperalatan'])->middleware(['auth', 'can:admin2']);
+Route::delete('/berantaiperalatan/delete/{id}', [RantaipasokmaterialController::class, 'berantaiperalatandelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/berantaiperalatan/create', [RantaipasokmaterialController::class, 'berantaiperalatanperalatan'])->middleware(['auth', 'can:admin2']);
+Route::post('/berantaiperalatan/createnew', [RantaipasokmaterialController::class, 'berantaiperalatancreatenew'])->middleware(['auth', 'can:admin2'])->name('create.berantaipasokperalatan');
+
+Route::get('/berantaiperalatan/update/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdate'])->middleware(['auth', 'can:admin2']);
+Route::post('/berantaiperalatan/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasokperalatan');
+
 
 
 // Route::get('/dashboard', function () {

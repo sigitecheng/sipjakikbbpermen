@@ -122,7 +122,7 @@
 
                                 </script>
 <!-- Tombol Download Excel -->
-<button onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_satuanhargamaterial')"
+<button onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_rantaipasokmaterial')"
 class="button-berkas"
 >
     <i class="bi bi-download"></i> Download Excel
@@ -212,8 +212,16 @@ class="button-berkas"
             <span>{{ number_format((float)$item->harga, 0, ',', '.') }},00</span>
         </td>
 
+@php
+    $words = explode(' ', $item->lokasi);
+    $chunks = array_chunk($words, 2);
+    $text = collect($chunks)->map(fn($c) => implode(' ', $c))->implode("\n");
+@endphp
 
-        <td style="text-align: left;">{{ $item->lokasi }}</td>
+<td style="text-align: left; white-space: pre-line;">
+    {{ $text }}
+</td>
+
      <td style="text-align: center;">
     @if(strtolower($item->ketersediaan) == 'tersedia')
         <span class="button-hijau">{{ $item->ketersediaan }}</span>
