@@ -2436,6 +2436,16 @@ Route::post('/berantaiperalatan/createnew', [RantaipasokmaterialController::clas
 Route::get('/berantaiperalatan/update/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdate'])->middleware(['auth', 'can:admin2']);
 Route::post('/berantaiperalatan/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasokperalatan');
 
+//RANTAI PASOK TOKO BANGUNAN
+Route::get('/betokobangunan', [RantaipasokmaterialController::class, 'betokobangunan'])->middleware(['auth', 'can:admin2']);
+Route::delete('/betokobangunan/delete/{id}', [RantaipasokmaterialController::class, 'betokobangunandelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/betokobangunan/create', [RantaipasokmaterialController::class, 'betokobangunancreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/betokobangunan/createnew', [RantaipasokmaterialController::class, 'betokobangunancreatenew'])->middleware(['auth', 'can:admin2'])->name('create.betokobangunan');
+
+Route::get('/betokobangunan/update/{id}', [RantaipasokmaterialController::class, 'betokobangunanupdate'])->middleware(['auth', 'can:admin2']);
+Route::post('/betokobangunan/updatecreate/{id}', [RantaipasokmaterialController::class, 'betokobangunanupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasoktokobangunan');
+
 
 
 // Route::get('/dashboard', function () {

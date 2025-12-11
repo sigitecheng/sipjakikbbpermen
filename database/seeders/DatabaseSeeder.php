@@ -27073,7 +27073,7 @@ kategorimaterial::create([
 
 rantaipasoktokobangunan::create([
     'informasirantaipasok_id' => 1,
-    'gambar' => '/assets/icon/peralatan.png',
+    'gambar' => '/assets/icon/tokobangunan.png',
     'namamaterial' => 'Batu Bata Merah',
     'harga' => '750',
     'lokasi' => 'Toko Sumber Jaya - Ngamprah',
@@ -27151,7 +27151,7 @@ rantaipasokperalatan::create([
 // Toko Bangunan
 rantaipasoktokobangunan::create([
     'informasirantaipasok_id' => 2,
-    'gambar' => '/assets/icon/peralatan.png',
+    'gambar' => '/assets/icon/tokobangunan.png',
     'namamaterial' => 'Batu Bata Merah',
     'harga' => '750',
     'lokasi' => 'Toko Sumber Jaya - Ngamprah',
@@ -27166,7 +27166,7 @@ rantaipasoktokobangunan::create([
 
 rantaipasoktokobangunan::create([
     'informasirantaipasok_id' => 2,
-    'gambar' => '/assets/icon/peralatan.png',
+    'gambar' => '/assets/icon/tokobangunan.png',
     'namamaterial' => 'Triplek 12 mm',
     'harga' => '85000',
     'lokasi' => 'Toko Mega Bangunan - Cimahi',

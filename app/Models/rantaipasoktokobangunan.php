@@ -2,10 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class rantaipasoktokobangunan extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes, HasApiTokens;
+
+    protected $guarded = ['id'];
+
+    public function informasirantaipasok()
+    {
+        return $this->belongsTo(informasirantaipasok::class, 'informasirantaipasok_id');
+    }
+
 }
