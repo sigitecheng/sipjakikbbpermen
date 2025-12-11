@@ -314,7 +314,7 @@
     <!-- Link Register -->
     <div style="margin-top: 5px; text-align:center; font-family:'Poppins', sans-serif; font-size:14px;">
         <span>Belum Punya Akun? Silahkan</span>
-        <a href="/404"
+        <a href="/daftar"
            style="color:#9d8120; text-decoration:none; font-weight:600;">
            Daftar !
         </a>
@@ -331,7 +331,7 @@
     font-weight:500;
     font-family:'Poppins', sans-serif;
 ">
-    Dinas Pekerjaan Umum dan Tata Ruang <br> Kabupaten Bandung Barat<br>
+    Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat<br>
     Provinsi Jawa Barat
 </p>
 </div>

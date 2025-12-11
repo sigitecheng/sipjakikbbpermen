@@ -1,23 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -33,8 +13,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -79,29 +58,10 @@
 
 <!-- Tombol Create -->
 <a href="{{ url()->previous() }}">
-    <button
-        onmouseover="this.style.background='white'; this.style.color='#555'; this.style.border='1px solid #ddd'; this.style.transform='scale(1.05)'; this.querySelector('i').style.color='#555'"
-        onmouseout="this.style.background='linear-gradient(45deg, #504d4d, #ffffff)'; this.style.color='white'; this.style.border='1px solid #eee'; this.style.transform='scale(1)'; this.querySelector('i').style.color='white'"
-        style="
-            background: linear-gradient(45deg, #504d4d, #ffffff);
-            color: white;
-            border: 1px solid #eee;
-            margin-right: 10px;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        "
-    >
-        <i class="bi bi-arrow-left" style="color: white; font-size: 18px; transition: all 0.3s ease;"></i>
-        Kembali
-    </button>
+   <button class="button-modern">
+    <i class="bi bi-arrow-left" style="font-size: 18px; transition: all 0.3s ease;"></i>
+    Kembali
+</button>
 </a>
 
 
@@ -153,63 +113,76 @@
         font-family: 'Arial', sans-serif;
         border-bottom: 1px solid #eee;
         padding-bottom: 10px;
-    ">Update Profil Anda</h4>
+    ">Update Profil Akun Anda !</h4>
 
     <form action="{{ route('admin.profile.update', $user->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
+<div style="margin-top: 10px; text-align:center;">
+    @php
+        $avatarUrl = $user->avatar
+                     ? (file_exists(public_path('storage/' . $user->avatar))
+                        ? asset('storage/' . $user->avatar)
+                        : (file_exists(public_path($user->avatar))
+                            ? asset($user->avatar)
+                            : $user->avatar)
+                       )
+                     : asset('/assets/icon/akunavatar.png');
+    @endphp
 
-        <div class="admin-avatar" style="text-align: center; margin-bottom: 20px;">
-            <div style="margin-top: 10px; position: relative;">
-                @if($user->avatar && file_exists(public_path($user->avatar)))
-                    <img src="{{ asset($user->avatar) }}" alt="Admin Avatar" id="avatar-preview" style="
-                        width: 150px;
-                        height: 150px;
-                        border-radius: 50%;
-                        border: 3px solid #D4AF37;
-                        object-fit: cover;
-                        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-                    ">
-                @elseif($user->avatar)
-                    <img src="{{ $user->avatar }}" alt="Admin Avatar" id="avatar-preview" style="
-                        width: 150px;
-                        height: 150px;
-                        border-radius: 50%;
-                        border: 3px solid #D4AF37;
-                        object-fit: cover;
-                        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-                    ">
-                @else
-                    <img src="https://via.placeholder.com/150" alt="Admin Avatar" id="avatar-preview" style="
-                        width: 150px;
-                        height: 150px;
-                        border-radius: 50%;
-                        border: 3px solid #D4AF37;
-                        object-fit: cover;
-                        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-                    ">
-                @endif
-                <div style="margin-top: 10px;">
-                    <label for="avatar" style="
-                        display: inline-block;
-                        padding: 8px 15px;
-                        background: linear-gradient(to right, #D4AF37, #2ECC71);
-                        color: white;
-                        border-radius: 4px;
-                        cursor: pointer;
-                        font-size: 14px;
-                    ">
-                        Ganti Foto Profil
-                        <input type="file" id="avatar" name="avatar" accept="image/*" style="display: none;" onchange="previewImage(this)">
-                    </label>
-                </div>
-            </div>
-        </div>
+    <!-- Preview Avatar Lama / Default -->
+    <img id="avatarPreview" src="{{ $avatarUrl }}" alt="Admin Avatar" style="
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #2517eb;
+        object-fit: cover;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 10px;
+    ">
+
+    <!-- Label -->
+    <label for="avatarInput" style="
+        display:block;
+        margin-bottom:5px;
+        font-weight:600;
+        color:#2517eb;
+        cursor:pointer;
+        font-family:'Poppins', sans-serif;
+    ">Ganti Foto Profil</label>
+
+    <!-- Input File untuk ganti avatar -->
+    <input type="file" name="avatar" accept="image/*" id="avatarInput" style="display:block; margin:0 auto;" />
+
+    @error('avatar')
+        <span style="color:red; font-size:13px;">{{ $message }}</span>
+    @enderror
+</div>
+
+<script>
+    // Preview file baru sebelum submit
+    const avatarInput = document.getElementById('avatarInput');
+    const avatarPreview = document.getElementById('avatarPreview');
+
+    avatarInput.addEventListener('change', function(){
+        const file = this.files[0];
+        if(file){
+            const reader = new FileReader();
+            reader.onload = function(e){
+                avatarPreview.setAttribute('src', e.target.result);
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+
+
         <div class="form-group" style="
             margin-bottom: 20px;
             padding: 15px;
             background: linear-gradient(to right, #f9f9f9, #fff);
-            border-left: 4px solid #2ECC71;
+            border-left: 4px solid #2517eb;
             border-radius: 5px;
         ">
             <label style="
@@ -218,7 +191,7 @@
                 font-weight: bold;
                 color: #555;
             ">Nama Lengkap</label>
-            <input type="text" name="name" value="{{ old('name', $user->name) }}" style="
+            <input placeholder="Masukan Nama Lengkap Anda ..." type="text" name="name" value="{{ old('name', $user->name) }}" style="
                 width: 100%;
                 padding: 10px;
                 background: #fff;
@@ -236,7 +209,7 @@
             margin-bottom: 20px;
             padding: 15px;
             background: linear-gradient(to right, #f9f9f9, #fff);
-            border-left: 4px solid #D4AF37;
+            border-left: 4px solid #2517eb;
             border-radius: 5px;
         ">
             <label style="
@@ -263,7 +236,7 @@
             margin-bottom: 20px;
             padding: 15px;
             background: linear-gradient(to right, #f9f9f9, #fff);
-            border-left: 4px solid #D4AF37;
+            border-left: 4px solid #2517eb;
             border-radius: 5px;
         ">
             <label style="
@@ -286,21 +259,93 @@
             @enderror
         </div>
 
+        <!-- No Handphone -->
+<div class="form-group" style="
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(to right, #f9f9f9, #fff);
+    border-left: 4px solid #2517eb;
+    border-radius: 5px;
+">
+    <label style="
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    ">No Handphone</label>
+    <input placeholder="Masukan Nomor Handphone Anda ..." type="text" name="phone_number" value="{{ old('phone_number', $user->phone_number) }}" style="
+        width: 100%;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: inherit;
+    ">
+    @error('phone_number')
+        <div style="color: #e74c3c; font-size: 14px; margin-top: 5px;">{{ $message }}</div>
+    @enderror
+</div>
+
+
+<!-- Password -->
+<div class="form-group" style="margin-bottom:20px; padding:15px; background: linear-gradient(to right, #f9f9f9, #fff); border-left:4px solid #2517eb; border-radius:5px; position:relative;">
+    <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Password (Ganti Password)</label>
+    <input placeholder="Masukan Password Baru ..." type="password" name="password" id="password" style="width:100%; padding:10px 40px 10px 10px; background:#fff; border:1px solid #ddd; border-radius:4px; font-family:inherit; font-size:inherit;">
+    <!-- Icon mata untuk toggle -->
+    <i class="bi bi-eye-slash" id="togglePassword" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); cursor:pointer; font-size:18px; color:#555;"></i>
+
+    @error('password')
+        <div style="color: #e74c3c; font-size: 14px; margin-top: 5px;">{{ $message }}</div>
+    @enderror
+</div>
+
+<!-- Konfirmasi Password -->
+<div class="form-group" style="margin-bottom:20px; padding:15px; background: linear-gradient(to right, #f9f9f9, #fff); border-left:4px solid #2517eb; border-radius:5px; position:relative;">
+    <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Konfirmasi Password</label>
+    <input placeholder="Masukan Ulang Password ..." type="password" name="password_confirmation" id="password_confirmation" style="width:100%; padding:10px 40px 10px 10px; background:#fff; border:1px solid #ddd; border-radius:4px; font-family:inherit; font-size:inherit;">
+    <!-- Icon mata untuk toggle -->
+    <i class="bi bi-eye-slash" id="togglePasswordConfirm" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); cursor:pointer; font-size:18px; color:#555;"></i>
+
+    @error('password_confirmation')
+        <div style="color: #e74c3c; font-size: 14px; margin-top: 5px;">{{ $message }}</div>
+    @enderror
+</div>
+
+<script>
+    const togglePassword = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+    togglePassword.addEventListener('click', function() {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('bi-eye');
+        this.classList.toggle('bi-eye-slash');
+    });
+
+    const togglePasswordConfirm = document.getElementById('togglePasswordConfirm');
+    const passwordConfirm = document.getElementById('password_confirmation');
+    togglePasswordConfirm.addEventListener('click', function() {
+        const type = passwordConfirm.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordConfirm.setAttribute('type', type);
+        this.classList.toggle('bi-eye');
+        this.classList.toggle('bi-eye-slash');
+    });
+</script>
+
+
+
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                    <button type="button" onclick="openModal()"
-                                    onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-                                    onmouseout="this.style.backgroundColor='#189200'; this.style.color='white';"
-                                    style="background-color: #189200; color: white; border: none; margin-right: 10px; padding: 10px 20px; border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center; transition: background-color 0.3s, color 0.3s; text-decoration: none;">
 
-                                    <!-- Ikon SVG Pensil -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                         fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
-                                      <path d="M15.502 1.94a1.5 1.5 0 0 1 0 2.12L5.207 14.354a1 1 0 0 1-.39.243l-4 1.5a.5.5 0 0 1-.641-.641l1.5-4a1 1 0 0 1 .243-.39L13.44.44a1.5 1.5 0 0 1 2.12 0zm-2.121 1.415L4.854 11.882l-.708 2.122 2.121-.707L15.5 3.354l-2.12-2.121z"/>
-                                    </svg>
+                                   <button type="button" onclick="openModal()"
+                                 class="button-berkas">
+                    <!-- Icon Pencil Square Bootstrap -->
+                    <i class="bi bi-pencil-square"></i>
 
-                                    <span style="font-family: 'Poppins', sans-serif;">Update</span>
-                                </button>
+
+                                Perbaikan Data ?
+                            </button>
+
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">

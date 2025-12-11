@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\statusadmin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use App\Models\User; // Ganti sesuai model user kamu
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 class LoginController extends Controller
 {
     //
@@ -126,5 +130,74 @@ public function authenticate(Request $request)
 
         return redirect('/');
     }
+
+
+    public function register()
+    {
+        $datastatusadmin = statusadmin::whereIn('id', [3, 9, 10])->get();
+
+        return view('login.register', [
+            'statusadmin' => $datastatusadmin,
+            'title' => 'Register Akun SIPJAKI KBB !',
+        ]);
+    }
+public function registernew(Request $request)
+{
+    // Validasi input dengan custom error message
+    $validator = Validator::make($request->all(), [
+        'statusadmin_id' => 'required|string',
+        'username'       => 'required|string|max:255|unique:users',
+        'phone_number'   => 'required|string|max:20|unique:users',
+        'email'          => 'required|email|max:255|unique:users',
+        'password'       => 'required|string|min:6|confirmed', // password_confirmation wajib ada
+    ], [
+        'statusadmin_id.required' => 'Harap pilih jenis akun Anda.',
+        'statusadmin_id.exists'   => 'Jenis akun yang dipilih tidak valid.',
+        'username.required'       => 'Username wajib diisi.',
+        'username.max'            => 'Username terlalu panjang, maksimal 255 karakter.',
+        'username.unique'         => 'Username sudah digunakan, silakan pilih yang lain.',
+        'phone_number.required'   => 'Nomor handphone wajib diisi.',
+        'phone_number.max'        => 'Nomor handphone terlalu panjang, maksimal 20 karakter.',
+        'phone_number.unique'     => 'Nomor handphone sudah terdaftar.',
+        'email.required'          => 'Email wajib diisi.',
+        'email.email'             => 'Format email tidak valid.',
+        'email.max'               => 'Email terlalu panjang, maksimal 255 karakter.',
+        'email.unique'            => 'Email sudah terdaftar.',
+        'password.required'       => 'Password wajib diisi.',
+        'password.min'            => 'Password minimal 6 karakter.',
+        'password.confirmed'      => 'Konfirmasi password tidak sesuai.',
+    ]);
+
+    if ($validator->fails()) {
+        return redirect()->back()
+                         ->withErrors($validator)
+                         ->withInput();
+    }
+
+    // Simpan user baru
+    $user = User::create([
+        'statusadmin_id' => $request->statusadmin_id,
+        'username'       => $request->username,
+        'phone_number'   => $request->phone_number,
+        'email'          => $request->email,
+        'password'       => Hash::make($request->password),
+    ]);
+
+    // Redirect atau login otomatis
+    return redirect('/login')->with('create', 'Pendaftaran berhasil! Silakan login.');
+}
+
+public function profilakun()
+{
+    // Ambil data user yang sedang login saja
+    $data = User::select('id', 'statusadmin_id', 'name', 'username', 'phone_number', 'email', 'avatar', 'created_at')
+                ->where('id', auth()->id())
+                ->first(); // Ambil satu data saja karena cuma 1 user login
+
+    return view('backend.13_daftarakun.10_dinas.index', [
+        'title' => 'Profil Saya',
+        'data' => $data,
+    ]);
+}
 
 }

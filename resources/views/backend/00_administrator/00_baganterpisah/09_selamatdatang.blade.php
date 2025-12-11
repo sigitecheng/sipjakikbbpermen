@@ -99,7 +99,7 @@ table.zebra-table {
                 <span class="marquee-content">
   Selamat datang!
   <span style="color: black; font-weight:800;">
-    {{ Auth::user()?->name ?? '-' }}
+    {{ Auth::user()?->username ?? '-' }}
   </span>
   di Dashboard
   <span style="color: black; font-weight:800;">

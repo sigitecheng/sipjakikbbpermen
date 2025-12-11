@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\himbauandinas;
-use App\Models\qa;
-use App\Models\qapertanyaan;
-use App\Models\qasebagai;
+use App\Models\informasirantaipasok;
+use App\Models\kecamatankbb;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\statusadmin;
@@ -13,6 +11,8 @@ use App\Models\statusadmin;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 
+
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 class AkunController extends Controller
 {
@@ -229,23 +229,23 @@ public function forgotpassword()
     $user = Auth::user();
 
     // Ambil ID dari user yang login
-    $userId = $user->id;
+    $userId = $user->username;
 
     // (opsional) Kalau mau cek ID
     // dd($userId);
 
-    return view('backend.15_hakakses.02_profile.index', [
-        'title' => 'Akun Anda !',
+return view('backend.15_hakakses.02_profile.index', [
+        'title' => 'Profil Akun Anda !',
         'user' => $user,
         'userId' => $userId, // Kirim juga ke view jika perlu
     ]);
 }
 
 
-public function beprofileupdate($id)
+public function beprofileupdate($username)
 {
     // Cari data undang-undang berdasarkan nilai 'judul'
-    $user = User::where('id', $id)->firstOrFail();
+    $user = User::where('username', $username)->firstOrFail();
 
     // Tampilkan form update dengan data yang ditemukan
     return view('backend.15_hakakses.02_profile.update', [
@@ -256,37 +256,43 @@ public function beprofileupdate($id)
 
 
 // ========================
-
-
 public function beprofileupdatecreate(Request $request, $id)
 {
     $user = User::findOrFail($id);
 
-   $validated = $request->validate([
-    'name' => 'required|string|max:255',
-    'username' => 'required|string|max:255|unique:users,username,' . $id,
-    'email' => 'required|email|max:255|unique:users,email,' . $id,
-    'avatar' => 'nullable|image|mimes:jpg,jpeg,png|max:5048',
-], [
-    'name.required' => 'Nama lengkap wajib diisi.',
-    'name.string' => 'Nama lengkap harus berupa teks.',
-    'name.max' => 'Nama lengkap tidak boleh lebih dari 255 karakter.',
+    // Validasi input
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'username' => 'required|string|max:255|unique:users,username,' . $id,
+        'email' => 'required|email|max:255|unique:users,email,' . $id,
+        'phone_number' => 'nullable|string|max:20',
+        'password' => 'nullable|string|min:6|confirmed', // password_confirmation harus ada jika password diisi
+        'avatar' => 'nullable|image|mimes:jpg,jpeg,png|max:5048',
+    ], [
+        'name.required' => 'Nama lengkap wajib diisi.',
+        'name.string' => 'Nama lengkap harus berupa teks.',
+        'name.max' => 'Nama lengkap tidak boleh lebih dari 255 karakter.',
 
-    'username.required' => 'Username wajib diisi.',
-    'username.string' => 'Username harus berupa teks.',
-    'username.max' => 'Username tidak boleh lebih dari 255 karakter.',
-    'username.unique' => 'Username ini sudah digunakan, silakan pilih yang lain.',
+        'username.required' => 'Username wajib diisi.',
+        'username.string' => 'Username harus berupa teks.',
+        'username.max' => 'Username tidak boleh lebih dari 255 karakter.',
+        'username.unique' => 'Username ini sudah digunakan, silakan pilih yang lain.',
 
-    'email.required' => 'Email wajib diisi.',
-    'email.email' => 'Format email tidak valid.',
-    'email.max' => 'Email tidak boleh lebih dari 255 karakter.',
-    'email.unique' => 'Email ini sudah digunakan, silakan gunakan email lain.',
+        'email.required' => 'Email wajib diisi.',
+        'email.email' => 'Format email tidak valid.',
+        'email.max' => 'Email tidak boleh lebih dari 255 karakter.',
+        'email.unique' => 'Email ini sudah digunakan, silakan gunakan email lain.',
 
-    'avatar.image' => 'File harus berupa gambar.',
-    'avatar.mimes' => 'Format gambar harus jpg, jpeg, atau png.',
-    'avatar.max' => 'Ukuran gambar tidak boleh lebih dari 5MB.',
-]);
+        'phone_number.string' => 'No Handphone harus berupa teks.',
+        'phone_number.max' => 'No Handphone tidak boleh lebih dari 20 karakter.',
 
+        'password.min' => 'Password minimal 6 karakter.',
+        'password.confirmed' => 'Konfirmasi password tidak sesuai.',
+
+        'avatar.image' => 'File harus berupa gambar.',
+        'avatar.mimes' => 'Format gambar harus jpg, jpeg, atau png.',
+        'avatar.max' => 'Ukuran gambar tidak boleh lebih dari 5MB.',
+    ]);
 
     // Simpan avatar baru jika ada file di-upload
     if ($request->hasFile('avatar')) {
@@ -307,22 +313,28 @@ public function beprofileupdatecreate(Request $request, $id)
         // Simpan file baru ke public path
         $file->move(public_path('00_akun/01_user'), $avatarName);
 
-        // Simpan path ke database (pastikan sesuai)
+        // Simpan path ke database
         $user->avatar = $avatarPath;
     }
 
-    // Simpan data lainnya
+    // Update data lainnya
     $user->name = $validated['name'];
     $user->username = $validated['username'];
     $user->email = $validated['email'];
+    $user->phone_number = $validated['phone_number'] ?? $user->phone_number;
+
+    // Update password jika diisi
+    if (!empty($validated['password'])) {
+        $user->password = Hash::make($validated['password']);
+    }
+
     $user->save();
 
-    session()->flash('create', 'Profile Berhasil Di Update !.');
+    session()->flash('update', 'Akun Anda Berhasil Di Update !');
 
-        // Redirect ke halaman utama
     return redirect('/beprofile');
-
 }
+
 
 
 // AKUN SUPER ADMIN
@@ -667,6 +679,98 @@ public function alldinas(Request $request)
 }
 
 
+public function beprofilrantaipasok()
+{
+    // Ambil user yang sedang login
+    $user = Auth::user();
+
+    $informasiId = $user->id;
+
+    // Ambil data rantai pasok berdasarkan user yang login
+    $informasi = informasirantaipasok::where('user_id', $user->id)->first();
+
+    return view('backend.15_hakakses.03_rantaipasok.index', [
+        'title' => 'Profil Informasi PT/CV/Toko Bangunan Rantai Pasok',
+        'user' => $user,
+        'informasi' => $informasi,
+        'informasiId' => $informasiId,
+    ]);
 }
+
+public function beprofilrantaipasokinfo()
+{
+    // Ambil user yang sedang login
+    $user = Auth::user();
+
+    // Ambil data rantai pasok berdasarkan user_id dari user yang login
+    $informasi = informasirantaipasok::where('user_id', $user->id)->first();
+    $kecamatankbb = kecamatankbb::all();
+
+    // Tampilkan form update / create (prefill kalau data ada)
+    return view('backend.15_hakakses.03_rantaipasok.update', [
+        'user' => $user,
+        'informasi' => $informasi,
+        'kecamatankbb' => $kecamatankbb,
+        'title' => 'Masukan Profil Perusahaan Anda !',
+    ]);
+}
+
+public function beprofilrantaipasokupdatecreate(Request $request)
+{
+    $user = Auth::user();
+
+    // Validasi
+    $validated = $request->validate([
+        'fotoperusahaan' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:15048',
+        'namaperusahaan' => 'nullable|string|max:255',
+        'tahunberdiri' => 'nullable|string|max:4',
+        'nib' => 'nullable|string|max:100',
+        'npwp' => 'nullable|string|max:100',
+        'telepon' => 'nullable|string|max:20',
+        'email' => 'nullable|email|max:255',
+        'website' => 'nullable|string|max:255',
+        'alamatlengkap' => 'nullable|string',
+        'namapimpinan' => 'nullable|string|max:255',
+        'jabatan' => 'nullable|string|max:255',
+        'keteranganperusahaan' => 'nullable|string',
+    ]);
+
+    // Ambil data jika sudah ada
+    $informasi = informasirantaipasok::firstOrNew(['user_id' => $user->id]);
+
+    // Handle upload foto perusahaan langsung ke public
+    if ($request->hasFile('fotoperusahaan')) {
+        // Hapus foto lama jika ada
+        if ($informasi->fotoperusahaan && file_exists(public_path($informasi->fotoperusahaan))) {
+            unlink(public_path($informasi->fotoperusahaan));
+        }
+
+        $file = $request->file('fotoperusahaan');
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('rantaipasok'), $filename); // simpan langsung ke public/rantaipasok
+        $informasi->fotoperusahaan = 'rantaipasok/' . $filename; // simpan path relatif ke database
+    }
+
+    // Simpan data lain
+    $informasi->user_id = $user->id;
+    $informasi->namaperusahaan = $validated['namaperusahaan'] ?? $informasi->namaperusahaan ?? null ;
+    $informasi->tahunberdiri = $validated['tahunberdiri'] ?? $informasi->tahunberdiri ?? null ;
+    $informasi->nib = $validated['nib'] ?? $informasi->nib ?? null ;
+    $informasi->npwp = $validated['npwp'] ?? $informasi->npwp ?? null ;
+    $informasi->telepon = $validated['telepon'] ?? $informasi->telepon ?? null ;
+    $informasi->email = $validated['email'] ?? $informasi->email ?? null ;
+    $informasi->website = $validated['website'] ?? $informasi->website ?? null ;
+    $informasi->alamatlengkap = $validated['alamatlengkap'] ?? $informasi->alamatlengkap ?? null ;
+    $informasi->namapimpinan = $validated['namapimpinan'] ?? $informasi->namapimpinan ?? null ;
+    $informasi->jabatan = $validated['jabatan'] ?? $informasi->jabatan ?? null ;
+    $informasi->keteranganperusahaan = $validated['keteranganperusahaan'] ?? $informasi->keteranganperusahaan ?? null ;
+
+    $informasi->save();
+
+    return redirect('/beprofilrantaipasok')->with('success', 'Profil perusahaan berhasil disimpan!');
+}
+
+}
+
 
 

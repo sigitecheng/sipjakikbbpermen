@@ -721,7 +721,7 @@ Route::post('/settingtahunpilihan/{id}', [SettingmenuController::class, 'deletes
 //     ]);
 // });
 
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest')->name('loginawal');
 Route::get('/masuk', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login-custom', [LoginController::class, 'authenticate'])
     ->name('login.custom');
@@ -1327,7 +1327,7 @@ Route::get('/bestrukturdinas', [StrukturController::class, 'strukturkedinasan'])
 
 // ---------------------- MENU 2 PROFIL JASA KONSTRUKSI MAS JAKI   -----------------------------------------------------
 // ___________________________________________________________________________________________________________________________________
-Route::get('/beprofiljakon', [StrukturController::class, 'beprofiljakon'])->middleware(['auth', 'can:admin2']);
+Route::get('/beprofiljakon', [StrukturController::class, 'beprofiljakon'])->middleware('auth');
 // Route::get('/beprofiljakon', [StrukturController::class, 'beprofiljakon'])->middleware(['auth']);
 // ___________________________________________________________________________________________________________________________________
 // ___________________________________________________________________________________________________________________________________
@@ -2349,7 +2349,7 @@ Route::post('/settingstatusadmin/{id}', [SettingmenuController::class, 'deletest
 ->name('delete.statusadmin');
 
 Route::get('/daftar', [LoginController::class, 'register'])->name('login')->middleware('guest');
-Route::post('/daftarnew', [LoginController::class, 'registernew'])->name('login');
+Route::post('/daftarnew', [LoginController::class, 'registernew'])->name('login.daftar');
 Route::get('/verify/{token}', [LoginController::class, 'verifyEmail']);
 Route::get('/forgotpassword', [LoginController::class, 'forgotpassword'])->name('login')->middleware('guest');
 
@@ -2455,6 +2455,15 @@ Route::get('/rantaipasokperalatan', [RantaipasokmaterialController::class, 'rant
 // RANTAI TOKO BANGUNAN
 Route::get('/rantaitokobangunan', [RantaipasokmaterialController::class, 'rantaitokobangunan']);
 
+
+// DATA AKUN PERUBAHAN
+Route::get('/profilakun', [AkunController::class, 'profilakun'])->middleware(['auth', 'can:adminrantaipasok']);
+
+
+// INFORMASI PERUSHAAN RANTAI PASOK
+Route::get('/beprofilrantaipasok', [AkunController::class, 'beprofilrantaipasok'])->middleware('auth')->name('adminrantaipasok');
+Route::get('/beprofilrantaipasok/info', [AkunController::class, 'beprofilrantaipasokinfo'])->middleware('auth')->name('adminrantaipasok');
+Route::post('/beprofilrantaipasok/createnew', [AkunController::class, 'beprofilrantaipasokupdatecreate'])->middleware('auth')->name('admin.informasirantaipasok');
 
 // Route::get('/satuanhargupahkbb', [SatuanhargamaterialController::class, 'satuanhargupahkbb']);
 // Route::get('/satuanhargaalatkbb', [SatuanhargamaterialController::class, 'satuanhargaalatkbb']);

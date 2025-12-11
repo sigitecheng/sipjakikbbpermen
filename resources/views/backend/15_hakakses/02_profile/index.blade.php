@@ -1,22 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
 
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
@@ -33,7 +14,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
+<section style="background: #FFFFFF; width: 100%;">
 
     <!--begin::App Content Header-->
      <div class="app-content-header">
@@ -80,23 +61,7 @@
 <!-- Tombol Create -->
 <a href="/beprofile/update/{{ $userId }}">
     <button
-        onmouseover="this.style.background='white'; this.style.color='black'; this.style.transform='scale(1.05)'"
-        onmouseout="this.style.background='linear-gradient(45deg, #d4af37, #228B22)'; this.style.color='white'; this.style.transform='scale(1)'"
-        style="
-            background: linear-gradient(45deg, #d4af37, #228B22);
-            color: white;
-            border: none;
-            margin-right: 10px;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-        "
+        class="button-modern"
     >
     <i class="bi bi-pencil-square"></i>
 
@@ -118,7 +83,7 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     border: 2px solid;
-    border-image: linear-gradient(45deg, #D4AF37, #2ECC71) 1;
+    border-image: linear-gradient(45deg, #2517eb, #ffffff) 1;
     position: relative;
     overflow: hidden;
 ">
@@ -129,8 +94,8 @@
         height: 50px;
         top: 0;
         right: 0;
-        border-top: 2px solid #D4AF37;
-        border-right: 2px solid #D4AF37;
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
         border-top-right-radius: 10px;
     "></div>
 
@@ -158,6 +123,7 @@
         text-align: center;
         margin-bottom: 20px;
     ">
+
 <div style="margin-top: 10px;">
     @if($user->avatar && file_exists(public_path('storage/' . $user->avatar)))
         {{-- Jika avatar ada di dalam folder storage --}}
@@ -165,7 +131,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid #D4AF37;
+            border: 3px solid #2517eb;
             object-fit: cover;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         ">
@@ -175,7 +141,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid #D4AF37;
+            border: 3px solid #2517eb;
             object-fit: cover;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         ">
@@ -185,22 +151,23 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid #D4AF37;
+            border: 3px solid #2517eb;
             object-fit: cover;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         ">
     @else
-        {{-- Jika avatar tidak ada, tampilkan placeholder --}}
-        <img src="https://via.placeholder.com/150" alt="Admin Avatar" style="
+        {{-- Jika avatar tidak ada, tampilkan default lokal --}}
+        <img src="{{ asset('/assets/icon/akunavatar.png') }}" alt="Admin Avatar" style="
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid #D4AF37;
+            border: 3px solid #2517eb;
             object-fit: cover;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         ">
     @endif
 </div>
+
 
     </div>
 
@@ -208,7 +175,7 @@
         margin-bottom: 20px;
         padding: 15px;
         background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #D4AF37;
+        border-left: 4px solid #2517eb;
         border-radius: 5px;
     ">
         <label style="
@@ -216,7 +183,7 @@
             margin-bottom: 5px;
             font-weight: bold;
             color: #555;
-        ">Status Admin</label>
+        ">Status Akun</label>
         <div class="form-control" style="
             padding: 10px;
             background: #fff;
@@ -229,7 +196,7 @@
         margin-bottom: 20px;
         padding: 15px;
         background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #2ECC71;
+        border-left: 4px solid #2517eb;
         border-radius: 5px;
     ">
         <label style="
@@ -243,14 +210,14 @@
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 4px;
-        ">{{ $user->name ?? 'N/A' }}</div>
+        ">{{ $user->name ?? '-' }}</div>
     </div>
 
     <div class="form-group" style="
         margin-bottom: 20px;
         padding: 15px;
         background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #D4AF37;
+        border-left: 4px solid #2517eb;
         border-radius: 5px;
     ">
         <label style="
@@ -270,7 +237,7 @@
         margin-bottom: 20px;
         padding: 15px;
         background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #2ECC71;
+        border-left: 4px solid #2517eb;
         border-radius: 5px;
     ">
         <label style="

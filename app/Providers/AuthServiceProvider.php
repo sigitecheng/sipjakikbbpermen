@@ -72,8 +72,8 @@ class AuthServiceProvider extends ServiceProvider
                 });
 
                 // Gate untuk memeriksa apakah pengguna adalah pekerja
-                Gate::define('supplierbangunan', function ($user) {
-                    return $user->statusadmin->statusadmin === 'supplierbangunan'; // Cek apakah statusnya pekerja
+                Gate::define('supplier', function ($user) {
+                    return $user->statusadmin->statusadmin === 'supplier'; // Cek apakah statusnya pekerja
                 });
 
                   Gate::define('admin3', function ($user) {
@@ -95,7 +95,13 @@ class AuthServiceProvider extends ServiceProvider
                         return in_array($user->statusadmin->statusadmin, [
                             'super_admin',
                             'admin',
-                            'supplierbangunan',
+                            'supplier',
+                        ]);
+                    });
+
+                    Gate::define('adminrantaipasokakun', function ($user) {
+                        return in_array($user->statusadmin->statusadmin, [
+                            'supplier',
                         ]);
                     });
             }

@@ -1908,6 +1908,93 @@
 
             {{-- ---------------------------------------------  --}}
 
+
+@can('supplier')
+<li class="nav-header" style="color: white;">MENU RANTAI PASOK<br></li>
+
+
+            <li class="nav-item">
+              <a href="#" class="nav-link" style="display:flex; align-items:center; justify-content:space-between;">
+    <!-- Ikon untuk Profil Anda -->
+    <div style="display:flex; align-items:center; gap:8px;">
+        <i class="nav-icon bi bi-person-circle" style="color: white; font-size:18px;"></i>
+        <span style="color: white; font-weight:500;">Profil Anda</span>
+    </div>
+    <!-- Ikon panah kanan -->
+    <i class="nav-arrow bi bi-chevron-right" style="color:white;"></i>
+</a>
+
+
+                <ul class="nav nav-treeview">
+                  <!-- Profil Paket Pekerjaan Konstruksi -->
+                 <li class="nav-item">
+    <a href="/beprofilrantaipasok" class="nav-link">
+        <i class="nav-icon bi bi-person-circle text-warning"></i> <!-- Ikon untuk Profil -->
+        <p style="color: white">Profil Rantai Pasok</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="/beprofile" class="nav-link">
+        <i class="nav-icon bi bi-gear text-warning"></i> <!-- Ikon untuk Setting Akun -->
+        <p style="color: white">Setting Akun</p>
+    </a>
+</li>
+                </ul>
+              </li>
+
+            <li class="nav-item">
+             <a href="#" class="nav-link" style="display:flex; align-items:center; justify-content:space-between;">
+    <!-- Ikon untuk Data Rantai Pasok -->
+    <div style="display:flex; align-items:center; gap:8px;">
+        <i class="nav-icon bi bi-box-seam" style="color: white; font-size:18px;"></i>
+        <span style="color: white; font-weight:500;">Data Rantai Pasok</span>
+    </div>
+    <!-- Ikon panah kanan -->
+    <i class="nav-arrow bi bi-chevron-right" style="color:white;"></i>
+</a>
+
+
+
+                <ul class="nav nav-treeview">
+            <li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-box-seam text-warning"></i> <!-- Ikon untuk Material -->
+        <p style="color: white">Material</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-tools text-warning"></i> <!-- Ikon untuk Peralatan -->
+        <p style="color: white">Peralatan</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-shop text-warning"></i> <!-- Ikon untuk Toko Bangunan -->
+        <p style="color: white">Toko Bangunan</p>
+    </a>
+</li>
+
+
+                </ul>
+              </li>
+
+
+                 {{-- <li class="nav-item">
+                <a href="/beprofile" class="nav-link">
+                  <i class="nav-icon bi bi-person-circle" style="color: white"></i> <!-- Profil Anda -->
+                  <p style="color: white">
+                    Profil Anda
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+              </li> --}}
+
+@endcan
+
             <li class="nav-header" style="color: white;">LOGOUT</li>
 
             <li class="nav-item">

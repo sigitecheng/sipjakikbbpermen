@@ -1,0 +1,346 @@
+
+@include('backend.00_administrator.00_baganterpisah.01_header')
+
+<!--begin::Body-->
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+ <!--begin::App Wrapper-->
+ <div class="app-wrapper">
+{{-- ---------------------------------------------------------------------- --}}
+
+@include('backend.00_administrator.00_baganterpisah.04_navbar')
+{{-- ---------------------------------------------------------------------- --}}
+
+   @include('backend.00_administrator.00_baganterpisah.03_sidebar')
+
+   <!--begin::App Main-->
+   <main class="app-main">
+<section style="background: #FFFFFF; width: 100%;">
+
+    <!--begin::App Content Header-->
+     <div class="app-content-header">
+       <!--begin::Container-->
+       <div class="container-fluid">
+         <!--begin::Row-->
+         <div class="row">
+
+            @include('backend.00_administrator.00_baganterpisah.09_selamatdatang')
+            @include('backend.00_administrator.00_baganterpisah.11_alert')
+         </div>
+         <!--end::Row-->
+       </div>
+       <!--end::Container-->
+     </div>
+
+     <!-- Menampilkan pesan sukses -->
+<br>
+
+     <div class="container-fluid">
+         <!--begin::Row-->
+         <div class="row" style="margin-right: 10px; margin-left:10px;">
+             <!-- /.card -->
+             <div class="card mb-4">
+                 <!-- /.card-header -->
+                 <div class="card-header">
+                    @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
+
+                     <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
+
+                            <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
+        </div>
+
+
+        <script>
+                  function updateEntries() {
+                let selectedValue = document.getElementById("entries").value;
+                let url = new URL(window.location.href);
+                url.searchParams.set("perPage", selectedValue);
+                window.location.href = url.toString();
+            }
+        </script>
+
+<!-- Tombol Create -->
+<a href="/beprofilrantaipasok/info">
+    <button
+        class="button-modern"
+    >
+    <i class="bi bi-pencil-square"></i>
+
+        Masukan Informasi
+    </button>
+</a>
+
+
+                        </div>
+                 </div>
+                 <!-- /.card-header -->
+                 <div class="card-body p-0">
+                     <div class="table-responsive" style="overflow-x: auto; white-space: nowrap;">
+<div class="admin-profile-container" style="
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #2517eb, #ffffff) 1;
+    position: relative;
+    overflow: hidden;
+">
+    <!-- Hiasan sudut -->
+    <div class="corner-decor" style="
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 0;
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        border-top-right-radius: 10px;
+    "></div>
+
+    <div class="corner-decor" style="
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid #2ECC71;
+        border-left: 2px solid #2ECC71;
+        border-bottom-left-radius: 10px;
+    "></div>
+
+    <h4 style="
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        font-family: 'Arial', sans-serif;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    ">Informasi PT/CV/Toko Anda</h4>
+
+    <div class="admin-fotoperusahaan" style="
+        text-align: center;
+        margin-bottom: 20px;
+    ">
+
+<div style="margin-top: 10px; text-align:center;">
+    @if($informasi)
+        @if($informasi->fotoperusahaan && file_exists(public_path('storage/' . $informasi->fotoperusahaan)))
+            <img src="{{ asset('storage/' . $informasi->fotoperusahaan) }}" alt="Foto Perusahaan" style="
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 3px solid #2517eb;
+                object-fit: cover;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            ">
+        @elseif($informasi->fotoperusahaan && file_exists(public_path($informasi->fotoperusahaan)))
+            <img src="{{ asset($informasi->fotoperusahaan) }}" alt="Foto Perusahaan" style="
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 3px solid #2517eb;
+                object-fit: cover;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            ">
+        @elseif($informasi->fotoperusahaan)
+            <img src="{{ $informasi->fotoperusahaan }}" alt="Foto Perusahaan" style="
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 3px solid #2517eb;
+                object-fit: cover;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            ">
+        @else
+            <img src="{{ asset('/assets/icon/akunfotoperusahaan.png') }}" alt="Foto Perusahaan" style="
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 3px solid #2517eb;
+                object-fit: cover;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            ">
+        @endif
+    @else
+        <div style="font-weight: 600; color: #555; font-size: 16px;">
+            Anda Belum Melengkapi Profil Perusahaan <br> Silahkan Masukan Informasi Perusahaan/Toko Anda !
+        </div>
+    @endif
+</div>
+
+
+    </div>
+
+<div style="margin-top: 10px;">
+
+    {{-- Nama Perusahaan --}}
+    @if(!empty($informasi->namaperusahaan))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Nama Perusahaan</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->namaperusahaan }}</div>
+        </div>
+    @endif
+
+    {{-- Tahun Berdiri --}}
+    @if(!empty($informasi->tahunberdiri))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Tahun Berdiri</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->tahunberdiri }}</div>
+        </div>
+    @endif
+
+    {{-- NIB --}}
+    @if(!empty($informasi->nib))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">NIB</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->nib }}</div>
+        </div>
+    @endif
+
+    {{-- NPWP --}}
+    @if(!empty($informasi->npwp))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">NPWP</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->npwp }}</div>
+        </div>
+    @endif
+
+    {{-- Telepon --}}
+    @if(!empty($informasi->telepon))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Telepon</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->telepon }}</div>
+        </div>
+    @endif
+
+    {{-- Email --}}
+    @if(!empty($informasi->email))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Email</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->email }}</div>
+        </div>
+    @endif
+
+    {{-- Website --}}
+    @if(!empty($informasi->website))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Website</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->website }}</div>
+        </div>
+    @endif
+
+    {{-- Alamat Lengkap --}}
+    @if(!empty($informasi->alamatlengkap))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Alamat Lengkap</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->alamatlengkap }}</div>
+        </div>
+    @endif
+
+    {{-- Nama Pimpinan --}}
+    @if(!empty($informasi->namapimpinan))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Nama Pimpinan</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->namapimpinan }}</div>
+        </div>
+    @endif
+
+    {{-- Jabatan --}}
+    @if(!empty($informasi->jabatan))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Jabatan</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->jabatan }}</div>
+        </div>
+    @endif
+
+    {{-- Keterangan Perusahaan --}}
+    @if(!empty($informasi->keteranganperusahaan))
+        <div class="form-group" style="margin-bottom:20px; padding:15px; background:linear-gradient(to right,#f9f9f9,#fff); border-left:4px solid #2517eb; border-radius:5px;">
+            <label style="display:block; margin-bottom:5px; font-weight:bold; color:#555;">Keterangan Perusahaan</label>
+            <div class="form-control" style="padding:10px; background:#fff; border:1px solid #ddd; border-radius:4px;">{{ $informasi->keteranganperusahaan }}</div>
+        </div>
+    @endif
+
+</div>
+
+</div>
+
+
+                    </div>
+                 </div>
+
+                 {{-- @include('backend.00_administrator.00_baganterpisah.07_paginations') --}}
+
+                 <br><br>
+
+
+                 <!-- Modal Konfirmasi Hapus -->
+                 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
+                                 <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                             </div>
+                             <div class="modal-body">
+                                 <p>Apakah Anda Ingin Menghapus Data : <span id="itemName"></span>?</p>
+                             </div>
+                             <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                 <form id="deleteForm" method="POST" action="">
+                                     @csrf
+                                     @method('DELETE')
+                                     <button type="submit" class="btn btn-danger">Hapus</button>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <script>
+                 function setDeleteUrl(button) {
+                     var namasekolah = button.getAttribute('data-judul');
+                     document.getElementById('itemName').innerText = namasekolah;
+                     var deleteUrl = "/namasekolah/delete/" + encodeURIComponent(namasekolah);
+                     document.getElementById('deleteForm').action = deleteUrl;
+                 }
+                 </script>
+
+                 <style>
+                     .table-responsive {
+                         max-width: 100%;
+                         overflow-x: auto;
+                     }
+                 </style>
+
+             </div>
+             <!-- /.card -->
+         </div>
+         <!-- /.col -->
+     </div>
+     <!--end::Row-->
+     </div>
+               <!--end::Container-->
+     <!--end::App Content Header-->
+     <!--begin::App Content-->
+       <!--end::App Content-->
+        </section>
+    </main>
+   <!--end::App Main-->
+ </div>
+ </div>
+
+
+   @include('backend.00_administrator.00_baganterpisah.02_footer')
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+   <script>
+    function exportTableToExcel(tableID, filename = '') {
+        var table = document.getElementById(tableID);
+        var wb = XLSX.utils.table_to_book(table, {sheet:"Sheet 1"});
+        return XLSX.writeFile(wb, filename + '.xlsx');
+    }
+    </script>

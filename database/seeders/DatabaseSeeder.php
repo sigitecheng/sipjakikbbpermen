@@ -1007,7 +1007,7 @@ statusadmin::create(['id' => 6, 'statusadmin' => 'supp_tokobangunan']);
 statusadmin::create(['id' => 7, 'statusadmin' => 'lsppenerbit']);
 statusadmin::create(['id' => 8, 'statusadmin' => 'operator']);
 statusadmin::create(['id' => 9, 'statusadmin' => 'dinas']);
-statusadmin::create(['id' => 10, 'statusadmin' => 'supplierbangunan']);
+statusadmin::create(['id' => 10, 'statusadmin' => 'supplier']);
 
         // ===================================================================================
         // DATA TENAGA KERJA SKK KABUPATEN BANDUNG BARAT
