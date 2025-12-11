@@ -697,7 +697,7 @@ public function rantaipasokmaterialkbb(Request $request)
     $kategori = informasirantaipasok::orderBy('namaperusahaan', 'asc')->get();
 
     return view('frontend.new.07_bagian8.01_rantaipasokmaterial.ferantaipasokamterial', [
-        'title' => 'Daftar Rantai Pasok Material',
+        'title' => 'Daftar Supplier Bahan Material',
         'data' => $data,
         'user' => $user,
         'search' => $search,
@@ -707,5 +707,113 @@ public function rantaipasokmaterialkbb(Request $request)
     ]);
 }
 
+
+
+public function rantaipasokperalatankbb(Request $request)
+{
+    $user = Auth::user();
+
+    $search = $request->input('search');
+    $informasirantaipasok_id = $request->input('informasirantaipasok_id');
+    $perPage = $request->input('perPage', 25);
+
+    // Relasi benar
+    $query = rantaipasokperalatan::with('informasirantaipasok');
+
+    // FILTER SEARCH
+    if ($search) {
+        $query->where(function($q) use ($search) {
+            $q->where('namamaterial', 'LIKE', "%{$search}%")
+              ->orWhere('harga', 'LIKE', "%{$search}%")
+              ->orWhere('satuan', 'LIKE', "%{$search}%")
+              ->orWhere('lokasi', 'LIKE', "%{$search}%")
+              ->orWhere('keterangan', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // FILTER berdasarkan informasirantaipasok_id
+    if ($informasirantaipasok_id && $informasirantaipasok_id !== "all") {
+        $query->where('informasirantaipasok_id', $informasirantaipasok_id);
+    }
+
+    // Pagination
+    $data = $query
+        ->orderBy('namamaterial', 'ASC')
+        ->paginate($perPage);
+
+    // Bawa parameter
+    $data->appends([
+        'search' => $search,
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'perPage' => $perPage
+    ]);
+
+    // Ambil daftar informasirantaipasok
+    $kategori = informasirantaipasok::orderBy('namaperusahaan', 'asc')->get();
+
+    return view('frontend.new.07_bagian8.02_rantaipasokperatalan.ferantaipasokperalatan', [
+        'title' => 'Daftar Supplier Bahan Peralatan',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search,
+        'kategori' => $kategori,
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'perPage' => $perPage
+    ]);
+}
+
+
+public function rantaitokobangunan(Request $request)
+{
+    $user = Auth::user();
+
+    $search = $request->input('search');
+    $informasirantaipasok_id = $request->input('informasirantaipasok_id');
+    $perPage = $request->input('perPage', 25);
+
+    // Relasi benar
+    $query = rantaipasoktokobangunan::with('informasirantaipasok');
+
+    // FILTER SEARCH
+    if ($search) {
+        $query->where(function($q) use ($search) {
+            $q->where('namamaterial', 'LIKE', "%{$search}%")
+              ->orWhere('harga', 'LIKE', "%{$search}%")
+              ->orWhere('satuan', 'LIKE', "%{$search}%")
+              ->orWhere('lokasi', 'LIKE', "%{$search}%")
+              ->orWhere('keterangan', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // FILTER berdasarkan informasirantaipasok_id
+    if ($informasirantaipasok_id && $informasirantaipasok_id !== "all") {
+        $query->where('informasirantaipasok_id', $informasirantaipasok_id);
+    }
+
+    // Pagination
+    $data = $query
+        ->orderBy('namamaterial', 'ASC')
+        ->paginate($perPage);
+
+    // Bawa parameter
+    $data->appends([
+        'search' => $search,
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'perPage' => $perPage
+    ]);
+
+    // Ambil daftar informasirantaipasok
+    $kategori = informasirantaipasok::orderBy('namaperusahaan', 'asc')->get();
+
+    return view('frontend.new.07_bagian8.03_tokobangunan.fetokobangunan', [
+        'title' => 'Daftar Rantai Pasok Toko Bangunan',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search,
+        'kategori' => $kategori,
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'perPage' => $perPage
+    ]);
+}
 
 }

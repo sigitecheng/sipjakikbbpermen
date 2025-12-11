@@ -2448,6 +2448,14 @@ Route::post('/betokobangunan/updatecreate/{id}', [RantaipasokmaterialController:
 
 // RANTAI PASOK FRONEND
 Route::get('/rantaipasokmaterial', [RantaipasokmaterialController::class, 'rantaipasokmaterialkbb']);
+
+// RANTAI PASOK PERALATAN FRONTEND
+Route::get('/rantaipasokperalatan', [RantaipasokmaterialController::class, 'rantaipasokperalatankbb']);
+
+// RANTAI TOKO BANGUNAN
+Route::get('/rantaitokobangunan', [RantaipasokmaterialController::class, 'rantaitokobangunan']);
+
+
 // Route::get('/satuanhargupahkbb', [SatuanhargamaterialController::class, 'satuanhargupahkbb']);
 // Route::get('/satuanhargaalatkbb', [SatuanhargamaterialController::class, 'satuanhargaalatkbb']);
 // Route::get('/shstkbb', [SatuanhargamaterialController::class, 'shstkbb']);
