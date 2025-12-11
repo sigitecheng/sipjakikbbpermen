@@ -151,6 +151,9 @@ class="button-berkas"
   <i class="bi bi-image"></i> Foto/Gambar Produk
 </th>
 <th style="width: 500px; text-align:center;">
+  <i class="bi bi-box-seam"></i> PT/CV
+</th>
+<th style="width: 500px; text-align:center;">
   <i class="bi bi-box-seam"></i> Nama Material
 </th>
 <th style="width: 150px; text-align:center;">
@@ -179,19 +182,30 @@ class="button-berkas"
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
          <td style="text-align: center;">
-             <div style="margin-top: 10px;">
-        @if($item->gambar && file_exists(public_path('storage/' . $item->gambar)))
-        <!-- Menampilkan gambar dari storage -->
-        <img src="{{ asset('storage/' . $item->gambar) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 300px; object-fit: contain;" loading="lazy">
-        @elseif($item->gambar)
-        <!-- Menampilkan gambar dari path luar storage -->
-        <img src="{{ asset($item->gambar) }}" alt="Gambar Peraturan" style="width: 50%; max-height: 300px; object-fit: contain;" loading="lazy">
-        @else
-        <!-- Placeholder jika tidak ada data -->
-        <p>Data belum diupdate</p>
-        @endif
-        </div>
-        </td>
+          @php
+    // jika gambar kosong → pakai default
+    $gambar = $item->gambar ?: '/assets/icon/material.png';
+@endphp
+
+<div style="margin-top: 10px;">
+
+    {{-- Jika file ada di public (assets/icon/...) --}}
+    @if(file_exists(public_path($gambar)))
+        <img src="{{ asset($gambar) }}"
+             alt="Gambar"
+             style="width: 100%; max-height: 300px; object-fit: contain;"
+             loading="lazy">
+
+    {{-- Jika file tidak ditemukan (jarang terjadi) --}}
+    @else
+        <p>Gambar tidak ditemukan</p>
+    @endif
+
+</div>
+
+
+    </td>
+    <td style="text-align: left;">{{ $item->informasirantaipasok->namaperusahaan }}</td>
         <td style="text-align: left;">{{ $item->namamaterial }}</td>
             <td style="display: flex; justify-content: center; align-items: center; height: 60px;">
             <span style="margin-right: 5px;">Rp.</span>

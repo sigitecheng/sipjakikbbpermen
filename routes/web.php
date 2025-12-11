@@ -2368,8 +2368,6 @@ Route::get('/forgotpassword', [LoginController::class, 'forgotpassword'])->name(
 Route::get('/asosiasi/export', [DownloadExcelController::class, 'exportasosiasi'])->name('asosiasi.export');
 Route::get('/asosiasi/dataskk2024', [DownloadExcelController::class, 'dataskk2024'])->name('dataskk2024.export');
 
-
-
 // PEMBAHARUAN SIPJAKI KBB
 // BAGIAN 2 KELEMBAGAAN FRONTEND
 Route::get('/profiljakonkbb', [StrukturController::class, 'profiljakonkbb']);
@@ -2425,8 +2423,8 @@ Route::delete('/berantaimaterial/delete/{id}', [RantaipasokmaterialController::c
 Route::get('/berantaimaterial/create', [RantaipasokmaterialController::class, 'berantaimaterialcreate'])->middleware(['auth', 'can:admin2']);
 Route::post('/berantaimaterial/createnew', [RantaipasokmaterialController::class, 'berantaimaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.berantaipasokmaterial');
 
-Route::get('/berantaimaterial/update/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdate'])->middleware(['auth', 'can:admin2']);
-// Route::post('/besatuanhargamaterial/updatecreate/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.besatuanhargamaterialcreateupdate');
+Route::get('/berantaimaterial/update/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdate'])->middleware(['auth', 'can:admin2']);
+Route::post('/berantaimaterial/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasokmaterial');
 
 
 

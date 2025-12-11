@@ -150,4 +150,72 @@ public function berantaimaterialcreatenew(Request $request)
     return redirect('/berantaimaterial');
 }
 
+
+public function berantaimaterialupdate($id)
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    $datasatuanhargamaterial = rantaipasokmaterial::where('id', $id)->firstOrFail();
+
+    $user = Auth::user();
+
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.07_rantaipasok.01_rantaipasokmaterial.update', [
+        'data' => $datasatuanhargamaterial,
+        'user' => $user,
+        'title' => 'Update Daftar Harga Material'
+    ]);
+}
+
+public function berantaimaterialupdatecreate(Request $request, $id)
+{
+    // Validasi input
+    $validatedData = $request->validate([
+        // 'informasirantaipasok_id' => 'nullable|string',
+        'gambar' => 'nullable|image|mimes:png,jpg,jpeg,webp|max:2048',
+        'namamaterial' => 'nullable|string|max:255',
+        'harga' => 'nullable|numeric|min:0',
+        'lokasi' => 'nullable|string|max:255',
+        'ketersediaan' => 'nullable|string|max:100',
+        'satuan' => 'nullable|string|max:100',
+        'keterangan' => 'nullable|string|max:255',
+    ]);
+
+    // Ambil data berdasarkan ID
+    $data = rantaipasokmaterial::findOrFail($id);
+
+    // Jika upload gambar baru
+    if ($request->hasFile('gambar')) {
+
+        // Hapus gambar lama jika ada
+        if ($data->gambar && file_exists(public_path($data->gambar))) {
+            unlink(public_path($data->gambar));
+        }
+
+        // Buat folder jika belum ada
+        if (!file_exists(public_path('rantaipasok/gambar'))) {
+            mkdir(public_path('rantaipasok/gambar'), 0777, true);
+        }
+
+        // Simpan file ke public/
+        $file = $request->file('gambar');
+        $namaFile = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('rantaipasok/gambar'), $namaFile);
+
+        // Path yang disimpan ke database
+        $validatedData['gambar'] = 'rantaipasok/gambar/' . $namaFile;
+
+    } else {
+        unset($validatedData['gambar']); // Jangan ubah gambar jika tidak upload baru
+    }
+
+    // Update data
+    $data->update($validatedData);
+
+    // Redirect sukses
+    session()->flash('update', 'Data Rantai Pasok Material Berhasil Diperbarui!');
+    return redirect('/berantaimaterial');
+}
+
+
+
 }
