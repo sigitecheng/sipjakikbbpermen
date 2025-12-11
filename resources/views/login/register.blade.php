@@ -232,7 +232,7 @@
     text-align:center;
     margin-bottom:25px;
 ">
-    <img src="/assets/icon/logoSIPJAKI.png"
+    <img src="/assets/icon/LogoSIPJAKI.png"
         alt="Logo SIPJAKI KBB"
         style="
             width:150px;

@@ -7,6 +7,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Silahkan Login ! SIPJAKI Kabupaten Bandung Barat</title>
+<meta name="description" content="SIPJAKI KBB adalah Sistem Informasi Pembina Jasa Konstruksi Kabupaten Bandung Barat untuk mendukung layanan pembinaan, verifikasi, dan manajemen data penyedia jasa konstruksi." />
+<meta name="keywords" content="SIPJAKI, SIPJAKI KBB, Sistem Informasi Jasa Konstruksi, Pembina Konstruksi, Kabupaten Bandung Barat, Dinas PUTR KBB, Jasa Konstruksi" />
+
+<!-- Hak Cipta -->
+<meta name="copyright" content="© {{ date('Y') }} CV. Angkasa Raya Teknik" />
+<meta name="author" content="CV. Angkasa Raya Teknik" />
 
     <style>
         body {
@@ -194,7 +200,7 @@
     text-align:center;
     margin-bottom:25px;
 ">
-    <img src="/assets/icon/logoSIPJAKI.png"
+    <img src="/assets/icon/LogoSIPJAKI.png"
         alt="Logo SIPJAKI KBB"
         style="
             width:150px;
