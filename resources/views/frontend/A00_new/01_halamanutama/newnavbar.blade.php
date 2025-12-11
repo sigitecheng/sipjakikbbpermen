@@ -118,7 +118,7 @@
                                     </ul>
                                         <li class="menu-item-has-children"><a href="#">Rantai Pasok</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Material Bangunan</a></li>
+                                                <li><a href="/rantaipasokmaterial">Material Bangunan</a></li>
                                                 <li><a href="#">Peralatan Konstruksi</a></li>
                                                 <li><a href="#">Toko Bangunan</a></li>
                                                 {{-- <li><a href="#">Daftar Peserta TKK</a></li> --}}

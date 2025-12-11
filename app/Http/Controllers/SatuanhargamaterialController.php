@@ -2599,6 +2599,7 @@ public function besatuandiv7(Request $request)
         'search' => $search
     ]);
 }
+
 public function satuanhargamaterialkbb(Request $request)
 {
     $user = Auth::user();

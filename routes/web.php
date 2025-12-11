@@ -2446,6 +2446,12 @@ Route::post('/betokobangunan/createnew', [RantaipasokmaterialController::class, 
 Route::get('/betokobangunan/update/{id}', [RantaipasokmaterialController::class, 'betokobangunanupdate'])->middleware(['auth', 'can:admin2']);
 Route::post('/betokobangunan/updatecreate/{id}', [RantaipasokmaterialController::class, 'betokobangunanupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasoktokobangunan');
 
+// RANTAI PASOK FRONEND
+Route::get('/rantaipasokmaterial', [RantaipasokmaterialController::class, 'rantaipasokmaterialkbb']);
+// Route::get('/satuanhargupahkbb', [SatuanhargamaterialController::class, 'satuanhargupahkbb']);
+// Route::get('/satuanhargaalatkbb', [SatuanhargamaterialController::class, 'satuanhargaalatkbb']);
+// Route::get('/shstkbb', [SatuanhargamaterialController::class, 'shstkbb']);
+
 
 
 // Route::get('/dashboard', function () {

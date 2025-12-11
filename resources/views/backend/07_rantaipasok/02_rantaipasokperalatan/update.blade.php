@@ -246,6 +246,19 @@
             @enderror
         </div>
 
+        <!-- Keterangan -->
+        <div class="form-modern mb-3">
+            <label class="form-label-modern" for="notelepon">
+                <i class="bi bi-info-circle" style="margin-right: 8px; color: navy;"></i> No Telepon
+            </label>
+            <input type="number" id="notelepon" name="notelepon"
+                class="form-control @error('notelepon') is-invalid @enderror"
+                value="{{ old('notelepon', $data->notelepon) }}">
+            @error('notelepon')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+
     </div>
 
 </div>

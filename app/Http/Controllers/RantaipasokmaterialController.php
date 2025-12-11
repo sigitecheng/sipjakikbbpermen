@@ -114,6 +114,7 @@ public function berantaimaterialcreatenew(Request $request)
         'satuan' => 'required|string|max:100',
         'ketersediaan' => 'required|string|max:100',
         'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
 
     ], [
         'namamaterial.required' => 'Nama material wajib diisi.',
@@ -124,6 +125,7 @@ public function berantaimaterialcreatenew(Request $request)
         'harga.required' => 'Harga wajib diisi.',
         'harga.numeric' => 'Harga harus berupa angka.',
         'harga.min' => 'Harga tidak boleh negatif.',
+        'notelepon.required' => 'No Telepon Wajib Di Isi !.',
         'satuan.required' => 'Satuan wajib diisi.',
     ]);
 
@@ -147,6 +149,7 @@ public function berantaimaterialcreatenew(Request $request)
         'ketersediaan' => 'Tersedia' ?? null, // default bisa diubah sesuai kebutuhan
         'satuan' => $validatedData['satuan'] ?? null,
         'keterangan' => $validatedData['keterangan'] ?? null,
+        'notelepon' => $validatedData['notelepon'] ?? null,
     ]);
 
     session()->flash('create', 'Data Rantai Pasok Material Berhasil Dibuat!');
@@ -181,6 +184,7 @@ public function berantaimaterialupdatecreate(Request $request, $id)
         'ketersediaan' => 'nullable|string|max:100',
         'satuan' => 'nullable|string|max:100',
         'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
     ]);
 
     // Ambil data berdasarkan ID
@@ -218,6 +222,8 @@ public function berantaimaterialupdatecreate(Request $request, $id)
     session()->flash('update', 'Data Rantai Pasok Material Berhasil Diperbarui!');
     return redirect('/berantaimaterial');
 }
+
+
 
     public function berantaiperalatan(Request $request)
 {
@@ -322,6 +328,7 @@ public function berantaiperalatancreatenew(Request $request)
         'satuan' => 'required|string|max:100',
         'ketersediaan' => 'required|string|max:100',
         'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
 
     ], [
         'namamaterial.required' => 'Nama material wajib diisi.',
@@ -333,6 +340,7 @@ public function berantaiperalatancreatenew(Request $request)
         'harga.numeric' => 'Harga harus berupa angka.',
         'harga.min' => 'Harga tidak boleh negatif.',
         'satuan.required' => 'Satuan wajib diisi.',
+        'notelepon.required' => 'Satuan wajib diisi.',
     ]);
 
     // Upload gambar langsung ke public/gambar_material
@@ -355,6 +363,7 @@ public function berantaiperalatancreatenew(Request $request)
         'ketersediaan' => 'Tersedia' ?? null, // default bisa diubah sesuai kebutuhan
         'satuan' => $validatedData['satuan'] ?? null,
         'keterangan' => $validatedData['keterangan'] ?? null,
+        'notelepon' => $validatedData['notelepon'] ?? null,
     ]);
 
     session()->flash('create', 'Data Rantai Pasok Material Berhasil Dibuat!');
@@ -391,6 +400,7 @@ public function berantaiperalatanupdatecreate(Request $request, $id)
         'ketersediaan' => 'nullable|string|max:100',
         'satuan' => 'nullable|string|max:100',
         'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
     ]);
 
     // Ambil data berdasarkan ID
@@ -534,6 +544,7 @@ public function betokobangunancreatenew(Request $request)
         'satuan' => 'required|string|max:100',
         'ketersediaan' => 'required|string|max:100',
         'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
 
     ], [
         'namamaterial.required' => 'Nama material wajib diisi.',
@@ -545,6 +556,7 @@ public function betokobangunancreatenew(Request $request)
         'harga.numeric' => 'Harga harus berupa angka.',
         'harga.min' => 'Harga tidak boleh negatif.',
         'satuan.required' => 'Satuan wajib diisi.',
+        'notelepon.required' => 'No Telepon wajib diisi.',
     ]);
 
     // Upload gambar langsung ke public/gambar_material
@@ -567,6 +579,7 @@ public function betokobangunancreatenew(Request $request)
         'ketersediaan' => 'Tersedia' ?? null, // default bisa diubah sesuai kebutuhan
         'satuan' => $validatedData['satuan'] ?? null,
         'keterangan' => $validatedData['keterangan'] ?? null,
+        'notelepon' => $validatedData['notelepon'] ?? null,
     ]);
 
     session()->flash('create', 'Data Rantai Pasok Material Berhasil Dibuat!');
@@ -641,7 +654,58 @@ public function betokobangunanupdatecreate(Request $request, $id)
     return redirect('/betokobangunan');
 }
 
+public function rantaipasokmaterialkbb(Request $request)
+{
+    $user = Auth::user();
 
+    $search = $request->input('search');
+    $informasirantaipasok_id = $request->input('informasirantaipasok_id');
+    $perPage = $request->input('perPage', 25);
+
+    // Relasi benar
+    $query = rantaipasokmaterial::with('informasirantaipasok');
+
+    // FILTER SEARCH
+    if ($search) {
+        $query->where(function($q) use ($search) {
+            $q->where('namamaterial', 'LIKE', "%{$search}%")
+              ->orWhere('harga', 'LIKE', "%{$search}%")
+              ->orWhere('satuan', 'LIKE', "%{$search}%")
+              ->orWhere('lokasi', 'LIKE', "%{$search}%")
+              ->orWhere('keterangan', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // FILTER berdasarkan informasirantaipasok_id
+    if ($informasirantaipasok_id && $informasirantaipasok_id !== "all") {
+        $query->where('informasirantaipasok_id', $informasirantaipasok_id);
+    }
+
+    // Pagination
+    $data = $query
+        ->orderBy('namamaterial', 'ASC')
+        ->paginate($perPage);
+
+    // Bawa parameter
+    $data->appends([
+        'search' => $search,
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'perPage' => $perPage
+    ]);
+
+    // Ambil daftar informasirantaipasok
+    $kategori = informasirantaipasok::orderBy('namaperusahaan', 'asc')->get();
+
+    return view('frontend.new.07_bagian8.01_rantaipasokmaterial.ferantaipasokamterial', [
+        'title' => 'Daftar Rantai Pasok Material',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search,
+        'kategori' => $kategori,
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'perPage' => $perPage
+    ]);
+}
 
 
 }

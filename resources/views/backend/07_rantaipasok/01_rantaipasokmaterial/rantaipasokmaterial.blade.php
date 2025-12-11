@@ -171,6 +171,9 @@ class="button-berkas"
 <th style="width: 150px; text-align:center;">
   <i class="bi bi-card-text"></i> Keterangan
 </th>
+<th style="width: 150px; text-align:center;">
+  <i class="bi bi-card-text"></i> No Telepon
+</th>
 <th style="width: 120px; text-align:center;">
   <i class="bi bi-gear"></i> Aksi
 </th>
@@ -193,7 +196,7 @@ class="button-berkas"
     @if(file_exists(public_path($gambar)))
         <img src="{{ asset($gambar) }}"
              alt="Gambar"
-             style="width: 100%; max-height: 300px; object-fit: contain;"
+             style="width: 100%; max-height: 100px; object-fit: contain;"
              loading="lazy">
 
     {{-- Jika file tidak ditemukan (jarang terjadi) --}}
@@ -233,6 +236,15 @@ class="button-berkas"
 
         <td style="text-align: center;">{{ $item->satuan }}</td>
         <td style="text-align: center;">{{ $item->keterangan }}</td>
+<td style="text-align: center;">
+    @if($item->notelepon)
+        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $item->notelepon) }}" target="_blank">
+            <i class="bi bi-whatsapp" style="font-size: 22px; color: green;"></i>
+        </a>
+    @else
+        -
+    @endif
+</td>
 
         <td style="text-align: center; vertical-align: middle;">
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
