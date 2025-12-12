@@ -1544,7 +1544,7 @@
                 <a href="#" class="nav-link">
                     <!-- Ikon untuk SHST Kab Blora -->
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i> <!-- Ikon untuk SHST Kab Blora -->
-                    <p style="color: orange">
+                    <p style="color: red">
                       Rantai Pasok
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
