@@ -1958,14 +1958,14 @@
 
                 <ul class="nav nav-treeview">
             <li class="nav-item">
-    <a href="/besatuanhargamaterial" class="nav-link">
+    <a href="/besuppliermaterial" class="nav-link">
         <i class="nav-icon bi bi-box-seam text-warning"></i> <!-- Ikon untuk Material -->
         <p style="color: white">Material</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="/404" class="nav-link">
+    <a href="/besupplierperalatan" class="nav-link">
         <i class="nav-icon bi bi-tools text-warning"></i> <!-- Ikon untuk Peralatan -->
         <p style="color: white">Peralatan</p>
     </a>

@@ -43,29 +43,6 @@
 
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
 
-                        <form method="GET" action="" id="filterForm">
-    <div style="display: flex; align-items: center; gap: 10px;">
-
-        <label for="entries"
-               style="font-weight: 600; font-size: 14px; white-space: nowrap;">
-            Pilih Perusahaan :
-        </label>
-
-        <select name="informasirantaipasok_id"
-                onchange="document.getElementById('filterForm').submit()"
-                class="form-select"
-                style="width: 250px;">
-            <option value="all">Semua PT/CV</option>
-
-            @foreach($kategori as $k)
-                <option value="{{ $k->id }}" {{ ($informasirantaipasok_id == $k->id) ? 'selected' : '' }}>
-                    {{ $k->namaperusahaan }}
-                </option>
-            @endforeach
-        </select>
-
-    </div>
-</form>
 
 
                             <div style="margin-left: 10px;" style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
@@ -93,11 +70,11 @@
                 window.location.href = url.toString();
             }
         </script>
-
+{{--
                         <div style="position: relative; display: inline-block; margin-right:10px;">
                             <input type="search" id="searchInput" placeholder="Cari Bahan Material...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
                             <i class="bi bi-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
-                        </div>
+                        </div> --}}
                         <script>
                             function updateEntries() {
                                 let selectedValue = document.getElementById("entries").value;
@@ -109,7 +86,7 @@
                             function searchTable() {
                             let input = document.getElementById("searchInput").value;
 
-                            fetch(`/berantaimaterial?search=${input}`)
+                            fetch(`/besuppliermaterial?search=${input}`)
                                 .then(response => response.text())
                                 .then(html => {
                                     let parser = new DOMParser();
@@ -119,6 +96,8 @@
                                 })
                                 .catch(error => console.error("Error fetching search results:", error));
                         }
+
+
 
                                 </script>
 <!-- Tombol Download Excel -->
@@ -330,7 +309,7 @@ class="button-berkas"
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                              </div>
                              <div class="modal-body">
-                                 <p>Apakah Anda Ingin Menghapus Data : <span id="itemName"></span>?</p>
+                                 <p>Apakah Anda Ingin Menghapus Data Ini ?</p>
                              </div>
                              <div class="modal-footer">
                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>

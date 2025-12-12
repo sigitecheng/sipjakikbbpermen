@@ -84,7 +84,7 @@
         </script>
 
 <!-- Tombol Create -->
-<a href="{{ url()->previous() }}">
+<a href="/beprofilrantaipasok">
    <button class="button-modern">
     <i class="bi bi-arrow-left" style="font-size: 18px; transition: all 0.3s ease;"></i>
     Kembali

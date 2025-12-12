@@ -816,4 +816,340 @@ public function rantaitokobangunan(Request $request)
     ]);
 }
 
+public function besuppliermaterial(Request $request)
+{
+    $user = Auth::user();
+
+    // Cek data perusahaan milik user
+    $informasi = informasirantaipasok::where('user_id', $user->id)->first();
+
+    // Jika user belum punya data perusahaan → redirect ke form perusahaan
+    if (!$informasi) {
+        return redirect()->route('perusahaaninforantaipasok')
+                         ->with('warning', 'Silakan lengkapi data perusahaan terlebih dahulu.');
+    }
+
+    // Input filter
+    $search = $request->input('search');
+    $perPage = $request->input('perPage', 25);
+
+    // Ambil material berdasarkan perusahaan user
+    $query = rantaipasokmaterial::where('informasirantaipasok_id', $informasi->id);
+
+    // FILTER SEARCH
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+            $q->where('namamaterial', 'LIKE', "%{$search}%")
+              ->orWhere('harga', 'LIKE', "%{$search}%")
+              ->orWhere('satuan', 'LIKE', "%{$search}%")
+              ->orWhere('lokasi', 'LIKE', "%{$search}%")
+              ->orWhere('keterangan', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // Pagination
+    $data = $query->orderBy('namamaterial', 'ASC')->paginate($perPage);
+
+    // Jika material kosong → arahkan ke form tambah material
+    if ($data->total() == 0) {
+        return redirect()->route('rantaipasokmaterialsupplier')
+                         ->with('warning', 'Silakan tambahkan data material terlebih dahulu.');
+    }
+
+
+    // Tampilkan data jika semua sudah lengkap
+    return view('backend.15_hakakses.03_rantaipasok.01_rantaipasokmaterial.suppliermaterial', [
+        'title' => 'Daftar Rantai Pasok Supplier Material',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search,
+        'perPage' => $perPage,
+        'informasi' => $informasi
+    ]);
+}
+
+
+
+public function berantaimaterialsuppliernew(Request $request)
+{
+    // Ambil ID informasirantaipasok dari user login
+    $informasirantaipasok_id = auth()->user()->informasirantaipasok->first()?->id;
+
+    if (!$informasirantaipasok_id) {
+        return redirect()->back()->with('error', 'Data Informasi Rantai Pasok tidak ditemukan untuk user ini.');
+    }
+
+    // Validasi input
+    $validatedData = $request->validate([
+        'namamaterial' => 'required|string|max:255',
+        'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:15048',
+        'lokasi' => 'nullable|string|max:255',
+        'harga' => 'required|numeric|min:0',
+        'satuan' => 'required|string|max:100',
+        'ketersediaan' => 'required|string|max:100',
+        'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
+
+    ], [
+        'namamaterial.required' => 'Nama material wajib diisi.',
+        'gambar.image' => 'File harus berupa gambar.',
+        'gambar.mimes' => 'Format gambar harus JPG, JPEG, atau PNG.',
+        // 'ketersediaan' => 'required|string|max:100',
+        'gambar.max' => 'Ukuran gambar maksimal 2MB.',
+        'harga.required' => 'Harga wajib diisi.',
+        'harga.numeric' => 'Harga harus berupa angka.',
+        'harga.min' => 'Harga tidak boleh negatif.',
+        'notelepon.required' => 'No Telepon Wajib Di Isi !.',
+        'satuan.required' => 'Satuan wajib diisi.',
+    ]);
+
+    // Upload gambar langsung ke public/gambar_material
+    $gambarPath = null;
+    if ($request->hasFile('gambar')) {
+        $file = $request->file('gambar');
+        $filename = time() . '_' . $file->getClientOriginalName(); // nama unik
+        $file->move(public_path('gambar_material'), $filename); // pindahkan ke public/gambar_material
+        $gambarPath = 'gambar_material/' . $filename; // simpan path relatif untuk URL
+    }
+
+    // Simpan ke database
+    rantaipasokmaterial::create([
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'gambar' => $gambarPath ?? null,
+        'ketersediaan' => $validatedData['ketersediaan'] ?? null,
+        'namamaterial' => $validatedData['namamaterial'] ?? null,
+        'harga' => $validatedData['harga'] ?? null, // sudah angka murni dari hidden input
+        'lokasi' => $validatedData['lokasi'] ?? null,
+        'ketersediaan' => 'Tersedia' ?? null, // default bisa diubah sesuai kebutuhan
+        'satuan' => $validatedData['satuan'] ?? null,
+        'keterangan' => $validatedData['keterangan'] ?? null,
+        'notelepon' => $validatedData['notelepon'] ?? null,
+    ]);
+
+    session()->flash('create', 'Data Rantai Pasok Material Berhasil Dibuat!');
+    return redirect('/besuppliermaterial');
+}
+
+
+
+public function berantaimaterialupdatecreatesupplier(Request $request, $id)
+{
+    // Validasi input
+    $validatedData = $request->validate([
+        // 'informasirantaipasok_id' => 'nullable|string',
+        'gambar' => 'nullable|image|mimes:png,jpg,jpeg,webp|max:15048',
+        'namamaterial' => 'nullable|string|max:255',
+        'harga' => 'nullable|numeric|min:0',
+        'lokasi' => 'nullable|string|max:255',
+        'ketersediaan' => 'nullable|string|max:100',
+        'satuan' => 'nullable|string|max:100',
+        'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
+    ]);
+
+    // Ambil data berdasarkan ID
+    $data = rantaipasokmaterial::findOrFail($id);
+
+    // Jika upload gambar baru
+    if ($request->hasFile('gambar')) {
+
+        // Hapus gambar lama jika ada
+        if ($data->gambar && file_exists(public_path($data->gambar))) {
+            unlink(public_path($data->gambar));
+        }
+
+        // Buat folder jika belum ada
+        if (!file_exists(public_path('rantaipasok/gambar'))) {
+            mkdir(public_path('rantaipasok/gambar'), 0777, true);
+        }
+
+        // Simpan file ke public/
+        $file = $request->file('gambar');
+        $namaFile = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('rantaipasok/gambar'), $namaFile);
+
+        // Path yang disimpan ke database
+        $validatedData['gambar'] = 'rantaipasok/gambar/' . $namaFile;
+
+    } else {
+        unset($validatedData['gambar']); // Jangan ubah gambar jika tidak upload baru
+    }
+
+    // Update data
+    $data->update($validatedData);
+
+    // Redirect sukses
+    session()->flash('update', 'Data Rantai Pasok Material Berhasil Diperbarui!');
+    return redirect('/besuppliermaterial');
+}
+
+
+
+public function besupplierperalatan(Request $request)
+{
+    $user = Auth::user();
+
+    // Cek data perusahaan milik user
+    $informasi = informasirantaipasok::where('user_id', $user->id)->first();
+
+    // Jika user belum punya data perusahaan → redirect ke form perusahaan
+    if (!$informasi) {
+        return redirect()->route('perusahaaninforantaipasok')
+                         ->with('warning', 'Silakan lengkapi data perusahaan terlebih dahulu.');
+    }
+
+    // Input filter
+    $search = $request->input('search');
+    $perPage = $request->input('perPage', 25);
+
+    // Ambil material berdasarkan perusahaan user
+    $query = rantaipasokperalatan::where('informasirantaipasok_id', $informasi->id);
+
+    // FILTER SEARCH
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+            $q->where('namamaterial', 'LIKE', "%{$search}%")
+              ->orWhere('harga', 'LIKE', "%{$search}%")
+              ->orWhere('satuan', 'LIKE', "%{$search}%")
+              ->orWhere('lokasi', 'LIKE', "%{$search}%")
+              ->orWhere('keterangan', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // Pagination
+    $data = $query->orderBy('namamaterial', 'ASC')->paginate($perPage);
+
+    // Jika material kosong → arahkan ke form tambah material
+    if ($data->total() == 0) {
+        return redirect()->route('rantaipasokperalatansupplier')
+                         ->with('warning', 'Silakan tambahkan data material terlebih dahulu.');
+    }
+
+
+    // Tampilkan data jika semua sudah lengkap
+    return view('backend.15_hakakses.03_rantaipasok.02_rantaipasokperalatan.supplierperalatan', [
+        'title' => 'Daftar Rantai Pasok Supplier Peralatan',
+        'data' => $data,
+        'user' => $user,
+        'search' => $search,
+        'perPage' => $perPage,
+        'informasi' => $informasi
+    ]);
+}
+
+
+
+public function berantaiperalatancreatenewsupplier(Request $request)
+{
+    // Ambil ID informasirantaipasok dari user login
+    $informasirantaipasok_id = auth()->user()->informasirantaipasok->first()?->id;
+
+    if (!$informasirantaipasok_id) {
+        return redirect()->back()->with('error', 'Data Informasi Rantai Pasok tidak ditemukan untuk user ini.');
+    }
+
+    // Validasi input
+    $validatedData = $request->validate([
+        'namamaterial' => 'required|string|max:255',
+        'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:12048',
+        'lokasi' => 'nullable|string|max:255',
+        'harga' => 'required|numeric|min:0',
+        'satuan' => 'required|string|max:100',
+        'ketersediaan' => 'required|string|max:100',
+        'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
+
+    ], [
+        'namamaterial.required' => 'Nama material wajib diisi.',
+        'gambar.image' => 'File harus berupa gambar.',
+        'gambar.mimes' => 'Format gambar harus JPG, JPEG, atau PNG.',
+        // 'ketersediaan' => 'required|string|max:100',
+        'gambar.max' => 'Ukuran gambar maksimal 2MB.',
+        'harga.required' => 'Harga wajib diisi.',
+        'harga.numeric' => 'Harga harus berupa angka.',
+        'harga.min' => 'Harga tidak boleh negatif.',
+        'satuan.required' => 'Satuan wajib diisi.',
+        'notelepon.required' => 'Satuan wajib diisi.',
+    ]);
+
+    // Upload gambar langsung ke public/gambar_material
+    $gambarPath = null;
+    if ($request->hasFile('gambar')) {
+        $file = $request->file('gambar');
+        $filename = time() . '_' . $file->getClientOriginalName(); // nama unik
+        $file->move(public_path('gambar_material'), $filename); // pindahkan ke public/gambar_material
+        $gambarPath = 'gambar_material/' . $filename; // simpan path relatif untuk URL
+    }
+
+    // Simpan ke database
+    rantaipasokperalatan::create([
+        'informasirantaipasok_id' => $informasirantaipasok_id,
+        'gambar' => $gambarPath ?? null,
+        'ketersediaan' => $validatedData['ketersediaan'] ?? null,
+        'namamaterial' => $validatedData['namamaterial'] ?? null,
+        'harga' => $validatedData['harga'] ?? null, // sudah angka murni dari hidden input
+        'lokasi' => $validatedData['lokasi'] ?? null,
+        'ketersediaan' => 'Tersedia' ?? null, // default bisa diubah sesuai kebutuhan
+        'satuan' => $validatedData['satuan'] ?? null,
+        'keterangan' => $validatedData['keterangan'] ?? null,
+        'notelepon' => $validatedData['notelepon'] ?? null,
+    ]);
+
+    session()->flash('create', 'Data Rantai Pasok Material Berhasil Dibuat!');
+    return redirect('/besupplierperalatan');
+}
+
+
+public function berantaiperalatanupdatecreatesupplier(Request $request, $id)
+{
+    // Validasi input
+    $validatedData = $request->validate([
+        // 'informasirantaipasok_id' => 'nullable|string',
+        'gambar' => 'nullable|image|mimes:png,jpg,jpeg,webp|max:15048',
+        'namamaterial' => 'nullable|string|max:255',
+        'harga' => 'nullable|numeric|min:0',
+        'lokasi' => 'nullable|string|max:255',
+        'ketersediaan' => 'nullable|string|max:100',
+        'satuan' => 'nullable|string|max:100',
+        'keterangan' => 'nullable|string|max:255',
+        'notelepon' => 'nullable|string|max:255',
+    ]);
+
+    // Ambil data berdasarkan ID
+    $data = rantaipasokperalatan::findOrFail($id);
+
+    // Jika upload gambar baru
+    if ($request->hasFile('gambar')) {
+
+        // Hapus gambar lama jika ada
+        if ($data->gambar && file_exists(public_path($data->gambar))) {
+            unlink(public_path($data->gambar));
+        }
+
+        // Buat folder jika belum ada
+        if (!file_exists(public_path('rantaipasok/gambar'))) {
+            mkdir(public_path('rantaipasok/gambar'), 0777, true);
+        }
+
+        // Simpan file ke public/
+        $file = $request->file('gambar');
+        $namaFile = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('rantaipasok/gambar'), $namaFile);
+
+        // Path yang disimpan ke database
+        $validatedData['gambar'] = 'rantaipasok/gambar/' . $namaFile;
+
+    } else {
+        unset($validatedData['gambar']); // Jangan ubah gambar jika tidak upload baru
+    }
+
+    // Update data
+    $data->update($validatedData);
+
+    // Redirect sukses
+    session()->flash('update', 'Data Rantai Pasok Peralatan Berhasil Diperbarui!');
+    return redirect('/besupplierperalatan');
+}
+
+
 }

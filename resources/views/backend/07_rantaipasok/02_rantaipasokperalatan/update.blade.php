@@ -51,7 +51,14 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
 
-                <a href="/berantaiperalatan">
+                <a
+                @can('admin2')
+                href="/berantaiperalatan"
+                @endcan
+                @can('supplier')
+                href="/besupplierperalatan"
+                @endcan
+                >
                     <button class="button-modern">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -67,8 +74,18 @@
 
         {{-- ======================================================= --}}
                     <div class="col-md-12">
+                                @php
+                                $action = '#';
+
+                                if (auth()->check() && auth()->user()->can('admin2')) {
+                                    $action = route('update.rantaipasokperalatan', $data->id);
+                                } elseif (auth()->check() && auth()->user()->can('supplier')) {
+                                    $action = route('update.rantaipasokperalatansupplier', $data->id);
+                                }
+                            @endphp
+
                         <!--begin::Quick Example-->
-                        <form action="{{ route('update.rantaipasokperalatan', $data->id) }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ $action }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('POST') <!-- Ganti dengan PUT untuk update -->
 

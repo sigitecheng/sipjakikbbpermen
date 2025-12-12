@@ -44,8 +44,16 @@
 
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
-               <a href="/berantaiperalatan">
-  <button class="button-modern"  >
+               <a
+               @can('admin2')
+                href="/berantaiperalatan"
+               @endcan
+               @can('supplier')
+               href="/besupplierperalatan"
+               @endcan
+               >
+
+               <button class="button-modern"  >
     <!-- Ikon Kembali -->
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         viewBox="0 0 16 16">
@@ -62,8 +70,16 @@
 
         {{-- ======================================================= --}}
                     <div class="col-md-12">
+                        @php
+                            $action = '#';
+                            if (auth()->check() && auth()->user()->can('admin2')) {
+                                $action = route('create.berantaipasokperalatan');
+                            } elseif (auth()->check() && auth()->user()->can('supplier')) {
+                                $action = route('create.berantaipasokperalatansupplier');
+                            }
+                        @endphp
                         <!--begin::Quick Example-->
-                        <form action="{{ route('create.berantaipasokperalatan') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ $action }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <!-- begin::Body -->
                             <div class="card-body">

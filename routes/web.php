@@ -2418,23 +2418,27 @@ Route::post('/bedatatkkkbbcreatenew', [PembinaanController::class, 'bedatatkkkbb
 // BACKEND RANTAI PASOK BRO
 
 Route::get('/berantaimaterial', [RantaipasokmaterialController::class, 'berantaimaterial'])->middleware(['auth', 'can:admin2']);
-Route::delete('/berantaimaterial/delete/{id}', [RantaipasokmaterialController::class, 'berantaimaterialdelete'])->middleware(['auth', 'can:admin2']);
+Route::delete('/berantaimaterial/delete/{id}', [RantaipasokmaterialController::class, 'berantaimaterialdelete'])->middleware(['auth', 'can:adminrantaipasok']);
 
-Route::get('/berantaimaterial/create', [RantaipasokmaterialController::class, 'berantaimaterialcreate'])->middleware(['auth', 'can:admin2']);
-Route::post('/berantaimaterial/createnew', [RantaipasokmaterialController::class, 'berantaimaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.berantaipasokmaterial');
+Route::get('/berantaimaterial/create', [RantaipasokmaterialController::class, 'berantaimaterialcreate'])->middleware(['auth', 'can:adminrantaipasok'])->name('rantaipasokmaterialsupplier');
+Route::post('/berantaimaterial/createnew', [RantaipasokmaterialController::class, 'berantaimaterialcreatenew'])->middleware(['auth', 'can:adminrantaipasok'])->name('create.berantaipasokmaterial');
+Route::post('/berantaimaterial/createsupplier', [RantaipasokmaterialController::class, 'berantaimaterialsuppliernew'])->middleware(['auth', 'can:adminrantaipasok'])->name('create.berantaipasokmaterialsupplier');
 
-Route::get('/berantaimaterial/update/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdate'])->middleware(['auth', 'can:admin2']);
-Route::post('/berantaimaterial/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasokmaterial');
+Route::get('/berantaimaterial/update/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdate'])->middleware(['auth', 'can:adminrantaipasok']);
+Route::post('/berantaimaterial/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdatecreate'])->middleware(['auth', 'can:adminrantaipasok'])->name('update.rantaipasokmaterial');
+Route::post('/berantaimaterial/updatecreatesupplier/{id}', [RantaipasokmaterialController::class, 'berantaimaterialupdatecreatesupplier'])->middleware(['auth', 'can:adminrantaipasok'])->name('update.rantaipasokmaterialsupplier');
 
 //RANTAI PASOK SUPPLIER PERALATAN
-Route::get('/berantaiperalatan', [RantaipasokmaterialController::class, 'berantaiperalatan'])->middleware(['auth', 'can:admin2']);
-Route::delete('/berantaiperalatan/delete/{id}', [RantaipasokmaterialController::class, 'berantaiperalatandelete'])->middleware(['auth', 'can:admin2']);
+Route::get('/berantaiperalatan', [RantaipasokmaterialController::class, 'berantaiperalatan'])->middleware(['auth', 'can:adminrantaipasok']);
+Route::delete('/berantaiperalatan/delete/{id}', [RantaipasokmaterialController::class, 'berantaiperalatandelete'])->middleware(['auth', 'can:adminrantaipasok']);
 
-Route::get('/berantaiperalatan/create', [RantaipasokmaterialController::class, 'berantaiperalatanperalatan'])->middleware(['auth', 'can:admin2']);
-Route::post('/berantaiperalatan/createnew', [RantaipasokmaterialController::class, 'berantaiperalatancreatenew'])->middleware(['auth', 'can:admin2'])->name('create.berantaipasokperalatan');
+Route::get('/berantaiperalatan/create', [RantaipasokmaterialController::class, 'berantaiperalatanperalatan'])->middleware(['auth', 'can:adminrantaipasok'])->name('rantaipasokperalatansupplier');
+Route::post('/berantaiperalatan/createnew', [RantaipasokmaterialController::class, 'berantaiperalatancreatenew'])->middleware(['auth', 'can:adminrantaipasok'])->name('create.berantaipasokperalatan');
+Route::post('/berantaiperalatan/createnewsupplier', [RantaipasokmaterialController::class, 'berantaiperalatancreatenewsupplier'])->middleware(['auth', 'can:adminrantaipasok'])->name('create.berantaipasokperalatansupplier');
 
-Route::get('/berantaiperalatan/update/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdate'])->middleware(['auth', 'can:admin2']);
-Route::post('/berantaiperalatan/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.rantaipasokperalatan');
+Route::get('/berantaiperalatan/update/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdate'])->middleware(['auth', 'can:adminrantaipasok']);
+Route::post('/berantaiperalatan/updatecreate/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdatecreate'])->middleware(['auth', 'can:adminrantaipasok'])->name('update.rantaipasokperalatan');
+Route::post('/berantaiperalatan/updatecreatesupplier/{id}', [RantaipasokmaterialController::class, 'berantaiperalatanupdatecreatesupplier'])->middleware(['auth', 'can:adminrantaipasok'])->name('update.rantaipasokperalatansupplier');
 
 //RANTAI PASOK TOKO BANGUNAN
 Route::get('/betokobangunan', [RantaipasokmaterialController::class, 'betokobangunan'])->middleware(['auth', 'can:admin2']);
@@ -2461,9 +2465,9 @@ Route::get('/profilakun', [AkunController::class, 'profilakun'])->middleware(['a
 
 
 // INFORMASI PERUSHAAN RANTAI PASOK
-Route::get('/beprofilrantaipasok', [AkunController::class, 'beprofilrantaipasok'])->middleware('auth')->name('adminrantaipasok');
-Route::get('/beprofilrantaipasok/info', [AkunController::class, 'beprofilrantaipasokinfo'])->middleware('auth')->name('adminrantaipasok');
-Route::post('/beprofilrantaipasok/createnew', [AkunController::class, 'beprofilrantaipasokupdatecreate'])->middleware('auth')->name('admin.informasirantaipasok');
+Route::get('/beprofilrantaipasok', [AkunController::class, 'beprofilrantaipasok'])->middleware(['auth', 'can:adminrantaipasok'])->name('adminrantaipasokindex');
+Route::get('/beprofilrantaipasok/info', [AkunController::class, 'beprofilrantaipasokinfo'])->middleware(['auth', 'can:adminrantaipasok'])->name('perusahaaninforantaipasok');
+Route::post('/beprofilrantaipasok/createnew', [AkunController::class, 'beprofilrantaipasokupdatecreate'])->middleware(['auth', 'can:adminrantaipasok'])->name('admin.informasirantaipasok');
 
 // Route::get('/satuanhargupahkbb', [SatuanhargamaterialController::class, 'satuanhargupahkbb']);
 // Route::get('/satuanhargaalatkbb', [SatuanhargamaterialController::class, 'satuanhargaalatkbb']);
@@ -2473,7 +2477,8 @@ Route::post('/beprofilrantaipasok/createnew', [AkunController::class, 'beprofilr
 
 
 // MENU DATA AKUN SUPPLIER
-Route::get('/besuppliermaterial', [SatuanhargamaterialController::class, 'besuppliermaterial'])->middleware(['auth', 'can:adminrantaipasok']);
+Route::get('/besuppliermaterial', [RantaipasokmaterialController::class, 'besuppliermaterial'])->middleware(['auth', 'can:adminrantaipasok']);
+Route::get('/besupplierperalatan', [RantaipasokmaterialController::class, 'besupplierperalatan'])->middleware(['auth', 'can:adminrantaipasok']);
 // Route::delete('/satuanhargamaterial/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialdelete'])->middleware(['auth', 'can:admin2']);
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
@@ -2481,7 +2486,6 @@ Route::get('/besuppliermaterial', [SatuanhargamaterialController::class, 'besupp
 
 // Route::get('/besatuanhargamaterial/update/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/updatecreate/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.besatuanhargamaterialcreateupdate');
-
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
