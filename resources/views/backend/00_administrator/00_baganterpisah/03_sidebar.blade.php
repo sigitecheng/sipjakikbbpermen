@@ -1958,7 +1958,7 @@
 
                 <ul class="nav nav-treeview">
             <li class="nav-item">
-    <a href="/404" class="nav-link">
+    <a href="/besatuanhargamaterial" class="nav-link">
         <i class="nav-icon bi bi-box-seam text-warning"></i> <!-- Ikon untuk Material -->
         <p style="color: white">Material</p>
     </a>

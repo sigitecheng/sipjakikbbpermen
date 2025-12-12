@@ -805,7 +805,7 @@ public function rantaitokobangunan(Request $request)
     // Ambil daftar informasirantaipasok
     $kategori = informasirantaipasok::orderBy('namaperusahaan', 'asc')->get();
 
-    return view('frontend.new.07_bagian8.03_tokobangunan.fetokobangunan', [
+    return view('backend.15_hakakses.03_rantaipasok.01_rantaipasokmaterial.suppliermaterial', [
         'title' => 'Daftar Rantai Pasok Toko Bangunan',
         'data' => $data,
         'user' => $user,

@@ -253,7 +253,7 @@
 
     {{-- Website --}}
     <div class="form-group" style="margin-bottom:20px; padding:15px; background: #f9f9f9; border-left:4px solid #2517eb; border-radius:5px;">
-        <label>Website</label>
+        <label>Website (Jika Ada)</label>
         <input type="text" name="website" value="{{ old('website', $informasi->website ?? '') }}" placeholder="Masukan Website" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:4px;">
         @error('website')
             <div style="color:red; font-size:13px;">{{ $message }}</div>

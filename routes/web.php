@@ -2471,6 +2471,18 @@ Route::post('/beprofilrantaipasok/createnew', [AkunController::class, 'beprofilr
 
 
 
+
+// MENU DATA AKUN SUPPLIER
+Route::get('/besuppliermaterial', [SatuanhargamaterialController::class, 'besuppliermaterial'])->middleware(['auth', 'can:adminrantaipasok']);
+// Route::delete('/satuanhargamaterial/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialdelete'])->middleware(['auth', 'can:admin2']);
+
+// Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
+// Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
+
+// Route::get('/besatuanhargamaterial/update/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdate'])->middleware(['auth', 'can:admin2']);
+// Route::post('/besatuanhargamaterial/updatecreate/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.besatuanhargamaterialcreateupdate');
+
+
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');

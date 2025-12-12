@@ -13,6 +13,7 @@
 <!-- Hak Cipta -->
 <meta name="copyright" content="© {{ date('Y') }} CV. Angkasa Raya Teknik" />
 <meta name="author" content="CV. Angkasa Raya Teknik" />
+    <link rel="shortcut icon" type="image/x-icon" href="/storage/logo/sipjakikbb.png">
 
     <style>
         body {
