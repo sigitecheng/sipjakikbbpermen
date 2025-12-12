@@ -296,3 +296,6 @@ function previewHeader(event) {
 
 
     <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
+
+
+        <p style=" background: linear-gradient(135deg, #f8f9fa, #eef2f7); padding: 20px; border-left: 6px solid #0d6efd; border-radius: 12px; font-size: 15px; line-height: 1.7; color: #333; box-shadow: 0 3px 10px rgba(0,0,0,0.06); "> <strong style="font-size: 18px; color:#0d6efd;">📦 Lengkapi Stok Material Toko Anda</strong><br><br> Jika Anda memiliki <strong>Toko Bangunan</strong>, silakan lengkapi daftar material yang tersedia di toko Anda. Data ini digunakan untuk memudahkan pemilik proyek, pembeli, dan pengguna lain menemukan produk yang Anda sediakan. <br><br> Semakin lengkap data material yang Anda masukkan, semakin besar peluang toko Anda ditemukan oleh calon pelanggan. <br><br> <strong>Ayo, tambahkan data material Anda sekarang!</strong> </p>

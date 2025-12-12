@@ -1972,7 +1972,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="/404" class="nav-link">
+<a href="/besuppliertokobangunan" class="nav-link">
         <i class="nav-icon bi bi-shop text-warning"></i> <!-- Ikon untuk Toko Bangunan -->
         <p style="color: white">Toko Bangunan</p>
     </a>

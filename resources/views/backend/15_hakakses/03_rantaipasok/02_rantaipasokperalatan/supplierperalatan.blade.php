@@ -101,7 +101,7 @@
 
                                 </script>
 <!-- Tombol Download Excel -->
-<button onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_rantaipasokmaterial')"
+<button onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_rantaipasokperalatan')"
 class="button-berkas"
 >
     <i class="bi bi-download"></i> Download Excel

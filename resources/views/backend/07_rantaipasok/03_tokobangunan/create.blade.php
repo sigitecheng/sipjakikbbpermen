@@ -39,12 +39,18 @@
                     <div class="card-header">
                         @include('backend.00_administrator.00_baganterpisah.13_judulcreate')
                     </div>
-
                            {{-- ======================================================= --}}
 
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
-               <a href="/betokobangunan">
+               <a
+               @can('admin2')
+               href="/betokobangunan"
+               @endcan
+               @can('supplier')
+               href="/besuppliertokobangunan"
+               @endcan
+               >
   <button class="button-modern"  >
     <!-- Ikon Kembali -->
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -62,8 +68,16 @@
 
         {{-- ======================================================= --}}
                     <div class="col-md-12">
+                           @php
+                            $action = '#';
+                            if (auth()->check() && auth()->user()->can('admin2')) {
+                                $action = route('create.betokobangunan');
+                            } elseif (auth()->check() && auth()->user()->can('supplier')) {
+                                $action = route('create.betokobangunansupplier');
+                            }
+                        @endphp
                         <!--begin::Quick Example-->
-                        <form action="{{ route('create.betokobangunan') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ $action}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <!-- begin::Body -->
                             <div class="card-body">

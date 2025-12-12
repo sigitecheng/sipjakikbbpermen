@@ -41,7 +41,13 @@
                  <div class="card-header">
                     @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
 
+                          @can('supplier')
+                            <p style=" background: linear-gradient(135deg, #f8f9fa, #eef2f7); padding: 20px; border-left: 6px solid #0d6efd; border-radius: 12px; font-size: 15px; line-height: 1.7; color: #333; box-shadow: 0 3px 10px rgba(0,0,0,0.06); "> <strong style="font-size: 18px; color:#0d6efd;">📦 Lengkapi Stok Material Toko Anda</strong><br><br> Jika Anda memiliki <strong>Toko Bangunan</strong>, silakan lengkapi daftar material yang tersedia di toko Anda. Data ini digunakan untuk memudahkan pemilik proyek, pembeli, dan pengguna lain menemukan produk yang Anda sediakan. <br><br> Semakin lengkap data material yang Anda masukkan, semakin besar peluang toko Anda ditemukan oleh calon pembeli. <br><br> <strong>Ayo, tambahkan data material Anda sekarang!</strong> </p>
+                            @endcan
+
+                            <br>
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
+
 
                         <form method="GET" action="" id="filterForm">
     <div style="display: flex; align-items: center; gap: 10px;">
@@ -253,12 +259,17 @@ class="button-berkas"
             <a href="/betokobangunan/update/{{$item->id}}" class="button-berkas" title="Update">
                 <i class="bi bi-pencil-square"></i>
             </a>
-            <a href="javascript:void(0)" class="button-merah" title="Delete"
-               data-bs-toggle="modal" data-bs-target="#deleteModal"
-               data-judul="{{ $item->id }}"
-               onclick="setDeleteUrl(this)">
-                <i class="bi bi-trash"></i>
-            </a>
+          <a href="javascript:void(0)"
+                        class="button-merah"
+                        title="Delete"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        data-id="{{ $item->id }}"
+                        data-route="{{ route('betokobangunan.delete', $item->id) }}"
+                        onclick="setDeleteUrl(this)">
+                            <i class="bi bi-trash"></i>
+                        </a>
+
         </td>
 
         <!-- CSS untuk Hover -->
@@ -344,14 +355,19 @@ class="button-berkas"
                      </div>
                  </div>
 
-                 <script>
-                 function setDeleteUrl(button) {
-                     var id = button.getAttribute('data-judul');
-                     document.getElementById('itemName').innerText = id;
-                     var deleteUrl = "/betokobangunan/delete/" + encodeURIComponent(id);
-                     document.getElementById('deleteForm').action = deleteUrl;
-                 }
-                 </script>
+              <script>
+                    function setDeleteUrl(button) {
+                        var id = button.getAttribute('data-id');
+                        var route = button.getAttribute('data-route');
+
+                        // Tampilkan ID di modal
+                        document.getElementById('itemName').innerText = id;
+
+                        // Set form action
+                        document.getElementById('deleteForm').action = route;
+                    }
+                    </script>
+
 
                  <style>
                      .table-responsive {
