@@ -47,6 +47,7 @@ use App\Http\Controllers\PelatihanController;
 use App\Http\Controllers\SkktenagakerjaController;
 use App\Http\Controllers\UijkController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\PermenpuController;
 use App\Http\Controllers\RantaipasokmaterialController;
 use App\Http\Controllers\UndangundangController;
 use Database\Factories\DatajakonFactory;
@@ -2487,6 +2488,24 @@ Route::get('/besuppliermaterial', [RantaipasokmaterialController::class, 'besupp
 Route::get('/besupplierperalatan', [RantaipasokmaterialController::class, 'besupplierperalatan'])->middleware(['auth', 'can:adminrantaipasok']);
 Route::get('/besuppliertokobangunan', [RantaipasokmaterialController::class, 'besuppliertokobangunan'])->middleware(['auth', 'can:adminrantaipasok']);
 // Route::delete('/satuanhargamaterial/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialdelete'])->middleware(['auth', 'can:admin2']);
+
+
+
+// PENGATURAN JENIS MATERIAL SATUAN HARGA
+// 1. UNDANG UNDANG
+Route::get('/permenuu', [PermenpuController::class, 'permenuu'])->middleware(['auth', 'can:admin2']);
+Route::delete('/permenuu/delete/{id}', [PermenpuController::class, 'permenuudelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permenuu/create', [PermenpuController::class, 'permenuucreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/permenuu/createnew', [PermenpuController::class, 'permenuucreatenew'])->middleware(['auth', 'can:admin2'])->name('create.undangundang');
+
+// 2. PERMEN PEMERINTAH
+Route::get('/permenpemerintah', [PermenpuController::class, 'permenpemerintah'])->middleware(['auth', 'can:admin2']);
+Route::delete('/perpemerintah/delete/{id}', [PermenpuController::class, 'perpemerintahdelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permenpemerintah/create', [PermenpuController::class, 'permenpemerintahcreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/permenpemerintah/createnew', [PermenpuController::class, 'permenpemerintahcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.perpemerintah');
+
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');

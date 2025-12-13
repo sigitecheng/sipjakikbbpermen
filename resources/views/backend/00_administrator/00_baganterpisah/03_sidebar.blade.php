@@ -1623,7 +1623,7 @@
                     <ul class="nav nav-treeview">
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permenuu" class="nav-link">
                           <!-- Ikon untuk Undang-undang -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Undang-undang</p>
@@ -1631,7 +1631,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permenpemerintah" class="nav-link">
                           <!-- Ikon untuk Peraturan Pemerintah -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Peraturan Pemerintah</p>
