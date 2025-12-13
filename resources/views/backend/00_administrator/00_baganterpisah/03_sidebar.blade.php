@@ -876,7 +876,7 @@
                 <a href="#" class="nav-link">
                     <!-- Ikon untuk Data Jakon -->
                     <i class="nav-icon bi bi-bar-chart" style="color: white"></i>
-                    <p style="color: red">
+                    <p style="color: orange">
                       Data Jakon
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1613,7 +1613,7 @@
                     <a href="#" class="nav-link">
                       <!-- Ikon untuk Peraturan -->
                       <i class="nav-icon bi bi-file-earmark-text" style="color: white;"></i> <!-- Ikon untuk Peraturan -->
-                      <p style="color: orange">
+                      <p style="color: red">
                         Peraturan
                         <!-- Ikon panah kanan (Chevron) -->
                         <i class="nav-arrow bi bi-chevron-right"></i>

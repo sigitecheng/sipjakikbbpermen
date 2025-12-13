@@ -172,39 +172,78 @@
 
             <!-- SIDEBAR -->
 <div class="col-12 col-lg-4 col-xl-4">
-    <div class="sidebar modern-sidebar">
+    <div class="sidebar modern-sidebar"
+        style="
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            border-left: 6px solid #0d6efd;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            padding: 20px;
+        ">
 
         <div class="sidebar-widget-list-inner">
-            <ul class="sidebar-menu-modern">
+            <ul class="sidebar-menu-modern" style="list-style:none; padding:0; margin:0;">
 
+                <li class="menu-title"
+                    style="
+                        display:flex;
+                        justify-content: space-between;
+                        align-items:center;
+                        font-weight:700;
+                        font-family:'Poppins';
+                        color:#0d6efd;
+                        font-size:16px;
+                        margin-bottom:15px;
+                    ">
+                    <span>Data Statistika BUJK</span>
+                    <i class="bi bi-bar-chart-fill"></i>
+                </li>
 
-          <li class="menu-title">
-    <span>Data Statistika BUJK</span>
-    <i class="bi bi-bar-chart-fill"></i>
-</li>
+                <li style="margin-bottom:12px;">
+                    <a href="#" class="button-modern"
+                        style="
+                            display:flex;
+                            align-items:center;
+                            gap:10px;
+                            padding:12px 16px;
+                            background:#ffffff;
+                            border-radius:10px;
+                            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+                            font-family:'Poppins';
+                            font-weight:500;
+                            color:#333;
+                            text-decoration:none;
+                        ">
+                        <i class="bi bi-building-gear text-primary"></i>
+                        Total Data Kontraktor : <strong>{{ $totalKontraktor }}</strong>
+                    </a>
+                </li>
 
-<li>
-    <a href="#" class="button-modern">
-        <i class="bi bi-building-gear"></i>
-        Total Data Kontraktor : {{ $totalKontraktor }}
-    </a>
-</li>
-
-<li>
-    <a href="#" class="button-modern">
-        <i class="bi bi-briefcase"></i>
-        Total Data Konsultasi Konstruksi : {{ $totalKonsultan }}
-    </a>
-</li>
-
+                <li>
+                    <a href="#" class="button-modern"
+                        style="
+                            display:flex;
+                            align-items:center;
+                            gap:10px;
+                            padding:12px 16px;
+                            background:#ffffff;
+                            border-radius:10px;
+                            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+                            font-family:'Poppins';
+                            font-weight:500;
+                            color:#333;
+                            text-decoration:none;
+                        ">
+                        <i class="bi bi-briefcase text-primary"></i>
+                        Total Data Konsultasi Konstruksi : <strong>{{ $totalKonsultan }}</strong>
+                    </a>
+                </li>
 
             </ul>
         </div>
-
-
-
     </div>
 </div>
+
 
             <!-- BAGIAN GRAFIK -->
             <div class="col-lg-8">
@@ -240,11 +279,33 @@
             </div>
 
             <!-- BAGIAN KETERANGAN -->
-            <div class="col-lg-12">
-                <div class="department-details-box">
-                  <p style="text-align: justify;"> Data Statistika BUJK Kontraktor dan Konsultan Kabupaten Bandung Barat, Provinsi Jawa Barat ini memberikan gambaran menyeluruh mengenai jumlah, komposisi, serta sebaran Badan Usaha Jasa Konstruksi (BUJK) yang beroperasi di wilayah tersebut. Informasi ini memuat perbandingan antara penyedia jasa konstruksi (kontraktor) dan penyedia jasa konsultansi konstruksi, yang berperan penting dalam mendukung pembangunan infrastruktur daerah. <br><br> Pemahaman terhadap perkembangan jumlah BUJK setiap tahunnya membantu pemerintah daerah melakukan evaluasi kebijakan, menyusun strategi pembinaan usaha konstruksi, serta memastikan pemerataan kesempatan berusaha bagi seluruh pelaku industri konstruksi. Data ini juga menjadi acuan bagi masyarakat, lembaga teknis, serta mitra pembangunan lain untuk menilai tingkat partisipasi dan kapasitas BUJK dalam upaya mendukung pembangunan fisik di Kabupaten Bandung Barat. Penyediaan data statistika yang akurat dan transparan diharapkan mampu meningkatkan efektivitas perencanaan, pengawasan, serta kualitas layanan konstruksi di tingkat daerah. </p>
-                </div>
-            </div>
+        <div class="col-lg-12">
+    <div class="department-details-box"
+        style="
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            border-left: 6px solid #0d6efd;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            padding: 25px;
+        ">
+
+        <p style="
+            text-align: justify;
+            font-family:'Poppins';
+            font-size:15px;
+            line-height:1.8;
+            color:#333;
+            margin:0;
+        ">
+            Data Statistika BUJK Kontraktor dan Konsultan Kabupaten Bandung Barat, Provinsi Jawa Barat ini memberikan gambaran menyeluruh mengenai jumlah, komposisi, serta sebaran Badan Usaha Jasa Konstruksi (BUJK) yang beroperasi di wilayah tersebut.
+            <br><br>
+            Pemahaman terhadap perkembangan jumlah BUJK setiap tahunnya membantu pemerintah daerah melakukan evaluasi kebijakan, menyusun strategi pembinaan usaha konstruksi, serta memastikan pemerataan kesempatan berusaha bagi seluruh pelaku industri konstruksi.
+            <br><br>
+            Penyediaan data statistika yang akurat dan transparan diharapkan mampu meningkatkan efektivitas perencanaan, pengawasan, serta kualitas layanan konstruksi di tingkat daerah.
+        </p>
+    </div>
+</div>
+
         </div>
         <br><br>
     </div>

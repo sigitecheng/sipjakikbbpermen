@@ -74,7 +74,7 @@ Komplek Pemda Kabupaten Bandung Barat Jl. Raya Padalarang-Cisarua Km.2 Ngamprah 
                     </div> --}}
                   <div class="col-xl-4 col-lg-4 col-md-8">
     <div class="footer__widget">
-        <h4 class="footer__widget-title footer__widget-title-two">DPUTR <span style="color: yellow;">KBB</span></h4>
+        <h4 class="footer__widget-title footer__widget-title-two">DPUTR <span style="color: yellow;">Kabupaten Bandung Barat</span></h4>
         <div class="footer__map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31655.81282353823!2d107.5115!3d-6.8411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e85de1bb1a27%3A0x0!2zNsKwNTAnMTknNjYuMCJTIDEwN8KwMzAnNTkuMCJF!5e0!3m2!1sid!2sid!4v1700940000000"

@@ -155,46 +155,89 @@
         <!-- blog-post-area -->
         <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
             <div class="container">
-                <div class="row">
-                    <div class="col-70 order-0 order-lg-2">
+    <div class="row">
 
-                    </div>
-                    <div class="col-30">
-                        <aside class="blog__sidebar">
-                            <div class="sidebar__widget">
-                          <div class="shop__search blog__search" style="margin-bottom: 20px;">
-                            <input
-                                type="text"
-                                id="searchMaterial"
-                                placeholder="Cari BUJK Konsultasi Konstruksi"
-                                oninput="searchMaterial()"
-                                class="w-full appearance-none outline-none text-sm font-medium placeholder:font-normal placeholder:text-[#545768] bg-transparent font-[Poppins]"
-                            />
-                            <button type="button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681 12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681 1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945 1 15.681 4.28645 15.681 8.3405Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
+        <div class="col-12 mb-4">
+            <div class="w-100 d-flex flex-wrap align-items-center justify-content-between gap-3 p-4"
+                style="
+                    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+                    border-left: 6px solid #0d6efd;
+                    border-radius: 12px;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+                ">
 
+                <!-- SEARCH BAR -->
+                <div class="d-flex align-items-center px-3 py-2 rounded"
+                    style="
+                        border: 1px solid #d0d0d5;
+                        flex: 1;
+                        min-width: 280px;
+                        background: white;
+                        height: 44px;
+                        box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+                    ">
+                    <input type="text"
+                        id="searchMaterial"
+                        placeholder="Cari Asosiasi Jasa Konstruksi ?"
+                        oninput="searchMaterial()"
+                        class="w-100 border-0 outline-none"
+                        style="
+                            font-family: 'Poppins';
+                            background: transparent;
+                            font-size: 14px;
+                            color: #333;
+                        " />
 
-                            </div>
-                            {{-- <div class="sidebar__widget">
-                                <h4 class="sidebar__widget-title">Categories</h4>
-                                <div class="bs-cat-list">
-                                    <ul class="list-wrap">
-                                        <li><a href="blog.html">Business Strategy <span>(02)</span></a></li>
-                                        <li><a href="blog.html">Finance Advisory <span>(08)</span></a></li>
-                                        <li><a href="blog.html">Marketing Analysis <span>(05)</span></a></li>
-                                        <li><a href="blog.html">Investment Planning <span>(02)</span></a></li>
-                                        <li><a href="blog.html">Data Analysis <span>(11)</span></a></li>
-                                    </ul>
-                                </div>
-                            </div> --}}
-                        </aside>
-                    </div>
+                    <button type="button" class="ms-2" style="border: none; background: none; color:#0d6efd;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 18 18" fill="none">
+                            <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681
+                            12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681
+                            1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945
+                            1 15.681 4.28645 15.681 8.3405Z"
+                            stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                 </div>
+
+                <!-- TAMPILKAN DATA -->
+                <div class="d-flex align-items-center gap-2" style="flex: 1; min-width: 200px;">
+                    <label style="
+                        font-family: 'Poppins';
+                        font-weight: 600;
+                        white-space: nowrap;
+                        color: #0d6efd;
+                    ">
+                        Tampilkan Data :
+                    </label>
+
+                    <select id="entries" onchange="updateEntries()"
+                        class="form-select"
+                        style="
+                            font-family: 'Poppins';
+                            height: 44px;
+                            border-radius: 8px;
+                            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+                        ">
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="75">75</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                        <option value="200">200</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                        <option value="2000">2000</option>
+                    </select>
+                </div>
+
             </div>
+        </div>
+
+    </div>
+</div>
+
         </section>
         <!-- blog-post-area-end -->
 
@@ -216,7 +259,7 @@
             <th style="text-align: center;">No. Telepon</th>
             <th style="text-align: center;">PIC</th>
             <th style="text-align: center;">Jumlah BUJK Konstruksi</th>
-            <th style="text-align: center;">Jumlah BUJK Konsultasi Konstruksi</th>
+            <th style="text-align: center;">Jumlah BUJK Konsultasi</th>
             {{-- <th style="text-align: center;">Detail</th> --}}
         </tr>
     </thead>
@@ -273,8 +316,8 @@
 
 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
+</div>
 <br><br>
-                    </div>
 
                 </div>
             </div>
