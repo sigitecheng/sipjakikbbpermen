@@ -7084,6 +7084,3313 @@ allskktenagakerjablora::create([
     'deleted_at' => null,
 ]);
 
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'JAJANG JAENUDIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1970-03-11',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'KP. Cisela RT/RW 001/011 Kelurahan Kanangasari Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A02_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/02_JAJANG_JAENUDIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/02_JAJANG_JAENUDIN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'ADE SUTARYA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1963-06-03',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Lembang Dano RT/RW 002/002 Kelurahan Cipada Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A03_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/03_ADE_SUTARYA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/03_ADE_SUTARYA_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'ASEP SUTISNA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1978-02-12',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Lembang RT/RW 002/002 Kelurahan Cipada Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A04_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/04_ASEP_SUTISNA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerjablora/arsip/skk_pekerja/04_ASEP_SUTISNA_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'LILI SUMANTRI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1982-07-07',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cipadagirang Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A05_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/05_LILI_SUMANTRI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/05_LILI_SUMANTRI_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'SOLIHIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1993-03-11',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Ciawitali Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A06_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/06_SOLIHIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/06_SOLIHIN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'DANI SAPRUDIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1992-08-28',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Sirnaraja RT/RW 003/012 Kelurahan Mandalasari Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A07_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/07_DANI_SAPRUDIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/07_DANI_SAPRUDIN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'ENDANG SUPRIATNA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1967-10-25',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cigatrot RT/RW 004/005 Kelurahan Puteran Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A08_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/08_ENDANG_SUPRIATNA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/08_ENDANG_SUPRIATNA_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'SISWANDI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1984-09-19',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Hegarmanah RT/RW 001/016 Kelurahan Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A09_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/09_SISWANDI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/09_SISWANDI_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'PARMAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1972-10-10',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Blok Lembur RT/RW 001/009 Kelurahan Puteran Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A10_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/10_PARMAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/10_PARMAN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'PARMAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1972-10-10',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Blok Lembur RT/RW 001/009 Kelurahan Puteran Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A10_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/10_PARMAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/10_PARMAN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'SISWANDI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1984-09-19',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Hegarmanah RT/RW 001/016 Kelurahan Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A09_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/09_SISWANDI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/09_SISWANDI_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'SLAMET TRIADI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1999-05-12',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Lembang Dano RT/RW 001/001 Kelurahan Cipada Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A13_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/13_SLAMET_TRIADI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/13_SLAMET_TRIADI_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'DEPI RISMAWAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1999-12-22',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Ganjarsari RT/RW 002/008 Kelurahan Ganjarsari Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A14_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/14_DEPI_RISMAWAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/14_DEPI_RISMAWAN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'DADAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1975-11-30',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cisomang Barat RT/RW 001/012 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A15_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/15_DADAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/15_DADAN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'JAJANG',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1972-04-21',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cisomang Barat RT/RW 003/011 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A16_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/16_JAJANG_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/16_JAJANG_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'APIN ARIPIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1973-07-03',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cisomang Barat RT/RW 001/017 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A17_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/17_APIN_ARIPIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/17_APIN_ARIPIN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'DUYEH',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1969-08-02',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cisomang Barat RT/RW 002/011 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A18_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/18_DUYEH_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/18_DUYEH_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'AYI NURDIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-07-01',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Bojong Sero RT/RW 003/004 Kelurahan Ganjarsari Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A19_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/19_AYI_NURDIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/19_AYI_NURDIN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'ASEP RAHMAT',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1976-06-27',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Jambudipa RT/RW 001/002 Kelurahan Ganjarsari Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A20_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/20_ASEP_RAHMAT_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/20_ASEP_RAHMAT_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'YANA HERDIANA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1972-09-30',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Lapang RT/RW 005/004 Kelurahan Cikalong Wetan Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A21_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/21_YANA_HERDIANA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/21_YANA_HERDIANA_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'DODO ABDUL FATAH',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1973-07-01',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Babakan RT/RW 003/003 Kelurahan Wangunjaya Wetan Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A22_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/22_DODO_ABDUL_FATAH_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/22_DODO_ABDUL_FATAH_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'WAWAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-04-03',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cikara RT/RW 001/012 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A23_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/23_WAWAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/23_WAWAN_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'ENDANG MUSTOPA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1971-07-01',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Pasirnangka RT/RW 002/004 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A24_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/24_ENDANG_MUSTOPA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/24_ENDANG_MUSTOPA_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'TATANG',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1979-02-01',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Babakan RT/RW 001/003 Kelurahan Wangunjaya Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A25_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/25_TATANG_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/25_TATANG_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'YAYAN MULYANA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1970-07-05',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cianca RT/RW 001/007 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A26_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/26_YAYAN_MULYANA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerjablora/arsip/skk_pekerja/26_YAYAN_MULYANA_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'MULYANA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-12-12',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cibungbulang RT/RW 001/011 Kelurahan Cisomang Barat Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A27_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/27_MULYANA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/27_MULYANA_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'AYI SOPIAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1967-03-23',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Tengek RT/RW 002/008 Kelurahan Wangunjaya Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A28_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/28_AYI_SOPANDI_KTA GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/28_AYI_SOPANDI_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'OBAR S BIN SAPDI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1977-08-08',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Tengek RT/RW 002/011 Kelurahan Wangunjaya Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A29_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/29_OBAR_S_BIN_SAPDI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/29_OBAR_S_BIN_SAPDI_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 13,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'RIFKI NOVALIMANI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '2004-10-19',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => 'Kp. Cilengsar RT/RW 002/001 Kelurahan Sadangmekar Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/A30_Paspoto.png',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/30_RIFKI_NOVALIMANI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/30_RIFKI_NOVALIMANI_SKK.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+/////////////////// CILILIN
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'ANTON HILMAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1993-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-01.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/ANTON_HILMAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/ANTON_HILMAN_SKK_TUKANG_BANGUNAN_GEDUNG__J1.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'ENDANG SOEMANTRI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1985-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-02.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/ENDANG_SOMANTRI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerjablora/arsip/skk_pekerja/ENDANG_SOMANTRI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'LUBIS',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1988-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-03.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/LUBIS_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/LUBIS_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // ====== PERMANEN ======
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // ====== DATA PESERTA ======
+    'namalengkap' => 'JAJANG SAEFUL MUMIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ====== DOKUMEN ======
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-04.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/JAJANG_SAEPUL_MUMIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ====== SERTIFIKASI ======
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/JAJANG_SAEPUL_MUMIN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    // ====== VALIDASI ======
+    'validasi_ktp' => null,
+    'validasi_foto' => null,
+    'validasi_ijazah' => null,
+    'validasi_pengalaman' => null,
+    'validasi_kebenarandata' => null,
+    'validasi_npwp' => null,
+    'validasi_daftarriwayathidup' => null,
+
+    // ====== STATUS ======
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    // ====== TIMESTAMP ======
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+
+allskktenagakerjablora::create([
+    // ===== DATA UTAMA =====
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // ===== IDENTITAS =====
+    'namalengkap' => 'ABDUL RIZKI MAJID',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1992-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ===== DOKUMEN =====
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-05.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/ABDUL_RIZKIL MAJID_KTA GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ===== SERTIFIKASI =====
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/ABDUL_RIZKIL MAJID_SKK_TUKANG_BANGUNAN GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    // ===== STATUS =====
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // ===== DATA UTAMA =====
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // ===== IDENTITAS =====
+    'namalengkap' => 'MUHAMMAD HUSNI PURNAMA MUIZ',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1993-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // ===== DOKUMEN =====
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-06.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/MUHAMMAD_HUSNI_PURNAMA_MUIZ_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // ===== SERTIFIKASI =====
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/MUHAMMAD_HUSNI_PURNAMA_MUIZ_SKK_TUKANG_BANGUNAN_GEDUNG_ J1.pdf',
+    'catatanvalidasi' => null,
+
+    // ===== STATUS =====
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+
+allskktenagakerjablora::create([
+    // DATA UTAMA
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // IDENTITAS
+    'namalengkap' => 'UJANG MULYANA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1995-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // DOKUMEN
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-07.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/UJANG_MULYANA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // SERTIFIKASI
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/UJANG_MULYANA_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    // STATUS
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // DATA UTAMA
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // IDENTITAS
+    'namalengkap' => 'HENDRI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    // DOKUMEN
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-08.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/HENDRI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    // SERTIFIKASI
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/HENDRI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    // STATUS
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'HENDRAWAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1982-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-09.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/HENDRAWAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/HENDRAWAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'KARSIM WIDIANTO',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1975-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-10.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/KARSIM_WIDIANTO_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerjablora/arsip/skk_pekerja/KARSIM_WIDIANTO_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'MAMAT HIDAYAT',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1988-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-11.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/MAMAT_HIDAYAT_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/MAMAT_HIDAYAT_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'ROHMAT',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1975-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-12.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/ROHMAT_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/ROHMAT_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'NURJAMAH AMINUDIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-13.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/NURJAMAH_AMINUDIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/NURJAMAH_AMINUDIN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'BEBEN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1985-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-14.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/BEBEN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/BEBEN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'PANDI SUPRIADI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-15.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/PANDI_SUPRIADI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/PANDI_SUPRIADI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'SULAEMAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1990-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-16.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/SULAEMAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/SULAEMAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'AHMAD EFENDI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1988-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-17.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/AHMAD_EFENDI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/AHMAD_EFENDI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'IAN SOPIAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1982-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-18.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerjablora/arsip/kta_gatensi/IAN_SOPIAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/IAN_SOPIAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'BULDANI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1993-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-19.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/BULDANI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/BULDANI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'SAEHUDIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1978-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-20.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/SAEHUDIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/SAEHUDIN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'CECEP JAMALUDIN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1992-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-21.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/CECEP_JAMALUDIN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/CECEP_JAMALUDIN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'YOPI SOPIAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1995-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-22.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/YOPI_SOFYAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/YOPI_SOFYAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'RUKMANA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1980-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-23.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/RUKMANA_S_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/RUKMANA_S_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    'namalengkap' => 'IDRUS SUPARDI',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1988-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-24.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/IDRUS_SUPARDI_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/IDRUS_SUPARDI_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // === BAGIAN PATEN (JANGAN DIUBAH) ===
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // === DATA DINAMIS ===
+    'namalengkap' => 'AGUS SETIAWAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1984-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-25.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/AGUS_SETIAWAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/AGUS_SETIAWAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+
+allskktenagakerjablora::create([
+    // === BAGIAN PATEN (JANGAN DIUBAH) ===
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // === DATA DINAMIS ===
+    'namalengkap' => 'DEDE MEDIANSYAH',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1984-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-26.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/DEDE_MEDIANSYAH_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/DEDE_MEDIANSYAH_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // === PATEN ===
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // === DATA ===
+    'namalengkap' => 'DADANG EKI GUNAWAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1986-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-27.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/DADANG_EKKI_GUNAWAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/DADANG_EKKI_GUNAWAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // === PATEN ===
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // === DATA ===
+    'namalengkap' => 'ADE SUPRIATNA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1991-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-28.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/ADE_SUPRIATNA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/ADE_SUPRIATNA_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+allskktenagakerjablora::create([
+    // === PATEN ===
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // === DATA ===
+    'namalengkap' => 'AJANG KUSWANA',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1987-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-29.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/AJANG_KUSWANA_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/AJANG_KUSWANA_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+allskktenagakerjablora::create([
+    // === PATEN ===
+    'skkanda' => null,
+    'agendaskk_id' => 1,
+    'user_id' => 7,
+    'jenjangpendidikan_id' => null,
+    'jabatankerja_id' => 76,
+    'namasekolah_id' => null,
+    'tahunpilihan_id' => 10,
+    'kecamatankbb_id' => 6,
+
+    // === DATA ===
+    'namalengkap' => 'YUSUF SOPIAN',
+    'nik' => '-',
+    'tempatlahir' => null,
+    'ttl' => '1987-03-09',
+    'jeniskelamin' => 'Laki-laki',
+    'alamat' => '-',
+    'notelepon' => null,
+    'email' => null,
+    'tahunlulus' => null,
+
+    'uploadktp' => null,
+    'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-30.jpg',
+    'uploadijazah' => null,
+    'uploadpengalaman' => 'skktenagakerja/arsip/kta_gatensi/YUSUP_SOPYAN_KTA_GATENSI.pdf',
+    'uploadkebenarandata' => null,
+    'uploadnpwp' => null,
+    'uploaddaftarriwayathidup' => null,
+
+    'namaasosiasi' => 'GATENSI',
+    'punyaskk' => 'Ya',
+    'punyasiki' => null,
+    'portalpupr' => null,
+    'siappatuh' => null,
+    'sertifikat' => 'skktenagakerja/arsip/skk_pekerja/YUSUP_SOPYAN_SKK_TUKANG_BANGUNAN_GEDUNG_J1.pdf',
+    'catatanvalidasi' => null,
+
+    'verifikasipu' => null,
+    'verifikasilps' => false,
+    'verifikasihadirsertifikasi' => false,
+
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+
+//// KECAMATAN CIPATAT TKK KABUPATEN BANDUNG BARAT
+$names = [
+    'Asep Samsudin',
+    'Darmin',
+    'Wahyu W',
+    'Ahmad Tajudin',
+    'Kusnandang',
+    'Wijas',
+    'Acep',
+    'Entis',
+    'Dadang',
+    'Dedi',
+    'Jejen K',
+    'Syaeful Hidayat',
+    'Mahmud',
+    'Rangga',
+    'Dede Wawan',
+    'Dedi Mulyadi',
+    'Devi Agung',
+    'Rudi Kurnia',
+    'Dede Saepudin',
+    'Emud',
+    'Haris',
+    'Saepulloh',
+    'Wahyu Mulyana',
+    'Wawan Sopyan',
+    'Anang Suryana',
+    'Asep Aat',
+    'Asep K',
+    'Kusnadi',
+    'Rian Sapila',
+    'Asep Nandang',
+];
+
+foreach ($names as $nama) {
+    allskktenagakerjablora::create([
+        // === PATEN ===
+        'skkanda' => null,
+        'agendaskk_id' => 1,
+        'user_id' => 7,
+        'jenjangpendidikan_id' => null,
+        'jabatankerja_id' => 76,
+        'namasekolah_id' => null,
+        'tahunpilihan_id' => 11,
+        'kecamatankbb_id' => 7,
+
+        // === DATA MINIMAL ===
+        'namalengkap' => strtoupper($nama),
+        'nik' => null,
+        'tempatlahir' => null,
+        'ttl' => null,
+        'jeniskelamin' => null,
+        'alamat' => null,
+        'notelepon' => null,
+        'email' => null,
+        'tahunlulus' => null,
+
+        'uploadktp' => null,
+        'uploadfoto' => null,
+        'uploadijazah' => null,
+        'uploadpengalaman' => null,
+        'uploadkebenarandata' => null,
+        'uploadnpwp' => null,
+        'uploaddaftarriwayathidup' => null,
+
+        'namaasosiasi' => null,
+        'punyaskk' => null,
+        'punyasiki' => null,
+        'portalpupr' => null,
+        'siappatuh' => null,
+        'sertifikat' => null,
+        'catatanvalidasi' => null,
+
+        'verifikasipu' => null,
+        'verifikasilps' => false,
+        'verifikasihadirsertifikasi' => false,
+
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+        'deleted_at' => null,
+    ]);
+}
+
+
+// LANJUTKAN
 
 agendaskk::create([
     'materipelatihanskk_id' => null,       // ID materi pelatihan (sesuaikan yang ada di tabel)
