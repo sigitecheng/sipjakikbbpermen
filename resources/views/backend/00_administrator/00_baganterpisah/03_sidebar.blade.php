@@ -1671,7 +1671,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/referensi" class="nav-link">
                           <!-- Ikon untuk Referensi -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Referensi</p>
@@ -1679,7 +1679,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permendaerah" class="nav-link">
                           <!-- Ikon untuk Peraturan Daerah -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Peraturan Daerah</p>

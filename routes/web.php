@@ -2534,6 +2534,20 @@ Route::delete('/suratedaran/delete/{id}', [PermenpuController::class, 'suratedar
 Route::get('/permensuratedaran/create', [PermenpuController::class, 'suratedaranbaru'])->middleware('auth');
 Route::post('/permensuratedaran/createnew', [PermenpuController::class, 'suratedarancreatenew'])->middleware(['auth', 'can:admin2'])->name('create.suratedaranmenteri');
 
+// 7. SURAT REFERENSI PERATURAN JASA KONSTRUKSI
+Route::get('/referensi', [PermenpuController::class, 'referensi'])->middleware(['auth', 'can:admin2']);
+Route::delete('/referensi/delete/{id}', [PermenpuController::class, 'referensidelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/tambahreferensi/create', [PermenpuController::class, 'referensicreate'])->middleware('auth');
+Route::post('/referensibaru/createnew', [PermenpuController::class, 'referensibarucreatenew'])->middleware(['auth', 'can:admin2'])->name('create.referensijasakonstruksi');
+
+// 8. SURAT REFERENSI PERATURAN JASA KONSTRUKSI
+Route::get('/permendaerah', [PermenpuController::class, 'permendaerah'])->middleware(['auth', 'can:admin2']);
+Route::delete('/permendaerah/delete/{id}', [PermenpuController::class, 'permendaerahdelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permendaerah/create', [PermenpuController::class, 'permendaerahcreate'])->middleware('auth');
+Route::post('/permendaerah/createnew', [PermenpuController::class, 'premendaerahcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.permendaerahcreate');
+
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
