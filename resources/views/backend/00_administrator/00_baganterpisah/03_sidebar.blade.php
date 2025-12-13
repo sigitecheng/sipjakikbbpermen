@@ -1655,7 +1655,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/keputusanmenteri" class="nav-link">
                           <!-- Ikon untuk Keputusan Menteri -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Keputusan Menteri</p>
@@ -1663,7 +1663,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/suratedaran" class="nav-link">
                           <!-- Ikon untuk Surat Edaran Menteri -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Surat Edaran Menteri</p>

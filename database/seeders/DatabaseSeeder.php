@@ -3852,7 +3852,7 @@ pengawasantindakan::create([
 
         keputusanmenteri::create([
             'judul' => 'KEPUTUSAN_MENTERI_PUPR_NO_713_TAHUN_2022',
-            'peraturan' => 'peraturan/05_keputusanmenteri/KEPUTUSAN_MENTERI_PUPR_NO_713_TAHUN_2022.pdf',
+            'peraturan' => '/peraturan/05_keputusanmenteri/KEPUTUSAN_MENTERI_PUPR_NO_713_TAHUN_2022.pdf',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'deleted_at' => null, // Jika Anda menggunakan soft deletes
