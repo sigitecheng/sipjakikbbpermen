@@ -126,17 +126,17 @@
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Peraturan</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Undang-Undang</a></li>
-                                        <li><a href="#">Peraturan Pemerintah</a></li>
-                                        <li><a href="#">Peraturan Presiden</a></li>
-                                        <li><a href="#">Peraturan Menteri</a></li>
-                                        <li><a href="#">Keputusan Menteri</a></li>
-                                        <li><a href="#">Surat Edaran Menteri</a></li>
-                                        <li><a href="#">Referensi</a></li>
-                                        <li><a href="#">Peraturan Daerah</a></li>
-                                        <li><a href="#">Peraturan Gubernur</a></li>
-                                        <li><a href="#">Peraturan Walikota/Bupati</a></li>
-                                        <li><a href="#">Surat Keputusan</a></li>
+                                        <li><a href="/perundangundang">Undang-Undang</a></li>
+                                        <li><a href="/peraturanpemerintah">Peraturan Pemerintah</a></li>
+                                        <li><a href="/peraturanpresiden">Peraturan Presiden</a></li>
+                                        <li><a href="/peraturanmenteri">Peraturan Menteri</a></li>
+                                        <li><a href="/peraturankeputusanmanteri">Keputusan Menteri</a></li>
+                                        <li><a href="/peraturansuratedaran">Surat Edaran Menteri</a></li>
+                                        <li><a href="/peraturanreferensi">Referensi</a></li>
+                                        <li><a href="/peraturandaerah">Peraturan Daerah</a></li>
+                                        <li><a href="/peraturangubernur">Peraturan Gubernur</a></li>
+                                        <li><a href="/peraturanwalikota">Peraturan Walikota/Bupati</a></li>
+                                        <li><a href="/peraturansuratkeputusan">Surat Keputusan</a></li>
                                     </ul>
                                 </li>
                                 </li>

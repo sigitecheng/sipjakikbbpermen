@@ -1232,4 +1232,301 @@ public function permensuratkeputusancreatenew(Request $request)
     return redirect('/permensuratkeputusan');
 }
 
+public function perundangundang(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = peraturan::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 penting supaya search kebawa
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.01_perundangundang.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.01_perundangundang.feundangundang', [
+        'title' => 'Peraturan Undang Undang Jasa Konstruksi',
+        'data'  => $data,
+        'search'=> $search
+    ]);
+}
+public function peraturanpemerintah(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = perpemerintah::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.02_peraturanpemerintah.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.02_peraturanpemerintah.feperaturanpemerintah', [
+        'title'  => 'Peraturan Pemerintah',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturanpresiden(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = perpresiden::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.03_peraturanpresiden.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.03_peraturanpresiden.feperaturanpresiden', [
+        'title'  => 'Peraturan Presiden',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturanmenteri(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = permenteri::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.04_peraturanmenteri.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.04_peraturanmenteri.feperaturanmenteri', [
+        'title'  => 'Peraturan Menteri',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturankeputusanmanteri(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = keputusanmenteri::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.05_peraturankepurusanmenteri.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.05_peraturankepurusanmenteri.feperaturankeputusanmenteri', [
+        'title'  => 'Peraturan Menteri',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturansuratedaran(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = suratedaran::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.06_peraturansuratedaranmenteri.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.06_peraturansuratedaranmenteri.feperaturansuratedaranmenteri', [
+        'title'  => 'Surat Edaran Menteri',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturanreferensi(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = referensi::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.07_peraturanreferensi.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.07_peraturanreferensi.feperaturanreferensi', [
+        'title'  => 'Referensi Peraturan',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturandaerah(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = perdaerah::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.08_peraturandaerah.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.08_peraturandaerah.feperaturandaerah', [
+        'title'  => 'Peraturan Daerah',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturangubernur(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = pergubernur::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.09_peraturangubernur.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.09_peraturangubernur.feperaturangubernur', [
+        'title'  => 'Peraturan Gubernur',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturanwalikota(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = perbupatiwalikota::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.10_peraturanwalikota.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.10_peraturanwalikota.feperaturanwalikota', [
+        'title'  => 'Peraturan Walikota/Bupati',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+public function peraturansuratkeputusan(Request $request)
+{
+    $search = $request->query('search');
+
+    $data = suratkeputusan::orderBy('judul', 'asc')
+        ->when($search, function ($q) use ($search) {
+            $q->where('judul', 'LIKE', '%' . $search . '%');
+        })
+        ->paginate(10)
+        ->withQueryString(); // 🔥 biar search kebawa pagination
+
+    // 🔥 REQUEST DARI JS (AJAX)
+    if ($request->header('X-Requested-With') === 'XMLHttpRequest') {
+        return view(
+            'frontend.new.08_bagian9.11_suratkeputusan.partials.table',
+            compact('data')
+        );
+    }
+
+    // 🔥 HALAMAN NORMAL
+    return view('frontend.new.08_bagian9.11_suratkeputusan.feperaturansuratkeputusan', [
+        'title'  => 'Surat Keputusan',
+        'data'   => $data,
+        'search' => $search
+    ]);
+}
+
+
 }

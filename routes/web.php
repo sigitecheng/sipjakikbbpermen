@@ -2573,6 +2573,19 @@ Route::delete('/permensuratkeputusan/delete/{id}', [PermenpuController::class, '
 Route::get('/permensuratkeputusan/create', [PermenpuController::class, 'permensuratkeputusancreate'])->middleware('auth');
 Route::post('/permensuratkeputusan/createnew', [PermenpuController::class, 'permensuratkeputusancreatenew'])->middleware(['auth', 'can:admin2'])->name('create.permensuratkeputusannew');
 
+// PERATURAN JASA KONSTRUKSI
+Route::get('/perundangundang', [PermenpuController::class, 'perundangundang']);
+Route::get('/peraturanpemerintah', [PermenpuController::class, 'peraturanpemerintah']);
+Route::get('/peraturanpresiden', [PermenpuController::class, 'peraturanpresiden']);
+Route::get('/peraturanmenteri', [PermenpuController::class, 'peraturanmenteri']);
+Route::get('/peraturankeputusanmanteri', [PermenpuController::class, 'peraturankeputusanmanteri']);
+Route::get('/peraturankeputusanmanteri', [PermenpuController::class, 'peraturankeputusanmanteri']);
+Route::get('/peraturansuratedaran', [PermenpuController::class, 'peraturansuratedaran']);
+Route::get('/peraturanreferensi', [PermenpuController::class, 'peraturanreferensi']);
+Route::get('/peraturandaerah', [PermenpuController::class, 'peraturandaerah']);
+Route::get('/peraturangubernur', [PermenpuController::class, 'peraturangubernur']);
+Route::get('/peraturanwalikota', [PermenpuController::class, 'peraturanwalikota']);
+Route::get('/peraturansuratkeputusan', [PermenpuController::class, 'peraturansuratkeputusan']);
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
