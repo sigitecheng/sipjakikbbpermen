@@ -1639,7 +1639,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permenpresiden" class="nav-link">
                           <!-- Ikon untuk Peraturan Presiden -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Peraturan Presiden</p>
@@ -1647,7 +1647,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permenmenteri" class="nav-link">
                           <!-- Ikon untuk Peraturan Menteri -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Peraturan Menteri</p>

@@ -2506,6 +2506,20 @@ Route::delete('/perpemerintah/delete/{id}', [PermenpuController::class, 'perpeme
 Route::get('/permenpemerintah/create', [PermenpuController::class, 'permenpemerintahcreate'])->middleware(['auth', 'can:admin2']);
 Route::post('/permenpemerintah/createnew', [PermenpuController::class, 'permenpemerintahcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.perpemerintah');
 
+// 3. PERMEN PRESIDEN
+Route::get('/permenpresiden', [PermenpuController::class, 'permenpresiden'])->middleware(['auth', 'can:admin2']);
+Route::delete('/permenpemerintah/delete/{id}', [PermenpuController::class, 'permenpemerintahdelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permenpresiden/create', [PermenpuController::class, 'permenpresidencreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/permenpresiden/createnew', [PermenpuController::class, 'permenpresidencreatenew'])->middleware(['auth', 'can:admin2'])->name('create.prepresiden');
+
+// 4. PERMEN PRESIDEN
+Route::get('/permenmenteri', [PermenpuController::class, 'permenmenteri'])->middleware(['auth', 'can:admin2']);
+Route::delete('/permenmenteri/delete/{id}', [PermenpuController::class, 'permenmenteridelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permenmenteri/create', [PermenpuController::class, 'permenmentericreate'])->middleware(['auth', 'can:admin2']);
+Route::post('/permenmenteri/createnew', [PermenpuController::class, 'permenmentericreatemew'])->middleware(['auth', 'can:admin2'])->name('create.permenmenteri');
+
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');

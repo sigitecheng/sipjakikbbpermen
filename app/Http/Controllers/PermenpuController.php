@@ -6,7 +6,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\kategorimaterial;
 use App\Models\peraturan;
+use App\Models\permenteri;
 use App\Models\perpemerintah;
+use App\Models\perpresiden;
 use Illuminate\Support\Facades\Auth;
 
 class PermenpuController extends Controller
@@ -143,7 +145,7 @@ public function permenpemerintah(Request $request)
 
     if ($request->ajax()) {
         return response()->json([
-            'html' => view('backend.07_satuanharga.03_satuanhargaperalatan.partials.table', compact('data'))->render()
+            'html' => view('backend.17_permenpu.02_perpemerintah.partials.table', compact('data'))->render()
         ]);
     }
 
@@ -229,6 +231,226 @@ public function permenpemerintahcreatenew(Request $request)
 
     session()->flash('create', 'Data Peraturan Berhasil Ditambahkan!');
     return redirect('/permenpemerintah');
+}
+
+
+
+public function permenpresiden(Request $request)
+{
+    $perPage = $request->input('perPage', 5);
+    $search = $request->input('search');
+
+    $query = perpresiden::query();
+
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+            $q->where('judul', 'LIKE', "%{$search}%");
+            //   ->orWhere('besaranperjam', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // Urut berdasarkan kolom 'uraian' dari A-Z
+    $query->orderBy('judul', 'asc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view('backend.17_permenpu.03_permenpresiden.partials.table', compact('data'))->render()
+        ]);
+    }
+
+    return view('backend.17_permenpu.03_permenpresiden.permenpresiden', [
+        'title' => 'Peraturan Presiden ',
+        'data' => $data,
+        'perPage' => $perPage,
+        'search' => $search
+    ]);
+}//
+
+
+
+public function permenpemerintahdelete($id)
+{
+// Cari item berdasarkan judul
+$entry = perpresiden::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/permenpresiden')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
+
+return redirect()->back()->with('error', 'Item not found');
+}
+
+
+
+public function permenpresidencreate()
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    // $jakonjabatanfungsional = profiljakonpersonil::where('id', $id)->firstOrFail();
+    $user = Auth::user();
+
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.17_permenpu.03_permenpresiden.create', [
+        // 'data' => $jakonjabatanfungsional,
+        'user' => $user,
+        'title' => 'Tambah Peraturan Jasa Konstruksi'
+    ]);
+}
+
+
+public function permenpresidencreatenew(Request $request)
+{
+    // Validasi
+    $validatedData = $request->validate([
+        'judul'     => 'required|string|max:255',
+        'peraturan' => 'required|mimes:pdf|max:15120', // max 5MB
+    ], [
+        'judul.required' => 'Judul peraturan wajib diisi.',
+        'peraturan.required' => 'Berkas peraturan wajib diunggah.',
+        'peraturan.mimes' => 'Berkas harus berformat PDF.',
+    ]);
+
+    // Upload file ke folder PUBLIC
+    if ($request->hasFile('peraturan')) {
+        $file = $request->file('peraturan');
+
+        $namaFile = time() . '_' . $file->getClientOriginalName();
+
+        // folder tujuan (contoh: public/berkas_peraturan)
+        $file->move(public_path('berkas_peraturan'), $namaFile);
+
+        // simpan path relatif (untuk URL)
+        $validatedData['peraturan'] = 'berkas_peraturan/' . $namaFile;
+    }
+
+    // Simpan ke database
+    perpresiden::create([
+        'judul'     => $validatedData['judul'],
+        'peraturan' => $validatedData['peraturan'],
+    ]);
+
+    session()->flash('create', 'Data Peraturan Berhasil Ditambahkan!');
+    return redirect('/permenpresiden');
+}
+
+
+public function permenmenteri(Request $request)
+{
+    $perPage = $request->input('perPage', 5);
+    $search = $request->input('search');
+
+    $query = permenteri::query();
+
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+            $q->where('judul', 'LIKE', "%{$search}%");
+            //   ->orWhere('besaranperjam', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // Urut berdasarkan kolom 'uraian' dari A-Z
+    $query->orderBy('judul', 'asc');
+
+    $data = $query->paginate($perPage);
+
+    if ($request->ajax()) {
+        return response()->json([
+            'html' => view('backend.17_permenpu.04_permenmenteri.partials.table', compact('data'))->render()
+        ]);
+    }
+
+    return view('backend.17_permenpu.04_permenmenteri.permenmenteri', [
+        'title' => 'Peraturan Menteri ',
+        'data' => $data,
+        'perPage' => $perPage,
+        'search' => $search
+    ]);
+}//
+
+
+public function permenmenteridelete($id)
+{
+// Cari item berdasarkan judul
+$entry = permenteri::where('id', $id)->first();
+
+if ($entry) {
+// Jika ada file header yang terdaftar, hapus dari storage
+// if (Storage::disk('public')->exists($entry->header)) {
+    //     Storage::disk('public')->delete($entry->header);
+// }
+
+// Hapus entri dari database
+$entry->delete();
+
+// Redirect atau memberi respons sesuai kebutuhan
+return redirect('/permenmenteri')->with('delete', 'Data Berhasil Di Hapus !');
+
+}
+
+return redirect()->back()->with('error', 'Item not found');
+}
+
+
+public function permenmentericreate()
+{
+    // Cari data undang-undang berdasarkan nilai 'judul'
+    // $jakonjabatanfungsional = profiljakonpersonil::where('id', $id)->firstOrFail();
+    $user = Auth::user();
+
+    // Tampilkan form update dengan data yang ditemukan
+    return view('backend.17_permenpu.04_permenmenteri.create', [
+        // 'data' => $jakonjabatanfungsional,
+        'user' => $user,
+        'title' => 'Tambah Peraturan Jasa Konstruksi'
+    ]);
+}
+
+
+
+public function permenmentericreatemew(Request $request)
+{
+    // Validasi
+    $validatedData = $request->validate([
+        'judul'     => 'required|string|max:255',
+        'peraturan' => 'required|mimes:pdf|max:15120', // max 5MB
+    ], [
+        'judul.required' => 'Judul peraturan wajib diisi.',
+        'peraturan.required' => 'Berkas peraturan wajib diunggah.',
+        'peraturan.mimes' => 'Berkas harus berformat PDF.',
+    ]);
+
+    // Upload file ke folder PUBLIC
+    if ($request->hasFile('peraturan')) {
+        $file = $request->file('peraturan');
+
+        $namaFile = time() . '_' . $file->getClientOriginalName();
+
+        // folder tujuan (contoh: public/berkas_peraturan)
+        $file->move(public_path('berkas_peraturan'), $namaFile);
+
+        // simpan path relatif (untuk URL)
+        $validatedData['peraturan'] = 'berkas_peraturan/' . $namaFile;
+    }
+
+    // Simpan ke database
+    permenteri::create([
+        'judul'     => $validatedData['judul'],
+        'peraturan' => $validatedData['peraturan'],
+    ]);
+
+    session()->flash('create', 'Data Peraturan Berhasil Ditambahkan!');
+    return redirect('/permenmenteri');
 }
 
 }
