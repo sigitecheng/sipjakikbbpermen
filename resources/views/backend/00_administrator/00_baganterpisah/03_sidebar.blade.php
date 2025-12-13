@@ -1613,7 +1613,7 @@
                     <a href="#" class="nav-link">
                       <!-- Ikon untuk Peraturan -->
                       <i class="nav-icon bi bi-file-earmark-text" style="color: white;"></i> <!-- Ikon untuk Peraturan -->
-                      <p style="color: white">
+                      <p style="color: orange">
                         Peraturan
                         <!-- Ikon panah kanan (Chevron) -->
                         <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1687,7 +1687,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permengubernur" class="nav-link">
                           <!-- Ikon untuk Peraturan Gubernur -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Peraturan Gubernur</p>
@@ -1695,7 +1695,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permenwalikota" class="nav-link">
                           <!-- Ikon untuk Peraturan Walikota/Bupati -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Peraturan Walikota/Bupati</p>
@@ -1703,7 +1703,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a href="/404" class="nav-link">
+                        <a href="/permensuratkeputusan" class="nav-link">
                           <!-- Ikon untuk Surat Keputusan -->
                           <i class="nav-icon bi bi-file-earmark-text text-warning"></i>
                           <p style="color: white">Surat Keputusan</p>

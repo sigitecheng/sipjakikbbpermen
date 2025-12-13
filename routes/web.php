@@ -2549,6 +2549,31 @@ Route::get('/permendaerah/create', [PermenpuController::class, 'permendaerahcrea
 Route::post('/permendaerah/createnew', [PermenpuController::class, 'premendaerahcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.permendaerahcreate');
 
 
+// 9. SURAT PERATURAN GUBERNUR
+Route::get('/permengubernur', [PermenpuController::class, 'permengubernur'])->middleware(['auth', 'can:admin2']);
+Route::delete('/permengubernur/delete/{id}', [PermenpuController::class, 'permengubernurdelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permengubernur/create', [PermenpuController::class, 'permengubernurcreate'])->middleware('auth');
+Route::post('/permengubernur/createnew', [PermenpuController::class, 'permengubernurcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.permengubernurbaru');
+
+
+
+// 10. SURAT PERATURAN WALIKOTA DAN BUPATI
+Route::get('/permenwalikota', [PermenpuController::class, 'permenwalikota'])->middleware(['auth', 'can:admin2']);
+Route::delete('/permenwalikota/delete/{id}', [PermenpuController::class, 'permenwalikotadelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permenwalikota/create', [PermenpuController::class, 'permenwalikotacreate'])->middleware('auth');
+Route::post('/permenwalikota/createnew', [PermenpuController::class, 'permenwalikotacreatenew'])->middleware(['auth', 'can:admin2'])->name('create.permenwalikotabaru');
+
+
+// 11. SURAT PERATURAN SURAT KEPUTUSAN JASA KONSTRUKSI
+Route::get('/permensuratkeputusan', [PermenpuController::class, 'permensuratkeputusan'])->middleware(['auth', 'can:admin2']);
+Route::delete('/permensuratkeputusan/delete/{id}', [PermenpuController::class, 'permensuratkeputusandelete'])->middleware(['auth', 'can:admin2']);
+
+Route::get('/permensuratkeputusan/create', [PermenpuController::class, 'permensuratkeputusancreate'])->middleware('auth');
+Route::post('/permensuratkeputusan/createnew', [PermenpuController::class, 'permensuratkeputusancreatenew'])->middleware(['auth', 'can:admin2'])->name('create.permensuratkeputusannew');
+
+
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
 
