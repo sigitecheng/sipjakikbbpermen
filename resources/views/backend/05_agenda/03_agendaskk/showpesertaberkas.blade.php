@@ -1,43 +1,5 @@
 
 <style>
-    @media (max-width: 768px) {
-        .hide-on-mobile {
-            display: none !important;
-        }
-    }
-
-
-     @media (max-width: 768px) {
-        table.borderbaru {
-            display: none !important;
-        }
-    }
-
-
-    .table-responsive {
-    width: 100%;
-    overflow-x: auto;
-}
-
-/* Tabel tetap terlihat bagus */
-.zebra-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 600px; /* Bisa kamu ubah sesuai banyaknya kolom */
-}
-
-.zebra-table th,
-.zebra-table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-/* Tambahan untuk striping */
-.zebra-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
 /* Responsif khusus untuk HP */
 @media (max-width: 768px) {
     .zebra-table {
@@ -487,7 +449,8 @@ button:hover {
 
 @endcanany
 
-@canany(['super_admin', 'admin', 'lsppenerbit'])
+{{-- @canany(['super_admin', 'admin', 'lsppenerbit']) --}}
+@canany('lsppenerbit')
 
 <form action="{{ route('peserta.downloadSemua', $datapeserta->id) }}" method="POST">
     @csrf
@@ -555,7 +518,7 @@ button:hover {
         <path fill-rule="evenodd"
             d="M14 14s-1-1.5-6-1.5S2 14 2 14s1-4 6-4 6 4 6 4z"/>
     </svg>
-    Nama Peserta : {{ $datapeserta->user->name ?? 'Nama Lengkap Belum Diisi !!' }}
+    Nama Peserta : {{ $datapeserta->namalengkap ?? 'Nama Lengkap Belum Diisi !!' }}
 </button>
 
 

@@ -275,6 +275,41 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
+
+            <div class="form-modern mb-3">
+    <label class="form-label-modern">
+        <i class="bi bi-mortarboard" style="margin-right: 10px; color: navy;"></i>
+        Jenjang (Data Sebelumnya)
+    </label>
+
+    <div class="form-control" style="background:#f8f9fa;">
+        {{ $data->jenjang->jenjang ?? '-' }}
+    </div>
+</div>
+<!-- Pilih Jenjang Baru -->
+<div class="form-modern mb-3">
+    <label class="form-label-modern" for="jenjang_id">
+        <i class="bi bi-arrow-repeat" style="margin-right: 10px; color: navy;"></i>
+        Ubah Jenjang
+    </label>
+
+    <select id="jenjang_id" name="jenjang_id"
+            class="form-control @error('jenjang_id') is-invalid @enderror">
+        <option value="">Pilih Jenjang Baru</option>
+
+        @foreach($dataJenjang as $item)
+            <option value="{{ $item->id }}"
+                {{ old('jenjang_id', $peserta->jenjang_id ?? '') == $item->id ? 'selected' : '' }}>
+                {{ $item->jenjang }}
+            </option>
+        @endforeach
+    </select>
+
+    @error('jenjang_id')
+        <div class="invalid-feedback">{{ $message }}</div>
+    @enderror
+</div>
+
         </div>
     </div>
 <div style="display: flex; align-items: center; text-align: center; margin: 10px 0;">
@@ -351,8 +386,7 @@
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
                                     <button type="button" onclick="openModal()" class="button-berkas">
-                                    <i class="bi bi-pencil-square"
-                                    style="font-size: 20px; margin-right: 8px;"></i>
+                                    <i class="bi bi-pencil-square"></i>
                                     <span style="font-family: 'Poppins', sans-serif;">Perbaikan Data ?</span>
                                 </button>
 

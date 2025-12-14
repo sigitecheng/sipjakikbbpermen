@@ -22,6 +22,7 @@ return new class extends Migration
             $table->foreignId('namasekolah_id')->nullable();
             $table->foreignId('tahunpilihan_id')->nullable();
             $table->foreignId('kecamatankbb_id')->nullable();
+            $table->foreignId('jenjang_id')->nullable();
             $table->string('namalengkap')->nullable(); // ada
             $table->string('nik')->nullable(); // ada
                     // $table->string('namalengkap')->nullable();

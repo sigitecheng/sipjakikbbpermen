@@ -22384,6 +22384,7 @@ blockquote cite {
   font-size: 15px;
   font-weight: 600;
 }
+
 @media (max-width: 767.98px) {
   .cart__table thead th.product__subtotal, .cart__table thead th.product__price {
     display: none;
@@ -22429,6 +22430,34 @@ blockquote cite {
 .cart__table .product__thumb img {
   max-width: 70px;
 }
+
+/* ===========================
+   CARD STYLE FOR TABLE
+   =========================== */
+.table-card-effect {
+    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+    border-left: 6px solid #0d6efd;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    padding: 12px;
+    overflow-x: auto;
+}
+
+/* table tetap normal */
+.table-card-effect .cart__table {
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* hover rasa modern */
+.table-card-effect .cart__table tbody tr {
+    transition: all .25s ease;
+}
+
+.table-card-effect .cart__table tbody tr:hover {
+    background-color: #f5f9ff;
+}
+
 @media (max-width: 767.98px) {
   .cart__table .product__price {
     display: none;

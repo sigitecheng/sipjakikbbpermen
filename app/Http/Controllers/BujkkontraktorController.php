@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\allskktenagakerjablora;
 use App\Models\asosiasimasjaki;
 use App\Models\Asosiasimasjaki as ModelsAsosiasimasjaki;
 use App\Models\bujkkonsultan;
 use App\Models\bujkkonsultansub;
 use App\Models\bujkkontraktor;
 use App\Models\bujkkontraktorsub;
+use App\Models\jenjang;
 // use App\Models\asosiasimasjaki;
 use Illuminate\Http\Request;
 
@@ -829,7 +831,117 @@ public function databujkkontruksilayanan($namalengkap)
         'user' => Auth::user()
     ]);
 }
+public function datajakontkkkbb(Request $request)
+{
+    $user   = Auth::user();
 
+    $search  = $request->input('search');
+    $perPage = $request->input('perPage', 25); // default 25
+
+    $query = allskktenagakerjablora::query();
+
+    // 🔍 FILTER SEARCH
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+            $q->where('namalengkap', 'LIKE', "%{$search}%")
+              ->orWhere('nik', 'LIKE', "%{$search}%")
+              ->orWhere('tempatlahir', 'LIKE', "%{$search}%")
+              ->orWhere('alamat', 'LIKE', "%{$search}%")
+              ->orWhere('notelepon', 'LIKE', "%{$search}%")
+              ->orWhere('email', 'LIKE', "%{$search}%")
+              ->orWhere('jeniskelamin', 'LIKE', "%{$search}%")
+              ->orWhere('tahunlulus', 'LIKE', "%{$search}%")
+              ->orWhere('skkanda', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // 🔥 DATA TERBARU DI ATAS + PERPAGE DINAMIS
+    $data = $query
+        ->orderBy('created_at', 'DESC')
+        ->paginate($perPage);
+
+    // 🔗 BIAR SEARCH & PERPAGE NEMPEL SAAT PINDAH HALAMAN
+    $data->appends([
+        'search'  => $search,
+        'perPage' => $perPage,
+    ]);
+
+    return view('frontend.new.03_bagian4.05_datatkkkbb.01_semuadata.semuatkkkbb', [
+        'title'   => 'Data SKK Tenaga Kerja Konstruksi Kabupaten Bandung Barat',
+        'data'    => $data,
+        'user'    => $user,
+        'search'  => $search,
+        'perPage' => $perPage,
+    ]);
+}
+
+public function datastatistiktkkkbb(Request $request)
+{
+    $user  = Auth::user();
+    $title = 'Statistik Tenaga Kerja Kabupaten Bandung Barat';
+
+    // ============================
+    // JENJANG (MASTER)
+    // ============================
+    $statJenjangPendidikan = allskktenagakerjablora::selectRaw(
+        'jenjang_id,
+        jenjangpendidikan_id,
+        COUNT(*) as total'
+    )
+    ->groupBy('jenjang_id', 'jenjangpendidikan_id')
+    ->get();
+
+    // ============================
+    // JABATAN KERJA (WAJIB ADA jenjang_id)
+    // ============================
+    $statJabatanKerja = allskktenagakerjablora::selectRaw(
+        'jabatankerja_id,
+         jenjang_id,
+         COUNT(*) as total'
+    )
+    ->groupBy('jabatankerja_id','jenjang_id')
+    ->get();
+
+    // ============================
+    // TAHUN BIMTEK
+    // ============================
+    $statTahun = allskktenagakerjablora::selectRaw(
+        'tahunpilihan_id,
+         jenjang_id,
+         COUNT(*) as total'
+    )
+    ->groupBy('tahunpilihan_id','jenjang_id')
+    ->get();
+
+    // ============================
+    // KECAMATAN
+    // ============================
+    $statKecamatan = allskktenagakerjablora::selectRaw(
+        'kecamatankbb_id,
+         jenjang_id,
+         COUNT(*) as total'
+    )
+    ->groupBy('kecamatankbb_id','jenjang_id')
+    ->get();
+
+    // ============================
+    // LIST JENJANG (FILTER)
+    // ============================
+    $listJenjang = jenjang::orderBy('jenjang','ASC')->get();
+
+    return view(
+        'frontend.new.03_bagian4.05_datatkkkbb.01_semuadata.datatsatistik',
+        compact(
+            'title',
+            'user',
+            'statJenjangPendidikan',
+            'statJabatanKerja',
+            'statTahun',
+            'statKecamatan',
+            'listJenjang'
+        )
+    );
+}
 
 }
 

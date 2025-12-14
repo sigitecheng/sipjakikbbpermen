@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('jenjangs', function (Blueprint $table) {
             $table->id();
             $table->string('jenjang', 10)->nullable()->index();
+            $table->string('keterangan')->nullable();
+            $table->string('keterangan1')->nullable();
+            $table->string('keterangan2')->nullable();
+            $table->string('keterangan3')->nullable();
             $table->softDeletes();
             $table->timestamps();
 

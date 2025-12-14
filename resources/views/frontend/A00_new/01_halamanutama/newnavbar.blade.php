@@ -61,8 +61,8 @@
                                         </li>
                                          <li class="menu-item-has-children"><a href="#">Tenaga Kerja</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">TKK Kab Bandung Barat</a></li>
-                                                <li><a href="#">Data Statistik</a></li>
+                                                <li><a href="/datajakontkkkbb">TKK Kab Bandung Barat</a></li>
+                                                <li><a href="/datastatistiktkkkbb">Data Statistik</a></li>
                                             </ul>
                                         </li>
 

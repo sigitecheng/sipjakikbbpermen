@@ -15,7 +15,7 @@ class allskktenagakerjablora extends Model
 
     public function namasekolah()
     {
-        return $this->belongsTo(namasekolah::class);
+        return $this->belongsTo(namasekolah::class, 'namasekolah_id');
     }
 
     public function jenjangpendidikan()
@@ -25,7 +25,7 @@ class allskktenagakerjablora extends Model
 
     public function tahunpilihan()
     {
-        return $this->belongsTo(tahunpilihan::class);
+        return $this->belongsTo(tahunpilihan::class, 'tahunpilihan_id');
     }
 
     public function agendaskk()
@@ -54,9 +54,14 @@ class allskktenagakerjablora extends Model
             return $this->belongsTo(jabatankerja::class, 'jabatanskkanda_id');
         }
 
-        public function kecamatan()
+        public function kecamatankbb()
         {
             return $this->belongsTo(kecamatankbb::class, 'kecamatankbb_id');
+        }
+
+        public function jenjang()
+        {
+            return $this->belongsTo(jenjang::class, 'jenjang_id');
         }
 
 

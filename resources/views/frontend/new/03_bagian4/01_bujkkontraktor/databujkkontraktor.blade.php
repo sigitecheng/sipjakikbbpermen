@@ -220,6 +220,7 @@
                             border-radius: 8px;
                             box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
                         ">
+                        <option value="10">10</option>
                         <option value="25">25</option>
                         <option value="50">50</option>
                         <option value="75">75</option>

@@ -1499,7 +1499,7 @@ public function beagendaskktkk2025(Request $request)
     // Query semua data dari allskktenagakerjablora
     $query = allskktenagakerjablora::select([
         'id', 'user_id', 'agendaskk_id', 'jenjangpendidikan_id', 'jabatankerja_id',
-        'namasekolah_id', 'kecamatankbb_id','tahunpilihan_id', 'namalengkap', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
+        'namasekolah_id', 'kecamatankbb_id','tahunpilihan_id', 'jenjang_id', 'namalengkap', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
         'alamat', 'notelepon', 'email', 'tahunlulus', 'uploadktp', 'uploadfoto', 'uploadijazah',
         'uploadpengalaman', 'uploadnpwp', 'uploaddaftarriwayathidup', 'namaasosiasi', 'punyaskk',
         'punyasiki', 'siappatuh', 'verifikasipu', 'verifikasilps', 'sertifikat'
@@ -1581,6 +1581,7 @@ public function bedatatkkkbbupdate($id)
     $datanamasekolah = namasekolah::all(); // Ambil semua asosiasi
     $datatahunpilihan = tahunpilihan::all(); // Ambil semua asosiasi
     $datakecamatankbb = kecamatankbb::all(); // Ambil semua asosiasi
+    $datajenjang = jenjang::all(); // Ambil semua asosiasi
 
     $user = Auth::user();
 
@@ -1595,6 +1596,7 @@ public function bedatatkkkbbupdate($id)
         'datanamasekolah' => $datanamasekolah,
         'datatahunpilihan' => $datatahunpilihan,
         'datakecamatankbb' => $datakecamatankbb,
+        'dataJenjang' => $datajenjang,
 
         'title' => 'Perbaikan Data TKK Tenaga Kerja Konstruksi'
     ]);
@@ -1619,6 +1621,7 @@ public function bedatatkkkbbupdate($id)
             'namasekolah_id' => 'nullable|string',
             'tahunpilihan_id' => 'nullable|string',
             'kecamatankbb_id' => 'nullable|string',
+            'jenjang_id' => 'nullable|string',
             'skkanda' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
             'uploadktp' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
             'uploadfoto' => 'nullable|file|mimes:jpg,jpeg,png,pdf',
@@ -1644,6 +1647,7 @@ public function bedatatkkkbbupdate($id)
             'namasekolah_id' => $request->namasekolah_id,
             'tahunpilihan_id' => $request->tahunpilihan_id,
             'kecamatankbb_id' => $request->kecamatankbb_id,
+            'jenjang_id' => $request->jenjang_id,
         ]);
 
         // Upload file langsung ke public
@@ -1689,6 +1693,7 @@ public function bedatatkkkbbcreate()
     $datanamasekolah = namasekolah::all();
     $datatahunpilihan = tahunpilihan::all();
     $datakecamatankbb = kecamatankbb::all();
+    $datajenjang = jenjang::all();
 
     // User login
     $user = Auth::user();
@@ -1703,6 +1708,7 @@ public function bedatatkkkbbcreate()
         'datanamasekolah' => $datanamasekolah,
         'datatahunpilihan' => $datatahunpilihan,
         'datakecamatankbb' => $datakecamatankbb,
+        'dataJenjang' => $datajenjang,
 
         'title' => 'Form Input Data Baru TKK Tenaga Kerja Konstruksi'
     ]);
@@ -1710,7 +1716,7 @@ public function bedatatkkkbbcreate()
 public function bedatatkkkbbcreatenew(Request $request)
 {
     $validated = $request->validate([
-        'skkanda' => 'nullable|string',
+        'skkanda' => 'nullable|file|mimes:pdf,jpg,jpeg,png|max:15360',
         'agendaskk_id' => 'nullable|string',
         'user_id' => 'nullable|string', // tetap ada biar tidak error form, tapi nanti dioverride
         'jenjangpendidikan_id' => 'nullable|string',
@@ -1718,6 +1724,7 @@ public function bedatatkkkbbcreatenew(Request $request)
         'namasekolah_id' => 'nullable|string',
         'tahunpilihan_id' => 'nullable|string',
         'kecamatankbb_id' => 'nullable|string',
+        'jenjang_id' => 'nullable|string',
 
         'namalengkap' => 'nullable|string',
         'nik' => 'nullable|string',
@@ -1750,6 +1757,7 @@ public function bedatatkkkbbcreatenew(Request $request)
     //  UPLOAD FILE MANUAL KE PUBLIC
     // ===============================
     $fileFields = [
+        'skkanda',
         'uploadktp',
         'uploadfoto',
         'uploadijazah',

@@ -173,6 +173,9 @@ function exportTableToExcel(tableID, filename = ''){
                                             <i class="bi bi-person" style="margin-right: 5px;"></i>NIK
                                         </th>
                                         <th style="width: 100px; text-align:center;">
+                                            <i class="bi bi-person" style="margin-right: 5px;"></i>Jenjang
+                                        </th>
+                                        <th style="width: 100px; text-align:center;">
                                             <i class="bi bi-person" style="margin-right: 5px;"></i>Kecamatan
                                         </th>
                                         <th style="width: 200px; text-align:center;">
@@ -229,6 +232,7 @@ function exportTableToExcel(tableID, filename = ''){
 
                                         {{-- <td style="text-align: left;">{{ $item->jenjangpendidikan->jenjangpendidikan}}</td> --}}
                                         <td style="text-align: center;">{{ $item->nik ?? '-' }}</td>
+                                        <td style="text-align: center;">{{ $item->jenjang->jenjang ?? '-' }}</td>
                                         <td style="text-align: center;">{{ $item->kecamatan->kecamatankbb ?? '' }}</td>
                                         <td style="text-align: center;">{{ $item->jeniskelamin ?? '-'  }}</td>
                                         <td style="text-align: center;">

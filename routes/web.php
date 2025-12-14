@@ -2587,6 +2587,11 @@ Route::get('/peraturangubernur', [PermenpuController::class, 'peraturangubernur'
 Route::get('/peraturanwalikota', [PermenpuController::class, 'peraturanwalikota']);
 Route::get('/peraturansuratkeputusan', [PermenpuController::class, 'peraturansuratkeputusan']);
 
+
+/// DATA JAKON
+Route::get('/datajakontkkkbb', [BujkkontraktorController::class, 'datajakontkkkbb']);
+Route::get('/datastatistiktkkkbb', [BujkkontraktorController::class, 'datastatistiktkkkbb']);
+
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
 

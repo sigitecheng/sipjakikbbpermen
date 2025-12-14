@@ -181,14 +181,40 @@
             </label>
             <select id="jeniskelamin" name="jeniskelamin"
                     class="form-control @error('jeniskelamin') is-invalid @enderror">
-                <option value="">Pilih Jenis Kelamin</option>
-                <option value="Laki-laki"  {{ old('jeniskelamin') == 'Laki-laki' ? 'selected' : '' }}>Laki-laki</option>
-                <option value="Perempuan" {{ old('jeniskelamin') == 'Perempuan' ? 'selected' : '' }}>Perempuan</option>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="Laki-laki"  {{ old('jeniskelamin') == 'Laki-laki' ? 'selected' : '' }}>Laki-laki</option>
+                    <option value="Perempuan" {{ old('jeniskelamin') == 'Perempuan' ? 'selected' : '' }}>Perempuan</option>
             </select>
             @error('jeniskelamin')
                 <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
-        </div>
+                @enderror
+            </div>
+
+
+            <div class="form-modern mb-3">
+           <label class="form-label-modern" for="jenjang_id">
+    <i class="bi bi-diagram-3" style="margin-right: 10px; color: navy;"></i>
+    Pilih Jenjang
+</label>
+            <select id="jenjang_id" name="jenjang_id"
+        class="form-control @error('jenjang_id') is-invalid @enderror">
+    <option value="">Pilih Jenjang</option>
+
+    @foreach($dataJenjang as $item)
+        <option value="{{ $item->id }}"
+            {{ old('jenjang_id') == $item->id ? 'selected' : '' }}>
+            {{ $item->jenjang }}
+        </option>
+    @endforeach
+</select>
+
+@error('jenjang_id')
+    <div class="invalid-feedback">{{ $message }}</div>
+@enderror
+</div>
+
+
+
     </div>
 
     <!-- Right Column -->
@@ -363,8 +389,7 @@
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
                                     <button type="button" onclick="openModal()" class="button-baru">
-                                    <i class="bi bi-pencil-square"
-                                    style="font-size: 20px; margin-right: 8px;"></i>
+                                    <i class="bi bi-pencil-square"></i>
                                     <span style="font-family: 'Poppins', sans-serif;">Tambah Data ?</span>
                                 </button>
 

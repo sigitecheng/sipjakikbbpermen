@@ -42,6 +42,7 @@ use App\Models\himbauandinas;
 use App\Models\informasirantaipasok;
 use App\Models\isadmin;
 use App\Models\jabatankerja;
+use App\Models\jenjang;
 use App\Models\jenjangpendidikan;
 use App\Models\kategorimaterial;
 use App\Models\kategoripelatihan;
@@ -7037,11 +7038,12 @@ allskktenagakerjablora::create([
     'skkanda' => null, // atau 'namalengkap' jika kamu pakai field itu
     'agendaskk_id' => 1, // isi sesuai kebutuhan
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
     'namalengkap' => 'Wahyudin',
     'nik' => '-',
     'tempatlahir' => null,
@@ -7089,11 +7091,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'JAJANG JAENUDIN',
@@ -7149,11 +7152,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'ADE SUTARYA',
@@ -7209,11 +7213,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'ASEP SUTISNA',
@@ -7269,11 +7274,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'LILI SUMANTRI',
@@ -7329,11 +7335,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'SOLIHIN',
@@ -7389,11 +7396,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'DANI SAPRUDIN',
@@ -7449,11 +7457,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'ENDANG SUPRIATNA',
@@ -7509,11 +7518,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'SISWANDI',
@@ -7569,11 +7579,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'PARMAN',
@@ -7629,11 +7640,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'PARMAN',
@@ -7689,11 +7701,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 5,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'SISWANDI',
@@ -7750,11 +7763,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'SLAMET TRIADI',
@@ -7811,11 +7825,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 5,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'DEPI RISMAWAN',
@@ -7872,11 +7887,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'DADAN',
@@ -7932,11 +7948,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'JAJANG',
@@ -7992,11 +8009,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 5,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'APIN ARIPIN',
@@ -8052,11 +8070,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'DUYEH',
@@ -8113,11 +8132,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'AYI NURDIN',
@@ -8175,11 +8195,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 5,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'ASEP RAHMAT',
@@ -8235,11 +8256,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'YANA HERDIANA',
@@ -8296,11 +8318,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'DODO ABDUL FATAH',
@@ -8356,11 +8379,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'WAWAN',
@@ -8417,11 +8441,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'ENDANG MUSTOPA',
@@ -8477,11 +8502,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 5,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'TATANG',
@@ -8538,11 +8564,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'YAYAN MULYANA',
@@ -8599,11 +8626,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'MULYANA',
@@ -8659,11 +8687,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'AYI SOPIAN',
@@ -8720,11 +8749,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'OBAR S BIN SAPDI',
@@ -8781,11 +8811,12 @@ allskktenagakerjablora::create([
     'skkanda' => null,
     'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 2,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 13,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'RIFKI NOVALIMANI',
@@ -8841,13 +8872,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // ====== PERMANEN ======
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 2,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'ANTON HILMAN',
@@ -8902,13 +8934,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // ====== PERMANEN ======
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'ENDANG SOEMANTRI',
@@ -8964,13 +8997,15 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // ====== PERMANEN ======
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
+    // 'agendaskk_id' => 1,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'LUBIS',
@@ -9024,13 +9059,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // ====== PERMANEN ======
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // ====== DATA PESERTA ======
     'namalengkap' => 'JAJANG SAEFUL MUMIN',
@@ -9086,13 +9122,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // ===== DATA UTAMA =====
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 1,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // ===== IDENTITAS =====
     'namalengkap' => 'ABDUL RIZKI MAJID',
@@ -9137,13 +9174,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // ===== DATA UTAMA =====
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // ===== IDENTITAS =====
     'namalengkap' => 'MUHAMMAD HUSNI PURNAMA MUIZ',
@@ -9189,13 +9227,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // DATA UTAMA
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // IDENTITAS
     'namalengkap' => 'UJANG MULYANA',
@@ -9240,13 +9279,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // DATA UTAMA
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // IDENTITAS
     'namalengkap' => 'HENDRI',
@@ -9289,13 +9329,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'HENDRAWAN',
     'nik' => '-',
@@ -9335,13 +9376,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'KARSIM WIDIANTO',
     'nik' => '-',
@@ -9381,13 +9423,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 5,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'MAMAT HIDAYAT',
     'nik' => '-',
@@ -9427,13 +9470,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'ROHMAT',
     'nik' => '-',
@@ -9472,13 +9516,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 2,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'NURJAMAH AMINUDIN',
     'nik' => '-',
@@ -9517,13 +9562,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'BEBEN',
     'nik' => '-',
@@ -9564,13 +9610,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'PANDI SUPRIADI',
     'nik' => '-',
@@ -9610,13 +9657,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'SULAEMAN',
     'nik' => '-',
@@ -9655,13 +9703,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'AHMAD EFENDI',
     'nik' => '-',
@@ -9700,13 +9749,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'IAN SOPIAN',
     'nik' => '-',
@@ -9745,13 +9795,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'BULDANI',
     'nik' => '-',
@@ -9791,13 +9842,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'SAEHUDIN',
     'nik' => '-',
@@ -9836,13 +9888,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'CECEP JAMALUDIN',
     'nik' => '-',
@@ -9882,13 +9935,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'YOPI SOPIAN',
     'nik' => '-',
@@ -9928,13 +9982,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'RUKMANA',
     'nik' => '-',
@@ -9974,13 +10029,14 @@ allskktenagakerjablora::create([
 
 allskktenagakerjablora::create([
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     'namalengkap' => 'IDRUS SUPARDI',
     'nik' => '-',
@@ -10021,13 +10077,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // === BAGIAN PATEN (JANGAN DIUBAH) ===
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // === DATA DINAMIS ===
     'namalengkap' => 'AGUS SETIAWAN',
@@ -10070,13 +10127,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // === BAGIAN PATEN (JANGAN DIUBAH) ===
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // === DATA DINAMIS ===
     'namalengkap' => 'DEDE MEDIANSYAH',
@@ -10118,13 +10176,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // === PATEN ===
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // === DATA ===
     'namalengkap' => 'DADANG EKI GUNAWAN',
@@ -10166,13 +10225,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // === PATEN ===
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // === DATA ===
     'namalengkap' => 'ADE SUPRIATNA',
@@ -10213,13 +10273,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // === PATEN ===
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 4,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // === DATA ===
     'namalengkap' => 'AJANG KUSWANA',
@@ -10261,13 +10322,14 @@ allskktenagakerjablora::create([
 allskktenagakerjablora::create([
     // === PATEN ===
     'skkanda' => null,
-    'agendaskk_id' => 1,
+    'agendaskk_id' => 2,
     'user_id' => 7,
-    'jenjangpendidikan_id' => null,
+    'jenjangpendidikan_id' => 3,
     'jabatankerja_id' => 76,
     'namasekolah_id' => null,
     'tahunpilihan_id' => 10,
     'kecamatankbb_id' => 6,
+    'jenjang_id' => 1,
 
     // === DATA ===
     'namalengkap' => 'YUSUF SOPIAN',
@@ -10344,20 +10406,21 @@ foreach ($names as $nama) {
     allskktenagakerjablora::create([
         // === PATEN ===
         'skkanda' => null,
-        'agendaskk_id' => 1,
+        'agendaskk_id' => 3,
         'user_id' => 7,
-        'jenjangpendidikan_id' => null,
+         'jenjangpendidikan_id' => rand(3,5),
         'jabatankerja_id' => 76,
         'namasekolah_id' => null,
         'tahunpilihan_id' => 11,
-        'kecamatankbb_id' => 7,
+        'kecamatankbb_id' => 16,
+        'jenjang_id' => 1,
 
         // === DATA MINIMAL ===
         'namalengkap' => strtoupper($nama),
         'nik' => null,
         'tempatlahir' => null,
         'ttl' => null,
-        'jeniskelamin' => null,
+        'jeniskelamin' => 'Laki-laki',
         'alamat' => null,
         'notelepon' => null,
         'email' => null,
@@ -10526,6 +10589,14 @@ kecamatankbb::create([
 kecamatankbb::create([
     'id' => 15,
     'kecamatankbb' => 'Cipongkor',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+kecamatankbb::create([
+    'id' => 16,
+    'kecamatankbb' => 'Cipatat',
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
     'deleted_at' => null,
@@ -30538,6 +30609,74 @@ informasirantaipasok::create([
 
             'keteranganperusahaan' => 'Perusahaan yang bergerak dalam penyediaan material konstruksi dan jasa teknik bangunan.',
         ]);
+
+
+jenjang::create([
+    'jenjang' => '1',
+    'keterangan' => 'Satu',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '2',
+    'keterangan' => 'Dua',
+    'keterangan' => 'Dua',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '3',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '4',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '5',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '6',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '7',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '8',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
+jenjang::create([
+    'jenjang' => '9',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null,
+]);
+
 
     }    /**
      * Menghitung usia berdasarkan tanggal lahir.
