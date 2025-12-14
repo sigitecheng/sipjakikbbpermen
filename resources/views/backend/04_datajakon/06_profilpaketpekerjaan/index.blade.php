@@ -233,7 +233,7 @@
                                     </thead>
                                     <tbody id="tableBody">
                                         @forelse ($data as $item)
-                                        <tr class="align-middle">
+                                     <tr class="align-middle" style="font-weight:400";>
                                             <td style="text-align: center;">{{$loop->iteration }}</td>
 <td style="text-align: left;">
     @if(!empty($item->profiljenispekerjaan->jenispekerjaan))

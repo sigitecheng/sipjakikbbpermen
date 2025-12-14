@@ -2592,6 +2592,10 @@ Route::get('/peraturansuratkeputusan', [PermenpuController::class, 'peraturansur
 Route::get('/datajakontkkkbb', [BujkkontraktorController::class, 'datajakontkkkbb']);
 Route::get('/datastatistiktkkkbb', [BujkkontraktorController::class, 'datastatistiktkkkbb']);
 
+Route::get('/datapekerjaankbb', [BujkkontraktorController::class, 'datapekerjaankbb']);
+Route::get('/datastatistikpaketpekerjaan', [PaketpekerjaanmasjakiController::class, 'datastatistikpaketpekerjaan'])->middleware('auth'); // SUDAH DI GATE
+
+
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
 

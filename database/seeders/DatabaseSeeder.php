@@ -11173,6 +11173,23 @@ paketpekerjaanmasjaki::create([
     'bulanselesai' => 'Maret',
     'progress' => 100
 ]);
+paketpekerjaanmasjaki::create([
+    'profiljenispekerjaan_id' => 5,
+    'paketstatuspekerjaan_id' => 2,
+    'sumberdana_id' => 1,
+    'tahunpilihan_id' => 11,
+    'user_id' => 11,
+    'bulanrekap_id' => 1,
+    'namapekerjaan' => 'Pembangunan Drainase Lingkungan Kabupaten Bandung Barat',
+    'cvptpenyedia' => 'PT Maju Jaya KBB',
+    'nib' => '8123456789012',
+    'nilaikontrak' => 450000000.00,
+    'jeniskontrak' => 'Harga Satuan',
+    'karakteristikkontrak' => 'Tahun Tunggal',
+    'bulanmulai' => 'Januari',
+    'bulanselesai' => 'Maret',
+    'progress' => 100
+]);
 
 paketpekerjaanmasjaki::create([
     'profiljenispekerjaan_id' => 12,

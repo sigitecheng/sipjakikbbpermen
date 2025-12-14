@@ -153,7 +153,10 @@
 </section>
         <!-- blog-post-area -->
         <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
+            @include('frontend.A00_new.01_halamanutama.newjudul')
             <div class="container">
+
+
                 <div class="row">
                     <div class="col-70 order-0 order-lg-2">
 
@@ -165,21 +168,21 @@
         <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
             <!-- Button: Kembali -->
             <a href="{{ url()->previous() }}"
-               class="button-baru"
-               style="display:flex; align-items:center; white-space:nowrap;">
-                <i class="bi bi-arrow-left-circle" style="margin-right:6px; font-size:16px;"></i>
+               class="button-baru">
+                <i class="bi bi-arrow-left-circle"></i>
                 Kembali
             </a>
 
             <!-- Button: Nama Lengkap -->
             <a href="#"
-               class="button-modern"
-               style="display:flex; align-items:center; white-space:nowrap; font-weight:600;">
-                <i class="bi bi-person-badge" style="margin-right:6px; font-size:16px;"></i>
+               class="button-modern">
+                <i class="bi bi-person-badge"></i>
                 BUJK Konstruksi : {{ $data->namalengkap ?? 'Tidak Ada Nama' }}
             </a>
 
         </div>
+
+
 
     </div>
 
@@ -199,13 +202,14 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- blog-post-area-end -->
 
 
 
         <!-- cart-area -->
-        <div class="cart__area" style="margin-top:-75px;">
+        <div class="cart__area" style="margin-top:-100px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -213,20 +217,63 @@
     <div style="overflow-x: auto; width: 100%;">
         <table class="table cart__table" style="min-width: 1400px;">
     <thead>
-        <tr>
-            <th style="text-align: center;">No</th>
-            <th style="text-align: center;">Nama Pengurus</th>
-            <th style="text-align: center;">Sub Klasifikasi Layanan</th>
-            <th style="text-align: center;">Kode</th>
-            <th style="text-align: center;">Kualifikasi</th>
-            <th style="text-align: center;">Penerbit</th>
-            <th style="text-align: center;">Tanggal Terbit</th>
-            <th style="text-align: center;">Masa Berlaku</th>
-            <th style="text-align: center;">Nama PSJK</th>
-            <th style="text-align: center;">Sub Kualifikasi BU</th>
-            <th style="text-align: center;">Status</th>
+       <tr>
+    <th class="text-center" style="min-width:60px;">
+        <i class="bi bi-list-ol text-primary"></i>
+        No
+    </th>
 
-        </tr>
+    <th class="text-center" style="min-width:220px;">
+        <i class="bi bi-person-fill text-primary"></i>
+        Nama Pengurus
+    </th>
+
+    <th class="text-center" style="min-width:260px;">
+        <i class="bi bi-diagram-3-fill text-primary"></i>
+        Sub Klasifikasi Layanan
+    </th>
+
+    <th class="text-center" style="min-width:120px;">
+        <i class="bi bi-hash text-primary"></i>
+        Kode
+    </th>
+
+    <th class="text-center" style="min-width:160px;">
+        <i class="bi bi-award-fill text-primary"></i>
+        Kualifikasi
+    </th>
+
+    <th class="text-center" style="min-width:180px;">
+        <i class="bi bi-building-fill text-primary"></i>
+        Penerbit
+    </th>
+
+    <th class="text-center" style="min-width:180px;">
+        <i class="bi bi-calendar-event-fill text-primary"></i>
+        Tanggal Terbit
+    </th>
+
+    <th class="text-center" style="min-width:180px;">
+        <i class="bi bi-calendar-x-fill text-primary"></i>
+        Masa Berlaku
+    </th>
+
+    <th class="text-center" style="min-width:220px;">
+        <i class="bi bi-person-badge-fill text-primary"></i>
+        Nama PSJK
+    </th>
+
+    <th class="text-center" style="min-width:220px;">
+        <i class="bi bi-layers-fill text-primary"></i>
+        Sub Kualifikasi BU
+    </th>
+
+    <th class="text-center" style="min-width:140px;">
+        <i class="bi bi-check-circle-fill text-primary"></i>
+        Status
+    </th>
+</tr>
+
     </thead>
 
     <tbody>

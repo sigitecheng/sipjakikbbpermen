@@ -154,6 +154,9 @@
 
         <!-- blog-post-area -->
         <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
+
+@include('frontend.A00_new.01_halamanutama.newjudul')
+
             <div class="container">
     <div class="row">
 
@@ -253,21 +256,23 @@ function updateEntries() {
     </div>
 </div>
 
+
         </section>
         <!-- blog-post-area-end -->
 
 
 
         <!-- cart-area -->
-        <div class="cart__area" style="margin-top:-75px;">
+        <div class="cart__area" style="margin-top:-100px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
     <!-- Container scroll horizontal -->
     <div style="overflow-x: auto; width: 100%;">
-        <table class="table cart__table--card" style="min-width: 1400px; ">
-    <thead>
-       <tr>
+<div class="table-responsive">
+          <table class="table align-middle text-center" style="font-size:16px;">
+            <thead style="background:#f3f4f6; color:#020243; font-weight:600;">
+               <tr>
     <th style="text-align:center; min-width:60px; max-width:60px;">
         <i class="bi bi-list-ol me-1 text-primary"></i>
         No
@@ -374,8 +379,8 @@ function updateEntries() {
 
 @include('frontend.A00_new.01_halamanutama.newpaginations')
          </div>
-<br><br>
-                </div>
+        </div>
+        <br><br>
             </div>
         </div>
     </main>

@@ -154,6 +154,8 @@
 
         <!-- blog-post-area -->
         <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
+            @include('frontend.A00_new.01_halamanutama.newjudul')
+
             <div class="container">
     <div class="row">
 
@@ -244,7 +246,7 @@
 
 
         <!-- cart-area -->
-        <div class="cart__area" style="margin-top:-75px;">
+        <div class="cart__area" style="margin-top:-100px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -252,16 +254,43 @@
     <div style="overflow-x: auto; width: 100%;">
         <table class="table cart__table" style="min-width: 1000px;">
     <thead>
-        <tr>
-            <th style="text-align: center;">No</th>
-            <th style="text-align: center;">Nama Asosiasi</th>
-            <th style="text-align: center;">Alamat</th>
-            <th style="text-align: center;">No. Telepon</th>
-            <th style="text-align: center;">PIC</th>
-            <th style="text-align: center;">Jumlah BUJK Konstruksi</th>
-            <th style="text-align: center;">Jumlah BUJK Konsultasi</th>
-            {{-- <th style="text-align: center;">Detail</th> --}}
-        </tr>
+       <tr>
+    <th class="text-center" style="min-width:60px;">
+        <i class="bi bi-list-ol text-primary"></i>
+        No
+    </th>
+
+    <th class="text-center" style="min-width:220px;">
+        <i class="bi bi-diagram-3-fill text-primary"></i>
+        Nama Asosiasi
+    </th>
+
+    <th class="text-center" style="min-width:260px;">
+        <i class="bi bi-geo-alt-fill text-primary"></i>
+        Alamat
+    </th>
+
+    <th class="text-center" style="min-width:160px;">
+        <i class="bi bi-telephone-fill text-primary"></i>
+        No. Telepon
+    </th>
+
+    <th class="text-center" style="min-width:160px;">
+        <i class="bi bi-person-fill text-primary"></i>
+        PIC
+    </th>
+
+    <th class="text-center" style="min-width:240px;">
+        <i class="bi bi-building text-primary"></i>
+        Jumlah BUJK Konstruksi
+    </th>
+
+    <th class="text-center" style="min-width:240px;">
+        <i class="bi bi-building-check text-primary"></i>
+        Jumlah BUJK Konsultasi
+    </th>
+</tr>
+
     </thead>
 
     <tbody id="tableBody">

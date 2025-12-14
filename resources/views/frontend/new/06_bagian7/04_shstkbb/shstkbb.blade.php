@@ -151,148 +151,196 @@
 ">
 </section>
 
-        <!-- blog-post-area -->
-        <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-70 order-0 order-lg-2">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- blog-post-area-end -->
 
 
 
         <!-- cart-area -->
-        <div class="cart__area" style="margin-top:-75px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-        <div class="table-responsive">
-    <table class="table table-bordered align-middle">
-        <tbody>
-            @forelse($data as $item)
-                <tr class="bg-light">
-                    <td style="width: 5%; text-align:center;"><i class="bi bi-geo-alt-fill text-primary"></i></td>
-                    <td class="fw-bold" style="width: 30%;">Kabupaten :</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td style="text-align:right;">{{ $item->kabupaten ?? '-' }}</td>
-                </tr>
-                <tr>
-                    <td style="text-align:center;"><i class="bi bi-building text-warning"></i></td>
-                    <td class="fw-bold">Bangunan Kantor Tidak Sederhana</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->bangunankantortidaksederhana ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr class="bg-light">
-                    <td style="text-align:center;"><i class="bi bi-building text-warning"></i></td>
-                    <td class="fw-bold">Bangunan Kantor Sederhana</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->bangunankantorsederhana ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr>
-                    <td style="text-align:center;"><i class="bi bi-house-door-fill text-success"></i></td>
-                    <td class="fw-bold">Rumah Negara Tipe A</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->rumahnegaratipea ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr class="bg-light">
-                    <td style="text-align:center;"><i class="bi bi-house-door-fill text-success"></i></td>
-                    <td class="fw-bold">Rumah Negara Tipe B</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->rumahnegaratipeb ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr>
-                    <td style="text-align:center;"><i class="bi bi-house-fill text-success"></i></td>
-                    <td class="fw-bold">Rumah Negara Tipe C/D/E</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->rumahnegaratipecde ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr class="bg-light">
-                    <td style="text-align:center;"><i class="bi bi-slash-circle-fill text-danger"></i></td>
-                    <td class="fw-bold">Pagar Rumah Depan</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->pagarrumahdepan ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr>
-                    <td style="text-align:center;"><i class="bi bi-slash-circle-fill text-danger"></i></td>
-                    <td class="fw-bold">Pagar Rumah Belakang</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->pagarrumahbelakang ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr class="bg-light">
-                    <td style="text-align:center;"><i class="bi bi-slash-circle-fill text-danger"></i></td>
-                    <td class="fw-bold">Pagar Rumah Samping</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->pagarrumahsamping ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr>
-                    <td style="text-align:center;"><i class="bi bi-slash-circle-fill text-danger"></i></td>
-                    <td class="fw-bold">Pagar Rumah Negara Depan</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->pagarrumahnegaradepan ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr class="bg-light">
-                    <td style="text-align:center;"><i class="bi bi-slash-circle-fill text-danger"></i></td>
-                    <td class="fw-bold">Pagar Rumah Negara Belakang</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->pagarrumahnegarabelakang ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                <tr>
-                    <td style="text-align:center;"><i class="bi bi-slash-circle-fill text-danger"></i></td>
-                    <td class="fw-bold">Pagar Rumah Negara Samping</td>
-                    <td class="fw-bold" style="width: 5%;"> :</td>
-                    <td class="text-end">Rp. {{ number_format($item->pagarrumahnegarasamping ?? 0, 0, ',', '.') }},-</td>
-                </tr>
-                @empty
-                <tr>
-                    <td colspan="3" class="text-center py-4 text-danger fw-bold">
-                        <i class="bi bi-folder-x me-2"></i>Data Tidak Ditemukan !!
-                    </td>
-                </tr>
-                @endforelse
-            </tbody>
-        </table>
-    </div>
+        <div class="cart__area" style="margin-top:25px;">
+           <div class="container mb-4">
+    <div class="row">
+        <div class="col-12">
 
-    <style>
-.table {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #dee2e6;
-}
-.table-bordered td, .table-bordered th {
-    border: 1px solid #dee2e6;
-    vertical-align: middle;
-    padding: 8px 12px;
-}
-.fw-bold {
-    font-weight: 600;
-}
-.text-end {
-    text-align: right;
-}
-.table-hover tbody tr:hover {
-    background-color: #f1f1f1;
-}
-.bg-light {
-    background-color: #f9f9f9 !important;
-}
-.table-responsive {
-    overflow-x: auto;
-}
-</style>
+            <!-- CARD WRAPPER -->
+            <div class="p-4"
+                style="
+                    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+                    border-left: 6px solid #0d6efd;
+                    border-radius: 12px;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+                ">
 
-
-{{-- @include('frontend.A00_new.01_halamanutama.newpaginations') --}}
-
-<br><br>
+                <!-- TITLE -->
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <div style="
+                        width:42px;
+                        height:42px;
+                        border-radius:10px;
+                        background:#0d6efd;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        color:white;
+                        box-shadow: 0 3px 8px rgba(13,110,253,0.35);
+                    ">
+                        <i class="bi bi-cash-stack"></i>
                     </div>
 
+                    <div>
+                        <div style="
+                            font-family:'Poppins';
+                            font-size:18px;
+                            font-weight:700;
+                            color:#212529;
+                        ">
+                            SHST Kabupaten Bandung Barat
+                        </div>
+
+                        <div style="
+                            font-family:'Poppins';
+                            font-size:13px;
+                            color:#6c757d;
+                        ">
+                            {{-- Informasi tarif berdasarkan jenis bangunan --}}
+                        </div>
+                    </div>
                 </div>
+
+<table class="table align-middle mb-0"
+    style="
+        font-family:'Poppins';
+        background:white;
+        border-radius:10px;
+        overflow:hidden;
+    ">
+
+    <tbody>
+        @forelse($data as $item)
+
+        <!-- KABUPATEN -->
+        <tr style="border-bottom:1px solid #eef1f5;">
+            <td style="width:50px; text-align:center;">
+                <i class="bi bi-geo-alt-fill text-primary fs-5"></i>
+            </td>
+            <td style="font-weight:600; color:#495057;">Kabupaten</td>
+            <td style="width:10px; font-weight:600;">:</td>
+            <td class="text-end fw-semibold text-dark">
+                {{ $item->kabupaten ?? '-' }}
+            </td>
+        </tr>
+
+        <!-- BANGUNAN KANTOR TIDAK SEDERHANA -->
+        <tr style="border-bottom:1px solid #eef1f5;">
+            <td class="text-center">
+                <i class="bi bi-building text-warning fs-5"></i>
+            </td>
+            <td class="fw-semibold text-secondary">
+                Bangunan Kantor Tidak Sederhana
+            </td>
+            <td class="fw-semibold">:</td>
+            <td class="text-end fw-bold text-primary">
+                Rp {{ number_format($item->bangunankantortidaksederhana ?? 0, 0, ',', '.') }},00
+            </td>
+        </tr>
+
+        <!-- BANGUNAN KANTOR SEDERHANA -->
+        <tr style="border-bottom:1px solid #eef1f5; background:#f9fafb;">
+            <td class="text-center">
+                <i class="bi bi-building text-warning fs-5"></i>
+            </td>
+            <td class="fw-semibold text-secondary">
+                Bangunan Kantor Sederhana
+            </td>
+            <td class="fw-semibold">:</td>
+            <td class="text-end fw-bold text-primary">
+                Rp {{ number_format($item->bangunankantorsederhana ?? 0, 0, ',', '.') }},00
+            </td>
+        </tr>
+
+        <!-- RUMAH NEGARA A -->
+        <tr style="border-bottom:1px solid #eef1f5;">
+            <td class="text-center">
+                <i class="bi bi-house-door-fill text-success fs-5"></i>
+            </td>
+            <td class="fw-semibold text-secondary">
+                Rumah Negara Tipe A
+            </td>
+            <td class="fw-semibold">:</td>
+            <td class="text-end fw-bold text-primary">
+                Rp {{ number_format($item->rumahnegaratipea ?? 0, 0, ',', '.') }},00
+            </td>
+        </tr>
+
+        <!-- RUMAH NEGARA B -->
+        <tr style="border-bottom:1px solid #eef1f5; background:#f9fafb;">
+            <td class="text-center">
+                <i class="bi bi-house-door-fill text-success fs-5"></i>
+            </td>
+            <td class="fw-semibold text-secondary">
+                Rumah Negara Tipe B
+            </td>
+            <td class="fw-semibold">:</td>
+            <td class="text-end fw-bold text-primary">
+                Rp {{ number_format($item->rumahnegaratipeb ?? 0, 0, ',', '.') }},00
+            </td>
+        </tr>
+
+        <!-- RUMAH NEGARA C/D/E -->
+        <tr style="border-bottom:1px solid #eef1f5;">
+            <td class="text-center">
+                <i class="bi bi-house-fill text-success fs-5"></i>
+            </td>
+            <td class="fw-semibold text-secondary">
+                Rumah Negara Tipe C / D / E
+            </td>
+            <td class="fw-semibold">:</td>
+            <td class="text-end fw-bold text-primary">
+                Rp {{ number_format($item->rumahnegaratipecde ?? 0, 0, ',', '.') }},00
+            </td>
+        </tr>
+
+        <!-- PAGAR -->
+        @php
+            $pagar = [
+                'pagarrumahdepan' => 'Pagar Rumah Depan',
+                'pagarrumahbelakang' => 'Pagar Rumah Belakang',
+                'pagarrumahsamping' => 'Pagar Rumah Samping',
+                'pagarrumahnegaradepan' => 'Pagar Rumah Negara Depan',
+                'pagarrumahnegarabelakang' => 'Pagar Rumah Negara Belakang',
+                'pagarrumahnegarasamping' => 'Pagar Rumah Negara Samping',
+            ];
+        @endphp
+
+        @foreach($pagar as $field => $label)
+        <tr style="border-bottom:1px solid #eef1f5; background:#f9fafb;">
+            <td class="text-center">
+                <i class="bi bi-slash-circle-fill text-danger fs-5"></i>
+            </td>
+            <td class="fw-semibold text-secondary">{{ $label }}</td>
+            <td class="fw-semibold">:</td>
+            <td class="text-end fw-bold text-primary">
+                Rp {{ number_format($item->$field ?? 0, 0, ',', '.') }},00
+            </td>
+        </tr>
+        @endforeach
+
+        @empty
+        <tr>
+            <td colspan="4" class="text-center py-4 text-danger fw-bold">
+                <i class="bi bi-folder-x me-2"></i> Data Tidak Ditemukan
+            </td>
+        </tr>
+        @endforelse
+    </tbody>
+</table>
+
+
             </div>
+        </div>
+    </div>
+</div>
+
+
+
         </div>
     </main>
     <!-- main-area-end -->

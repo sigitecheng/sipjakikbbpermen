@@ -62,11 +62,16 @@
                                          <li class="menu-item-has-children"><a href="#">Tenaga Kerja</a>
                                             <ul class="sub-menu">
                                                 <li><a href="/datajakontkkkbb">TKK Kab Bandung Barat</a></li>
-                                                <li><a href="/datastatistiktkkkbb">Data Statistik</a></li>
+                                                <li><a href="/datastatistiktkkkbb">Data Statistik TKK KBB</a></li>
+                                            </ul>
+                                        </li>
+                                         <li class="menu-item-has-children"><a href="#">Profil Paket Pekerjaan</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/datapekerjaankbb">Paket Pekerjaan </a></li>
+                                                <li><a href="/datastatistikpaketpekerjaan">Data Statistik Pekerjaan</a></li>
                                             </ul>
                                         </li>
 
-                                        <li><a href="#">Profil Paket Pekerjaan</a></li>
 
                                     </ul>
                                 </li>

@@ -169,6 +169,7 @@
                     <a href="#"></a>
                 </div>
             </div>
+@include('frontend.A00_new.01_halamanutama.newjudul')
 
             <!-- SIDEBAR -->
 <div class="col-12 col-lg-4 col-xl-4">
@@ -277,7 +278,6 @@
                     <div id="piechart" style="width: 900px; height: 500px;"></div>
                 </div>
             </div>
-
             <!-- BAGIAN KETERANGAN -->
         <div class="col-lg-12">
     <div class="department-details-box"

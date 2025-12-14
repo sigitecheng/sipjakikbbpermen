@@ -2642,7 +2642,7 @@ public function satuanhargamaterialkbb(Request $request)
     $kategori = kategorimaterial::orderBy('material','asc')->get();
 
     return view('frontend.new.06_bagian7.01_satuanhargamaterial.satuanhargamaterial', [
-        'title' => 'Satuan Harga Material Kabupaten Bandung Barat',
+        'title' => 'Satuan Harga Material',
         'data' => $data,
         'user' => $user,
         'search' => $search,
@@ -2676,7 +2676,7 @@ public function satuanhargupahkbb(Request $request)
     ]);
 
     return view('frontend.new.06_bagian7.02_upahpekerjaan.upahpekerjaan', [
-        'title' => 'Satuan Harga Upah Pekerjaan Kabupaten Bandung Barat',
+        'title' => 'Satuan Harga Upah Pekerjaan',
         'data' => $data,
         'user' => $user,
         'search' => $search,
@@ -2706,7 +2706,7 @@ public function satuanhargaalatkbb(Request $request)
     ]);
 
     return view('frontend.new.06_bagian7.03_peralatan.peralatan', [
-        'title' => 'Satuan Harga Upah Pekerjaan Kabupaten Bandung Barat',
+        'title' => 'Satuan Harga Peralatan',
         'data' => $data,
         'user' => $user,
         'search' => $search,

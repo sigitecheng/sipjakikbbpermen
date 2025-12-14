@@ -9,18 +9,13 @@
                             <div class="footer__logo">
                             <div class="logo" style="display:flex; align-items:center; gap:5px;">
     <a href="index.html">
-        <img src="/storage/logo/sipjakikbb.png" alt="Logo"
-             style="height:58px; width:auto; object-fit:contain;">
-    </a>
-    <a href="index.html">
-        <img src="/assets/icon/pupr.png" alt="Logo"
-             style="height:48px; width:auto; object-fit:contain;">
-    </a>
+        <img src="/assets/icon/LogoSIPJAKI.png" alt="Logo"
+             style="height:45px; width:auto; object-fit:contain;">
+            </a>
+
 </div>
                             </div>
-                            <div class="footer__content footer__content-three">
-                                <p>Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
-                            </div>
+
                             <div class="footer__content footer__content-three" style="text-align: justify;">
                                 <p>SIPJAKI Kabupaten Bandung Barat, Sistem Informasi Pembina Jasa Konstruksi Kabupaten Bandung Barat adalah platform digital untuk meningkatkan efisiensi dan transparansi pengelolaan proyek konstruksi. Sistem ini memantau pelaksanaan, memastikan kepatuhan standar, serta memudahkan komunikasi antara pemerintah, kontraktor, pengawas, dan masyarakat.</p>
                             </div>
@@ -35,31 +30,73 @@
                             </div> --}}
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                        <div class="footer__widget">
-                            <h4 class="footer__widget-title footer__widget-title-two">Kontak Kami</h4>
-                            <div class="footer__contact">
-                              <ul class="list-wrap" style="list-style:none; padding:0; margin:0;">
-    <!-- Pemerintah / Kantor -->
-    <li style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF" viewBox="0 0 16 16">
-            <path d="M6.5 0a.5.5 0 0 0-.5.5V1H1v14h14V1h-5V.5a.5.5 0 0 0-.5-.5h-3zm1 1v.5h-1V1h1zM2 2h12v13H2V2zm2 2v1h1V4H4zm0 2v1h1V6H4zm0 2v1h1V8H4zm2-4v1h1V4H6zm0 2v1h1V6H6zm0 2v1h1V8H6zm2-4v1h1V4H8zm0 2v1h1V6H8zm0 2v1h1V8H8z"/>
-        </svg>
-        <span>Pemerintah Kabupaten Bandung Barat</span>
-    </li>
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+    <div class="footer__widget">
 
-    <!-- Alamat -->
-    <li style="display:flex; align-items:center; gap:8px;">
-        <i class="flaticon-placeholder" style="font-size:20px; color:white;"></i>
-        <a href="#" style="text-decoration:none; color:white;">
-Komplek Pemda Kabupaten Bandung Barat Jl. Raya Padalarang-Cisarua Km.2 Ngamprah        </a>
-    </li>
-</ul>
+        <div class="footer__contact">
+            <ul class="list-wrap footer-contact-list">
 
-
+                <!-- Alamat -->
+                <li class="footer-contact-item">
+                    <span class="footer-contact-icon">
+                        <i class="flaticon-placeholder"></i>
+                    </span>
+                    <span class="footer-contact-text">
+                        <div class="footer__content footer__content-three">
+                                <p>Dinas Pekerjaan Umum Dan Tata Ruang <br> Kabupaten Bandung Barat</p>
                             </div>
-                        </div>
-                    </div>
+                        Komplek Pemda Kabupaten Bandung Barat
+                        Jl. Raya Padalarang – Cisarua Km. 2, Ngamprah
+                    </span>
+                </li>
+
+                <!-- Telepon -->
+                {{-- <li class="footer-contact-item">
+                    <span class="footer-contact-icon">
+                        <i class="flaticon-telephone"></i>
+                    </span>
+                    <span class="footer-contact-text">
+                        (022) 1234 5678
+                    </span>
+                </li> --}}
+
+                <!-- Email -->
+                <li class="footer-contact-item">
+                    <span class="footer-contact-icon">
+                        <i class="flaticon-envelope"></i>
+                    </span>
+                    <span class="footer-contact-text">
+                        sipjakikbb@gmail.com
+                    </span>
+                </li>
+
+                <!-- Jam Layanan -->
+                <li class="footer-contact-item">
+                    <span class="footer-contact-icon">
+                        <i class="flaticon-clock"></i>
+                    </span>
+                    <span class="footer-contact-text">
+                        Senin – Jumat<br>
+                        08.00 – 16.00 WIB
+                    </span>
+                </li>
+
+                <!-- Website -->
+                <li class="footer-contact-item">
+                    <span class="footer-contact-icon">
+                        <i class="flaticon-worldwide"></i>
+                    </span>
+                    <span class="footer-contact-text">
+                        www.sipjakikbb.com
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
                     {{-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <div class="footer__widget">
                             <h4 class="footer__widget-title footer__widget-title-two">About Company</h4>
@@ -73,17 +110,42 @@ Komplek Pemda Kabupaten Bandung Barat Jl. Raya Padalarang-Cisarua Km.2 Ngamprah 
                         </div>
                     </div> --}}
                   <div class="col-xl-4 col-lg-4 col-md-8">
+
+    <!-- LOGO -->
+    <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
+        <a href="index.html">
+            <img src="/storage/logo/sipjakikbb.png" alt="Logo SIPJAKI"
+                 style="height:58px; width:auto; object-fit:contain;">
+        </a>
+        <a href="index.html">
+            <img src="/assets/icon/pupr.png" alt="Logo PUPR"
+                 style="height:48px; width:auto; object-fit:contain;">
+        </a>
+    </div>
+
+    <!-- WIDGET -->
     <div class="footer__widget">
-        <h4 class="footer__widget-title footer__widget-title-two">DPUTR <span style="color: yellow;">Kabupaten Bandung Barat</span></h4>
-        <div class="footer__map">
+
+        <h4 class="footer__widget-title footer__widget-title-two">
+            DPUTR <span style="color: #FFD700;">Kabupaten Bandung Barat</span>
+        </h4>
+
+        <!-- MAP -->
+        <div class="footer__map" style="margin-top:10px; border-radius:10px; overflow:hidden;">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31655.81282353823!2d107.5115!3d-6.8411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e85de1bb1a27%3A0x0!2zNsKwNTAnMTknNjYuMCJTIDEwN8KwMzAnNTkuMCJF!5e0!3m2!1sid!2sid!4v1700940000000"
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="100%"
+                height="220"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
         </div>
-        {{-- <p style="margin-top:10px;">
-            Alamat: Jl. Raya Padalarang-Cisarua Km 2, Komplek Pemda Kabupaten Bandung Barat, Ngamprah.
-        </p> --}}
+
     </div>
+
+</div>
+
 </div>
 
                 </div>

@@ -10,6 +10,7 @@ use App\Models\bujkkonsultansub;
 use App\Models\bujkkontraktor;
 use App\Models\bujkkontraktorsub;
 use App\Models\jenjang;
+use App\Models\paketpekerjaanmasjaki;
 // use App\Models\asosiasimasjaki;
 use Illuminate\Http\Request;
 
@@ -831,12 +832,13 @@ public function databujkkontruksilayanan($namalengkap)
         'user' => Auth::user()
     ]);
 }
+
 public function datajakontkkkbb(Request $request)
 {
     $user   = Auth::user();
 
     $search  = $request->input('search');
-    $perPage = $request->input('perPage', 25); // default 25
+    $perPage = $request->input('perPage', 10); // default 25
 
     $query = allskktenagakerjablora::query();
 
@@ -942,6 +944,62 @@ public function datastatistiktkkkbb(Request $request)
         )
     );
 }
+
+public function datapekerjaankbb(Request $request)
+{
+    $user = Auth::user();
+
+    $search  = $request->input('search');
+    $perPage = $request->input('perPage', 10); // default 10
+
+    $query = paketpekerjaanmasjaki::query();
+    // ⚠️ ganti `datapekerjaankbb` dengan nama MODEL kamu yang benar
+
+    // =========================
+    // 🔍 FILTER SEARCH
+    // =========================
+    if ($search) {
+        $query->where(function ($q) use ($search) {
+            $q->where('namapekerjaan', 'LIKE', "%{$search}%")
+              ->orWhere('cvptpenyedia', 'LIKE', "%{$search}%")
+              ->orWhere('nib', 'LIKE', "%{$search}%")
+              ->orWhere('jeniskontrak', 'LIKE', "%{$search}%")
+              ->orWhere('karakteristikkontrak', 'LIKE', "%{$search}%")
+              ->orWhere('bulanmulai', 'LIKE', "%{$search}%")
+              ->orWhere('bulanselesai', 'LIKE', "%{$search}%")
+              ->orWhere('nilaikontrak', 'LIKE', "%{$search}%")
+              ->orWhere('progress', 'LIKE', "%{$search}%");
+        });
+    }
+
+    // =========================
+    // 🔥 DATA TERBARU DI ATAS
+    // =========================
+    $data = $query
+        ->orderBy('created_at', 'DESC')
+        ->paginate($perPage);
+
+    // =========================
+    // 🔗 AGAR SEARCH & PERPAGE NEMPEL
+    // =========================
+    $data->appends([
+        'search'  => $search,
+        'perPage' => $perPage,
+    ]);
+
+    return view(
+        'frontend.new.03_bagian4.06_paketpekerjaan.semuapaketpekerjaan',
+        [
+            'title'   => 'Data Profil Paket Pekerjaan Kabupaten Bandung Barat',
+            'data'    => $data,
+            'user'    => $user,
+            'search'  => $search,
+            'perPage' => $perPage,
+        ]
+    );
+}
+
+
 
 }
 

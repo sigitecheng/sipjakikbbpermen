@@ -1,7 +1,7 @@
 @include('backend.00_dashboard.part.header')
 @include('backend.00_dashboard.part.menuheader')
 @include('backend.00_dashboard.part.sidebar')
-    
+
     <!--Page Wrapper-->
 
         <!--Main Content-->
@@ -9,12 +9,12 @@
             <!--Content right-->
             <div class="col-sm-9 col-xs-12 content  pl-0">
 
-                    
+
                 <div class="row mb-0 ">
                     <div class="font-bold col-sm-8"><h6 class="mb-4 bc-header">.</h6></div>
                     <div class="col-sm-4 text-right pb-3">
                         <div class="pull-right mr-3 btn-order-bulk">
-                        
+
                         </div>
 
                         <div class="clearfix"></div>
@@ -56,7 +56,7 @@
 
             {{-- ------------------------------------ FITUR TAMBAHAN ------------- --}}
 
-            <div class="controls" style="  
+            <div class="controls" style="
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -77,7 +77,7 @@
                 text-align: center;
                 transition: background-color 0.3s, color 0.3s;
             }
-    
+
             .badge:hover {
                 background: white;
                 color: black;
@@ -129,15 +129,15 @@
                 <i class="fas fa-handshake mr-2"></i>Metode Pengadaan
             </button>
         </a>
-        
-        
-        
+
+
+
         <a href="/paketpekerjaancreate" style="background: inherit">
             <button class="badge-plus" style="border: none; font-size:15px; cursor:pointer">
                 <i class="fas fa-plus-circle" style="margin-right: 5px;"></i>Create Paket Pekerjaan
             </button>
         </a>
-        
+
                         <!-- <button id="downloadBtn" class="badge" style="border:none; font-size:12px; cursor:pointer "> <i class="fas fa-download"></i> Download</button> -->
 
     {{-- <select id="entries" onchange="showEntries()">
@@ -157,34 +157,6 @@
 
 
 
-<style>
-                table {
-                    width: 100%;
-                    border-collapse: collapse;
-                }
-        
-                th, td {
-                    font-family: 'Lato', sans-serif;
-                    font-weight: 700;
-                    color: black;
-                    font-size: 12px;
-                    border: 1px solid #ddd;
-                    padding: 8px;
-                }
-        
-                tr:nth-child(even) {
-                    background-color: #f2f2f2;
-                    font-size: 12px;
-                }
-        
-                th {
-                    /* background-color: #4CAF50; */
-                    /* background: linear-gradient(to bottom, #000000, #FFCB0F); */
-                    background-color:  #FFCB0F;
-                    color: black;
-                    font-size: 14px;
-                }
-            </style>
              <table>
                 <thead>
                     <tr>
@@ -207,11 +179,11 @@
                     @endphp
 
                     @foreach($data as $item )
-                    
+
                     <tr>
                         <td style="font-size: 12px;">{{ $loop->iteration + $start - 1 }}</td>
                         <td style="font-size: 12px; text-align:left;">{{ $item->instansi}}</td>
-                        
+
                         <style>
                             .badge-green {
                                 display: flex;
@@ -241,16 +213,16 @@
                                 background: white;
                                 color: black;
                             }
-                        
+
                             .badge-orange:hover{
                                 background: white;
                                 color: black;
                             }
-                        
+
                             .currency-symbol {
                                 margin-right: 5px; /* Jarak antara simbol dan jumlah */
                             }
-                        
+
                             .currency-cell {
                                 text-align: right; /* Sel tabel rata kanan */
                             }
@@ -275,7 +247,7 @@
         left: 0;
     }
                         </style>
-                        
+
                                 <td class="currency-cell">
                                     <span class="badge-green">
                                         <span class="currency-symbol">Rp</span>
@@ -296,8 +268,8 @@
                                         border: none; /* Menghilangkan border jika ada */
                                         margin: 0; /* Menghapus margin jika ada */
                                     }
-                                </style>                                
-                                                    
+                                </style>
+
                                 <td style="font-size: 12px; text-align:left;">
                                     <span class="badge-orange">{{ $item->metodepengadaan->metode }}</span>
                                 </td>
@@ -316,8 +288,8 @@
                                 </div>
                             </div>
                         </td>
-                        
-                    
+
+
                         {{-- <td style="font-size: 12px; text-align: center; text-align:uppercase;">
                             @if($item->status === 'AKTIF')
                                 <button style="background-color: green; color: white; border: none; padding: 1px 3px; border-radius: 2px; font-size: 8px;">
@@ -329,11 +301,11 @@
                                 </button>
                             @endif
                         </td> --}}
-                        
-                        
-                          
+
+
+
                         <td>
-                            
+
                         <style>
                                                 /* Container for the buttons */
                     .button-container {
@@ -368,7 +340,7 @@
                     .iconhover i {
                         margin: 0;
                     }
-                    
+
                         </style>
 
                         <div class="button-container">
@@ -383,8 +355,8 @@
                                 <a href="#" class="iconhover" title="Delete" data-toggle="modal" data-target="#deleteModal" onclick="setDeleteAction('{{ route('delete.paketpekerjaan', $item->instansi) }}')">
                                     <i class="fas fa-trash"></i>
                                 </a>
-                                
-        
+
+
                                 {{-- ================= FORM DELETE =================== --}}
                     <!-- Modal HTML -->
                     <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -396,7 +368,7 @@
                                         {{-- <img src="/assets/icon/pupr.png" alt="" style="width:10px; height:10px; margin-bottom: 10px;"> --}}
                                         <h5 class="modal-title" id="deleteModalLabel" style="margin: 0;">Konfirmasi Delete</h5>
                                     </div>
-                                
+
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -413,16 +385,16 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <script>
                         function setDeleteAction(actionUrl) {
                           document.getElementById('deleteForm').action = actionUrl;
                         }
                       </script>
-                      
-        
+
+
                                 {{-- ================= FORM DELETE =================== --}}
-                                    
+
                             </div>
 
                             <script>
@@ -434,8 +406,8 @@
                     </tr>
                     @endforeach
                     {{-- ============================================ --}}
-                    
-                    
+
+
                 </tbody>
             </table>
 
@@ -466,17 +438,16 @@
             {{-- @include('backend.00_dashboard.part.menufooter') --}}
         </div>
     </div>
-    
+
                 <hr style="border:0; height:5px; background-color:navy; margin: 20px 0px;">
                 @include('backend.00_dashboard.part.menufooter')
-                    
+
 </div>
         </div>
-        
+
         <!--Main Content-->
-        
+
     </div>
     @include('backend.00_dashboard.part.footer')
-    
 
-    
+

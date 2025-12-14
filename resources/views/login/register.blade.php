@@ -222,7 +222,7 @@
      style="
         background:#ffffff;
         padding:35px 30px;
-        border-radius:16px;
+    border-radius:16px;
         border:1px solid #e0e6ef;
         box-shadow:0 6px 20px rgba(0,0,0,0.08);
         width:100%;

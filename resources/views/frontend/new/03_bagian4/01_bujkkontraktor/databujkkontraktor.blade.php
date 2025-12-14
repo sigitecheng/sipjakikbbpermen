@@ -154,6 +154,9 @@
 
         <!-- blog-post-area -->
         <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
+
+@include('frontend.A00_new.01_halamanutama.newjudul')
+
             <div class="container">
     <div class="row">
 
@@ -245,7 +248,7 @@
 
 
         <!-- cart-area -->
-        <div class="cart__area" style="margin-top:-75px;">
+        <div class="cart__area" style="margin-top:-100px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -253,22 +256,78 @@
     <div style="overflow-x: auto; width: 100%;">
         <table class="table cart__table" style="min-width: 1200px;"> <!-- Bisa sesuaikan lebar minimal -->
             <thead>
-                <tr>
-                    <th style="text-align: center;">No</th>
-                    <th style="text-align: center;">Asosiasi</th>
-                    <th style="text-align: center;">Nama BUJK</th>
-                    <th style="text-align: center;">Alamat</th>
-                    <th style="text-align: center;">No. Telepon</th>
-                    <th style="text-align: center;">Email</th>
-                    <th style="text-align: center;">Nomor Induk Usaha</th>
-                    <th style="text-align: center;">PJU</th>
-                    <th style="text-align: center;">No. Akte</th>
-                    <th style="text-align: center;">Tanggal Pengesahan</th>
-                    <th style="text-align: center;">Nama Notaris</th>
-                    <th style="text-align: center;">No. Pengesahan</th>
-                    <th style="text-align: center;">Berkas SBU</th>
-                    <th style="text-align: center;">Klasifikasi Layanan</th>
-                </tr>
+              <tr>
+    <th class="text-center" style="min-width:60px;">
+        <i class="bi bi-list-ol text-primary"></i>
+        No
+    </th>
+
+    <th class="text-center" style="min-width:160px;">
+        <i class="bi bi-diagram-3-fill text-primary"></i>
+        Asosiasi
+    </th>
+
+    <th class="text-center" style="min-width:220px;">
+        <i class="bi bi-building text-primary"></i>
+        Nama BUJK
+    </th>
+
+    <th class="text-center" style="min-width:260px;">
+        <i class="bi bi-geo-alt-fill text-primary"></i>
+        Alamat
+    </th>
+
+    <th class="text-center" style="min-width:160px;">
+        <i class="bi bi-telephone-fill text-primary"></i>
+        No. Telepon
+    </th>
+
+    <th class="text-center" style="min-width:200px;">
+        <i class="bi bi-envelope-fill text-primary"></i>
+        Email
+    </th>
+
+    <th class="text-center" style="min-width:200px;">
+        <i class="bi bi-card-checklist text-primary"></i>
+        Nomor Induk Usaha
+    </th>
+
+    <th class="text-center" style="min-width:120px;">
+        <i class="bi bi-person-badge-fill text-primary"></i>
+        PJU
+    </th>
+
+    <th class="text-center" style="min-width:160px;">
+        <i class="bi bi-file-earmark-text-fill text-primary"></i>
+        No. Akte
+    </th>
+
+    <th class="text-center" style="min-width:200px;">
+        <i class="bi bi-calendar-check-fill text-primary"></i>
+        Tanggal Pengesahan
+    </th>
+
+    <th class="text-center" style="min-width:200px;">
+        <i class="bi bi-pencil-square text-primary"></i>
+        Nama Notaris
+    </th>
+
+    <th class="text-center" style="min-width:200px;">
+        <i class="bi bi-patch-check-fill text-primary"></i>
+        No. Pengesahan
+    </th>
+
+    <th class="text-center" style="min-width:160px;">
+        <i class="bi bi-file-earmark-pdf-fill text-primary"></i>
+        Berkas SBU
+    </th>
+
+    <th class="text-center" style="min-width:220px;">
+        <i class="bi bi-layers-fill text-primary"></i>
+        Klasifikasi Layanan
+    </th>
+</tr>
+
             </thead>
             <tbody id="tableBody">
             @forelse($data as $item)
