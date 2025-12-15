@@ -154,7 +154,7 @@
     @elseif($item->verifikasi == 'lolos')
         <!-- Tombol LOLOS -->
         <button type="button" disabled class="button-hijau">
-            <i class="bi bi-patch-check-fill" style="font-size: 1.2rem;"></i> Lolos
+            <i class="bi bi-patch-check-fill"></i> Lolos
         </button>
     @endif
 </td>

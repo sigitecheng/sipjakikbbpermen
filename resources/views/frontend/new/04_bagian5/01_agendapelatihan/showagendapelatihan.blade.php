@@ -254,12 +254,20 @@
             </div>
 
             {{-- ================= TOMBOL DAFTAR ================= --}}
-           <a href="{{ route('daftaragendapelatihankbb', ['namakegiatan' => $datashow->namakegiatan]) }}"
-                class="tg-btn tg-btn-seven mt-3 d-inline-flex align-items-center gap-2"
-                title="Daftar Pelatihan">
-                    <i class="bi bi-pencil-square fs-5"></i>
-                    <span>Daftar Pelatihan</span>
-                </a>
+@if($datashow->penutupan && \Carbon\Carbon::parse($datashow->penutupan)->isPast())
+    <span class="badge bg-danger d-inline-flex align-items-center gap-1" style="font-size:0.85rem; padding:0.4rem 0.6rem;">
+        <i class="bi bi-lock-fill"></i> Ditutup
+    </span>
+@else
+    <a href="{{ route('daftaragendapelatihankbb', ['namakegiatan' => $datashow->namakegiatan]) }}"
+       class="btn btn-sm btn-primary d-inline-flex align-items-center gap-1"
+       style="font-size:0.85rem; padding:0.35rem 0.6rem; border-radius:6px;"
+       title="Daftar Pelatihan">
+        <i class="bi bi-pencil-square"></i>
+        <span>Daftar</span>
+    </a>
+@endif
+
         </div>
     </div>
 

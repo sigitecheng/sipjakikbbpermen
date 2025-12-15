@@ -287,15 +287,22 @@
                 <td style="text-align:center;">{{ $peserta->notelepon ?? '-' }}</td>
                 <td style="text-align:center;">{{ $peserta->instansi ?? '-' }}</td>
                 {{-- <td style="text-align:center;">{{ $peserta->sertifikat ?? '-' }}</td> --}}
-                <td style="text-align:center;">
-                    @if($peserta->verifikasi === 'Lolos')
-                        <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>Lolos</span>
-                    @elseif($peserta->verifikasi === 'Tidak Lolos')
-                        <span class="badge bg-danger"><i class="bi bi-x-circle me-1"></i>Tidak Lolos</span>
-                    @else
-                        <span class="badge bg-warning"><i class="bi bi-hourglass-split me-1"></i>Belum</span>
-                    @endif
-                </td>
+             <td style="text-align:center;">
+    @if($peserta->verifikasi === null)
+        <span class="badge bg-warning">
+            <i class="bi bi-hourglass-split me-1"></i> Belum Diverifikasi
+        </span>
+    @elseif($peserta->verifikasi === 'lolos')
+        <span class="badge bg-success">
+            <i class="bi bi-check-circle me-1"></i> Lolos
+        </span>
+    @elseif($peserta->verifikasi === 'gugur')
+        <span class="badge bg-danger">
+            <i class="bi bi-x-circle me-1"></i> Tidak Lolos
+        </span>
+    @endif
+</td>
+
             </tr>
         @empty
             <tr>

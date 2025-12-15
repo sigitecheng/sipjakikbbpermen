@@ -41,19 +41,20 @@ class PelatihanController extends Controller
         ]);
     }
 
-
-
 public function agendapelatihankbb()
 {
-    // Urutkan berdasarkan ID terbaru + paginate
-    $data = agendapelatihan::orderBy('id', 'DESC')->paginate(4);
+    // Agenda TERAKHIR (1 data)
+    $latestAgenda = agendapelatihan::orderBy('created_at', 'DESC')->first();
 
-    $user = Auth::user();
+    // Semua agenda (list card)
+    $data = agendapelatihan::orderBy('created_at', 'DESC')->paginate(4);
+
 
     return view('frontend.new.04_bagian5.01_agendapelatihan.agendapelatihan', [
         'title' => 'Agenda Pelatihan Jasa Konstruksi',
+        'latestAgenda' => $latestAgenda,
         'data' => $data,
-        'user' => $user,
+        'user' => Auth::user(),
     ]);
 }
 

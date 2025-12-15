@@ -110,11 +110,11 @@
 
                     <a href="{{ url('/bepelatihanjampelajaran/' . $agendaId) }}" style="text-decoration: none;">
                         <button class="button-modern">
-                            <i class="bi bi-printer-fill" style="margin-right: 8px; font-size: 16px;"></i>Isi Jam Pelajaran
+                            <i class="bi bi-printer-fill"></i>Isi Jam Pelajaran
                         </button>
                     </a>
                        <button onclick="generatePDF()" class="button-berkas">
-                            <i class="bi bi-file-earmark-pdf" style="font-size: 18px; margin-right: 6px;"></i>
+                            <i class="bi bi-file-earmark-pdf"></i>
                             Download PDF
                         </button>
 
@@ -123,7 +123,7 @@
                     <button
                         onclick="exportTableToExcel('daftarPeserta', 'Data Peserta {{$data->namakegiatan}}')"
                         class="button-berkas">
-                        <i class="bi bi-file-earmark-excel-fill" style="margin-right: 8px; font-size: 16px;"></i> Download Excel
+                        <i class="bi bi-file-earmark-excel-fill"></i> Download Excel
                     </button>
 
                 </div>
