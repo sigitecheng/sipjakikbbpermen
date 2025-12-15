@@ -169,98 +169,114 @@
         <!-- contact-area -->
         <section class="contact__area">
             <div class="container">
-                <div class="row">
+    <div class="row">
 
-                    <div class="col-lg-12">
-                        @foreach ($data as $item)
-    <div class="contact__info-wrap">
-        <div class="contact__info-item">
+        @foreach ($data as $item)
+        <div class="col-12 mb-4">
+            <div class="p-4 position-relative"
+                style="
+                    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+                    border-left: 6px solid #0d6efd;
+                    border-radius: 14px;
+                    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+                ">
 
+                {{-- HEADER --}}
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div style="
+                        width:44px;
+                        height:44px;
+                        border-radius:12px;
+                        background:#0d6efd;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        color:white;
+                        box-shadow:0 3px 8px rgba(13,110,253,.35);
+                    ">
+                        <i class="bi bi-list-check"></i>
+                    </div>
 
-            <h4 class="title" style="margin-top: 10px;">
-              {{$item->judul}}
-            </h4>
+                    <div>
+                        <div style="font-family:'Poppins'; font-size:18px; font-weight:700;">
+                            {{ $item->judul ?? 'Judul belum diisi' }}
+                        </div>
+                        <div style="font-size:13px; color:#6c757d;">
+                            Uraian Tugas & Dasar Peraturan
+                        </div>
+                    </div>
+                </div>
 
-            {{-- LIST TUGAS / ISIAN DARI GAMBAR --}}
-            <ul class="list-wrap" style="margin-top: 15px;">
+                {{-- LIST TUGAS --}}
+                <ul style="
+                    font-size:14px;
+                    line-height:1.8;
+                    padding-left:18px;
+                ">
+                    <li><strong>Penyusunan Program:</strong> Rencana kerja dan kegiatan bina jasa konstruksi sebagai pedoman kerja tahunan.</li>
+                    <li><strong>Kebijakan Teknis:</strong> Menyusun bahan kebijakan sesuai peraturan perundang-undangan sebagai kajian pimpinan.</li>
+                    <li><strong>Sistem Informasi:</strong> Pelaksanaan sistem informasi jasa konstruksi untuk efisiensi.</li>
+                    <li><strong>Pengawasan & Pembinaan:</strong> Pengembangan badan usaha, pasar jasa konstruksi, dan evaluasi penyelenggaraan.</li>
+                    <li><strong>Penyuluhan & Bimtek:</strong> Pelatihan, penyuluhan, dan bimtek terkait jasa konstruksi.</li>
+                    <li><strong>Laporan & Evaluasi:</strong> Monitoring dan evaluasi kegiatan pembinaan.</li>
+                </ul>
 
-                <li>
-                    <strong>Penyusunan Program:</strong>
-                    Rencana kerja dan kegiatan bina jasa konstruksi sebagai pedoman kerja tahunan.
-                </li>
+                {{-- PERATURAN --}}
+                <div class="mt-3">
+                    @if($item->peraturan && file_exists(public_path('storage/' . $item->peraturan)))
+                        <embed
+                            src="{{ asset('storage/' . $item->peraturan) }}"
+                            type="application/pdf"
+                            style="
+                                width:100%;
+                                height:400px;
+                                border:none;
+                                border-radius:10px;
+                                box-shadow:0 2px 8px rgba(0,0,0,.08);
+                            "
+                        />
+                    @elseif($item->peraturan)
+                        <embed
+                            src="{{ asset($item->peraturan) }}"
+                            type="application/pdf"
+                            style="
+                                width:100%;
+                                height:400px;
+                                border:none;
+                                border-radius:10px;
+                                box-shadow:0 2px 8px rgba(0,0,0,.08);
+                            "
+                        />
+                    @else
+                        <div class="alert alert-warning mb-0">
+                            <i class="bi bi-exclamation-circle me-1"></i>
+                            Data peraturan belum diupdate
+                        </div>
+                    @endif
+                </div>
 
-                <li>
-                    <strong>Kebijakan Teknis:</strong>
-                    Menyusun bahan kebijakan sesuai peraturan perundang-undangan sebagai kajian pimpinan.
-                </li>
+                {{-- KETERANGAN --}}
+                <div class="mt-3" style="font-size:14px; text-align:justify;">
+                    <strong>Keterangan:</strong><br>
+                    {!! $item->keterangan ?? '<span class="text-muted">Keterangan belum diupdate</span>' !!}
+                </div>
 
-                <li>
-                    <strong>Sistem Informasi:</strong>
-                    Pelaksanaan sistem informasi jasa konstruksi untuk efisiensi.
-                </li>
-
-                <li>
-                    <strong>Pengawasan & Pembinaan:</strong>
-                    Pengembangan badan usaha, pasar jasa konstruksi, dan evaluasi penyelenggaraan.
-                </li>
-
-                <li>
-                    <strong>Penyuluhan & Bimtek:</strong>
-                    Melakukan pelatihan, penyuluhan, dan bimtek terkait jasa konstruksi.
-                </li>
-
-                <li>
-                    <strong>Laporan & Evaluasi:</strong>
-                    Monitoring dan evaluasi kegiatan pembinaan sebagai wujud transparansi.
-                </li>
-
-            </ul>
-
-            <tr>
-    {{-- <th style="width: 100px; text-align:left;">Peraturan</th> --}}
-    {{-- <td>:</td> --}}
-    <td>
-<br>
-        <div style="margin-top: 10px;">
-            @if($item->peraturan && file_exists(public_path('storage/' . $item->peraturan)))
-                <!-- Jika PDF ada di storage -->
-                <embed
-                    src="{{ asset('storage/' . $item->peraturan) }}"
-                    type="application/pdf"
-                    style="width: 100%; height: 400px; border: 1px solid #ddd;"
-                />
-
-            @elseif($item->peraturan)
-                <!-- Jika PDF berada di path luar storage -->
-                <embed
-                    src="{{ asset($item->peraturan) }}"
-                    type="application/pdf"
-                    style="width: 100%; height: 400px; border: 1px solid #ddd;"
-                />
-
-            @else
-                <!-- Jika belum ada data -->
-                <p>Data belum diupdate</p>
-            @endif
+                {{-- WATERMARK --}}
+                <img src="/storage/logo/sipjakikbb.png"
+                    style="
+                        position:absolute;
+                        right:20px;
+                        bottom:20px;
+                        width:90px;
+                        opacity:.12;
+                    ">
+            </div>
         </div>
+        @endforeach
 
-    </td>
-</tr>
-<br>
-            {{-- PARAGRAF PENJELASAN DARI GAMBAR --}}
-            <p style="margin-top: 15px; text-align: justify; font-size: 16px;">
-                {!! $item->keterangan!!}
-            </p>
-
-        </div>
     </div>
-
-
-@endforeach
 </div>
 
-                </div>
-            </div>
         </section>
         <!-- contact-area-end -->
 

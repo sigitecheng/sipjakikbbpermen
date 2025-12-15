@@ -147,11 +147,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tgmenu__action tgmenu__action-five">
+                        {{-- <div class="tgmenu__action tgmenu__action-five">
                             <ul class="list-wrap">
-                                {{-- <li class="header-contact">
-                                    <a href="tel:0123456789" class="header-contact-info"><i class="flaticon-telephone"></i>+123 4880 4089</a>
-                                </li> --}}
                                 <li class="offCanvas-menu">
                                     <a href="shop.html" class="menu-tigger">
                                         <span></span>
@@ -160,7 +157,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> --}}
                         <div class="mobile-nav-toggler"><i class="tg-flaticon-menu"></i></div>
                     </nav>
                 </div>

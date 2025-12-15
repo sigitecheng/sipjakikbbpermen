@@ -173,235 +173,315 @@
 
         <!-- contact-area -->
         <section class="contact__area">
+@include('frontend.A00_new.01_halamanutama.newjudul')
             <div class="container">
-                <div class="row">
+    <div class="row">
 
-                    @foreach ($dataidentitasopd as $opd)
-                    <div class="col-lg-12">
-                        <div class="contact__info-wrap">
-                            <div class="contact__info-item">
-            <h4 class="title">Identitas OPD</h4>
-            <h4 class="title">{{ $opd->namaopd }}</h4>
+        {{-- ================= IDENTITAS OPD ================= --}}
+        @foreach ($dataidentitasopd as $opd)
+        <div class="col-12 mb-4">
+            <div class="p-4 position-relative"
+                style="background:linear-gradient(135deg,#f8f9fa,#eef2f7);
+                border-left:6px solid #0d6efd;border-radius:14px;
+                box-shadow:0 3px 12px rgba(0,0,0,.06);">
 
-            <p>
-                {{ $opd->alamatopd }},
-                RT/RW {{ $opd->rtrw }}<br>
-                Kel. {{ $opd->kelurahan }},
-                Kec. {{ $opd->kecamatan }}<br>
-                {{ $opd->kota }} - {{ $opd->provinsi }}<br>
-                {{ $opd->kodepos }}, {{ $opd->negara }}
-            </p>
-
-            <ul class="list-wrap">
-                <li>
-                    <a href="#">Tipe Dinas: {{ $opd->tipedinas }}</a>
-                </li>
-                <li>
-                    <a href="#">Posisi Geografis: {{ $opd->posisigeografis }}</a>
-                </li>
-            </ul>
-
-            <div class="shape">
-    <img src="/storage/logo/sipjakikbb.png" alt="Logo"
-    style="
-            width:150px;
-            height:auto;
-            opacity:0.85;
-            filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
-         ">
-</div>
-
-
-
-</div>
-</div>
-</div>
-@endforeach
-
-
-@foreach ($datakepaladinas as $kepala)
-<div class="col-lg-12">
-    <div class="contact__info-wrap">
-        <div class="contact__info-item">
-
-            <h4 class="title">Kepala Dinas DPUTR Kabupaten Bandung Barat</h4>
-            <h4 class="title">{{ $kepala->namalengkap }}</h4>
-
-            <p>
-                NIP: {{ $kepala->nip }} <br>
-                Tanggal Lahir: {{ $kepala->ttl }} <br>
-                Pangkat / Golongan: {{ $kepala->pangkatgolongan }} <br>
-                Jabatan: {{ $kepala->jabatan }} <br>
-                Perangkat Daerah: {{ $kepala->perangkatdaerah }} <br>
-                Pendidikan Terakhir: {{ $kepala->pendidikanterakhir }}
-            </p>
-
-            <ul class="list-wrap">
-                <li><a href="#">Jabatan: {{ $kepala->jabatan }}</a></li>
-                <li><a href="#">Perangkat Daerah: {{ $kepala->perangkatdaerah }}</a></li>
-            </ul>
-
-            <div class="shape">
-                <img src="/storage/logo/sipjakikbb.png" alt="Logo"
-                    style="
-                        width:150px;
-                        height:auto;
-                        opacity:0.85;
-                        filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
-                    ">
-            </div>
-
-        </div>
-    </div>
-</div>
-@endforeach
-
-@foreach ($datakabid as $kabid)
-<div class="col-lg-12">
-    <div class="contact__info-wrap">
-        <div class="contact__info-item">
-
-            <h4 class="title">Kepala Bidang Jasa Konstruksi </h4>
-            <h4 class="title">{{ $kabid->namalengkap }}</h4>
-
-            <p>
-                NIP: {{ $kabid->nip }} <br>
-                Tanggal Lahir: {{ $kabid->ttl }} <br>
-                Pangkat / Golongan: {{ $kabid->pangkatgolongan }} <br>
-                Jabatan: {{ $kabid->jabatan }} <br>
-                Perangkat Daerah: {{ $kabid->perangkatdaerah }} <br>
-                Pendidikan Terakhir: {{ $kabid->pendidikanterakhir }}
-            </p>
-
-            <ul class="list-wrap">
-                <li><a href="#">Jabatan: {{ $kabid->jabatan }}</a></li>
-                <li><a href="#">Perangkat Daerah: {{ $kabid->perangkatdaerah }}</a></li>
-            </ul>
-
-            <div class="shape">
-                <img src="/storage/logo/sipjakikbb.png" alt="Logo"
-                    style="
-                        width:150px;
-                        height:auto;
-                        opacity:0.85;
-                        filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
-                    ">
-            </div>
-
-        </div>
-    </div>
-</div>
-@endforeach
-
-@foreach ($datainformasi as $info)
-<div class="col-lg-12">
-    <div class="contact__info-wrap">
-        <div class="contact__info-item">
-
-            <h4 class="title">Keterangan Informasi OPD</h4>
-
-            <p style="text-align: justify;">
-                {!! nl2br(e($info->informasiopd)) !!} <br><br>
-
-                <strong>No Telepon:</strong> {{ $info->notelepon }} <br>
-                <strong>Instagram:</strong> {{ $info->instagram }} <br>
-                <strong>TikTok:</strong> {{ $info->tiktok }} <br>
-                <strong>Email:</strong> {{ $info->email }}
-            </p>
-
-            <div class="shape">
-                <img src="/storage/logo/sipjakikbb.png" alt="Logo"
-                    style="
-                        width:150px;
-                        height:auto;
-                        opacity:0.85;
-                        filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
-                    ">
-            </div>
-
-        </div>
-    </div>
-</div>
-@endforeach
-
-@foreach ($datasipjaki as $data)
-<div class="col-lg-12">
-    <div class="contact__info-wrap">
-        <div class="contact__info-item">
-
-            <h4 class="title">Keterangan Informasi Petugas SIPJAKI KBB Berdasarkan SK </h4>
-
-            <p>
-                <strong>SK:</strong> {{ $data->nomor }} <br><br>
-
-                <strong>Petugas 1:</strong> {{ $data->operator1 }} <br>
-                <strong>Petugas 2:</strong> {{ $data->operator2 }} <br>
-                <strong>Petugas 3:</strong> {{ $data->operator3 }} <br>
-                <strong>Petugas 4:</strong> {{ $data->operator4 }}
-            </p>
-{{--
-            <ul class="list-wrap">
-                @if($data->operator1)
-                    <li>{{ $data->operator1 }}</li>
-                @endif
-                @if($data->operator2)
-                    <li>{{ $data->operator2 }}</li>
-                @endif
-                @if($data->operator3)
-                    <li>{{ $data->operator3 }}</li>
-                @endif
-                @if($data->operator4)
-                    <li>{{ $data->operator4 }}</li>
-                @endif
-            </ul> --}}
-
-            <div class="shape">
-                <img src="/storage/logo/sipjakikbb.png" alt="Logo"
-                    style="
-                        width:150px;
-                        height:auto;
-                        opacity:0.85;
-                        filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
-                    ">
-            </div>
-
-        </div>
-    </div>
-</div>
-@endforeach
-
-@foreach ($datapersonil as $personil)
-<div class="col-lg-12">
-    <div class="contact__info-wrap">
-        <div class="contact__info-item">
-
-            <h4 class="title">Data Personil SIPJAKI DPUTR Kabupaten Bandung Barat</h4>
-
-            <p>
-                <strong>Jabatan:</strong> {{ $personil->jabatan }} <br>
-                <strong>Nama Lengkap:</strong> {{ $personil->namalengkap }}
-            </p>
-            <div class="shape">
-                <img src="/storage/logo/sipjakikbb.png" alt="Logo"
-                    style="
-                        width:150px;
-                        height:auto;
-                        opacity:0.85;
-                        filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
-                    ">
-            </div>
-
-        </div>
-    </div>
-</div>
-@endforeach
-
-
-
-
-
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div style="width:44px;height:44px;border-radius:12px;
+                        background:#0d6efd;color:#fff;
+                        display:flex;align-items:center;justify-content:center;">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <div>
+                        <div style="font-size:18px;font-weight:700;">Identitas OPD</div>
+                        <div style="font-size:14px;color:#6c757d;">{{ $opd->namaopd }}</div>
+                    </div>
                 </div>
+
+                <p style="font-size:14px;line-height:1.7;">
+                    {{ $opd->alamatopd }}, RT/RW {{ $opd->rtrw }} <br>
+                    Kel. {{ $opd->kelurahan }}, Kec. {{ $opd->kecamatan }} <br>
+                    {{ $opd->kota }} - {{ $opd->provinsi }} <br>
+                    {{ $opd->kodepos }}, {{ $opd->negara }}
+                </p>
+
+                <span class="badge bg-primary me-2">Tipe Dinas: {{ $opd->tipedinas }}</span>
+                <span class="badge bg-secondary">Posisi: {{ $opd->posisigeografis }}</span>
+
+                <img src="/storage/logo/sipjakikbb.png"
+                     style="position:absolute;right:20px;bottom:20px;width:90px;opacity:.15;">
             </div>
+        </div>
+        @endforeach
+
+        {{-- ================= KEPALA DINAS ================= --}}
+        @foreach ($datakepaladinas as $kepala)
+        <div class="col-12 mb-4">
+            <div class="p-4 position-relative"
+                style="background:linear-gradient(135deg,#f8f9fa,#eef2f7);
+                border-left:6px solid #0d6efd;border-radius:14px;
+                box-shadow:0 3px 12px rgba(0,0,0,.06);">
+
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div style="width:44px;height:44px;border-radius:12px;
+                        background:#0d6efd;color:#fff;
+                        display:flex;align-items:center;justify-content:center;">
+                        <i class="bi bi-person-badge-fill"></i>
+                    </div>
+                    <div>
+                        <div style="font-size:18px;font-weight:700;">Kepala Dinas DPUTR KBB</div>
+                        <div style="font-size:14px;color:#6c757d;">{{ $kepala->namalengkap }}</div>
+                    </div>
+                </div>
+
+                <p style="font-size:14px;line-height:1.8;">
+                    <strong>NIP:</strong> {{ $kepala->nip }} <br>
+                    <strong>Tanggal Lahir:</strong> {{ $kepala->ttl }} <br>
+                    <strong>Pangkat / Golongan:</strong> {{ $kepala->pangkatgolongan }} <br>
+                    <strong>Jabatan:</strong> {{ $kepala->jabatan }} <br>
+                    <strong>Perangkat Daerah:</strong> {{ $kepala->perangkatdaerah }} <br>
+                    <strong>Pendidikan Terakhir:</strong> {{ $kepala->pendidikanterakhir }}
+                </p>
+
+                <img src="/storage/logo/sipjakikbb.png"
+                     style="position:absolute;right:20px;bottom:20px;width:90px;opacity:.15;">
+            </div>
+        </div>
+        @endforeach
+
+        {{-- ================= KABID ================= --}}
+        @foreach ($datakabid as $kabid)
+        <div class="col-12 mb-4">
+            <div class="p-4 position-relative"
+                style="background:linear-gradient(135deg,#f8f9fa,#eef2f7);
+                border-left:6px solid #0d6efd;border-radius:14px;
+                box-shadow:0 3px 12px rgba(0,0,0,.06);">
+
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div style="width:44px;height:44px;border-radius:12px;
+                        background:#0d6efd;color:#fff;
+                        display:flex;align-items:center;justify-content:center;">
+                        <i class="bi bi-diagram-3-fill"></i>
+                    </div>
+                    <div>
+                        <div style="font-size:18px;font-weight:700;">Kepala Bidang Jasa Konstruksi</div>
+                        <div style="font-size:14px;color:#6c757d;">{{ $kabid->namalengkap }}</div>
+                    </div>
+                </div>
+
+                <p style="font-size:14px;line-height:1.8;">
+                    <strong>NIP:</strong> {{ $kabid->nip }} <br>
+                    <strong>Tanggal Lahir:</strong> {{ $kabid->ttl }} <br>
+                    <strong>Pangkat / Golongan:</strong> {{ $kabid->pangkatgolongan }} <br>
+                    <strong>Jabatan:</strong> {{ $kabid->jabatan }} <br>
+                    <strong>Perangkat Daerah:</strong> {{ $kabid->perangkatdaerah }} <br>
+                    <strong>Pendidikan Terakhir:</strong> {{ $kabid->pendidikanterakhir }}
+                </p>
+
+                <img src="/storage/logo/sipjakikbb.png"
+                     style="position:absolute;right:20px;bottom:20px;width:90px;opacity:.15;">
+            </div>
+        </div>
+        @endforeach
+
+        {{-- ================= INFORMASI OPD ================= --}}
+       @foreach ($datainformasi as $info)
+<div class="col-12 mb-4">
+    <div class="p-4 position-relative"
+                style="background:linear-gradient(135deg,#f8f9fa,#eef2f7);
+                border-left:6px solid #0d6efd;border-radius:14px;
+                box-shadow:0 3px 12px rgba(0,0,0,.06);">
+
+        {{-- JUDUL --}}
+        <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="
+                width:44px;height:44px;
+                border-radius:12px;
+                background:#0d6efd;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                color:white;
+                box-shadow:0 3px 8px rgba(111,66,193,.35);
+            ">
+                <i class="bi bi-info-circle-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-0">Keterangan Informasi OPD</h5>
+        </div>
+
+        {{-- ISI INFORMASI --}}
+        <p style="font-size:14px;line-height:1.8;text-align:justify;">
+            {!! nl2br(e($info->informasiopd)) !!}
+        </p>
+
+        {{-- KONTAK --}}
+        <div style="font-size:14px;line-height:1.9;">
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-telephone-fill text-success"></i>
+                <span>{{ $info->notelepon }}</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-instagram text-danger"></i>
+                <span>{{ $info->instagram }}</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-tiktok"></i>
+                <span>{{ $info->tiktok }}</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-envelope-fill text-primary"></i>
+                <span>{{ $info->email }}</span>
+            </div>
+        </div>
+
+        {{-- WATERMARK LOGO --}}
+        <img src="/storage/logo/sipjakikbb.png"
+            style="
+                position:absolute;
+                right:20px;
+                bottom:20px;
+                width:90px;
+                opacity:.15;
+            ">
+    </div>
+</div>
+@endforeach
+
+
+        {{-- ================= PETUGAS SIPJAKI ================= --}}
+     @foreach ($datasipjaki as $data)
+<div class="col-12 mb-4">
+    <div class="p-4 position-relative"
+                style="background:linear-gradient(135deg,#f8f9fa,#eef2f7);
+                border-left:6px solid #0d6efd;border-radius:14px;
+                box-shadow:0 3px 12px rgba(0,0,0,.06);">
+
+        {{-- JUDUL --}}
+        <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="
+                width:44px;height:44px;
+                border-radius:12px;
+                background:#0d6efd;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                color:white;
+                box-shadow:0 3px 8px rgba(13,202,240,.35);
+            ">
+                <i class="bi bi-file-earmark-text-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-0">Petugas SIPJAKI Berdasarkan SK</h5>
+        </div>
+
+        {{-- ISI --}}
+        <div style="font-size:14px;line-height:1.9;">
+            <div class="d-flex align-items-start gap-2">
+                <i class="bi bi-file-earmark-check-fill text-info mt-1"></i>
+                <span><strong>Nomor SK:</strong> {{ $data->nomor }}</span>
+            </div>
+
+            <hr style="margin:10px 0;opacity:.15;">
+
+            @if($data->operator1)
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-badge-fill text-secondary"></i>
+                <span><strong>Petugas 1:</strong> {{ $data->operator1 }}</span>
+            </div>
+            @endif
+
+            @if($data->operator2)
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-badge-fill text-secondary"></i>
+                <span><strong>Petugas 2:</strong> {{ $data->operator2 }}</span>
+            </div>
+            @endif
+
+            @if($data->operator3)
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-badge-fill text-secondary"></i>
+                <span><strong>Petugas 3:</strong> {{ $data->operator3 }}</span>
+            </div>
+            @endif
+
+            @if($data->operator4)
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-badge-fill text-secondary"></i>
+                <span><strong>Petugas 4:</strong> {{ $data->operator4 }}</span>
+            </div>
+            @endif
+        </div>
+
+        {{-- WATERMARK --}}
+        <img src="/storage/logo/sipjakikbb.png"
+            style="
+                position:absolute;
+                right:20px;
+                bottom:20px;
+                width:90px;
+                opacity:.15;
+            ">
+    </div>
+</div>
+@endforeach
+
+
+        {{-- ================= PERSONIL ================= --}}
+       @foreach ($datapersonil as $personil)
+<div class="col-12 mb-4">
+    <div class="p-4 position-relative"
+                style="background:linear-gradient(135deg,#f8f9fa,#eef2f7);
+                border-left:6px solid #0d6efd;border-radius:14px;
+                box-shadow:0 3px 12px rgba(0,0,0,.06);">
+
+        {{-- JUDUL --}}
+        <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="
+                width:44px;height:44px;
+                border-radius:12px;
+                background:#0d6efd;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                color:white;
+                box-shadow:0 3px 8px rgba(220,53,69,.35);
+            ">
+                <i class="bi bi-people-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-0">Data Personil SIPJAKI DPUTR KBB</h5>
+        </div>
+
+        {{-- ISI --}}
+        <div style="font-size:14px;line-height:1.9;">
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-briefcase-fill text-danger"></i>
+                <span><strong>Jabatan:</strong> {{ $personil->jabatan }}</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-fill text-secondary"></i>
+                <span><strong>Nama Lengkap:</strong> {{ $personil->namalengkap }}</span>
+            </div>
+        </div>
+
+        {{-- WATERMARK --}}
+        <img src="/storage/logo/sipjakikbb.png"
+            style="
+                position:absolute;
+                right:20px;
+                bottom:20px;
+                width:90px;
+                opacity:.15;
+            ">
+    </div>
+</div>
+@endforeach
+
+
+    </div>
+</div>
+
         </section>
         <!-- contact-area-end -->
 

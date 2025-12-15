@@ -152,6 +152,7 @@
 </section>
         <!-- blog-details-area -->
         <section class="blog__details-area section-py-130" style="margin-top: -75px;">
+
             <div class="container">
                 <div class="row">
                     <div class="col-70">
@@ -316,19 +317,7 @@
                                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                             </div>
-                            <div class="sidebar__widget">
-                                <div class="sidebar__contact">
-                                <a href="https://wa.me/6281321455855" target="_blank" class="tg-btn tg-btn-three">
-                                        Kontak Kami
-                                        <img src="assets/img/icons/right_arrow.svg" alt="" class="injectable">
-                                    </a>
 
-                                    <div class="shape">
-                                        <img src="/assets/assets/img/images/sidebar_contact_shape01.svg" alt="shape" class="rotateme">
-                                        <img src="/assets/assets/img/images/sidebar_contact_shape02.svg" alt="shape" class="alltuchtopdown">
-                                    </div>
-                                </div>
-                            </div>
                         </aside>
                     </div>
                 </div>

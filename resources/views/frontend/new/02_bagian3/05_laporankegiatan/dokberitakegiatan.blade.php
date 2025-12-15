@@ -152,6 +152,7 @@
 </section>
         <!-- about-area -->
         <section class="about__area-six section-py-130" style="margin-top:-75px;">
+            @include('frontend.A00_new.01_halamanutama.newjudul')
             <div class="container">
                 @foreach ($data->sortByDesc('created_at')->take(1) as $item)
                 <div class="row align-items-center justify-content-center">

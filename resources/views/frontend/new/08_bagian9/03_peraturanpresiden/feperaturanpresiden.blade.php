@@ -152,63 +152,89 @@
 </section>
 
 <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
+    @include('frontend.A00_new.01_halamanutama.newjudul')
     <div class="container">
         <div class="row justify-content-center">
 
-            <!-- FILTER + SEARCH FULL WIDTH -->
-            <div class="col-12 mb-4">
-                <div class="w-100 d-flex flex-wrap align-items-center justify-content-between gap-3 p-4"
-                    style="background: #f8f9fa; border: 1px solid #e2e2e2; border-radius: 10px;">
+            <!-- FILTER + SEARCH FULL WIDTH (STYLE SERAGAM MODERN) -->
+<div class="col-12 mb-4">
+    <div class="w-100 d-flex flex-wrap align-items-center justify-content-between gap-3 p-4"
+        style="
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            border-left: 6px solid #0d6efd;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        ">
 
-                    <!-- SEARCH BAR -->
-                    <div class="d-flex align-items-center px-3 py-2 rounded"
-                        style="border: 1px solid #d0d0d5; flex: 1; min-width: 280px; background: white; height: 44px;">
-                        <input type="text" id="searchMaterial" placeholder="Cari Peraturan ?"
-                            oninput="searchData()"
-                            class="w-100 border-0 outline-none"
-                            style="font-family: 'Poppins'; background: transparent; font-size: 14px;" />
+        <!-- SEARCH BAR -->
+        <div class="d-flex align-items-center px-3 py-2 rounded"
+            style="
+                border: 1px solid #d0d0d5;
+                flex: 1;
+                min-width: 280px;
+                background: white;
+                height: 44px;
+                box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+            ">
+            <input type="text"
+                id="searchMaterial"
+                placeholder="Cari Peraturan ?"
+                oninput="searchMaterial()"
+                class="w-100 border-0 outline-none"
+                style="
+                    font-family: 'Poppins';
+                    background: transparent;
+                    font-size: 14px;
+                    color: #333;
+                " />
 
-                        <button type="button" class="ms-2" style="border: none; background: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                viewBox="0 0 18 18" fill="none">
-                                <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681
-                                12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681
-                                1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945
-                                1 15.681 4.28645 15.681 8.3405Z"
-                                stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
+            <button type="button" class="ms-2"
+                style="border:none; background:none; color:#0d6efd;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681
+                    12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681
+                    1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945
+                    1 15.681 4.28645 15.681 8.3405Z"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
 
-                    <!-- TAMPILKAN DATA -->
-                    <div class="d-flex align-items-center gap-2" style="flex: 1; min-width: 200px;">
-                        <label style="font-family: 'Poppins'; font-weight: 600; white-space: nowrap;">Tampilkan:</label>
+        <!-- TAMPILKAN DATA -->
+        <div class="d-flex align-items-center gap-2" style="flex: 1; min-width: 200px;">
+            <label style="
+                font-family: 'Poppins';
+                font-weight: 600;
+                white-space: nowrap;
+                color: #0d6efd;
+            ">
+                Tampilkan Data :
+            </label>
 
-                        <select id="entries" onchange="updateEntries()"
-                            class="form-select"
-                            style="font-family: 'Poppins'; height: 44px;">
+            <select id="entries" onchange="updateEntries()"
+                class="form-select"
+                style="
+                    font-family: 'Poppins';
+                    height: 44px;
+                    border-radius: 8px;
+                    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+                ">
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+            </select>
+        </div>
 
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                            <option value="75">75</option>
-                            <option value="100">100</option>
-                            <option value="150">150</option>
-                            <option value="200">200</option>
-                            <option value="500">500</option>
-                            <option value="1000">1000</option>
-                            <option value="2000">2000</option>
-                        </select>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- TEMPAT KONTEN TABEL -->
-            <div class="col-12">
-                <!-- tabel berada di sini -->
-            </div>
-
+    </div>
+</div>
         </div>
     </div>
 </section>
@@ -246,18 +272,19 @@
        <table class="table cart__table">
     <thead>
         <tr>
-            <th style="text-align:center;">
-                <i class="bi bi-list-ol"></i> No
-            </th>
+    <th style="text-align:center;" class="text-primary fw-semibold">
+        <i class="bi bi-list-ol me-1"></i> No
+    </th>
 
-            <th style="text-align:left;">
-                <i class="bi bi-card-text"></i> Judul Peraturan
-            </th>
+    <th style="text-align:left;" class="text-primary fw-semibold">
+        <i class="bi bi-card-text me-1"></i> Judul Peraturan
+    </th>
 
-            <th style="text-align:center;">
-                <i class="bi bi-download"></i> Unduh
-            </th>
-        </tr>
+    <th style="text-align:center;" class="text-primary fw-semibold">
+        <i class="bi bi-cloud-arrow-down-fill me-1"></i> Unduh
+    </th>
+</tr>
+
     </thead>
 
     <tbody>

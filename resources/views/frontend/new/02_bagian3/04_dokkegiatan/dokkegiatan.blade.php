@@ -151,6 +151,7 @@
 </section>
         <!-- team-details -->
         <section class="team__details-area section-py-130" style="margin-top: -75px;">
+            @include('frontend.A00_new.01_halamanutama.newjudul')
             <div class="container">
 
                     @foreach ($data as $item)

@@ -1277,7 +1277,7 @@ public function profiljakonkbb()
     $user = Auth::user();
 
     return view('frontend.new.01_bagian2.01_profiljakon.profiljakon', [
-        'title' => 'Profil Jakon DPUPR Kabupaten Bandung Barat',
+        'title' => 'Profil Jakon DPUTR Kabupaten Bandung Barat',
         'data' => $data, // Mengirimkan data paginasi ke view
         'user' => $user, // Mengirimkan data paginasi ke view
 
@@ -1300,7 +1300,7 @@ public function strukturdputr()
     $user = Auth::user();
 
     return view('frontend.new.01_bagian2.02_strukturdinas.strukturdinas', [
-        'title' => 'Profil Jakon DPUPR Kabupaten Bandung Barat',
+        'title' => 'Struktur OPD DPUTR Kabupaten Bandung Barat',
         'data' => $data, // Mengirimkan data paginasi ke view
         'user' => $user, // Mengirimkan data paginasi ke view
 

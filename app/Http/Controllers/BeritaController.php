@@ -1166,7 +1166,7 @@ public function beritajakon()
     $user = Auth::user();
 
     return view('frontend.new.02_bagian3.02_berita.beritajakonnew', [
-        'title' => 'Berita Jakon DPUTR Kabupaten Bandung Barat',
+        'title' => 'Berita Jasa Konstruksi',
         'data' => $data,
         'user' => $user,
     ]);

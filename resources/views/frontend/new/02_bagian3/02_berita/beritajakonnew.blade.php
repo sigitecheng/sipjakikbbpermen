@@ -151,6 +151,7 @@
 </section>
         <!-- blog-post-area -->
         <section class="blog__post-area-five section-py-130" style="margin-top: -75px;">
+@include('frontend.A00_new.01_halamanutama.newjudul')
             <div class="container">
                 <div class="row">
                     <div class="col-70 order-0 order-lg-2">
@@ -289,7 +290,7 @@
                                 </div>
                             </div> --}}
 
-                            <div class="sidebar__widget">
+                            {{-- <div class="sidebar__widget">
                                 <div class="sidebar__contact">
                                   <a href="https://wa.me/6281321455855" target="_blank" class="tg-btn tg-btn-three">
                                         Kontak Kami <img src="assets/img/icons/right_arrow.svg" alt="" class="injectable">
@@ -300,7 +301,7 @@
                                         <img src="/assets/assets/img/images/sidebar_contact_shape02.svg" alt="shape" class="alltuchtopdown">
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </aside>
                     </div>
                 </div>

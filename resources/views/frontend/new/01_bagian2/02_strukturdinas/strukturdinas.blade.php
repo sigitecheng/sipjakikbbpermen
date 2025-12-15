@@ -21,6 +21,7 @@
 
     <!-- header-area -->
     <header class="transparent-header">
+
         <div class="tg-header__top">
             <div class="container custom-container">
                 <div class="row align-items-center">
@@ -169,79 +170,138 @@
 
         <!-- contact-area -->
         <section class="contact__area">
+        {{-- @include('frontend.A00_new.01_halamanutama.newjudul') --}}
+
             <div class="container">
-                <div class="row">
-@foreach ($data as $item)
-<div class="col-lg-12">
-    <div class="contact__info-wrap">
-        <div class="contact__info-item">
+                {{-- <div class="container"> --}}
+    <div class="row">
 
-            {{-- JUDUL --}}
-            <h4 class="title">{{ $item->judul ?? 'Judul belum diisi' }}</h4>
+        @foreach ($data as $item)
+        <div class="col-12 mb-4">
+            <div class="p-4 position-relative"
+                style="
+                    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+                    border-left: 6px solid #0d6efd;
+                    border-radius: 14px;
+                    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+                ">
 
+                {{-- HEADER --}}
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div style="
+                        width:44px;
+                        height:44px;
+                        border-radius:12px;
+                        background:#0d6efd;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        color:white;
+                        box-shadow: 0 3px 8px rgba(13,110,253,0.35);
+                    ">
+                        <i class="bi bi-file-earmark-text-fill"></i>
+                    </div>
 
-            {{-- PERATURAN FILE (PDF / IMAGE / EMPTY) --}}
-            <div style="margin-top: 15px;">
+                    <div>
+                        <div style="font-family:'Poppins'; font-size:18px; font-weight:700;">
+                            {{ $item->judul ?? 'Judul belum diisi' }}
+                        </div>
+                        <div style="font-size:13px; color:#6c757d;">
+                            Dokumen Peraturan
+                        </div>
+                    </div>
+                </div>
 
-                @php
-                    $filePath = public_path('storage/' . $item->peraturan);
-                    $isPdf = $item->peraturan && Str::endsWith(strtolower($item->peraturan), '.pdf');
-                @endphp
+                {{-- FILE VIEW --}}
+                <div class="mt-3">
 
-                @if ($item->peraturan && file_exists($filePath))
+                    @php
+                        $filePath = public_path('storage/' . $item->peraturan);
+                        $isPdf = $item->peraturan && Str::endsWith(strtolower($item->peraturan), '.pdf');
+                    @endphp
 
-                    @if ($isPdf)
-                        {{-- PDF VIEWER --}}
-                        <iframe
-                            src="{{ asset('storage/' . $item->peraturan) }}"
-                            style="width: 100%; height: 500px; border: none; border-radius: 8px;"
-                            loading="lazy">
-                        </iframe>
+                    @if ($item->peraturan && file_exists($filePath))
+
+                        @if ($isPdf)
+                            <iframe
+                                src="{{ asset('storage/' . $item->peraturan) }}"
+                                style="
+                                    width:100%;
+                                    height:500px;
+                                    border:none;
+                                    border-radius:10px;
+                                "
+                                loading="lazy">
+                            </iframe>
+                        @else
+                            <img
+                                src="{{ asset('storage/' . $item->peraturan) }}"
+                                alt="Peraturan"
+                                style="
+                                    width:100%;
+                                    max-height:350px;
+                                    object-fit:contain;
+                                    border-radius:10px;
+                                "
+                                loading="lazy">
+                        @endif
+
+                    @elseif ($item->peraturan)
+
+                        @if ($isPdf)
+                            <iframe
+                                src="{{ asset($item->peraturan) }}"
+                                style="
+                                    width:100%;
+                                    height:500px;
+                                    border:none;
+                                    border-radius:10px;
+                                ">
+                            </iframe>
+                        @else
+                            <img
+                                src="{{ asset($item->peraturan) }}"
+                                style="
+                                    width:100%;
+                                    max-height:350px;
+                                    object-fit:contain;
+                                    border-radius:10px;
+                                ">
+                        @endif
+
                     @else
-                        {{-- JIKA BUKAN PDF, TAMPILKAN GAMBAR --}}
-                        <img
-                            src="{{ asset('storage/' . $item->peraturan) }}"
-                            alt="Peraturan"
-                            style="
-                                width: 100%;
-                                max-height: 350px;
-                                object-fit: contain;
-                                border-radius: 6px;
-                            "
-                            loading="lazy">
+                        <div class="alert alert-warning mt-3 mb-0">
+                            <i class="bi bi-exclamation-circle me-1"></i>
+                            Data peraturan belum diupdate
+                        </div>
                     @endif
-
-                @elseif ($item->peraturan)
-                    {{-- FILE LUAR STORAGE --}}
-                    @if ($isPdf)
-                        <iframe
-                            src="{{ asset($item->peraturan) }}"
-                            style="width: 100%; height: 500px; border: none; border-radius: 8px;">
-                        </iframe>
-                    @else
-                        <img
-                            src="{{ asset($item->peraturan) }}"
-                            style="width: 100%; max-height: 350px; object-fit: contain;">
-                    @endif
-
-                @else
-                    <p>Data peraturan belum diupdate</p>
-                @endif
-
-            </div>
-
-                {{-- KETERANGAN --}}
-            <p style="margin-top: 10px; font-size:16px; text-align:justify;">
-                {!! $item->keterangan ? nl2br(e($item->keterangan)) : 'Keterangan belum diupdate' !!}
-            </p>
-
-        </div>
-    </div>
-</div>
-@endforeach
 
                 </div>
+
+                {{-- KETERANGAN --}}
+                <div class="mt-3" style="font-size:14px; text-align:justify;">
+                    <strong>Keterangan:</strong><br>
+                    {!! $item->keterangan
+                        ? nl2br(e($item->keterangan))
+                        : '<span class="text-muted">Keterangan belum diupdate</span>' !!}
+                </div>
+
+                {{-- WATERMARK --}}
+                <img src="/storage/logo/sipjakikbb.png"
+                     style="
+                        position:absolute;
+                        right:20px;
+                        bottom:20px;
+                        width:90px;
+                        opacity:.12;
+                     ">
             </div>
+        </div>
+        @endforeach
+
+    </div>
+</div>
+
         </section>
         <!-- contact-area-end -->
 
