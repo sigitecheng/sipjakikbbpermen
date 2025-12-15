@@ -11356,7 +11356,7 @@ paketpekerjaanmasjaki::create([
 
 agendapelatihan::create([
             'materipelatihan_id'   => null,
-            'kategoripelatihan_id' => 2,
+            'kategoripelatihan_id' => 1,
             'pesertapelatihan_id'  => null,
             'user_id'              => 7, // contoh user id
             'jampelajaran_id'      => null,
@@ -11369,20 +11369,43 @@ agendapelatihan::create([
             'lokasi'               => 'Aula Dinas DPUTR Kabupaten Bandung Barat',
             'keterangan'           => 'Pelatihan peningkatan kompetensi tenaga kerja konstruksi.',
             'isiagenda'            => 'Pembukaan, sesi materi konstruksi dasar, praktik lapangan, penutupan.',
-            'foto'                 => '04_pembinaan/03_sertifikasi/foto_default.jpg',
+            'foto'                 => 'assets/icon/LogoSIPJAKI.png',
+            'barcodepelatihan'     => 'barcode/default_barcode.png',
+            'suratundangan'        => '04_pembinaan/03_sertifikasi/suratundangan_default.pdf',
+        ]);
+
+agendapelatihan::create([
+            'materipelatihan_id'   => null,
+            'kategoripelatihan_id' => 2,
+            'pesertapelatihan_id'  => null,
+            'user_id'              => 7, // contoh user id
+            'jampelajaran_id'      => null,
+
+            'namakegiatan'         => 'Pelatihan Medium Konstruksi',
+            'asosiasimasjaki_id'   => 1, // contoh data asosiasi
+            'penutupan'            => '2025-01-30',
+            'waktupelaksanaan'     => '2025-01-25',
+            'jumlahpeserta'        => 35,
+            'lokasi'               => 'Aula Dinas DPUTR Kabupaten Bandung Barat',
+            'keterangan'           => 'Pelatihan peningkatan kompetensi tenaga kerja konstruksi.',
+            'isiagenda'            => 'Pembukaan, sesi materi konstruksi dasar, praktik lapangan, penutupan.',
+            'foto'                 => 'assets/icon/LogoSIPJAKI.png',
             'barcodepelatihan'     => 'barcode/default_barcode.png',
             'suratundangan'        => '04_pembinaan/03_sertifikasi/suratundangan_default.pdf',
         ]);
 
 kategoripelatihan::create([
+            'id'   => 1,
             'kategoripelatihan'   => 'Sosialisasi',
         ]);
 
-kategoripelatihan::create([
-            'kategoripelatihan'   => 'Workshop',
-        ]);
+        kategoripelatihan::create([
+    'id'   => 2,
+    'kategoripelatihan'   => 'Workshop',
+]);
 
 kategoripelatihan::create([
+    'id'   => 3,
             'kategoripelatihan'   => 'Bimbingan Teknis',
         ]);
 

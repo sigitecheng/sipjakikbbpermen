@@ -77,8 +77,8 @@
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Pembinaan</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Agenda Pelatihan</a></li>
-                                        <li><a href="#">Peserta Pelatihan</a></li>
+                                        <li><a href="/agendapelatihankbb">Agenda Pelatihan</a></li>
+                                        <li><a href="/datapesertapelatihan">Peserta Pelatihan</a></li>
                                         <li><a href="#">Agenda Sertifikasi TKK</a></li>
                                         <li><a href="#">Daftar Peserta TKK</a></li>
                                     </ul>

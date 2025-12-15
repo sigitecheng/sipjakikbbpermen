@@ -1,0 +1,252 @@
+@include('frontend.A00_new.01_halamanutama.newheader')
+                @include('backend.00_administrator.00_baganterpisah.11_alert')
+<body>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header class="transparent-header">
+        <div class="tg-header__top">
+            <div class="container custom-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="tg-header__top-info">
+                            <ul class="list-wrap">
+                                <li><i class="fas fa-building"></i> Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tg-header__top-right">
+                            <ul class="list-wrap">
+                                @include('frontend.A00_new.01_halamanutama.newlogin')
+
+
+                                {{-- <li>
+                                    <div class="tg-header__top-social">
+                                        <ul class="list-wrap">
+                                            <li><a href="https://www.facebook.com/" target="_blank"><img src="/assets/assets/img/icons/facebook.svg" alt="" class="injectable"></a></li>
+                                            <li><a href="https://x.com/home" target="_blank"><img src="/assets/assets/img/icons/twitter.svg" alt="" class="injectable"></a></li>
+                                            <li><a href="https://www.instagram.com/" target="_blank"><img src="/assets/assets/img/icons/instagram.svg" alt="" class="injectable"></a></li>
+                                            <li><a href="https://www.pinterest.com/" target="_blank"><img src="/assets/assets/img/icons/pinterest.svg" alt="" class="injectable"></a></li>
+                                        </ul>
+                                    </div>
+                                </li> --}}
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @include('frontend.A00_new.01_halamanutama.newnavbar')
+
+        <!-- Mobile Menu  -->
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
+      @include('frontend.A00_new.01_halamanutama.newlogo')
+                          {{-- <div class="tgmobile__search">
+                    <form action="#">
+                        <input type="text" placeholder="Search here...">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div> --}}
+                <div class="tgmobile__menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                {{-- <div class="social-links">
+                    <ul class="list-wrap">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div> --}}
+            </nav>
+        </div>
+        <div class="tgmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <!-- offCanvas-menu -->
+        <div class="offCanvas__info">
+            <div class="offCanvas__close-icon menu-close">
+                <button><img src="/assets/assets/img/icons/times.svg" alt="" class="injectable"></button>
+            </div>
+            <div class="offCanvas__logo mb-30">
+                <a href="#"><img src="/storage/logo/sipjakikbb.png" alt="Logo"></a>
+                <a href="#"><img src="/assets/icon/pupr.png" alt="Logo"></a>
+            </div>
+            <div class="offCanvas__content">
+                <p>Sistem Pembina Jasa Konstruksi</p>
+            </div>
+            {{-- <div class="offCanvas__img">
+                <ul class="list-wrap">
+                    <li><a href="javascript:void(0)"><img src="/assets/assets/img/images/footer_insta01.jpg" alt="img"></a></li>
+                    <li><a href="javascript:void(0)"><img src="/assets/assets/img/images/footer_insta02.jpg" alt="img"></a></li>
+                    <li><a href="javascript:void(0)"><img src="/assets/assets/img/images/footer_insta03.jpg" alt="img"></a></li>
+                    <li><a href="javascript:void(0)"><img src="/assets/assets/img/images/footer_insta04.jpg" alt="img"></a></li>
+                    <li><a href="javascript:void(0)"><img src="/assets/assets/img/images/footer_insta05.jpg" alt="img"></a></li>
+                    <li><a href="javascript:void(0)"><img src="/assets/assets/img/images/footer_insta06.jpg" alt="img"></a></li>
+                </ul>
+            </div> --}}
+            <div class="offCanvas__side-info">
+                <div class="contact-list">
+                    <i class="flaticon-placeholder"></i>
+                    <p>Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
+                </div>
+                {{-- <div class="contact-list">
+                    <i class="flaticon-telephone"></i>
+                    <a href="tel:0123456789">+123 888 9999</a>
+                </div> --}}
+                {{-- <div class="contact-list">
+                    <i class="flaticon-envelope"></i>
+                    <a href="mailto:info@beeko.com">info@beeko.com</a>
+                </div> --}}
+            </div>
+            <div class="offCanvas__social">
+                <h6 class="title">Follow us</h6>
+                <ul class="list-wrap">
+                    <li><a href="/" target="_blank"><img src="/assets/assets/img/icons/facebook.svg" alt="" class="injectable"></a></li>
+                    <li><a href="/" target="_blank"><img src="/assets/assets/img/icons/twitter.svg" alt="" class="injectable"></a></li>
+                    <li><a href="/" target="_blank"><img src="/assets/assets/img/icons/instagram.svg" alt="" class="injectable"></a></li>
+                    <li><a href="/" target="_blank"><img src="/assets/assets/img/icons/pinterest.svg" alt="" class="injectable"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="offCanvas__overly"></div>
+        <!-- offCanvas-menu-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+<section style="
+    background-image: url('/assets/assets/img/bg/perbaikanbanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 145px;
+">
+</section>
+        <!-- about-area -->
+        <section class="about__area-six section-py-130" style="margin-top: -75px;">
+            @include('frontend.A00_new.01_halamanutama.newjudul')
+
+<div class="container">
+
+    {{-- ================= FORM ================= --}}
+    <div class="row" style="margin-top: 25px;">
+        <div class="col-lg-8 mx-auto">
+            <form action="{{ route('pesertapelatihan.store') }}" method="POST">
+                @csrf
+
+                {{-- Hidden agendapelatihan_id --}}
+                <input type="hidden" name="agendapelatihan_id" value="{{ $data->id }}">
+
+                <div class="mb-3">
+                    <label class="form-label">Nama Lengkap</label>
+                    <input type="text" name="namalengkap" class="form-control" placeholder="Nama Lengkap" value="{{ old('namalengkap') }}">
+                    @error('namalengkap')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Jenjang Pendidikan</label>
+                    <select name="jenjangpendidikan_id" class="form-select">
+                        <option value="">-- Pilih Jenjang --</option>
+                        @foreach($listJenjang as $jenjang)
+                            <option value="{{ $jenjang->id }}" {{ old('jenjangpendidikan_id') == $jenjang->id ? 'selected' : '' }}>
+                                {{ $jenjang->jenjangpendidikan }}
+                            </option>
+                        @endforeach
+                    </select>
+                    @error('jenjangpendidikan_id')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">NIK</label>
+                    <input type="number" name="nik" class="form-control" placeholder="NIK" value="{{ old('nik') }}">
+                    @error('nik')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Jenis Kelamin</label>
+                    <select name="jeniskelamin" class="form-select">
+                        <option value="">-- Pilih Jenis Kelamin --</option>
+                        <option value="Laki-laki" {{ old('jeniskelamin') == 'Laki-laki' ? 'selected' : '' }}>Laki-laki</option>
+                        <option value="Perempuan" {{ old('jeniskelamin') == 'Perempuan' ? 'selected' : '' }}>Perempuan</option>
+                    </select>
+                    @error('jeniskelamin')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Tanggal Lahir</label>
+                    <input type="date" name="tanggallahir" class="form-control" value="{{ old('tanggallahir') }}">
+                    @error('tanggallahir')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">No Telepon</label>
+                    <input type="text" name="notelepon" class="form-control" placeholder="0812xxxx" value="{{ old('notelepon') }}">
+                    @error('notelepon')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Instansi/Perusahaan/Universitas/PT/CV/Lainnya</label>
+                    <input type="text" name="instansi" class="form-control" placeholder="Instansi / Perusahaan" value="{{ old('instansi') }}">
+                    @error('instansi')
+                        <div class="text-danger mt-1">{{ $message }}</div>
+                    @enderror
+                </div>
+
+
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="bi bi-save me-1"></i> Simpan Data Peserta
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+        </section>
+        <!-- about-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+@include('frontend.A00_new.01_halamanutama.newfooter')

@@ -50,6 +50,7 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\PermenpuController;
 use App\Http\Controllers\RantaipasokmaterialController;
 use App\Http\Controllers\UndangundangController;
+use App\Models\pelatihan;
 use Database\Factories\DatajakonFactory;
 use Database\Factories\SkktenagakerjaFactory;
 use Illuminate\Support\Facades\Route;
@@ -2595,6 +2596,20 @@ Route::get('/datastatistiktkkkbb', [BujkkontraktorController::class, 'datastatis
 Route::get('/datapekerjaankbb', [BujkkontraktorController::class, 'datapekerjaankbb']);
 Route::get('/datastatistikpaketpekerjaan', [PaketpekerjaanmasjakiController::class, 'datastatistikpaketpekerjaan'])->middleware('auth'); // SUDAH DI GATE
 
+
+
+
+// MENU AGENDA PELATIHAN KAB BANDUNG BARAT
+Route::get('/agendapelatihankbb', [PelatihanController::class, 'agendapelatihankbb']);
+Route::get('/daftaragendapelatihankbb/{namakegiatan}', [PelatihanController::class, 'agendapelatihankbbdaftar'])->name('daftaragendapelatihankbb');
+Route::get('/agendapelatihankbb/{namakegiatan}', [PelatihanController::class, 'agendapelatihankbbshow'])->name('showagendapelatihankbb');
+Route::post('/agendapelatihankbb/create', [PelatihanController::class, 'agendapelatihancreatepeserta'])->name('pesertapelatihan.store');
+
+Route::get('/datapesertapelatihan', [PelatihanController::class, 'datapesertapelatihan']);
+Route::get('/datapesertapelatihan/{namakegiatan}', [PelatihanController::class, 'datapesertapelatihanshow'])->name('lihatdaftarpeserta');
+
+
+// Route::get('/artikeljakon/show/{id}', [BeritaController::class, 'artikeljakonshow'])->name('artikeljakon.show');
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
 // Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
