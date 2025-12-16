@@ -63,17 +63,17 @@
 
 
                     <button class="button-modern">
-    <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia1}} (PU)
+    <i class="bi bi-file-earmark " ></i> {{$totalpenyedia1}} (PU)
 </button>
 
 
                     <button class="button-modern">
-    <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia2}} (NON-PU)
+    <i class="bi bi-file-earmark " ></i> {{$totalpenyedia2}} (NON-PU)
 </button>
 
 
                     <button class="button-modern">
-    <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia3}} (SWASTA)
+    <i class="bi bi-file-earmark " ></i> {{$totalpenyedia3}} (SWASTA)
 </button>
 
 <div style="position: relative; display: inline-block; margin-right:10px;">
@@ -143,7 +143,7 @@ document.addEventListener('click', function(e) {
                                 <a href="/betertibjakonusaha/create">
                                     <button class="button-modern";>
                                     <!-- Ikon Kembali -->
-                                    <i class="fa fa-plus icon-create" style="margin-right: 8px;"></i>
+                                    <i class="fa fa-plus " style="margin-right: 8px;"></i>
                                     Tambah Data
                                 </button>
                                 </a>
@@ -153,9 +153,9 @@ document.addEventListener('click', function(e) {
                  <!-- /.card-header -->
                  <div class="card-body p-0">
 
-                    <div style="width: 100%; overflow-x: auto;">
-                        <table id="tabeltertibjakonusaha" class="zebra-table">
-                            <thead>
+                        <div class="table-responsive" style="width: 100%; overflow-x: auto;">
+                        <table id="tabeltertibjakonusaha" class="zebra-table" style="white-space: nowrap;">
+                        <thead>
                             <tr>
     <th style="text-align:center;">
         <i class="bi bi-list-ol"></i><br>No
@@ -236,7 +236,7 @@ document.addEventListener('click', function(e) {
 
     <td style="text-align: center; vertical-align: middle;">
                                     <a href="/betertibjakonusahasuratpercobaan/create/{{$item->id}}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                         <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
@@ -255,7 +255,7 @@ document.addEventListener('click', function(e) {
 
                                <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonusahasegmentasipasar/index/' . $item->id) }}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                         <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
@@ -276,7 +276,7 @@ document.addEventListener('click', function(e) {
 
                                <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonusahapemenuhansyarat/index/' . $item->id) }}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                         <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
@@ -295,7 +295,7 @@ document.addEventListener('click', function(e) {
 
                                 <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonusahapelaksana/index/' . $item->id) }}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                         <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
@@ -321,7 +321,7 @@ document.addEventListener('click', function(e) {
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text "></i> Upload Berkas
             </button>
         @endif
     </a>
@@ -335,7 +335,7 @@ document.addEventListener('click', function(e) {
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text "></i> Upload Berkas
             </button>
         @endif
     </a>
@@ -350,7 +350,7 @@ document.addEventListener('click', function(e) {
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text "></i> Upload Berkas
             </button>
         @endif
     </a>
@@ -365,7 +365,7 @@ document.addEventListener('click', function(e) {
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text "></i> Upload Berkas
             </button>
         @endif
     </a>

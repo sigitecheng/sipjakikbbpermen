@@ -1303,7 +1303,7 @@ body {
 }
 
 /* Card-style form wrapper */
-.form-modern {
+/* .form-modern {
     background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
@@ -1314,6 +1314,91 @@ body {
 
 .form-modern:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+ */
+
+ /* BASE FORM (punya lo, tetap) */
+.form-modern {
+    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+    border: 1px solid #e5e7eb;
+    border-left: 6px solid #0d6efd;
+    border-radius: 12px;
+
+    padding: 16px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-modern:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* RAPIN FORM HORIZONTAL DI DALAM .form-modern */
+.form-modern {
+    gap: 20px;              /* jarak antar item utama */
+}
+
+/* kalau di dalamnya ada label + input */
+.form-modern label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0d6efd;
+
+    white-space: nowrap;    /* biar label ga turun baris */
+    min-width: 160px;       /* kunci lebar label */
+}
+
+/* input / select / textarea di dalam form-modern */
+.form-modern input,
+.form-modern select,
+.form-modern textarea {
+    flex: 1;                /* isi sisa ruang */
+    margin-left: 10px;      /* jarak dari label */
+}
+
+/* biar kalau ada icon di label tetap sejajar */
+.form-modern label i {
+    font-size: 16px;
+}
+
+
+/* ICON BOX */
+.form-modern .form-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+
+    background: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(13, 110, 253, 0.35);
+}
+
+/* TITLE */
+.form-modern .form-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212529;
+}
+
+/* SUBTITLE */
+.form-modern .form-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #6c757d;
 }
 
 /* Label modern */

@@ -16,8 +16,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -86,13 +85,13 @@
                                         <div class="modal-content" style="font-size: 0.875rem;">
                                             <div class="modal-header d-flex align-items-center">
                                                 <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
-                                                    <img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" class="me-2">
+                                                    <img src="/assets/icon/sipjakikbb.png" alt="Logo" width="30" class="me-2">
                                                 </a>
                                                 <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
                                                     <img src="/assets/icon/pupr.png" alt="Logo" width="25" class="me-2">
                                                 </a>
                                                 <span class="mx-2">:</span>
-                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora</p>
+                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
@@ -281,8 +280,8 @@
                                 <!-- Kontainer Kanan -->
                                 <div>
                              <a href="{{ url()->previous() }}">
-                                    <button class="button-newvalidasi">
-                                        <i class="bi bi-arrow-left icon-create" style="margin-right: 8px;"></i>
+                                    <button class="button-modern">
+                                        <i class="bi bi-arrow-left"></i>
                                         Kembali
                                     </button>
                                 </a>
@@ -306,13 +305,13 @@
                                 <div class="modal-content" style="font-size: 0.875rem;">
                                     <div class="modal-header d-flex align-items-center">
                                         <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
-                                            <img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" class="me-2">
+                                            <img src="/assets/icon/sipjakikbb.png" alt="Logo" width="35" class="me-2">
                                         </a>
                                         <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
                                             <img src="/assets/icon/pupr.png" alt="Logo" width="25" class="me-2">
                                         </a>
                                         <span class="mx-2">:</span>
-                                        <p style="margin-left: 10px; margin-bottom: 0; font-size:15px;">Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora</p>
+                                        <p style="margin-left: 10px; margin-bottom: 0; font-size:15px;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
                                     </div>
                                     <br>
                                     <div class="modal-body">
@@ -724,15 +723,10 @@
 <!-- Tombol Submit -->
 <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
     <div class="flex justify-end">
-        <button class="button-hijau" type="button" onclick="openModal()">
-        <!-- Ikon SVG Pensil -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-        fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
-         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-       </svg>
-        <span style="font-family: 'Poppins', sans-serif;">Buat Berkas</span>
-    </button>
+          <button class="button-baru" type="button" onclick="openModal()">
+            <i class="bi bi-save" style="margin-right: 5px;"></i>
+            <span style="font-family: 'Poppins', sans-serif;">Tambah Data </span>
+        </button>
     </div>
 
     <!-- Modal Konfirmasi -->

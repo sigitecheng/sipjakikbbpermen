@@ -110,7 +110,7 @@ public function settingstandatangan(Request $request)
     }
 
     return view('backend.16_settingsdata.02_tandatangan.index', [
-        'title' => 'Daftar Tanda Tangan Bidang Bangunan Gedung',
+        'title' => 'Daftar Tanda Tangan Bidang Pemeriksa Jasa Konstruksi',
         'data' => $data,
         'perPage' => $perPage,
         'search' => $search

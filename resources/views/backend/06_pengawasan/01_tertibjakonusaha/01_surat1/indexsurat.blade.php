@@ -49,7 +49,7 @@
 
                     <a href="/betertibjakonusaha">
                         <button class="button-modern">
-                        <i class="bi bi-arrow-left icon-create"></i>
+                        <i class="bi bi-arrow-left "></i>
                             Kembali
                         </button>
                     </a>
@@ -59,7 +59,7 @@
                                    @if ($datasurat->isEmpty())
                                         <a href="{{ route('betertibjakonusahasurat1newberkas', ['id' => $data->id]) }}">
                                             <button class="button-berkas">
-                                                <i class="bi bi-file-earmark-plus icon-create"></i>
+                                                <i class="bi bi-file-earmark-plus "></i>
                                                 Buat Berkas
                                             </button>
                                         </a>
@@ -70,14 +70,14 @@
                    @if ($datasurat->isNotEmpty())
                     <a href="{{ url('betertibjakonusahasurat1/createnew/' . $datasurat_id) }}">
                         <button class="button-berkas">
-                            <i class="bi bi-file-earmark icon-create"></i> Dokumen
+                            <i class="bi bi-file-earmark "></i> Dokumen
                         </button>
                     </a>
                 @endif
 
 
                 <button class="button-baru">
-                    <i class="bi bi-file-earmark icon-create"></i> {{ $title }}
+                    <i class="bi bi-file-earmark "></i> {{ $title }}
                 </button>
 
 

@@ -61,21 +61,21 @@
                                     <!-- Tombol Badan Usaha -->
                                     {{-- <a href="/404">
                                         <button class="btn-create">
-                                            <i class="bi bi-tools icon-create"></i>
+                                            <i class="bi bi-tools "></i>
                                             Perbaikan Data
                                         </button>
                                     </a>
 
                                     <a href="/404">
                                         <button class="btn-create">
-                                            <i class="bi bi-file-earmark-arrow-down icon-create"></i>
+                                            <i class="bi bi-file-earmark-arrow-down "></i>
                                             Download Berkas
                                         </button>
                                     </a>
 
                                         <button class="btn-create"
                                             data-bs-toggle="modal" data-bs-target="#modalKtp{{ $data->id }}">
-                                            <i class="bi bi-file-earmark-text icon-create"></i>
+                                            <i class="bi bi-file-earmark-text "></i>
                                             Lihat Berkas
                                         </button> --}}
 
@@ -283,7 +283,7 @@
                                 <div>
                              <a href="{{ url()->previous() }}">
                                     <button class="button-modern">
-                                        <i class="bi bi-arrow-left icon-create" style="margin-right: 8px;"></i>
+                                        <i class="bi bi-arrow-left "></i>
                                         Kembali
                                     </button>
                                 </a>

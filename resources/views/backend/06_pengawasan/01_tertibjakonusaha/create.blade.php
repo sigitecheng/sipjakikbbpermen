@@ -146,7 +146,7 @@ style="
 <div class="col-md-6">
 <div class="form-modern mb-3">
     <label for="penyediastatustertibjakon_id" class="form-label-modern">
-        <i class="bi bi-card-text me-2" style="color: #800000;"></i> Sektor
+        <i class="bi bi-card-text text-primary me-2"></i> Sektor
     </label>
     <select id="penyediastatustertibjakon_id" name="penyediastatustertibjakon_id" class="form-control @error('penyediastatustertibjakon_id') is-invalid @enderror">
         <option value="">-- Pilih Sektor --</option>
@@ -164,7 +164,7 @@ style="
 <!-- NIB -->
 <div class="form-modern mb-3">
     <label for="nib" class="form-label-modern">
-        <i class="bi bi-123 me-2" style="color: #800000;"></i> NIB
+        <i class="bi bi-123 text-primary me-2"></i> NIB
     </label>
     <input type="number" id="nib" name="nib"
         class="form-control @error('nib') is-invalid @enderror"
@@ -177,7 +177,7 @@ style="
 <!-- Nama Pekerjaan -->
 <div class="form-modern mb-3">
     <label for="namapekerjaan" class="form-label-modern">
-        <i class="bi bi-briefcase me-2" style="color: #800000;"></i> Nama Pekerjaan
+        <i class="bi bi-briefcase text-primary me-2"></i> Nama Pekerjaan
     </label>
     <input type="text" id="namapekerjaan" name="namapekerjaan"
         class="form-control @error('namapekerjaan') is-invalid @enderror"
@@ -194,7 +194,7 @@ style="
 <!-- Tahun Pelaksanaan -->
 <div class="form-modern mb-3">
     <label for="tahunpelaksanaan" class="form-label-modern">
-        <i class="bi bi-calendar-event me-2" style="color: #800000;"></i> Tahun Pelaksanaan
+        <i class="bi bi-calendar-event text-primary me-2"></i> Tahun Pelaksanaan
     </label>
     <select id="tahunpelaksanaan" name="tahunpelaksanaan"
         class="form-select @error('tahunpelaksanaan') is-invalid @enderror">
@@ -214,7 +214,7 @@ style="
 <!-- Nama Badan Usaha -->
 <div class="form-modern mb-3">
     <label for="namabadanusaha" class="form-label-modern">
-        <i class="bi bi-building me-2" style="color: #800000;"></i> Nama Badan Usaha
+        <i class="bi bi-building text-primary me-2"></i> Nama Badan Usaha
     </label>
     <input type="text" id="namabadanusaha" name="namabadanusaha"
         class="form-control @error('namabadanusaha') is-invalid @enderror"
@@ -227,7 +227,7 @@ style="
 <!-- PJBU -->
 <div class="form-modern mb-3">
     <label for="pjbu" class="form-label-modern">
-        <i class="bi bi-person-badge me-2" style="color: #800000;"></i> Penanggung Jawab Badan Usaha (PJBU)
+        <i class="bi bi-person-badge text-primary me-2"></i> Penanggung Jawab Badan Usaha (PJBU)
     </label>
     <input type="text" id="pjbu" name="pjbu"
         class="form-control @error('pjbu') is-invalid @enderror"

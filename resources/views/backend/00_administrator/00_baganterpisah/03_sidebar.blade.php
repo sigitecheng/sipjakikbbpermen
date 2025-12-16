@@ -1167,7 +1167,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk Pengawasan -->
                   <i class="nav-icon bi bi-eye" style="color: white"></i> <!-- Ikon untuk pengawasan -->
-                  <p style="color: white">
+                  <p style="color: orange">
                     Pengawasan
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>

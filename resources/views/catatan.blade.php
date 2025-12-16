@@ -216,8 +216,6 @@ function searchMaterial() {
 }
 </style>
 
-
-
 <script>
 function previewHeader(event) {
     const previewDiv = document.getElementById('preview-header');

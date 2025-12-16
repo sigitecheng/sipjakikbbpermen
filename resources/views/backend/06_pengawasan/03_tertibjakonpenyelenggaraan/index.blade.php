@@ -1,57 +1,3 @@
-<style>
-    /* import khusus buat tabel tertib jaku usaha */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-    #tabeltertibjakonusaha th {
-        background-color: #4ae28a;
-        color: #000; /* tulisan hitam */
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        padding: 8px;
-    }
-
-    #tabeltertibjakonusaha {
-        border-collapse: collapse;
-        width: 100%;
-    }
-</style>
-
-<style>
-  /* Hilangkan zebra striping / belang */
-  table tbody tr:nth-child(odd),
-  table tbody tr:nth-child(even) {
-      background-color: #ffffff !important; /* semua putih */
-  }
-</style>
-
-
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-
- .btn-hover-white:hover {
-  background-color: white !important;
-  color: black !important;
-  border: 1px solid black;
-}
-
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -70,9 +16,8 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
 
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -119,18 +64,18 @@
                                 <option value="2000">2000</option>
                             </select>
                         </div>
-                                   <button class="button-data">
-    <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia1}} (PU)
+                                   <button class="button-modern">
+    <i class="bi bi-file-earmark"></i> {{$totalpenyedia1}} (PU)
 </button>
 
 
-                    <button class="button-data">
-    <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia2}} (NON-PU)
+                    <button class="button-modern">
+    <i class="bi bi-file-earmark"></i> {{$totalpenyedia2}} (NON-PU)
 </button>
 
 
-                    <button class="button-data">
-    <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia3}} (SWASTA)
+                    <button class="button-modern">
+    <i class="bi bi-file-earmark"></i> {{$totalpenyedia3}} (SWASTA)
 </button>
 
 <div style="position: relative; display: inline-block; margin-right:10px;">
@@ -172,14 +117,14 @@
 
 
 
-                                <button class="button-baru" onclick="exportSelectedColumnsToExcel('tabeltertibjakonusaha', 'Data_TertibJakonPenyelenggaraan')">
-                                    <i class="bi bi-download icon-create" style="margin-right: 5px" ></i> Download Excel
+                                <button class="button-berkas" onclick="exportSelectedColumnsToExcel('tabeltertibjakonusaha', 'Data_TertibJakonPenyelenggaraan')">
+                                    <i class="bi bi-download"></i> Download Excel
                                 </button>
 
                                 <a href="/betertibjakonpenyelenggaraan/create">
-                                    <button class="button-hijau";>
+                                    <button class="button-modern";>
                                     <!-- Ikon Kembali -->
-                                    <i class="fa fa-plus icon-create" style="margin-right: 8px;"></i>
+                                    <i class="fa fa-plus " style="margin-right: 8px;"></i>
                                     Buat Baru
                                 </button>
                                 </a>
@@ -190,68 +135,64 @@
                  <div class="card-body p-0">
 
                     <div class="table-responsive" style="width: 100%; overflow-x: auto;">
-                        <table id="tabeltertibjakonusaha" class="zebra-table table-striped" style="white-space: nowrap;">
+                        <table id="tabeltertibjakonusaha" class="zebra-table" style="white-space: nowrap;">
                             <thead>
-                                <tr>
-                                    <th rowspan="2" style="text-align: center; width:75px;">
-    <i class="bi bi-list-ol"></i> No
-</th>
-<th rowspan="2" style="text-align: center; width:125px;">
-    <i class="bi bi-buildings"></i> Penyedia
-</th>
-{{-- <th rowspan="2" style="text-align: center; width:500px;">
-    <i class="bi bi-clipboard-check-fill"></i> Kegiatan Konstruksi
-</th> --}}
-<th rowspan="2" style="text-align: center; width:500px;">
-    <i class="bi bi-house-fill"></i> Nama Pekerjaan
-</th>
-<th rowspan="2" style="text-align: center; width:250px;">
-    <i class="bi bi-file-earmark-text-fill"></i> Nomor Kontrak
-</th>
-{{-- <th rowspan="2" style="text-align: center; width:500px;">
-    <i class="bi bi-geo-alt-fill"></i> BUJK
-</th> --}}
+          <tr>
+    <th rowspan="2" style="text-align:center; width:60px;">
+        <i class="bi bi-list-ol"></i><br>No
+    </th>
 
+    <th rowspan="2" style="text-align:center; min-width:120px;">
+        <i class="bi bi-buildings"></i><br>Penyedia
+    </th>
 
+    <th rowspan="2" style="text-align:center; min-width:220px;">
+        <i class="bi bi-house-fill"></i><br>Nama Pekerjaan
+    </th>
 
-                                    {{-- <th rowspan="2" style="text-align: center; width:300px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Informasi Pekerjaan
-                                    </th> --}}
+    <th rowspan="2" style="text-align:center; min-width:180px;">
+        <i class="bi bi-file-earmark-text-fill"></i><br>Nomor Kontrak
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Pengawasan Pemilihan <br> Penyedia Jasa
-                                    </th>
+    <th rowspan="2" style="text-align:center; min-width:220px;">
+        <i class="bi bi-geo-alt-fill"></i><br>
+        Pengawasan Pemilihan<br>Penyedia Jasa
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Pengawasan Penyusunan <br> Pelaksanaan Kontrak Kerja
-                                    </th>
+    <th rowspan="2" style="text-align:center; min-width:220px;">
+        <i class="bi bi-geo-alt-fill"></i><br>
+        Pengawasan Penyusunan<br>Pelaksanaan Kontrak Kerja
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Pengawasan Terhadap <br> Standar K3 Konstruksi
-                                    </th>
+    <th rowspan="2" style="text-align:center; min-width:220px;">
+        <i class="bi bi-geo-alt-fill"></i><br>
+        Pengawasan Terhadap<br>Standar K3 Konstruksi
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Pengawasan Terhadap <br> Manajemen Mutu Konstruksi
-                                    </th>
+    <th rowspan="2" style="text-align:center; min-width:220px;">
+        <i class="bi bi-geo-alt-fill"></i><br>
+        Pengawasan Terhadap<br>Manajemen Mutu Konstruksi
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Pengawasan Terhadap <br> Penggunaan Material Peralatan
-                                    </th>
+    <th rowspan="2" style="text-align:center; min-width:240px;">
+        <i class="bi bi-geo-alt-fill"></i><br>
+        Pengawasan Terhadap<br>Penggunaan Material Peralatan
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Pengawasan Terhadap <br> Pengelolaan & Pemanfaatan Sumber Material
-                                    </th>
+    <th rowspan="2" style="text-align:center; min-width:260px;">
+        <i class="bi bi-geo-alt-fill"></i><br>
+        Pengawasan Terhadap<br>Pengelolaan & Pemanfaatan Sumber Material
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:175px;">
-                                        <i class="bi bi-tools"></i> Aksi
-                                    </th>
-
-                                </tr>
+    <th rowspan="2" style="text-align:center; width:120px;">
+        <i class="bi bi-tools"></i><br>Aksi
+    </th>
+</tr>
 
                             </thead>
 
                           <tbody id="tableBody">
-                            @foreach ($data as $item)
+                            @forelse($data as $item)
                             <tr>
                               <td style="text-align: center;">{{ $loop->iteration }}</td>
                               <td style="text-align: center;">
@@ -309,7 +250,7 @@
                            {{-- <td style="text-align: center; vertical-align: middle;">
                                 <a href="/betertibjakonpenyelenggaraan/index/{{ $item->id }}" style="text-decoration: none;">
                                     <button style="background-color: #800000; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Buat Berkas
+                                        <i class="bi bi-file-earmark-text "></i> Buat Berkas
                                     </button>
                                 </a>
                             </td> --}}
@@ -318,8 +259,8 @@
                         <td style="text-align: center; vertical-align: middle;">
                             <div style="display: flex; justify-content: center; gap: 8px;">
                                 <a href="/betertibjakonpenyelenggaraan1/{{$item->id}}" style="text-decoration: none;">
-                                    <button class="button-baru">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                    <button class="button-modern">
+                                        <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                     </button>
                                 </a>
 
@@ -330,7 +271,7 @@
                                     </button>
                                     @else
                                     <button class="button-newvalidasi">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                                        <i class="bi bi-file-earmark-text "></i> Upload Berkas
                                     </button>
                                     @endif
                                 </a>
@@ -343,8 +284,8 @@
                                 <td style="text-align: center; vertical-align: middle;">
                                     <div style="display: flex; justify-content: center; gap: 8px;">
                                         <a href="{{ url('/betertibjakonpenyelenggaraan2/' . $item->id) }}" style="text-decoration: none;">
-                                            <button class="button-baru">
-                                                <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                            <button class="button-modern">
+                                                <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                             </button>
                                         </a>
 
@@ -355,7 +296,7 @@
                                         </button>
                                         @else
                                         <button class="button-newvalidasi">
-                                            <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                                            <i class="bi bi-file-earmark-text"></i> Upload Berkas
                                         </button>
                                         @endif
                                     </a>
@@ -366,8 +307,8 @@
                             <td style="text-align: center; vertical-align: middle;">
                                     <div style="display: flex; justify-content: center; gap: 8px;">
                                         <a href="{{ url('/betertibjakonpenyelenggaraan3/' . $item->id) }}" style="text-decoration: none;">
-                                            <button class="button-baru">
-                                                <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                            <button class="button-modern">
+                                                <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                             </button>
                                         </a>
 
@@ -379,7 +320,7 @@
                                             </button>
                                             @else
                                             <button class="button-newvalidasi">
-                                                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                                                <i class="bi bi-file-earmark-text "></i> Upload Berkas
                                             </button>
                                             @endif
                                         </a>
@@ -389,8 +330,8 @@
                                 <td style="text-align: center; vertical-align: middle;">
                                     <div style="display: flex; justify-content: center; gap: 8px;">
                                         <a href="{{ url('/betertibjakonpenyelenggaraan4/' . $item->id) }}" style="text-decoration: none;">
-                                            <button class="button-baru">
-                                                <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                            <button class="button-modern">
+                                                <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                             </button>
                                         </a>
 
@@ -402,7 +343,7 @@
                                         </button>
                                         @else
                                         <button class="button-newvalidasi">
-                                            <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                                            <i class="bi bi-file-earmark-text "></i> Upload Berkas
                                         </button>
                                         @endif
                                     </a>
@@ -412,8 +353,8 @@
                             <td style="text-align: center; vertical-align: middle;">
                                     <div style="display: flex; justify-content: center; gap: 8px;">
                                         <a href="{{ url('/betertibjakonpenyelenggaraan5/' . $item->id) }}" style="text-decoration: none;">
-                                            <button class="button-baru">
-                                                <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                            <button class="button-modern">
+                                                <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                             </button>
                                         </a>
 
@@ -425,7 +366,7 @@
                                             </button>
                                             @else
                                             <button class="button-newvalidasi">
-                                                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                                                <i class="bi bi-file-earmark-text "></i> Upload Berkas
                                             </button>
                                             @endif
                                         </a>
@@ -435,8 +376,8 @@
                                 <td style="text-align: center; vertical-align: middle;">
                                     <div style="display: flex; justify-content: center; gap: 8px;">
                                     <a href="{{ url('/betertibjakonpenyelenggaraan6/' . $item->id) }}" style="text-decoration: none;">
-                                        <button class="button-baru">
-                                            <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <button class="button-modern">
+                                            <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
 
@@ -447,7 +388,7 @@
                                             </button>
                                             @else
                                             <button class="button-newvalidasi">
-                                                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                                                <i class="bi bi-file-earmark-text "></i> Upload Berkas
                                             </button>
                                             @endif
                                         </a>
@@ -465,7 +406,7 @@
                               <td style="text-align: center;">
                                 <!-- Tombol Aksi -->
                                 {{-- <a href="/bebujkkonsultan/show/{{$item->namalengkap}}" class="btn btn-sm btn-info"><i class="bi bi-eye"></i></a> --}}
-                                <a href="/betertibjakonpenyelenggaraan/update/{{$item->id}}" class="button-berkas"><i class="bi bi-pencil-square"></i>Edit</a>
+                                <a href="/betertibjakonpenyelenggaraan/update/{{$item->id}}" class="button-berkas"><i class="bi bi-pencil-square"></i></a>
                                 {{-- <a href="javascript:void(0)" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" data-judul="{{ $item->id }}" onclick="setDeleteUrl(this)">
                                   <i class="bi bi-trash"></i>
                                 </a> --}}
@@ -474,18 +415,47 @@
                                 data-bs-target="#deleteModal"
                                 data-url="{{ route('betertibjakonpenyelenggaraandeletedata', $item->id) }}"
                                 onclick="setDeleteUrl(this)">
-                                    <i class="bi bi-trash"></i>Hapus
+                                    <i class="bi bi-trash"></i>
                                 </a>
 
                               </td>
                             </tr>
-                            @endforeach
+        @empty
+    <tr>
+        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
+            <div style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                color: #6c757d;
+                background-color: #f8f9fa;
+                border: 2px dashed #ced4da;
+                border-radius: 12px;
+                font-size: 16px;
+                animation: fadeIn 0.5s ease-in-out;
+            ">
+                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+                Data Tidak Ditemukan !!
+            </div>
+        </td>
+    </tr>
+@endforelse
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
                           </tbody>
                         </table>
                       </div>
-
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
-
+                                       @include('frontend.A00_new.01_halamanutama.newpaginations')
                  <br><br>
 
                 <!-- Modal Konfirmasi Hapus -->

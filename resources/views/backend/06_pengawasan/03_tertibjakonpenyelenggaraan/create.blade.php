@@ -15,9 +15,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -41,7 +39,7 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.13_judulcreate')
+                                             @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                     </div>
 
                            {{-- ======================================================= --}}
@@ -49,7 +47,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/betertibjakonpenyelenggaraan">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -72,9 +70,9 @@
                                 <div class="row">
                                     <!-- Kolom Kiri -->
                                     <div class="col-md-6">
-                                        <div class="mb-3">
+                                        <div class="form-modern mb-3">
 
-    <label for="penyediastatustertibjakon_id" class="form-label">
+    <label for="penyediastatustertibjakon_id" class="form-label-model">
         <i class="bi bi-card-text text-primary"></i> Sektor
     </label>
     <select id="penyediastatustertibjakon_id" name="penyediastatustertibjakon_id" class="form-control @error('penyediastatustertibjakon_id') is-invalid @enderror">
@@ -89,8 +87,8 @@
     <div class="invalid-feedback">{{ $message }}</div>
     @enderror
 </div>
-<div class="mb-3">
-    <label for="kegiatankonstruksi" class="form-label">
+<div class="form-modern mb-3">
+    <label for="kegiatankonstruksi" class="form-label-model">
         <i class="bi bi-tools text-primary"></i> Kegiatan Konstruksi
     </label>
     <input type="text" id="kegiatankonstruksi" name="kegiatankonstruksi"
@@ -101,8 +99,8 @@
     @enderror
 </div>
 
-<div class="mb-3">
-    <label for="namapekerjaan" class="form-label">
+<div class="form-modern mb-3">
+    <label for="namapekerjaan" class="form-label-model">
         <i class="bi bi-clipboard-check-fill text-primary"></i> Nama Pekerjaan
     </label>
     <input type="text" id="namapekerjaan" name="namapekerjaan"
@@ -117,8 +115,8 @@
 </div>
 
 <div class="col-md-6">
-<div class="mb-3">
-    <label for="nomorkontrak" class="form-label">
+<div class="form-modern mb-3">
+    <label for="nomorkontrak" class="form-label-model">
         <i class="bi bi-file-earmark-text-fill text-primary"></i> Nomor Kontrak
     </label>
     <input type="text" id="nomorkontrak" name="nomorkontrak"
@@ -129,9 +127,9 @@
     @enderror
 </div>
 
-<div class="mb-3">
-    <label for="bujk" class="form-label">
-        <i class="bi bi-building text-primary"></i> BUJK
+<div class="form-modern mb-3">
+    <label for="bujk" class="form-label-model">
+        <i class="bi bi-building text-primary"></i> Badan Usaha Jasa Konstruksi PT/CV
     </label>
     <input type="text" id="bujk" name="bujk"
         class="form-control @error('bujk') is-invalid @enderror"
@@ -148,9 +146,11 @@
 
                     <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                     <div class="flex justify-end">
-                                        <button class="button-hijau" type="button" onclick="openModal()">
-                                            <i class="bi bi-plus-circle-fill"></i>Buat Baru
-                                        </button>
+                                    <button class="button-baru" type="button" onclick="openModal()">
+                                    <i class="bi bi-save" style="margin-right: 5px;"></i>
+                                    <span style="font-family: 'Poppins', sans-serif;">Tambah Data </span>
+                                    </button>
+
                                     </div>
                                     <!-- Modal Konfirmasi -->
                                     <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
