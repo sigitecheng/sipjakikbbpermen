@@ -13,8 +13,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -38,7 +37,8 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.13_judulcreate')
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                     </div>
 
                            {{-- ======================================================= --}}
@@ -46,10 +46,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/settingstandatangan">
-                    <button
-                    onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-                    onmouseout="this.style.backgroundColor='#374151'; this.style.color='white';"
-                    style="background-color: #374151; color: white; border: none; margin-right: 10px; padding: 10px 20px; border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center; transition: background-color 0.3s, color 0.3s; text-decoration: none;">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -73,8 +70,8 @@
                                     <!-- Left Column (6/12) -->
                                     <div class="col-md-6">
 
-                                    <div class="mb-3">
-                                        <label class="form-label" for="namalengkap">
+                                    <div class="form-modern mb-3">
+                                        <label class="form-label-modern" for="namalengkap">
                                             <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Nama Lengkap
                                         </label>
                                         <input type="text" id="namalengkap" name="namalengkap" class="form-control @error('namalengkap') is-invalid @enderror" value="{{ old('namalengkap') }}" />
@@ -83,8 +80,8 @@
                                         @enderror
                                     </div>
 
-                                  <div class="mb-3">
-    <label class="form-label" for="tandatangan">
+                                  <div class="form-modern mb-3">
+    <label class="form-label-modern" for="tandatangan">
         <i class="bi bi-building" style="margin-right: 8px; color: navy;"></i> Tanda Tangan
     </label>
     <input type="file" id="tandatangan" name="tandatangan" accept="image/*" class="form-control @error('tandatangan') is-invalid @enderror" onchange="previewImage(event)" />
@@ -129,19 +126,10 @@ function previewImage(event) {
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                                    <button type="button" onclick="openModal()"
-                                    onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-                                    onmouseout="this.style.backgroundColor='#189200'; this.style.color='white';"
-                                    style="background-color: #189200; color: white; border: none; margin-right: 10px; padding: 10px 20px; border-radius: 15px; font-size: 16px; cursor: pointer; display: flex; align-items: center; transition: background-color 0.3s, color 0.3s; text-decoration: none;">
-
-                                    <!-- Ikon SVG Pensil -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
-                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                               </svg>
-                                    <span style="font-family: 'Poppins', sans-serif;">Create</span>
-                                </button>
+                                       <button class="button-baru" type="button" onclick="openModal()">
+                                        <i class="bi bi-plus-lg me-2"></i>
+                                        <span style="font-family: 'Poppins', sans-serif;">Simpan Data ?</span>
+                                    </button>
                                 </div>
                                 <!-- Modal Konfirmasi -->
                                 <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">

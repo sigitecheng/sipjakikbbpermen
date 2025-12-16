@@ -16,9 +16,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -42,7 +40,8 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.13_judulcreate')
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                     </div>
 
 
@@ -91,13 +90,13 @@
                                         <div class="modal-content" style="font-size: 0.875rem;">
                                             <div class="modal-header d-flex align-items-center">
                                                 <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
-                                                    <img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" class="me-2">
+                                                    <img src="/assets/icon/sipjakikbb.png" alt="Logo" width="30" class="me-2">
                                                 </a>
                                                 <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
                                                     <img src="/assets/icon/pupr.png" alt="Logo" width="25" class="me-2">
                                                 </a>
                                                 <span class="mx-2">:</span>
-                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora</p>
+                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
@@ -301,11 +300,12 @@
 
                                 <!-- Kontainer Kanan -->
                                 <div>
-                                    <a href="javascript:history.back()" class="button-newvalidasi" style="text-decoration: none;">
+                                        <a href="{{ url()->previous() }}" class="button-modern" style="text-decoration: none;">
                                             <i class="bi bi-arrow-left icon-create" style="margin-right: 8px;"></i>
                                             Kembali
                                         </a>
-                                </div>
+                                    </div>
+
                             </div>
 
                         </div>
@@ -411,13 +411,13 @@
                                 <div class="modal-content" style="font-size: 0.875rem;">
                                     <div class="modal-header d-flex align-items-center">
                                         <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
-                                            <img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" class="me-2">
+                                            <img src="/assets/icon/sipjakikbb.png" alt="Logo" width="35" class="me-2">
                                         </a>
                                         <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
                                             <img src="/assets/icon/pupr.png" alt="Logo" width="25" class="me-2">
                                         </a>
                                         <span class="mx-2">:</span>
-                                        <p style="margin-left: 10px; margin-bottom: 0; font-size:15px;">Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora</p>
+                                        <p style="margin-left: 10px; margin-bottom: 0; font-size:15px;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
                                     </div>
                                     <br>
                                     <div class="modal-body">

@@ -1,22 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
 
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
@@ -33,8 +14,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
     <!--begin::App Content Header-->
      <div class="app-content-header">
@@ -114,7 +94,7 @@
 
                         <div style="position: relative; display: inline-block; margin-right:10px;">
                             <input type="search" id="searchInput" placeholder="Cari Tanda Tangan ...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
-                            <i class="fas fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
+                            <i class="bi bi-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
                         </div>
                         <script>
                             function updateEntries() {
@@ -140,13 +120,13 @@
 
                                 </script>
 <!-- Tombol Download Excel -->
-<button class="button-baru" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_universitas_sekolah')">
+<button class="button-berkas" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_universitas_sekolah')">
     <i class="bi bi-download" style="margin-right: 5px;"></i> Download Excel
 </button>
 
 <!-- Tombol Create -->
 <a href="/settingstandatangan/create">
-    <button class="button-baru">
+    <button class="button-modern">
         <i class="fa fa-plus" style="margin-right: 8px;"></i> Buat Baru
     </button>
 </a>
@@ -167,7 +147,7 @@
      </tr>
  </thead>
  <tbody id="tableBody">
-     @foreach ($data as $item )
+     @forelse($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
          <td style="text-align: left;">{{ $item->namalengkap }}</td>
@@ -220,13 +200,45 @@
 
         </tr>
 
-     @endforeach
- </tbody>
+
+        @empty
+    <tr>
+        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
+            <div style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                color: #6c757d;
+                background-color: #f8f9fa;
+                border: 2px dashed #ced4da;
+                border-radius: 12px;
+                font-size: 16px;
+                animation: fadeIn 0.5s ease-in-out;
+            ">
+                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+                Data Tidak Ditemukan !!
+            </div>
+        </td>
+    </tr>
+@endforelse
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+    </tbody>
 </table>
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 

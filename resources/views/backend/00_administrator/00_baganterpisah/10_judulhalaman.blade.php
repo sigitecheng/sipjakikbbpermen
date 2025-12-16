@@ -1,49 +1,41 @@
 @include('button')
 
-<style>
-    @keyframes gradientShift {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+<div class="container-fluid px-0">
+    <div class="w-100 px-0 mb-3">
+        <div class="d-flex align-items-center p-4"
+             style="
+                background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+                border-left: 6px solid #0d6efd;
+                border-radius: 14px;
+                box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+                font-family: 'Poppins', sans-serif;
+             ">
 
-    .halaman-title {
-        margin-bottom: 10px;
-        font-weight: 900;
-        font-size: 16px;
-        text-align: center;
-        color: white;
-        padding: 10px 25px;
-        border-radius: 10px;
-        display: inline-block;
-        width: 100%;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-        background: linear-gradient(135deg, #06af0c, #b4c6d6, #06af0c);
-        background-size: 300% 300%;
-        animation: gradientShift 6s ease infinite;
-        font-family: 'Poppins', sans-serif;
-    }
-</style>
+            <div class="d-flex align-items-center gap-3">
+                <div style="
+                    width:44px;
+                    height:44px;
+                    border-radius:12px;
+                    background:#0d6efd;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:white;
+                    font-size:18px;
+                ">
+                    <i class="bi bi-briefcase-fill"></i>
+                </div>
 
-<style>
-/* Sembunyikan button-hijau di mobile */
-@media (max-width: 768px) {
-    .card-header {
-        display: none;
-    }
-}
-</style>
+                <div>
+                    <div style="font-size:18px;font-weight:700;">
+                        {{ $title }}
+                    </div>
+                    <div style="font-size:13px;color:#6c757d;">
+                        Sistem Informasi Jasa Konstruksi
+                    </div>
+                </div>
+            </div>
 
-<div class="card mb-4">
-    <div class="card-header">
-        <div class="button-modern">
-            📌 Halaman : {{ $title }}
         </div>
     </div>
 </div>

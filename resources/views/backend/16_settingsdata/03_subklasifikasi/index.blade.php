@@ -1,22 +1,3 @@
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-</style>
 
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
@@ -33,9 +14,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
     <!--begin::App Content Header-->
      <div class="app-content-header">
        <!--begin::Container-->
@@ -92,13 +71,13 @@
                 {{-- <option value="10">10</option> --}}
                 <option value="25">25</option>
                 <option value="50">50</option>
-                {{-- <option value="75">75</option>
+                <option value="75">75</option>
                 <option value="100">100</option>
                 <option value="150">150</option>
                 <option value="200">200</option>
                 <option value="500">500</option>
                 <option value="1000">1000</option>
-                <option value="2000">2000</option> --}}
+                <option value="2000">2000</option>
             </select>
         </div>
 
@@ -113,7 +92,7 @@
         </script>
 
                         <div style="position: relative; display: inline-block; margin-right:10px;">
-                            <input type="search" id="searchInput" placeholder="Cari Nama Pekerjaan ...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
+                            <input type="search" id="searchInput" placeholder="Cari Sub Klasifikasi ...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
                             <i class="fas fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
                         </div>
                         <script>
@@ -127,7 +106,7 @@
                             function searchTable() {
                             let input = document.getElementById("searchInput").value;
 
-                            fetch(`/settingstandatangan?search=${input}`)
+                            fetch(`/settingssubklasifikasi?search=${input}`)
                                 .then(response => response.text())
                                 .then(html => {
                                     let parser = new DOMParser();
@@ -140,7 +119,7 @@
 
                                 </script>
 <!-- Tombol Download Excel -->
-<button class="button-baru" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_universitas_sekolah')">
+<button class="button-berkas" onclick="exportTableToExcel('tabelBujkkonstruksi', 'data_universitas_sekolah')">
     <i class="bi bi-download" style="margin-right: 5px;"></i> Download Excel
 </button>
 
@@ -167,30 +146,16 @@
      </tr>
  </thead>
  <tbody id="tableBody">
-     @foreach ($data as $item )
+     @forelse($data as $item )
      <tr class="align-middle">
          <td style="text-align: center;">{{ $loop->iteration }}</td>
          <td style="text-align: left;" >
             {{ $item->kode }}
         </td>
 
-        <td style="text-align: left;">
-             {{ $item->pekerjaan }}
-
-               {{-- <div style="margin-top: 10px;">
-    @if($item->tandatangan && file_exists(public_path('storage/' . $item->tandatangan)))
-        <!-- Menampilkan gambar dari storage -->
-        <img src="{{ asset('storage/' . $item->tandatangan) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 80px; object-fit: contain;" loading="lazy">
-    @elseif($item->tandatangan)
-        <!-- Menampilkan gambar dari path luar storage -->
-        <img src="{{ asset($item->tandatangan) }}" alt="Gambar Peraturan" style="width: 100%; max-height: 80px; object-fit: contain;" loading="lazy">
-    @else
-        <!-- Placeholder jika tidak ada data -->
-        <p>Data belum diupdate</p>
-    @endif
-</div> --}}
-
-        </td>
+<td style="text-align:left; white-space: normal; overflow-wrap: anywhere;">
+    {{ $item->pekerjaan }}
+</td>
 
         <td style="text-align: center; vertical-align: middle;">
             {{-- <a href="/bebujkkonstruksi/show/{{$item->namalengkap}}" class="btn btn-sm btn-info me-2" title="Show">
@@ -223,14 +188,44 @@
 
         </tr>
 
-     @endforeach
- </tbody>
+        @empty
+    <tr>
+        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
+            <div style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                color: #6c757d;
+                background-color: #f8f9fa;
+                border: 2px dashed #ced4da;
+                border-radius: 12px;
+                font-size: 16px;
+                animation: fadeIn 0.5s ease-in-out;
+            ">
+                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+                Data Tidak Ditemukan !!
+            </div>
+        </td>
+    </tr>
+@endforelse
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+    </tbody>
 </table>
                      </div>
                  </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
-
+                                  @include('frontend.A00_new.01_halamanutama.newpaginations')
                  <br><br>
 
 

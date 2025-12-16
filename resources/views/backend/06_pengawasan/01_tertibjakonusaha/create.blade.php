@@ -1,50 +1,3 @@
-{{-- ------------------------------------ --}}
-<style>
- body {
-        font-family: 'Poppins', sans-serif;
-    }
-    .zebra-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    border: 1px solid #e5e7eb;
-}
-
-.zebra-table th {
-    background-color: #ADD8E6; /* biru muda */
-    color: black;
-    text-align: center;
-    padding: 8px 12px;
-    border: 1px solid #e5e7eb;
-    white-space: nowrap;
-}
-
-.zebra-table td {
-    text-align: center;
-    padding: 8px 12px;
-    border: 1px solid #e5e7eb;
-    white-space: nowrap;
-}
-
-.zebra-table tbody tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-.zebra-table tbody tr:nth-child(even) {
-    background-color: #f1f1f1;
-}
-
-.zebra-table tbody tr:hover {
-    background-color: #ffd100 !important;
-}
-
-th {
-    background-color: #ADD8E6;
-}
-
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -65,7 +18,7 @@ th {
    <!--begin::App Main-->
    <main class="app-main"
 style="
-  background: linear-gradient(to bottom, #a8e6cf, #ffffff); /* hijau muda ke putih */
+  background: linear-gradient(to bottom, #ffffff, #ffffff); /* hijau muda ke putih */
   margin: 0;
   padding: 0;
   position: relative;
@@ -133,23 +86,8 @@ style="
                  </div>
                  <!-- /.card-header -->
                  <div class="card-header">
-                    <div
-                style="
-    margin-bottom: 10px;
-    font-weight: 900;
-    font-size: 16px;
-    text-align: center;
-    background: linear-gradient(135deg, #a8e6cf, #ffffff); /* gradasi hijau muda ke putih */
-    color: #004d40; /* teks hijau gelap agar kontras */
-    padding: 10px 25px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-"
->
-                <span style="font-family: 'Poppins', sans-serif;">📌 Halaman : {{$title}}</span>
-                </div>
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
 
 
 
@@ -202,22 +140,13 @@ style="
           @csrf
                             <!-- begin::Body -->
                             <div class="card-body">
-                                    <!-- Left Column (6/12) -->
-<div class="row">
-    <div class="text-center">
-    <hr class="my-4" style="border-top: 2px dashed green; width: 60%; margin: auto;">
-    <h5 style="color: green; font-weight: bold; margin-top: 5px; font-size:16px;">
-        <i class="bi bi-upload" style="margin-right: 6px;"></i>
-        Tambahkan Data Baru Tertib Usaha Jasa Konstruksi
-    </h5>
-    <hr class="my-4" style="border-top: 2px dashed #0d6efd; width: 60%; margin: auto;">
-</div>
+
 <div class="row">
                                     <!-- Kolom Kiri -->
 <div class="col-md-6">
-<div class="mb-3">
-    <label for="penyediastatustertibjakon_id" class="form-label">
-        <i class="bi bi-card-text" style="color: #800000;"></i> Sektor
+<div class="form-modern mb-3">
+    <label for="penyediastatustertibjakon_id" class="form-label-modern">
+        <i class="bi bi-card-text me-2" style="color: #800000;"></i> Sektor
     </label>
     <select id="penyediastatustertibjakon_id" name="penyediastatustertibjakon_id" class="form-control @error('penyediastatustertibjakon_id') is-invalid @enderror">
         <option value="">-- Pilih Sektor --</option>
@@ -233,9 +162,9 @@ style="
 </div>
 
 <!-- NIB -->
-<div class="mb-3">
-    <label for="nib" class="form-label">
-        <i class="bi bi-123" style="color: #800000;"></i> NIB
+<div class="form-modern mb-3">
+    <label for="nib" class="form-label-modern">
+        <i class="bi bi-123 me-2" style="color: #800000;"></i> NIB
     </label>
     <input type="number" id="nib" name="nib"
         class="form-control @error('nib') is-invalid @enderror"
@@ -246,9 +175,9 @@ style="
 </div>
 
 <!-- Nama Pekerjaan -->
-<div class="mb-3">
-    <label for="namapekerjaan" class="form-label">
-        <i class="bi bi-briefcase" style="color: #800000;"></i> Nama Pekerjaan
+<div class="form-modern mb-3">
+    <label for="namapekerjaan" class="form-label-modern">
+        <i class="bi bi-briefcase me-2" style="color: #800000;"></i> Nama Pekerjaan
     </label>
     <input type="text" id="namapekerjaan" name="namapekerjaan"
         class="form-control @error('namapekerjaan') is-invalid @enderror"
@@ -263,14 +192,14 @@ style="
 
 
 <!-- Tahun Pelaksanaan -->
-<div class="mb-3">
-    <label for="tahunpelaksanaan" class="form-label">
-        <i class="bi bi-calendar-event" style="color: #800000;"></i> Tahun Pelaksanaan
+<div class="form-modern mb-3">
+    <label for="tahunpelaksanaan" class="form-label-modern">
+        <i class="bi bi-calendar-event me-2" style="color: #800000;"></i> Tahun Pelaksanaan
     </label>
     <select id="tahunpelaksanaan" name="tahunpelaksanaan"
         class="form-select @error('tahunpelaksanaan') is-invalid @enderror">
         <option value="">-- Pilih Tahun --</option>
-        @foreach(['2024', '2025', '2026'] as $tahun)
+        @foreach(['2024', '2025', '2026', '2027', '2028'] as $tahun)
             <option value="{{ $tahun }}"
                 {{ old('tahunpelaksanaan', $data->tahunpelaksanaan ?? '') == $tahun ? 'selected' : '' }}>
                 {{ $tahun }}
@@ -283,9 +212,9 @@ style="
 </div>
 
 <!-- Nama Badan Usaha -->
-<div class="mb-3">
-    <label for="namabadanusaha" class="form-label">
-        <i class="bi bi-building" style="color: #800000;"></i> Nama Badan Usaha
+<div class="form-modern mb-3">
+    <label for="namabadanusaha" class="form-label-modern">
+        <i class="bi bi-building me-2" style="color: #800000;"></i> Nama Badan Usaha
     </label>
     <input type="text" id="namabadanusaha" name="namabadanusaha"
         class="form-control @error('namabadanusaha') is-invalid @enderror"
@@ -296,9 +225,9 @@ style="
 </div>
 
 <!-- PJBU -->
-<div class="mb-3">
-    <label for="pjbu" class="form-label">
-        <i class="bi bi-person-badge" style="color: #800000;"></i> Penanggung Jawab Badan Usaha (PJBU)
+<div class="form-modern mb-3">
+    <label for="pjbu" class="form-label-modern">
+        <i class="bi bi-person-badge me-2" style="color: #800000;"></i> Penanggung Jawab Badan Usaha (PJBU)
     </label>
     <input type="text" id="pjbu" name="pjbu"
         class="form-control @error('pjbu') is-invalid @enderror"
@@ -319,9 +248,9 @@ style="
 
                             <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                 <div class="flex justify-end">
-                               <button class="button-hijau" type="button" onclick="openModal()">
+                               <button class="button-baru" type="button" onclick="openModal()">
                                     <i class="bi bi-save" style="margin-right: 5px;"></i>
-                                    <span style="font-family: 'Poppins', sans-serif;">Simpan</span>
+                                    <span style="font-family: 'Poppins', sans-serif;">Tambah Data </span>
                                     </button>
 
                                 </div>

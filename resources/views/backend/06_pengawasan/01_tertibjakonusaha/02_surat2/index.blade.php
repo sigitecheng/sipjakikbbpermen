@@ -1,49 +1,3 @@
-<style>
-    .btn-suspend {
-        background-color: orange;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        transition: all 0.3s ease;
-    }
-
-    .btn-suspend:hover {
-        background-color: white;
-        color: black;
-        border: 1px solid orange;
-    }
-
-    .btn-expired {
-        background-color: red;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        transition: all 0.3s ease;
-    }
-
-    .btn-expired:hover {
-        background-color: white;
-        color: black;
-        border: 1px solid red;
-    }
-
-    .btn-active {
-        background-color: green;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        transition: all 0.3s ease;
-    }
-
-    .btn-active:hover {
-        background-color: white;
-        color: black;
-        border: 1px solid green;
-    }
-</style>
 
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
@@ -63,9 +17,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
-
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -90,11 +42,11 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.14_judulshow')
-                <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
+               <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
 
                     <a href="/betertibjakonusaha">
-                        <button class="button-newvalidasi">
+                        <button class="button-modern">
                         <i class="bi bi-arrow-left icon-create"></i>
                             Kembali
                         </button>

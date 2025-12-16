@@ -1,31 +1,3 @@
-
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-
- .btn-hover-white:hover {
-  background-color: white !important;
-  color: black !important;
-  border: 1px solid black;
-}
-
-</style>
-
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
 <!--begin::Body-->
@@ -44,7 +16,7 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
     <!--begin::App Content Header-->
      <div class="app-content-header">
@@ -62,26 +34,19 @@
      </div>
 
      <!-- Menampilkan pesan sukses -->
-<br>
 
      <div class="container-fluid">
          <!--begin::Row-->
          <div class="row" style="margin-right: 10px; margin-left:10px;">
              <!-- /.card -->
              <div class="card mb-4">
+                         <!-- /.card-header -->
                  <div class="card-header">
-                 </div>
-                 <!-- /.card-header -->
-                 <div class="card-header">
-                    @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
 
-
-
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
-
-
                         <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
-                            <label for="entries" style="font-weight: 600; font-size: 14px;">Tampilkan data : </label>
+                            <label for="entries">Data : </label>
                             <select id="entries" onchange="updateEntries()" style="padding: 8px 12px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; font-size: 14px; cursor: pointer;">
                                 <option value="10">10</option>
                                 <option value="25">25</option>
@@ -97,23 +62,55 @@
                         </div>
 
 
-                    <button class="button-data">
+                    <button class="button-modern">
     <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia1}} (PU)
 </button>
 
 
-                    <button class="button-data">
+                    <button class="button-modern">
     <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia2}} (NON-PU)
 </button>
 
 
-                    <button class="button-data">
+                    <button class="button-modern">
     <i class="bi bi-file-earmark icon-create" style="margin-right: 5px"></i> {{$totalpenyedia3}} (SWASTA)
 </button>
 
 <div style="position: relative; display: inline-block; margin-right:10px;">
-    <input type="search" id="searchInput" placeholder="Cari Paket Pekerjaan ...." style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
-    <i class="bi bi-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
+   <div class="d-flex align-items-center px-3 py-2 rounded"
+            style="
+                border: 1px solid #d0d0d5;
+                flex: 1;
+                min-width: 280px;
+                background: white;
+                height: 44px;
+                box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+            ">
+            <input type="text"
+                id="searchMaterial"
+                placeholder="Cari Paket Pekerjaan ?"
+                oninput="searchMaterial()"
+                class="w-100 border-0 outline-none"
+                style="
+                    font-family: 'Poppins';
+                    background: transparent;
+                    font-size: 14px;
+                    color: #333;
+                " />
+
+            <button type="button" class="ms-2"
+                style="border:none; background:none; color:#0d6efd;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681
+                    12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681
+                    1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945
+                    1 15.681 4.28645 15.681 8.3405Z"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
 </div>
 
 <script>
@@ -135,33 +132,19 @@ document.addEventListener('click', function(e) {
     }
 });
 
-function fetchData(url = null) {
-    const input = document.getElementById("searchInput").value;
-    const fetchUrl = url ? url : `/betertibjakonusaha?search=${encodeURIComponent(input)}`;
-
-    fetch(fetchUrl, {
-        headers: { 'X-Requested-With': 'XMLHttpRequest' }
-    })
-    .then(response => response.json())
-    .then(data => {
-        document.querySelector("#tabeltertibjakonusahasearc").innerHTML = data.html;
-        window.history.pushState({}, '', fetchUrl); // update URL tanpa reload
-    })
-    .catch(error => console.error("Error fetching data:", error));
-}
 
 </script>
 
 
-                                <button class="button-baru" onclick="exportSelectedColumnsToExcel('tabeltertibjakonusaha', 'Data_TertibJakonUsaha')">
-                                    <i class="bi bi-download icon-create" style="margin-right: 5px" ></i> Download Excel
+                                <button class="button-berkas" onclick="exportSelectedColumnsToExcel('tabeltertibjakonusaha', 'Data_TertibJakonUsaha')">
+                                    <i class="bi bi-download"></i> Download Excel
                                 </button>
 
                                 <a href="/betertibjakonusaha/create">
-                                    <button class="button-hijau";>
+                                    <button class="button-modern";>
                                     <!-- Ikon Kembali -->
                                     <i class="fa fa-plus icon-create" style="margin-right: 8px;"></i>
-                                    Buat Baru
+                                    Tambah Data
                                 </button>
                                 </a>
 
@@ -171,75 +154,62 @@ function fetchData(url = null) {
                  <div class="card-body p-0">
 
                     <div style="width: 100%; overflow-x: auto;">
-                        <table id="tabeltertibjakonusaha" class="zebra-table table-striped">
+                        <table id="tabeltertibjakonusaha" class="zebra-table">
                             <thead>
                                 <tr>
-                                    <th rowspan="2" style="text-align: center; width:75px;">
-                                        <i class="bi bi-list-ol"></i> No
-                                    </th>
-                                    <th rowspan="2" style="text-align: center; width:125px;">
-                                        <i class="bi bi-people-fill"></i> Sektor
-                                    </th>
-                                    <th rowspan="2" style="text-align: center; width:200px;">
-                                        <i class="bi bi-building"></i> NIB
-                                    </th>
-                                    <th rowspan="2" style="text-align: center; width:500px;">
-                                        <i class="bi bi-geo-alt-fill"></i> Nama Pekerjaan
-                                    </th>
-                                    <th rowspan="2" style="text-align: center; width:200px; white-space: normal; word-wrap: break-word;">
-                                        <i class="bi bi-calendar-event"></i> Tahun Pelaksanaan
-                                    </th>
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-building-fill"></i> Badan Usaha
-                                    </th>
+    <th rowspan="2" style="width:60px; text-align:center;">
+        <i class="bi bi-list-ol"></i><br>No
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-building-fill"></i> PJBU
-                                    </th>
+    <th rowspan="2" style="width:210px; text-align:center;">
+        <i class="bi bi-people-fill"></i><br>Sektor
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-building-fill"></i> Kesesuaian Kegiatan Konstruksi
-                                    </th>
+    <th rowspan="2" style="width:160px; text-align:center;">
+        <i class="bi bi-building"></i><br>NIB
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-building-fill"></i> Segmentasi Pasar
-                                    </th>
+    <th rowspan="2" style="width:280px; text-align:center;">
+        <i class="bi bi-geo-alt-fill"></i><br>Nama Pekerjaan
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-building-fill"></i> Pemenuhan Syarat
-                                    </th>
+    <th rowspan="2" style="width:120px; text-align:center;">
+        <i class="bi bi-calendar-event"></i><br>Tahun
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:400px;">
-                                        <i class="bi bi-building-fill"></i> Pelaksana Pengembangan Usaha
-                                    </th>
+    <th rowspan="2" style="width:220px; text-align:center;">
+        <i class="bi bi-building-fill"></i><br>Badan Usaha
+    </th>
 
-                                  {{-- <th rowspan="2" style="text-align: center; width:300px;">
-    <i class="bi bi-tools"></i> Berkas Dukung <br> Kesesuaian Kegiatan Konstruksi
-</th>
+    <th rowspan="2" style="width:180px; text-align:center;">
+        <i class="bi bi-person-badge-fill"></i><br>PJBU
+    </th>
 
-                                  <th rowspan="2" style="text-align: center; width:300px;">
-    <i class="bi bi-tools"></i> Berkas Dukung <br> Segmentasi Pasar
-</th>
+    <th rowspan="2" style="width:800px; text-align:center;">
+        <i class="bi bi-check-circle-fill"></i><br>Kesesuaian
+    </th>
 
-<th rowspan="2" style="text-align: center; width:300px;">
-    <i class="bi bi-tools"></i> Berkas Dukung <br> Pemenuhan Syarat
-</th>
+    <th rowspan="2" style="width:800px; text-align:center;">
+        <i class="bi bi-diagram-3-fill"></i><br>Segmentasi
+    </th>
 
-<th rowspan="2" style="text-align: center; width:300px;">
-    <i class="bi bi-tools"></i> Berkas Dukung <br> Pelaksana Pengembangan Usaha
-</th> --}}
+    <th rowspan="2" style="width:800px; text-align:center;">
+        <i class="bi bi-clipboard-check-fill"></i><br>Syarat
+    </th>
 
-                                    <th rowspan="2" style="text-align: center; width:300px;">
-                                        <i class="bi bi-tools"></i> Aksi
-                                    </th>
+    <th rowspan="2" style="width:800px; text-align:center;">
+        <i class="bi bi-tools"></i><br>Pengembangan
+    </th>
 
-
-                                </tr>
+    <th rowspan="2" style="width:200px; text-align:center;">
+        <i class="bi bi-gear-fill"></i><br>Aksi
+    </th>
+</tr>
 
                             </thead>
 
                           <tbody id="tabeltertibjakonusahasearc">
-                            @foreach ($data as $item)
+                            @forelse($data as $item)
                             <tr>
 
                               <td style="text-align: center;">{{ $loop->iteration }}</td>
@@ -267,17 +237,17 @@ function fetchData(url = null) {
     <td style="text-align: center; vertical-align: middle;">
                                     <a href="/betertibjakonusahasuratpercobaan/create/{{$item->id}}" style="text-decoration: none;">
                                         <button class="button-baru">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
                                         <a href="{{ url('/beuploadberkasusaha1/upload/' . $item->id) }}" style="text-decoration: none;">
         @if(!empty($item->cadangan1))
             <button class="button-berkas">
-                <i class="bi bi-check-circle" style="margin-right: 5px;"></i> Berkas Ada
+                <i class="bi bi-check-circle"></i> Berkas Ada
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text"></i> Upload Berkas
             </button>
         @endif
     </a>
@@ -286,18 +256,18 @@ function fetchData(url = null) {
                                <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonusahasegmentasipasar/index/' . $item->id) }}" style="text-decoration: none;">
                                         <button class="button-baru">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
 
                                     <a href="{{ url('/beuploadberkasusaha2/upload/' . $item->id) }}" style="text-decoration: none;">
         @if(!empty($item->cadangan2))
             <button class="button-berkas">
-                <i class="bi bi-check-circle" style="margin-right: 5px;"></i> Berkas Ada
+                <i class="bi bi-check-circle"></i> Berkas Ada
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text"></i> Upload Berkas
             </button>
         @endif
     </a>
@@ -307,17 +277,17 @@ function fetchData(url = null) {
                                <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonusahapemenuhansyarat/index/' . $item->id) }}" style="text-decoration: none;">
                                         <button class="button-baru">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
                                     <a href="{{ url('/beuploadberkasusaha3/upload/' . $item->id) }}" style="text-decoration: none;">
         @if(!empty($item->cadangan3))
             <button class="button-berkas">
-                <i class="bi bi-check-circle" style="margin-right: 5px;"></i> Berkas Ada
+                <i class="bi bi-check-circle"></i> Berkas Ada
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text"></i> Upload Berkas
             </button>
         @endif
     </a>
@@ -326,17 +296,17 @@ function fetchData(url = null) {
                                 <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonusahapelaksana/index/' . $item->id) }}" style="text-decoration: none;">
                                         <button class="button-baru">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                         </button>
                                     </a>
                                     <a href="{{ url('/beuploadberkasusaha4/upload/' . $item->id) }}" style="text-decoration: none;">
         @if(!empty($item->cadangan4))
             <button class="button-berkas">
-                <i class="bi bi-check-circle" style="margin-right: 5px;"></i> Berkas Ada
+                <i class="bi bi-check-circle"></i> Berkas Ada
             </button>
         @else
             <button class="button-newvalidasi">
-                <i class="bi bi-file-earmark-text icon-create"></i> Upload Berkas
+                <i class="bi bi-file-earmark-text"></i> Upload Berkas
             </button>
         @endif
     </a>
@@ -411,18 +381,52 @@ function fetchData(url = null) {
                               <td style="text-align: center;">
                                 <!-- Tombol Aksi -->
                                 {{-- <a href="/bebujkkonsultan/show/{{$item->namalengkap}}" class="btn btn-sm btn-info"><i class="bi bi-eye"></i></a> --}}
-                                <a href="/betertibjakonusaha/update/{{$item->id}}" class="button-berkas"><i class="bi bi-pencil-square"></i>Edit</a>
+                                <a href="/betertibjakonusaha/update/{{$item->id}}" class="button-berkas"><i class="bi bi-pencil-square"></i></a>
                                 <a href="javascript:void(0)" class="button-merah" data-bs-toggle="modal" data-bs-target="#deleteModal" data-judul="{{ $item->id }}" onclick="setDeleteUrl(this)">
-                                  <i class="bi bi-trash"></i>Hapus
+                                  <i class="bi bi-trash"></i>
                                 </a>
                               </td>
                             </tr>
-                            @endforeach
-                          </tbody>
+
+        @empty
+    <tr>
+        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
+            <div style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                color: #6c757d;
+                background-color: #f8f9fa;
+                border: 2px dashed #ced4da;
+                border-radius: 12px;
+                font-size: 16px;
+                animation: fadeIn 0.5s ease-in-out;
+            ">
+                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+                Data Tidak Ditemukan !!
+            </div>
+        </td>
+    </tr>
+@endforelse
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+
+
+                        </tbody>
                         </table>
                       </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
 
                  <br><br>
 
@@ -564,313 +568,17 @@ function fetchData(url = null) {
 
 
 <script>
-    function printModalContent(id) {
-        const modalContent = document.querySelector(`#modalKtp${id} .modal-content`);
-        if (!modalContent) {
-            alert("Konten tidak ditemukan.");
-            return;
-        }
+function searchMaterial() {
+    let input = document.getElementById("searchMaterial").value;
 
-        const printWindow = window.open('', '', 'width=1200,height=800');
-        printWindow.document.write(`
-            <html>
-            <head>
-                <title>Print Dokumen</title>
-                <style>
-                    @media print {
-                        @page {
-                            size: A4 landscape;
-                            margin: 0mm;
-                        }
-                        body {
-                            font-family: Arial, sans-serif;
-                            font-size: 12px;
-                            color: #000;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            page-break-inside: auto;
-                        }
-                        th, td {
-                            border: 1px solid #000;
-                            padding: 4px;
-                            vertical-align: top;
-                        }
-                        .no-border td {
-                            border: none;
-                        }
-                    }
-
-                    body {
-                        margin: 10mm;
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                    }
-
-                    h5 {
-                        font-size: 1rem;
-                        margin-bottom: 10px;
-                    }
-
-                    .table-bordered {
-                        border: 1px solid #000;
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-
-                    .table-bordered th, .table-bordered td {
-                        border: 1px solid #000;
-                        padding: 6px;
-                        text-align: left;
-                    }
-
-                    .table-secondary {
-                        background-color: #f8f9fa;
-                    }
-
-                    /* Penyesuaian khusus untuk bagian tim pemeriksa */
-                    .tim-pemeriksa-container {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-
-                    .tim-pemeriksa {
-                        width: 50%;
-                    }
-
-                    .tim-pemeriksa table {
-                        width: 100%;
-                        border: 1px solid #000;
-                    }
-
-                    .tim-pemeriksa td, .tim-pemeriksa th {
-                        text-align: center;
-                        padding: 3px;
-                        height: 15px;
-                        font-size: 11px;
-                    }
-                </style>
-            </head>
-            <body>
-                ${modalContent.innerHTML}
-                <script>
-                    window.onload = function() {
-                        window.print();
-                        window.onafterprint = window.close;
-                    }
-                <\/script>
-            </body>
-            </html>
-        `);
-        printWindow.document.close();
-    }
-</script>
-
-<script>
-    function printModalContentSurat2(id) {
-        const modalContent = document.querySelector(`#modalSurat2${id} .modal-content`);
-        if (!modalContent) {
-            alert("Konten tidak ditemukan.");
-            return;
-        }
-
-        const printWindow = window.open('', '', 'width=1200,height=800');
-        printWindow.document.write(`
-            <html>
-            <head>
-                <title>Print Dokumen</title>
-                <style>
-                    @media print {
-                        @page {
-                            size: A4 landscape;
-                            margin: 0mm;
-                        }
-                        body {
-                            font-family: Arial, sans-serif;
-                            font-size: 12px;
-                            color: #000;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            page-break-inside: auto;
-                        }
-                        th, td {
-                            border: 1px solid #000;
-                            padding: 4px;
-                            vertical-align: top;
-                        }
-                        .no-border td {
-                            border: none;
-                        }
-                    }
-
-                    body {
-                        margin: 10mm;
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                    }
-
-                    h5 {
-                        font-size: 1rem;
-                        margin-bottom: 10px;
-                    }
-
-                    .table-bordered {
-                        border: 1px solid #000;
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-
-                    .table-bordered th, .table-bordered td {
-                        border: 1px solid #000;
-                        padding: 6px;
-                        text-align: left;
-                    }
-
-                    .table-secondary {
-                        background-color: #f8f9fa;
-                    }
-
-                    /* Penyesuaian khusus untuk bagian tim pemeriksa */
-                    .tim-pemeriksa-container {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-
-                    .tim-pemeriksa {
-                        width: 50%;
-                    }
-
-                    .tim-pemeriksa table {
-                        width: 100%;
-                        border: 1px solid #000;
-                    }
-
-                    .tim-pemeriksa td, .tim-pemeriksa th {
-                        text-align: center;
-                        padding: 3px;
-                        height: 15px;
-                        font-size: 11px;
-                    }
-                </style>
-            </head>
-            <body>
-                ${modalContent.innerHTML}
-                <script>
-                    window.onload = function() {
-                        window.print();
-                        window.onafterprint = window.close;
-                    }
-                <\/script>
-            </body>
-            </html>
-        `);
-        printWindow.document.close();
-    }
-</script>
-
-<script>
-    function printModalContentSurat3(id) {
-        const modalContent = document.querySelector(`#modalSurat3${id} .modal-content`);
-        if (!modalContent) {
-            alert("Konten tidak ditemukan.");
-            return;
-        }
-
-        const printWindow = window.open('', '', 'width=1200,height=800');
-        printWindow.document.write(`
-            <html>
-            <head>
-                <title>Print Dokumen</title>
-                <style>
-                    @media print {
-                        @page {
-                            size: A4 landscape;
-                            margin: 0mm;
-                        }
-                        body {
-                            font-family: Arial, sans-serif;
-                            font-size: 12px;
-                            color: #000;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            page-break-inside: auto;
-                        }
-                        th, td {
-                            border: 1px solid #000;
-                            padding: 4px;
-                            vertical-align: top;
-                        }
-                        .no-border td {
-                            border: none;
-                        }
-                    }
-
-                    body {
-                        margin: 10mm;
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                    }
-
-                    h5 {
-                        font-size: 1rem;
-                        margin-bottom: 10px;
-                    }
-
-                    .table-bordered {
-                        border: 1px solid #000;
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-
-                    .table-bordered th, .table-bordered td {
-                        border: 1px solid #000;
-                        padding: 6px;
-                        text-align: left;
-                    }
-
-                    .table-secondary {
-                        background-color: #f8f9fa;
-                    }
-
-                    /* Penyesuaian khusus untuk bagian tim pemeriksa */
-                    .tim-pemeriksa-container {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-
-                    .tim-pemeriksa {
-                        width: 50%;
-                    }
-
-                    .tim-pemeriksa table {
-                        width: 100%;
-                        border: 1px solid #000;
-                    }
-
-                    .tim-pemeriksa td, .tim-pemeriksa th {
-                        text-align: center;
-                        padding: 3px;
-                        height: 15px;
-                        font-size: 11px;
-                    }
-                </style>
-            </head>
-            <body>
-                ${modalContent.innerHTML}
-                <script>
-                    window.onload = function() {
-                        window.print();
-                        window.onafterprint = window.close;
-                    }
-                <\/script>
-            </body>
-            </html>
-        `);
-        printWindow.document.close();
-    }
+    fetch(`/betertibjakonusaha?search=${encodeURIComponent(input)}`)
+        .then(response => response.text())
+        .then(html => {
+            let parser = new DOMParser();
+            let doc = parser.parseFromString(html, "text/html");
+            let newTableBody = doc.querySelector("#tableBody").innerHTML;
+            document.querySelector("#tableBody").innerHTML = newTableBody;
+        })
+        .catch(error => console.error("Error fetching search results:", error));
+}
 </script>
