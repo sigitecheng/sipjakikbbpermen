@@ -1,55 +1,3 @@
-<style>
-    /* import khusus buat tabel tertib jaku usaha */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-    #tabeltertibjakonusaha th {
-        background-color: #4ae28a;
-        color: #000; /* tulisan hitam */
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        padding: 8px;
-    }
-
-    #tabeltertibjakonusaha {
-        border-collapse: collapse;
-        width: 100%;
-    }
-</style>
-
-<style>
-  /* Hilangkan zebra striping / belang */
-  table tbody tr:nth-child(odd),
-  table tbody tr:nth-child(even) {
-      background-color: #ffffff !important; /* semua putih */
-  }
-</style>
-
-<style>
-    table {
-     table-layout: fixed;
-     width: 100%;
- }
-
- td {
-     padding: 10px;
-     vertical-align: top;
-     word-wrap: break-word;
- }
-
- .isi-berita {
-     max-width: 600px;
-     word-wrap: break-word;
-     white-space: normal;
-     overflow-wrap: break-word;
- }
-
- .btn-hover-white:hover {
-  background-color: white !important;
-  color: black !important;
-  border: 1px solid black;
-}
-
-</style>
 
 @include('backend.00_administrator.00_baganterpisah.01_header')
 
@@ -69,10 +17,8 @@
 
    <!--begin::App Main-->
    <main class="app-main">
-    {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
 
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
     <!--begin::App Content Header-->
      <div class="app-content-header">
@@ -101,9 +47,7 @@
                  </div>
                  <!-- /.card-header -->
                  <div class="card-header">
-                    @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
-
-
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
                         <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
                             <label for="entries" style="font-weight: 600; font-size: 14px;">Tampilkan data : </label>
@@ -152,12 +96,12 @@
                                 </script>
 
 
-                                <button class="button-baru" onclick="exportSelectedColumnsToExcel('tabeltertibjakonusaha', 'Data_TertibJakonUsaha')">
-                                    <i class="bi bi-download icon-create" style="margin-right: 5px" ></i> Download Excel
+                                <button class="button-berkas" onclick="exportSelectedColumnsToExcel('tabeltertibjakonusaha', 'Data_TertibJakonUsaha')">
+                                    <i class="bi bi-download" ></i> Download Excel
                                 </button>
 
                                 <a href="/betertibjakonpemanfaatan/create">
-                                    <button class="button-hijau";>
+                                    <button class="button-modern";>
                                     <!-- Ikon Kembali -->
                                     <i class="fa fa-plus icon-create" style="margin-right: 8px;"></i>
                                     Buat Baru
@@ -227,8 +171,8 @@
 
                             </thead>
 
-                          <tbody>
-                            @foreach ($data as $item)
+                          <tbody id="tableBody">
+                            @forelse($data as $item)
                             <tr>
                               <td style="text-align: center;">{{ $loop->iteration }}</td>
                               <td style="text-align: center;">
@@ -333,14 +277,14 @@
 
                              <td style="text-align: center; vertical-align: middle;">
                                     <a href="/betertibjakonpemanfataanjakon/index/{{$item->id}}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                         <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
                                         </button>
                                     </a>
                                 </td>
                                 <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonpemanfataansurat2/index/' . $item->id) }}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                             <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
                                         </button>
                                     </a>
@@ -350,7 +294,7 @@
 
                                 <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonpemanfataansurat3/index/' . $item->id) }}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                         <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
                                         </button>
                                     </a>
@@ -363,7 +307,7 @@
                                         </button>
                                     </a>
                                       <a href="{{ url('/buktidukungindex/index/' . $item->id) }}" style="text-decoration: none;">
-                                        <button class="button-baru">
+                                        <button class="button-modern">
                                         <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
                                         </button>
                                     </a>
@@ -381,7 +325,7 @@
                               <td style="text-align: center;">
                                 <!-- Tombol Aksi -->
                                 {{-- <a href="/bebujkkonsultan/show/{{$item->namalengkap}}" class="btn btn-sm btn-info"><i class="bi bi-eye"></i></a> --}}
-                                <a href="/betertibjakonpemanfaatan/update/{{$item->id}}" class="button-berkas"><i class="bi bi-pencil-square"></i>Edit</a>
+                                <a href="/betertibjakonpemanfaatan/update/{{$item->id}}" class="button-berkas"><i class="bi bi-pencil-square"></i></a>
                                 {{-- <a href="javascript:void(0)" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" data-judul="{{ $item->id }}" onclick="setDeleteUrl(this)">
                                   <i class="bi bi-trash"></i>
                                 </a> --}}
@@ -390,18 +334,51 @@
                                 data-bs-target="#deleteModal"
                                 data-url="{{ route('betertibjakonusahapemenuhansyaratdeletedata', $item->id) }}"
                                 onclick="setDeleteUrl(this)">
-                                    <i class="bi bi-trash"></i>Hapus
+                                    <i class="bi bi-trash"></i>
                                 </a>
 
                               </td>
                             </tr>
-                            @endforeach
-                          </tbody>
+
+
+        @empty
+    <tr>
+        <td colspan="100%"> {{-- Memenuhi semua kolom --}}
+            <div style="
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                color: #6c757d;
+                background-color: #f8f9fa;
+                border: 2px dashed #ced4da;
+                border-radius: 12px;
+                font-size: 16px;
+                animation: fadeIn 0.5s ease-in-out;
+            ">
+                <i class="bi bi-folder-x" style="margin-right: 8px; font-size: 20px; color: #dc3545;"></i>
+                Data Tidak Ditemukan !!
+            </div>
+        </td>
+    </tr>
+@endforelse
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+                        </tbody>
                         </table>
                       </div>
 
-                 @include('backend.00_administrator.00_baganterpisah.07_paginations')
 
+                 @include('frontend.A00_new.01_halamanutama.newpaginations')
                  <br><br>
 
                 <!-- Modal Konfirmasi Hapus -->

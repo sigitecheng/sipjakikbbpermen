@@ -62,8 +62,7 @@
                  </div>
                  <!-- /.card-header -->
                  <div class="card-header">
-                    @include('backend.00_administrator.00_baganterpisah.10_judulhalaman')
-
+                                         @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
 
                             <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">

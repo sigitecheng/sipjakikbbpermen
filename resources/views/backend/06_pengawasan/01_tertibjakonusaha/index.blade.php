@@ -156,52 +156,52 @@ document.addEventListener('click', function(e) {
                     <div style="width: 100%; overflow-x: auto;">
                         <table id="tabeltertibjakonusaha" class="zebra-table">
                             <thead>
-                                <tr>
-    <th rowspan="2" style="width:60px; text-align:center;">
+                            <tr>
+    <th style="text-align:center;">
         <i class="bi bi-list-ol"></i><br>No
     </th>
 
-    <th rowspan="2" style="width:210px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-people-fill"></i><br>Sektor
     </th>
 
-    <th rowspan="2" style="width:160px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-building"></i><br>NIB
     </th>
 
-    <th rowspan="2" style="width:280px; text-align:center;">
+    <th style="text-align:center; min-width:220px;">
         <i class="bi bi-geo-alt-fill"></i><br>Nama Pekerjaan
     </th>
 
-    <th rowspan="2" style="width:120px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-calendar-event"></i><br>Tahun
     </th>
 
-    <th rowspan="2" style="width:220px; text-align:center;">
+    <th style="text-align:center; min-width:180px;">
         <i class="bi bi-building-fill"></i><br>Badan Usaha
     </th>
 
-    <th rowspan="2" style="width:180px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-person-badge-fill"></i><br>PJBU
     </th>
 
-    <th rowspan="2" style="width:800px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-check-circle-fill"></i><br>Kesesuaian
     </th>
 
-    <th rowspan="2" style="width:800px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-diagram-3-fill"></i><br>Segmentasi
     </th>
 
-    <th rowspan="2" style="width:800px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-clipboard-check-fill"></i><br>Syarat
     </th>
 
-    <th rowspan="2" style="width:800px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-tools"></i><br>Pengembangan
     </th>
 
-    <th rowspan="2" style="width:200px; text-align:center;">
+    <th style="text-align:center;">
         <i class="bi bi-gear-fill"></i><br>Aksi
     </th>
 </tr>

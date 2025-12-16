@@ -85,7 +85,10 @@
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Pengawasan</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item-has-children"><a href="#">Tertib Jasa Konstruksi</a>
+                                        <li><a href="#">Tertib Usaha </a></li>
+                                        <li><a href="#">Tertib Pemanfataan</a></li>
+                                        <li><a href="#">Tertib Penyelenggaran</a></li>
+                                        {{-- <li class="menu-item-has-children"><a href="#">Tertib Jasa Konstruksi</a>
                                             <ul class="sub-menu">
                                                 <li><a href="#">Tertib Jakon Usaha</a></li>
                                                 <li><a href="#">Tertib Jakon Pemanfaatan</a></li>
@@ -93,7 +96,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="#">Kecelakaan Kerja</a></li>
-                                        <li><a href="#">Pengawasan BUJK</a></li>
+                                        <li><a href="#">Pengawasan BUJK</a></li> --}}
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">AHSP</a>

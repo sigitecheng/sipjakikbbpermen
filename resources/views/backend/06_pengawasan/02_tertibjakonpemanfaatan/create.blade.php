@@ -15,9 +15,7 @@
 
       <!--begin::App Main-->
       <main class="app-main">
-        {{-- <section style="background-image: url('/assets/00_android/iconmenu/menuutama.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 100vh;" loading="lazy"> --}}
-
-<section style="background: linear-gradient(to bottom, #a8f0c6, #ffffff); width: 100%; min-height: 100vh;">
+<section style="background: #FFFFFF; width: 100%; min-height: 100vh;">
 
         <!--begin::App Content Header-->
         <div class="app-content-header">
@@ -42,7 +40,7 @@
                 <!-- /.card -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        @include('backend.00_administrator.00_baganterpisah.13_judulcreate')
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                     </div>
 
                            {{-- ======================================================= --}}
@@ -50,7 +48,7 @@
         <div class="card card-primary card-outline mb-6">
             <div style="display: flex; justify-content: flex-end; margin-top:10px;">
                 <a href="/betertibjakonpemanfaatan">
-                    <button class="button-newvalidasi">
+                    <button class="button-modern">
                     <!-- Ikon Kembali -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     viewBox="0 0 16 16" style="margin-right: 8px;">
@@ -73,10 +71,10 @@
                                 <div class="row">
                                     <!-- Kolom Kiri -->
                                     <div class="col-md-6">
-                                        <div class="mb-3">
+                                        <div class="form-modern mb-3">
 
-    <label for="penyediastatustertibjakon_id" class="form-label">
-        <i class="bi bi-card-text text-primary"></i> Sektor
+    <label for="penyediastatustertibjakon_id" class="form-label-modern">
+        <i class="bi bi-card-text text-primary me-2"></i> Sektor
     </label>
     <select id="penyediastatustertibjakon_id" name="penyediastatustertibjakon_id" class="form-control @error('penyediastatustertibjakon_id') is-invalid @enderror">
         <option value="">-- Pilih Sektor --</option>
@@ -91,9 +89,9 @@
     @enderror
 </div>
 
-<div class="mb-3">
-    <label for="namapekerjaan" class="form-label">
-        <i class="bi bi-clipboard-check-fill text-primary"></i> Nama Pekerjaan
+<div class="form-modern mb-3">
+    <label for="namapekerjaan" class="form-label-modern">
+        <i class="bi bi-clipboard-check-fill text-primary me-2"></i> Nama Pekerjaan
     </label>
     <input type="text" id="namapekerjaan" name="namapekerjaan"
     class="form-control @error('namapekerjaan') is-invalid @enderror"
@@ -103,9 +101,9 @@
     @enderror
 </div>
 
-<div class="mb-3">
-    <label for="namabangunan" class="form-label">
-        <i class="bi bi-house-fill text-primary"></i> Nama Bangunan
+<div class="form-modern mb-3">
+    <label for="namabangunan" class="form-label-modern">
+        <i class="bi bi-house-fill text-primary me-2"></i> Nama Bangunan
     </label>
     <input type="text" id="namabangunan" name="namabangunan"
     class="form-control @error('namabangunan') is-invalid @enderror"
@@ -115,9 +113,9 @@
     @enderror
 </div>
 
-<div class="mb-3">
-    <label for="nomorkontrak" class="form-label">
-        <i class="bi bi-file-earmark-text-fill text-primary"></i> Nomor Kontrak
+<div class="form-modern mb-3">
+    <label for="nomorkontrak" class="form-label-modern">
+        <i class="bi bi-file-earmark-text-fill text-primary me-2"></i> Nomor Kontrak
     </label>
     <input type="text" id="nomorkontrak" name="nomorkontrak"
     class="form-control @error('nomorkontrak') is-invalid @enderror"
@@ -131,9 +129,9 @@
 
 <div class="col-md-6">
 
-<div class="mb-3">
-    <label for="lokasi" class="form-label">
-        <i class="bi bi-geo-alt-fill text-primary"></i> Lokasi
+<div class="form-modern mb-3">
+    <label for="lokasi" class="form-label-modern">
+        <i class="bi bi-geo-alt-fill text-primary me-2"></i> Lokasi
     </label>
     <input type="text" id="lokasi" name="lokasi"
         class="form-control @error('lokasi') is-invalid @enderror"
@@ -143,9 +141,9 @@
     @enderror
 </div>
 
-<div class="mb-3">
-    <label for="tanggalpembangunan" class="form-label">
-        <i class="bi bi-calendar-check-fill text-primary"></i> Tanggal Pembangunan
+<div class="form-modern mb-3">
+    <label for="tanggalpembangunan" class="form-label-modern">
+        <i class="bi bi-calendar-check-fill text-primary me-2"></i> Tanggal Pembangunan
     </label>
     <input type="date" id="tanggalpembangunan" name="tanggalpembangunan"
         class="form-control @error('tanggalpembangunan') is-invalid @enderror"
@@ -155,9 +153,9 @@
     @enderror
 </div>
 
-<div class="mb-3">
-    <label for="tanggalpemanfaatan" class="form-label">
-        <i class="bi bi-calendar-event-fill text-primary"></i> Tanggal Pemanfaatan
+<div class="form-modern mb-3">
+    <label for="tanggalpemanfaatan" class="form-label-modern">
+        <i class="bi bi-calendar-event-fill text-primary me-2"></i> Tanggal Pemanfaatan
     </label>
     <input type="date" id="tanggalpemanfaatan" name="tanggalpemanfaatan"
         class="form-control @error('tanggalpemanfaatan') is-invalid @enderror"
@@ -166,9 +164,9 @@
         <div class="invalid-feedback">{{ $message }}</div>
     @enderror
 </div>
-<div class="mb-3">
-    <label for="umurbangunan" class="form-label">
-        <i class="bi bi-hourglass-split text-primary"></i> Umur Bangunan
+<div class="form-modern mb-3">
+    <label for="umurbangunan" class="form-label-modern">
+        <i class="bi bi-hourglass-split text-primary me-2"></i> Umur Bangunan
     </label>
     <select id="umurbangunan" name="umurbangunan"
         class="form-select @error('umurbangunan') is-invalid @enderror">
@@ -194,9 +192,10 @@
 
                     <div style="display: flex; justify-content: flex-end; margin-bottom:20px;">
                                     <div class="flex justify-end">
-                                        <button class="button-hijau" type="button" onclick="openModal()">
-                                            <i class="bi bi-plus-circle-fill"></i>Buat Baru
-                                        </button>
+                                    <button class="button-baru" type="button" onclick="openModal()">
+                                    <i class="bi bi-save" style="margin-right: 5px;"></i>
+                                    <span style="font-family: 'Poppins', sans-serif;">Tambah Data </span>
+                                    </button>
                                     </div>
                                     <!-- Modal Konfirmasi -->
                                     <div id="confirmModal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
