@@ -48,6 +48,7 @@ use App\Http\Controllers\SkktenagakerjaController;
 use App\Http\Controllers\UijkController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\PermenpuController;
+use App\Http\Controllers\PetunjukController;
 use App\Http\Controllers\RantaipasokmaterialController;
 use App\Http\Controllers\UndangundangController;
 use App\Models\pelatihan;
@@ -2618,6 +2619,8 @@ Route::post('/agendaskkkbb/create', [PelatihanController::class, 'agendaskkkbbcr
 Route::get('/datapersetatkkkbb', [PelatihanController::class, 'datapersetatkkkbb']);
 Route::get('/datapersetatkkkbb/{namakegiatan}', [PelatihanController::class, 'datapersetatkkkbbshow'])->name('lihatdaftarpesertatkkkbb');
 
+
+Route::get('/dokhakakses', [PetunjukController::class, 'dokhakakses'])->middleware(['auth', 'can:admin2']);
 
 // Route::get('/artikeljakon/show/{id}', [BeritaController::class, 'artikeljakonshow'])->name('artikeljakon.show');
 

@@ -825,6 +825,102 @@
           </ul>
         </li>
 
+                {{-- <li class="nav-header" style="color: white;">PANDUAN UMUM</li>
+
+                  <li class="nav-item">
+
+                    <a href="#" class="nav-link">
+                    <!-- Ikon untuk Beranda -->
+                    <i class="nav-icon bi bi-house-door" style="color: white;"></i>
+                    <p style="color: red">
+                      Petunjuk Aplikasi
+                      <!-- Ikon panah kanan (Chevron) -->
+                      <i class="nav-arrow bi bi-chevron-right"></i>
+                    </p>
+                  </a>
+
+                <ul class="nav nav-treeview">
+
+    <div style="margin-bottom: 10px; margin-top: 10px;">
+    <p style="
+        font-size: 13px;
+        margin-left: 12px;
+        margin-bottom: -5px;
+        font-weight: bold;
+        color: #000000;
+        background-color: #ffd100;
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 8px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    ">
+        <i class="bi bi-grid-1x2-fill" style="margin-right: 6px;"></i> Main Menu
+    </p>
+</div>
+
+                 <li class="nav-item">
+    <a href="/dokhakakses" class="nav-link">
+        <i class="nav-icon bi bi-shield-lock-fill text-warning"></i>
+        <p style="color:white">Hak Akses Aplikasi</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-bank2 text-info"></i>
+        <p style="color:white">Kelembagaan</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-newspaper text-success"></i>
+        <p style="color:white">Berita Jakon</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-bar-chart-fill text-primary"></i>
+        <p style="color:white">Data Jakon</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-mortarboard-fill text-warning"></i>
+        <p style="color:white">Pembinaan</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-eye-fill text-danger"></i>
+        <p style="color:white">Pengawasan</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-cash-coin text-success"></i>
+        <p style="color:white">Satuan Harga Dasar</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-calculator-fill text-info"></i>
+        <p style="color:white">AHSP Konstruksi Umum</p>
+    </a>
+</li>
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-tags-fill text-primary"></i>
+        <p style="color:white">SHST Kab Bandung Barat</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="/404" class="nav-link">
+        <i class="nav-icon bi bi-diagram-3-fill text-secondary"></i>
+        <p style="color:white">Rantai Pasok</p>
+    </a>
+</li>
+                </ul>
+            </li> --}}
                 <li class="nav-header" style="color: white;">MAIN MENU</li>
 
               <li class="nav-item">
