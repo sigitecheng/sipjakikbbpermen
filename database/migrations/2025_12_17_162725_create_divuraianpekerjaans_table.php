@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('cadangan1')->nullable();
             $table->string('cadangan2')->nullable();
 
-            $table->softDeletes3();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
