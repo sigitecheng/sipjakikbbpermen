@@ -37,7 +37,7 @@ class FedashboardController extends Controller
     $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
     $databeranda = headerberanda::all();
 
-    return view('frontend.00_full.index', [
+    return view('frontend.A00_new.01_halamanutama.halamanutama', [
         'title' => 'SIPJAKI Kabupaten Bandung Barat',
         'data' => $data,
         'databerita' => $databerita,
@@ -65,7 +65,7 @@ public function new()
     $data_kegiatanjaskon = kegiatanjaskon::orderBy('id', 'desc')->get();
     $databeranda = headerberanda::all();
 
-    return view('frontend.A00_new.01_halamanutama.halamanutama', [
+    return view('frontend.00_full.index', [
         'title' => 'SIPJAKI Kabupaten Bandung Barat',
         'data' => $data,
         'databerita' => $databerita,
