@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        
+
         Schema::create('tertibjakonpenyelenggaraans', function (Blueprint $table) {
             $table->id();
             $table->foreignId('penyediastatustertibjakon_id')->nullable();
@@ -22,6 +22,7 @@ return new class extends Migration
             $table->foreignId('surattertibjakonpenyelenggaraan4_id')->nullable();
             $table->foreignId('surattertibjakonpenyelenggaraan5_id')->nullable();
             $table->foreignId('surattertibjakonpenyelenggaraan6_id')->nullable();
+            $table->foreignId('user_id')->nullable();
 
             $table->string('kegiatankonstruksi')->nullable();
             $table->string('namapekerjaan')->nullable();

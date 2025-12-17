@@ -450,7 +450,7 @@ button:hover {
 @endcanany
 
 {{-- @canany(['super_admin', 'admin', 'lsppenerbit']) --}}
-@canany('lsppenerbit')
+{{-- @canany('lsppenerbit')
 
 <form action="{{ route('peserta.downloadSemua', $datapeserta->id) }}" method="POST">
     @csrf
@@ -467,7 +467,7 @@ button:hover {
 
 </form>
 
-@endcanany
+@endcanany --}}
 
 
 @can('pekerja')
@@ -563,14 +563,14 @@ button:hover {
             name: 'Verifikasi Berkas',
             status: 'pending',
             time: '<?php echo isset($datapeserta->verifikasipu_time) ? $datapeserta->verifikasipu_time : "" ?>',
-            message: 'Menunggu verifikasi DPUPR'
+            message: 'Menunggu verifikasi DPUTR'
         },
         {
             id: 3,
-            name: 'Verifikasi DPUPR',
+            name: 'Verifikasi DPUTR',
             status: 'pending',
             time: '<?php echo isset($datapeserta->verifikasipu_time) ? $datapeserta->verifikasipu_time : "" ?>',
-            message: 'Menunggu verifikasi DPUPR'
+            message: 'Menunggu verifikasi DPUTR'
         },
         {
             id: 4,
@@ -603,10 +603,10 @@ button:hover {
             checkpointData[1].message = 'Berkas dikembalikan';
         }
 
-        // Step 3: Verifikasi DPUPR hanya jika verifikasipu 'lolos'
+        // Step 3: Verifikasi DPUTR hanya jika verifikasipu 'lolos'
         if ('<?php echo isset($datapeserta->verifikasipu) ? $datapeserta->verifikasipu : "" ?>' === 'lolos') {
             checkpointData[2].status = 'completed';
-            checkpointData[2].message = 'Telah diverifikasi oleh DPUPR';
+            checkpointData[2].message = 'Telah diverifikasi oleh DPUTR';
         }
 
         // Step 4: Verifikasi LSP berdasarkan verifikasilps
@@ -913,7 +913,7 @@ button:hover {
 
         <!-- Teks Kop -->
         <div style="text-align: center; margin-left:50px;">
-            <h4 style="margin: 0;">PEMERINTAH KABUPATEN BANDUNG BARAT</h4>
+            {{-- <h4 style="margin: 0;">PEMERINTAH KABUPATEN BANDUNG BARAT</h4> --}}
             <h4 style="margin: 0;">DINAS PEKERJAAN UMUM DAN TATA RUANG</h4>
             <p style="margin: 0;">Komplek Pemda Kabupaten Bandung Barat Jl. Raya Padalarang-Cisarua Km.2 Ngamprah</p>
             <h4 style="margin: 0;">KABUPATEN BANDUNG BARAT 40552 PROVINSI JAWA BARAT</h4>
@@ -1154,6 +1154,7 @@ button:hover {
             <i class="bi bi-file-earmark-text" style="margin-right: 6px;"></i> NPWP
         </button>
     </td>
+
     <td style="text-align: center; font-size:16px;">
         <button class="button-baru">
             <i class="bi bi-file-earmark-person" style="margin-right: 6px;"></i> Daftar Riwayat Hidup
@@ -1244,7 +1245,12 @@ button:hover {
         </tr>
 
         <tr>
-            <td style="text-align: center; font-size:16px;">Surat Kebenaran Data</td>
+
+    <td style="text-align: center; font-size:16px;">
+        <button class="button-baru">
+            <i class="bi bi-file-earmark-person" style="margin-right: 6px;"></i> Surat Kebenaran Data
+        </button>
+    </td>
         </tr>
         <tr>
                       <td style="text-align: center;">
@@ -1663,7 +1669,7 @@ button:hover {
         @else
             <div class="custom-status pending">
                 <span class="custom-box"></span>
-                Sedang Di Verifikasi DPUPR, Silahkan Menunggu !
+                Sedang Di Verifikasi DPUTR, Silahkan Menunggu !
             </div>
         @endif
     </div>
@@ -1763,7 +1769,7 @@ button:hover {
         @else
             <div class="custom-status pending">
                 <span class="custom-box"></span>
-                Sedang Di Verifikasi DPUPR, Silahkan Menunggu !
+                Sedang Di Verifikasi DPUTR, Silahkan Menunggu !
             </div>
         @endif
     </div>
@@ -1866,7 +1872,7 @@ button:hover {
         @else
             <div class="custom-status pending">
                 <span class="custom-box"></span>
-                Sedang Di Verifikasi DPUPR, Silahkan Menunggu !
+                Sedang Di Verifikasi DPUTR, Silahkan Menunggu !
             </div>
         @endif
     </div>
@@ -1969,7 +1975,7 @@ button:hover {
         @else
             <div class="custom-status pending">
                 <span class="custom-box"></span>
-                Sedang Di Verifikasi DPUPR, Silahkan Menunggu !
+                Sedang Di Verifikasi DPUTR, Silahkan Menunggu !
             </div>
         @endif
     </div>
@@ -2070,7 +2076,7 @@ button:hover {
         @else
             <div class="custom-status pending">
                 <span class="custom-box"></span>
-                Sedang Di Verifikasi DPUPR, Silahkan Menunggu !
+                Sedang Di Verifikasi DPUTR, Silahkan Menunggu !
             </div>
         @endif
     </div>
@@ -2189,7 +2195,7 @@ button:hover {
         @else
             <div class="custom-status pending">
                 <span class="custom-box"></span>
-                Sedang Di Verifikasi DPUPR, Silahkan Menunggu !
+                Sedang Di Verifikasi DPUTR, Silahkan Menunggu !
             </div>
         @endif
     </div>
@@ -2288,7 +2294,7 @@ button:hover {
         @else
             <div class="custom-status pending">
                 <span class="custom-box"></span>
-                Sedang Di Verifikasi DPUPR, Silahkan Menunggu !
+                Sedang Di Verifikasi DPUTR, Silahkan Menunggu !
             </div>
         @endif
     </div>

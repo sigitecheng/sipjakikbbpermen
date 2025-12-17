@@ -1007,16 +1007,17 @@ button:hover {
 @endcan
 
 {{-- atas  --}}
-
+{{-- lanjut --}}
 @can('pekerja')
 
 <style>
-        :root {
-            --primary-green: #FF8C00;  /* Orange PUPR */
-    --dark-green: #E67300;
-    --light-green: #FFE5B4;
-    --accent-green: #FFD699;
-    }
+       :root {
+    --primary-green: #ffd100;  /* Orange PUPR */
+    --dark-green: #ffd100;
+    --light-green: #ffd100;
+    --accent-green: #ffd100;
+}
+
 
 
         .dashboard-card {
@@ -1199,7 +1200,7 @@ button:hover {
                             <div class="info-icon">
                                 <i class="bi bi-check-circle"></i>
                             </div>
-                            <p class="info-text">Verifikasi DPUPR</p>
+                            <p class="info-text">Verifikasi DPUTR</p>
                         </div>
                     </div>
                 </div>

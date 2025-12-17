@@ -335,7 +335,7 @@ function updateEntries() {
                 {{ $item->jenjang->jenjang ?? '-' }}
             </td>
 
-            <td>{{ $item->alamat ?? '-' }}</td>
+            <td style="text-align: left;">{{ $item->alamat ?? '-' }}</td>
 
             {{-- <td style="text-align:center;">{{ $item->notelepon ?? '-' }}</td>
 

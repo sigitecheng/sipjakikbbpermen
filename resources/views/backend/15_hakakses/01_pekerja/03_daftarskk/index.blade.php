@@ -274,7 +274,7 @@ onmouseout="this.style.background='linear-gradient(135deg, #00378a, #FFD700)'; t
                                         </button>
 
                                         @else
-                                        <a href="/resagendatkk/{{$item->namakegiatan}}" style="text-decoration: none;">
+                                        <a href="/daftaragendaskkkbb/{{$item->namakegiatan}}" style="text-decoration: none;">
                                             <button class="button-hijau">
                                        <i class="bi bi-person-plus"></i> DAFTAR !
                                      </button>

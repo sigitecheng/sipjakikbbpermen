@@ -431,6 +431,28 @@
   </a>
 </li>
 
+            <li class="nav-item">
+    <a href="#" class="nav-link">
+        <!-- Ikon Pengaturan Akun -->
+        <i class="nav-icon bi bi-gear-fill" style="color: white;"></i>
+        <p style="color: white;">
+            Pengaturan Akun
+            <i class="nav-arrow bi bi-chevron-right"></i>
+        </p>
+    </a>
+
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+            <a href="/beprofile" class="nav-link">
+                <!-- Ikon Akun Anda -->
+                <i class="nav-icon bi bi-person-circle text-info"></i>
+                <p style="color: white;">Akun Anda</p>
+            </a>
+        </li>
+    </ul>
+</li>
+
+
               {{-- <li class="nav-item">
                 <a href="/beprofile" class="nav-link">
                   <i class="nav-icon bi bi-person-circle" style="color: white"></i> <!-- Profil Anda -->
@@ -484,34 +506,113 @@
     </a>
   </li> --}}
 
+
+            <li class="nav-item">
+    <a href="#" class="nav-link">
+        <!-- Ikon Pengaturan Akun -->
+        <i class="nav-icon bi bi-gear-fill" style="color: white;"></i>
+        <p style="color: white;">
+            Pengaturan Akun
+            <i class="nav-arrow bi bi-chevron-right"></i>
+        </p>
+    </a>
+
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+            <a href="/beprofile" class="nav-link">
+                <!-- Ikon Akun Anda -->
+                <i class="nav-icon bi bi-person-circle text-info"></i>
+                <p style="color: white;">Akun Anda</p>
+            </a>
+        </li>
+    </ul>
+</li>
         @endcan
 
               @can('dinas')
 
-              <li class="nav-header" style="color: white;">PAKET PEKERJAAN </li>
-<!-- Menu Paket Pekerjaan -->
-<li class="nav-item">
-    <a href="/bepaketpekerjaandinas" class="nav-link">
-      <!-- Ikon untuk Paket Pekerjaan -->
-      <i class="nav-icon bi bi-briefcase" style="color: white;"></i>
-      <p style="color: white">
-        Paket Pekerjaan
-        <i class="nav-arrow bi bi-chevron-right"></i>
-      </p>
-    </a>
-  </li>
 
-  <!-- Menu Profil Anda -->
-  {{-- <li class="nav-item">
-    <a href="/beprofile" class="nav-link">
-      <!-- Ikon untuk Profil Anda -->
-      <i class="nav-icon bi bi-person-circle" style="color: white;"></i>
-      <p style="color: white">
-        Profil Anda
-        <i class="nav-arrow bi bi-chevron-right"></i>
-      </p>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <!-- Ikon untuk Pengawasan -->
+                  <i class="nav-icon bi bi-eye" style="color: white"></i> <!-- Ikon untuk pengawasan -->
+                  <p style="color: white">
+                    Profil <br> Paket Pekerjaan
+                    <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+
+                <ul class="nav nav-treeview">
+                  <!-- Tertib Jasa Konstruksi -->
+                  <li class="nav-item">
+                    <a href="/bepaketpekerjaan" class="nav-link">
+                      <i class="nav-icon bi bi-check-circle text-warning"></i> <!-- Ikon untuk Tertib Jasa Konstruksi -->
+                      <p style="color: white">Paket Pekerjaan</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <!-- Ikon untuk Pengawasan -->
+                  <i class="nav-icon bi bi-eye" style="color: white"></i> <!-- Ikon untuk pengawasan -->
+                  <p style="color: white">
+                    Pengawasan
+                    <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+
+                <ul class="nav nav-treeview">
+                  <!-- Tertib Jasa Konstruksi -->
+                  <li class="nav-item">
+                    <a href="/betertibjakonusaha" class="nav-link">
+                      <i class="nav-icon bi bi-check-circle text-warning"></i> <!-- Ikon untuk Tertib Jasa Konstruksi -->
+                      <p style="color: white">Tertib <br> Usaha</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/betertibjakonpemanfaatan" class="nav-link">
+                      <i class="nav-icon bi bi-check-circle text-warning"></i> <!-- Ikon untuk Tertib Jasa Konstruksi -->
+                      <p style="color: white">Tertib <br> Pemanfaatan</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/betertibjakonpenyelenggaraan" class="nav-link">
+                      <i class="nav-icon bi bi-check-circle text-warning"></i> <!-- Ikon untuk Tertib Jasa Konstruksi -->
+                      <p style="color: white">Tertib <br> Penyelenggaraan </p>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            <li class="nav-item">
+    <a href="#" class="nav-link">
+        <!-- Ikon Pengaturan Akun -->
+        <i class="nav-icon bi bi-gear-fill" style="color: white;"></i>
+        <p style="color: white;">
+            Pengaturan Akun
+            <i class="nav-arrow bi bi-chevron-right"></i>
+        </p>
     </a>
-  </li> --}}
+
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+            <a href="/beprofile" class="nav-link">
+                <!-- Ikon Akun Anda -->
+                <i class="nav-icon bi bi-person-circle text-info"></i>
+                <p style="color: white;">Akun Anda</p>
+            </a>
+        </li>
+    </ul>
+</li>
+
 
         @endcan
 
@@ -1057,7 +1158,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk Pembinaan -->
                   <i class="nav-icon bi bi-person-check" style="color: white"></i>
-                  <p style="color: orange">
+                  <p style="color: red">
                     Pembinaan
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1167,14 +1268,12 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk Pengawasan -->
                   <i class="nav-icon bi bi-eye" style="color: white"></i> <!-- Ikon untuk pengawasan -->
-                  <p style="color: orange">
+                  <p style="color: red">
                     Pengawasan
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
                 </a>
-
-
                 <ul class="nav nav-treeview">
 
     <div style="margin-bottom: 10px; margin-top: 10px;">

@@ -2609,6 +2609,16 @@ Route::get('/datapesertapelatihan', [PelatihanController::class, 'datapesertapel
 Route::get('/datapesertapelatihan/{namakegiatan}', [PelatihanController::class, 'datapesertapelatihanshow'])->name('lihatdaftarpeserta');
 
 
+// MENU AGENDA PELATIHAN KAB BANDUNG BARAT
+Route::get('/agendaskkkbb', [PelatihanController::class, 'agendaskkkbb']);
+Route::get('/daftaragendaskkkbb/{namakegiatan}', [PelatihanController::class, 'daftaragendaskkkbb'])->name('daftaragendaskkkbb');
+Route::get('/agendaskkkbbshow/{namakegiatan}', [PelatihanController::class, 'agendaskkkbbshow'])->name('showagendaskkkbb')->middleware('auth');
+Route::post('/agendaskkkbb/create', [PelatihanController::class, 'agendaskkkbbcreatenew'])->name('daftarpesertatkkkbb')->middleware('auth');
+
+Route::get('/datapersetatkkkbb', [PelatihanController::class, 'datapersetatkkkbb']);
+Route::get('/datapersetatkkkbb/{namakegiatan}', [PelatihanController::class, 'datapersetatkkkbbshow'])->name('lihatdaftarpesertatkkkbb');
+
+
 // Route::get('/artikeljakon/show/{id}', [BeritaController::class, 'artikeljakonshow'])->name('artikeljakon.show');
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);

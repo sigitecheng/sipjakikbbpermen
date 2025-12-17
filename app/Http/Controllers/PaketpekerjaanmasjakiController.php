@@ -97,14 +97,21 @@ public function bepaketpekerjaan(Request $request)
     $search  = trim($request->input('search'));
 
     // ✅ Query utama dengan eager loading untuk mencegah N+1 problem
-    $query = paketpekerjaanmasjaki::with([
-        'profiljenispekerjaan',
-        'paketstatuspekerjaan',
-        'sumberdana',
-        'tahunpilihan',
-        'bulanrekap',
-        'user'
-    ]);
+        $query = paketpekerjaanmasjaki::with([
+            'profiljenispekerjaan',
+            'paketstatuspekerjaan',
+            'sumberdana',
+            'tahunpilihan',
+            'bulanrekap',
+            'user.statusadmin',
+        ]);
+
+        // 🔐 FILTER BERDASARKAN ROLE
+        $user = Auth::user();
+
+        if ($user->statusadmin_id != 1) {
+            $query->where('user_id', $user->id);
+        }
 
     // ✅ Jika ada pencarian
     if (!empty($search)) {
@@ -174,15 +181,19 @@ public function bepaketpekerjaanrekap(Request $request)
     $perPage = $request->input('perPage', 10);
     $search  = trim($request->input('search'));
 
-    // ✅ Query utama dengan eager loading untuk mencegah N+1 problem
-    $query = paketpekerjaanmasjaki::with([
-        'profiljenispekerjaan',
-        'paketstatuspekerjaan',
-        // 'sumberdana',
-        // 'tahunpilihan',
-        // 'bulanrekap',
-        // 'user'
-    ]);
+ // ✅ Query utama dengan eager loading
+$query = paketpekerjaanmasjaki::with([
+    'profiljenispekerjaan',
+    'paketstatuspekerjaan',
+]);
+
+// 🔐 FILTER BERDASARKAN USER LOGIN
+$user = Auth::user();
+
+// Jika BUKAN super admin (statusadmin_id = 1)
+if ($user->statusadmin_id != 1) {
+    $query->where('user_id', $user->id);
+}
 
     // ✅ Jika ada pencarian
     if (!empty($search)) {

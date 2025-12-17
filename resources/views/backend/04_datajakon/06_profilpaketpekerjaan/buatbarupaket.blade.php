@@ -74,10 +74,8 @@ style="
 
                  </div>
                  <!-- /.card-header -->
-                 <div class="card-header">
-                    <div class="button-modern">
-                <span style="font-family: 'Poppins', sans-serif;">📌 Halaman : {{$title}}</span>
-                </div>
+
+                     @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
 
 <hr>
 
@@ -147,15 +145,29 @@ style="
             <label for="user_id" class="form-label-modern">
                 <i class="bi bi-person-circle me-2"></i> Satuan Kerja
             </label>
+@php
+    $authUser = auth()->user();
+@endphp
 
-<select name="user_id" id="user_id" class="form-select-modern @error('user_id') is-invalid @enderror">
-    <option value="">-- Pilih Satuan Kerja --</option>
-    @foreach($user as $item)
-        <option value="{{ $item->id }}" {{ old('user_id', $data->user_id ?? '') == $item->id ? 'selected' : '' }}>
-            {{ Str::title(strtolower($item->name)) }}
-        </option>
-    @endforeach
-</select>
+@if($authUser->statusadmin_id == 1)
+    {{-- SUPER ADMIN : PILIH SATUAN KERJA --}}
+    <select name="user_id" id="user_id" class="form-select-modern @error('user_id') is-invalid @enderror">
+        <option value="">-- Pilih Satuan Kerja --</option>
+        @foreach($user as $item)
+            <option value="{{ $item->id }}"
+                {{ old('user_id', $data->user_id ?? '') == $item->id ? 'selected' : '' }}>
+                {{ Str::title(strtolower($item->name)) }}
+            </option>
+        @endforeach
+    </select>
+@else
+    {{-- USER BIASA : OTOMATIS DIRINYA SENDIRI --}}
+    <input type="hidden" name="user_id" value="{{ $authUser->id }}">
+
+    <div class="form-control-modern bg-light" style="pointer-events:none;">
+        {{ Str::title(strtolower($authUser->name)) }}
+    </div>
+@endif
 
             @error('user_id')
                 <div class="invalid-feedback">{{ $message }}</div>

@@ -996,7 +996,7 @@ qa::create([
             'statusadmin_id' => '7',
             'avatar' => 'user/avatar/foto6.png',
             'email' => 'lsptkkkbb@gmail.com',
-            'password' => bcrypt('adminlsptkkkbb$$')
+            'password' => bcrypt('lsptkkkbb@gmail.com')
         ]);
 
 
@@ -8889,7 +8889,7 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1993-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cililin RT 01/RW 01 Desa Cililin',
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -8951,7 +8951,7 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1985-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cililin RT 02/RW 01 Desa Cililin',
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9015,7 +9015,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1988-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cililin RT 03/RW 01 Desa Cililin',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9076,7 +9077,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1980-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cililin RT 01/RW 02 Desa Cililin',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9139,7 +9141,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1992-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cililin RT 03/RW 02 Desa Cililin',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9191,7 +9194,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1993-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Babakan RT 01/RW 01 Desa Karangtanjung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9244,7 +9248,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1995-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Babakan RT 02/RW 01 Desa Karangtanjung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9296,7 +9301,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1980-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Babakan RT 03/RW 01 Desa Karangtanjung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9345,7 +9351,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1982-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Babakan RT 01/RW 02 Desa Karangtanjung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9392,7 +9399,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1975-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Babakan RT 02/RW 02 Desa Karangtanjung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9439,7 +9447,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1988-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cibuluh RT 01/RW 01 Desa Mukapayung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9486,7 +9495,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1975-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cibuluh RT 02/RW 01 Desa Mukapayung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9532,7 +9542,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1980-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cibuluh RT 01/RW 02 Desa Mukapayung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9578,7 +9589,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1985-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Pasirhuni RT 01/RW 01 Desa Budiharja',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9626,7 +9638,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1980-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Pasirhuni RT 04/RW 02 Desa Budiharja',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9673,7 +9686,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1990-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Pasirhuni RT 05/RW 06 Desa Budiharja',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9719,7 +9733,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1988-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cigintung RT 06/RW 04 Desa Rancapanggung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9765,7 +9780,7 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1982-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cigintung RT 06/RW 02 Desa Rancapanggung',
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9811,7 +9826,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1993-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cigintung RT 04/RW 02 Desa Rancapanggung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -9858,7 +9874,8 @@ allskktenagakerjablora::create([
     'tempatlahir' => null,
     'ttl' => '1978-03-09',
     'jeniskelamin' => 'Laki-laki',
-    'alamat' => '-',
+    'alamat' => 'Kp. Cigintung RT 04/RW 02 Desa Rancapanggung',
+
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
@@ -10404,6 +10421,19 @@ $names = [
     'Asep Nandang',
 ];
 
+$alamats = [
+    'Kp. Cihampelas RT 01/RW 02 Desa Cipatat',
+    'Kp. Babakan RT 02/RW 01 Desa Cipatat',
+    'Kp. Pasirhalang RT 03/RW 04 Desa Cipatat',
+    'Kp. Cibodas RT 01/RW 03 Desa Cipatat',
+    'Kp. Ciloa RT 04/RW 02 Desa Cipatat',
+    'Kp. Cisarua RT 02/RW 05 Desa Cipatat',
+    'Kp. Ciburial RT 03/RW 01 Desa Cipatat',
+    'Kp. Pasirjambu RT 01/RW 04 Desa Cipatat',
+    'Kp. Babakan Jati RT 05/RW 02 Desa Cipatat',
+    'Kp. Gunung Masigit RT 02/RW 03 Desa Cipatat',
+];
+
 foreach ($names as $nama) {
     allskktenagakerjablora::create([
         // === PATEN ===
@@ -10423,7 +10453,7 @@ foreach ($names as $nama) {
         'tempatlahir' => null,
         'ttl' => null,
         'jeniskelamin' => 'Laki-laki',
-        'alamat' => null,
+        'alamat' => $alamats[array_rand($alamats)],
         'notelepon' => null,
         'email' => null,
         'tahunlulus' => null,
@@ -10455,26 +10485,86 @@ foreach ($names as $nama) {
 }
 
 
-// LANJUTKAN
-
+/* 1. Cililin */
 agendaskk::create([
-    'materipelatihanskk_id' => null,       // ID materi pelatihan (sesuaikan yang ada di tabel)
-    'allskktenagakerjablora_id' => null,   // ID peserta SKK Tenaga Kerja Blora
-    'user_id' => 8,                     // ID LSP penerbit
-    'asosiasimasjaki_id' => 1,          // ID asosiasi penyelenggara
-    'namakegiatan' => 'Pelatihan Tenaga Konstruksi Kecamatan Cikalong Wetan ',
+    'id' => 1,
+    'materipelatihanskk_id' => null,
+    'allskktenagakerjablora_id' => null,
+    'user_id' => 8,
+    'asosiasimasjaki_id' => 1,
+    'namakegiatan' => 'Pelatihan Tenaga Konstruksi Kecamatan Cililin',
     'jabatankerja_id' => 76,
-    'penutupan' => '2024-08-13',
-    'waktupelaksanaan' => '2024-08-14',
+    'penutupan' => '2024-08-10',
+    'waktupelaksanaan' => '2024-08-11',
+    'jumlahpeserta' => 30,
+    'lokasi' => 'Gedung Serba Guna Kecamatan Cililin Kabupaten Bandung Barat',
+    'keterangan' => 'Pelatihan Jenjang 1 Tenaga Kerja Konstruksi',
+    'isiagenda' => 'Materi meliputi keselamatan kerja, manajemen proyek, dan teknik konstruksi dasar.',
+    'foto' => 'assets/icon/logotenagakerjakonstruksi.png',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+/* 2. Cikalong Wetan */
+agendaskk::create([
+    'id' => 2,
+    'materipelatihanskk_id' => null,
+    'allskktenagakerjablora_id' => null,
+    'user_id' => 8,
+    'asosiasimasjaki_id' => 1,
+    'namakegiatan' => 'Pelatihan Tenaga Konstruksi Kecamatan Cikalong Wetan',
+    'jabatankerja_id' => 76,
+    'penutupan' => '2024-10-14',
+    'waktupelaksanaan' => '2024-10-14',
     'jumlahpeserta' => 30,
     'lokasi' => 'Gedung Serba Guna Kecamatan Cikalong Wetan Kabupaten Bandung Barat',
     'keterangan' => 'Pelatihan Jenjang 1 Tenaga Kerja Konstruksi',
     'isiagenda' => 'Materi meliputi keselamatan kerja, manajemen proyek, dan teknik konstruksi dasar.',
-    'foto' => 'agendaskk/arsip/foto_kegiatan1.jpg',
-
+    'foto' => 'assets/icon/logotenagakerjakonstruksi.png',
     'created_at' => Carbon::now(),
     'updated_at' => Carbon::now(),
 ]);
+
+/* 3. Cipatat */
+agendaskk::create([
+    'id' => 3,
+    'materipelatihanskk_id' => null,
+    'allskktenagakerjablora_id' => null,
+    'user_id' => 8,
+    'asosiasimasjaki_id' => 1,
+    'namakegiatan' => 'Pelatihan Tenaga Konstruksi Kecamatan Cipatat',
+    'jabatankerja_id' => 76,
+    'penutupan' => '2025-04-17',
+    'waktupelaksanaan' => '2025-04-17',
+    'jumlahpeserta' => 30,
+    'lokasi' => 'Gedung Serba Guna Kecamatan Cipatat Kabupaten Bandung Barat',
+    'keterangan' => 'Pelatihan Jenjang 1 Tenaga Kerja Konstruksi',
+    'isiagenda' => 'Materi meliputi keselamatan kerja, manajemen proyek, dan teknik konstruksi dasar.',
+    'foto' => 'assets/icon/logotenagakerjakonstruksi.png',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+/* 4. Ngamprah */
+agendaskk::create([
+    'id' => 4,
+    'materipelatihanskk_id' => null,
+    'allskktenagakerjablora_id' => null,
+    'user_id' => 8,
+    'asosiasimasjaki_id' => 1,
+    'namakegiatan' => 'Pelatihan Tenaga Konstruksi Kecamatan Ngamprah',
+    'jabatankerja_id' => 76,
+    'penutupan' => '2025-12-17',
+    'waktupelaksanaan' => '2025-12-17',
+    'jumlahpeserta' => 30,
+    'lokasi' => 'Gedung Serba Guna Kecamatan Ngamprah Kabupaten Bandung Barat',
+    'keterangan' => 'Pelatihan Jenjang 1 Tenaga Kerja Konstruksi',
+    'isiagenda' => 'Materi meliputi keselamatan kerja, manajemen proyek, dan teknik konstruksi dasar.',
+    'foto' => 'assets/icon/logotenagakerjakonstruksi.png',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
 
 kecamatankbb::create([
     'id' => 1,

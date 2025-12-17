@@ -80,7 +80,7 @@ class AuthServiceProvider extends ServiceProvider
                         return in_array($user->statusadmin->statusadmin, [
                             'super_admin',
                             'admin',
-                            'operator',
+                            'dinas',
                         ]);
                     });
 

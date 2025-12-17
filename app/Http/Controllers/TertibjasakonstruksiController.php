@@ -2337,6 +2337,7 @@ public function betertibjakonpenyelenggaraancreatenew(Request $request)
     // Validasi input
     $validated = $request->validate([
         'penyediastatustertibjakon_id' => 'required|string',
+        'user_id' => 'required|string',
         'kegiatankonstruksi'    => 'required|string|max:65535',
         'namapekerjaan'         => 'required|string|max:65535',
         'nomorkontrak'          => 'required|string|max:255',

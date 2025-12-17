@@ -67,6 +67,9 @@
                         <form action="{{ route('betertibjakonpenyelenggaraancreatenewupdate') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="card-body">
+
+
+      <input type="hidden" name="user_id" value="{{ auth()->id() }}">
                                 <div class="row">
                                     <!-- Kolom Kiri -->
                                     <div class="col-md-6">

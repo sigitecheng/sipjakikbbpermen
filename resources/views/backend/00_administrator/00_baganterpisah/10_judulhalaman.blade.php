@@ -31,7 +31,7 @@
                         {{ $title }}
                     </div>
                     <div style="font-size:13px;color:#6c757d;">
-                        Sistem Informasi Jasa Konstruksi
+                        Sistem Informasi Pembina Jasa Konstruksi
                     </div>
                 </div>
             </div>

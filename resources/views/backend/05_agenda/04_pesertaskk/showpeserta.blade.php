@@ -116,7 +116,7 @@
 
                         <button class="hide-on-mobile button-berkas"
                         onclick="exportTableToExcel('daftarpesertaskk', 'Data Peserta {{$data->namakegiatan}}')">
-                        <i class="bi bi-file-earmark-excel-fill" style="margin-right: 8px; font-size: 16px;"></i> Download Excel
+                        <i class="bi bi-file-earmark-excel-fill"></i> Download Excel
                     </button>
 
                     <script>
@@ -262,7 +262,7 @@
 
                     <a href="/beagendaskkdatapeserta">
   <button class="button-modern">
-        <i class="bi bi-arrow-left icon-create"></i> Kembali
+        <i class="bi bi-arrow-left "></i> Kembali
 </button>
 
 </a>

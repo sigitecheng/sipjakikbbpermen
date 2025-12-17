@@ -171,88 +171,120 @@
 
     </div>
 
-    <div class="form-group" style="
-        margin-bottom: 20px;
-        padding: 15px;
-        background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #2517eb;
-        border-radius: 5px;
-    ">
+    <div class="form-group mb-3">
+    <div class="d-flex flex-column p-4"
+         style="
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            border-left: 6px solid #0d6efd;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            font-family: 'Poppins', sans-serif;
+         ">
         <label style="
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        ">Status Akun</label>
-        <div class="form-control" style="
-            padding: 10px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        ">{{ $user->statusadmin->statusadmin ?? 'N/A' }}</div>
-    </div>
+            font-size:13px;
+            font-weight:600;
+            color:#6c757d;
+            margin-bottom:6px;
+        ">
+            Status Akun
+        </label>
 
-    <div class="form-group" style="
-        margin-bottom: 20px;
-        padding: 15px;
-        background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #2517eb;
-        border-radius: 5px;
-    ">
-        <label style="
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        ">Nama Lengkap</label>
-        <div class="form-control" style="
-            padding: 10px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        ">{{ $user->name ?? '-' }}</div>
+        <div style="
+            font-size:15px;
+            font-weight:600;
+            color:#212529;
+        ">
+            {{ $user->statusadmin->statusadmin ?? 'N/A' }}
+        </div>
     </div>
+</div>
 
-    <div class="form-group" style="
-        margin-bottom: 20px;
-        padding: 15px;
-        background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #2517eb;
-        border-radius: 5px;
-    ">
+<div class="form-group mb-3">
+    <div class="d-flex flex-column p-4"
+         style="
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            border-left: 6px solid #0d6efd;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            font-family: 'Poppins', sans-serif;
+         ">
         <label style="
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        ">Username</label>
-        <div class="form-control" style="
-            padding: 10px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        ">{{ $user->username ?? 'N/A' }}</div>
+            font-size:13px;
+            font-weight:600;
+            color:#6c757d;
+            margin-bottom:6px;
+        ">
+            Nama Lengkap
+        </label>
+
+        <div style="
+            font-size:15px;
+            font-weight:600;
+            color:#212529;
+        ">
+            {{ $user->name ?? '-' }}
+        </div>
     </div>
-    <div class="form-group" style="
-        margin-bottom: 20px;
-        padding: 15px;
-        background: linear-gradient(to right, #f9f9f9, #fff);
-        border-left: 4px solid #2517eb;
-        border-radius: 5px;
-    ">
+</div>
+
+<div class="form-group mb-3">
+    <div class="d-flex flex-column p-4"
+         style="
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            border-left: 6px solid #0d6efd;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            font-family: 'Poppins', sans-serif;
+         ">
         <label style="
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        ">Email</label>
-        <div class="form-control" style="
-            padding: 10px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        ">{{ $user->email ?? 'N/A' }}</div>
+            font-size:13px;
+            font-weight:600;
+            color:#6c757d;
+            margin-bottom:6px;
+        ">
+            Username
+        </label>
+
+        <div style="
+            font-size:15px;
+            font-weight:600;
+            color:#212529;
+        ">
+            {{ $user->username ?? 'N/A' }}
+        </div>
     </div>
+</div>
+
+<div class="form-group mb-3">
+    <div class="d-flex flex-column p-4"
+         style="
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            border-left: 6px solid #0d6efd;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            font-family: 'Poppins', sans-serif;
+         ">
+        <label style="
+            font-size:13px;
+            font-weight:600;
+            color:#6c757d;
+            margin-bottom:6px;
+        ">
+            Email
+        </label>
+
+        <div style="
+            font-size:15px;
+            font-weight:600;
+            color:#212529;
+        ">
+            {{ $user->email ?? 'N/A' }}
+        </div>
+    </div>
+</div>
+
+
+
 </div>
 
 
