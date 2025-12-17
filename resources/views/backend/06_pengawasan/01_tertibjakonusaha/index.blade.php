@@ -46,7 +46,7 @@
                      @include('backend.00_administrator.00_baganterpisah.12_judulupdate')
                      <div style="display: flex; justify-content: flex-end; margin-bottom: 5px;">
                         <div style="display: flex; align-items: center; gap: 8px; margin-right:10px;">
-                            <label for="entries">Data : </label>
+                            <label for="entries">Tampilkan Data : </label>
                             <select id="entries" onchange="updateEntries()" style="padding: 8px 12px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; font-size: 14px; cursor: pointer;">
                                 <option value="10">10</option>
                                 <option value="25">25</option>
@@ -86,6 +86,7 @@
                 height: 44px;
                 box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
             ">
+
             <input type="text"
                 id="searchMaterial"
                 placeholder="Cari Paket Pekerjaan ?"
@@ -112,28 +113,6 @@
             </button>
         </div>
 </div>
-
-<script>
-    let searchTimeout;
-
-// Event search
-document.getElementById('searchInput').addEventListener('keyup', function() {
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(fetchData, 500);
-});
-
-// Intercept klik pagination
-document.addEventListener('click', function(e) {
-    const link = e.target.closest('.pagination a');
-    if(link) {
-        e.preventDefault();
-        const url = link.getAttribute('href');
-        fetchData(url);
-    }
-});
-
-
-</script>
 
 
                                 <button class="button-berkas" onclick="exportSelectedColumnsToExcel('tabeltertibjakonusaha', 'Data_TertibJakonUsaha')">
@@ -208,7 +187,7 @@ document.addEventListener('click', function(e) {
 
                             </thead>
 
-                          <tbody id="tabeltertibjakonusahasearc">
+                          <tbody id="tablebody">
                             @forelse($data as $item)
                             <tr>
 
@@ -221,15 +200,16 @@ document.addEventListener('click', function(e) {
         @endif
     </td>
     <td>{{ $item->nib ?? 'Data Belum Di Update' }}</td>
-    <td>
-        @if($item->namapekerjaan)
-            <span style="white-space: pre-line;">
-                {{ preg_replace('/((?:\S+\s+){10})/', "$1\n", $item->namapekerjaan) }}
-            </span>
-        @else
-            <button class="button-berkas">Data Belum Di Update</button>
-        @endif
-    </td>
+    <td style="max-width:300px;">
+    @if($item->namapekerjaan)
+        <span style="white-space: pre-line;">
+            {{ $item->namapekerjaan }}
+        </span>
+    @else
+        <button class="button-berkas">Data Belum Di Update</button>
+    @endif
+        </td>
+
     <td style="text-align: center;">{{ $item->tahunpelaksanaan ?? 'Data Belum Di Update' }}</td>
     <td>{{ $item->namabadanusaha ?? 'Data Belum Di Update' }}</td>
     <td style="text-transform: uppercase;">{{ $item->pjbu ?? 'Data Belum Di Update' }}</td>
@@ -436,7 +416,7 @@ document.addEventListener('click', function(e) {
                         <div class="modal-content">
                             <div class="modal-header">
                                 <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -568,6 +548,13 @@ document.addEventListener('click', function(e) {
 
 
 <script>
+                              function updateEntries() {
+                                let selectedValue = document.getElementById("entries").value;
+                                let url = new URL(window.location.href);
+                                url.searchParams.set("perPage", selectedValue);
+                                window.location.href = url.toString();
+                            }
+
 function searchMaterial() {
     let input = document.getElementById("searchMaterial").value;
 
@@ -576,8 +563,8 @@ function searchMaterial() {
         .then(html => {
             let parser = new DOMParser();
             let doc = parser.parseFromString(html, "text/html");
-            let newTableBody = doc.querySelector("#tableBody").innerHTML;
-            document.querySelector("#tableBody").innerHTML = newTableBody;
+            let newTableBody = doc.querySelector("#tabeltertibjakonusaha").innerHTML;
+            document.querySelector("#tabeltertibjakonusaha").innerHTML = newTableBody;
         })
         .catch(error => console.error("Error fetching search results:", error));
 }

@@ -79,13 +79,42 @@
 </button>
 
 <div style="position: relative; display: inline-block; margin-right:10px;">
-    <input type="search" id="searchInput" placeholder="Cari Paket Pekerjaan ...."
-           onkeyup="searchTable()"
-           style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
-    <i class="bi bi-search"
-       style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
-</div>
+   <div class="d-flex align-items-center px-3 py-2 rounded"
+            style="
+                border: 1px solid #d0d0d5;
+                flex: 1;
+                min-width: 280px;
+                background: white;
+                height: 44px;
+                box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+            ">
 
+            <input type="text"
+                id="searchMaterial"
+                placeholder="Cari Paket Pekerjaan ?"
+                oninput="searchMaterial()"
+                class="w-100 border-0 outline-none"
+                style="
+                    font-family: 'Poppins';
+                    background: transparent;
+                    font-size: 14px;
+                    color: #333;
+                " />
+
+            <button type="button" class="ms-2"
+                style="border:none; background:none; color:#0d6efd;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681
+                    12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681
+                    1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945
+                    1 15.681 4.28645 15.681 8.3405Z"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+</div>
 <script>
     function updateEntries() {
         let selectedValue = document.getElementById("entries").value;
@@ -94,25 +123,21 @@
         window.location.href = url.toString();
     }
 
-    let debounceTimer;
-    function searchTable() {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => {
-            let input = document.getElementById("searchInput").value;
 
-            fetch(`/betertibjakonpenyelenggaraan?search=${encodeURIComponent(input)}`, {
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest',
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.querySelector("#tableBody").innerHTML = data.html;
-            })
-            .catch(error => console.error("Error fetching search results:", error));
-        }, 400); // kasih jeda 0.4 detik biar ga spam server
-    }
+                            function searchMaterial() {
+                                let input = document.getElementById("searchMaterial").value;
+
+                                fetch(`/betertibjakonpenyelenggaraan?search=${encodeURIComponent(input)}`)
+                                    .then(response => response.text())
+                                    .then(html => {
+                                        let parser = new DOMParser();
+                                        let doc = parser.parseFromString(html, "text/html");
+                                        let newTableBody = doc.querySelector("#tabeltertibjakonusaha").innerHTML;
+                                        document.querySelector("#tabeltertibjakonusaha").innerHTML = newTableBody;
+                                    })
+                                    .catch(error => console.error("Error fetching search results:", error));
+                            }
+
 </script>
 
 
@@ -280,7 +305,6 @@
                             </div>
                         </td>
 
-
                                 <td style="text-align: center; vertical-align: middle;">
                                     <div style="display: flex; justify-content: center; gap: 8px;">
                                         <a href="{{ url('/betertibjakonpenyelenggaraan2/' . $item->id) }}" style="text-decoration: none;">
@@ -288,7 +312,6 @@
                                                 <i class="bi bi-file-earmark-text"></i> Lihat Surat
                                             </button>
                                         </a>
-
                                         <a href="/beuploadberkaspenyelenggaraan2/{{$item->id}}" style="text-decoration: none;">
                                             @if(!empty($item->berkasdukung2))
                                         <button class="button-berkas">

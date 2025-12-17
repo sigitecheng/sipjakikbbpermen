@@ -84,7 +84,7 @@
 
                                     <div class="col-md-6">
                                         <!-- Nomor Induk Berusaha -->
-                                        <div class="mb-3">
+                                        <div class="form-modern mb-3">
                                             <label class="form-label" for="nib">
                                                 <i class="bi bi-credit-card" style="margin-right: 10px; color: navy;"></i> Nomor Induk Berusaha
                                             </label>
@@ -95,7 +95,7 @@
                                         </div>
 
                                         <!-- Nama Pekerjaan -->
-                                        <div class="mb-3">
+                                        <div class="form-modern mb-3">
                                             <label class="form-label" for="namapekerjaan">
                                                 <i class="bi bi-briefcase" style="margin-right: 10px; color: navy;"></i> Nama Pekerjaan
                                             </label>
@@ -108,7 +108,7 @@
 
 
                                         <!-- Nama Asosiasi -->
-                                        <div class="mb-3">
+                                        <div class="form-modern mb-3">
                                             <label class="form-label" for="penyediastatustertibjakon_id">
                                                 <i class="bi bi-person-check" style="margin-right: 10px; color: navy;"></i> Status Penyedia
                                             </label>
@@ -129,7 +129,7 @@
                                     </div>
                                     <div class="col-md-6">
                                     <!-- Tahun Pelaksanaan -->
-                                            <div class="mb-3">
+                                            <div class="form-modern mb-3">
                                                 <label class="form-label" for="tahunpelaksanaan">
                                                 <i class="bi bi-calendar" style="margin-right: 10px; color: navy;"></i> Tahun Pelaksanaan
                                                 </label>
@@ -146,7 +146,7 @@
 
 
                                         <!-- Nama Badan Usaha -->
-                                        <div class="mb-3">
+                                        <div class="form-modern mb-3">
                                             <label class="form-label" for="namabadanusaha">
                                                 <i class="bi bi-building" style="margin-right: 10px; color: navy;"></i> Nama Badan Usaha
                                             </label>
@@ -157,7 +157,7 @@
                                         </div>
 
                                         <!-- Penanggung Jawab Badan Usaha -->
-                                        <div class="mb-3">
+                                        <div class="form-modern mb-3">
                                             <label class="form-label" for="pjbu">
                                                 <i class="bi bi-person-lines-fill" style="margin-right: 10px; color: navy;"></i> Penanggung Jawab Badan Usaha
                                             </label>

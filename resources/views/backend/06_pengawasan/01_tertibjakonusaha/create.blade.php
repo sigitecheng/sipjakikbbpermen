@@ -144,6 +144,9 @@ style="
 <div class="row">
                                     <!-- Kolom Kiri -->
 <div class="col-md-6">
+
+      <input type="hidden" name="user_id" value="{{ auth()->id() }}">
+
 <div class="form-modern mb-3">
     <label for="penyediastatustertibjakon_id" class="form-label-modern">
         <i class="bi bi-card-text text-primary me-2"></i> Sektor

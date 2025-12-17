@@ -20,6 +20,8 @@ return new class extends Migration
             $table->foreignId('surattertibjakonpemanfaatan4_id')->nullable()->index();
             $table->foreignId('surattertibjakonpemanfaatan5_id')->nullable()->index();
             $table->foreignId('penyediastatustertibjakon_id')->nullable()->index();
+            $table->foreignId('user_id')->nullable()->index();
+
             // -----------------------------------------------------------------
             $table->text('namapekerjaan')->nullable()->index();
             $table->text('namabangunan')->nullable()->index();

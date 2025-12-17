@@ -65,10 +65,43 @@
                             </select>
                         </div>
 
-                        <div style="position: relative; display: inline-block; margin-right:10px;">
-                            <input type="search" id="searchInput" placeholder="Cari Paket Pekerjaan ...." onkeyup="searchTable()" style="border: 1px solid #ccc; padding: 10px 20px; font-size: 14px; border-radius: 10px; width: 300px;">
-                            <i class="bi bi-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #888;"></i>
-                        </div>
+<div style="position: relative; display: inline-block; margin-right:10px;">
+   <div class="d-flex align-items-center px-3 py-2 rounded"
+            style="
+                border: 1px solid #d0d0d5;
+                flex: 1;
+                min-width: 280px;
+                background: white;
+                height: 44px;
+                box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+            ">
+
+            <input type="text"
+                id="searchMaterial"
+                placeholder="Cari Paket Pekerjaan ?"
+                oninput="searchMaterial()"
+                class="w-100 border-0 outline-none"
+                style="
+                    font-family: 'Poppins';
+                    background: transparent;
+                    font-size: 14px;
+                    color: #333;
+                " />
+
+            <button type="button" class="ms-2"
+                style="border:none; background:none; color:#0d6efd;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 18 18" fill="none">
+                    <path d="M17 17L13.5247 13.5247M15.681 8.3405C15.681
+                    12.3945 12.3945 15.681 8.3405 15.681C4.28645 15.681
+                    1 12.3945 1 8.3405C1 4.28645 4.28645 1 8.3405 1C12.3945
+                    1 15.681 4.28645 15.681 8.3405Z"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+</div>
 
                         <script>
                             function updateEntries() {
@@ -78,20 +111,20 @@
                                 window.location.href = url.toString();
                             }
 
-                            function searchTable() {
-                            let input = document.getElementById("searchInput").value;
 
-                            fetch(`/betertibjakonpemanfaatan?search=${encodeURIComponent(input)}`, {
-                                headers: {
-                                    'X-Requested-With': 'XMLHttpRequest'
-                                }
-                            })
-                            .then(response => response.json())
-                            .then(data => {
-                                document.querySelector("#tableBody").innerHTML = data.html;
-                            })
-                            .catch(error => console.error("Error fetching search results:", error));
-                        }
+                            function searchMaterial() {
+                                let input = document.getElementById("searchMaterial").value;
+
+                                fetch(`/betertibjakonpemanfaatan?search=${encodeURIComponent(input)}`)
+                                    .then(response => response.text())
+                                    .then(html => {
+                                        let parser = new DOMParser();
+                                        let doc = parser.parseFromString(html, "text/html");
+                                        let newTableBody = doc.querySelector("#tabeltertibjakonusaha").innerHTML;
+                                        document.querySelector("#tabeltertibjakonusaha").innerHTML = newTableBody;
+                                    })
+                                    .catch(error => console.error("Error fetching search results:", error));
+                            }
 
                                 </script>
 
@@ -103,8 +136,8 @@
                                 <a href="/betertibjakonpemanfaatan/create">
                                     <button class="button-modern";>
                                     <!-- Ikon Kembali -->
-                                    <i class="fa fa-plus icon-create" style="margin-right: 8px;"></i>
-                                    Buat Baru
+                                    <i class="fa fa-plus " style="margin-right: 8px;"></i>
+                                    Tambah Data
                                 </button>
                                 </a>
 
@@ -171,7 +204,7 @@
 
                             </thead>
 
-                          <tbody id="tableBody">
+                          <tbody id="tabeltertibjakonusaha">
                             @forelse($data as $item)
                             <tr>
                               <td style="text-align: center;">{{ $loop->iteration }}</td>
@@ -195,23 +228,18 @@
   @endif
 </td>
 
-<td style="text-align: left; max-width: 300px; word-wrap: break-word; white-space:">
-  @if($item->namabangunan)
-    @php
-      $words = explode(' ', $item->namabangunan);
-      $chunks = array_chunk($words, 7);
-    @endphp
-    @foreach($chunks as $chunk)
-      {{ implode(' ', $chunk) }}<br>
-    @endforeach
-  @else
-    <button style="background-color: #000080; color: white; font-size: 14px; padding: 6px 10px; border-radius: 4px; border: 1px solid #000080; cursor: pointer;"
-            onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
-            onmouseout="this.style.backgroundColor='#000080'; this.style.color='white';">
-      Data Belum Di Update
-    </button>
-  @endif
+<td style="text-align:left; max-width:300px; white-space:pre-line;">
+    @if($item->namabangunan)
+        {{ $item->namabangunan }}
+    @else
+        <button style="background-color:#000080;color:white;font-size:14px;padding:6px 10px;border-radius:4px;border:1px solid #000080;cursor:pointer;"
+                onmouseover="this.style.backgroundColor='white';this.style.color='black';"
+                onmouseout="this.style.backgroundColor='#000080';this.style.color='white';">
+            Data Belum Di Update
+        </button>
+    @endif
 </td>
+
 <td style="text-align: left;">
   @if($item->nomorkontrak)
     {{ $item->nomorkontrak }}
@@ -278,14 +306,14 @@
                              <td style="text-align: center; vertical-align: middle;">
                                     <a href="/betertibjakonpemanfataanjakon/index/{{$item->id}}" style="text-decoration: none;">
                                         <button class="button-modern">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <i class="bi bi-file-earmark-text "></i> Lihat Surat
                                         </button>
                                     </a>
                                 </td>
                                 <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonpemanfataansurat2/index/' . $item->id) }}" style="text-decoration: none;">
                                         <button class="button-modern">
-                                            <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                            <i class="bi bi-file-earmark-text "></i> Lihat Surat
                                         </button>
                                     </a>
                                 </td>
@@ -295,7 +323,7 @@
                                 <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/betertibjakonpemanfataansurat3/index/' . $item->id) }}" style="text-decoration: none;">
                                         <button class="button-modern">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <i class="bi bi-file-earmark-text "></i> Lihat Surat
                                         </button>
                                     </a>
                                 </td>
@@ -303,12 +331,12 @@
                                 <td style="text-align: center; vertical-align: middle;">
                                     <a href="{{ url('/buktidukung/create/' . $item->id) }}" style="text-decoration: none;">
                                         <button class="button-berkas">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Upload Bukti Dukung
+                                        <i class="bi bi-file-earmark-text "></i> Upload Bukti Dukung
                                         </button>
                                     </a>
                                       <a href="{{ url('/buktidukungindex/index/' . $item->id) }}" style="text-decoration: none;">
                                         <button class="button-modern">
-                                        <i class="bi bi-file-earmark-text icon-create"></i> Lihat Surat
+                                        <i class="bi bi-file-earmark-text "></i> Lihat Surat
                                         </button>
                                     </a>
                                 </td>
@@ -517,315 +545,3 @@
     }
     </script>
 
-
-<script>
-    function printModalContent(id) {
-        const modalContent = document.querySelector(`#modalKtp${id} .modal-content`);
-        if (!modalContent) {
-            alert("Konten tidak ditemukan.");
-            return;
-        }
-
-        const printWindow = window.open('', '', 'width=1200,height=800');
-        printWindow.document.write(`
-            <html>
-            <head>
-                <title>Print Dokumen</title>
-                <style>
-                    @media print {
-                        @page {
-                            size: A4 landscape;
-                            margin: 0mm;
-                        }
-                        body {
-                            font-family: Arial, sans-serif;
-                            font-size: 12px;
-                            color: #000;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            page-break-inside: auto;
-                        }
-                        th, td {
-                            border: 1px solid #000;
-                            padding: 4px;
-                            vertical-align: top;
-                        }
-                        .no-border td {
-                            border: none;
-                        }
-                    }
-
-                    body {
-                        margin: 10mm;
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                    }
-
-                    h5 {
-                        font-size: 1rem;
-                        margin-bottom: 10px;
-                    }
-
-                    .table-bordered {
-                        border: 1px solid #000;
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-
-                    .table-bordered th, .table-bordered td {
-                        border: 1px solid #000;
-                        padding: 6px;
-                        text-align: left;
-                    }
-
-                    .table-secondary {
-                        background-color: #f8f9fa;
-                    }
-
-                    /* Penyesuaian khusus untuk bagian tim pemeriksa */
-                    .tim-pemeriksa-container {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-
-                    .tim-pemeriksa {
-                        width: 50%;
-                    }
-
-                    .tim-pemeriksa table {
-                        width: 100%;
-                        border: 1px solid #000;
-                    }
-
-                    .tim-pemeriksa td, .tim-pemeriksa th {
-                        text-align: center;
-                        padding: 3px;
-                        height: 15px;
-                        font-size: 11px;
-                    }
-                </style>
-            </head>
-            <body>
-                ${modalContent.innerHTML}
-                <script>
-                    window.onload = function() {
-                        window.print();
-                        window.onafterprint = window.close;
-                    }
-                <\/script>
-            </body>
-            </html>
-        `);
-        printWindow.document.close();
-    }
-</script>
-
-<script>
-    function printModalContentSurat2(id) {
-        const modalContent = document.querySelector(`#modalSurat2${id} .modal-content`);
-        if (!modalContent) {
-            alert("Konten tidak ditemukan.");
-            return;
-        }
-
-        const printWindow = window.open('', '', 'width=1200,height=800');
-        printWindow.document.write(`
-            <html>
-            <head>
-                <title>Print Dokumen</title>
-                <style>
-                    @media print {
-                        @page {
-                            size: A4 landscape;
-                            margin: 0mm;
-                        }
-                        body {
-                            font-family: Arial, sans-serif;
-                            font-size: 12px;
-                            color: #000;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            page-break-inside: auto;
-                        }
-                        th, td {
-                            border: 1px solid #000;
-                            padding: 4px;
-                            vertical-align: top;
-                        }
-                        .no-border td {
-                            border: none;
-                        }
-                    }
-
-                    body {
-                        margin: 10mm;
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                    }
-
-                    h5 {
-                        font-size: 1rem;
-                        margin-bottom: 10px;
-                    }
-
-                    .table-bordered {
-                        border: 1px solid #000;
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-
-                    .table-bordered th, .table-bordered td {
-                        border: 1px solid #000;
-                        padding: 6px;
-                        text-align: left;
-                    }
-
-                    .table-secondary {
-                        background-color: #f8f9fa;
-                    }
-
-                    /* Penyesuaian khusus untuk bagian tim pemeriksa */
-                    .tim-pemeriksa-container {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-
-                    .tim-pemeriksa {
-                        width: 50%;
-                    }
-
-                    .tim-pemeriksa table {
-                        width: 100%;
-                        border: 1px solid #000;
-                    }
-
-                    .tim-pemeriksa td, .tim-pemeriksa th {
-                        text-align: center;
-                        padding: 3px;
-                        height: 15px;
-                        font-size: 11px;
-                    }
-                </style>
-            </head>
-            <body>
-                ${modalContent.innerHTML}
-                <script>
-                    window.onload = function() {
-                        window.print();
-                        window.onafterprint = window.close;
-                    }
-                <\/script>
-            </body>
-            </html>
-        `);
-        printWindow.document.close();
-    }
-</script>
-
-<script>
-    function printModalContentSurat3(id) {
-        const modalContent = document.querySelector(`#modalSurat3${id} .modal-content`);
-        if (!modalContent) {
-            alert("Konten tidak ditemukan.");
-            return;
-        }
-
-        const printWindow = window.open('', '', 'width=1200,height=800');
-        printWindow.document.write(`
-            <html>
-            <head>
-                <title>Print Dokumen</title>
-                <style>
-                    @media print {
-                        @page {
-                            size: A4 landscape;
-                            margin: 0mm;
-                        }
-                        body {
-                            font-family: Arial, sans-serif;
-                            font-size: 12px;
-                            color: #000;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            page-break-inside: auto;
-                        }
-                        th, td {
-                            border: 1px solid #000;
-                            padding: 4px;
-                            vertical-align: top;
-                        }
-                        .no-border td {
-                            border: none;
-                        }
-                    }
-
-                    body {
-                        margin: 10mm;
-                        font-family: Arial, sans-serif;
-                        font-size: 12px;
-                    }
-
-                    h5 {
-                        font-size: 1rem;
-                        margin-bottom: 10px;
-                    }
-
-                    .table-bordered {
-                        border: 1px solid #000;
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-
-                    .table-bordered th, .table-bordered td {
-                        border: 1px solid #000;
-                        padding: 6px;
-                        text-align: left;
-                    }
-
-                    .table-secondary {
-                        background-color: #f8f9fa;
-                    }
-
-                    /* Penyesuaian khusus untuk bagian tim pemeriksa */
-                    .tim-pemeriksa-container {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-
-                    .tim-pemeriksa {
-                        width: 50%;
-                    }
-
-                    .tim-pemeriksa table {
-                        width: 100%;
-                        border: 1px solid #000;
-                    }
-
-                    .tim-pemeriksa td, .tim-pemeriksa th {
-                        text-align: center;
-                        padding: 3px;
-                        height: 15px;
-                        font-size: 11px;
-                    }
-                </style>
-            </head>
-            <body>
-                ${modalContent.innerHTML}
-                <script>
-                    window.onload = function() {
-                        window.print();
-                        window.onafterprint = window.close;
-                    }
-                <\/script>
-            </body>
-            </html>
-        `);
-        printWindow.document.close();
-    }
-</script>

@@ -83,7 +83,7 @@
                                 <div class="row">
                                     <!-- Left Column (6/12) -->
 <div class="col-md-6">
-    <div class="form-modern mb-3">
+    <div class="mb-3">
         <label class="form-label-modern" for="cadangan2">
             <i class="bi bi-file-earmark-check" style="margin-right: 10px; color: navy;"></i>
             Berkas Dukung Kesesuaian Segmentasi Pasar

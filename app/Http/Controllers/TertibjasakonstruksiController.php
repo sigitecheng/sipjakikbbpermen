@@ -456,18 +456,28 @@ class TertibjasakonstruksiController extends Controller
 
     $query = tertibjasakonstruksi::query();
 
-    if ($search) {
-        $query->where(function ($q) use ($search) {
-            $q->where('nib', 'LIKE', "%{$search}%")
-              ->orWhere('namapekerjaan', 'LIKE', "%{$search}%")
-              ->orWhere('tahunpelaksanaan', 'LIKE', "%{$search}%")
-              ->orWhere('namabadanusaha', 'LIKE', "%{$search}%")
-              ->orWhere('pjbu', 'LIKE', "%{$search}%")
-              ->orWhereHas('penyediastatustertibjakon', function ($r) use ($search) {
-                  $r->where('penyedia', 'LIKE', "%{$search}%");
-              });
-        });
+    // FILTER AKSES DATA
+    $user = auth()->user();
+    if ($user->statusadmin->id != 1) {
+        $query->where('user_id', $user->id);
     }
+
+
+    if ($search) {
+    $query->where(function ($q) use ($search) {
+        $q->where('nib', 'LIKE', "%{$search}%")
+          ->orWhere('namapekerjaan', 'LIKE', "%{$search}%")
+          ->orWhere('tahunpelaksanaan', 'LIKE', "%{$search}%")
+          ->orWhere('namabadanusaha', 'LIKE', "%{$search}%")
+          ->orWhere('pjbu', 'LIKE', "%{$search}%")
+
+          // SEARCH LEWAT RELASI (TANPA NIK)
+          ->orWhereHas('penyediastatustertibjakon', function ($r) use ($search) {
+              $r->where('penyedia', 'LIKE', "%{$search}%");
+          });
+    });
+}
+
 
     $data = $query->with('penyediastatustertibjakon', 'surattertibjakonusaha1')
                   ->orderBy('updated_at', 'desc')
@@ -609,6 +619,7 @@ public function betertibjakonusahacreatenew(Request $request)
     {
         // Validasi input
         $validated = $request->validate([
+            'user_id' => 'required|string',
             'penyediastatustertibjakon_id' => 'required|string',
             'nib' => 'required|numeric|digits_between:1,50',
             'namapekerjaan' => 'required|string|max:255',
@@ -1647,7 +1658,15 @@ public function betertibjakonpemanfaatan(Request $request)
     $perPage = $request->input('perPage', 15);
     $search = $request->input('search');
 
-    $query = tertibjakonpemanfaatan::with('surattertibjakonpemanfaatan4');
+    // $query = tertibjakonpemanfaatan::with('surattertibjakonpemanfaatan4');
+    $query = tertibjakonpemanfaatan::query();
+
+        // FILTER AKSES DATA
+        $user = auth()->user();
+        if ($user->statusadmin->id != 1) {
+            $query->where('user_id', $user->id);
+        }
+
 
     if ($search) {
         $query->where(function ($q) use ($search) {
@@ -1704,6 +1723,7 @@ return view('backend.06_pengawasan.02_tertibjakonpemanfaatan.create', [
     {
         // Validasi input
          $validated = $request->validate([
+        'user_id' => 'required|string', // text di DB = text max 65535 chars
         'penyediastatustertibjakon_id' => 'required|string', // text di DB = text max 65535 chars
         'namapekerjaan'       => 'required|string|max:65535', // text di DB = text max 65535 chars
         'namabangunan'        => 'required|string|max:65535',
@@ -2242,7 +2262,16 @@ public function betertibjakonpenyelenggaraanindex(Request $request)
     $perPage = $request->input('perPage', 10);
     $search = $request->input('search');
 
+    // $query = tertibjakonpenyelenggaraan::query();
     $query = tertibjakonpenyelenggaraan::query();
+
+        // FILTER AKSES DATA
+        $user = auth()->user();
+        if ($user->statusadmin->id != 1) {
+            $query->where('user_id', $user->id);
+        }
+
+
 
     // Filtering by search
     if ($search) {
@@ -4042,5 +4071,67 @@ public function beuploadberkaspenyelenggaraan6upload(Request $request, $id)
     session()->flash('update', 'Berkas Berhasil di Upload !');
     return redirect()->back();
 }
+
+
+//  FILTER DATA BERDSARKAN AKUN YANG LOGIN TERTIB JAKON USAHA
+// public function betertibjakonusaha(Request $request)
+// {
+//     $perPage = $request->input('perPage', 10);
+//     $search = $request->input('search');
+
+//     $query = tertibjasakonstruksi::query();
+
+//     // ✅ FILTER BERDASARKAN USER LOGIN
+//     $query->where('user_id', auth()->id());
+
+//     if ($search) {
+//         $query->where(function ($q) use ($search) {
+//             $q->where('nib', 'LIKE', "%{$search}%")
+//               ->orWhere('namapekerjaan', 'LIKE', "%{$search}%")
+//               ->orWhere('tahunpelaksanaan', 'LIKE', "%{$search}%")
+//               ->orWhere('namabadanusaha', 'LIKE', "%{$search}%")
+//               ->orWhere('pjbu', 'LIKE', "%{$search}%")
+//               ->orWhereHas('penyediastatustertibjakon', function ($r) use ($search) {
+//                   $r->where('penyedia', 'LIKE', "%{$search}%");
+//               });
+//         });
+//     }
+
+//     $data = $query->with('penyediastatustertibjakon', 'surattertibjakonusaha1')
+//                   ->orderBy('updated_at', 'desc')
+//                   ->paginate($perPage)
+//                   ->appends($request->only('search', 'perPage'));
+
+//     if ($request->ajax()) {
+//         return response()->json([
+//             'html' => view(
+//                 'backend.06_pengawasan.01_tertibjakonusaha.partials.table',
+//                 compact('data')
+//             )->render()
+//         ]);
+//     }
+
+//     $totalpenyedia1 = tertibjasakonstruksi::where('user_id', auth()->id())
+//         ->whereHas('penyediastatustertibjakon', fn ($q) => $q->where('id', 1))
+//         ->count();
+
+//     $totalpenyedia2 = tertibjasakonstruksi::where('user_id', auth()->id())
+//         ->whereHas('penyediastatustertibjakon', fn ($q) => $q->where('id', 2))
+//         ->count();
+
+//     $totalpenyedia3 = tertibjasakonstruksi::where('user_id', auth()->id())
+//         ->whereHas('penyediastatustertibjakon', fn ($q) => $q->where('id', 3))
+//         ->count();
+
+//     return view('backend.06_pengawasan.01_tertibjakonusaha.index', [
+//         'title' => 'Data Tertib Jakon Usaha',
+//         'data' => $data,
+//         'perPage' => $perPage,
+//         'search' => $search,
+//         'totalpenyedia1' => $totalpenyedia1,
+//         'totalpenyedia2' => $totalpenyedia2,
+//         'totalpenyedia3' => $totalpenyedia3,
+//     ]);
+// }
 
 }

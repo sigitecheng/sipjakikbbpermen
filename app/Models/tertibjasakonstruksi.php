@@ -38,4 +38,9 @@ class tertibjasakonstruksi extends Model
         return $this->belongsTo(surattertibjakonusaha4::class);
     }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }

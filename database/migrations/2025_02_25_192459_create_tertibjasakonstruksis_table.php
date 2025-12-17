@@ -19,7 +19,9 @@ return new class extends Migration
             $table->foreignId('surattertibjakonusaha2_id')->nullable()->index();
             $table->foreignId('surattertibjakonusaha3_id')->nullable()->index();
             $table->foreignId('surattertibjakonusaha4_id')->nullable()->index();
-// -------------------------------------------------------------------------
+            $table->foreignId('user_id')->nullable()->index();
+
+            // -------------------------------------------------------------------------
             $table->string('nib', 50)->nullable()->index(); // Set panjang karakter yang lebih sesuai
             $table->string('namapekerjaan', 255)->nullable();
             $table->string('tahunpelaksanaan', 255)->nullable();
