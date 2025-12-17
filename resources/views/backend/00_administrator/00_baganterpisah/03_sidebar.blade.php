@@ -1581,7 +1581,7 @@
 </div>
 
                   <li class="nav-item">
-                    <a href="/besatuanhargamaterial" class="nav-link">
+                    <a href="/divsatupekerjaan" class="nav-link">
                       <i class="nav-icon bi bi-gear text-warning"></i> <!-- Ikon untuk Divisi I -->
                       <p style="color: white">Divisi I <br> Persiapan Lapangan</p>
                     </a>

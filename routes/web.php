@@ -9,6 +9,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PeraturanController;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\AdministratorController;
+use App\Http\Controllers\AhspController;
 // use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\AkunController;
 use App\Http\Controllers\SettingmenuController;
@@ -2627,7 +2628,7 @@ Route::get('/dokhakakses', [PetunjukController::class, 'dokhakakses'])->middlewa
 
 
 /// AHSP SATUAN KONSTRUKSI UMUM ANALISA KONSTRUKSI UMUM KABUPATEN BANDUNG BARAT
-Route::get('/divsatupekerjaan', [SatuanhargamaterialController::class, 'divsatupekerjaan'])->middleware(['auth', 'can:admin2']);
+Route::get('/divsatupekerjaan', [AhspController::class, 'divsatupekerjaan'])->middleware(['auth', 'can:admin2']);
 // Route::delete('/satuanhargamaterial/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialdelete'])->middleware(['auth', 'can:admin2']);
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);

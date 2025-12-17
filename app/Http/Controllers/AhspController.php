@@ -2,56 +2,60 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ahspdiv1;
 use Illuminate\Http\Request;
 
 class AhspController extends Controller
 {
 
-
-
-// MENU BACKEND SATUAN HARGA MERTIAL
-public function besatuanhargamaterial(Request $request)
+    public function divsatupekerjaan(Request $request)
 {
     $perPage = $request->input('perPage', 10);
-    $search = $request->input('search');
-    $kategori_id = $request->input('kategori_id');
+    $search  = $request->input('search');
 
-    $query = divsatupekerjaan::with('kategorimaterial');
+    $query = ahspdiv1::query()
+        ->leftJoin('divpaketpekerjaans', 'ahspdiv1s.divpaketpekerjaan_id', '=', 'divpaketpekerjaans.id')
+        ->leftJoin('divpekerjaans', 'ahspdiv1s.divpekerjaan_id', '=', 'divpekerjaans.id')
+        ->leftJoin('divuraianpekerjaans', 'ahspdiv1s.divuraianpekerjaan_id', '=', 'divuraianpekerjaans.id')
+        ->select(
+            'ahspdiv1s.*',
+            'divpaketpekerjaans.kode as kode_paket',
+            'divpekerjaans.kode as kode_pekerjaan',
+            'divuraianpekerjaans.kode as kode_uraian'
+        );
 
+    // SEARCH
     if ($search) {
         $query->where(function ($q) use ($search) {
-            $q->where('uraian', 'LIKE', "%{$search}%")
-              ->orWhere('satuan', 'LIKE', "%{$search}%")
-              ->orWhere('besaran', 'LIKE', "%{$search}%");
+            $q->where('ahspdiv1s.namapekerjaan', 'like', "%{$search}%")
+              ->orWhere('ahspdiv1s.satuan', 'like', "%{$search}%")
+              ->orWhere('ahspdiv1s.hargasatuan', 'like', "%{$search}%");
         });
     }
 
-    // Filter kategori jika dipilih
-    if ($kategori_id && $kategori_id != 'all') {
-        $query->where('kategorimaterial_id', $kategori_id);
-    }
-
-    // Urut berdasarkan uraian
-    $query->orderBy('uraian', 'asc');
+    // 🔥 URUTAN UTAMA SESUAI KODE AHSP
+    $query->orderBy('divpaketpekerjaans.kode', 'asc')
+          ->orderBy('divpekerjaans.kode', 'asc')
+          ->orderBy('divuraianpekerjaans.kode', 'asc')
+          ->orderBy('ahspdiv1s.namapekerjaan', 'asc');
 
     $data = $query->paginate($perPage);
 
-    // Ambil daftar kategori untuk select dropdown
-    $kategori = kategorimaterial::orderBy('material','asc')->get();
-
+    // AJAX
     if ($request->ajax()) {
         return response()->json([
-            'html' => view('backend.07_satuanharga.01_satuanhargamaterial.partials.table', compact('data'))->render()
+            'html' => view(
+                'backend.07_satuanharga.01_satuanhargamaterial.partials.table',
+                compact('data')
+            )->render()
         ]);
     }
 
-    return view('backend.07_satuanharga.01_satuanhargamaterial.index', [
-        'title' => 'Daftar Satuan Harga Material',
-        'data' => $data,
-        'kategori' => $kategori,
-        'kategori_id' => $kategori_id,
+    return view('backend.20_ahsp.01_div.div1', [
+        'title'   => 'Daftar Satuan Harga AHSP DIV I Persiapan Pekerjaan ',
+        'data'    => $data,
         'perPage' => $perPage,
-        'search' => $search
+        'search'  => $search
     ]);
 }
     //
