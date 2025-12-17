@@ -12,4 +12,10 @@ class satuanhargaupahtenagakerja extends Model
     use HasFactory, SoftDeletes, HasApiTokens;
 
     protected $guarded = ['id'];
+
+    public function divuraianupahpekerjaan()
+    {
+        return $this->hasMany(divuraianupahpekerjaan::class);
+    }
+
 }

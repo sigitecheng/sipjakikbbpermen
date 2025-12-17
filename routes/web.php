@@ -2622,6 +2622,20 @@ Route::get('/datapersetatkkkbb/{namakegiatan}', [PelatihanController::class, 'da
 
 Route::get('/dokhakakses', [PetunjukController::class, 'dokhakakses'])->middleware(['auth', 'can:admin2']);
 
+
+
+
+
+/// AHSP SATUAN KONSTRUKSI UMUM ANALISA KONSTRUKSI UMUM KABUPATEN BANDUNG BARAT
+Route::get('/divsatupekerjaan', [SatuanhargamaterialController::class, 'divsatupekerjaan'])->middleware(['auth', 'can:admin2']);
+// Route::delete('/satuanhargamaterial/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialdelete'])->middleware(['auth', 'can:admin2']);
+
+// Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);
+// Route::post('/besatuanhargamaterial/createnew', [SatuanhargamaterialController::class, 'satuanhargamaterialcreatenew'])->middleware(['auth', 'can:admin2'])->name('create.satuanhargamaterialcreatenew');
+
+// Route::get('/besatuanhargamaterial/update/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdate'])->middleware(['auth', 'can:admin2']);
+// Route::post('/besatuanhargamaterial/updatecreate/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialupdatecreate'])->middleware(['auth', 'can:admin2'])->name('update.besatuanhargamaterialcreateupdate');
+
 // Route::get('/artikeljakon/show/{id}', [BeritaController::class, 'artikeljakonshow'])->name('artikeljakon.show');
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);

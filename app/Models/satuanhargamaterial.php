@@ -18,4 +18,9 @@ class satuanhargamaterial extends Model
         return $this->belongsTo(kategorimaterial::class, 'kategorimaterial_id');
     }
 
+        public function divuraianbahanmaterial()
+    {
+        return $this->hasMany(divuraianbahanmaterial::class);
+    }
+
 }
