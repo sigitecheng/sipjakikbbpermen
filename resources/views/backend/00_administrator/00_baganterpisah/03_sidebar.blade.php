@@ -1117,7 +1117,7 @@
                   <li class="nav-item">
                     <a href="/beagendaskktkk" class="nav-link">
                       <i class="nav-icon bi bi-person-workspace text-warning"></i> <!-- Ikon untuk Tenaga Kerja Konstruksi -->
-                      <p style="color: white">TKK DPUPR</p>
+                      <p style="color: white">SKK </p>
                     </a>
                   </li>
 
