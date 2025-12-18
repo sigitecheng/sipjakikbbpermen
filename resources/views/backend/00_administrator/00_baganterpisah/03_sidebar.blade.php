@@ -825,14 +825,14 @@
           </ul>
         </li>
 
-                {{-- <li class="nav-header" style="color: white;">PANDUAN UMUM</li>
+                <li class="nav-header" style="color: white;">PANDUAN UMUM</li>
 
                   <li class="nav-item">
 
                     <a href="#" class="nav-link">
                     <!-- Ikon untuk Beranda -->
                     <i class="nav-icon bi bi-house-door" style="color: white;"></i>
-                    <p style="color: red">
+                    <p style="color: white">
                       Petunjuk Aplikasi
                       <!-- Ikon panah kanan (Chevron) -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -870,7 +870,7 @@
         <p style="color:white">Kelembagaan</p>
     </a>
 </li>
-<li class="nav-item">
+{{-- <li class="nav-item">
     <a href="/404" class="nav-link">
         <i class="nav-icon bi bi-newspaper text-success"></i>
         <p style="color:white">Berita Jakon</p>
@@ -918,9 +918,9 @@
         <i class="nav-icon bi bi-diagram-3-fill text-secondary"></i>
         <p style="color:white">Rantai Pasok</p>
     </a>
-</li>
+</li> --}}
                 </ul>
-            </li> --}}
+            </li>
                 <li class="nav-header" style="color: white;">MAIN MENU</li>
 
               <li class="nav-item">
@@ -930,7 +930,7 @@
                     <a href="#" class="nav-link">
                     <!-- Ikon untuk Beranda -->
                     <i class="nav-icon bi bi-house-door" style="color: white;"></i>
-                    <p style="color: red">
+                    <p style="color: white">
                       Kelembagaan
                       <!-- Ikon panah kanan (Chevron) -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -989,7 +989,7 @@
                         <a href="#" class="nav-link">
                             <!-- Ikon untuk Berita Jakon (Newspaper) -->
                             <i class="nav-icon bi bi-newspaper" style="color: white"></i>
-                            <p style="color: red">
+                            <p style="color: white">
                               Berita Jakon
                               <!-- Ikon panah kanan (Chevron) -->
                               <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1073,7 +1073,7 @@
                 <a href="#" class="nav-link">
                     <!-- Ikon untuk Data Jakon -->
                     <i class="nav-icon bi bi-bar-chart" style="color: white"></i>
-                    <p style="color: red">
+                    <p style="color: white">
                       Data Jakon
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1254,7 +1254,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk Pembinaan -->
                   <i class="nav-icon bi bi-person-check" style="color: white"></i>
-                  <p style="color: red">
+                  <p style="color: white">
                     Pembinaan
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1364,7 +1364,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk Pengawasan -->
                   <i class="nav-icon bi bi-eye" style="color: white"></i> <!-- Ikon untuk pengawasan -->
-                  <p style="color: red">
+                  <p style="color: white">
                     Pengawasan
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1468,7 +1468,7 @@
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk AHSP Keciptakaryaan -->
                   <i class="nav-icon bi bi-clipboard-check" style="color: white"></i> <!-- Ikon untuk AHSP Keciptakaryaan -->
-                  <p style="color: red">
+                  <p style="color: white">
                     Satuan <br> Harga Dasar
                     <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1661,7 +1661,7 @@
                 <a href="/beshstkabblora" class="nav-link">
                     <!-- Ikon untuk SHST Kab Blora -->
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i> <!-- Ikon untuk SHST Kab Blora -->
-                    <p style="color: red">
+                    <p style="color: white">
                       SHST <br> Kab Bandung Barat
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1739,7 +1739,7 @@
                 <a href="#" class="nav-link">
                     <!-- Ikon untuk SHST Kab Blora -->
                     <i class="nav-icon bi bi-file-earmark-text" style="color: white"></i> <!-- Ikon untuk SHST Kab Blora -->
-                    <p style="color: red">
+                    <p style="color: white">
                       Rantai Pasok
                       <!-- Ikon panah kanan (Chevron) diganti dengan ikon panah -->
                       <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1808,7 +1808,7 @@
                     <a href="#" class="nav-link">
                       <!-- Ikon untuk Peraturan -->
                       <i class="nav-icon bi bi-file-earmark-text" style="color: white;"></i> <!-- Ikon untuk Peraturan -->
-                      <p style="color: red">
+                      <p style="color: white">
                         Peraturan
                         <!-- Ikon panah kanan (Chevron) -->
                         <i class="nav-arrow bi bi-chevron-right"></i>
@@ -1934,7 +1934,7 @@
             <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-speedometer" style="color: white"></i>
-                  <p style="color: red">
+                  <p style="color: white">
                     Daftar Akun
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
@@ -2198,10 +2198,10 @@
 
                         <form action="{{ route('logout') }}" method="POST" style="display: inline;">
                         @csrf
-                            <button type="submit" class="nav-link" style="background: none; border: none; color: red;">
+                            <button type="submit" class="nav-link" style="background: none; border: none; color: white;">
                                 <!-- Ikon untuk Logout -->
                                 <i class="nav-icon bi bi-box-arrow-right text-danger"></i> <!-- Ikon untuk Logout -->
-                                <p style="color: red">Logout</p>
+                                <p style="color: white">Logout</p>
                             </button>
                         </form>
                     </li>
