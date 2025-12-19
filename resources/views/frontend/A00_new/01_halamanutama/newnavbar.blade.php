@@ -99,8 +99,8 @@
                                         <li><a href="#">Pengawasan BUJK</a></li> --}}
                                     </ul>
                                 </li>
-{{--
-                                <li class="menu-item-has-children"><a href="#">AHSP</a>
+
+                                {{-- <li class="menu-item-has-children"><a href="#">AHSP</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item-has-children"><a href="#">Satuan Harga Dasar</a>
                                             <ul class="sub-menu">
@@ -125,6 +125,7 @@
                                             <li><a href="/shstkbb">SHST Kab Bandung Barat</a></li>
 
                                     </ul>
+                                    </li> --}}
                                         <li class="menu-item-has-children"><a href="#">Rantai Pasok</a>
                                             <ul class="sub-menu">
                                                 <li><a href="/rantaipasokmaterial">Material Bangunan</a></li>
@@ -146,8 +147,8 @@
                                         <li><a href="/peraturanwalikota">Peraturan Walikota/Bupati</a></li>
                                         <li><a href="/peraturansuratkeputusan">Surat Keputusan</a></li>
                                     </ul>
-                                </li> --}}
                                 </li>
+
                             </ul>
                         </div>
                         {{-- <div class="tgmenu__action tgmenu__action-five">
