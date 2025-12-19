@@ -823,7 +823,7 @@ button:hover {
 </div>
 
 <!-- Judul Bagian -->
-<div style="text-align: center; margin-bottom: 20px; margin-top: 20px">
+{{-- <div style="text-align: center; margin-bottom: 20px; margin-top: 20px">
     <h4 style="font-weight: bold; color: black; border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 5px;">
         <i class="bi bi-card-checklist" style="margin-right: 8px; color: #ffb703;"></i>
         Daftar Harga Divisi Pekerjaan
@@ -831,7 +831,6 @@ button:hover {
 </div>
 
 <div class="row" style="margin-top: 10px;">
-    <!-- Divisi Pekerjaan I -->
     <div class="col-md-3 col-sm-6 col-12" style="margin-top: 10px; margin-bottom: 10px;">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -850,7 +849,6 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan II -->
     <div class="col-md-3 col-sm-6 col-12" style="margin-top: 10px; margin-bottom: 10px;">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -869,7 +867,6 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan III -->
     <div class="col-md-3 col-sm-6 col-12" style="margin-top: 10px; margin-bottom: 10px;">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -888,7 +885,6 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan IV -->
     <div class="col-md-3 col-sm-6 col-12" style="margin-top: 10px; margin-bottom: 10px;">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -907,7 +903,6 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan V -->
     <div class="col-md-3 col-sm-6 col-12">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -926,7 +921,6 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan VI -->
     <div class="col-md-3 col-sm-6 col-12">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -945,8 +939,7 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan VII -->
-    <div class="col-md-3 col-sm-6 col-12">
+   <div class="col-md-3 col-sm-6 col-12">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
                 <div class="card-content">
@@ -964,7 +957,6 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan VIII -->
     <div class="col-md-3 col-sm-6 col-12">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -983,7 +975,6 @@ button:hover {
         </a>
     </div>
 
-    <!-- Divisi Pekerjaan IX -->
     <div class="col-md-3 col-sm-6 col-12" style="margin-top: 10px; margin-bottom: 10px;">
         <a href="#" style="text-decoration: none;">
             <div class="dashboard-card card-1">
@@ -1001,7 +992,7 @@ button:hover {
             </div>
         </a>
     </div>
-</div>
+</div> --}}
 
 
 @endcan
