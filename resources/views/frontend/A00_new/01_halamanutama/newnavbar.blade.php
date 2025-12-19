@@ -99,6 +99,7 @@
                                         <li><a href="#">Pengawasan BUJK</a></li> --}}
                                     </ul>
                                 </li>
+{{--
                                 <li class="menu-item-has-children"><a href="#">AHSP</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item-has-children"><a href="#">Satuan Harga Dasar</a>
@@ -129,7 +130,6 @@
                                                 <li><a href="/rantaipasokmaterial">Material Bangunan</a></li>
                                                 <li><a href="/rantaipasokperalatan">Peralatan Konstruksi</a></li>
                                                 <li><a href="/rantaitokobangunan">Toko Bangunan</a></li>
-                                                {{-- <li><a href="#">Daftar Peserta TKK</a></li> --}}
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Peraturan</a>
@@ -146,7 +146,7 @@
                                         <li><a href="/peraturanwalikota">Peraturan Walikota/Bupati</a></li>
                                         <li><a href="/peraturansuratkeputusan">Surat Keputusan</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 </li>
                             </ul>
                         </div>
