@@ -1550,7 +1550,7 @@
             {{-- ========================== --}}
 
             {{-- ===================================== MENU DATA HSP Konstruksi UMum   --}}
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="#" class="nav-link">
                   <!-- Ikon untuk HSP Konstruksi Umum -->
                   <i class="nav-icon bi bi-building" style="color: white"></i> <!-- Ikon untuk Konstruksi Umum -->
@@ -1651,7 +1651,7 @@
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> --}}
 
             {{-- ========================== --}}
 
