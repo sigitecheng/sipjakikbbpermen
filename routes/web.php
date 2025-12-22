@@ -2596,7 +2596,7 @@ Route::get('/datajakontkkkbb', [BujkkontraktorController::class, 'datajakontkkkb
 Route::get('/datastatistiktkkkbb', [BujkkontraktorController::class, 'datastatistiktkkkbb']);
 
 Route::get('/datapekerjaankbb', [BujkkontraktorController::class, 'datapekerjaankbb']);
-Route::get('/datastatistikpaketpekerjaan', [PaketpekerjaanmasjakiController::class, 'datastatistikpaketpekerjaan'])->middleware('auth'); // SUDAH DI GATE
+Route::get('/datastatistikpaketpekerjaan', [PaketpekerjaanmasjakiController::class, 'datastatistikpaketpekerjaan']); // SUDAH DI GATE
 
 
 
