@@ -724,8 +724,11 @@ Route::post('/settingtahunpilihan/{id}', [SettingmenuController::class, 'deletes
 //         'title' => 'Halaman Login'
 //     ]);
 // });
+Route::get('/login', [LoginController::class, 'index'])
+    ->middleware('guest')
+    ->name('login');
 
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest')->name('loginawal');
+// Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest')->name('loginawal');
 Route::get('/masuk', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login-custom', [LoginController::class, 'authenticate'])
     ->name('login.custom');
@@ -2629,6 +2632,9 @@ Route::get('/dokhakakses', [PetunjukController::class, 'dokhakakses'])->middlewa
 
 /// AHSP SATUAN KONSTRUKSI UMUM ANALISA KONSTRUKSI UMUM KABUPATEN BANDUNG BARAT
 Route::get('/divsatupekerjaan', [AhspController::class, 'divsatupekerjaan'])->middleware(['auth', 'can:admin2']);
+Route::get('/fetertibusaha', [AhspController::class, 'divsatupekerjaan'])->middleware(['auth']);
+Route::get('/fetertibpemanfaatan', [AhspController::class, 'divsatupekerjaan'])->middleware(['auth']);
+Route::get('/fetertibpenyelenggaraan', [AhspController::class, 'divsatupekerjaan'])->middleware(['auth']);
 // Route::delete('/satuanhargamaterial/delete/{id}', [SatuanhargamaterialController::class, 'besatuanhargamaterialdelete'])->middleware(['auth', 'can:admin2']);
 
 // Route::get('/besatuanhargamaterial/create', [SatuanhargamaterialController::class, 'satuanhargamaterialcreate'])->middleware(['auth', 'can:admin2']);

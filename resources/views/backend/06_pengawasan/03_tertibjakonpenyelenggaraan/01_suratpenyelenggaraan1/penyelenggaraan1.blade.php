@@ -407,7 +407,7 @@
         <textarea class="form-control @error('carapemerksaan2') is-invalid @enderror"
                   name="carapemerksaan2"
                   rows="3"
-                  placeholder="Masukkan OPD Contoh : Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora ...">{{ old('carapemerksaan2', $firstsurat->carapemerksaan2 ?? '') }}</textarea>
+                  placeholder="Masukkan OPD Contoh : Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat...">{{ old('carapemerksaan2', $firstsurat->carapemerksaan2 ?? '') }}</textarea>
         @error('carapemerksaan2')
             <div class="invalid-feedback">{{ $message }}</div>
         @enderror
@@ -684,7 +684,7 @@
                                                     <img src="/assets/icon/pupr.png" alt="Logo" width="25" class="me-2">
                                                 </a>
                                                 <span class="mx-2">:</span>
-                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat Blora</p>
+                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
@@ -796,7 +796,7 @@
         <textarea class="form-control @error('carapemerksaan2') is-invalid @enderror"
                   name="carapemerksaan2"
                   rows="3"
-                  placeholder="Masukkan OPD Contoh : Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora ...">{{ old('carapemerksaan2', $firstsurat->carapemerksaan2 ?? '') }}</textarea>
+                  placeholder="Masukkan OPD Contoh : Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat...">{{ old('carapemerksaan2', $firstsurat->carapemerksaan2 ?? '') }}</textarea>
         @error('carapemerksaan2')
             <div class="invalid-feedback">{{ $message }}</div>
         @enderror

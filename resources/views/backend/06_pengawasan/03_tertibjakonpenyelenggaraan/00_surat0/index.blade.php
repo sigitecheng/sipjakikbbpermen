@@ -238,7 +238,7 @@
                                                  <div class="modal-content">
                                                      <div class="modal-header">
                                                          <img src="/assets/icon/pupr.png" alt="" width="30" style="margin-right: 10px;">
-                                                         <h5 class="modal-title" id="deleteModalLabel">DPUPR Kabupaten Blora</h5>
+                                                         <h5 class="modal-title" id="deleteModalLabel">DPUTR Kabupaten Bandung Barat</h5>
                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                      </div>
                                                      <div class="modal-body">
@@ -303,13 +303,13 @@
                                 <div class="modal-content" style="font-size: 0.875rem;">
                                     <div class="modal-header d-flex align-items-center">
                                         <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
-                                            <img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" class="me-2">
+                                            <img src="/assets/icon/sipjakikbb.png" alt="Logo" width="25" class="me-2">
                                         </a>
                                         <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
                                             <img src="/assets/icon/pupr.png" alt="Logo" width="25" class="me-2">
                                         </a>
                                         <span class="mx-2">:</span>
-                                        <p style="margin-left: 10px; margin-bottom: 0; font-size:15px;">Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora</p>
+                                        <p style="margin-left: 10px; margin-bottom: 0; font-size:15px;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
                                     </div>
                                     <br>
                                     <div class="modal-body">
@@ -499,13 +499,13 @@
                                         <div class="modal-content" style="font-size: 0.875rem; margin-top:-10px;" >
                                             <div class="modal-header d-flex align-items-center">
                                                 <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
-                                                    <img src="/assets/icon/logokabupatenblora.png" alt="Logo" width="25" class="me-2">
+                                                    <img src="/assets/icon/sipjakikbb.png" alt="Logo" width="25" class="me-2">
                                                 </a>
                                                 <a href="#" class="d-flex align-items-center" style="margin-right: 2px;">
                                                     <img src="/assets/icon/pupr.png" alt="Logo" width="25" class="me-2">
                                                 </a>
                                                 <span class="mx-2">:</span>
-                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Penataan Ruang Kabupaten Blora</p>
+                                                <p style="margin-left: 10px; font-size: 0.9rem; margin-bottom: 0;">Dinas Pekerjaan Umum Dan Tata Ruang Kabupaten Bandung Barat</p>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">

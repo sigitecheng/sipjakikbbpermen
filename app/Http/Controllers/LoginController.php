@@ -120,6 +120,7 @@ public function authenticate(Request $request)
 }
 
 
+
     public function logout(Request $request)
     {
         Auth::logout();

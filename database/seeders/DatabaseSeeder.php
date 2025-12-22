@@ -925,7 +925,7 @@ qa::create([
         // =========================================================
 
         User::create([
-            'name'  => 'Sigit Septiadi ',
+            'name'  => 'Admin Sipjaki',
             'username' => 'Super Admin SIPJAKI KBB',
             'statusadmin_id' => '1',
             'avatar' => 'user/avatar/foto1.png',
@@ -3399,6 +3399,14 @@ pengawasanlokasi::create([
     'deleted_at' => null, // Jika Anda menggunakan soft deletes
 ]);
 
+pengawasanlokasi::create([
+    'id' => '17',
+    'kota' => 'NGAMPRAH',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+    'deleted_at' => null, // Jika Anda menggunakan soft deletes
+]);
+
 
 //======================== ===================================================================================
 pengawasanbangunangedung::create([
@@ -4335,6 +4343,40 @@ berita::create([
     'updated_at' => Carbon::now(),
 ]);
 
+berita::create([
+    'judul' => 'Pelatihan Tenaga Kerja Konstruksi di Kecamatan Ngamprah',
+    'user_id' => 1,
+    'gambar' => 'berita/databerita/beritabaru1.jpeg',
+    'keteranganberita' => '
+        <p>Ngamprah, 10 Desember 2025 – Dinas Pekerjaan Umum dan Tata Ruang (DPUTR) Kabupaten Bandung Barat menyelenggarakan kegiatan Pelatihan Tenaga Kerja Konstruksi yang bertempat di Kecamatan Ngamprah. Kegiatan ini bertujuan untuk meningkatkan kompetensi, keterampilan, serta pemahaman tenaga kerja konstruksi terhadap standar kerja yang aman dan profesional.</p>
+
+        <p>Pelatihan ini diikuti oleh para pekerja konstruksi dari berbagai wilayah di Kecamatan Ngamprah dan sekitarnya. Materi yang disampaikan meliputi pemahaman dasar konstruksi, keselamatan dan kesehatan kerja (K3), peningkatan kualitas pekerjaan, serta pengenalan standar dan regulasi jasa konstruksi yang berlaku.</p>
+
+        <p>Melalui kegiatan ini, DPUTR Kabupaten Bandung Barat berharap tenaga kerja konstruksi lokal dapat memiliki daya saing yang lebih baik, mampu bekerja secara profesional, serta mendukung peningkatan kualitas pembangunan infrastruktur di daerah. Pelatihan ini juga menjadi bagian dari komitmen pemerintah daerah dalam pembinaan dan pengembangan sumber daya manusia di sektor jasa konstruksi.</p>
+    ',
+    'tanggal' => '2025-12-10',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+berita::create([
+    'judul' => 'Bimbingan Teknis Tenaga Kerja Konstruksi di Gedung B Komplek Pemda Kabupaten Bandung Barat',
+    'user_id' => 1,
+    'gambar' => 'berita/databerita/beritabaru2.jpeg',
+    'keteranganberita' => '
+        <p>Bandung Barat, 18 Desember 2025 – Dinas Pekerjaan Umum dan Tata Ruang (DPUTR) Kabupaten Bandung Barat menyelenggarakan kegiatan Bimbingan Teknis Tenaga Kerja Konstruksi yang bertempat di Gedung B Komplek Pemerintah Daerah Kabupaten Bandung Barat. Kegiatan ini bertujuan untuk meningkatkan kompetensi dan pemahaman tenaga kerja konstruksi terhadap standar teknis dan regulasi yang berlaku.</p>
+
+        <p>Bimbingan teknis ini diikuti oleh tenaga kerja konstruksi dari berbagai wilayah di Kabupaten Bandung Barat. Materi yang disampaikan meliputi pemahaman standar pelaksanaan pekerjaan konstruksi, keselamatan dan kesehatan kerja (K3), peningkatan kualitas hasil pekerjaan, serta penguatan pemahaman terhadap peraturan perundang-undangan di bidang jasa konstruksi.</p>
+
+        <p>Melalui kegiatan bimbingan teknis ini, diharapkan tenaga kerja konstruksi dapat bekerja secara lebih profesional, tertib administrasi, dan memiliki daya saing yang lebih baik. Kegiatan ini merupakan bagian dari upaya Pemerintah Kabupaten Bandung Barat dalam mendukung peningkatan kualitas sumber daya manusia di sektor jasa konstruksi.</p>
+    ',
+    'tanggal' => '2025-12-18',
+    'created_at' => Carbon::now(),
+    'updated_at' => Carbon::now(),
+]);
+
+
+
 // =================================== ===================================== ===========================
 layanankami::create([
     'gambar' => '/assets/library/layanankami/1.png',
@@ -5168,6 +5210,40 @@ kegiatanjaskon::create([
                 'updated_at' => now(),
 ]);
 
+kegiatanjaskon::create([
+    'id' => 4,
+    'user_id' => 1,
+    'judul_kegiatan' => 'KECAMATAN NGAMPRAH BIMBINGAN TEKNIS KESELAMATAN DAN KESEHATAN KERJA TENAGA KERJA KONSTRUKSI',
+    'alamat_kegiatan' => 'KECAMATAN NGAMPRAH KABUPATEN BANDUNG BARAT JAWA BARAT INDONESIA',
+    'pengawasanlokasi_id' => '17',
+    'tanggal' => '2025-12-18', // Format tanggal YYYY-MM-DD
+
+    'berita1' => 'dokumentasipelatihan/ngamprah/ngamprah20.jpeg',
+    'berita2' => 'dokumentasipelatihan/ngamprah/ngamprah2.jpeg',
+    'berita3' => 'dokumentasipelatihan/ngamprah/ngamprah3.jpeg',
+    'berita4' => 'dokumentasipelatihan/ngamprah/ngamprah4.jpeg',
+    'berita5' => 'dokumentasipelatihan/ngamprah/ngamprah5.jpeg',
+    'berita6' => 'dokumentasipelatihan/ngamprah/ngamprah6.jpeg',
+    'berita7' => 'dokumentasipelatihan/ngamprah/ngamprah7.jpeg',
+    'berita8' => 'dokumentasipelatihan/ngamprah/ngamprah8.jpeg',
+    'berita9' => 'dokumentasipelatihan/ngamprah/ngamprah9.jpeg',
+    'berita10' => 'dokumentasipelatihan/ngamprah/ngamprah10.jpeg',
+    'berita11' => 'dokumentasipelatihan/ngamprah/ngamprah11.jpeg',
+    'berita12' => 'dokumentasipelatihan/ngamprah/ngamprah12.jpeg',
+    'berita13' => 'dokumentasipelatihan/ngamprah/ngamprah13.jpeg',
+    'berita14' => 'dokumentasipelatihan/ngamprah/ngamprah14.jpeg',
+    'berita15' => 'dokumentasipelatihan/ngamprah/ngamprah15.jpeg',
+    'berita16' => 'dokumentasipelatihan/ngamprah/ngamprah16.jpeg',
+    'berita17' => 'dokumentasipelatihan/ngamprah/ngamprah17.jpeg',
+    'berita18' => 'dokumentasipelatihan/ngamprah/ngamprah18.jpeg',
+    'berita19' => 'dokumentasipelatihan/ngamprah/ngamprah19.jpeg',
+    'berita20' => 'dokumentasipelatihan/ngamprah/ngamprah1.jpeg',
+
+    'created_at' => now(),
+    'updated_at' => now(),
+]);
+
+
 
 // ==========================================================================================================
 laporankegiatan::create([
@@ -5985,26 +6061,279 @@ artikeljakonmasjaki::create([
     'berkas'     => '/assets/gambarbaru/Panduan.pdf', // path file
     'keterangan' => 'Artikel ini menjelaskan perubahan alur permohonan akun bagi tenaga kerja konstruksi, yang digunakan untuk pencatatan pengalaman kerja secara resmi sesuai panduan terbaru dari Kementerian.',
 ]);
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. ARIA PUTRA PERKASA',
+    'alamat'             => 'JL. SINDANGSARI RT 01/01 Bandung Barat (Kab.)',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '72.434.350.4-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
 
 bujkkontraktor::create([
     'bujkkontraktorsub_id' => 1,
     'asosiasimasjaki_id'   => 1,
-    'user_id'              => 1,
-
-    'namalengkap'          => 'Konstruksi PT Maju Jaya Konstruksi',
-    'alamat'               => 'Jl. Raya Cihampelas No. 88, Kabupaten Bandung Barat',
-    'no_telepon'           => '081234567890',
-    'email'                => 'majujaya@example.com',
-    'nomorindukberusaha'   => '9876543210123',
-
-    'pju'                  => 'Direktur Utama',
-    'no_akte'              => 'AKT-55/2022',
-    'tanggal'              => now(),
-    'nama_notaris'         => 'Notaris Bambang Wijaya, SH',
-    'no_pengesahan'        => 'SK-PNG-8891/2023',
-
-    'uploadberkas'         => null, // mengikuti format contoh kamu
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. BABUL YAMIN',
+    'alamat'             => 'JLN RAYA GADOBANGKONG RT003/003 DS GADOBANGKONG KEC NGAMPRAH KBB',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '02.564.113.5-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
 ]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. MEDINA INTERNUSA',
+    'alamat'             => 'Kampung Sukawangi RT 01 RW 09 Situwangi Cihampelas Kabupaten Bandung Barat',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '71.887.929.9-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. RAHARDJA PUTRA MANDIRI',
+    'alamat'             => 'KOMP. BUMI ADIPURA JL. ADI KEMUNING NO. 31',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '02.789.320.5-429.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. SAHABAT BERLIAN GROUP',
+    'alamat'             => 'Jl. Gedong Lima No 14 RT 04, Kertajaya Kab. Bandung Barat',
+    'no_telepon'         => '02286802019',
+    'email'              => null,
+    'nomorindukberusaha' => '41.206.054.3-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'PT. PATAKA NOAHSANTARA INDONESIA',
+    'alamat'             => 'Kavling Sawah Lega, Kel. Cihanjuang, Kec. Parongpong, Kab. Bandung Barat, Prov. Jawa Barat',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '42.355.341.1-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. ABBAS KUSUMA',
+    'alamat'             => 'PERUM BATUJAJAR INDAH JL. ASTER IV B26 BATUJAJAR BANDUNG BARAT',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '76.272.442.5-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. ABDILLAH PRATAMA',
+    'alamat'             => 'Kp. Saapan RT 06/02 Desa Cipatik - Cihampelas',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '72.216.217.9-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. ADIL',
+    'alamat'             => 'Kp. Andir RT 04 RW 15 Padalarang',
+    'no_telepon'         => null,
+    'email'              => null,
+    'nomorindukberusaha' => '31.669.323.3-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id' => 1,
+    'asosiasimasjaki_id'   => 1,
+    'user_id'             => 1,
+    'namalengkap'        => 'CV. AIR MULTI DIGITAL',
+    'alamat'             => 'KP. CISINTOK RT/RW 003/004 CIHANJUANG, PARONGPONG',
+    'no_telepon'         => '082127688527',
+    'email'              => null,
+    'nomorindukberusaha' => '40.180.399.4-421.000',
+    'pju'                => null,
+    'no_akte'            => null,
+    'tanggal'            => now(),
+    'nama_notaris'       => null,
+    'no_pengesahan'      => null,
+    'uploadberkas'       => null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id'=>1,
+    'asosiasimasjaki_id'=>1,
+    'user_id'=>1,
+    'namalengkap'=>'CV. AMARTA HUTAMA',
+    'alamat'=>'Jl. Bekatonik No.2 RT.006/014 Kel.Cikutra Kec. Cibeunying Kidul',
+    'no_telepon'=>null,
+    'email'=>null,
+    'nomorindukberusaha'=>'31.606.439.3-423.000',
+    'pju'=>null,
+    'no_akte'=>null,
+    'tanggal'=>now(),
+    'nama_notaris'=>null,
+    'no_pengesahan'=>null,
+    'uploadberkas'=>null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id'=>1,
+    'asosiasimasjaki_id'=>1,
+    'user_id'=>1,
+    'namalengkap'=>'CV. ANJA DEVA DIVA',
+    'alamat'=>'CIPANJI CIHAMPELAS NO.26 RT/RW 004/001 CIHAMPELAS KABUPATEN BANDUNG BARAT',
+    'no_telepon'=>'081324424343',
+    'email'=>null,
+    'nomorindukberusaha'=>'39.845.618.6-421.000',
+    'pju'=>null,
+    'no_akte'=>null,
+    'tanggal'=>now(),
+    'nama_notaris'=>null,
+    'no_pengesahan'=>null,
+    'uploadberkas'=>null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id'=>1,
+    'asosiasimasjaki_id'=>1,
+    'user_id'=>1,
+    'namalengkap'=>'CV. ANUGRAH MITRA REMPEG',
+    'alamat'=>'Kp. Cigatrot Tengah RT.01 RW.05 Desa Tenjolaut Kecamatan Cikalong Wetan',
+    'no_telepon'=>null,
+    'email'=>null,
+    'nomorindukberusaha'=>'74.969.533.4-421.000',
+    'pju'=>null,
+    'no_akte'=>null,
+    'tanggal'=>now(),
+    'nama_notaris'=>null,
+    'no_pengesahan'=>null,
+    'uploadberkas'=>null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id'=>1,
+    'asosiasimasjaki_id'=>1,
+    'user_id'=>1,
+    'namalengkap'=>'CV. ARA CITRA TAMA',
+    'alamat'=>'Simpang Gang Kapten Ishak No 11B Karang Mekar Cimahi Tengah',
+    'no_telepon'=>'082116139994',
+    'email'=>null,
+    'nomorindukberusaha'=>'62.266.633.7-421.000',
+    'pju'=>null,
+    'no_akte'=>null,
+    'tanggal'=>now(),
+    'nama_notaris'=>null,
+    'no_pengesahan'=>null,
+    'uploadberkas'=>null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id'=>1,
+    'asosiasimasjaki_id'=>1,
+    'user_id'=>1,
+    'namalengkap'=>'CV. ARAFAL MANDIRI PRODUCTION',
+    'alamat'=>'PONDOK PADALARANG INDAH D NO 06 RT 01 RW 027 PADALARANG',
+    'no_telepon'=>'081223788265',
+    'email'=>null,
+    'nomorindukberusaha'=>'94.644.978.2-421.000',
+    'pju'=>null,
+    'no_akte'=>null,
+    'tanggal'=>now(),
+    'nama_notaris'=>null,
+    'no_pengesahan'=>null,
+    'uploadberkas'=>null,
+]);
+
+bujkkontraktor::create([
+    'bujkkontraktorsub_id'=>1,
+    'asosiasimasjaki_id'=>1,
+    'user_id'=>1,
+    'namalengkap'=>'CV. ARKANZA WIJAYA MANDIRI',
+    'alamat'=>'Kp. Ngamprah Kaler RT 03 RW 07 Bandung Barat',
+    'no_telepon'=>null,
+    'email'=>null,
+    'nomorindukberusaha'=>'27.011.602.3-421.000',
+    'pju'=>null,
+    'no_akte'=>null,
+    'tanggal'=>now(),
+    'nama_notaris'=>null,
+    'no_pengesahan'=>null,
+    'uploadberkas'=>null,
+]);
+
+// -----------
 
 bujkkonsultan::create([
     'bujkkonsultansub_id' => 1,

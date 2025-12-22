@@ -85,9 +85,9 @@
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Pengawasan</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Tertib Usaha </a></li>
-                                        <li><a href="#">Tertib Pemanfataan</a></li>
-                                        <li><a href="#">Tertib Penyelenggaran</a></li>
+                                        <li><a href="/fetertibusaha">Tertib Usaha </a></li>
+                                        <li><a href="/fetertibpemanfaatan">Tertib Pemanfataan</a></li>
+                                        <li><a href="/fetertibpenyelenggaraan">Tertib Penyelenggaran</a></li>
                                         {{-- <li class="menu-item-has-children"><a href="#">Tertib Jasa Konstruksi</a>
                                             <ul class="sub-menu">
                                                 <li><a href="#">Tertib Jakon Usaha</a></li>
