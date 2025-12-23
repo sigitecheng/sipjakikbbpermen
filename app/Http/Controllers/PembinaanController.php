@@ -1500,7 +1500,7 @@ public function beagendaskktkk2025(Request $request)
     $query = allskktenagakerjablora::select([
         'id', 'user_id', 'agendaskk_id', 'jenjangpendidikan_id', 'jabatankerja_id',
         'namasekolah_id', 'kecamatankbb_id','tahunpilihan_id', 'jenjang_id', 'namalengkap', 'nik', 'tempatlahir', 'ttl', 'jeniskelamin',
-        'alamat', 'notelepon', 'email', 'tahunlulus', 'uploadktp', 'uploadfoto', 'uploadijazah',
+        'alamat', 'notelepon', 'email', 'tahunlulus', 'keterampilan', 'uploadktp', 'uploadfoto', 'uploadijazah',
         'uploadpengalaman', 'uploadnpwp', 'uploaddaftarriwayathidup', 'namaasosiasi', 'punyaskk',
         'punyasiki', 'siappatuh', 'verifikasipu', 'verifikasilps', 'sertifikat'
     ]);
@@ -1515,6 +1515,7 @@ public function beagendaskktkk2025(Request $request)
             ->orWhere('nik', 'LIKE', "%{$search}%")
             ->orWhere('namalengkap', 'LIKE', "%{$search}%")
             ->orWhere('jeniskelamin', 'LIKE', "%{$search}%")
+            ->orWhere('keterampilan', 'LIKE', "%{$search}%")
             ->orWhereDate('ttl', $search) // cocokkan full tanggal (YYYY-MM-DD)
             ->orWhere('tahunlulus', 'LIKE', "%{$search}%");
         });

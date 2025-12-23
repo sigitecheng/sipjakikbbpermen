@@ -175,9 +175,15 @@ function exportTableToExcel(tableID, filename = ''){
                                         <th style="width: 100px; text-align:center;">
                                             <i class="bi bi-person" style="margin-right: 5px;"></i>Jenjang
                                         </th>
+
+                                        <th style="width: 120px; text-align:center;">
+                                            <i class="bi bi-tools" style="margin-right: 5px;"></i>Keterampilan
+                                        </th>
+
                                         <th style="width: 100px; text-align:center;">
                                             <i class="bi bi-person" style="margin-right: 5px;"></i>Kecamatan
                                         </th>
+
                                         <th style="width: 200px; text-align:center;">
                                             <i class="bi bi-gender-ambiguous" style="margin-right: 5px;"></i>Gender
                                         </th>
@@ -233,7 +239,10 @@ function exportTableToExcel(tableID, filename = ''){
                                         {{-- <td style="text-align: left;">{{ $item->jenjangpendidikan->jenjangpendidikan}}</td> --}}
                                         <td style="text-align: center;">{{ $item->nik ?? '-' }}</td>
                                         <td style="text-align: center;">{{ $item->jenjang->jenjang ?? '-' }}</td>
-                                        <td style="text-align: center;">{{ $item->kecamatan->kecamatankbb ?? '' }}</td>
+                                        <td style="text-align: center;">
+                                            {{ $item->keterampilan ?: collect(['Bangunan Gedung', 'Besi', 'Las', 'Kayu'])->random() }}
+                                        </td>
+                                        <td style="text-align: center;">{{ $item->kecamatankbb->kecamatankbb ?? '' }}</td>
                                         <td style="text-align: center;">{{ $item->jeniskelamin ?? '-'  }}</td>
                                         <td style="text-align: center;">
                                             {{ \Carbon\Carbon::parse($item->ttl)->translatedFormat('d F Y') }}

@@ -7365,6 +7365,9 @@ tahunpilihan::create([
 
 // TENAGA KERJA TERAMPIL KABUPATEN BANDUNG BARAT
 
+allskktenagakerjablora::factory()->count(996)->create();
+
+
 allskktenagakerjablora::create([
     'skkanda' => null, // atau 'namalengkap' jika kamu pakai field itu
     'agendaskk_id' => 1, // isi sesuai kebutuhan
@@ -7384,6 +7387,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
     'uploadktp' => null, // tidak ada file ktp lama
     'uploadfoto' => 'skktenagakerja/arsip/pas/A01_Paspoto.png',
     'uploadijazah' => null,
@@ -7439,7 +7443,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A02_Paspoto.png',
@@ -7500,7 +7504,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A03_Paspoto.png',
@@ -7561,7 +7565,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A04_Paspoto.png',
@@ -7622,7 +7626,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A05_Paspoto.png',
@@ -7683,7 +7687,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A06_Paspoto.png',
@@ -7744,7 +7748,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A07_Paspoto.png',
@@ -7805,7 +7809,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A08_Paspoto.png',
@@ -7866,7 +7870,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A09_Paspoto.png',
@@ -7927,7 +7931,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A10_Paspoto.png',
@@ -7988,7 +7992,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A10_Paspoto.png',
@@ -8049,7 +8053,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A09_Paspoto.png',
@@ -8111,7 +8115,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A13_Paspoto.png',
@@ -8173,7 +8177,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A14_Paspoto.png',
@@ -8235,7 +8239,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A15_Paspoto.png',
@@ -8296,7 +8300,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A16_Paspoto.png',
@@ -8357,7 +8361,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A17_Paspoto.png',
@@ -8418,7 +8422,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A18_Paspoto.png',
@@ -8480,7 +8484,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A19_Paspoto.png',
@@ -8543,7 +8547,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A20_Paspoto.png',
@@ -8604,7 +8608,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A21_Paspoto.png',
@@ -8666,7 +8670,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A22_Paspoto.png',
@@ -8727,7 +8731,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A23_Paspoto.png',
@@ -8789,7 +8793,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A24_Paspoto.png',
@@ -8850,7 +8854,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A25_Paspoto.png',
@@ -8912,7 +8916,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A26_Paspoto.png',
@@ -8974,7 +8978,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A27_Paspoto.png',
@@ -9035,7 +9039,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A28_Paspoto.png',
@@ -9097,7 +9101,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A29_Paspoto.png',
@@ -9159,7 +9163,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/A30_Paspoto.png',
@@ -9222,7 +9226,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-01.jpg',
@@ -9284,7 +9288,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-02.jpg',
@@ -9349,7 +9353,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-03.jpg',
@@ -9411,7 +9415,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ====== DOKUMEN ======
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-04.jpg',
@@ -9475,7 +9479,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ===== DOKUMEN =====
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-05.jpg',
@@ -9528,7 +9532,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // ===== DOKUMEN =====
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-06.jpg',
@@ -9582,7 +9586,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
-
+'keterampilan' => 'BANGUNAN',
     // DOKUMEN
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-07.jpg',
@@ -9635,6 +9639,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     // DOKUMEN
     'uploadktp' => null,
@@ -9685,6 +9690,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-09.jpg',
@@ -9733,6 +9739,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-10.jpg',
@@ -9781,6 +9788,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-11.jpg',
@@ -9829,6 +9837,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-12.jpg',
@@ -9876,6 +9885,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-13.jpg',
@@ -9923,6 +9933,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-14.jpg',
@@ -9972,6 +9983,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-15.jpg',
@@ -10020,6 +10032,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-16.jpg',
@@ -10067,6 +10080,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-17.jpg',
@@ -10113,6 +10127,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-18.jpg',
@@ -10161,6 +10176,8 @@ allskktenagakerjablora::create([
     'email' => null,
     'tahunlulus' => null,
 
+'keterampilan' => 'BANGUNAN',
+
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-19.jpg',
     'uploadijazah' => null,
@@ -10208,6 +10225,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-20.jpg',
@@ -10254,6 +10272,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-21.jpg',
@@ -10301,6 +10320,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-22.jpg',
@@ -10348,6 +10368,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-23.jpg',
@@ -10395,6 +10416,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-24.jpg',
@@ -10444,6 +10466,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-25.jpg',
@@ -10494,6 +10517,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-26.jpg',
@@ -10543,6 +10567,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-27.jpg',
@@ -10592,6 +10617,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-28.jpg',
@@ -10640,6 +10666,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-29.jpg',
@@ -10689,6 +10716,7 @@ allskktenagakerjablora::create([
     'notelepon' => null,
     'email' => null,
     'tahunlulus' => null,
+    'keterampilan' => 'BANGUNAN',
 
     'uploadktp' => null,
     'uploadfoto' => 'skktenagakerja/arsip/pas/Paspoto-Asesi-30.jpg',
@@ -10786,6 +10814,7 @@ foreach ($names as $nama) {
         'notelepon' => null,
         'email' => null,
         'tahunlulus' => null,
+        'keterampilan' => 'BANGUNAN',
 
         'uploadktp' => null,
         'uploadfoto' => null,

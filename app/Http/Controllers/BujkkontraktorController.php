@@ -897,11 +897,11 @@ public function datastatistiktkkkbb(Request $request)
     // JABATAN KERJA (WAJIB ADA jenjang_id)
     // ============================
     $statJabatanKerja = allskktenagakerjablora::selectRaw(
-        'jabatankerja_id,
+        'keterampilan,
          jenjang_id,
          COUNT(*) as total'
     )
-    ->groupBy('jabatankerja_id','jenjang_id')
+    ->groupBy('keterampilan','jenjang_id')
     ->get();
 
     // ============================
@@ -925,6 +925,7 @@ public function datastatistiktkkkbb(Request $request)
     )
     ->groupBy('kecamatankbb_id','jenjang_id')
     ->get();
+
 
     // ============================
     // LIST JENJANG (FILTER)

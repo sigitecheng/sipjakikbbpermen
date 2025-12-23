@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+
         Schema::create('allskktenagakerjabloras', function (Blueprint $table) {
             $table->id();
             // $table->foreignId('jabatanskkanda_id')->nullable();
@@ -25,6 +26,7 @@ return new class extends Migration
             $table->foreignId('jenjang_id')->nullable();
             $table->string('namalengkap')->nullable(); // ada
             $table->string('nik')->nullable(); // ada
+
                     // $table->string('namalengkap')->nullable();
                     $table->string('tempatlahir')->nullable();
                     $table->date('ttl')->nullable(); // ada
@@ -33,6 +35,9 @@ return new class extends Migration
                     $table->string('notelepon')->nullable(); // ada
                     $table->string('email')->nullable();
                     $table->integer('tahunlulus')->nullable();
+
+                    // PENAMBAHAN VARIABLE BARU
+                    $table->string('keterampilan')->nullable();
 
                     $table->string('uploadktp')->nullable();
                     $table->string('uploadfoto')->nullable();

@@ -192,37 +192,91 @@
     </div>
 
     @php
-        $cards = [
-            ['title'=>'Jabatan Kerja','id'=>'jabatan','data'=>$statJabatanKerja,'label'=>'jabatankerja'],
-            ['title'=>'Jenjang Pendidikan','id'=>'jenjang','data'=>$statJenjangPendidikan,'label'=>'jenjangpendidikan'],
-            ['title'=>'Tahun Bimbingan Teknis','id'=>'tahun','data'=>$statTahun,'label'=>'tahunpilihan'],
-            ['title'=>'Kecamatan','id'=>'kecamatan','data'=>$statKecamatan,'label'=>'kecamatankbb'],
-        ];
-    @endphp
+    $cards = [
+        [
+            'title' => 'Jabatan Kerja',
+            'id'    => 'jabatan',
+            'data'  => $statJabatanKerja,
+            'type'  => 'string',
+            'field' => 'keterampilan'
+        ],
+        [
+            'title' => 'Jenjang Pendidikan',
+            'id'    => 'jenjang',
+            'data'  => $statJenjangPendidikan,
+            'type'  => 'relation',
+            'field' => 'jenjangpendidikan'
+        ],
+        [
+            'title' => 'Tahun Bimbingan Teknis',
+            'id'    => 'tahun',
+            'data'  => $statTahun,
+            'type'  => 'relation',
+            'field' => 'tahunpilihan'
+        ],
+        [
+            'title' => 'Kecamatan',
+            'id'    => 'kecamatan',
+            'data'  => $statKecamatan,
+            'type'  => 'relation',
+            'field' => 'kecamatankbb'
+        ],
+    ];
+@endphp
 
-    @foreach($cards as $c)
+@foreach ($cards as $c)
     <div class="col-lg-6 mb-4 d-flex">
-        <div style="background:linear-gradient(135deg,#f8f9fa,#eef2f7);border-left:6px solid #0d6efd;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.06);padding:22px;width:100%;height:100%;">
+        <div
+            style="
+                background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+                border-left: 6px solid #0d6efd;
+                border-radius: 14px;
+                box-shadow: 0 4px 12px rgba(0,0,0,.06);
+                padding: 22px;
+                width: 100%;
+                height: 100%;
+            "
+        >
 
-            <h5 style="font-weight:600;margin-bottom:14px;">{{ $c['title'] }}</h5>
+            <!-- JUDUL CARD -->
+            <h5 style="font-weight:600; margin-bottom:14px;">
+                {{ $c['title'] }}
+            </h5>
 
-            <ul id="list-{{ $c['id'] }}" style="padding-left:18px;margin:0;">
-                @foreach($c['data'] as $item)
-                <li
-                    data-jenjang="{{ $item->jenjang_id ?? '' }}"
-                    style="margin-bottom:6px;font-size:14px;line-height:1.6;"
-                >
-                    {{ optional($item->{$c['label']})->{$c['label']} ?? '-' }}
-                    : {{ $item->total }} Tenaga Kerja
-                </li>
-                @endforeach
+            <!-- LIST DATA -->
+            <ul
+                id="list-{{ $c['id'] }}"
+                style="padding-left:18px; margin:0;"
+            >
+                @forelse ($c['data'] as $item)
+                    <li
+                        data-jenjang="{{ $item->jenjang_id ?? '' }}"
+                        style="margin-bottom:6px; font-size:14px; line-height:1.6;"
+                    >
+                        @if ($c['type'] === 'string')
+                            {{ $item->{$c['field']} ?? '-' }}
+                        @else
+                            {{ optional($item->{$c['field']})->{$c['field']} ?? '-' }}
+                        @endif
+                        : {{ $item->total }} Tenaga Kerja
+                    </li>
+                @empty
+                    <li style="color:#999; font-size:13px;">
+                        Tidak ada data
+                    </li>
+                @endforelse
             </ul>
 
-            <div id="chart-{{ $c['id'] }}" style="height:300px;margin-top:15px;"></div>
+            <!-- CHART -->
+            <div
+                id="chart-{{ $c['id'] }}"
+                style="height:300px; margin-top:15px;"
+            ></div>
 
         </div>
     </div>
-    @endforeach
+@endforeach
+
 
 </div>
 
@@ -242,31 +296,45 @@
 
 @include('frontend.A00_new.01_halamanutama.newfooter')
 <script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
     google.charts.load('current', { packages: ['corechart'] });
     google.charts.setOnLoadCallback(drawAllCharts);
 
-    document.getElementById('filterJenjang').addEventListener('change', drawAllCharts);
+    const filter = document.getElementById('filterJenjang');
+    if (filter) {
+        filter.addEventListener('change', drawAllCharts);
+    }
 
     function drawAllCharts() {
-        let jenjang = document.getElementById('filterJenjang').value;
+        let jenjang = filter ? filter.value : '';
 
         drawChartFromList('list-jabatan', 'chart-jabatan', 'Distribusi Jabatan Kerja', jenjang);
         drawChartFromList('list-jenjang', 'chart-jenjang', 'Distribusi Jenjang Pendidikan', jenjang);
         drawChartFromList('list-tahun', 'chart-tahun', 'Distribusi Tahun Bimtek', jenjang);
         drawChartFromList('list-kecamatan', 'chart-kecamatan', 'Distribusi Kecamatan', jenjang);
 
+        // CHART UTAMA (GLOBAL)
         drawChartFromList('list-jabatan', 'chart-global', 'Statistik Tenaga Kerja', jenjang);
     }
 
     function drawChartFromList(listId, chartId, title, jenjang) {
 
+        const list = document.getElementById(listId);
+        const chartContainer = document.getElementById(chartId);
+
+        // 🔒 pengaman wajib
+        if (!list || !chartContainer) {
+            console.warn(`Element ${listId} atau ${chartId} tidak ditemukan`);
+            return;
+        }
+
         let dataArray = [['Kategori', 'Total']];
 
-        document.querySelectorAll(`#${listId} li`).forEach(li => {
-            let liJenjang = li.dataset.jenjang;
+        list.querySelectorAll('li').forEach(li => {
+            let liJenjang = li.dataset.jenjang || '';
 
             if (!jenjang || liJenjang === jenjang) {
                 let parts = li.textContent.split(':');
@@ -279,8 +347,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         });
-
-        let chartContainer = document.getElementById(chartId);
 
         if (dataArray.length <= 1) {
             chartContainer.innerHTML =
